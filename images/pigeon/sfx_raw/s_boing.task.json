@@ -1,0 +1,51 @@
+{
+ "taskId": "16cd706f4d0a0ed61740719ec065f768",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: short cartoon spring boing wobble sound, comedic, one hit, about one second\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/5d6e24ff-46c1-4004-974f-6ff1ad86298b.mp3\",\"createTime\":1793586301944,\"duration\":2.4,\"id\":\"5d6e24ff-46c1-4004-974f-6ff1ad86298b\",\"image_url\":\"https://cdn2.suno.ai/image_5d6e24ff-46c1-4004-974f-6ff1ad86298b.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/5d6e24ff-46c1-4004-974f-6ff1ad86298b.mp3\",\"tags\":\"Sound effect only, no music, no voice: short cartoon spring boing wobble sound, comedic, one hit, about one second\",\"title\":\"Sound effect only, no music, no voice: short cartoon spring boing wobble soun...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/9b64f6a5-f543-488f-b7e6-99bfb5a49f2f.mp3\",\"createTime\":1793586301944,\"duration\":2.4,\"id\":\"9b64f6a5-f543-488f-b7e6-99bfb5a49f2f\",\"image_url\":\"https://cdn2.suno.ai/image_9b64f6a5-f543-488f-b7e6-99bfb5a49f2f.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/9b64f6a5-f543-488f-b7e6-99bfb5a49f2f.mp3\",\"tags\":\"Sound effect only, no music, no voice: short cartoon spring boing wobble sound, comedic, one hit, about one second\",\"title\":\"Sound effect only, no music, no voice: short cartoon spring boing wobble soun...\"}],\"msg\":\"success\",\"task_id\":\"16cd706f4d0a0ed61740719ec065f768\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 18,
+ "completeTime": 1793586301944,
+ "createTime": 1793586282910,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: short cartoon spring boing wobble sound, comedic, one hit, about one second\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "successFlag": 1,
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 2.4,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/5d6e24ff-46c1-4004-974f-6ff1ad86298b.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793586301944,
+    "image_url": "https://cdn2.suno.ai/image_5d6e24ff-46c1-4004-974f-6ff1ad86298b.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/5d6e24ff-46c1-4004-974f-6ff1ad86298b.mp3",
+    "id": "5d6e24ff-46c1-4004-974f-6ff1ad86298b",
+    "title": "Sound effect only, no music, no voice: short cartoon spring boing wobble soun...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: short cartoon spring boing wobble sound, comedic, one hit, about one second"
+   },
+   {
+    "duration": 2.4,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/9b64f6a5-f543-488f-b7e6-99bfb5a49f2f.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793586301944,
+    "image_url": "https://cdn2.suno.ai/image_9b64f6a5-f543-488f-b7e6-99bfb5a49f2f.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/9b64f6a5-f543-488f-b7e6-99bfb5a49f2f.mp3",
+    "id": "9b64f6a5-f543-488f-b7e6-99bfb5a49f2f",
+    "title": "Sound effect only, no music, no voice: short cartoon spring boing wobble soun...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: short cartoon spring boing wobble sound, comedic, one hit, about one second"
+   }
+  ],
+  "task_id": "16cd706f4d0a0ed61740719ec065f768"
+ },
+ "_elapsed": 20.9
+}

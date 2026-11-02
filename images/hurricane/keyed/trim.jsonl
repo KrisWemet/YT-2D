@@ -1,0 +1,7 @@
+{"src": "raw/g_bomb_hold.png", "raw_size": [1664, 2512], "trim": [428, 294, 1385, 2258], "bg": [161, 212, 253], "ink": [6, 6, 6], "holes": 0}
+{"src": "raw/g_windup.png", "raw_size": [1664, 2512], "trim": [135, 184, 1311, 2265], "bg": [161, 212, 252], "ink": [5, 5, 5], "holes": 1}
+{"src": "raw/g_scared.png", "raw_size": [1664, 2512], "trim": [445, 305, 1248, 2225], "bg": [160, 211, 252], "ink": [4, 4, 4], "holes": 1}
+{"src": "raw/hurricane.png", "raw_size": [2048, 2048], "trim": [300, 293, 1747, 1758], "bg": [253, 243, 175], "ink": [4, 4, 3], "holes": 0}
+{"src": "raw/houses.png", "raw_size": [2512, 1664], "trim": [174, 510, 2340, 1095], "bg": [161, 210, 251], "ink": [4, 4, 3], "holes": 0}
+{"src": "raw/g_throw.png", "raw_size": [1664, 2512], "trim": [120, 541, 1593, 2209], "bg": [161, 211, 252], "ink": [4, 4, 4], "holes": 0}
+{"src": "raw/bomb.png", "raw_size": [2048, 2048], "trim": [408, 145, 1639, 1798], "bg": [157, 213, 252], "ink": [30, 30, 29], "holes": 0}

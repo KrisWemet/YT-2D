@@ -1,0 +1,51 @@
+{
+ "taskId": "fe28b9fc392dacdcef5b10b09daf9600",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: calm city street ambience, distant soft traffic hum, a few faraway birds chirping, gentle and quiet, steady, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/1704de39-e46d-4564-bc08-bed51b573b6c.mp3\",\"createTime\":1793586302232,\"duration\":9.96,\"id\":\"1704de39-e46d-4564-bc08-bed51b573b6c\",\"image_url\":\"https://cdn2.suno.ai/image_1704de39-e46d-4564-bc08-bed51b573b6c.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/1704de39-e46d-4564-bc08-bed51b573b6c.mp3\",\"tags\":\"Sound effect only, no music, no voice: calm city street ambience, distant soft traffic hum, a few faraway birds chirping, gentle and quiet, steady, seamless loop\",\"title\":\"Sound effect only, no music, no voice: calm city street ambience, distant sof...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/c247ff3e-8475-401d-a383-1895cf5b10b9.mp3\",\"createTime\":1793586302232,\"duration\":12.72,\"id\":\"c247ff3e-8475-401d-a383-1895cf5b10b9\",\"image_url\":\"https://cdn2.suno.ai/image_c247ff3e-8475-401d-a383-1895cf5b10b9.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/c247ff3e-8475-401d-a383-1895cf5b10b9.mp3\",\"tags\":\"Sound effect only, no music, no voice: calm city street ambience, distant soft traffic hum, a few faraway birds chirping, gentle and quiet, steady, seamless loop\",\"title\":\"Sound effect only, no music, no voice: calm city street ambience, distant sof...\"}],\"msg\":\"success\",\"task_id\":\"fe28b9fc392dacdcef5b10b09daf9600\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 19,
+ "completeTime": 1793586302232,
+ "createTime": 1793586282865,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "paramJson": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: calm city street ambience, distant soft traffic hum, a few faraway birds chirping, gentle and quiet, steady, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "successFlag": 1,
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 9.96,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/1704de39-e46d-4564-bc08-bed51b573b6c.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793586302232,
+    "image_url": "https://cdn2.suno.ai/image_1704de39-e46d-4564-bc08-bed51b573b6c.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/1704de39-e46d-4564-bc08-bed51b573b6c.mp3",
+    "id": "1704de39-e46d-4564-bc08-bed51b573b6c",
+    "title": "Sound effect only, no music, no voice: calm city street ambience, distant sof...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: calm city street ambience, distant soft traffic hum, a few faraway birds chirping, gentle and quiet, steady, seamless loop"
+   },
+   {
+    "duration": 12.72,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/c247ff3e-8475-401d-a383-1895cf5b10b9.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793586302232,
+    "image_url": "https://cdn2.suno.ai/image_c247ff3e-8475-401d-a383-1895cf5b10b9.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/c247ff3e-8475-401d-a383-1895cf5b10b9.mp3",
+    "id": "c247ff3e-8475-401d-a383-1895cf5b10b9",
+    "title": "Sound effect only, no music, no voice: calm city street ambience, distant sof...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: calm city street ambience, distant soft traffic hum, a few faraway birds chirping, gentle and quiet, steady, seamless loop"
+   }
+  ],
+  "task_id": "fe28b9fc392dacdcef5b10b09daf9600"
+ },
+ "_elapsed": 20.8
+}
