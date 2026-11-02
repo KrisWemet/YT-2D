@@ -7,6 +7,7 @@ import numpy as np, cv2
 from PIL import Image
 
 src, dst = sys.argv[1], sys.argv[2]
+NO_HOLES = "--no-holes" in sys.argv  # keep enclosed background-coloured areas (e.g. light-blue window glass)
 im = np.asarray(Image.open(src).convert("RGB")).astype(np.float32)
 h, w, _ = im.shape
 border = np.concatenate([im[0], im[-1], im[:, 0], im[:, -1]])
@@ -19,7 +20,7 @@ bg = np.isin(lab, list(edge_labels))
 # enclosed holes: near-components whose mean colour is really the background colour
 holes = 0
 for k in range(1, n):
-    if k in edge_labels or stats[k, cv2.CC_STAT_AREA] < 150:
+    if NO_HOLES or k in edge_labels or stats[k, cv2.CC_STAT_AREA] < 150:
         continue
     m = lab == k
     if np.sqrt(((im[m].mean(0) - bgc) ** 2).sum()) < 22:
