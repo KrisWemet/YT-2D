@@ -10,7 +10,9 @@ const times = rest;
 const scale = Number(scaleArg);
 fs.mkdirSync(outDir, {recursive: true});
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts'), outDir: path.resolve('build/bundle'), onProgress: () => {}});
-const browserExecutable = '/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell';
+// Cloud container's preinstalled browser if present; otherwise Remotion uses (and downloads) its own.
+const CONTAINER_CHROME = '/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell';
+const browserExecutable = fs.existsSync(CONTAINER_CHROME) ? CONTAINER_CHROME : null;
 const browser = await openBrowser('chrome', {browserExecutable});
 const composition = await selectComposition({serveUrl, id: compId, puppeteerInstance: browser, browserExecutable});
 for (const ts of times) {
