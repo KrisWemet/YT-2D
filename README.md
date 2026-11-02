@@ -1,5 +1,7 @@
 # YT-2D
 
+![Channel banner: the round-headed scientist next to the slogan "Weird questions. Real science.", with a hurricane and a pigeon on a yellow sunburst](publish/channel-banner.png)
+
 **Cut-out cartoon YouTube Shorts, animated in code.**
 
 YT-2D is a small production line for science Shorts. Each episode takes one surprising question and checks the facts against real research. It turns about 60 spoken words into a 20–25 second vertical cartoon with a voice-over, sound effects, a thumbnail and a title.
@@ -97,16 +99,18 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 ```
 src/
-  Root.tsx        registers the videos and thumbnails (PigeonShort, HurricaneShort, PigeonThumb, HurricaneThumb)
+  Root.tsx        registers the videos, thumbnails and channel art (PigeonShort, HurricaneShort, PigeonThumb, HurricaneThumb, ChannelBanner, ChannelPicture)
   pigeon/         pigeon Short: shots (Street, Lab, Close, CamGuy), pigeon rig and walk, effects, sound mix, beat times
   hurricane/      hurricane Short: one continuous 2.5D shot, sound mix, beat times
   thumbs/         thumbnails, rendered as Remotion stills
+  channel/        channel banner and picture, rendered as Remotion stills
 public/           everything the videos load: cut-out sprites, voice-overs, sound effects, thumbnail font
 images/
   pigeon/         prompts, beat sheet, word timings, raw and keyed pictures, QA sheets, pipeline scripts
   hurricane/      the same for the hurricane Short
 scripts/          QA tools (stills, contact sheets, pop scan, verify) and the README storyboard maker
 thumbnails/       final thumbnails, ready to upload (1080×1920 JPG)
+publish/          what goes on YouTube: upload details, channel banner and picture, channel text
 docs/             storyboard strips used in this README
 ```
 
@@ -119,13 +123,15 @@ npm install
 npm run studio      # Remotion Studio: play and scrub both Shorts in the browser
 ```
 
-Render the Shorts in 4K, and the thumbnails:
+Render the Shorts in 4K, the thumbnails and the channel art:
 
 ```bash
 npx remotion render src/index.ts PigeonShort out/pigeon-head-bob-4K.mp4 --scale=2 --crf=16 --pixel-format=yuv420p
 npx remotion render src/index.ts HurricaneShort out/hurricane-nuke-4K.mp4 --scale=2 --crf=16 --pixel-format=yuv420p
 npx remotion still src/index.ts PigeonThumb out/pigeon-thumbnail.png
 npx remotion still src/index.ts HurricaneThumb out/hurricane-thumbnail.png
+npx remotion still src/index.ts ChannelBanner publish/channel-banner.png
+npx remotion still src/index.ts ChannelPicture publish/channel-picture.png
 ```
 
 Check a render:
