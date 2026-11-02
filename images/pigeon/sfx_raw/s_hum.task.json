@@ -1,0 +1,51 @@
+{
+ "taskId": "bffb5d3556f45a725befc8b563219f68",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: small electric treadmill motor running, steady soft mechanical hum and belt whir, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/a56470ff-1dfa-4026-a65c-7ea770f67e4b.mp3\",\"createTime\":1793586304015,\"duration\":2.76,\"id\":\"a56470ff-1dfa-4026-a65c-7ea770f67e4b\",\"image_url\":\"https://cdn2.suno.ai/image_a56470ff-1dfa-4026-a65c-7ea770f67e4b.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/a56470ff-1dfa-4026-a65c-7ea770f67e4b.mp3\",\"tags\":\"Sound effect only, no music, no voice: small electric treadmill motor running, steady soft mechanical hum and belt whir, seamless loop\",\"title\":\"Sound effect only, no music, no voice: small electric treadmill motor running...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/449c7a59-c3dc-4576-b4e0-9d3cd389d071.mp3\",\"createTime\":1793586304015,\"duration\":2.32,\"id\":\"449c7a59-c3dc-4576-b4e0-9d3cd389d071\",\"image_url\":\"https://cdn2.suno.ai/image_449c7a59-c3dc-4576-b4e0-9d3cd389d071.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/449c7a59-c3dc-4576-b4e0-9d3cd389d071.mp3\",\"tags\":\"Sound effect only, no music, no voice: small electric treadmill motor running, steady soft mechanical hum and belt whir, seamless loop\",\"title\":\"Sound effect only, no music, no voice: small electric treadmill motor running...\"}],\"msg\":\"success\",\"task_id\":\"bffb5d3556f45a725befc8b563219f68\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 21,
+ "completeTime": 1793586304015,
+ "createTime": 1793586282847,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "paramJson": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: small electric treadmill motor running, steady soft mechanical hum and belt whir, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "successFlag": 1,
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 2.76,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/a56470ff-1dfa-4026-a65c-7ea770f67e4b.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793586304015,
+    "image_url": "https://cdn2.suno.ai/image_a56470ff-1dfa-4026-a65c-7ea770f67e4b.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/a56470ff-1dfa-4026-a65c-7ea770f67e4b.mp3",
+    "id": "a56470ff-1dfa-4026-a65c-7ea770f67e4b",
+    "title": "Sound effect only, no music, no voice: small electric treadmill motor running...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: small electric treadmill motor running, steady soft mechanical hum and belt whir, seamless loop"
+   },
+   {
+    "duration": 2.32,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/449c7a59-c3dc-4576-b4e0-9d3cd389d071.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793586304015,
+    "image_url": "https://cdn2.suno.ai/image_449c7a59-c3dc-4576-b4e0-9d3cd389d071.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/449c7a59-c3dc-4576-b4e0-9d3cd389d071.mp3",
+    "id": "449c7a59-c3dc-4576-b4e0-9d3cd389d071",
+    "title": "Sound effect only, no music, no voice: small electric treadmill motor running...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: small electric treadmill motor running, steady soft mechanical hum and belt whir, seamless loop"
+   }
+  ],
+  "task_id": "bffb5d3556f45a725befc8b563219f68"
+ },
+ "_elapsed": 26.1
+}

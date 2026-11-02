@@ -1,0 +1,10 @@
+{"src": "raw/p_hero.png", "raw_size": [2048, 2048], "trim": [238, 284, 1713, 1761], "bg": [253, 243, 175], "ink": [6, 5, 5], "holes": 0}
+{"src": "raw/g_hero.png", "raw_size": [1664, 2512], "trim": [420, 297, 1235, 2211], "bg": [159, 210, 252], "ink": [4, 4, 4], "holes": 1}
+{"src": "raw/g_balance.png", "raw_size": [1664, 2512], "trim": [162, 339, 1533, 2155], "bg": [159, 212, 252], "ink": [4, 5, 5], "holes": 0}
+{"src": "raw/g_hold.png", "raw_size": [1664, 2512], "trim": [400, 295, 1274, 2246], "bg": [160, 212, 252], "ink": [4, 4, 4], "holes": 0}
+{"src": "raw/g_empty.png", "raw_size": [1664, 2512], "trim": [403, 294, 1186, 2245], "bg": [164, 213, 252], "ink": [4, 4, 4], "holes": 0}
+{"src": "raw/g_clip.png", "raw_size": [1664, 2512], "trim": [437, 296, 1273, 2212], "bg": [161, 212, 252], "ink": [4, 4, 4], "holes": 0}
+{"src": "raw/g_camera.png", "raw_size": [1776, 2368], "trim": [336, 283, 1474, 2245], "bg": [158, 211, 252], "ink": [4, 4, 3], "holes": 1}
+{"src": "raw/treadmill.png", "raw_size": [2736, 1536], "trim": [453, 403, 2270, 1097], "bg": [252, 244, 175], "ink": [2, 2, 2], "holes": 0}
+{"src": "raw/street.png", "raw_size": [2512, 1664], "trim": [129, 244, 2388, 1407], "bg": [160, 209, 250], "ink": [4, 4, 3], "holes": 0}
+{"src": "raw/p_close.png", "raw_size": [1776, 2368], "trim": [0, 420, 1692, 2368], "bg": [253, 243, 172], "ink": [1, 1, 0], "holes": 0}
