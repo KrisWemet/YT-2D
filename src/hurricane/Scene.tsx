@@ -13,7 +13,7 @@ const IW = 4.5;
 const YG = 1800; // scientist's feet on the beach (depth 1000)
 const GX = 330;
 const HEADR = 170; // scientist head radius in world px
-const HUR = {x: 780, y: -960, z: 4000, R: 1880, squash: 0.6};
+export const HUR = {x: 780, y: -960, z: 4000, R: 1880, squash: 0.6};
 const HS = HUR.R / H.hurricane.R; // hurricane sprite scale
 
 // camera: [t, x, y, z] keys, eased per segment
@@ -97,7 +97,7 @@ const Guy: React.FC<{t: number; glow: number}> = ({t, glow}) => {
 };
 
 // fuse sparks (world px, around a point)
-const Sparks: React.FC<{x: number; y: number; t: number; s?: number}> = ({x, y, t, s = 1}) => {
+export const Sparks: React.FC<{x: number; y: number; t: number; s?: number}> = ({x, y, t, s = 1}) => {
   const n = 7;
   const items = [];
   for (let i = 0; i < n; i++) {
@@ -186,7 +186,7 @@ const Face: React.FC<{t: number; look: [number, number]}> = ({t, look}) => {
   );
 };
 
-const Hurricane: React.FC<{t: number; glow: number; look: [number, number]}> = ({t, glow, look}) => {
+export const Hurricane: React.FC<{t: number; glow: number; look: [number, number]}> = ({t, glow, look}) => {
   const h = H.hurricane;
   const spin = -14 * t; // counter-clockwise from above
   const breathe = 1 + 0.012 * Math.sin(2 * Math.PI * 0.45 * t) + (t > T.boom && t < T.boom + 0.6 ? 0.05 * Math.exp(-(t - T.boom) * 6) * Math.cos((t - T.boom) * 30) : 0);
