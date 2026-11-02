@@ -1,0 +1,15 @@
+{
+ "taskId": "6e8bea1cd3eeb8faa7ff44956e350910",
+ "costTime": 39,
+ "_elapsed": 40.4,
+ "model": "gpt-image-2-5-flare-image-to-image",
+ "aspect": "1:1",
+ "res": "2K",
+ "refs": [
+  "ref_guy.png"
+ ],
+ "urls": [
+  "https://tempfile.aiquickdraw.com/gpt-image-2-5/1793662545378-hcki7222ny.png"
+ ],
+ "credits": 10.0
+}

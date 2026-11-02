@@ -63,7 +63,34 @@ nuke a hurricane, why don't we nuke hurricanes, hurricane facts, weather facts, 
 
 ---
 
-## Settings for both
+## Short 3: Tickling
+
+**File:** `out/tickle-self-4K.mp4` · **Thumbnail:** `thumbnails/tickle-thumbnail.jpg`
+
+**Title**
+```
+The Robot Experiment That Explains Why You Can't Tickle Yourself
+```
+
+**Description**
+```
+Why can't you tickle yourself? Your brain predicts what your own movements will feel like and turns that feeling down. In a 1999 experiment, people tickled their own palm through a pair of robots. When the robots added a delay of a fifth of a second, it felt about as tickly as a touch they didn't cause.
+
+Sources:
+• Blakemore, Frith & Wolpert 1999, the robot delay experiment: https://doi.org/10.1162/089892999563607
+• Blakemore, Wolpert & Frith 1998, the brain-scan study: https://doi.org/10.1038/2870
+
+#shorts #science #brain #sciencefacts #funfacts
+```
+
+**Tags**
+```
+why can't you tickle yourself, tickle yourself, tickling, brain facts, human body facts, science facts, fun facts, science explained, animated facts, science animation
+```
+
+---
+
+## Settings for all three
 
 - **Audience:** No, it's not made for kids. Marking it "made for kids" turns off comments and personalized ads, which hurts monetization.
 - **Altered or synthetic content:** **No.** It's a cartoon, so nothing could be mistaken for real footage. AI-drawn art and an AI voice in an obviously animated video don't need this label.
