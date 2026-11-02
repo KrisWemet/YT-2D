@@ -7,8 +7,8 @@ import {DashedLine, INK, PauseBadge} from '../pigeon/fx';
 import {H} from '../hurricane/sprites';
 import {HUR, Hurricane, Sparks} from '../hurricane/Scene';
 
-const FONT = 'Luckiest Guy';
-const useFont = () => {
+export const FONT = 'Luckiest Guy';
+export const useFont = () => {
   const [handle] = useState(() => delayRender('thumbnail font'));
   useEffect(() => {
     const f = new FontFace(FONT, `url(${staticFile('fonts/LuckiestGuy-Regular.ttf')})`);

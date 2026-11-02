@@ -6,6 +6,7 @@ import {DUR, FPS} from './pigeon/timing';
 import {HurricaneShort} from './hurricane/Short';
 import {HurricaneThumb, PigeonThumb} from './thumbs/Thumbs';
 import {DUR as HDUR} from './hurricane/timing';
+import {ChannelBanner, ChannelPicture} from './channel/Channel';
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -13,6 +14,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="HurricaneShort" component={HurricaneShort} durationInFrames={Math.round(HDUR * FPS)} fps={FPS} width={1080} height={1920} />
     <Still id="PigeonThumb" component={PigeonThumb} width={1080} height={1920} />
     <Still id="HurricaneThumb" component={HurricaneThumb} width={1080} height={1920} />
+    <Still id="ChannelBanner" component={ChannelBanner} width={2560} height={1440} />
+    <Still id="ChannelPicture" component={ChannelPicture} width={800} height={800} />
     <Composition id="RigTest" component={RigTest} durationInFrames={1} fps={60} width={1080} height={1920} />
   </>
 );
