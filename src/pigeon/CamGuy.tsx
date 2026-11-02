@@ -4,7 +4,7 @@ import {S} from './sprites';
 import {camKeys, clamp} from './lib';
 import {Layer, Pic, Pos} from './world';
 import {Flash} from './fx';
-import {StreetBackdrop, HEADR} from './Street';
+import {StreetBackdrop, HEADR, breath} from './Street';
 import {T} from './timing';
 
 const g = S.g_camera;
@@ -21,7 +21,7 @@ export const CamGuy: React.FC<{t: number}> = ({t}) => {
     <AbsoluteFill>
       <StreetBackdrop cam={cam} blurFar={3} />
       <Layer cam={cam} z={1000}>
-        <Pos x={430 + dx} y={1905} s={sc} rot={rot}>
+        <Pos x={430 + dx} y={1905} s={sc} sy={breath(t, 0.008, 0.55)} sx={2 - breath(t, 0.008, 0.55)} rot={rot}>
           <Pic file={g.file} w={g.w} h={g.h} ax={g.feet[0]} ay={g.feet[1]} />
         </Pos>
       </Layer>

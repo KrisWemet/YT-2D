@@ -125,21 +125,46 @@ export const SightCone: React.FC<{ex: number; ey: number; tx: number; ty: number
 export const Flash: React.FC<{a: number}> = ({a}) => (a > 0.001 ? <AbsoluteFill style={{background: '#ffffff', opacity: a}} /> : null);
 
 /** Bread crumb (world px). */
-export const Crumb: React.FC<{x: number; y: number; s: number; rot?: number; r?: number}> = ({x, y, s, rot = 0, r = 30}) => {
+const Eyes: React.FC<{r: number; gap: number; mode: 'open' | 'worried' | 'squeeze' | 'closed'; look?: [number, number]}> = ({r, gap, mode, look = [0, 0]}) => {
+  const ew = IW * 0.8;
+  if (mode === 'squeeze') {
+    const c = (sx: number) => `M${sx * gap - sx * r * 0.9} ${-r * 0.8}L${sx * gap + sx * r * 0.5} 0L${sx * gap - sx * r * 0.9} ${r * 0.8}`;
+    return <g fill="none" stroke={INK} strokeWidth={ew * 1.2} strokeLinecap="round" strokeLinejoin="round"><path d={c(-1)} /><path d={c(1)} /></g>;
+  }
+  if (mode === 'closed') {
+    return <g fill="none" stroke={INK} strokeWidth={ew} strokeLinecap="round">{[-1, 1].map((sx) => <path key={sx} d={`M${sx * gap - r} 0Q${sx * gap} ${r * 0.7} ${sx * gap + r} 0`} />)}</g>;
+  }
+  return (
+    <g>
+      {[-1, 1].map((sx) => (
+        <g key={sx} transform={`translate(${sx * gap} 0)`}>
+          <ellipse rx={r} ry={r * 1.18} fill="#fff" stroke={INK} strokeWidth={ew} />
+          <circle cx={look[0] * r * 0.45} cy={look[1] * r * 0.45} r={r * 0.52} fill={INK} />
+          <circle cx={look[0] * r * 0.45 + r * 0.18} cy={look[1] * r * 0.45 - r * 0.2} r={r * 0.16} fill="#fff" />
+          {mode === 'worried' && <path d={`M${-r * 1.1} ${-r * 1.75 + sx * r * 0.35}L${r * 1.1} ${-r * 1.75 - sx * r * 0.35}`} stroke={INK} strokeWidth={ew * 1.1} strokeLinecap="round" transform={`scale(${sx} 1)`} />}
+        </g>
+      ))}
+    </g>
+  );
+};
+
+export const Crumb: React.FC<{x: number; y: number; s: number; rot?: number; r?: number; face?: 'worried' | 'squeeze'; look?: [number, number]}> = ({x, y, s, rot = 0, r = 30, face, look}) => {
   if (s <= 0.001) return null;
   const d = `M${-r} ${-r * 0.2}C${-r * 0.9} ${-r * 0.9} ${-r * 0.1} ${-r * 1.05} ${r * 0.35} ${-r * 0.8}C${r * 0.95} ${-r * 0.55} ${r * 1.1} ${r * 0.2} ${r * 0.7} ${r * 0.6}C${r * 0.2} ${r * 0.95} ${-r * 0.8} ${r * 0.8} ${-r} ${-r * 0.2}Z`;
   return svgAt(x, y, r * 3, r * 3, (
     <g transform={`rotate(${rot}) scale(${s})`}>
       <path d={d} fill="#e0a35a" stroke={INK} strokeWidth={IW} strokeLinejoin="round" />
       <path d={d} transform="scale(0.62) translate(-4 -2)" fill="#f7dfaa" />
-      <circle cx={-r * 0.2} cy={-r * 0.15} r={r * 0.08} fill="#d49752" />
-      <circle cx={r * 0.25} cy={r * 0.15} r={r * 0.07} fill="#d49752" />
+      {!face && <circle cx={-r * 0.2} cy={-r * 0.15} r={r * 0.08} fill="#d49752" />}
+      {!face && <circle cx={r * 0.25} cy={r * 0.15} r={r * 0.07} fill="#d49752" />}
+      {face && <g transform={`translate(${-r * 0.08} ${-r * 0.12})`}><Eyes r={r * 0.2} gap={r * 0.3} mode={face} look={look} /></g>}
+      {face === 'worried' && <path d={`M${-r * 0.22} ${r * 0.32}Q${-r * 0.08} ${r * 0.22} ${r * 0.06} ${r * 0.32}`} fill="none" stroke={INK} strokeWidth={IW * 0.8} strokeLinecap="round" />}
     </g>
   ));
 };
 
 /** Framed poster with a slice of bread (world px, top-left at x, y). */
-export const Poster: React.FC<{x: number; y: number; w: number; h: number}> = ({x, y, w, h}) => {
+export const Poster: React.FC<{x: number; y: number; w: number; h: number; blink?: number; look?: number}> = ({x, y, w, h, blink = 0, look = 0}) => {
   const bw = w * 0.56, bh = h * 0.52;
   const bread = `M${-bw / 2} ${bh * 0.5}L${-bw / 2} ${-bh * 0.1}C${-bw * 0.62} ${-bh * 0.55} ${-bw * 0.3} ${-bh * 0.62} ${-bw * 0.12} ${-bh * 0.5}C${-bw * 0.05} ${-bh * 0.62} ${bw * 0.05} ${-bh * 0.62} ${bw * 0.12} ${-bh * 0.5}C${bw * 0.3} ${-bh * 0.62} ${bw * 0.62} ${-bh * 0.55} ${bw / 2} ${-bh * 0.1}L${bw / 2} ${bh * 0.5}Z`;
   return (
@@ -149,7 +174,10 @@ export const Poster: React.FC<{x: number; y: number; w: number; h: number}> = ({
       <g transform={`translate(${w / 2} ${h * 0.52})`}>
         <path d={bread} fill="#c98a45" stroke={INK} strokeWidth={IW} strokeLinejoin="round" />
         <path d={bread} transform="scale(0.78) translate(0 6)" fill="#f8e3b4" />
-        <circle cx={-bw * 0.12} cy={0} r={4} fill="#dcb37a" /><circle cx={bw * 0.1} cy={bh * 0.15} r={4} fill="#dcb37a" /><circle cx={bw * 0.02} cy={-bh * 0.18} r={4} fill="#dcb37a" />
+        <g transform={`translate(0 ${bh * 0.02})`}>
+          <Eyes r={bw * 0.075} gap={bw * 0.16} mode={blink > 0.5 ? 'closed' : 'open'} look={[look * 0.9, 0.1]} />
+        </g>
+        <path d={`M${-bw * 0.1} ${bh * 0.2}Q0 ${bh * 0.3} ${bw * 0.1} ${bh * 0.2}`} fill="none" stroke={INK} strokeWidth={IW * 0.8} strokeLinecap="round" />
       </g>
       <path d={`M${w * 0.3} 0L${w / 2} ${-h * 0.09}L${w * 0.7} 0`} fill="none" stroke={INK} strokeWidth={IW} strokeLinejoin="round" />
       <circle cx={w / 2} cy={-h * 0.09} r={7} fill="#b8b8b8" stroke={INK} strokeWidth={IW * 0.7} />

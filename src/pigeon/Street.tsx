@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Img, staticFile} from 'remotion';
 import {S} from './sprites';
-import {Cam, camFromK, camKeys, clamp, easeInOutCubic, easeOutCubic, inv, key, lerp, pop, spring, wobble} from './lib';
+import {Cam, camFromK, camKeys, clamp, easeInOutCubic, easeOutCubic, inv, key, lerp, pop, spring, wobble, withShake} from './lib';
 import {Layer, Pic, Pos} from './world';
 import {makeWalk, regular, Walk} from './gait';
 import {OX, PigeonRig, Pose} from './Pigeon';
@@ -22,7 +22,7 @@ const YS = 1240; // near sidewalk top (depth 1000)
 export const StreetBackdrop: React.FC<{cam: Cam; blurFar?: number}> = ({cam, blurFar = 0}) => {
   const st = S.street;
   const bw = st.w * BS;
-  const copies = [-2, -1, 0, 1, 2];
+  const copies = [-1, 0, 1];
   return (
     <>
       <AbsoluteFill style={{background: 'linear-gradient(180deg, #8fcfff 0%, #bfe6ff 55%, #e6f6ff 100%)'}} />
@@ -32,20 +32,20 @@ export const StreetBackdrop: React.FC<{cam: Cam; blurFar?: number}> = ({cam, blu
             <Pic file={st.file} w={st.w} h={st.h} ax={st.w / 2} ay={st.base} flip={c % 2 !== 0} />
           </Pos>
         ))}
-        <div style={{position: 'absolute', left: -20000, top: YH - 4, width: 40000, height: 4000, background: '#d6cfc1', borderTop: '7px solid #0b0b0b'}} />
+        <div style={{position: 'absolute', left: -7000, top: YH - 4, width: 14000, height: 4000, background: '#d6cfc1', borderTop: '7px solid #0b0b0b'}} />
       </Layer>
       <Layer cam={cam} z={2000} blur={blurFar * 0.6}>
-        <div style={{position: 'absolute', left: -20000, top: YR, width: 40000, height: 4000, background: '#8f949c', borderTop: '9px solid #0b0b0b'}} />
-        <div style={{position: 'absolute', left: -20000, top: YR + 9, width: 40000, height: 26, background: '#b9b2a6'}} />
-        {Array.from({length: 120}, (_, i) => (
-          <div key={i} style={{position: 'absolute', left: -20000 + i * 340, top: YR + 150, width: 170, height: 18, borderRadius: 9, background: '#f4f1e8'}} />
+        <div style={{position: 'absolute', left: -7000, top: YR, width: 14000, height: 4000, background: '#8f949c', borderTop: '9px solid #0b0b0b'}} />
+        <div style={{position: 'absolute', left: -7000, top: YR + 9, width: 14000, height: 26, background: '#b9b2a6'}} />
+        {Array.from({length: 42}, (_, i) => (
+          <div key={i} style={{position: 'absolute', left: -7000 + i * 340, top: YR + 150, width: 170, height: 18, borderRadius: 9, background: '#f4f1e8'}} />
         ))}
       </Layer>
       <Layer cam={cam} z={1000}>
-        <div style={{position: 'absolute', left: -20000, top: YS, width: 40000, height: 4000, background: PAVE, borderTop: '6px solid #0b0b0b'}} />
-        <div style={{position: 'absolute', left: -20000, top: YS + 6, width: 40000, height: 22, background: '#cfc7b9'}} />
-        {Array.from({length: 140}, (_, i) => (
-          <div key={i} style={{position: 'absolute', left: -20000 + i * 330, top: YS + 28, width: 6, height: 1400, background: '#cfc6b6', transform: 'skewX(-14deg)', transformOrigin: '0 0'}} />
+        <div style={{position: 'absolute', left: -7000, top: YS, width: 14000, height: 4000, background: PAVE, borderTop: '6px solid #0b0b0b'}} />
+        <div style={{position: 'absolute', left: -7000, top: YS + 6, width: 14000, height: 22, background: '#cfc7b9'}} />
+        {Array.from({length: 44}, (_, i) => (
+          <div key={i} style={{position: 'absolute', left: -7000 + i * 330, top: YS + 28, width: 6, height: 1400, background: '#cfc6b6', transform: 'skewX(-14deg)', transformOrigin: '0 0'}} />
         ))}
       </Layer>
     </>
@@ -95,11 +95,13 @@ export const blinkAt = (t: number, times: number[]) => {
 
 // ---------- scientist sprite ----------
 type GName = 'g_hero' | 'g_balance' | 'g_hold' | 'g_empty' | 'g_clip' | 'g_camera';
-export const Guy: React.FC<{name: GName; x: number; y: number; sx?: number; sy?: number; rot?: number; k?: number}> = ({name, x, y, sx = 1, sy = 1, rot = 0, k = 1}) => {
+export const breath = (t: number, amp = 0.009, hz = 0.6, ph = 0) => 1 + amp * Math.sin(2 * Math.PI * hz * t + ph);
+export const Guy: React.FC<{name: GName; x: number; y: number; sx?: number; sy?: number; rot?: number; k?: number; t?: number}> = ({name, x, y, sx = 1, sy = 1, rot = 0, k = 1, t}) => {
   const g = S[name];
   const sc = (HEADR / g.head[2]) * k;
+  const b = t === undefined ? 1 : breath(t);
   return (
-    <Pos x={x} y={y} s={sc} sx={sx} sy={sy} rot={rot}>
+    <Pos x={x} y={y} s={sc} sx={sx * (2 - b)} sy={sy * b} rot={rot}>
       <Pic file={g.file} w={g.w} h={g.h} ax={g.feet[0]} ay={g.feet[1]} />
     </Pos>
   );
@@ -133,13 +135,13 @@ const camA = (t: number): Cam => {
     [2.72, xStop, CY0, K0],
     [3.34, cx, 1165, 1.5],
     [6.32, cx + 6, 1165, 1.5],
-    [7.5, guyMid, 690, 0.72],
-    [8.94, guyMid + 25, 690, 0.745, (u) => u],
+    [7.5, guyMid, 640, 0.67],
+    [8.94, guyMid + 25, 640, 0.69, (u) => u],
   ]);
 };
 
 export const StreetA: React.FC<{t: number}> = ({t}) => {
-  const cam = camA(t);
+  const cam = withShake(camA(t), t);
   const w = WALK_A;
   const hx = eyeX(XA, w, t);
   // dashed guide lines: one per hold
@@ -168,7 +170,7 @@ export const StreetA: React.FC<{t: number}> = ({t}) => {
     <AbsoluteFill>
       <StreetBackdrop cam={cam} blurFar={t > 2.9 && t < 6.6 ? 2.6 * clamp(Math.min(t - 2.9, 6.6 - t) / 0.4) : 0} />
       <Layer cam={cam} z={1000}>
-        {g && <Guy name={g.name} x={GUY_X} y={YG} sx={g.sx} sy={g.sy} rot={g.rot} />}
+        {g && <Guy name={g.name} x={GUY_X} y={YG} sx={g.sx} sy={g.sy} rot={g.rot} t={t} />}
         {g && (
           <SweatDrop x={GUY_X - 170 + 30 * slide} y={YG - 1420 + 120 * slide} s={sweat} r={28} rot={-14} />
         )}
@@ -240,7 +242,7 @@ const beakWorld = (t: number) => {
 export const StreetC: React.FC<{t: number}> = ({t}) => {
   const w = WALK_C;
   const bodyX = XC + PS * w.body(t);
-  const cam = camFromK(bodyX - 58, CY0, K0);
+  const cam = withShake(camFromK(bodyX - 58, CY0, K0), t);
   const c = catchExtra(t);
   const spot = t > T.spot ? spring(t - T.spot, 3.5, 0.32) : 0;
   const unspot = clamp((t - 24.25) / 0.3);
@@ -271,7 +273,7 @@ export const StreetC: React.FC<{t: number}> = ({t}) => {
         {crumbVisible && fall > 0.12 && (
           <div style={{position: 'absolute', left: cx - 6, top: cy - 70 - 160 * fall, width: 12, height: 50 + 160 * fall, borderRadius: 6, background: 'linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,0.85))'}} />
         )}
-        {crumbVisible && <Crumb x={cx} y={cy} s={1} rot={260 * (t - t0)} r={46} />}
+        {crumbVisible && <Crumb x={cx} y={cy} s={1} rot={22 * Math.sin(9 * (t - t0))} r={50} face={tc - t < 0.16 ? 'squeeze' : 'worried'} look={[0.4, 0.5]} />}
       </Layer>
     </AbsoluteFill>
   );

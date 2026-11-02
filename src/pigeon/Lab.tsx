@@ -1,12 +1,12 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {S} from './sprites';
-import {Cam, camKeys, clamp, easeInCubic, easeInOutCubic, inv, lerp, pop, spring} from './lib';
+import {Cam, camKeys, clamp, easeInCubic, easeInOutCubic, inv, lerp, pop, spring, withShake} from './lib';
 import {Layer, Pic, Pos, toScreen} from './world';
 import {makeWalk, STEP} from './gait';
 import {OX, Pose} from './Pigeon';
 import {DashedLine, Poster, SightCone} from './fx';
-import {Guy, HEADR, PigeonAt, PS, blinkAt, walkPose} from './Street';
+import {Guy, HEADR, PigeonAt, blinkAt, breath, walkPose} from './Street';
 import {T} from './timing';
 
 const YF = 1700; // floor (depth 1000)
@@ -70,7 +70,7 @@ const camLab = (t: number): Cam =>
 const POSTER = {x: LAND.x + 500, y: BELT_Y - 700, w: 280, h: 350}; // on the wall (depth 1600)
 
 export const Lab: React.FC<{t: number}> = ({t}) => {
-  const cam = camLab(t);
+  const cam = withShake(camLab(t), t);
   // ----- scientist pose
   let gName: 'g_hold' | 'g_empty' | 'g_clip' = 'g_hold';
   let sy = 1;
@@ -98,7 +98,7 @@ export const Lab: React.FC<{t: number}> = ({t}) => {
   const sqx = lerp(SQX0, 1, sq);
   const sqy = lerp(SQY0, 1, sq);
   if (t < HOP0) {
-    pose = {...dangle, rot: LEAN, look: [10, 2], sx: sqx, sy: sqy};
+    pose = {...dangle, rot: LEAN, look: [10, 2], sx: sqx, sy: sqy * breath(t, 0.008, 0.7)};
   } else if (t < HOP1) {
     const u = (t - HOP0) / (HOP1 - HOP0);
     px = lerp(HELD.x, LAND.x, easeInOutCubic(u));
@@ -118,7 +118,7 @@ export const Lab: React.FC<{t: number}> = ({t}) => {
     const land = t - HOP1;
     const squash = land < 0.6 ? 1 - 0.08 * Math.exp(-land * 7) * Math.cos(land * 22) : 1;
     if (t < BELT_ON + 0.08) {
-      pose = {near: {x: 50}, far: {x: -50}, sy: squash, sx: 2 - squash, look: [8, 0], blink: blinkAt(t, [10.55])};
+      pose = {near: {x: 50}, far: {x: -50}, sy: squash * breath(t, 0.008, 0.7), sx: 2 - squash, look: [lerp(8, -10, clamp((t - 10.45) / 0.2)), 0], blink: blinkAt(t, [10.55])};
     } else {
       pose = walkPose(TW, t, {headDx: 0, look: [8, 0], blink: blinkAt(t, [12.05, 14.2, 15.6])});
       // ease the first step in from the standing pose
@@ -144,13 +144,13 @@ export const Lab: React.FC<{t: number}> = ({t}) => {
     <AbsoluteFill>
       <AbsoluteFill style={{background: '#cfe8dd'}} />
       <Layer cam={cam} z={1600}>
-        <div style={{position: 'absolute', left: -20000, top: YF - 900, width: 40000, height: 6000, background: '#bfded2', borderTop: '6px solid #a7cbbd'}} />
-        <div style={{position: 'absolute', left: -20000, top: YF - 300, width: 40000, height: 6000, background: '#a9c9bc', borderTop: '7px solid #0b0b0b'}} />
-        <Poster x={POSTER.x} y={POSTER.y} w={POSTER.w} h={POSTER.h} />
+        <div style={{position: 'absolute', left: -7000, top: YF - 900, width: 14000, height: 6000, background: '#bfded2', borderTop: '6px solid #a7cbbd'}} />
+        <div style={{position: 'absolute', left: -7000, top: YF - 300, width: 14000, height: 6000, background: '#a9c9bc', borderTop: '7px solid #0b0b0b'}} />
+        <Poster x={POSTER.x} y={POSTER.y} w={POSTER.w} h={POSTER.h} blink={blinkAt(t, [11.1, 15.25])} look={t > T.view ? -1 : 0} />
       </Layer>
       <Layer cam={cam} z={1000}>
-        <div style={{position: 'absolute', left: -20000, top: YF - 90, width: 40000, height: 6000, background: '#e9e6df', borderTop: '6px solid #0b0b0b'}} />
-        <div style={{position: 'absolute', left: -20000, top: YF + 120, width: 40000, height: 6000, background: '#e1ddd4'}} />
+        <div style={{position: 'absolute', left: -7000, top: YF - 90, width: 14000, height: 6000, background: '#e9e6df', borderTop: '6px solid #0b0b0b'}} />
+        <div style={{position: 'absolute', left: -7000, top: YF + 120, width: 14000, height: 6000, background: '#e1ddd4'}} />
         {/* treadmill + moving belt slats */}
         <Pos x={TX} y={YF} s={TS}>
           <Pic file={tm.file} w={tm.w} h={tm.h} ax={0} ay={TFOOT} />
@@ -165,7 +165,7 @@ export const Lab: React.FC<{t: number}> = ({t}) => {
         </Pos>
 
         <DashedLine x={LAND.x + PSL * (1462 - OX) + 14} y0={LAND.y - PSL * S.rig.ground - 90} y1={LAND.y + 30} s={pop(t, T.bobbing + 0.04, 99, 0.3)} />
-        {t < 13.4 && <Guy name={gName} x={GX - exitX} y={YF - exitY} sy={sy} sx={2 - sy} rot={rot - 6 * exitU} />}
+        {t < 13.4 && <Guy name={gName} x={GX - exitX} y={YF - exitY} sy={sy} sx={2 - sy} rot={rot - 6 * exitU} t={t} />}
         {t >= T.put && <PigeonAt x={px} y={py} s={PSL} pose={pose} id="pl" shadow={t >= HOP1 - 0.05} />}
       </Layer>
       <SightCone ex={eS.x} ey={eS.y} tx={pS.x} ty={pS.y} th={POSTER.h * pS.k * 0.8 * pulse} a={coneA} />

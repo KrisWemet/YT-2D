@@ -106,3 +106,18 @@ export const shake = (t: number, amp: number) => ({
   x: amp * (0.6 * Math.sin(2 * Math.PI * 13.3 * t) + 0.4 * Math.sin(2 * Math.PI * 7.1 * t + 1.3)),
   y: amp * (0.6 * Math.sin(2 * Math.PI * 11.7 * t + 0.7) + 0.4 * Math.sin(2 * Math.PI * 5.3 * t + 2.1)),
 });
+
+/** Gentle impact shakes (screen px), added to the camera so no frame edge shows. */
+export const SHAKES: Array<[number, number, number]> = [ // at, amplitude px, decay s
+  [2.28, 7, 0.12], // X stamp
+  [10.3, 6, 0.1], // pigeon lands on the treadmill
+  [24.02, 3.5, 0.08], // crumb snapped
+];
+export const withShake = (cam: Cam, t: number): Cam => {
+  let a = 0;
+  for (const [at, amp, tau] of SHAKES) if (t >= at) a += amp * Math.exp(-(t - at) / tau);
+  if (a < 0.05) return cam;
+  const s = shake(t, a);
+  const k = 1000 / (1000 - cam.z);
+  return {...cam, x: cam.x + s.x / k, y: cam.y + s.y / k};
+};

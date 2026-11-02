@@ -34,7 +34,7 @@ export const Close: React.FC<{t: number}> = ({t}) => {
     <AbsoluteFill>
       <AbsoluteFill style={{background: '#cfe8dd'}} />
       <Layer cam={cam} z={1600} blur={9}>
-        <div style={{position: 'absolute', left: -20000, top: 1500, width: 40000, height: 6000, background: '#bfded2'}} />
+        <div style={{position: 'absolute', left: -7000, top: 1500, width: 14000, height: 6000, background: '#bfded2'}} />
         <Poster x={1180} y={180} w={420} h={530} />
       </Layer>
       <Layer cam={cam} z={1000}>
