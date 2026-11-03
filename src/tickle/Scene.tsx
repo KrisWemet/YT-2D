@@ -29,21 +29,19 @@ const BS = 300 / K.brain.w; // brain sprite scale
 
 // ---------------------------------------------------------------- camera [t, x, y, k]
 const CAM: Array<[number, number, number, number]> = [
-  [0, 390, 1150, 1.25],
-  [2.25, 392, 1148, 1.27],
-  [3.1, 552, 790, 1.4],
-  [8.1, 556, 782, 1.43],
-  [9.3, 640, 1170, 1.02],
-  [12.2, 650, 1160, 1.05],
-  [14.3, 640, 1060, 1.42],
-  [15.35, 640, 1060, 1.42],
-  [15.75, 620, 1110, 1.2],
-  [18.3, 600, 1090, 1.22],
-  [18.95, 552, 790, 1.4],
-  [20.05, 554, 786, 1.42],
-  [20.85, 390, 1150, 1.25],
+  [0, 630, 1110, 1.18], // frame 0: the payoff (robot tickling, laughing, meter maxed)
+  [3.2, 632, 1108, 1.19],
+  [3.85, 552, 790, 1.4], // the explanation: self-tickle and the brain bubble
+  [8.6, 556, 782, 1.43],
+  [9.5, 640, 1170, 1.02], // the experiment: robot rolls in
+  [12.3, 650, 1160, 1.05],
+  [14.0, 640, 1080, 1.25],
+  [14.85, 620, 870, 1.2], // the prediction is off: bubble back
+  [16.5, 620, 860, 1.2],
+  [17.1, 630, 1110, 1.18], // back to the frame-0 framing (loop)
+  [DUR, 630, 1110, 1.18],
 ];
-const IMPACTS: Array<[number, number, number]> = [[T.down, 6, 0.1], [9.5, 6, 0.1], [T.tickly, 12, 0.18], [T.cant, 5, 0.1]];
+const IMPACTS: Array<[number, number, number]> = [[T.down, 6, 0.1], [T.experiment + 0.6, 6, 0.1], [T.tickly, 12, 0.18], [T.off, 5, 0.1]];
 const camAt = (t: number): Cam => {
   const c = camKeys(t, CAM);
   let a = 0;
@@ -56,7 +54,7 @@ const camAt = (t: number): Cam => {
 
 // ---------------------------------------------------------------- scientist
 const breath = (t: number) => 1 + 0.009 * Math.sin(2 * Math.PI * 0.6 * t);
-const SWAPS: Array<[number, GName]> = [[0, 'g_self'], [8.95, 'g_palm'], [T.tickly, 'g_laugh'], [17.55, 'g_palm'], [20.12, 'g_self']];
+const SWAPS: Array<[number, GName]> = [[0, 'g_laugh'], [T.your, 'g_self'], [T.experiment, 'g_palm'], [T.tickly, 'g_laugh']];
 const guyState = (t: number) => {
   let i = 0;
   while (i + 1 < SWAPS.length && t >= SWAPS[i + 1][0]) i++;
@@ -67,9 +65,8 @@ const guyState = (t: number) => {
   else if (i > 0) sy = 1 + 0.06 * (1 - spring(t - t0, 3.2, 0.3)); // stretch out of it
   let rot = 0;
   if (name === 'g_laugh') {
-    const calm = 1 - clamp((t - 16.9) / 0.6) * 0.6;
-    sy *= 1 + 0.035 * calm * Math.abs(Math.sin(2 * Math.PI * 2.3 * (t - t0)));
-    rot = 2.2 * calm * Math.sin(2 * Math.PI * 1.15 * (t - t0));
+    sy *= 1 + 0.035 * Math.abs(Math.sin((2 * Math.PI * 22 * t) / DUR));
+    rot = 2.2 * Math.sin((2 * Math.PI * 20 * t) / DUR);
   }
   if (name === 'g_self') rot = 0.6 * Math.sin(2 * Math.PI * 0.5 * t);
   return {name, sy: sy * breath(t), rot};
@@ -85,24 +82,24 @@ const Guy: React.FC<{t: number}> = ({t}) => {
 };
 
 // ---------------------------------------------------------------- robot
+const ROBOT_OUT = T.your + 0.57;
 const robotX = (t: number) => {
-  if (t < 8.85 || t > 19.6) return null;
-  const inX = 760 * (1 - easeOutBack(clamp((t - 8.85) / 0.6), 1.6));
-  const outX = 900 * easeInCubic(clamp((t - 18.55) / 0.7));
-  return RX + inX + outX;
+  if (t < ROBOT_OUT) return RX + 900 * easeInCubic(clamp((t - T.your) / 0.55));
+  if (t < T.experiment) return null;
+  return RX + 760 * (1 - easeOutBack(clamp((t - T.experiment) / 0.6), 1.6));
 };
-/** Tickle motion: the arm sways with the joystick, 0.2 s late from "waited" on. */
-const DELAY_FROM = T.waited;
-const stick = (t: number) => (t > T.people - 0.1 && t < 17.2 ? Math.sin(2 * Math.PI * 2.6 * t) : 0);
-const robotSway = (t: number) => stick(t >= DELAY_FROM ? t - 0.2 : t);
+/** Tickle motion: the arm sways with the joystick; 0.2 s late in the hook and from "waited" on. */
+const stick = (t: number) => Math.sin(2 * Math.PI * 2.6 * t);
+const robotSway = (t: number) => (robotX(t) === null ? 0 : stick(t < ROBOT_OUT || t >= T.waited ? t - 0.2 : t));
 const Robot: React.FC<{t: number}> = ({t}) => {
   const x = robotX(t);
   if (x === null) return null;
   const r = K.robot;
-  const roll = t < 9.6 ? 4 * Math.sin((t - 8.85) * 18) * Math.exp(-(t - 8.85) * 5) : 0;
-  const blink = (t > 11.2 && t < 11.32) || (t > 16.6 && t < 16.72);
+  const roll = t > T.experiment && t < T.experiment + 0.8 ? 4 * Math.sin((t - T.experiment) * 18) * Math.exp(-(t - T.experiment) * 5) : 0;
+  const blink = (t > T.robot1 && t < T.robot1 + 0.12) || (t > T.robot2 && t < T.robot2 + 0.12);
+  const hop = 0.07 * Math.sin(Math.PI * inv(T.robot1 - 0.05, T.robot1 + 0.45, t)); // "You just need a robot"
   return (
-    <Pos x={x} y={YG} s={SR} rot={1.3 * robotSway(t) + roll}>
+    <Pos x={x} y={YG} s={SR} sx={1 - hop / 2} sy={1 + hop} rot={1.3 * robotSway(t) + roll}>
       <Pic file={r.file} w={r.w} h={r.h} ax={r.base[0]} ay={r.base[1]} />
       {/* eyes: glow, and blink */}
       {r.eyes.map(([ex, ey, er], i) => (
@@ -229,11 +226,12 @@ const Stopwatch: React.FC<{x: number; y: number; s: number; fill: number; t: num
 // ---------------------------------------------------------------- tickle meter (screen px)
 const meterAt = (t: number) => {
   const jit = 0.02 * Math.sin(t * 23) * Math.sin(t * 7.3);
-  if (t < 9.6) return key(t, [[0, 0.24], [T.turns, 0.24], [T.down + 0.2, 0.05, easeInOutCubic], [9.6, 0.06]]) + jit;
-  if (t < T.fifth) return 0.07 + jit;
-  if (t < T.tickly) return key(t, [[T.fifth, 0.07], [T.l5End, 0.3], [T.tickly - 0.05, 0.34]]) + jit;
-  if (t < 19.9) return 0.34 + (0.52 + jit) * spring(t - T.tickly, 1.8, 0.45) * (1 - clamp((t - 18.6) / 1.2) * 0.25);
-  return lerp(0.73, 0.24, easeInOutCubic(clamp((t - 19.9) / (DUR - 0.15 - 19.9))));
+  const HIGH = 0.86;
+  if (t < T.your) return HIGH + jit;
+  if (t < 9.6) return key(t, [[T.your, HIGH], [T.your + 0.5, 0.26, easeInOutCubic], [T.turns, 0.26], [T.down + 0.2, 0.05, easeInOutCubic], [9.6, 0.06]]) + jit;
+  if (t < T.fifth2) return 0.07 + jit;
+  if (t < T.tickly) return key(t, [[T.fifth2, 0.07], [T.l5End, 0.22], [T.off + 0.2, 0.36], [T.tickly - 0.05, 0.38]]) + jit;
+  return 0.38 + (HIGH - 0.38) * spring(t - T.tickly, 1.8, 0.45) + jit;
 };
 const Face: React.FC<{x: number; y: number; laugh: boolean}> = ({x, y, laugh}) => (
   <svg width={10} height={10} style={{position: 'absolute', left: x, top: y, overflow: 'visible'}}>
@@ -257,7 +255,7 @@ const Meter: React.FC<{t: number}> = ({t}) => {
   const x0 = 170, x1 = 910, y = 230, h = 58;
   const W = x1 - x0;
   const other = 0.86; // "someone else" mark
-  const mark = pop(t, T.someone - 0.12, T.l6End + 0.6, 0.3);
+  const mark = t < T.your + 0.3 ? pop(t, -1, T.your, 0.3) : pop(t, T.someone - 0.12, 99, 0.3);
   const fillCol = v > 0.6 ? '#ff6a4a' : v > 0.3 ? '#ffb83f' : '#7ed37a';
   return (
     <>
@@ -318,7 +316,7 @@ export const TickleScene: React.FC<{t: number}> = ({t}) => {
   const kk = 1000 / (1000 - cam.z);
   const g = guyState(t);
   // brain bubble: lines 2-3, and again at the end
-  const bubble = Math.max(pop(t, T.brain - 0.12, 8.55, 0.32), pop(t, 18.62, 20.02, 0.32));
+  const bubble = Math.max(pop(t, T.brain - 0.12, T.but, 0.32), pop(t, T.prediction - 0.25, 16.45, 0.32));
   const feather = g.name === 'g_self' ? ARMPIT : PALM;
   const eyeFrom = {x: BB.x + 30, y: BB.y - 20};
   let look: [number, number] = [0.3, 0.2];
@@ -326,28 +324,29 @@ export const TickleScene: React.FC<{t: number}> = ({t}) => {
     const dx = p.x - eyeFrom.x, dy = p.y - eyeFrom.y, L = Math.hypot(dx, dy) || 1;
     return [dx / L, dy / L];
   };
-  if (t > T.sees - 0.1 && t < 8.6) look = toward(feather);
+  if (t > T.predicts - 0.1 && t < T.but) look = toward(feather);
   if (t > T.turns - 0.15 && t < T.down + 0.5) look = toward({x: BB.x + 260, y: BB.y + 260});
-  const wide = t > 18.6 ? clamp((t - (T.cant - 0.05)) / 0.12) : pop(t, T.sees - 0.05, T.coming + 0.3, 0.2) * 0.6;
-  const lid = t > T.down + 0.1 && t < 8.6 ? 0.35 : 0; // smug "got it"
-  const dizzy = t > T.yourBrain - 0.3 && t < 20.05 ? clamp((t - (T.yourBrain - 0.3)) / 0.3) : 0;
+  const wide = t > 14 ? clamp((t - (T.off - 0.05)) / 0.12) : pop(t, T.predicts - 0.05, T.predicts + 0.7, 0.2) * 0.6;
+  const lid = t > T.down + 0.1 && t < T.but ? 0.35 : 0; // smug "got it"
+  const dizzy = t > T.prediction - 0.2 && t < 16.45 ? clamp((t - (T.prediction - 0.2)) / 0.3) : 0; // "the prediction was off"
   const tilt = dizzy * 8 * Math.sin(t * 6);
-  const cone = t > T.sees && t < 8.5 ? clamp((t - T.sees) / 0.25) * (1 - clamp((t - (T.turns - 0.2)) / 0.2)) : 0;
+  const cone = t > T.predicts && t < T.turns ? clamp((t - T.predicts) / 0.25) * (1 - clamp((t - (T.turns - 0.2)) / 0.2)) : 0;
   // knob the brain turns down
-  const knobS = pop(t, T.turns - 0.25, 8.4, 0.28);
+  const knobS = pop(t, T.turns - 0.25, T.but - 0.2, 0.28);
   const knobAng = key(t, [[T.turns, 110], [T.down + 0.15, -110, easeInOutCubic]]);
-  // "?" on "yourself?" and at the end
-  const q1 = pop(t, T.yourself, 2.05, 0.3);
-  const q2 = pop(t, T.cant, 20.0, 0.3);
+  // "?" when the prediction is off
+  const q1 = 0;
+  const q2 = pop(t, T.off, 16.45, 0.3);
   // tickle marks: self (barely), robot in sync (barely), robot delayed (lots)
   const selfMarks = g.name === 'g_self' ? 0.55 : 0;
-  const robotMarks = robotX(t) !== null && t > T.people - 0.1 && t < 17.2 ? (t > T.tickly - 0.1 ? 1 : 0.55) : 0;
-  const stickMarks = robotX(t) !== null && t > T.people - 0.1 && t < 15.3 ? 0.8 : 0;
+  const robotOn = robotX(t) !== null && (t < T.your || t > T.people - 0.1);
+  const robotMarks = robotOn ? (g.name === 'g_laugh' ? 1 : 0.55) : 0;
+  const stickMarks = g.name === 'g_palm' && t > T.people - 0.1 ? 0.8 : 0;
   // stopwatch: pops on "waited", sweeps one fifth on "a fifth of a second"
-  const swS = pop(t, T.waited - 0.15, 15.2, 0.3);
-  const swFill = 0.2 * easeInOutCubic(clamp((t - (T.fifth - 0.2)) / 0.75));
+  const swS = Math.max(pop(t, T.fifth1 - 0.2, T.your, 0.28), pop(t, T.waited - 0.15, 16.6, 0.3));
+  const swFill = t < 6 ? 0.2 * easeInOutCubic(clamp((t - (T.fifth1 - 0.1)) / 0.6)) : 0.2 * easeInOutCubic(clamp((t - (T.fifth2 - 0.2)) / 0.75));
   // laugh lines around the head while laughing
-  const laugh = g.name === 'g_laugh' ? clamp((t - T.tickly) / 0.15) * (1 - clamp((t - 17.3) / 0.25)) : 0;
+  const laugh = g.name === 'g_laugh' ? (t < T.your ? 1 : clamp((t - T.tickly) / 0.15)) : 0;
   const lh = at('g_laugh', K.g_laugh.head[0], K.g_laugh.head[1]);
   const wallBlur = Math.max(0, (kk - 1.05) * 6);
   return (

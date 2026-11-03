@@ -13,7 +13,7 @@ export const TickleShort: React.FC = () => {
     <AbsoluteFill style={{background: '#000', overflow: 'hidden'}}>
       <TickleScene t={t} />
       <Sequence from={Math.round(VO_AT * FPS)} layout="none">
-        <Audio src={staticFile('tickle/vo/take1.mp3')} />
+        <Audio src={staticFile('tickle/vo/take2.mp3')} />
       </Sequence>
       <TickleSfx />
     </AbsoluteFill>

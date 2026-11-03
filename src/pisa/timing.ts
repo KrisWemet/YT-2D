@@ -1,18 +1,19 @@
 // Beat times in composition seconds (voice at VO_AT = 0.1 s). Word times from faster-whisper (images/pisa/words.json) + 0.1.
+// Take 2 (hook re-cut): opens mid-earthquake with the result, opens a loop ("the same thing that made it lean"), closes it last.
 export const FPS = 60;
 export const VO_AT = 0.1;
-export const DUR = 22.2;
+export const DUR = 22.8;
 export const T = {
-  // "The soft ground that makes the Leaning Tower of Pisa lean also helps keep it standing."
-  soft: 0.28, ground: 0.58, leaning: 1.62, pisa: 2.58, lean: 2.76, also: 3.7, helps: 4.02, keep: 4.28, standing: 4.62, l1End: 5.04,
-  // "It's survived at least four strong earthquakes since twelve-eighty."
-  survived: 6.04, four: 6.66, strong: 7.08, earthquakes: 7.54, since: 7.94, y1280: 8.36, l2End: 8.84,
-  // "Engineers found that a tall, stiff tower on soft soil"
-  engineers: 9.76, tall: 10.54, stiff: 10.96, soft2: 11.88, soil2: 12.14,
-  // "sways to a different rhythm than the ground,"
-  sways: 12.5, different: 13.48, rhythm: 13.72, ground2: 14.38, l4a: 14.68,
-  // "so the shaking doesn't build up."
-  so: 15.12, shaking: 15.64, doesnt: 15.94, build: 16.4, l4End: 16.92,
-  // "Basically, the same soil that tilted it is what protects it."
-  basically: 17.6, same: 18.54, soil3: 18.76, tilted: 19.28, protects: 20.56, l5End: 21.14,
+  // "The Leaning Tower of Pisa has survived at least four strong earthquakes without damage."
+  pisa: 0.9, survived: 1.36, four: 1.98, strong: 2.44, earthquakes: 3.0, without: 3.46, damage: 3.82, l1End: 4.28,
+  // "And what's protecting it is the same thing that made it lean."
+  and: 4.7, protecting: 4.9, same: 5.98, thing: 6.24, made: 6.7, lean: 7.12, l2End: 7.34,
+  // "The ground under it is soft."
+  theGround: 8.12, ground: 8.22, soft1: 8.98, l3End: 9.38,
+  // "A tall, stiff tower on soft soil sways to a different rhythm than the shaking ground."
+  tall: 10.22, stiff: 10.62, soft2: 11.48, soil2: 11.74, sways: 12.1, different: 13.42, rhythm: 13.68, shaking1: 14.24, l4a: 14.84,
+  // "So the shaking doesn't build up."
+  so: 15.48, shaking2: 15.74, doesnt: 15.98, build: 16.4, l4End: 16.88,
+  // "Basically, the soil that tilted it is the soil that saves it."
+  basically: 17.62, soil3: 18.56, tilted: 19.02, soil4: 20.4, saves: 21.26, l5End: 21.8,
 } as const;

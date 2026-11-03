@@ -40,31 +40,36 @@ const GX = (() => {
 
 // ---------------------------------------------------------------- camera [t, x, y, k]
 const CAM: Array<[number, number, number, number]> = [
-  [0, 600, 960, 1.18],
-  [3.0, 602, 962, 1.2],
-  [5.3, 604, 964, 1.2],
-  [6.15, 500, 930, 1.1],
-  [9.5, 500, 930, 1.1],
-  [10.3, 520, 1010, 1.12],
-  [12.3, 520, 1010, 1.12],
-  [13.2, 500, 940, 1.1],
-  [17.0, 500, 940, 1.1],
-  [18.4, 600, 960, 1.18],
-  [DUR, 600, 960, 1.18],
+  [0, 500, 930, 1.1], // frame 0: mid-earthquake, room on the left for the quake tally
+  [4.3, 502, 932, 1.1],
+  [5.2, 565, 965, 1.18], // "what's protecting it": he props it up
+  [7.4, 568, 968, 1.2],
+  [8.3, 520, 1080, 1.12], // "the ground under it": tilt down to the soil
+  [9.7, 520, 1080, 1.12],
+  [10.4, 520, 1010, 1.12],
+  [11.9, 520, 1010, 1.12],
+  [12.8, 500, 940, 1.1], // the demo shaking, metronomes, ghost tower
+  [16.95, 500, 940, 1.1],
+  [18.2, 560, 960, 1.16],
+  [21.1, 560, 960, 1.16],
+  [22.1, 500, 930, 1.1], // back to the frame-0 framing as the shaking starts again (loop)
+  [DUR, 500, 930, 1.1],
 ];
 
 // ---------------------------------------------------------------- earthquakes
 const env = (t: number, a: number, b: number, up: number, down: number) =>
   t < a ? 0 : t < a + up ? (t - a) / up : t < b ? 1 : Math.max(0, 1 - (t - b) / down);
 const BADGES = [T.four, T.four + 0.22, T.four + 0.44, T.four + 0.66];
-const quake = (t: number) => Math.max(env(t, T.survived - 0.05, 8.75, 0.3, 0.5), 0.6 * env(t, T.sways - 0.1, 16.95, 0.35, 0.4));
+// frame 0 is mid-quake; the shaking returns on "saves it" so the end runs back into frame 0
+const quake = (t: number) => Math.max(t < 4.2 ? 1 : Math.max(0, 1 - (t - 4.2) / 0.6), 0.6 * env(t, T.sways - 0.1, 16.95, 0.35, 0.4), env(t, T.saves - 0.05, 99, 0.5, 1));
+const SWAY_F = 14 / DUR; // whole cycles over the Short, so the loop seam is smooth
 const groundShift = (t: number) => {
   const q = quake(t);
   return {x: q * (12 * Math.sin(TAU * 7.3 * t) + 6 * Math.sin(TAU * 11.7 * t + 1.1)), y: q * 3 * Math.sin(TAU * 9.1 * t)};
 };
 // the tower rides the shaking: a slow, small sway (different rhythm)
-const towerSway = (t: number) => quake(t) * 1.3 * Math.sin(TAU * 0.6 * (t - T.survived));
-const towerExtra = (t: number) => 1.1 * Math.sin(Math.PI * inv(2.72, 3.55, t)) + 0.7 * Math.sin(Math.PI * inv(T.tilted - 0.05, T.tilted + 0.7, t));
+const towerSway = (t: number) => quake(t) * 1.3 * Math.sin(TAU * SWAY_F * t);
+const towerExtra = (t: number) => 1.1 * Math.sin(Math.PI * inv(T.lean - 0.1, T.lean + 0.75, t)) + 0.7 * Math.sin(Math.PI * inv(T.tilted - 0.05, T.tilted + 0.7, t));
 const IMPACTS: Array<[number, number, number]> = [...BADGES.map((b): [number, number, number] => [b, 7, 0.12]), [T.doesnt, 7, 0.12]];
 const camAt = (t: number): Cam => {
   const c = camKeys(t, CAM);
@@ -77,7 +82,7 @@ const camAt = (t: number): Cam => {
 };
 
 // ---------------------------------------------------------------- scientist
-const SWAPS: Array<[number, GName]> = [[0, 'g_push'], [T.keep, 'g_hero'], [T.survived, 'g_balance'], [T.engineers, 'g_clip'], [T.basically, 'g_hero'], [T.protects, 'g_push']];
+const SWAPS: Array<[number, GName]> = [[0, 'g_balance'], [T.protecting, 'g_push'], [T.theGround, 'g_clip'], [T.basically, 'g_hero'], [T.saves, 'g_balance']];
 const breath = (t: number) => 1 + 0.009 * Math.sin(TAU * 0.6 * t);
 const guyState = (t: number) => {
   let i = 0;
@@ -88,8 +93,8 @@ const guyState = (t: number) => {
   if (t > next - 0.09) sy = 1 - 0.07 * Math.sin((Math.PI / 2) * inv(next - 0.09, next, t));
   else if (i > 0) sy = 1 + 0.06 * (1 - spring(t - t0, 3.2, 0.3));
   let rot = 0;
-  if (name === 'g_balance') rot = 4 * Math.sin(TAU * 1.3 * (t - t0)) * env(t, t0, 8.8, 0.2, 0.5);
-  if (name === 'g_push') sy *= 1 + 0.02 * Math.sin(Math.PI * inv(2.72, 3.55, t)); // pushes back as it creaks
+  if (name === 'g_balance') rot = 4 * quake(t) * Math.sin((TAU * 30 * t) / DUR);
+  if (name === 'g_push') sy *= 1 + 0.02 * Math.sin(Math.PI * inv(T.lean - 0.1, T.lean + 0.75, t)); // pushes back as it creaks
   return {name, sy: sy * breath(t), rot};
 };
 const Guy: React.FC<{t: number; gx: number}> = ({t, gx}) => {
@@ -106,8 +111,8 @@ const Guy: React.FC<{t: number; gx: number}> = ({t, gx}) => {
 // ---------------------------------------------------------------- tower with a face
 type Mood = 'open' | 'calm' | 'smug' | 'wink';
 const moodAt = (t: number): Mood => {
-  if (t > T.protects + 0.05 && t < T.protects + 0.75) return 'wink';
-  if ((t > T.keep + 0.1 && t < T.survived - 0.1) || (t > T.protects && t < T.protects + 1.0)) return 'smug';
+  if (t > T.saves + 0.05 && t < T.saves + 0.75) return 'wink';
+  if (t > T.soft1 + 0.15 && t < T.sways - 0.1) return 'smug'; // its secret is out
   if (quake(t) > 0.2) return 'calm';
   return 'open';
 };
@@ -147,7 +152,7 @@ const TowerFace: React.FC<{t: number; look: [number, number]}> = ({t, look}) => 
 const Tower: React.FC<{t: number; gx: number; gy: number; ghost?: number}> = ({t, gx, gy, ghost}) => {
   const tw = P.tower;
   const rot = ghost !== undefined ? LEAN + ghost : LEAN + towerSway(t) + towerExtra(t);
-  const look: [number, number] = t > T.engineers && t < T.sways ? [-0.85, 0.2] : [0.8, 0.45];
+  const look: [number, number] = t > T.ground - 0.1 && t < T.tall - 0.3 ? [0.15, 1] : t > T.tall - 0.3 && t < T.sways ? [-0.85, 0.2] : [0.8, 0.45];
   return (
     <Pos x={TX + gx} y={TB + gy} s={TS} rot={rot}>
       {ghost === undefined ? (
@@ -168,7 +173,7 @@ const wavePath = (y0: number, amp: number, ph: number, len: number, x0 = -1200, 
 };
 const Ground: React.FC<{t: number; gx: number; gy: number; jelly: number; glow: number}> = ({t, gx, gy, jelly, glow}) => {
   const amp = 7 + 26 * jelly;
-  const ph = t * (2.4 + 9 * jelly);
+  const ph = t * 5.5; // constant wave speed (scaling it by jelly made the waves lurch when the jiggle faded)
   const ab = wavePath(GY + 205, amp, ph, 95);
   const bc = wavePath(GY + 590, amp * 0.8, -ph * 0.8 + 1, 130);
   const bottom = 'L2400 3200L-1200 3200Z';
@@ -311,16 +316,18 @@ export const PisaWorld: React.FC<{t: number; cam: Cam}> = ({t, cam}) => {
 export const PisaScene: React.FC<{t: number}> = ({t}) => {
   const cam = camAt(t);
   const g = groundShift(t);
-  const jelly = Math.max(pop(t, T.soft - 0.05, T.ground + 0.6, 0.25) * 0.8, pop(t, T.soft2 - 0.05, T.soil2 + 0.7, 0.25), quake(t) * 0.55);
-  const glow = Math.max(0.9 * pop(t, T.keep, T.standing + 0.7, 0.3), 0.9 * pop(t, T.same, 21.7, 0.3)) * (0.75 + 0.25 * Math.sin(t * 9));
+  const jelly = Math.max(pop(t, T.soft1 - 0.05, T.l3End + 0.6, 0.25), pop(t, T.soft2 - 0.05, T.soil2 + 0.7, 0.25) * 0.8, quake(t) * 0.55);
+  const glow = 0.9 * pop(t, T.soil3 - 0.05, T.saves + 0.6, 0.3) * (0.75 + 0.25 * Math.sin(t * 9));
+  // the open loop: what protects it? a "?" over the hidden answer until "soft"
+  const qSoil = pop(t, T.same - 0.05, T.soft1 - 0.05, 0.3) * (1 + 0.06 * Math.sin(t * 8));
   // ghost tower: what resonance would do (sway building up), crossed out on "doesn't"
-  const ghostA = 7 * easeInOutCubic(inv(T.so - 0.05, T.doesnt, t));
-  const ghostOn = t > T.so - 0.05 && t < T.doesnt + 0.45;
-  const ghostFade = inv(T.so - 0.05, T.so + 0.15, t) * (1 - inv(T.doesnt + 0.1, T.doesnt + 0.45, t));
+  const ghostA = 7 * easeInOutCubic(inv(T.shaking1 - 0.05, T.doesnt, t));
+  const ghostOn = t > T.shaking1 - 0.05 && t < T.doesnt + 0.45;
+  const ghostFade = inv(T.shaking1 - 0.05, T.shaking1 + 0.15, t) * (1 - inv(T.doesnt + 0.1, T.doesnt + 0.45, t));
   const xMark = pop(t, T.doesnt, T.doesnt + 0.55, 0.22);
   // overlays
   const ruler = pop(t, T.tall - 0.05, T.sways - 0.1, 0.3);
-  const shieldS = pop(t, T.protects - 0.05, 21.75, 0.32);
+  const shieldS = pop(t, T.saves - 0.05, 22.45, 0.32);
   const towerTop = {x: TX + 1080 * Math.sin(rad(LEAN)), y: TB - 1080 * Math.cos(rad(LEAN))};
   const metroS = pop(t, T.different - 0.15, 17.55, 0.3);
   return (
@@ -332,7 +339,7 @@ export const PisaScene: React.FC<{t: number}> = ({t}) => {
         <Tower t={t} gx={g.x} gy={g.y} />
         {ghostOn && (
           <div style={{opacity: ghostFade}}>
-            <Tower t={t} gx={g.x} gy={g.y} ghost={ghostA * Math.sin(TAU * 2.1 * (t - T.so))} />
+            <Tower t={t} gx={g.x} gy={g.y} ghost={ghostA * Math.sin(TAU * 2.1 * (t - T.shaking1))} />
           </div>
         )}
         <Ground t={t} gx={g.x} gy={g.y} jelly={jelly} glow={glow} />
@@ -352,7 +359,9 @@ export const PisaScene: React.FC<{t: number}> = ({t}) => {
         )}
         <Tag x={TX - 220} y={(GY + towerTop.y) / 2} s={ruler} rot={-4}>58 m</Tag>
         <Tag x={TX + 40} y={GY - 300} s={pop(t, T.stiff - 0.05, T.sways - 0.1, 0.28)} rot={4} bg="#d6e4f2">STIFF</Tag>
-        <Tag x={TX + 330} y={GY + 380} s={pop(t, T.soft2 - 0.05, T.sways - 0.1, 0.28)} rot={-3} bg="#ffe3a3">SOFT</Tag>
+        <Tag x={TX + 330} y={GY + 380} s={pop(t, T.soft1 - 0.05, T.sways - 0.1, 0.28)} rot={-3} bg="#ffe3a3">SOFT</Tag>
+        <Tag x={TX + 40} y={GY - 300} s={pop(t, T.damage - 0.05, T.same - 0.1, 0.28)} rot={-4} bg="#bff0c4">NO DAMAGE</Tag>
+        <Txt x={TX + 330} y={GY + 300} size={230} color={RED} s={qSoil} rot={10}>?</Txt>
         {xMark > 0.01 && (
           <svg width={10} height={10} style={{position: 'absolute', left: TX + 60, top: GY - 560, overflow: 'visible'}}>
             <g transform={`scale(${xMark}) rotate(-8)`}>
@@ -368,13 +377,13 @@ export const PisaScene: React.FC<{t: number}> = ({t}) => {
         <Shield x={TX + 120} y={GY + 330} s={shieldS * 1.05} />
       </Layer>
       {/* screen-space: earthquake tally and the two metronomes (left column) */}
-      {BADGES.map((b, i) => <QuakeBadge key={i} x={128} y={470 + i * 165} s={pop(t, b, 9.45, 0.26)} />)}
-      <div style={{position: 'absolute', left: 128, top: 1150, transform: `translate(-50%,-50%) scale(${pop(t, T.y1280 - 0.05, 9.45, 0.3)})`, width: 210, height: 150, background: '#ffffff', border: `8px solid ${INK}`, borderRadius: 28, boxShadow: `6px 8px 0 ${INK}`, textAlign: 'center', fontFamily: FONT, color: INK}}>
+      {BADGES.map((b, i) => <QuakeBadge key={i} x={128} y={470 + i * 165} s={pop(t, b, T.and, 0.26)} />)}
+      <div style={{position: 'absolute', left: 128, top: 1150, transform: `translate(-50%,-50%) scale(${pop(t, T.earthquakes - 0.05, T.and, 0.3)})`, width: 210, height: 150, background: '#ffffff', border: `8px solid ${INK}`, borderRadius: 28, boxShadow: `6px 8px 0 ${INK}`, textAlign: 'center', fontFamily: FONT, color: INK}}>
         <div style={{fontSize: 40, marginTop: 14}}>SINCE</div>
         <div style={{fontSize: 64, lineHeight: '64px', color: RED, WebkitTextStroke: `3px ${INK}`}}>1280</div>
       </div>
       <Metronome x={128} y={560} s={metroS} ang={32 * Math.sin(TAU * 3.0 * t)} icon="ground" col="#e9a06a" />
-      <Metronome x={128} y={1000} s={metroS} ang={24 * Math.sin(TAU * 0.6 * (t - T.survived))} icon="tower" col="#a9c9ee" />
+      <Metronome x={128} y={1000} s={metroS} ang={24 * Math.sin(TAU * SWAY_F * t)} icon="tower" col="#a9c9ee" />
     </AbsoluteFill>
   );
 };

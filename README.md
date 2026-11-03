@@ -26,13 +26,13 @@ The aim is a repeatable recipe. Every episode uses the same round-headed scienti
     </td>
     <td align="center" width="25%">
       <img src="thumbnails/tickle-thumbnail.jpg" width="180" alt="Thumbnail: the scientist laughing hard while a robot arm tickles him with a feather, under the words IT TAKES A ROBOT"><br>
-      <b>The Robot Experiment That Explains Why You Can't Tickle Yourself</b><br>
-      21.0 s · <code>TickleShort</code>
+      <b>You Can Tickle Yourself (You Just Need a Robot)</b><br>
+      19.0 s · <code>TickleShort</code>
     </td>
     <td align="center" width="25%">
       <img src="thumbnails/pisa-thumbnail.jpg" width="180" alt="Thumbnail: the bored-looking Leaning Tower of Pisa beside the panicking scientist during an earthquake, under the words 4 QUAKES NO DAMAGE"><br>
-      <b>The Wrong Ground Is Why the Leaning Tower of Pisa Survives Earthquakes</b><br>
-      22.2 s · <code>PisaShort</code>
+      <b>Why the Leaning Tower of Pisa Survives Earthquakes</b><br>
+      22.8 s · <code>PisaShort</code>
     </td>
   </tr>
 </table>
@@ -75,18 +75,18 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 **Sources:** the figures come from [NOAA's hurricane research FAQ](https://www.aoml.noaa.gov/hrd/tcfaq/C5c.html). It was offline when we checked, so they were confirmed through two reports that quote it: [National Geographic](https://www.nationalgeographic.com/science/article/hurricanes-weather-history-nuclear-weapons) and [CNN via WTOP](https://wtop.com/weather-news/2019/08/why-not-bomb-a-hurricane-noaa-gets-asked-about-it-all-the-time/).
 
-### 3. Why can't you tickle yourself?
+### 3. You can tickle yourself (with a robot)
 
-![Four frames from the tickle Short: the bored scientist tickling himself with a feather; his brain in a thought bubble watching the feather; a stopwatch showing 0.2 SEC above the robot arm; the scientist laughing as the meter shoots up](docs/tickle-storyboard.jpg)
+![Four frames from the tickle Short: the scientist laughing as a robot arm tickles him, with the meter maxed; the bored scientist tickling himself while his brain watches the feather; a stopwatch showing 0.2 SEC above the robot arm; the brain in a thought bubble with dizzy eyes and a question mark](docs/tickle-storyboard.jpg)
 
-> Why can't you tickle yourself? Because your brain sees it coming. Every time you move, it predicts what you're about to feel, and turns that feeling down. In one experiment, people tickled their own hand through a robot. When the robot waited just a fifth of a second, it felt about as tickly as someone else doing it. Basically, it only tickles when your brain can't predict it.
+> You can tickle yourself. You just need a robot and a fifth of a second. Your brain predicts what your own touch will feel like and turns it down, so it barely registers. But in one experiment, people tickled their own hand through a robot. When the robot waited a fifth of a second, the prediction was off, and it felt about as tickly as someone else doing it.
 
 **The story:**
-1. The scientist tickles his own armpit with a feather and looks completely bored. A tickle-meter at the top stays low.
-2. His brain pops up in a thought bubble, watches the feather coming, and turns a knob all the way down.
-3. A robot arm rolls in. He steers it with a joystick and it tickles his palm in sync, so the meter stays low.
-4. A stopwatch adds a fifth of a second of delay. He bursts out laughing, and the meter jumps to the "someone else" mark.
-5. His brain goes dizzy on "can't predict it", then he goes back to tickling himself, which loops back to the first frame.
+1. It opens on the payoff: a robot arm tickles the scientist, who's crying with laughter, and the tickle-meter at the top is maxed at the "someone else" mark. A stopwatch shows "0.2 SEC".
+2. Then the explanation: the robot rolls away, and he tickles his own armpit with a feather, completely bored. His brain pops up in a thought bubble, watches the feather coming, and turns a knob all the way down, so the meter drops.
+3. The robot rolls back in. He steers it with a joystick and it tickles his palm in sync, so the meter stays low.
+4. The stopwatch adds a fifth of a second of delay, and his brain goes dizzy on "the prediction was off".
+5. He bursts out laughing and the meter jumps back to the "someone else" mark, which is the first frame again. The last line runs straight back into the first.
 
 **Sources:**
 - [Blakemore, Frith & Wolpert 1999](https://doi.org/10.1162/089892999563607): the robot experiment. Ticklishness rose as the delay grew from 0 to 200 ms. At 200 ms it was no longer significantly different from a touch the person didn't cause.
@@ -94,16 +94,16 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 ### 4. Why the Leaning Tower of Pisa survives earthquakes
 
-![Four frames from the Pisa Short: the scientist holding up the leaning tower above the soft soil layers; the bored tower during an earthquake with four quake badges; two metronomes beside the swaying tower; a green shield over the soft clay](docs/pisa-storyboard.jpg)
+![Four frames from the Pisa Short: the bored tower during an earthquake with four quake badges; the scientist propping up the tower with a red question mark over the soil; the soft clay revealed with a SOFT tag; a green shield over the clay](docs/pisa-storyboard.jpg)
 
-> The soft ground that makes the Leaning Tower of Pisa lean also helps keep it standing. It's survived at least four strong earthquakes since 1280. Engineers found that a tall, stiff tower on soft soil sways to a different rhythm than the ground, so the shaking doesn't build up. Basically, the same soil that tilted it is what protects it.
+> The Leaning Tower of Pisa has survived at least four strong earthquakes without damage. And what's protecting it is the same thing that made it lean. The ground under it is soft. A tall, stiff tower on soft soil sways to a different rhythm than the shaking ground, so the shaking doesn't build up. Basically, the soil that tilted it is the soil that saves it.
 
 **The story:**
-1. The scientist does the tourist pose, "holding up" the tower, with the ground cut away below to show the soft clay. He lets go, and the tower stays up on its own.
-2. Four earthquakes hit. The ground jitters and he wobbles on one leg, while the tower barely moves and looks bored.
-3. A ruler, "STIFF" and "SOFT" tags appear for "tall, stiff tower on soft soil".
+1. It opens mid-earthquake. The ground jitters and the scientist wobbles on one leg, while the tower barely moves and looks bored. Four quake badges, "SINCE 1280" and "NO DAMAGE" pop up.
+2. The open loop: he props the tower up as if he's what protects it, while a big red "?" sits over the cut-away soil.
+3. The answer: the camera tilts down, the "?" pops, and the soft clay jiggles with a "SOFT" tag. Then "58 m" and "STIFF" tags appear.
 4. Two metronomes show the ground's fast rhythm and the tower's slow one. A red ghost tower swings in step with the shaking, wider and wider, until a big X crosses it out.
-5. A shield pops over the soft clay on "protects it", and he goes back to holding up the tower, which loops back to the first frame.
+5. The soil glows, a shield pops over the clay on "saves it", and the shaking starts again, which is the first frame.
 
 **Sources:** [University of Bristol, 2018](https://www.bristol.ac.uk/news/2018/may/tower-of-pisa.html), on the study led by Roma Tre University. It says the 58-metre tower has survived "undamaged, at least four strong earthquakes … since 1280". Its height and stiffness, together with the soft soil, change how it vibrates "in such a way that the Tower does not resonate with earthquake ground motion". The results were presented at the 16th European Conference on Earthquake Engineering.
 
@@ -111,7 +111,10 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 - **Format:** vertical 9:16, 20–25 seconds. The voice sets the length.
 - **Script:** 50–70 words of plain spoken English, with every fact checked against primary sources. No "Did you know", no hype, no calls to action. Where the science is uncertain, the script says so ("mostly", "probably").
-- **Frame 0** shows the premise and works as a thumbnail. The last frame loops back to it.
+- **Hook:** frame 0 and the first line show the strangest true thing, often the payoff, never a setup. There's motion and a sound from the first frame, and no pause longer than about 0.3 s in the first seconds (`scripts/tighten.py` trims them).
+- **Open loop:** the first lines raise a question the viewer can't answer yet, and the answer lands in the last third. One "but" turn mid-way re-hooks.
+- **Loop:** the last frame matches frame 0, and the last line runs back into the first.
+- **Titles** open the question; they don't give away the payoff.
 - **Beats:** one visual beat per line, landing on the exact spoken word, with one gag per beat.
 - **Art:** flat 2D cut-outs with thick black outlines and flat colours. The same round-headed scientist with glasses and a lab coat appears in every episode.
 - **Motion:**
@@ -126,7 +129,7 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 | Step | What happens | Where |
 |---|---|---|
 | 1. Script | Research a surprising question, check it against papers, universities and agencies, and write the voice-over. | `images/*/beats.md`, this README |
-| 2. Voice | The voice-over is generated with the ElevenLabs voice "Chris" through vidIQ. | `public/*/vo/take1.mp3` |
+| 2. Voice | The voice-over is generated with the ElevenLabs voice "Chris" through vidIQ, then the pauses in the first seconds are trimmed. | `public/*/vo/take*.mp3`, `scripts/tighten.py` |
 | 3. Word timings | faster-whisper finds when each word is spoken; pauses are found from loudness. | `words.py` → `images/*/words.json` |
 | 4. Beat sheet | Lists what's on screen and which sound plays for every line, timed to the word. | `images/*/beats.md` |
 | 5. Pictures | GPT Image 2.5 draws each pose and prop on a flat key colour. Earlier pictures are used as references to keep the characters and style consistent. | `images/*/prompts.md`, `images/*/raw/` |
@@ -206,6 +209,7 @@ These scripts live in `images/pigeon/scripts/`, with the hurricane's own `prep.p
 | `prep_pigeon.py` | Splits the pigeon picture into head, neck and body for the rig. |
 | `prep_all.py`, `prep.py` | Measure every sprite, copy it to `public/` and write `sprites.ts`. |
 | `words.py` | Writes word timings for a voice-over file. |
+| `scripts/tighten.py` | Shortens the pauses in the first seconds of a voice-over, so the hook has no dead air. |
 | `sfx.py`, `storm_bed.py` | Synthesize the sound effects and background ambience. |
 
 ## Tools and services
@@ -228,7 +232,7 @@ Remotion is free for individuals and small teams; larger companies need a compan
 |---|---|---|---|---|
 | Pictures (Kie.ai, 10 credits each) | 10 pictures, 100 credits | 7 pictures, 70 credits | 6 pictures, 60 credits | 2 pictures, 20 credits |
 | Generated sounds (Kie.ai) | 7.5 credits | 2.5 credits (the storm sound never arrived, so it was synthesized instead) | none (reused the earlier sound effects) | none (rumble and creak synthesized) |
-| Voice-over (vidIQ) | 14 credits | 14 credits | 14 credits | 14 credits |
+| Voice-over (vidIQ) | 14 credits | 14 credits | 28 credits (re-cut with a new hook) | 28 credits (re-cut with a new hook) |
 | Title ideas (vidIQ) | 5 credits | 5 credits | 5 credits | 5 credits |
 
 ## Next ideas

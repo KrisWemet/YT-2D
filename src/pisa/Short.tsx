@@ -13,7 +13,7 @@ export const PisaShort: React.FC = () => {
     <AbsoluteFill style={{background: '#000', overflow: 'hidden'}}>
       <PisaScene t={t} />
       <Sequence from={Math.round(VO_AT * FPS)} layout="none">
-        <Audio src={staticFile('pisa/vo/take1.mp3')} />
+        <Audio src={staticFile('pisa/vo/take2.mp3')} />
       </Sequence>
       <PisaSfx />
     </AbsoluteFill>

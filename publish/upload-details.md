@@ -69,12 +69,12 @@ nuke a hurricane, why don't we nuke hurricanes, hurricane facts, weather facts, 
 
 **Title**
 ```
-The Robot Experiment That Explains Why You Can't Tickle Yourself
+You Can Tickle Yourself (You Just Need a Robot)
 ```
 
 **Description**
 ```
-Why can't you tickle yourself? Your brain predicts what your own movements will feel like and turns that feeling down. In a 1999 experiment, people tickled their own palm through a pair of robots. When the robots added a delay of a fifth of a second, it felt about as tickly as a touch they didn't cause.
+You can tickle yourself, as long as a robot adds a fifth of a second of delay. Normally your brain predicts what your own touch will feel like and turns it down, which is why your own fingers barely tickle. In a 1999 experiment, people tickled their own palm through a pair of robots. When the robots added a delay of a fifth of a second, the touch felt about as tickly as one they didn't cause.
 
 Sources:
 • Blakemore, Frith & Wolpert 1999, the robot delay experiment: https://doi.org/10.1162/089892999563607
@@ -85,7 +85,7 @@ Sources:
 
 **Tags**
 ```
-why can't you tickle yourself, tickle yourself, tickling, brain facts, human body facts, science facts, fun facts, science explained, animated facts, science animation
+can you tickle yourself, why can't you tickle yourself, tickle yourself, tickling, brain facts, human body facts, science facts, fun facts, science explained, animated facts, science animation
 ```
 
 ---
@@ -96,12 +96,12 @@ why can't you tickle yourself, tickle yourself, tickling, brain facts, human bod
 
 **Title**
 ```
-The Wrong Ground Is Why the Leaning Tower of Pisa Survives Earthquakes
+Why the Leaning Tower of Pisa Survives Earthquakes
 ```
 
 **Description**
 ```
-The soft soil that makes the Leaning Tower of Pisa lean also helps it survive earthquakes. The 58-metre tower has come through at least four strong earthquakes since 1280 undamaged. A team of engineers led by Roma Tre University, with the University of Bristol, found that the tall, stiff tower on soft soil doesn't resonate with the ground shaking, an effect called dynamic soil-structure interaction.
+The Leaning Tower of Pisa has come through at least four strong earthquakes since 1280 without damage, and what protects it is the same thing that made it lean: the soft soil under it. A team of engineers led by Roma Tre University, with the University of Bristol, found that the tall, stiff 58-metre tower on soft soil doesn't resonate with the ground shaking, an effect called dynamic soil-structure interaction.
 
 Sources:
 • University of Bristol, 2018: https://www.bristol.ac.uk/news/2018/may/tower-of-pisa.html

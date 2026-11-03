@@ -1,23 +1,24 @@
-# Tickle Short — beat sheet
+# Tickle Short — beat sheet (take 2: hook re-cut)
 
-Script (62 words): "Why can't you tickle yourself? Because your brain sees it coming. Every time you move, it predicts what you're about to feel, and turns that feeling down. In one experiment, people tickled their own hand through a robot. When the robot waited just a fifth of a second, it felt about as tickly as someone else doing it. Basically, it only tickles when your brain can't predict it."
+Script (69 words): "You can tickle yourself. You just need a robot and a fifth of a second. Your brain predicts what your own touch will feel like and turns it down, so it barely registers. But in one experiment, people tickled their own hand through a robot. When the robot waited a fifth of a second, the prediction was off, and it felt about as tickly as someone else doing it."
 
-Voice: ElevenLabs premade "Chris" (via vidIQ), placed at 0.10 s; take 19.96 s; composition 21.0 s @ 60 fps. Times are composition seconds. One lab set; the tickle-meter (flat face → laughing face) stays at the top all the way through.
+Voice: ElevenLabs premade "Chris" (via vidIQ); the 0.76 s pause after the hook was trimmed to 0.28 s with `scripts/tighten.py` (take2_raw.mp3 → take2.mp3). Placed at 0.10 s; take 18.15 s; composition 19.0 s @ 60 fps. Times are composition seconds.
+
+Structure: open on the payoff (the robot tickle that works), explain why it normally doesn't, run the experiment, and land back on the payoff, so the last line runs into the first and the last frame is frame 0.
 
 | Time | Words | On screen | Pictures / code | Sound |
 |---|---|---|---|---|
-| 0.00 | (frame 0) | Scientist tickling his own armpit with a feather, completely bored; meter low | g_self, tickle marks, meter | shimmer |
-| 1.02 | "yourself?" | Red "?" pops by his head | code text | pop |
-| 2.56 | "brain" | Push in; thought bubble pops up with a cartoon brain | brain + code eyes | pop |
-| 2.92–3.66 | "sees it coming" | Brain's eyes widen; dotted line from its eyes to the feather, red target ring | code line | bloop, zip |
-| 5.24 | "predicts" | Brain keeps watching the feather | — | sparkle |
-| 6.92–7.68 | "turns that feeling down" | Knob pops at the bubble; turned all the way down; meter drops; brain looks smug | Knob | clicks, slow-down, small shake |
-| 8.55–9.5 | (pause) "In one experiment" | Bubble pops away; camera pulls back; robot arm rolls in with a feather; squash-swap to the joystick pose | robot, g_palm | whir, whoosh, thud |
-| 9.7–11.5 | "people tickled their own hand through a robot" | Joystick and feather wiggle together; meter stays low; robot blinks on "robot" | sway in sync | plip, motor hum |
-| 12.6 | "waited" | Stopwatch pops above the robot; from here the arm follows the joystick 0.2 s late | Stopwatch | pop |
-| 13.3–14.2 | "a fifth of a second" | Stopwatch sweeps one fifth (red wedge), "0.2 SEC"; meter starts rising | code | ticks |
-| 15.46 | "tickly" | Squash-swap to laughing, laugh lines, shake; meter shoots up | g_laugh | boing, speed-up, sparkle, giggly plips |
-| 15.86 | "someone else" | "Someone else" marker (another round head) pops under the meter at the same level | code | pop |
-| 17.55–18.6 | "Basically, it only tickles" | Calms down, swap back to the joystick pose; robot rolls away | g_palm | whoosh, whir |
-| 18.62–19.64 | "when your brain can't predict it" | Bubble returns; brain's pupils spin (dizzy); "?" pops on "can't" | brain + code eyes | pop, bloop, pop |
-| 20.0–21.0 | (end) | Bubble away; swap to self-tickling; camera back; meter back to frame 0 (loop) | g_self | whoosh, shimmer |
+| 0.00 | (frame 0) "You can tickle yourself." | Robot arm tickling the scientist, who's crying with laughter; tickle-meter maxed at the "someone else" mark | g_laugh, robot, meter + marker | giggles, motor hum |
+| 1.82 | "You just need a robot" | The robot hops and blinks | squash, eyes | click |
+| 2.16–3.04 | "and a fifth of a second" | Stopwatch pops and sweeps one fifth, "0.2 SEC" | Stopwatch | pop, ticks |
+| 3.38 | "Your brain" | Squash-swap to the bored self-tickle; robot rolls away; camera to his head; meter drops; brain pops up in a thought bubble | g_self, brain + code eyes | whoosh, big pop |
+| 3.78–5.86 | "predicts what your own touch will feel like" | Brain's eyes on the feather, dotted prediction line to a red target ring | code line | bloop, zip |
+| 5.86–6.68 | "and turns it down" | Knob turned all the way down; meter to near zero; smug brain | Knob | clicks, slow-down, shake |
+| 6.94–8.2 | "so it barely registers" | Bored face, meter flat | — | — |
+| 8.92–9.86 | "But in one experiment" | Bubble away; pull back; robot rolls in and lands; swap to the joystick pose | robot, g_palm | whir, whoosh, thud |
+| 9.82–11.64 | "people tickled their own hand through a robot" | Joystick and feather wiggle together; meter stays low; robot blinks on "robot" | sway in sync | plip, motor hum |
+| 12.71–14.16 | "When the robot waited a fifth of a second" | Stopwatch back, sweeps one fifth; the arm follows 0.2 s late; meter starts rising | Stopwatch | pop, ticks |
+| 14.43–15.54 | "the prediction was off" | Bubble returns; the brain's pupils spin; "?" on "off" | brain + code eyes | big pop, bloop, pop |
+| 16.78 | "tickly" | Squash-swap to laughing, laugh lines, shake; meter shoots up | g_laugh | boing, speed-up, sparkle, giggles |
+| 17.2 | "someone else" | "Someone else" marker pops under the meter at the same level | code | pop |
+| 18.2–19.0 | (end) | Still laughing, meter maxed = frame 0 (loop) | — | giggles |
