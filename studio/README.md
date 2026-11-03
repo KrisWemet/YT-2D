@@ -94,7 +94,13 @@ For your own channel's analytics, Studio will sign in as you with read-only scop
    - **Finish:** agree to the policy, then click **Create**.
 
    If the app already exists, the same settings are under **Branding** and **Audience**.
-2. **Branding:** add `wql-studio.vercel.app` under Authorised domains as `vercel.app`, or skip it until Phase 5.
+2. **Branding:** Google won't let you publish (step 4) until these are filled in:
+   - **Application home page:** `https://wql-studio.vercel.app`
+   - **Application privacy policy link:** `https://wql-studio.vercel.app/privacy` (a public page in this app)
+   - **Authorised domain 1:** `wql-studio.vercel.app`. Use the full name: `vercel.app` alone is rejected because every Vercel site shares it.
+   - Leave **App logo** empty. Uploading one makes Google require verification.
+
+   Then click **Save**.
 3. **Data access → Add or remove scopes:** paste `https://www.googleapis.com/auth/yt-analytics.readonly` and `https://www.googleapis.com/auth/youtube.readonly` into **Manually add scopes**, click **Add to table**, then **Update** and **Save**.
 4. **Audience → Publishing status → Publish app.** This takes the app from "Testing" to "In production". In Testing, Google expires refresh tokens after 7 days, and the analytics sync would stop every week. Google may show "unverified app" when you sign in. That's fine for an app only you use; you don't need to submit it in the **Verification centre**.
 5. **Clients:** leave this for Phase 5. Phase 5 creates the OAuth client (type *Web application*) with the redirect URI `https://wql-studio.vercel.app/api/auth/google/callback`.
