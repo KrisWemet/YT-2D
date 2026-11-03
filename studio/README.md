@@ -139,14 +139,15 @@ insert into public.app_owner (email) values ('you@example.com');
 **Auth settings** (Supabase dashboard → Authentication):
 
 1. **URL Configuration:** set **Site URL** to your Vercel production URL, and add `https://<your-app>/auth/confirm` and `http://localhost:3000/auth/confirm` under **Redirect URLs**.
-2. **Emails → Magic Link template.** Replace the link so it works when your mail app opens it in a different browser, which is common on phones:
+2. **Emails: leave the default template.** Supabase only lets you edit email templates once custom SMTP is set up, and Studio works with the default sign-in email. Open the link in the **same browser** you requested it from. On a phone, long-press **Sign in** in the email and choose *Open in Safari* (or Chrome) instead of the mail app's built-in browser. You stay signed in afterwards. The built-in mailer only sends a few emails an hour, so wait a few minutes before requesting another link.
+
+   Optional, for links that work in any browser: set up custom SMTP (Authentication → Emails → *Set up SMTP*), then change the Magic Link body to:
 
    ```html
    <h2>Sign in to WQL Studio</h2>
    <p><a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email">Sign in</a></p>
    ```
 
-   The default link also works, but only in the same browser that requested it.
 3. **After your first sign-in:** under **Sign In / Providers**, turn off **Allow new users to sign up**. Studio only sends links to `OWNER_EMAIL`, and RLS hides everything from anyone else; this closes the door completely.
 
 ### 5. Vercel
