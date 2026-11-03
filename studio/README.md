@@ -139,7 +139,9 @@ insert into public.app_owner (email) values ('you@example.com');
 
 ### 5. Vercel
 
-1. The project is linked to `KrisWemet/YT-2D` with **Root Directory** `studio`. To do it by hand: Add New → Project → import the repo → Root Directory `studio` → framework Next.js.
+1. The project `wql-studio` (https://wql-studio.vercel.app) is linked to `KrisWemet/YT-2D` with **Root Directory** `studio` and Node 22. To do it by hand: Add New → Project → import the repo → Root Directory `studio` → framework Next.js.
+   - **Vercel Authentication** is on for all `*.vercel.app` URLs, the default for new projects. Only you, signed in to Vercel, can even reach the login page; Studio's own magic-link login sits behind it. Keep it on. If it gets in the way on your phone, turn it off under Settings → Deployment Protection; Studio's login and RLS still protect everything.
+   - Cron requests aren't blocked by it.
 2. Add the environment variables from step 3.
 3. **Cron:** `vercel.json` schedules `/api/cron/daily` at 09:17 UTC (about 1–2 am Pacific, just after the quota resets).
    - On the Hobby plan, crons run once a day and may fire any time within that hour. Crons only run on production deployments, so this starts once the PR is merged to `main`.
