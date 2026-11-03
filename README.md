@@ -95,6 +95,10 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 | 10. Render | The 1080×1920 compositions are rendered at 2× scale, giving 2160×3840 at 60 fps. | `npx remotion render` |
 | 11. Packaging | Thumbnails are Remotion stills built from the same art. Titles are brainstormed and scored with vidIQ. | `src/thumbs/`, `thumbnails/` |
 
+## WQL Studio
+
+`studio/` is the research and planning app for the channel: a Next.js app on Vercel with data in Supabase. It tracks competitor channels and flags outlier videos (Phase 1). Later phases add the idea bank, series planning, scripts and fact-checks, and handing each finished script to this build as files in `videos/<slug>/`. Setup and details: [`studio/README.md`](studio/README.md). Plan: [`docs/wql-studio-plan.md`](docs/wql-studio-plan.md).
+
 ## Repository layout
 
 ```
@@ -111,7 +115,9 @@ images/
 scripts/          QA tools (stills, contact sheets, pop scan, verify) and the README storyboard maker
 thumbnails/       final thumbnails, ready to upload (1080×1920 JPG)
 publish/          what goes on YouTube: upload details, channel banner and picture, channel text
-docs/             storyboard strips used in this README
+docs/             storyboard strips used in this README, and the WQL Studio plan
+studio/           WQL Studio, the research and planning app (separate package; see studio/README.md)
+data/             seed-channels.json, the competitor watchlist WQL Studio starts from
 ```
 
 ## Running it

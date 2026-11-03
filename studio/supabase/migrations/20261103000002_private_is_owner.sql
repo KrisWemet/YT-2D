@@ -29,4 +29,5 @@ alter policy "owner all" on public.outliers using ((select private.is_owner())) 
 alter policy "owner reads" on public.api_usage using ((select private.is_owner()));
 alter policy "owner reads" on public.cron_runs using ((select private.is_owner()));
 
-drop function public.is_owner();
+-- The old public.is_owner() is left in place (unused) but nobody can call it any more.
+revoke execute on function public.is_owner() from public, anon, authenticated;
