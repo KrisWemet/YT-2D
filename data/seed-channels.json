@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "purpose": "Seed watchlist for WQL Studio outlier radar (Weird Questions Lab)",
+    "source": "vidIQ similar-channels + channel search, 2026-11-02",
+    "notes": [
+      "Subscriber counts are a snapshot at time of export; the app should refresh them.",
+      "Entries with channel_id null are well-known channels added by hand: resolve the handle to a channel ID in the app before tracking, and drop any that don't resolve.",
+      "Excluded: repost/compilation channels, AI-slop channels, kids-only channels, and channels under ~100 subs with no traction."
+    ],
+    "niche_tags": {
+      "direct": "Animated weird-science / what-if channels (closest competitors)",
+      "rising": "Small channels growing fast in the niche (best for spotting fresh formats)",
+      "format": "2D animated Shorts channels to benchmark animation style, pacing and binge structure",
+      "benchmark": "Big established science-animation channels (unverified handles)"
+    }
+  },
+  "channels": [
+    { "tier": "direct", "channel_id": "UCNIZm41qddZf4vV-hjjcjcw", "handle": "@superbouniverse", "title": "SuperBOU", "subscribers": 473000, "why": "Talking-planet animated science; recurring characters + space questions, closest format match" },
+    { "tier": "direct", "channel_id": "UC3Qhl_FNeCtsOC46DVdYDsw", "handle": "@aumsumsscience", "title": "AumSum's Science", "subscribers": 1790000, "why": "Animated hypothetical science questions at huge scale; mixed Shorts + long form" },
+    { "tier": "direct", "channel_id": "UCiic54VFQDoP5BUDyVccyCw", "handle": null, "title": "Lyrix 3D", "subscribers": 731000, "why": "Animated what-if science storytelling, faceless, still growing (+28% subs/30d)" },
+    { "tier": "direct", "channel_id": "UCJAEEC3pJnxi5oYJ_kLxemA", "handle": null, "title": "Crazy History", "subscribers": 686000, "why": "Hypothetical scenarios + odd science trivia; strong question-style titles" },
+    { "tier": "direct", "channel_id": "UCKpFcA2f1YBWI1szhWBKxIw", "handle": null, "title": "Fact dose by Uk", "subscribers": 106000, "why": "Shorts-first science facts and what-ifs, ~288K avg views" },
+    { "tier": "direct", "channel_id": "UCplVcJXiKR5M4mw9zXZ0kbA", "handle": "@mastermind__", "title": "Master Mind", "subscribers": 525000, "why": "Animated science explainers with very high per-video views; uploads rarely" },
+    { "tier": "direct", "channel_id": "UC3-iZgh_hiL6sIBwaKiiqRg", "handle": null, "title": "Mr.IJS46", "subscribers": 18800, "why": "Animated explainers mixing science and psychology, ~114K avg views" },
+    { "tier": "direct", "channel_id": "UCs2Ei5kX-wYY60a061W8G6A", "handle": null, "title": "Nyra Creative & Science", "subscribers": 5980, "why": "Shorts-first science storytelling and what-ifs" },
+    { "tier": "direct", "channel_id": "UCuVaxxHgpgY0P_w3bP9XTMw", "handle": null, "title": "Anim3D Explained English", "subscribers": 1460, "why": "Faceless animated science/health Shorts, ~9K avg views" },
+    { "tier": "direct", "channel_id": "UClYzeL6hl8MRHOQuqck_TFg", "handle": null, "title": "Everything you need to know", "subscribers": 3830, "why": "Animated science mysteries and what-if questions, Shorts-first" },
+    { "tier": "direct", "channel_id": "UC7nQhPe2NK2P_2hRmfxP88A", "handle": null, "title": "MrViz", "subscribers": 567, "why": "Small educational animation channel covering space, anatomy and what-ifs" },
+    { "tier": "direct", "channel_id": "UCpZwYBuQ-hjfDD7rj5gABIQ", "handle": null, "title": "GedrX", "subscribers": 1460, "why": "Speculative science and space what-ifs, growing +60% subs/30d" },
+
+    { "tier": "rising", "channel_id": "UCP4w4GuU8f4KF-MSLyROwnw", "handle": null, "title": "Split Timeline", "subscribers": 6980, "why": "Speculative science what-ifs, ~135K avg views, +87% subs/30d" },
+    { "tier": "rising", "channel_id": "UC8-LuFScbaJsv6E8lEZr2Fw", "handle": null, "title": "Syam facts", "subscribers": 8400, "why": "Science/animal facts + what-ifs, ~90K avg views, +65% subs/30d" },
+    { "tier": "rising", "channel_id": "UC1EkBEPO5dXzd9Prh9iCCbA", "handle": null, "title": "Nathkreates", "subscribers": 19200, "why": "Curiosity-driven science/survival what-ifs, +71% subs/30d" },
+    { "tier": "rising", "channel_id": "UCgT2B5xfswPJl7sgNgh-P8Q", "handle": null, "title": "AltReality Shorts", "subscribers": 6320, "why": "Extreme-science what-if Shorts, +213% subs/30d" },
+    { "tier": "rising", "channel_id": "UCFJuT_iiIW0H4c1J_ecBo9g", "handle": null, "title": "Badly Rendered", "subscribers": 107, "why": "Tiny channel, ~12K avg views; retro-style physics what-ifs, +224% subs/30d" },
+    { "tier": "rising", "channel_id": "UCXGz5IY4fWswlk7qcS2S_hg", "handle": null, "title": "SciFlux", "subscribers": 288, "why": "Everyday-science animation with ~12K avg views on a tiny base" },
+    { "tier": "rising", "channel_id": "UCl-LVLyoqCXg6n7S0XmYadQ", "handle": null, "title": "Masked Guy", "subscribers": 239, "why": "Animated science/history facts, +305% subs/30d" },
+
+    { "tier": "format", "channel_id": "UCAez9DRU4shbwox09QIfiAg", "handle": "@bugsboom-l8p", "title": "Bugs Boom", "subscribers": 4840, "why": "Launched Aug 2026, 2D animated comedy Shorts with science/facts angles, breakout (+87% subs/30d) — closest new-channel trajectory to copy" },
+    { "tier": "format", "channel_id": "UC_8wI5kOHrPnCau8ijqD3bg", "handle": "@chillanimation13", "title": "CHILL 13", "subscribers": 55000, "why": "Animated weird tales/mysteries, breakout; shows binge structure for 'weird' topics" },
+    { "tier": "format", "channel_id": "UCuCRx55-cKaxK7QQJtNxtZQ", "handle": "@ohmi_ohmy", "title": "ohmi_ohmy", "subscribers": 32700, "why": "Simple 2D doodle animation breaking out; proof that low-complexity art works" },
+    { "tier": "format", "channel_id": "UCJ2BRsG2xeeYoDawAjzAWgA", "handle": "@dummies_channel", "title": "Dummies", "subscribers": 205000, "why": "Canadian 2D animated Shorts with recurring characters and weekly cadence" },
+    { "tier": "format", "channel_id": "UC7x5o2FH1kaN9h9vJe8AfqA", "handle": "@espectrogramaanimations", "title": "Cheesy Adventures Co.", "subscribers": 4370000, "why": "Recurring-character Shorts series at massive scale — the binge model" },
+    { "tier": "format", "channel_id": "UCuTawsFVAebtuCO73OxRDqw", "handle": "@ho_salt", "title": "Ho salt", "subscribers": 3910000, "why": "Short, punchy web animation with ~8M avg views; pacing benchmark" },
+    { "tier": "format", "channel_id": "UCUAL--p3qAa27luR0IYbjZA", "handle": "@pencilmation", "title": "Pencilmation", "subscribers": 20500000, "why": "Gold standard 2D animated Shorts + long-form compilations (Shorts-to-long-form funnel)" },
+    { "tier": "format", "channel_id": "UCJI5ppVFGNZa5P7wVhPX9xg", "handle": "@supercomical", "title": "Super Comical", "subscribers": 1210000, "why": "Fast-paced animated story Shorts, +232% subs/1y; hook and packaging benchmark" },
+
+    { "tier": "benchmark", "channel_id": null, "handle": "@kurzgesagt", "title": "Kurzgesagt – In a Nutshell", "subscribers": null, "why": "Top 2D animated science channel; long-form ceiling for the niche (unverified handle)" },
+    { "tier": "benchmark", "channel_id": null, "handle": "@LifeNoggin", "title": "Life Noggin", "subscribers": null, "why": "2D animated 'what if' science questions with a mascot — very close concept (unverified handle)" },
+    { "tier": "benchmark", "channel_id": null, "handle": "@MinuteEarth", "title": "MinuteEarth", "subscribers": null, "why": "Hand-drawn 2D science answers to odd questions (unverified handle)" },
+    { "tier": "benchmark", "channel_id": null, "handle": "@AsapSCIENCE", "title": "AsapSCIENCE", "subscribers": null, "why": "Weird everyday-science questions with whiteboard-style animation (unverified handle)" },
+    { "tier": "benchmark", "channel_id": null, "handle": "@TEDEd", "title": "TED-Ed", "subscribers": null, "why": "Animated science lessons and riddles; strong series/playlist structure (unverified handle)" }
+  ]
+}
