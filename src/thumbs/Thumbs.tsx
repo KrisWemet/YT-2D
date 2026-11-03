@@ -6,6 +6,8 @@ import {Pic, Pos} from '../pigeon/world';
 import {DashedLine, INK, PauseBadge} from '../pigeon/fx';
 import {H} from '../hurricane/sprites';
 import {HUR, Hurricane, Sparks} from '../hurricane/Scene';
+import {K} from '../tickle/sprites';
+import {PisaWorld} from '../pisa/Scene';
 
 export const FONT = 'Luckiest Guy';
 export const useFont = () => {
@@ -135,6 +137,66 @@ export const HurricaneThumb: React.FC = () => {
       </Pos>
       <Sparks x={fx} y={fy} t={0.83} s={1.4} />
       <Headline y={620} tilt={-4} lines={[{text: 'JUST', size: 150, color: '#ffffff'}, {text: 'NUKE IT?', size: 215, color: '#ffd84a'}]} />
+    </AbsoluteFill>
+  );
+};
+
+// ------------------------------------------------------------------ it takes a robot (tickle Short)
+export const TickleThumb: React.FC = () => {
+  useFont();
+  const g = K.g_laugh;
+  const gs = 235 / g.head[2];
+  const gx = 350;
+  const gy = 1905;
+  const r = K.robot;
+  const rs = 0.42;
+  const tip = {x: 452, y: 1205}; // feather tip at his side
+  return (
+    <AbsoluteFill style={{background: '#ff9ec7', overflow: 'hidden'}}>
+      <AbsoluteFill style={{background: 'repeating-conic-gradient(from 0deg at 45% 62%, #ffb3d4 0deg 9deg, #ff8cbd 9deg 18deg)'}} />
+      <AbsoluteFill style={{background: 'radial-gradient(closest-side at 45% 62%, rgba(255,255,255,0.6), rgba(255,255,255,0) 75%)'}} />
+      <div style={{position: 'absolute', left: 0, top: 1800, width: 1080, height: 200, background: '#e9e4da', borderTop: `8px solid ${INK}`}} />
+      <Pos x={gx} y={gy} s={gs} rot={-4}>
+        <Pic file={g.file} w={g.w} h={g.h} ax={g.feet[0]} ay={g.feet[1]} />
+      </Pos>
+      <Pos x={tip.x + (r.base[0] - r.tip[0]) * rs} y={tip.y + (r.base[1] - r.tip[1]) * rs} s={rs}>
+        <Pic file={r.file} w={r.w} h={r.h} ax={r.base[0]} ay={r.base[1]} />
+      </Pos>
+      {/* laugh lines and tickle marks */}
+      <svg width={1080} height={1920} style={{position: 'absolute', left: 0, top: 0}}>
+        {[-140, -105, -70, -35].map((a, i) => {
+          const hx = gx + (g.head[0] - g.feet[0]) * gs, hy = gy + (g.head[1] - g.feet[1]) * gs;
+          const c = Math.cos((a * Math.PI) / 180), s = Math.sin((a * Math.PI) / 180);
+          return <line key={i} x1={hx + c * 290} y1={hy + s * 290} x2={hx + c * 380} y2={hy + s * 380} stroke={INK} strokeWidth={16} strokeLinecap="round" />;
+        })}
+        {[0, 1, 2].map((i) => (
+          <path key={i} d={`M${tip.x - 10 + i * 34} ${tip.y + 70 + i * 26}q16 22 32 0`} fill="none" stroke={INK} strokeWidth={10} strokeLinecap="round" />
+        ))}
+      </svg>
+      <Headline y={110} tilt={-3} lines={[{text: 'IT TAKES', size: 165, color: '#ffffff'}, {text: 'A ROBOT', size: 220, color: '#ffd84a'}]} />
+    </AbsoluteFill>
+  );
+};
+
+// ------------------------------------------------------------------ 4 quakes, no damage (Pisa Short)
+export const PisaThumb: React.FC = () => {
+  useFont();
+  const k = 1.05;
+  const cam = {x: 600, y: 719, z: 1000 - 1000 / k};
+  const groundY = 960 + k * (1260 - 719);
+  return (
+    <AbsoluteFill style={{overflow: 'hidden'}}>
+      <PisaWorld t={7.32} cam={cam} />
+      {/* shaking marks around the base and the wobbling scientist */}
+      <svg width={1080} height={1920} style={{position: 'absolute', left: 0, top: 0}}>
+        {[[70, groundY - 150, 1], [70, groundY - 60, 1], [1010, groundY - 330, -1], [1010, groundY - 220, -1]].map(([x, y, d], i) => (
+          <path key={i} d={`M${x} ${y}l${18 * d} -22l${18 * d} 22l${18 * d} -22l${18 * d} 22`} fill="none" stroke={INK} strokeWidth={11} strokeLinecap="round" strokeLinejoin="round" />
+        ))}
+        {[0, 1, 2].map((i) => (
+          <path key={i} d={`M${330 + i * 150} ${groundY + 40}l26 70l-30 40l34 80`} fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round" strokeLinejoin="round" opacity={0.75} />
+        ))}
+      </svg>
+      <Headline y={60} tilt={-3} lines={[{text: '4 QUAKES', size: 185, color: '#ffffff'}, {text: 'NO DAMAGE', size: 172, color: '#ffd84a'}]} />
     </AbsoluteFill>
   );
 };

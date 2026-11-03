@@ -63,7 +63,7 @@ Studio → Customization → Profile → **Links**: add every other place you po
 
 ## Once the two Shorts are up
 
-- **Playlist:** make a public playlist called "Weird questions, answered" with both Shorts. Add topic playlists (Animals, Weather and Earth, Space, The human body) once each has two or three videos, so none of them looks empty.
+- **Playlist:** make a public playlist called "Weird questions, answered" with all the Shorts. Add topic playlists (Animals, Weather and Earth, Space, The human body) once each has two or three videos, so none of them looks empty.
 - **Home tab:** Studio → Customization → Home tab → add a Shorts section and the playlist.
 - **First post:** Studio → Create → Create post. Share the banner image and ask "What weird science question should I answer next?" The answers are video ideas, and the post fills out a new channel page.
 - **Upload defaults:** Studio → Settings → Upload defaults. Set the category to Education, add the keywords above as tags, and use this description template:

@@ -63,7 +63,60 @@ nuke a hurricane, why don't we nuke hurricanes, hurricane facts, weather facts, 
 
 ---
 
-## Settings for both
+## Short 3: Tickling
+
+**File:** `out/tickle-self-4K.mp4` · **Thumbnail:** `thumbnails/tickle-thumbnail.jpg`
+
+**Title**
+```
+You Can Tickle Yourself (You Just Need a Robot)
+```
+
+**Description**
+```
+You can tickle yourself, as long as a robot adds a fifth of a second of delay. Normally your brain predicts what your own touch will feel like and turns it down, which is why your own fingers barely tickle. In a 1999 experiment, people tickled their own palm through a pair of robots. When the robots added a delay of a fifth of a second, the touch felt about as tickly as one they didn't cause.
+
+Sources:
+• Blakemore, Frith & Wolpert 1999, the robot delay experiment: https://doi.org/10.1162/089892999563607
+• Blakemore, Wolpert & Frith 1998, the brain-scan study: https://doi.org/10.1038/2870
+
+#shorts #science #brain #sciencefacts #funfacts
+```
+
+**Tags**
+```
+can you tickle yourself, why can't you tickle yourself, tickle yourself, tickling, brain facts, human body facts, science facts, fun facts, science explained, animated facts, science animation
+```
+
+---
+
+## Short 4: Leaning Tower of Pisa
+
+**File:** `out/pisa-earthquake-4K.mp4` · **Thumbnail:** `thumbnails/pisa-thumbnail.jpg`
+
+**Title**
+```
+Why the Leaning Tower of Pisa Survives Earthquakes
+```
+
+**Description**
+```
+The Leaning Tower of Pisa has come through at least four strong earthquakes since 1280 without damage, and what protects it is the same thing that made it lean: the soft soil under it. A team of engineers led by Roma Tre University, with the University of Bristol, found that the tall, stiff 58-metre tower on soft soil doesn't resonate with the ground shaking, an effect called dynamic soil-structure interaction.
+
+Sources:
+• University of Bristol, 2018: https://www.bristol.ac.uk/news/2018/may/tower-of-pisa.html
+
+#shorts #science #engineering #earthquake #pisa
+```
+
+**Tags**
+```
+leaning tower of pisa, pisa earthquake, why the leaning tower of pisa doesn't fall, earthquake engineering, soil structure interaction, resonance, engineering facts, science facts, science explained, animated facts
+```
+
+---
+
+## Settings for all of them
 
 - **Audience:** No, it's not made for kids. Marking it "made for kids" turns off comments and personalized ads, which hurts monetization.
 - **Altered or synthetic content:** **No.** It's a cartoon, so nothing could be mistaken for real footage. AI-drawn art and an AI voice in an obviously animated video don't need this label.
