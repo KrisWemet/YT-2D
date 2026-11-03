@@ -85,13 +85,19 @@ The Supabase project (`wql-studio`, us-east-1) and the Phase 1 migrations alread
 
 ### 2. OAuth consent screen (needed from Phase 5; can be done now)
 
-For your own channel's analytics, Studio will sign in as you with read-only scopes.
+For your own channel's analytics, Studio will sign in as you with read-only scopes. Google now calls the consent screen **Google Auth Platform** (APIs & Services → OAuth consent screen opens it). Its left-hand menu has the settings below.
 
-1. Go to **APIs & Services → OAuth consent screen** (also called "Google Auth Platform").
-2. Set **User type** to **External** (a personal Gmail account can't choose Internal). Fill in the app name "WQL Studio", your email as support and developer contact, and your Vercel URL as the app domain.
-3. Add the scopes `https://www.googleapis.com/auth/yt-analytics.readonly` and `https://www.googleapis.com/auth/youtube.readonly`.
-4. **Publishing status: push the app to "In production".** In "Testing" mode, Google expires refresh tokens after 7 days, and the analytics sync would stop every week. Google may show "unverified app" when you sign in. That's fine for an app only you use; you don't need to submit it for verification.
-5. Later, Phase 5 creates the OAuth client ID (type *Web application*) with the redirect URI `https://<your-app>/api/auth/google/callback`.
+1. **Overview → Get started** (only shown if the app isn't set up yet). The wizard asks for:
+   - **App information:** the app name "WQL Studio" and your email as user support email.
+   - **Audience:** choose **External**. A personal Gmail account can't choose Internal.
+   - **Contact information:** your email.
+   - **Finish:** agree to the policy, then click **Create**.
+
+   If the app already exists, the same settings are under **Branding** and **Audience**.
+2. **Branding:** add `wql-studio.vercel.app` under Authorised domains as `vercel.app`, or skip it until Phase 5.
+3. **Data access → Add or remove scopes:** paste `https://www.googleapis.com/auth/yt-analytics.readonly` and `https://www.googleapis.com/auth/youtube.readonly` into **Manually add scopes**, click **Add to table**, then **Update** and **Save**.
+4. **Audience → Publishing status → Publish app.** This takes the app from "Testing" to "In production". In Testing, Google expires refresh tokens after 7 days, and the analytics sync would stop every week. Google may show "unverified app" when you sign in. That's fine for an app only you use; you don't need to submit it in the **Verification centre**.
+5. **Clients:** leave this for Phase 5. Phase 5 creates the OAuth client (type *Web application*) with the redirect URI `https://wql-studio.vercel.app/api/auth/google/callback`.
 6. Writing playlists (Phase 2, optional) needs the broader `youtube` scope. Studio will ask before enabling it.
 
 ### 3. Environment variables
