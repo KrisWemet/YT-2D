@@ -14,25 +14,30 @@ The aim is a repeatable recipe. Every episode uses the same round-headed scienti
 
 <table>
   <tr>
-    <td align="center" width="33%">
-      <img src="thumbnails/pigeon-head-bob-thumbnail.jpg" width="200" alt="Thumbnail: a wide-eyed pigeon walking on a treadmill under the words IT'S NOT BALANCE"><br>
+    <td align="center" width="25%">
+      <img src="thumbnails/pigeon-head-bob-thumbnail.jpg" width="180" alt="Thumbnail: a wide-eyed pigeon walking on a treadmill under the words IT'S NOT BALANCE"><br>
       <b>Why Pigeons Bob Their Heads (It's Not What You Think)</b><br>
       24.9 s · <code>PigeonShort</code>
     </td>
-    <td align="center" width="33%">
-      <img src="thumbnails/hurricane-nuke-thumbnail.jpg" width="200" alt="Thumbnail: a smug hurricane above the words JUST NUKE IT? and a grinning scientist holding a lit bomb"><br>
+    <td align="center" width="25%">
+      <img src="thumbnails/hurricane-nuke-thumbnail.jpg" width="180" alt="Thumbnail: a smug hurricane above the words JUST NUKE IT? and a grinning scientist holding a lit bomb"><br>
       <b>Why Don't We Just Nuke a Hurricane?</b><br>
       20.6 s · <code>HurricaneShort</code>
     </td>
-    <td align="center" width="33%">
-      <img src="thumbnails/tickle-thumbnail.jpg" width="200" alt="Thumbnail: the scientist laughing hard while a robot arm tickles him with a feather, under the words IT TAKES A ROBOT"><br>
+    <td align="center" width="25%">
+      <img src="thumbnails/tickle-thumbnail.jpg" width="180" alt="Thumbnail: the scientist laughing hard while a robot arm tickles him with a feather, under the words IT TAKES A ROBOT"><br>
       <b>The Robot Experiment That Explains Why You Can't Tickle Yourself</b><br>
       21.0 s · <code>TickleShort</code>
+    </td>
+    <td align="center" width="25%">
+      <img src="thumbnails/pisa-thumbnail.jpg" width="180" alt="Thumbnail: the bored-looking Leaning Tower of Pisa beside the panicking scientist during an earthquake, under the words 4 QUAKES NO DAMAGE"><br>
+      <b>The Wrong Ground Is Why the Leaning Tower of Pisa Survives Earthquakes</b><br>
+      22.2 s · <code>PisaShort</code>
     </td>
   </tr>
 </table>
 
-All three are rendered at 2160×3840 (4K vertical) and 60 fps, with the voice and sound effects mixed in. The MP4 files aren't stored in git; the commands under [Running it](#running-it) render them again.
+All four are rendered at 2160×3840 (4K vertical) and 60 fps, with the voice and sound effects mixed in. The MP4 files aren't stored in git; the commands under [Running it](#running-it) render them again.
 
 ### 1. Why pigeons bob their heads
 
@@ -87,6 +92,21 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 - [Blakemore, Frith & Wolpert 1999](https://doi.org/10.1162/089892999563607): the robot experiment. Ticklishness rose as the delay grew from 0 to 200 ms. At 200 ms it was no longer significantly different from a touch the person didn't cause.
 - [Blakemore, Wolpert & Frith 1998](https://doi.org/10.1038/2870): brain scans showing the brain predicts and cancels the feeling of self-made touch.
 
+### 4. Why the Leaning Tower of Pisa survives earthquakes
+
+![Four frames from the Pisa Short: the scientist holding up the leaning tower above the soft soil layers; the bored tower during an earthquake with four quake badges; two metronomes beside the swaying tower; a green shield over the soft clay](docs/pisa-storyboard.jpg)
+
+> The soft ground that makes the Leaning Tower of Pisa lean also helps keep it standing. It's survived at least four strong earthquakes since 1280. Engineers found that a tall, stiff tower on soft soil sways to a different rhythm than the ground, so the shaking doesn't build up. Basically, the same soil that tilted it is what protects it.
+
+**The story:**
+1. The scientist does the tourist pose, "holding up" the tower, with the ground cut away below to show the soft clay. He lets go, and the tower stays up on its own.
+2. Four earthquakes hit. The ground jitters and he wobbles on one leg, while the tower barely moves and looks bored.
+3. A ruler, "STIFF" and "SOFT" tags appear for "tall, stiff tower on soft soil".
+4. Two metronomes show the ground's fast rhythm and the tower's slow one. A red ghost tower swings in step with the shaking, wider and wider, until a big X crosses it out.
+5. A shield pops over the soft clay on "protects it", and he goes back to holding up the tower, which loops back to the first frame.
+
+**Sources:** [University of Bristol, 2018](https://www.bristol.ac.uk/news/2018/may/tower-of-pisa.html), on the study led by Roma Tre University. It says the 58-metre tower has survived "undamaged, at least four strong earthquakes … since 1280". Its height and stiffness, together with the soft soil, change how it vibrates "in such a way that the Tower does not resonate with earthquake ground motion". The results were presented at the 16th European Conference on Earthquake Engineering.
+
 ## The house style
 
 - **Format:** vertical 9:16, 20–25 seconds. The voice sets the length.
@@ -111,7 +131,7 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 | 4. Beat sheet | Lists what's on screen and which sound plays for every line, timed to the word. | `images/*/beats.md` |
 | 5. Pictures | GPT Image 2.5 draws each pose and prop on a flat key colour. Earlier pictures are used as references to keep the characters and style consistent. | `images/*/prompts.md`, `images/*/raw/` |
 | 6. Cut-outs | The background is keyed out to transparency and the outline edges are cleaned. Each sprite is then measured (feet, head, eye, the bomb's fuse…) so code can line it up. | `key.py`, `prep_*.py` → `src/*/sprites.ts` |
-| 7. Animation | Remotion compositions draw the camera, layers, poses, physics and effects in code. | `src/pigeon/`, `src/hurricane/`, `src/tickle/` |
+| 7. Animation | Remotion compositions draw the camera, layers, poses, physics and effects in code. | `src/pigeon/`, `src/hurricane/`, `src/tickle/`, `src/pisa/` |
 | 8. Sound | Sound effects are synthesized in Python and mixed on their own layer. | `sfx.py`, `src/*/Sfx.tsx` |
 | 9. QA | Three checks: stills and contact sheets; a scan for sudden jumps between frames; a check of size, frame rate, length and loudness. | `scripts/` |
 | 10. Render | The 1080×1920 compositions are rendered at 2× scale, giving 2160×3840 at 60 fps. | `npx remotion render` |
@@ -121,10 +141,11 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 ```
 src/
-  Root.tsx        registers the videos, thumbnails and channel art (PigeonShort, HurricaneShort, TickleShort, the three thumbnails, ChannelBanner, ChannelPicture)
+  Root.tsx        registers the videos, thumbnails and channel art (PigeonShort, HurricaneShort, TickleShort, PisaShort, the four thumbnails, ChannelBanner, ChannelPicture)
   pigeon/         pigeon Short: shots (Street, Lab, Close, CamGuy), pigeon rig and walk, effects, sound mix, beat times
   hurricane/      hurricane Short: one continuous 2.5D shot, sound mix, beat times
   tickle/         tickle Short: one lab set, brain bubble, robot, tickle-meter, sound cues, beat times
+  pisa/           Pisa Short: one shot of the tower over a soil cross-section, quake model, metronomes, sound cues
   thumbs/         thumbnails, rendered as Remotion stills
   channel/        channel banner and picture, rendered as Remotion stills
 public/           everything the videos load: cut-out sprites, voice-overs, sound effects, thumbnail font
@@ -132,6 +153,7 @@ images/
   pigeon/         prompts, beat sheet, word timings, raw and keyed pictures, QA sheets, pipeline scripts
   hurricane/      the same for the hurricane Short
   tickle/         the same for the tickle Short
+  pisa/           the same for the Pisa Short (+ sfx.py for the rumble and creak)
 scripts/          QA tools (stills, contact sheets, pop scan, verify) and the README storyboard maker
 thumbnails/       final thumbnails, ready to upload (1080×1920 JPG)
 publish/          what goes on YouTube: upload details, channel banner and picture, channel text
@@ -153,9 +175,11 @@ Render the Shorts in 4K, the thumbnails and the channel art:
 npx remotion render src/index.ts PigeonShort out/pigeon-head-bob-4K.mp4 --scale=2 --crf=16 --pixel-format=yuv420p
 npx remotion render src/index.ts HurricaneShort out/hurricane-nuke-4K.mp4 --scale=2 --crf=16 --pixel-format=yuv420p
 npx remotion render src/index.ts TickleShort out/tickle-self-4K.mp4 --scale=2 --crf=16 --pixel-format=yuv420p
+npx remotion render src/index.ts PisaShort out/pisa-earthquake-4K.mp4 --scale=2 --crf=16 --pixel-format=yuv420p
 npx remotion still src/index.ts PigeonThumb out/pigeon-thumbnail.png
 npx remotion still src/index.ts HurricaneThumb out/hurricane-thumbnail.png
 npx remotion still src/index.ts TickleThumb out/tickle-thumbnail.png
+npx remotion still src/index.ts PisaThumb out/pisa-thumbnail.png
 npx remotion still src/index.ts ChannelBanner publish/channel-banner.png
 npx remotion still src/index.ts ChannelPicture publish/channel-picture.png
 ```
@@ -173,7 +197,7 @@ python3 scripts/storyboard.py out/hurricane-nuke-4K.mp4 docs/hurricane-storyboar
 
 ### Remaking assets
 
-These scripts live in `images/pigeon/scripts/`, with the hurricane's own `prep.py`, `sfx.py` and `storm_bed.py` in `images/hurricane/`, and the tickle Short's `prep.py` in `images/tickle/`. Each script's usage is in its first lines.
+These scripts live in `images/pigeon/scripts/`, with the hurricane's own `prep.py`, `sfx.py` and `storm_bed.py` in `images/hurricane/`, the tickle Short's `prep.py` in `images/tickle/`, and the Pisa Short's `prep.py` and `sfx.py` in `images/pisa/`. Each script's usage is in its first lines.
 
 | Script | What it does |
 |---|---|
@@ -200,18 +224,17 @@ Remotion is free for individuals and small teams; larger companies need a compan
 
 ## What the Shorts cost
 
-| | Pigeon | Hurricane | Tickle |
-|---|---|---|---|
-| Pictures (Kie.ai, 10 credits each) | 10 pictures, 100 credits | 7 pictures, 70 credits | 6 pictures, 60 credits |
-| Generated sounds (Kie.ai) | 7.5 credits | 2.5 credits (the storm sound never arrived, so it was synthesized instead) | none (reused the earlier sound effects) |
-| Voice-over (vidIQ) | 14 credits | 14 credits | 14 credits |
-| Title ideas (vidIQ) | 5 credits | 5 credits | 5 credits |
+| | Pigeon | Hurricane | Tickle | Pisa |
+|---|---|---|---|---|
+| Pictures (Kie.ai, 10 credits each) | 10 pictures, 100 credits | 7 pictures, 70 credits | 6 pictures, 60 credits | 2 pictures, 20 credits |
+| Generated sounds (Kie.ai) | 7.5 credits | 2.5 credits (the storm sound never arrived, so it was synthesized instead) | none (reused the earlier sound effects) | none (rumble and creak synthesized) |
+| Voice-over (vidIQ) | 14 credits | 14 credits | 14 credits | 14 credits |
+| Title ideas (vidIQ) | 5 credits | 5 credits | 5 credits | 5 credits |
 
 ## Next ideas
 
-The topics so far are animals (pigeons), weather (hurricanes) and the human body (tickling), so the next ones should come from other areas. These ideas were looked at but not made yet. Each needs its own fact check before it gets a script.
+The topics so far are animals (pigeons), weather (hurricanes), the human body (tickling) and engineering (Pisa), so the next ones should come from other areas. These ideas were looked at but not made yet. Each needs its own fact check before it gets a script.
 
-- why the Leaning Tower of Pisa survives earthquakes
 - hay dust and the holes in Swiss cheese
 - blue sunsets on Mars
 - bread going stale faster in the fridge

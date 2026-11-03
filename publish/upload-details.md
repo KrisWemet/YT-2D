@@ -90,7 +90,33 @@ why can't you tickle yourself, tickle yourself, tickling, brain facts, human bod
 
 ---
 
-## Settings for all three
+## Short 4: Leaning Tower of Pisa
+
+**File:** `out/pisa-earthquake-4K.mp4` · **Thumbnail:** `thumbnails/pisa-thumbnail.jpg`
+
+**Title**
+```
+The Wrong Ground Is Why the Leaning Tower of Pisa Survives Earthquakes
+```
+
+**Description**
+```
+The soft soil that makes the Leaning Tower of Pisa lean also helps it survive earthquakes. The 58-metre tower has come through at least four strong earthquakes since 1280 undamaged. A team of engineers led by Roma Tre University, with the University of Bristol, found that the tall, stiff tower on soft soil doesn't resonate with the ground shaking, an effect called dynamic soil-structure interaction.
+
+Sources:
+• University of Bristol, 2018: https://www.bristol.ac.uk/news/2018/may/tower-of-pisa.html
+
+#shorts #science #engineering #earthquake #pisa
+```
+
+**Tags**
+```
+leaning tower of pisa, pisa earthquake, why the leaning tower of pisa doesn't fall, earthquake engineering, soil structure interaction, resonance, engineering facts, science facts, science explained, animated facts
+```
+
+---
+
+## Settings for all of them
 
 - **Audience:** No, it's not made for kids. Marking it "made for kids" turns off comments and personalized ads, which hurts monetization.
 - **Altered or synthetic content:** **No.** It's a cartoon, so nothing could be mistaken for real footage. AI-drawn art and an AI voice in an obviously animated video don't need this label.

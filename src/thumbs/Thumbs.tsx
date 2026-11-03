@@ -7,6 +7,7 @@ import {DashedLine, INK, PauseBadge} from '../pigeon/fx';
 import {H} from '../hurricane/sprites';
 import {HUR, Hurricane, Sparks} from '../hurricane/Scene';
 import {K} from '../tickle/sprites';
+import {PisaWorld} from '../pisa/Scene';
 
 export const FONT = 'Luckiest Guy';
 export const useFont = () => {
@@ -173,6 +174,29 @@ export const TickleThumb: React.FC = () => {
         ))}
       </svg>
       <Headline y={110} tilt={-3} lines={[{text: 'IT TAKES', size: 165, color: '#ffffff'}, {text: 'A ROBOT', size: 220, color: '#ffd84a'}]} />
+    </AbsoluteFill>
+  );
+};
+
+// ------------------------------------------------------------------ 4 quakes, no damage (Pisa Short)
+export const PisaThumb: React.FC = () => {
+  useFont();
+  const k = 1.05;
+  const cam = {x: 600, y: 719, z: 1000 - 1000 / k};
+  const groundY = 960 + k * (1260 - 719);
+  return (
+    <AbsoluteFill style={{overflow: 'hidden'}}>
+      <PisaWorld t={7.32} cam={cam} />
+      {/* shaking marks around the base and the wobbling scientist */}
+      <svg width={1080} height={1920} style={{position: 'absolute', left: 0, top: 0}}>
+        {[[70, groundY - 150, 1], [70, groundY - 60, 1], [1010, groundY - 330, -1], [1010, groundY - 220, -1]].map(([x, y, d], i) => (
+          <path key={i} d={`M${x} ${y}l${18 * d} -22l${18 * d} 22l${18 * d} -22l${18 * d} 22`} fill="none" stroke={INK} strokeWidth={11} strokeLinecap="round" strokeLinejoin="round" />
+        ))}
+        {[0, 1, 2].map((i) => (
+          <path key={i} d={`M${330 + i * 150} ${groundY + 40}l26 70l-30 40l34 80`} fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round" strokeLinejoin="round" opacity={0.75} />
+        ))}
+      </svg>
+      <Headline y={60} tilt={-3} lines={[{text: '4 QUAKES', size: 185, color: '#ffffff'}, {text: 'NO DAMAGE', size: 172, color: '#ffd84a'}]} />
     </AbsoluteFill>
   );
 };
