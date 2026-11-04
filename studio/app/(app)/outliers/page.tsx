@@ -125,7 +125,9 @@ export default async function OutliersPage({ searchParams }: PageProps<'/outlier
                   <Stat label="Age" value={age(o.published_at, now)} />
                 </dl>
                 <div className="flex items-center justify-between gap-2 text-xs text-muted">
-                  <span className="mr-auto">Median {compact(o.baseline_median)}</span>
+                  <span className="mr-auto" title="The channel's median views, never less than 1,000">
+                    vs {compact(o.baseline_median)}
+                  </span>
                   <form action={setVideoFormat}>
                     <input type="hidden" name="video_id" value={o.video_id ?? ''} />
                     <input type="hidden" name="format" value={o.format === 'short' ? 'long' : 'short'} />

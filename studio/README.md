@@ -61,6 +61,7 @@ The code is in `lib/core/shorts.ts`.
 
 - **Baseline:** for each channel and format (Shorts and long form separately), the median views of its last 30 uploads that are at least 7 days old. Brand-new uploads haven't finished collecting views, so they'd drag the median down. A baseline needs at least 5 such uploads.
 - **Outlier:** an upload under 60 days old with views ≥ 5× that baseline. Young uploads can be flagged early.
+- **Floor:** multiples are measured against at least 1,000 views. A channel whose typical video gets 70 views would otherwise turn an ordinary 2,000-view video into a "28×" outlier. The real median is still stored in `channel_baselines`.
 - **Views per day:** views ÷ age, with the first day counted as a full day.
 - **Tracking:** baselines are kept as history in `channel_baselines`. Already-flagged videos keep their multiple up to date as the baseline moves. Dismissed outliers stay dismissed.
 

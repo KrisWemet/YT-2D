@@ -6,6 +6,9 @@
  * brand-new videos can't drag the median down and inflate every multiple.
  * Outlier: an upload under 60 days old with views ≥ 5× that baseline. Young uploads can be flagged
  * early; they're compared against the mature baseline.
+ * Floor: multiples are measured against at least 1,000 views. A channel whose typical video gets 70
+ * views would otherwise turn an ordinary 2,000-view video into a "28×" outlier and push real breakouts
+ * down the feed. The true median is still stored; only the divisor is floored.
  */
 
 import type { VideoFormat } from './shorts';
@@ -16,6 +19,7 @@ export type OutlierOptions = {
   sampleSize: number;
   minAgeDays: number;
   minSample: number;
+  minBaselineMedian: number;
   threshold: number;
   maxAgeDays: number;
 };
@@ -24,6 +28,7 @@ export const OUTLIER_DEFAULTS: Readonly<OutlierOptions> = {
   sampleSize: 30, // last N uploads per format
   minAgeDays: 7, // baseline uses uploads at least this old
   minSample: 5, // fewer mature uploads than this → no baseline yet
+  minBaselineMedian: 1000, // multiples are measured against at least this many views
   threshold: 5, // flag at ≥ 5× the median
   maxAgeDays: 60, // only uploads younger than this are candidates (and get daily snapshots)
 };
@@ -35,7 +40,13 @@ export type VideoStat = {
   views: number | null;
 };
 
-export type Baseline = { format: VideoFormat; median: number; sampleSize: number; videoIds: string[] };
+export type Baseline = {
+  format: VideoFormat;
+  median: number; // the channel's real median
+  divisor: number; // max(median, minBaselineMedian): what multiples are measured against
+  sampleSize: number;
+  videoIds: string[];
+};
 
 export type Outlier = {
   videoId: string;
@@ -70,7 +81,7 @@ export function computeBaseline(
   now: Date,
   opts: Partial<OutlierOptions> = {},
 ): Baseline | null {
-  const { sampleSize, minAgeDays, minSample } = { ...OUTLIER_DEFAULTS, ...opts };
+  const { sampleSize, minAgeDays, minSample, minBaselineMedian } = { ...OUTLIER_DEFAULTS, ...opts };
   const sample = videos
     .filter((v) => v.format === format && v.views != null && ageDays(v.publishedAt, now) >= minAgeDays)
     .sort((a, b) => toMs(b.publishedAt) - toMs(a.publishedAt))
@@ -78,7 +89,7 @@ export function computeBaseline(
   if (sample.length < minSample) return null;
   const m = median(sample.map((v) => v.views as number));
   if (m == null || m <= 0) return null;
-  return { format, median: m, sampleSize: sample.length, videoIds: sample.map((v) => v.id) };
+  return { format, median: m, divisor: Math.max(m, minBaselineMedian), sampleSize: sample.length, videoIds: sample.map((v) => v.id) };
 }
 
 export function detectOutliers(
@@ -93,7 +104,7 @@ export function detectOutliers(
     if (v.format !== baseline.format || v.views == null) continue;
     const age = ageDays(v.publishedAt, now);
     if (age >= maxAgeDays) continue;
-    const multiple = v.views / baseline.median;
+    const multiple = v.views / baseline.divisor;
     if (multiple < threshold) continue;
     out.push({
       videoId: v.id,
@@ -102,7 +113,7 @@ export function detectOutliers(
       views: v.views,
       viewsPerDay: Math.round(viewsPerDay(v.views, age)),
       ageDays: round(age, 1),
-      baselineMedian: baseline.median,
+      baselineMedian: baseline.divisor,
     });
   }
   return out.sort((a, b) => b.multiple - a.multiple);

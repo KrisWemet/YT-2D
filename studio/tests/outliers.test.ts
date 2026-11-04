@@ -63,7 +63,7 @@ describe('computeBaseline', () => {
 });
 
 describe('detectOutliers', () => {
-  const baseline = { format: 'short' as const, median: 1000, sampleSize: 30, videoIds: [] };
+  const baseline = { format: 'short' as const, median: 1000, divisor: 1000, sampleSize: 30, videoIds: [] };
 
   it('flags uploads at or above 5× the median, sorted by multiple', () => {
     const v = vids('short', [[3, 4999], [3, 5000], [20, 12_000], [20, 100]]);
@@ -92,6 +92,29 @@ describe('detectOutliers', () => {
   it('honours a custom threshold', () => {
     const v = vids('short', [[3, 3000]]);
     expect(detectOutliers(v, baseline, NOW, { threshold: 3 })).toHaveLength(1);
+  });
+});
+
+describe('baseline floor', () => {
+  it('keeps the real median but measures multiples against at least 1,000 views', () => {
+    const v = vids('short', [[10, 60], [11, 70], [12, 80], [13, 90], [14, 100], [3, 4000], [3, 21_700_000]]);
+    const b = computeBaseline(v, 'short', NOW)!;
+    expect(b.median).toBe(80);
+    expect(b.divisor).toBe(1000);
+    const o = detectOutliers(v, b, NOW);
+    // 4,000 views would be 50× an 80-view median; against the floor it's 4×, so not an outlier.
+    expect(o.map((x) => x.videoId)).toEqual(['short6']);
+    expect(o[0].multiple).toBe(21_700);
+    expect(o[0].baselineMedian).toBe(1000);
+  });
+  it('leaves channels above the floor untouched', () => {
+    const v = vids('short', [[10, 5000], [11, 5000], [12, 5000], [13, 5000], [14, 5000]]);
+    const b = computeBaseline(v, 'short', NOW)!;
+    expect(b.divisor).toBe(5000);
+  });
+  it('can be switched off', () => {
+    const v = vids('short', [[10, 80], [11, 80], [12, 80], [13, 80], [14, 80]]);
+    expect(computeBaseline(v, 'short', NOW, { minBaselineMedian: 0 })!.divisor).toBe(80);
   });
 });
 
