@@ -4,7 +4,8 @@ import type { Priority } from '@/lib/core/quota';
 import { classifyFormat, parseIsoDuration } from '@/lib/core/shorts';
 import type { Db } from '@/lib/supabase/admin';
 import type { Json, Tables, TablesInsert } from '@/lib/supabase/database.types';
-import { bestThumb, chunk, QuotaSkipError, type YouTubeClient, type YtVideo } from '@/lib/youtube/client';
+import { clip, wellFormed } from '@/lib/core/text';
+import { bestThumb, chunk, QuotaSkipError, YouTubeApiError, type YouTubeClient, type YtVideo } from '@/lib/youtube/client';
 import { channelFields } from './channels';
 
 /**
@@ -138,32 +139,50 @@ export async function runSync(db: Db, yt: YouTubeClient, opts: SyncOptions = {})
   return s;
 }
 
-/** Read the uploads playlist newest-first until we reach videos we already have. */
+/**
+ * Read the uploads playlist newest-first.
+ * - Daily: stop at the first page that contains videos we already have.
+ * - First load (backfill): keep paging past known videos (1 unit a page, no videos.list for them)
+ *   until both baselines have enough mature uploads, so an interrupted backfill resumes where it stopped.
+ * - A channel with no public uploads has no readable uploads playlist (404 playlistNotFound): that's
+ *   an empty channel, not an error. It stays un-backfilled so its first public upload starts a backfill.
+ */
 async function syncUploads(db: Db, yt: YouTubeClient, c: Channel, now: Date, maxPages: number, s: SyncSummary) {
   const known = new Set((await loadVideos(db, [c.id])).map((v) => v.id));
+  const backfilling = !c.backfilled_at;
   let pageToken: string | undefined;
   let pages = 0;
-  let reachedKnown = false;
-  let exhausted = false;
+  let empty = false;
   while (pages < maxPages) {
     // The first page is part of the daily sync; extra pages are nice-to-have and give way near the limit.
     const priority: Priority = pages === 0 ? 'essential' : 'normal';
-    const page = await yt.playlistPage(c.uploads_playlist_id!, pageToken, priority);
+    let page;
+    try {
+      page = await yt.playlistPage(c.uploads_playlist_id!, pageToken, priority);
+    } catch (e) {
+      if (pages === 0 && e instanceof YouTubeApiError && e.status === 404) {
+        empty = true;
+        break;
+      }
+      throw e;
+    }
     pages++;
     const newIds = page.items.map((i) => i.contentDetails.videoId).filter((id) => !known.has(id));
-    if (newIds.length < page.items.length) reachedKnown = true;
     for (const batch of chunk(newIds, 50)) {
       const items = await yt.videosById(batch, priority);
       await writeVideos(db, items, now, s, { channelId: c.id });
+      batch.forEach((id) => known.add(id));
     }
     pageToken = page.nextPageToken;
-    if (!pageToken) exhausted = true;
-    if (reachedKnown || exhausted) break;
-    // During a backfill, stop once there are enough mature uploads for both baselines.
-    if (!c.backfilled_at && (await hasFullBaselines(db, c.id, now))) break;
+    if (!pageToken) break;
+    if (backfilling) {
+      if (await hasFullBaselines(db, c.id, now)) break;
+    } else if (newIds.length < page.items.length) {
+      break; // reached videos we already have
+    }
   }
   const update: Partial<Channel> = { last_synced_at: now.toISOString() };
-  if (!c.backfilled_at) update.backfilled_at = now.toISOString();
+  if (backfilling && !empty) update.backfilled_at = now.toISOString();
   const { error } = await db.from('channels').update(update).eq('id', c.id);
   if (error) throw new Error(error.message);
 }
@@ -213,8 +232,8 @@ async function writeVideos(
     const row: TablesInsert<'videos'> = {
       id: v.id,
       channel_id: ctx.channelId ?? existing?.channel_id ?? sn.channelId,
-      title: sn.title,
-      description_snippet: (sn.description ?? '').slice(0, 500),
+      title: wellFormed(sn.title),
+      description_snippet: clip(sn.description, 500),
       published_at: sn.publishedAt,
       duration_s: durationS,
       live_status: sn.liveBroadcastContent ?? 'none',

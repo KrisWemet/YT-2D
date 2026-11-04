@@ -1,5 +1,6 @@
 import 'server-only';
 import type { ChannelRef } from '@/lib/core/channelInput';
+import { wellFormed } from '@/lib/core/text';
 import type { Db } from '@/lib/supabase/admin';
 import type { Enums, TablesInsert } from '@/lib/supabase/database.types';
 import { bestThumb, chunk, type YouTubeClient, type YtChannel } from '@/lib/youtube/client';
@@ -10,7 +11,7 @@ export type Tier = Enums<'channel_tier'>;
 export function channelFields(c: YtChannel) {
   const s = c.statistics ?? {};
   return {
-    title: c.snippet?.title ?? c.id,
+    title: wellFormed(c.snippet?.title ?? c.id),
     handle: c.snippet?.customUrl ?? null,
     subs: s.hiddenSubscriberCount ? null : toNum(s.subscriberCount),
     subs_hidden: Boolean(s.hiddenSubscriberCount),
