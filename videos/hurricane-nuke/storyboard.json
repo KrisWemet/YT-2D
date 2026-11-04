@@ -1,0 +1,285 @@
+{
+  "schema": "wql.storyboard/1",
+  "slug": "hurricane-nuke",
+  "question": "Why don't we just nuke a hurricane?",
+  "script_version": 1,
+  "est_duration_s": 20.6,
+  "voice": {
+    "provider": "ElevenLabs via vidIQ",
+    "voice": "Chris"
+  },
+  "frame0": {
+    "description": "Scientist on the beach holding a lit bomb; a huge hurricane asleep over the sea. One continuous 2.5D shot, no cuts.",
+    "thumbnail_text": "JUST NUKE IT?"
+  },
+  "loop": {
+    "last_line": "You'd probably keep the storm and add radiation.",
+    "returns_to": "frame0",
+    "description": "Green clears; he pulls out another bomb and the storm falls asleep again, matching frame 0"
+  },
+  "cast": [
+    "scientist",
+    "hurricane"
+  ],
+  "assets": [
+    {
+      "id": "g_bomb_hold",
+      "kind": "pose",
+      "description": "Scientist holding a round black bomb with a radiation symbol, confident grin",
+      "aspect": "2:3",
+      "refs": [
+        "ref_guy"
+      ]
+    },
+    {
+      "id": "g_windup",
+      "kind": "pose",
+      "description": "Scientist leaning back, bomb held high to throw",
+      "aspect": "2:3",
+      "refs": [
+        "ref_guy"
+      ]
+    },
+    {
+      "id": "g_throw",
+      "kind": "pose",
+      "description": "Scientist right after throwing, arms forward, hands empty",
+      "aspect": "2:3",
+      "refs": [
+        "g_windup",
+        "ref_guy"
+      ]
+    },
+    {
+      "id": "g_scared",
+      "kind": "pose",
+      "description": "Scientist scared, hands on cheeks, mouth open",
+      "aspect": "2:3",
+      "refs": [
+        "ref_guy"
+      ]
+    },
+    {
+      "id": "bomb",
+      "kind": "prop",
+      "description": "The bomb alone, same design as in g_bomb_hold",
+      "aspect": "1:1",
+      "refs": [
+        "g_bomb_hold"
+      ]
+    },
+    {
+      "id": "hurricane",
+      "kind": "character",
+      "description": "Cartoon hurricane seen from above, four spiral arms; face drawn in code",
+      "aspect": "1:1"
+    },
+    {
+      "id": "houses",
+      "kind": "background",
+      "description": "Row of four pastel beach houses with palm trees",
+      "aspect": "3:2"
+    }
+  ],
+  "beats": [
+    {
+      "n": 1,
+      "line": "Why don't we just nuke a hurricane?",
+      "cue_word": "hurricane",
+      "est_start_s": 0,
+      "est_duration_s": 2.4,
+      "visual": "Scientist on the beach holding a lit bomb under the sleeping hurricane. Fuse sparks grow; on \"hurricane\" the storm's eyes pop open and stare at him.",
+      "camera": "Static wide; one continuous shot",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "storm_bed"
+        },
+        {
+          "cue": "fuse"
+        },
+        {
+          "cue": "pop_big",
+          "at_word": "hurricane"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "g_bomb_hold",
+        "hurricane"
+      ],
+      "claim_ids": [],
+      "gag": "The storm wakes up exactly on its own name"
+    },
+    {
+      "n": 2,
+      "line": "Because the hurricane is way stronger than the bomb.",
+      "cue_word": "stronger",
+      "est_start_s": 2.4,
+      "est_duration_s": 2.8,
+      "visual": "Squash-swap to the wind-up on \"Because\"; on \"stronger\" he throws and the bomb flies (3D projectile, spin, perspective) into the storm. Boom in the pause: flash, explosion crown, shake; the storm squeezes its eyes shut, then turns smug.",
+      "camera": "Follows the bomb into the storm",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "zip",
+          "at_word": "Because"
+        },
+        {
+          "cue": "whoosh",
+          "at_word": "stronger"
+        },
+        {
+          "cue": "whistle"
+        },
+        {
+          "cue": "boom_big"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "g_windup",
+        "g_throw",
+        "bomb",
+        "hurricane"
+      ],
+      "claim_ids": [
+        "c1"
+      ],
+      "gag": "The explosion only makes the hurricane look smug"
+    },
+    {
+      "n": 3,
+      "line": "A big one gives off as much heat as a ten-megaton nuclear bomb every twenty minutes.",
+      "cue_word": "minutes",
+      "est_start_s": 5.2,
+      "est_duration_s": 4.9,
+      "visual": "Orange heat glow around the hurricane; a big bomb icon pops in front of it on \"ten-megaton\"; a clock sweeps 20 minutes, then four quick sweeps with a boom in the storm and a bomb added to a tally each time.",
+      "camera": null,
+      "on_screen_text": "= 10 Mt every 20 min",
+      "sfx": [
+        {
+          "cue": "whoosh_soft",
+          "at_word": "gives"
+        },
+        {
+          "cue": "pop",
+          "at_word": "megaton"
+        },
+        {
+          "cue": "tick"
+        },
+        {
+          "cue": "boom_small"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "hurricane",
+        "bomb"
+      ],
+      "claim_ids": [
+        "c1"
+      ],
+      "gag": "The tally of bombs keeps growing while the storm doesn't care"
+    },
+    {
+      "n": 4,
+      "line": "So one more bomb might not even slow it down.",
+      "cue_word": "slow",
+      "est_start_s": 10.1,
+      "est_duration_s": 3.3,
+      "visual": "Camera pulls back; a tiny extra bomb joins the tally. Scientist squash-swaps to scared, trembling; the hurricane yawns on \"slow it down\".",
+      "camera": "Pull back",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "pop",
+          "at_word": "bomb"
+        },
+        {
+          "cue": "bloop",
+          "at_word": "might"
+        },
+        {
+          "cue": "yawn",
+          "at_word": "slow"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "g_scared",
+        "hurricane"
+      ],
+      "claim_ids": [
+        "c2"
+      ],
+      "gag": "The hurricane yawns"
+    },
+    {
+      "n": 5,
+      "line": "And the trade winds would carry the radioactive fallout straight to land.",
+      "cue_word": "fallout",
+      "est_start_s": 13.4,
+      "est_duration_s": 3.9,
+      "visual": "White wind arrows sweep toward the land; a green fallout cloud leaves the storm and settles behind him over the beach houses.",
+      "camera": null,
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "whoosh_soft",
+          "at_word": "trade"
+        },
+        {
+          "cue": "geiger",
+          "at_word": "radioactive"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "houses",
+        "g_scared"
+      ],
+      "claim_ids": [
+        "c3"
+      ],
+      "gag": null
+    },
+    {
+      "n": 6,
+      "line": "You'd probably keep the storm and add radiation.",
+      "cue_word": "radiation",
+      "est_start_s": 17.3,
+      "est_duration_s": 3.3,
+      "visual": "Scene tinted green; he glows green and sweats; the hurricane laughs. Then the green clears, he pulls out another bomb and the storm falls asleep again (loop to frame 0).",
+      "camera": null,
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "laugh_rumble",
+          "at_word": "You'd"
+        },
+        {
+          "cue": "plip"
+        },
+        {
+          "cue": "sparkle"
+        },
+        {
+          "cue": "fuse"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "g_bomb_hold",
+        "hurricane"
+      ],
+      "claim_ids": [
+        "c2",
+        "c3"
+      ],
+      "gag": "He reaches for another bomb anyway"
+    }
+  ],
+  "next_tease": null
+}

@@ -1,0 +1,383 @@
+{
+  "schema": "wql.storyboard/1",
+  "slug": "pigeon-head-bob",
+  "question": "Why do pigeons bob their heads?",
+  "script_version": 1,
+  "est_duration_s": 24.9,
+  "voice": {
+    "provider": "ElevenLabs via vidIQ",
+    "voice": "Chris"
+  },
+  "frame0": {
+    "description": "Big pigeon mid-stride on a city sidewalk, camera tracking it; the premise reads as a thumbnail.",
+    "thumbnail_text": "IT'S NOT BALANCE"
+  },
+  "loop": {
+    "last_line": "which probably helps them spot movement.",
+    "returns_to": "frame0",
+    "description": "The pigeon snaps a falling crumb and walks on; the last frame matches frame 0"
+  },
+  "cast": [
+    "scientist",
+    "pigeon"
+  ],
+  "assets": [
+    {
+      "id": "pigeon_rig",
+      "kind": "character",
+      "description": "Pigeon cut into head, neck and body for a walking rig; legs, eye and brow drawn in code",
+      "aspect": "1:1"
+    },
+    {
+      "id": "p_close",
+      "kind": "character",
+      "description": "Big close-up of the pigeon's head; eye and brow drawn in code",
+      "aspect": "1:1"
+    },
+    {
+      "id": "g_hero",
+      "kind": "pose",
+      "description": "Scientist thinking, hand on chin",
+      "aspect": "2:3",
+      "refs": [
+        "ref_guy"
+      ]
+    },
+    {
+      "id": "g_balance",
+      "kind": "pose",
+      "description": "Scientist wobbling on one leg",
+      "aspect": "2:3",
+      "refs": [
+        "ref_guy"
+      ]
+    },
+    {
+      "id": "g_hold",
+      "kind": "pose",
+      "description": "Scientist holding a pigeon",
+      "aspect": "2:3",
+      "refs": [
+        "ref_guy"
+      ]
+    },
+    {
+      "id": "g_empty",
+      "kind": "pose",
+      "description": "Scientist with empty hands in the same pose as g_hold",
+      "aspect": "2:3",
+      "refs": [
+        "g_hold"
+      ]
+    },
+    {
+      "id": "g_clip",
+      "kind": "pose",
+      "description": "Scientist with a clipboard, surprised",
+      "aspect": "2:3",
+      "refs": [
+        "ref_guy"
+      ]
+    },
+    {
+      "id": "g_camera",
+      "kind": "pose",
+      "description": "Scientist holding a camera",
+      "aspect": "2:3",
+      "refs": [
+        "ref_guy"
+      ]
+    },
+    {
+      "id": "treadmill",
+      "kind": "prop",
+      "description": "Small treadmill with a green button; belt slats animated in code",
+      "aspect": "3:2"
+    },
+    {
+      "id": "street",
+      "kind": "background",
+      "description": "City street backdrop for the multiplane camera",
+      "aspect": "3:2"
+    }
+  ],
+  "beats": [
+    {
+      "n": 1,
+      "line": "A walking pigeon's head never actually moves backward.",
+      "cue_word": "backward",
+      "est_start_s": 0,
+      "est_duration_s": 2.8,
+      "visual": "Normal walk with the camera tracking the body, so the head seems to bob. The camera eases to a stop and the walk slows into slow motion; a red dashed guide line pops at the beak tip. A white arrow pointing back appears behind the head and a red X stamps over it.",
+      "camera": "Tracking, then eases to a stop",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "city_bed"
+        },
+        {
+          "cue": "tick"
+        },
+        {
+          "cue": "pop",
+          "at_word": "never"
+        },
+        {
+          "cue": "stamp",
+          "at_word": "backward"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "pigeon_rig",
+        "street"
+      ],
+      "claim_ids": [
+        "c1"
+      ],
+      "gag": "The red X stamps the wrong idea"
+    },
+    {
+      "n": 2,
+      "line": "It freezes in place while the body moves forward, then darts ahead.",
+      "cue_word": "darts",
+      "est_start_s": 2.8,
+      "est_duration_s": 3.6,
+      "visual": "Dolly in (2.5D, buildings blur). A new hold starts: head parked on the line, red pause badge above it; the body glides forward under the still head; then the head thrusts forward with speed lines and a new line appears at the new spot.",
+      "camera": "Dolly in",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "whoosh_soft"
+        },
+        {
+          "cue": "pop",
+          "at_word": "freezes"
+        },
+        {
+          "cue": "whoosh",
+          "at_word": "darts"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "pigeon_rig",
+        "street"
+      ],
+      "claim_ids": [
+        "c1"
+      ],
+      "gag": "The neck stretches back like taffy while the head stays put"
+    },
+    {
+      "n": 3,
+      "line": "You'd think that's for balance.",
+      "cue_word": "balance",
+      "est_start_s": 6.4,
+      "est_duration_s": 2,
+      "visual": "Dolly out to reveal the scientist thinking; on \"balance\" he squash-swaps to a one-leg wobble with a sweat drop.",
+      "camera": "Dolly out",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "whoosh"
+        },
+        {
+          "cue": "boing",
+          "at_word": "balance"
+        },
+        {
+          "cue": "plip"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "g_hero",
+        "g_balance"
+      ],
+      "claim_ids": [],
+      "gag": "He can't balance either"
+    },
+    {
+      "n": 4,
+      "line": "But when scientists put pigeons on a treadmill, the bobbing stopped.",
+      "cue_word": "stopped",
+      "est_start_s": 8.4,
+      "est_duration_s": 4.3,
+      "visual": "Cut to the lab: scientist holds the pigeon next to a small treadmill, bread poster on the wall. On \"put\" he swaps to empty hands and the rigged pigeon hops onto the belt; on \"treadmill\" the green button glows and the belt runs. The guide line at the beak shows the head never leaves it; he swaps to clipboard and surprise.",
+      "camera": "Cut",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "flutter",
+          "at_word": "put"
+        },
+        {
+          "cue": "thud"
+        },
+        {
+          "cue": "click",
+          "at_word": "treadmill"
+        },
+        {
+          "cue": "hum_bed"
+        },
+        {
+          "cue": "pop",
+          "at_word": "stopped"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "g_hold",
+        "g_empty",
+        "g_clip",
+        "pigeon_rig",
+        "treadmill"
+      ],
+      "claim_ids": [
+        "c2"
+      ],
+      "gag": "The pigeon steps onto the belt like it's late for work"
+    },
+    {
+      "n": 5,
+      "line": "Their legs kept walking, but their view never changed.",
+      "cue_word": "changed",
+      "est_start_s": 12.7,
+      "est_duration_s": 3.3,
+      "visual": "Push in to the treadmill as the scientist scoots out of frame; close on the legs churning on the moving belt; a sight cone from the eye to the bread poster stays fixed.",
+      "camera": "Push in",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "zip"
+        },
+        {
+          "cue": "tick"
+        },
+        {
+          "cue": "shimmer",
+          "at_word": "view"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "pigeon_rig",
+        "treadmill"
+      ],
+      "claim_ids": [
+        "c2"
+      ],
+      "gag": "Its eyes never leave the bread poster"
+    },
+    {
+      "n": 6,
+      "line": "So it's mostly about vision.",
+      "cue_word": "vision",
+      "est_start_s": 16,
+      "est_duration_s": 1.9,
+      "visual": "Cut to a big close-up of the pigeon's head; on \"vision\" the eye pops, the brow lifts, sparkles.",
+      "camera": "Cut to close-up",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "bloop",
+          "at_word": "vision"
+        },
+        {
+          "cue": "sparkle"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "p_close"
+      ],
+      "claim_ids": [
+        "c3"
+      ],
+      "gag": null
+    },
+    {
+      "n": 7,
+      "line": "Each freeze gives a steady view,",
+      "cue_word": "steady",
+      "est_start_s": 17.9,
+      "est_duration_s": 2.5,
+      "visual": "Cut back to the street, pigeon walking; viewfinder brackets in front of the head stay still during holds and snap at each new freeze.",
+      "camera": "Cut, tracking",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "city_bed"
+        },
+        {
+          "cue": "tick_soft"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "pigeon_rig",
+        "street"
+      ],
+      "claim_ids": [
+        "c3"
+      ],
+      "gag": null
+    },
+    {
+      "n": 8,
+      "line": "like holding a camera still,",
+      "cue_word": "still",
+      "est_start_s": 20.4,
+      "est_duration_s": 1.8,
+      "visual": "Cut to the scientist holding a camera: it trembles, then locks dead still; flash on \"still\".",
+      "camera": "Cut",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "shutter",
+          "at_word": "still"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "g_camera"
+      ],
+      "claim_ids": [],
+      "gag": null
+    },
+    {
+      "n": 9,
+      "line": "which probably helps them spot movement.",
+      "cue_word": "movement",
+      "est_start_s": 22.2,
+      "est_duration_s": 2.7,
+      "visual": "Cut to the street, same framing as frame 0. A crumb falls; the head is frozen and the eye pops on \"spot\"; on \"movement\" the pigeon snaps it out of the air and walks on (loop to frame 0).",
+      "camera": "Cut, tracking",
+      "on_screen_text": null,
+      "sfx": [
+        {
+          "cue": "whistle"
+        },
+        {
+          "cue": "snap",
+          "at_word": "movement"
+        },
+        {
+          "cue": "gulp"
+        }
+      ],
+      "music": null,
+      "assets": [
+        "pigeon_rig",
+        "street"
+      ],
+      "claim_ids": [
+        "c4"
+      ],
+      "gag": "A mid-air crumb catch"
+    }
+  ],
+  "next_tease": null
+}
