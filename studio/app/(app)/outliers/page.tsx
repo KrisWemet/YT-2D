@@ -1,5 +1,7 @@
 import { requireOwner } from '@/lib/auth/owner';
 import { age, compact, daysAgo, duration, TIER_LABEL } from '@/lib/format';
+import Link from 'next/link';
+import { saveOutlierAsIdea } from '../ideas/actions';
 import { setOutlierStatus, setVideoFormat } from './actions';
 
 export const metadata = { title: 'Outliers · WQL Studio' };
@@ -7,7 +9,7 @@ export const metadata = { title: 'Outliers · WQL Studio' };
 const FORMATS = ['all', 'short', 'long'] as const;
 const TIERS = ['all', 'direct', 'rising', 'format', 'benchmark', 'mine'] as const;
 const RANGES = ['7', '30', '60', 'custom'] as const;
-const STATUSES = ['new', 'dismissed', 'all'] as const;
+const STATUSES = ['new', 'saved', 'dismissed', 'all'] as const;
 const SORTS = { multiple: 'Multiple', recent: 'Newest', vpd: 'Views/day' } as const;
 
 function pick<T extends readonly string[]>(v: string | string[] | undefined, allowed: T, fallback: T[number]): T[number] {
@@ -41,6 +43,11 @@ export default async function OutliersPage({ searchParams }: PageProps<'/outlier
   }
   const order = sort === 'recent' ? 'published_at' : sort === 'vpd' ? 'views_per_day' : 'multiple_vs_channel_median';
   const { data: rows, error } = await q.order(order, { ascending: false }).limit(200);
+  const ids = (rows ?? []).map((r) => r.video_id!).filter(Boolean);
+  const { data: linked } = ids.length
+    ? await supabase.from('ideas').select('id, source_outlier_id').in('source_outlier_id', ids)
+    : { data: [] as { id: string; source_outlier_id: string | null }[] };
+  const ideaFor = new Map((linked ?? []).map((i) => [i.source_outlier_id, i.id]));
 
   return (
     <div className="space-y-4">
@@ -53,7 +60,7 @@ export default async function OutliersPage({ searchParams }: PageProps<'/outlier
         <Select name="format" value={format} options={{ all: 'Shorts + long', short: 'Shorts', long: 'Long form' }} />
         <Select name="tier" value={tier} options={Object.fromEntries(TIERS.map((t) => [t, t === 'all' ? 'All tiers' : TIER_LABEL[t]]))} />
         <Select name="range" value={range} options={{ '7': 'Last 7 days', '30': 'Last 30 days', '60': 'Last 60 days', custom: 'Custom dates' }} />
-        <Select name="status" value={status} options={{ new: 'New', dismissed: 'Dismissed', all: 'Any status' }} />
+        <Select name="status" value={status} options={{ new: 'New', saved: 'Saved as ideas', dismissed: 'Dismissed', all: 'Any status' }} />
         <Select name="sort" value={sort} options={SORTS} />
         <label className="flex items-center gap-2 text-sm">
           <span className="text-muted">Min ×</span>
@@ -100,6 +107,18 @@ export default async function OutliersPage({ searchParams }: PageProps<'/outlier
                   <span className="font-medium text-fg">{o.channel_title}</span>
                   <span className="chip">{TIER_LABEL[o.tier ?? ''] ?? o.tier}</span>
                 </div>
+                {ideaFor.get(o.video_id) ? (
+                  <Link href={`/ideas/${ideaFor.get(o.video_id)}`} className="btn w-full text-good">
+                    Saved as idea ✓
+                  </Link>
+                ) : (
+                  <form action={saveOutlierAsIdea}>
+                    <input type="hidden" name="video_id" value={o.video_id ?? ''} />
+                    <button className="btn-primary w-full" type="submit">
+                      Save as idea
+                    </button>
+                  </form>
+                )}
                 <dl className="grid grid-cols-3 text-xs">
                   <Stat label="Views" value={compact(o.views)} />
                   <Stat label="Views/day" value={compact(o.views_per_day)} />

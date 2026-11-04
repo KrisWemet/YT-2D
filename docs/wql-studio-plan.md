@@ -45,6 +45,8 @@ YT-2D/
 | Hosting | Vercel Hobby (crons at most once a day), Supabase project `wql-studio` (us-east-1), set up through the connectors |
 | Google account | Personal. The OAuth app must be set to "In production" (unverified is fine for one user), because in "Testing" mode refresh tokens expire after 7 days. |
 | Backfill existing Shorts | Yes, in Phase 3 |
+| AI work | A weekly Claude Code session (Sunday 12:45 pm Mountain, scheduled) instead of Anthropic API calls from the app, until API keys are added. Runbook: `docs/weekly-batch.md`. |
+| More channels | Planned (5–7 channels). From Phase 2, every idea, series, theme run and tracked channel belongs to a `project` (one per YouTube channel). Weird Questions Lab is project `wql`. |
 
 ## Data model
 

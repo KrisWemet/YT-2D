@@ -4,7 +4,13 @@ Research and planning for **Weird Questions Lab**: track competitor channels, sp
 
 It's a Next.js app in the `studio/` folder of this repo, deployed on Vercel, with data in Supabase. The plan and the decisions behind it are in [`../docs/wql-studio-plan.md`](../docs/wql-studio-plan.md).
 
-**Phase 1 (this version):** competitor tracker and outlier radar.
+**Phase 1:** competitor tracker and outlier radar.
+**Phase 2:** idea bank, series planner and weekly themes.
+- **Ideas:** a bank of questions with status (idea → scripted → fact-checked → ready → animating → published), notes, history, and a **Queue for Sunday** flag. **Save as idea** on any outlier creates a linked idea to rephrase in your own voice.
+- **Series:** runs of Shorts in watch order. Reorder them with ↑ ↓; each Short shows the one it teases. The YouTube playlist ID is entered by hand until playlist writes are approved.
+- **Themes:** the weekly session's topic themes, each with 10 suggested questions. **Keep** adds one to the bank; **Keep + queue** also queues it.
+- **AI work** happens in a scheduled Claude Code session every Sunday at 12:45 pm Mountain (runbook: [`../docs/weekly-batch.md`](../docs/weekly-batch.md)), so the app needs no Anthropic key yet.
+- **Projects:** the data model is ready for more channels. Each YouTube channel you run is a `project` with its own watchlist, ideas, series and voice; Weird Questions Lab is `wql`.
 
 - **Outliers:** videos with at least 5× their channel's median views, filterable by Shorts/long form, tier and date range.
 - **Channels:** add a channel by URL, @handle or ID, remove or restore it, change its tier, import the seed list, sync now.
@@ -208,7 +214,7 @@ supabase/migrations/
 tests/              vitest
 ```
 
-## Data model (Phase 1)
+## Data model
 
 | Table | What's in it |
 |---|---|
@@ -220,5 +226,10 @@ tests/              vitest
 | `api_usage` | every API call with units (and, later, tokens and cost) |
 | `cron_runs` | every sync run with its summary |
 | `app_owner` | who may use the app |
+| `projects` | one per YouTube channel run from Studio: slug, name, channel ID, voice guide, handoff folder |
+| `series` | name, description, playlist ID, order, archived |
+| `ideas` | question, stable slug (the `videos/<slug>/` folder), series and position, status, source (mine/outlier/suggested), linked outlier, theme, scores, notes, queued_at |
+| `idea_events` | every status, queue and series change, with who made it (owner or weekly session) |
+| `theme_runs` | the weekly session's themes and suggested questions, written through `private.ingest_theme_run()` |
 
 The views `outlier_feed`, `channel_overview` and `api_usage_daily` back the pages. Later phases add series, ideas, scripts, claims, packaging scores and analytics; see the plan.

@@ -77,6 +77,99 @@ export type Database = {
         }
         Relationships: []
       }
+      idea_events: {
+        Row: {
+          actor: string
+          at: string
+          from_status: Database["public"]["Enums"]["idea_status"] | null
+          id: number
+          idea_id: string
+          kind: string
+          note: string | null
+          to_status: Database["public"]["Enums"]["idea_status"] | null
+        }
+        Insert: {
+          actor: string
+          at?: string
+          from_status?: Database["public"]["Enums"]["idea_status"] | null
+          id?: never
+          idea_id: string
+          kind: string
+          note?: string | null
+          to_status?: Database["public"]["Enums"]["idea_status"] | null
+        }
+        Update: {
+          actor?: string
+          at?: string
+          from_status?: Database["public"]["Enums"]["idea_status"] | null
+          id?: never
+          idea_id?: string
+          kind?: string
+          note?: string | null
+          to_status?: Database["public"]["Enums"]["idea_status"] | null
+        }
+        Relationships: []
+      }
+      ideas: {
+        Row: {
+          created_at: string
+          id: string
+          notes: string | null
+          position_in_series: number | null
+          project_id: string
+          question: string
+          queued_at: string | null
+          scores: Json
+          series_id: string | null
+          slug: string
+          source: Database["public"]["Enums"]["idea_source"]
+          source_outlier_id: string | null
+          status: Database["public"]["Enums"]["idea_status"]
+          theme: string | null
+          theme_run_id: string | null
+          updated_at: string
+          youtube_video_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          notes?: string | null
+          position_in_series?: number | null
+          project_id?: string
+          question: string
+          queued_at?: string | null
+          scores?: Json
+          series_id?: string | null
+          slug: string
+          source?: Database["public"]["Enums"]["idea_source"]
+          source_outlier_id?: string | null
+          status?: Database["public"]["Enums"]["idea_status"]
+          theme?: string | null
+          theme_run_id?: string | null
+          updated_at?: string
+          youtube_video_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          notes?: string | null
+          position_in_series?: number | null
+          project_id?: string
+          question?: string
+          queued_at?: string | null
+          scores?: Json
+          series_id?: string | null
+          slug?: string
+          source?: Database["public"]["Enums"]["idea_source"]
+          source_outlier_id?: string | null
+          status?: Database["public"]["Enums"]["idea_status"]
+          theme?: string | null
+          theme_run_id?: string | null
+          updated_at?: string
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
       channel_baselines: {
         Row: {
           channel_id: string
@@ -130,6 +223,7 @@ export type Database = {
           handle: string | null
           id: string
           last_synced_at: string | null
+          project_id: string
           stats_updated_at: string | null
           subs: number | null
           subs_hidden: boolean
@@ -148,6 +242,7 @@ export type Database = {
           handle?: string | null
           id: string
           last_synced_at?: string | null
+          project_id?: string
           stats_updated_at?: string | null
           subs?: number | null
           subs_hidden?: boolean
@@ -166,6 +261,7 @@ export type Database = {
           handle?: string | null
           id?: string
           last_synced_at?: string | null
+          project_id?: string
           stats_updated_at?: string | null
           subs?: number | null
           subs_hidden?: boolean
@@ -206,6 +302,36 @@ export type Database = {
           started_at?: string
           status?: string
           summary?: Json | null
+        }
+        Relationships: []
+      }
+      projects: {
+        Row: {
+          created_at: string
+          id: string
+          name: string
+          slug: string
+          videos_path: string
+          voice: string | null
+          youtube_channel_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          name: string
+          slug: string
+          videos_path?: string
+          voice?: string | null
+          youtube_channel_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          name?: string
+          slug?: string
+          videos_path?: string
+          voice?: string | null
+          youtube_channel_id?: string | null
         }
         Relationships: []
       }
@@ -269,6 +395,81 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      series: {
+        Row: {
+          archived: boolean
+          created_at: string
+          description: string | null
+          id: string
+          name: string
+          playlist_id: string | null
+          project_id: string
+          slug: string
+          sort_order: number
+          updated_at: string
+        }
+        Insert: {
+          archived?: boolean
+          created_at?: string
+          description?: string | null
+          id?: string
+          name: string
+          playlist_id?: string | null
+          project_id?: string
+          slug: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Update: {
+          archived?: boolean
+          created_at?: string
+          description?: string | null
+          id?: string
+          name?: string
+          playlist_id?: string | null
+          project_id?: string
+          slug?: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      theme_runs: {
+        Row: {
+          actor: string
+          created_at: string
+          id: string
+          outlier_count: number | null
+          project_id: string
+          summary: string | null
+          themes: Json
+          window_end: string | null
+          window_start: string | null
+        }
+        Insert: {
+          actor?: string
+          created_at?: string
+          id?: string
+          outlier_count?: number | null
+          project_id?: string
+          summary?: string | null
+          themes: Json
+          window_end?: string | null
+          window_start?: string | null
+        }
+        Update: {
+          actor?: string
+          created_at?: string
+          id?: string
+          outlier_count?: number | null
+          project_id?: string
+          summary?: string | null
+          themes?: Json
+          window_end?: string | null
+          window_start?: string | null
+        }
+        Relationships: []
       }
       video_snapshots: {
         Row: {
@@ -403,6 +604,7 @@ export type Database = {
           last_synced_at: string | null
           long_median: number | null
           outlier_count: number | null
+          project_id: string | null
           short_median: number | null
           stats_updated_at: string | null
           subs: number | null
@@ -447,6 +649,8 @@ export type Database = {
     Enums: {
       channel_tier: "mine" | "direct" | "rising" | "format" | "benchmark"
       format_source: "duration" | "hashtag" | "manual"
+      idea_source: "manual" | "outlier" | "claude" | "comment"
+      idea_status: "idea" | "scripted" | "fact_checked" | "ready" | "animating" | "published"
       outlier_status: "new" | "saved" | "dismissed"
       video_format: "short" | "long"
     }
@@ -474,6 +678,8 @@ export const Constants = {
     Enums: {
       channel_tier: ["mine", "direct", "rising", "format", "benchmark"],
       format_source: ["duration", "hashtag", "manual"],
+      idea_source: ["manual", "outlier", "claude", "comment"],
+      idea_status: ["idea", "scripted", "fact_checked", "ready", "animating", "published"],
       outlier_status: ["new", "saved", "dismissed"],
       video_format: ["short", "long"],
     },
