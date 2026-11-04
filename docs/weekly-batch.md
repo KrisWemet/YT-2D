@@ -4,20 +4,35 @@ Every **Sunday at 12:45 pm Mountain time**, a scheduled Claude Code session runs
 
 The weekly session does all of Studio's AI work for now, so the app needs no Anthropic API key. When the API key is added later, these steps move into the app as buttons and crons; this runbook is the spec for that.
 
+## Database access
+
+The scheduled session has no Supabase connector, so it uses `studio/scripts/batch.mjs`. The script talks to Supabase's REST API with the `SUPABASE_SECRET_KEY` set in this cloud environment's settings. It needs no `npm install`, and it never prints the key.
+
+```bash
+node studio/scripts/batch.mjs context > /tmp/batch-context.json   # everything step 1 needs, as JSON
+node studio/scripts/batch.mjs ingest /tmp/theme-run.json          # stores the theme run (step 3)
+```
+
+If `SUPABASE_SECRET_KEY` isn't set, stop and say so in the report. The fix is to add the key in the environment settings.
+
+When the Supabase connector *is* available (an interactive session started by the owner), the SQL shown below for each step does the same job through `execute_sql` on project `dtwjcenbduybmerfrglb`.
+
 ## Ground rules for the session
 
-- **Database:** use the Supabase connector (`execute_sql`) on project `dtwjcenbduybmerfrglb` (wql-studio). The YouTube data is already there; the daily sync keeps it fresh. Don't call the YouTube API.
-- **Writes:** write only through the functions named below.
+- **Data:** the YouTube data is already in the database; the daily sync keeps it fresh. Don't call the YouTube API.
+- **Writes:** write only through the entry points named below.
   - Never delete or update other rows.
   - Never change schema.
   - Never touch `api_usage`, `cron_runs`, `channels` or `outliers`.
 - **Git:** don't push to `main`. Phase 2 needs no commits. From Phase 3, commit the `videos/<slug>/` files on a branch and open a PR.
-- **Logging:** before changing any idea, run `set local app.actor = 'claude-code-session';` in the same `execute_sql` call. This makes `idea_events` record who did it.
+- **Logging:** when changing ideas through SQL, run `set local app.actor = 'claude-code-session';` first. This makes `idea_events` record who did it.
 - **Report:** finish with the short report described at the end. The owner reads it in the Claude app.
 
 ## Phase 2: themes and suggested questions
 
 ### 1. Gather
+
+Run `node studio/scripts/batch.mjs context`. It returns the window, outliers, dismissed examples, existing questions, queued ideas, recent theme names, recent sync runs and quota use. The equivalent SQL:
 
 ```sql
 -- The window: since the last run (or 7 days), so nothing is missed or repeated.
@@ -62,7 +77,7 @@ Also read:
 
 ### 3. Write
 
-Store the run with one call. Use dollar quoting so apostrophes don't need escaping:
+Write the run as JSON to a file and run `node studio/scripts/batch.mjs ingest <file>`. The payload has the same shape as below, minus `project`, which the script adds. With the connector instead, use one SQL call; dollar quoting means apostrophes don't need escaping:
 
 ```sql
 select private.ingest_theme_run($json${
@@ -81,7 +96,7 @@ select private.ingest_theme_run($json${
 }$json$::jsonb);
 ```
 
-The function validates the payload: every theme needs a name and at least one question. It returns the run's ID. If it raises an error, fix the payload and call it again; don't insert into `theme_runs` directly. The questions appear on Studio's **Themes** page, where the owner keeps or queues them.
+The function validates the payload: every theme needs a name and at least one question. It returns the run's ID. If it raises an error, fix the payload and call it again; don't insert into `theme_runs` directly. Over the REST API this is `public.ingest_theme_run`, which only the secret key can call. The questions appear on Studio's **Themes** page, where the owner keeps or queues them.
 
 ## Phase 3 and later (not active yet)
 
