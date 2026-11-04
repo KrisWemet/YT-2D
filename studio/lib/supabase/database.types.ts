@@ -77,6 +77,42 @@ export type Database = {
         }
         Relationships: []
       }
+      handoffs: {
+        Row: {
+          actor: string
+          commit_sha: string | null
+          exported_at: string
+          files: Json
+          id: number
+          idea_id: string
+          path: string
+          script_id: string | null
+          script_version: number | null
+        }
+        Insert: {
+          actor: string
+          commit_sha?: string | null
+          exported_at?: string
+          files: Json
+          id?: never
+          idea_id: string
+          path: string
+          script_id?: string | null
+          script_version?: number | null
+        }
+        Update: {
+          actor?: string
+          commit_sha?: string | null
+          exported_at?: string
+          files?: Json
+          id?: never
+          idea_id?: string
+          path?: string
+          script_id?: string | null
+          script_version?: number | null
+        }
+        Relationships: []
+      }
       idea_events: {
         Row: {
           actor: string
@@ -275,6 +311,54 @@ export type Database = {
         }
         Relationships: []
       }
+      claims: {
+        Row: {
+          beats: number[]
+          claim: string
+          confidence: Database["public"]["Enums"]["claim_confidence"]
+          created_at: string
+          id: string
+          idea_id: string
+          note: string | null
+          ref: string
+          resolution: string | null
+          resolved_at: string | null
+          script_id: string
+          sources: Json
+          status: Database["public"]["Enums"]["claim_status"]
+        }
+        Insert: {
+          beats?: number[]
+          claim: string
+          confidence: Database["public"]["Enums"]["claim_confidence"]
+          created_at?: string
+          id?: string
+          idea_id: string
+          note?: string | null
+          ref: string
+          resolution?: string | null
+          resolved_at?: string | null
+          script_id: string
+          sources?: Json
+          status: Database["public"]["Enums"]["claim_status"]
+        }
+        Update: {
+          beats?: number[]
+          claim?: string
+          confidence?: Database["public"]["Enums"]["claim_confidence"]
+          created_at?: string
+          id?: string
+          idea_id?: string
+          note?: string | null
+          ref?: string
+          resolution?: string | null
+          resolved_at?: string | null
+          script_id?: string
+          sources?: Json
+          status?: Database["public"]["Enums"]["claim_status"]
+        }
+        Relationships: []
+      }
       cron_runs: {
         Row: {
           error: string | null
@@ -395,6 +479,63 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      scripts: {
+        Row: {
+          author: string
+          created_at: string
+          est_duration_s: number
+          fact_checked_at: string | null
+          hook: string
+          id: string
+          idea_id: string
+          is_current: boolean
+          loop_ending: string
+          narration: string
+          next_tease: string | null
+          notes: string | null
+          packaging: Json
+          storyboard: Json
+          version: number
+          word_count: number
+        }
+        Insert: {
+          author?: string
+          created_at?: string
+          est_duration_s: number
+          fact_checked_at?: string | null
+          hook: string
+          id?: string
+          idea_id: string
+          is_current?: boolean
+          loop_ending: string
+          narration: string
+          next_tease?: string | null
+          notes?: string | null
+          packaging?: Json
+          storyboard: Json
+          version: number
+          word_count: number
+        }
+        Update: {
+          author?: string
+          created_at?: string
+          est_duration_s?: number
+          fact_checked_at?: string | null
+          hook?: string
+          id?: string
+          idea_id?: string
+          is_current?: boolean
+          loop_ending?: string
+          narration?: string
+          next_tease?: string | null
+          notes?: string | null
+          packaging?: Json
+          storyboard?: Json
+          version?: number
+          word_count?: number
+        }
+        Relationships: []
       }
       series: {
         Row: {
@@ -648,6 +789,8 @@ export type Database = {
     }
     Enums: {
       channel_tier: "mine" | "direct" | "rising" | "format" | "benchmark"
+      claim_confidence: "high" | "medium" | "low"
+      claim_status: "ok" | "flagged" | "resolved" | "cut"
       format_source: "duration" | "hashtag" | "manual"
       idea_source: "manual" | "outlier" | "claude" | "comment"
       idea_status: "idea" | "scripted" | "fact_checked" | "ready" | "animating" | "published"
@@ -677,6 +820,8 @@ export const Constants = {
   public: {
     Enums: {
       channel_tier: ["mine", "direct", "rising", "format", "benchmark"],
+      claim_confidence: ["high", "medium", "low"],
+      claim_status: ["ok", "flagged", "resolved", "cut"],
       format_source: ["duration", "hashtag", "manual"],
       idea_source: ["manual", "outlier", "claude", "comment"],
       idea_status: ["idea", "scripted", "fact_checked", "ready", "animating", "published"],
