@@ -1,6 +1,8 @@
 # Weekly batch session (runbook)
 
-Every **Sunday at 12:45 pm Mountain time**, a scheduled Claude Code session runs this runbook. By about 1 pm the week's themes and suggested questions are waiting in WQL Studio, and the afternoon goes to building videos.
+Every **Sunday at 12:45 pm Mountain time**, a scheduled task wakes a dedicated Claude Code session, **"WQL weekly batch (Sundays 12:45 pm MT)"**, which runs this runbook. By about 1 pm the week's themes and suggested questions are waiting in WQL Studio, and the afternoon goes to building videos.
+
+Why a dedicated session: sessions a schedule starts fresh get no copy of this private repo. The dedicated session was created with the repo attached, so each Sunday it runs `git fetch` and checks out the latest code: `main` once the runbook is there, otherwise the WQL Studio PR branch. It sends its report as a push notification. To change what it does, edit this runbook. To change when it runs, edit the "WQL weekly batch" scheduled task.
 
 The weekly session does all of Studio's AI work for now, so the app needs no Anthropic API key. When the API key is added later, these steps move into the app as buttons and crons; this runbook is the spec for that.
 
