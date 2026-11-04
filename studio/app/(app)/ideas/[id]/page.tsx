@@ -1,32 +1,48 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ConfirmButton } from '@/components/ConfirmButton';
+import { ScriptView } from '@/components/ScriptView';
 import { StatusChip } from '@/components/StatusChip';
 import { requireOwner } from '@/lib/auth/owner';
 import { age, compact } from '@/lib/format';
 import { IDEA_STATUSES, STATUS_LABEL } from '@/lib/ideas';
-import { deleteIdea, setQueued, updateIdea } from '../actions';
+import type { Tables } from '@/lib/supabase/database.types';
+import { deleteIdea, setIdeaStatus, setQueued, updateIdea } from '../actions';
 
 export const metadata = { title: 'Idea · WQL Studio' };
 
-export default async function IdeaPage({ params }: PageProps<'/ideas/[id]'>) {
+export default async function IdeaPage({ params, searchParams }: PageProps<'/ideas/[id]'>) {
   const { id } = await params;
+  const { error: gateError } = await searchParams;
   const { supabase } = await requireOwner();
   const { data: idea } = await supabase.from('ideas').select('*').eq('id', id).maybeSingle();
   if (!idea) notFound();
-  const [{ data: allSeries }, { data: events }, { data: outlier }] = await Promise.all([
+  const [{ data: allSeries }, { data: events }, { data: outlier }, { data: scripts }, { data: handoffs }] = await Promise.all([
     supabase.from('series').select('id, name').order('sort_order'),
     supabase.from('idea_events').select('*').eq('idea_id', id).order('at', { ascending: false }).limit(30),
     idea.source_outlier_id
       ? supabase.from('outlier_feed').select('*').eq('video_id', idea.source_outlier_id).maybeSingle()
       : Promise.resolve({ data: null }),
+    supabase.from('scripts').select('*').eq('idea_id', id).order('version', { ascending: false }),
+    supabase.from('handoffs').select('*').eq('idea_id', id).order('exported_at', { ascending: false }).limit(1),
   ]);
+  const current = (scripts ?? []).find((s) => s.is_current) ?? null;
+  const { data: claims } = current
+    ? await supabase.from('claims').select('*').eq('script_id', current.id)
+    : { data: [] as Tables<'claims'>[] };
+  const flaggedCount = (claims ?? []).filter((c) => c.status === 'flagged').length;
+  const lastHandoff = handoffs?.[0] ?? null;
 
   return (
     <div className="space-y-4">
       <Link href="/ideas" className="text-sm text-muted hover:text-fg">
         ← Idea bank
       </Link>
+      {typeof gateError === 'string' && (
+        <p className="rounded-lg border border-red-500/50 bg-red-500/10 p-3 text-sm text-red-600" role="alert">
+          {gateError}
+        </p>
+      )}
       <div className="flex flex-wrap items-center gap-2">
         <StatusChip status={idea.status} />
         {idea.queued_at && <span className="chip border-accent bg-accent/20">Queued for Sunday</span>}
@@ -94,6 +110,53 @@ export default async function IdeaPage({ params }: PageProps<'/ideas/[id]'>) {
           </ConfirmButton>
         </form>
       </div>
+
+      <section className="space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-lg font-semibold">Script</h2>
+          {current && ['scripted', 'fact_checked'].includes(idea.status) && (
+            <form action={setIdeaStatus}>
+              <input type="hidden" name="id" value={idea.id} />
+              <input type="hidden" name="status" value="ready" />
+              <button className="btn-primary" type="submit" disabled={flaggedCount > 0 || !current.fact_checked_at}>
+                {flaggedCount > 0 ? `Resolve ${flaggedCount} flagged claim${flaggedCount > 1 ? 's' : ''} first` : 'Mark ready'}
+              </button>
+            </form>
+          )}
+        </div>
+        {!current ? (
+          <div className="card p-4 text-sm text-muted">
+            No script yet. {idea.queued_at ? 'It’s queued: Sunday’s session will write one.' : 'Queue it for Sunday to get one.'}
+          </div>
+        ) : (
+          <>
+            {idea.status === 'ready' && (
+              <p className="text-sm text-muted">
+                {lastHandoff && lastHandoff.script_version === current.version
+                  ? `Exported to ${lastHandoff.path}/ on ${lastHandoff.exported_at.slice(0, 10)}.`
+                  : `Ready. The next session exports it to videos/${idea.slug}/ for the build.`}
+              </p>
+            )}
+            <ScriptView script={current} claims={claims ?? []} editable />
+            {(scripts ?? []).length > 1 && (
+              <p className="text-sm text-muted">
+                Earlier versions:{' '}
+                {(scripts ?? [])
+                  .filter((s) => !s.is_current)
+                  .map((s, i) => (
+                    <span key={s.id}>
+                      {i > 0 ? ' · ' : ''}
+                      <Link className="underline" href={`/ideas/${idea.id}/scripts/${s.version}`}>
+                        v{s.version}
+                      </Link>{' '}
+                      ({s.created_at.slice(0, 10)})
+                    </span>
+                  ))}
+              </p>
+            )}
+          </>
+        )}
+      </section>
 
       {outlier && (
         <section className="card flex gap-3 p-3">

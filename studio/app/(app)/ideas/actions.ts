@@ -37,7 +37,7 @@ export async function updateIdea(form: FormData) {
   if (!question || !IDEA_STATUSES.includes(status)) return;
   let position = form.get('position_in_series') ? Number(form.get('position_in_series')) : null;
   if (seriesId && seriesId !== before?.series_id && !position) position = await nextPosition(supabase, seriesId);
-  await supabase
+  const { error } = await supabase
     .from('ideas')
     .update({
       question,
@@ -51,6 +51,46 @@ export async function updateIdea(form: FormData) {
   revalidatePath(`/ideas/${id}`);
   revalidatePath('/ideas');
   revalidatePath('/series');
+  // The database's ready gate explains itself ("2 flagged claim(s) must be resolved…"); show that.
+  if (error) redirect(`/ideas/${id}?error=${encodeURIComponent(error.message)}`);
+}
+
+/** One-tap status change (e.g. "Mark ready"); the database gate decides whether it's allowed. */
+export async function setIdeaStatus(form: FormData) {
+  const { supabase } = await requireOwner();
+  const id = str(form, 'id');
+  const status = str(form, 'status') as Enums<'idea_status'>;
+  if (!IDEA_STATUSES.includes(status)) return;
+  const { error } = await supabase.from('ideas').update({ status }).eq('id', id);
+  revalidatePath(`/ideas/${id}`);
+  revalidatePath('/ideas');
+  if (error) redirect(`/ideas/${id}?error=${encodeURIComponent(error.message)}`);
+}
+
+/** Accept a flagged claim with a note on how it's handled (e.g. "say 'about'", or a better source). */
+export async function resolveClaim(form: FormData) {
+  const { supabase } = await requireOwner();
+  const ideaId = str(form, 'idea_id');
+  const resolution = str(form, 'resolution');
+  if (!resolution) redirect(`/ideas/${ideaId}?error=${encodeURIComponent('Add a short note on how the claim is resolved.')}`);
+  await supabase
+    .from('claims')
+    .update({ status: 'resolved', resolution, resolved_at: new Date().toISOString() })
+    .eq('id', str(form, 'claim_id'));
+  revalidatePath(`/ideas/${ideaId}`);
+}
+
+/** Send the idea back for a new script version on Sunday, with the reason added to its notes. */
+export async function requestRewrite(form: FormData) {
+  const { supabase } = await requireOwner();
+  const ideaId = str(form, 'idea_id');
+  const reason = str(form, 'reason') || 'Rewrite requested';
+  const { data: idea } = await supabase.from('ideas').select('notes').eq('id', ideaId).single();
+  const stamp = new Date().toISOString().slice(0, 10);
+  const notes = [idea?.notes, `Rewrite request (${stamp}): ${reason}`].filter(Boolean).join('\n');
+  await supabase.from('ideas').update({ notes, queued_at: new Date().toISOString() }).eq('id', ideaId);
+  revalidatePath(`/ideas/${ideaId}`);
+  revalidatePath('/ideas');
 }
 
 export async function setQueued(form: FormData) {
