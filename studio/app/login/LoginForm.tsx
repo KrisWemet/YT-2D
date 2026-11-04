@@ -6,7 +6,10 @@ import { sendMagicLink, type LoginState } from './actions';
 export function LoginForm() {
   const [state, action, pending] = useActionState<LoginState, FormData>(sendMagicLink, { sent: false });
   if (state.sent) {
-    return <p className="text-sm text-muted">Check your email for a sign-in link. Open it on this device.</p>;
+    return <p className="text-sm text-muted">
+        If that&apos;s the owner&apos;s address, a sign-in link is on its way. Open it in this same browser (on a phone, long-press
+        the link and choose your browser). Nothing arriving? Check the address and your spam folder, then try again in a few minutes.
+      </p>;
   }
   return (
     <form action={action} className="space-y-3">
