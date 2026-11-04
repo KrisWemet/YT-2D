@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/KrisWemet/YT-2D/videos/schema/meta.v1.schema.json",
+  "title": "WQL meta v1 (videos/<slug>/meta.json)",
+  "description": "Packaging and series links for one Short, written by WQL Studio.",
+  "type": "object",
+  "required": ["schema", "slug", "project", "question", "status", "script_version", "title_options", "title", "description", "tags", "series", "previous", "next"],
+  "properties": {
+    "schema": { "const": "wql.meta/1" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "project": { "type": "string", "description": "Studio project (one per YouTube channel), e.g. wql." },
+    "question": { "type": "string" },
+    "status": { "enum": ["idea", "scripted", "fact_checked", "ready", "animating", "published"] },
+    "script_version": { "type": "integer", "minimum": 1 },
+    "fact_checked_at": { "type": ["string", "null"], "format": "date-time" },
+    "exported_at": { "type": "string", "format": "date-time" },
+    "title_options": { "type": "array", "items": { "type": "string" } },
+    "title": { "type": "string", "description": "The first title option." },
+    "description": { "type": "string", "description": "Upload description: text, then sources from the fact-check, then hashtags." },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "hashtags": { "type": "array", "items": { "type": "string" } },
+    "pinned_comment": { "type": ["string", "null"] },
+    "next_tease": { "type": ["string", "null"] },
+    "series": {
+      "type": ["object", "null"],
+      "properties": {
+        "name": { "type": "string" },
+        "slug": { "type": "string" },
+        "position": { "type": ["integer", "null"] },
+        "total": { "type": "integer" },
+        "playlist_id": { "type": ["string", "null"] }
+      }
+    },
+    "previous": { "$ref": "#/$defs/link" },
+    "next": { "$ref": "#/$defs/link" },
+    "youtube_video_id": { "type": ["string", "null"] },
+    "studio": { "type": "object", "properties": { "idea_id": { "type": "string" } } }
+  },
+  "$defs": {
+    "link": {
+      "type": ["object", "null"],
+      "properties": {
+        "slug": { "type": "string" },
+        "question": { "type": "string" },
+        "youtube_video_id": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

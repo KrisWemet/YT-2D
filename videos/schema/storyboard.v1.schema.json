@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/KrisWemet/YT-2D/videos/schema/storyboard.v1.schema.json",
+  "title": "WQL storyboard v1 (videos/<slug>/storyboard.json)",
+  "description": "Beats for one Short, written by WQL Studio and read by the Remotion build. Times are estimates until the voice-over is recorded; the build replaces them with word times from words.json.",
+  "type": "object",
+  "required": ["schema", "frame0", "loop", "assets", "beats"],
+  "properties": {
+    "schema": { "const": "wql.storyboard/1" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "description": "Folder name; set by the export." },
+    "question": { "type": "string" },
+    "script_version": { "type": "integer", "minimum": 1 },
+    "est_duration_s": { "type": "number", "description": "Sum of beat estimates." },
+    "voice": {
+      "type": ["object", "null"],
+      "properties": { "provider": { "type": "string" }, "voice": { "type": "string" } }
+    },
+    "frame0": {
+      "type": "object",
+      "required": ["description"],
+      "description": "Frame 0 shows the premise and doubles as the thumbnail.",
+      "properties": { "description": { "type": "string", "minLength": 1 }, "thumbnail_text": { "type": "string" } }
+    },
+    "loop": {
+      "type": "object",
+      "required": ["last_line"],
+      "description": "The last line and last frame flow back into the hook and frame 0.",
+      "properties": {
+        "last_line": { "type": "string", "minLength": 1 },
+        "returns_to": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "cast": { "type": "array", "items": { "type": "string" } },
+    "assets": {
+      "type": "array",
+      "description": "Every picture to draw, like images/<name>/prompts.md.",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "description"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+          "kind": { "enum": ["pose", "character", "prop", "background", "fx"] },
+          "description": { "type": "string", "minLength": 1 },
+          "aspect": { "type": "string", "examples": ["2:3", "1:1", "3:2"] },
+          "refs": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "beats": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/beat" } },
+    "next_tease": {
+      "type": ["object", "null"],
+      "description": "The next Short in the series. Teased in the description, pinned comment, related video and optionally on screen, not in the voice-over, so the loop stays intact.",
+      "properties": { "question": { "type": "string" }, "slug": { "type": "string" }, "on_screen": { "type": "string" } }
+    }
+  },
+  "$defs": {
+    "beat": {
+      "type": "object",
+      "required": ["n", "line", "est_duration_s", "visual", "on_screen_text", "sfx", "assets", "claim_ids"],
+      "properties": {
+        "n": { "type": "integer", "minimum": 1, "description": "Beat number, 1-based and in order." },
+        "line": { "type": "string", "minLength": 1, "description": "The narration for this beat." },
+        "cue_word": { "type": ["string", "null"], "description": "The spoken word the visual lands on (becomes a key in timing.ts T)." },
+        "est_start_s": { "type": "number", "description": "Added by the export: sum of earlier beats." },
+        "est_duration_s": { "type": "number", "exclusiveMinimum": 0 },
+        "visual": { "type": "string", "minLength": 1, "description": "What's on screen, for 2D cut-out animation." },
+        "camera": { "type": ["string", "null"] },
+        "on_screen_text": { "type": ["string", "null"] },
+        "sfx": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["cue"],
+            "properties": { "cue": { "type": "string" }, "at_word": { "type": "string" } }
+          }
+        },
+        "music": { "type": ["string", "null"] },
+        "assets": { "type": "array", "items": { "type": "string" }, "description": "Ids from assets[]." },
+        "claim_ids": { "type": "array", "items": { "type": "string", "pattern": "^c[0-9]+$" }, "description": "Claims from fact-check.md this beat states." },
+        "gag": { "type": ["string", "null"] }
+      }
+    }
+  }
+}
