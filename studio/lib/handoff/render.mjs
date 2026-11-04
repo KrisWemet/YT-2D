@@ -241,7 +241,7 @@ function scriptMd({ idea, script, series, previous, next }, claims) {
   let t = 0;
   for (const b of sb.beats) {
     const sound = [...b.sfx.map((x) => (x.at_word ? `${x.cue} @ "${x.at_word}"` : x.cue)), ...(b.music ? [`music: ${b.music}`] : [])].join('; ');
-    const visual = [b.visual, b.camera ? `Camera: ${b.camera}` : '', b.gag ? `Gag: ${b.gag}` : ''].filter(Boolean).join(' ');
+    const visual = [b.visual, b.camera ? `Camera: ${b.camera}` : '', b.gag ? `Gag: ${b.gag}` : ''].filter(Boolean).map(sentence).join(' ');
     lines.push(
       `| ${b.n} | ${round1(t)} | ${b.est_duration_s} | ${cell(b.cue_word ?? '')} | ${cell(b.line)} | ${cell(b.on_screen_text ?? '')} | ${cell(visual)} | ${cell(sound)} | ${b.claim_ids.join(', ')} |`,
     );
@@ -313,6 +313,10 @@ function pick(obj, keys) {
   const out = {};
   for (const k of keys) if (obj && obj[k] !== undefined) out[k] = obj[k];
   return out;
+}
+function sentence(text) {
+  const t = String(text).trim();
+  return /[.!?…"”)]$/.test(t) ? t : `${t}.`;
 }
 function cell(text) {
   return String(text).replace(/\|/g, '\\|').replace(/\s*\n\s*/g, ' ');

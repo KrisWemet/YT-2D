@@ -67,10 +67,15 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 ## The house style
 
-- **Format:** vertical 9:16, 20–25 seconds. The voice sets the length.
-- **Script:** 50–70 words of plain spoken English, with every fact checked against primary sources. No "Did you know", no hype, no calls to action. Where the science is uncertain, the script says so ("mostly", "probably").
+- **Format:** vertical 9:16, **30–60 seconds** (from November 2026; the first two Shorts are 20–25 s). The voice sets the length.
+- **Script:** about 75–150 words of plain spoken English, with every fact checked against primary sources. No "Did you know", no hype, no calls to action. Where the science is uncertain, the script says so ("mostly", "probably").
+  - **Hook:** the question or premise lands in the first 2 seconds.
+  - **Beats:** one surprising fact per beat.
+  - **Loop:** the last line flows back into the opening line, and the last frame matches frame 0.
+  - **Series tease:** the next Short in a series is teased in the description, pinned comment, related-video link and, optionally, unvoiced on-screen text. It's never in the voice-over, so the loop stays intact.
 - **Frame 0** shows the premise and works as a thumbnail. The last frame loops back to it.
 - **Beats:** one visual beat per line, landing on the exact spoken word, with one gag per beat.
+- **Handoff:** each Short starts from its folder in [`videos/<slug>/`](videos/README.md): script, storyboard, packaging and fact-check, written by WQL Studio.
 - **Art:** flat 2D cut-outs with thick black outlines and flat colours. The same round-headed scientist with glasses and a lab coat appears in every episode.
 - **Motion:**
   - a 2.5D multiplane camera with depth of field
@@ -97,7 +102,7 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 ## WQL Studio
 
-`studio/` is the research and planning app for the channel: a Next.js app on Vercel with data in Supabase. It tracks competitor channels and flags outlier videos (Phase 1). Later phases add the idea bank, series planning, scripts and fact-checks, and handing each finished script to this build as files in `videos/<slug>/`. Setup and details: [`studio/README.md`](studio/README.md). Plan: [`docs/wql-studio-plan.md`](docs/wql-studio-plan.md).
+`studio/` is the research and planning app for the channel: a Next.js app on Vercel with data in Supabase. It tracks competitor channels and flags outlier videos, keeps the idea bank and series plans, and reviews scripts and fact-checks. Each finished script is handed to this build as files in [`videos/<slug>/`](videos/README.md). Setup and details: [`studio/README.md`](studio/README.md). Plan: [`docs/wql-studio-plan.md`](docs/wql-studio-plan.md).
 
 ## Repository layout
 
@@ -117,6 +122,7 @@ thumbnails/       final thumbnails, ready to upload (1080×1920 JPG)
 publish/          what goes on YouTube: upload details, channel banner and picture, channel text
 docs/             storyboard strips used in this README, and the WQL Studio plan
 studio/           WQL Studio, the research and planning app (separate package; see studio/README.md)
+videos/           one folder per Short: the script, storyboard, packaging and fact-check WQL Studio hands to the build (see videos/README.md)
 data/             seed-channels.json, the competitor watchlist WQL Studio starts from
 ```
 

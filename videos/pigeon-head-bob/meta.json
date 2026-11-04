@@ -1,0 +1,43 @@
+{
+  "schema": "wql.meta/1",
+  "slug": "pigeon-head-bob",
+  "project": "wql",
+  "question": "Why do pigeons bob their heads?",
+  "status": "published",
+  "script_version": 1,
+  "fact_checked_at": "2026-11-04T01:55:50.386579+00:00",
+  "exported_at": "2026-11-04T02:00:00.000Z",
+  "title_options": [
+    "Why Pigeons Bob Their Heads (It's Not What You Think)"
+  ],
+  "title": "Why Pigeons Bob Their Heads (It's Not What You Think)",
+  "description": "A walking pigeon's head never actually moves backward. It freezes in place while the body moves forward, then darts ahead. Most people guess it's for balance, but when scientists put pigeons on a treadmill, the bobbing stopped. It's mostly about vision.\n\nSources:\n• Head-Bobbing in Pigeons: How Stable is the Hold Phase?: https://journals.biologists.com/jeb/article/203/5/935/8418/Head-Bobbing-in-Pigeons-How-Stable-is-the-Hold\n• The Optokinetic Basis of Head-Bobbing in the Pigeon: https://journals.biologists.com/jeb/article/74/1/187/22520/The-Optokinetic-Basis-of-Head-Bobbing-in-the\n• Head-bobbing of walking birds: https://doi.org/10.1007/s00359-007-0281-3\n• Head Bobbing During Walking, Running and Flying: https://journals.biologists.com/jeb/article/138/1/71/5562/Head-Bobbing-During-Walking-Running-and-Flying\n\n#shorts #pigeons #animalfacts #science #funfacts",
+  "tags": [
+    "pigeon head bob",
+    "why do pigeons bob their heads",
+    "pigeon facts",
+    "animal facts",
+    "bird facts",
+    "science facts",
+    "fun facts",
+    "random facts",
+    "animated facts",
+    "science animation"
+  ],
+  "hashtags": [
+    "#shorts",
+    "#pigeons",
+    "#animalfacts",
+    "#science",
+    "#funfacts"
+  ],
+  "pinned_comment": null,
+  "next_tease": null,
+  "series": null,
+  "previous": null,
+  "next": null,
+  "youtube_video_id": null,
+  "studio": {
+    "idea_id": "3caac7c6-a9df-491f-9c87-32e034e3d1b5"
+  }
+}

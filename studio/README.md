@@ -10,6 +10,11 @@ It's a Next.js app in the `studio/` folder of this repo, deployed on Vercel, wit
 - **Series:** runs of Shorts in watch order. Reorder them with ↑ ↓; each Short shows the one it teases. The YouTube playlist ID is entered by hand until playlist writes are approved.
 - **Themes:** the weekly session's topic themes, each with 10 suggested questions. **Keep** adds one to the bank; **Keep + queue** also queues it.
 - **AI work** happens in a scheduled Claude Code session every Sunday at 12:45 pm Mountain (runbook: [`../docs/weekly-batch.md`](../docs/weekly-batch.md)), so the app needs no Anthropic key yet.
+**Phase 3:** scripts, fact-checks and the handoff to the video build.
+- **Scripts:** every queued idea gets a 30–60 s script on Sunday, with a hook, one fact per beat, a loop ending and a next-Short tease, plus a storyboard and packaging. Every version is kept.
+- **Fact-check:** a separate pass lists every claim with confidence and sources. Flagged claims are resolved on the idea page (**Resolve** with a note, or **Needs rewrite**, which queues the idea again).
+- **Ready gate:** the database won't let an idea be *ready* while its script is unchecked or a claim is flagged.
+- **Handoff:** ready ideas are exported to `../videos/<slug>/`: `script.md`, `storyboard.json`, `meta.json` and `fact-check.md`, documented in [`../videos/README.md`](../videos/README.md). The renderer is `lib/handoff/render.mjs`; the export command is `node scripts/batch.mjs export <slug>`.
 - **Projects:** the data model is ready for more channels. Each YouTube channel you run is a `project` with its own watchlist, ideas, series and voice; Weird Questions Lab is `wql`.
 
 - **Outliers:** videos with at least 5× their channel's median views, filterable by Shorts/long form, tier and date range.
@@ -232,5 +237,8 @@ tests/              vitest
 | `ideas` | question, stable slug (the `videos/<slug>/` folder), series and position, status, source (mine/outlier/suggested), linked outlier, theme, scores, notes, queued_at |
 | `idea_events` | every status, queue and series change, with who made it (owner or weekly session) |
 | `theme_runs` | the weekly session's themes and suggested questions, written through `private.ingest_theme_run()` |
+| `scripts` | every script version per idea (one current): hook, narration, loop ending, tease, storyboard (`wql.storyboard/1`), packaging, fact-check time |
+| `claims` | the fact-check: one row per claim with beats, confidence, sources, status (ok/flagged/resolved/cut) and the owner's resolution |
+| `handoffs` | every `videos/<slug>/` export with file hashes |
 
 The views `outlier_feed`, `channel_overview` and `api_usage_daily` back the pages. Later phases add series, ideas, scripts, claims, packaging scores and analytics; see the plan.

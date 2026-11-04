@@ -44,7 +44,7 @@ YT-2D/
 | My channel | Tracked as tier `mine`, now named Weird Questions Lab |
 | Hosting | Vercel Hobby (crons at most once a day), Supabase project `wql-studio` (us-east-1), set up through the connectors |
 | Google account | Personal. The OAuth app must be set to "In production" (unverified is fine for one user), because in "Testing" mode refresh tokens expire after 7 days. |
-| Backfill existing Shorts | Yes, in Phase 3 |
+| Backfill existing Shorts | Done: `videos/pigeon-head-bob/` and `videos/hurricane-nuke/`, also stored in Studio as published ideas with script v1 and fact-checks |
 | AI work | A dedicated Claude Code session, woken by a scheduled task every Sunday at 12:45 pm Mountain, instead of Anthropic API calls from the app until API keys are added. It reaches the database through `studio/scripts/batch.mjs`, using the `SUPABASE_SECRET_KEY` stored in the cloud environment. Runbook: `docs/weekly-batch.md`. |
 | More channels | Planned (5–7 channels). From Phase 2, every idea, series, theme run and tracked channel belongs to a `project` (one per YouTube channel). Weird Questions Lab is project `wql`. |
 

@@ -11,8 +11,11 @@ The weekly session does all of Studio's AI work for now, so the app needs no Ant
 The scheduled session has no Supabase connector, so it uses `studio/scripts/batch.mjs`. The script talks to Supabase's REST API with the `SUPABASE_SECRET_KEY` set in this cloud environment's settings. It needs no `npm install`, and it never prints the key.
 
 ```bash
-node studio/scripts/batch.mjs context > /tmp/batch-context.json   # everything step 1 needs, as JSON
+node studio/scripts/batch.mjs context > /tmp/batch-context.json   # everything the run needs, as JSON
 node studio/scripts/batch.mjs ingest /tmp/theme-run.json          # stores the theme run (step 3)
+node studio/scripts/batch.mjs ingest-script /tmp/script.json      # stores a script version (step 4)
+node studio/scripts/batch.mjs ingest-fact-check /tmp/fc.json      # stores the fact-check pass (step 5)
+node studio/scripts/batch.mjs export <slug>                       # writes videos/<slug>/ (step 6)
 ```
 
 If `SUPABASE_SECRET_KEY` isn't set, stop and say so in the report. The fix is to add the key in the environment settings.
@@ -26,7 +29,7 @@ When the Supabase connector *is* available (an interactive session started by th
   - Never delete or update other rows.
   - Never change schema.
   - Never touch `api_usage`, `cron_runs`, `channels` or `outliers`.
-- **Git:** don't push to `main`. Phase 2 needs no commits. From Phase 3, commit the `videos/<slug>/` files on a branch and open a PR.
+- **Git:** the only thing the session commits is exported `videos/<slug>/` folders, straight to `main` (the owner's choice). Never commit or push anything else. Changes to code or docs go on a branch with a PR.
 - **Logging:** when changing ideas through SQL, run `set local app.actor = 'claude-code-session';` first. This makes `idea_events` record who did it.
 - **Report:** finish with the short report described at the end. The owner reads it in the Claude app.
 
@@ -34,7 +37,7 @@ When the Supabase connector *is* available (an interactive session started by th
 
 ### 1. Gather
 
-Run `node studio/scripts/batch.mjs context`. It returns the window, outliers, dismissed examples, existing questions, queued ideas, recent theme names, recent sync runs and quota use. The equivalent SQL:
+Run `node studio/scripts/batch.mjs context`. It returns the window, outliers, dismissed examples, existing questions, queued ideas (with notes and series neighbours), ideas ready to export, recent theme names, recent sync runs and quota use. The equivalent SQL:
 
 ```sql
 -- The window: since the last run (or 7 days), so nothing is missed or repeated.
@@ -100,16 +103,67 @@ select private.ingest_theme_run($json${
 
 The function validates the payload: every theme needs a name and at least one question. It returns the run's ID. If it raises an error, fix the payload and call it again; don't insert into `theme_runs` directly. Over the REST API this is `public.ingest_theme_run`, which only the secret key can call. The questions appear on Studio's **Themes** page, where the owner keeps or queues them.
 
-## Phase 3 and later (not active yet)
+## Phase 3: scripts, fact-checks and exports
 
-These steps are added as the phases ship:
+Run this after Phase 2, every week.
 
-- **Phase 3:** for each queued idea:
-  - write the 30–60 s script and storyboard;
-  - fact-check every claim with web search and sources;
-  - save the versions to Supabase;
-  - write `videos/<slug>/` and open a PR.
-- **Phase 4:** score titles and thumbnail concepts for queued ideas.
+### 4. Script the queued ideas
+
+`context.queued` lists them, oldest first, with notes, theme, source outlier and series neighbours. Take **up to 6**; report any left over.
+
+For each idea:
+
+1. **Research.** Search the web for the question. Prefer primary sources: papers, agencies, universities, museums. Note anything uncertain or contested. If the idea's notes contain a **Rewrite request**, that request is the brief; fix exactly what it asks.
+2. **Write the script** in the house style (root `README.md`, "The house style"):
+   - **Length:** 30–60 s, about 75–150 words, plain spoken English. No "Did you know", no hype, no calls to action. Hedge where the science hedges ("probably", "mostly").
+   - **Hook:** at most 14 words, landing the question or premise in the first 2 seconds.
+   - **Beats:** one surprising fact per beat.
+   - **Loop ending:** the last line flows back into the hook, and the last frame matches frame 0.
+   - **Series tease:** if the idea has a `series.next`, write `next_tease`. It goes in the description, pinned comment and related video, optionally as unvoiced on-screen text, and **never in the voice-over**.
+3. **Write the storyboard** (`wql.storyboard/1`, documented in `videos/README.md`):
+   - one narration `line` per beat, with a `cue_word` and `est_duration_s` (about 2.6 spoken words a second, plus pauses);
+   - a `visual` for cut-out 2D animation with the round-headed scientist, plus `camera`, `on_screen_text`, `sfx` with `at_word`, and `claim_ids`;
+   - `frame0` (it doubles as the thumbnail, with short `thumbnail_text`) and `loop`;
+   - `assets` listing every picture to draw. Reuse existing poses and props where they fit (see `public/*/` and `images/*/prompts.md`).
+4. **Package it:**
+   - `title_options`: 3–5 curiosity titles, at most 60 characters;
+   - `description`: 2–3 sentences (sources are appended automatically);
+   - `tags`: 8–12;
+   - `hashtags`: `#shorts` plus 2–4;
+   - `pinned_comment`: a question for viewers, or the series tease.
+5. **Store it:** write `{ "idea_slug": …, "script": { hook, narration, loop_ending, next_tease, est_duration_s, storyboard, packaging, notes } }` to a file and run `node studio/scripts/batch.mjs ingest-script <file>`. It checks the storyboard and prints house-style warnings; fix the warnings unless there's a reason not to. The idea becomes *scripted* and leaves the queue.
+
+### 5. Fact-check each new script: a separate pass
+
+Re-read the stored script as if someone else wrote it.
+
+1. **List every claim** as `c1…cN` with the beats that state it: numbers, comparisons, causes, "first/only/never", and implied claims.
+2. **Find 1–3 sources per claim**, primary where possible. Record `title`, `url`, `publisher` and `year` for each.
+3. **Rate each claim:**
+   - `confidence` is `high`, `medium` or `low`.
+   - `status: "ok"` only when a source supports the claim *as worded*. Otherwise use `"flagged"`, with a `note` saying what's wrong and what wording would be supported.
+   - Never mark a claim ok without a source.
+4. **Store the pass:** `node studio/scripts/batch.mjs ingest-fact-check <file>`, with `{ "idea_slug": …, "claims": [ … ] }`. If nothing is flagged, the idea becomes *fact_checked*.
+5. **Fix what wording can fix:** if a flagged claim can be fixed by rewording, store a revised version with `ingest-script`, this time including `"fact_check": { "claims": [ … ] }` checked against the new wording, so the owner sees a clean version. Leave real judgement calls flagged; the owner resolves them in Studio, and the database won't let an idea be *ready* while any are open.
+
+### 6. Export ready ideas
+
+For each slug in `context.ready_to_export` (ideas the owner marked ready whose current script isn't exported yet):
+
+```bash
+node studio/scripts/batch.mjs export <slug>      # writes videos/<slug>/ and records the handoff
+git fetch origin main
+git worktree add /tmp/wql-main origin/main
+mkdir -p /tmp/wql-main/videos && cp -r videos/<slug> /tmp/wql-main/videos/
+cd /tmp/wql-main && git add videos/<slug> && git commit -m "videos/<slug>: script v<N> from WQL Studio" && git push origin HEAD:main
+cd - && git worktree remove /tmp/wql-main
+```
+
+Commit only `videos/<slug>/`, nothing else.
+
+## Phase 4 and later (not active yet)
+
+- **Phase 4:** score titles and thumbnail concepts for scripted ideas.
 - **Phase 5:** retention review of last week's uploads.
 
 ## Report (the session's final message)
@@ -119,4 +173,5 @@ Keep it short. The owner reads it on a phone.
 1. The window, how many outliers, and the themes found, one line each.
 2. The 3 strongest suggested questions overall and why.
 3. Anything odd: a channel that went quiet, a sync error in `cron_runs`, quota above 50%.
-4. The queued ideas waiting for scripting.
+4. Scripts written: one line each with the question, version, length and status, and any flagged claims with what's needed.
+5. Exports committed (slugs), and queued ideas left for next week.
