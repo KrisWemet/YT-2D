@@ -2,7 +2,7 @@ import React from 'react';
 import {Audio, interpolate, Sequence, staticFile} from 'remotion';
 import {DUR, FPS, resolveCue, segment, wordTime} from './timing';
 
-// Sound for the v3 first-minute test.
+// Sound for the first-minute test (the v10 voice).
 const db = (d: number) => 10 ** (d / 20);
 const f = (s: number) => Math.max(0, Math.round(s * FPS));
 
@@ -10,15 +10,15 @@ const m1 = segment('marcus1');
 const T = (c: string, from = 0) => resolveCue(c, from);
 const W = (phrase: string, from = 0) => wordTime(phrase, from);
 
-const tFlash = T('An hour ago', 5);
-const tRewind = T('Let me back', 10);
-const tBus = T('>one reason', 18);
-const tSeven = T("She's seven", 24);
-const tKeysShot = T('because I carry', 26);
-const tOne = T("Tonight I'd need", 30);
-const tGarage = T('Marcus down', 38);
-const tTonight = T('Tonight he calls', 48);
-const tEnd = 61.6;
+const tFlash = T('An hour ago', 4);
+const tRewind = T('Let me back', tFlash);
+const tBus = T('>one reason', tRewind);
+const tSeven = T("She's seven", tBus);
+const tKeysShot = T('because I carry', tSeven);
+const tOne = T("Tonight I'd only", tKeysShot);
+const tGarage = T('Marcus calls', tOne);
+const tTonight = T('Tonight he calls', tGarage);
+const tEnd = resolveCue('>+wrong', m1.s); // the end card, right after Marcus says "wrong"
 
 type Hit = {file: string; at: number; db: number};
 const HITS: Hit[] = [
@@ -26,8 +26,8 @@ const HITS: Hit[] = [
   {file: 'crackle', at: W('about to tell', 3) - 0.1, db: -16},
   {file: 'rewind', at: tRewind + 0.05, db: -9},
   {file: 'musicbox', at: tSeven - 0.05, db: -22},
-  {file: 'keys', at: W('keys', 28) - 0.2, db: -12},
-  {file: 'lock', at: W('exactly one', 33) - 0.1, db: -15},
+  {file: 'keys', at: W('keys', tKeysShot) - 0.2, db: -12},
+  {file: 'lock', at: W('one of them', tOne) - 0.1, db: -15},
   {file: 'static', at: m1.s - 0.32, db: -16},
   {file: 'static', at: m1.e + 0.02, db: -18},
   {file: 'slam', at: tEnd, db: -10},

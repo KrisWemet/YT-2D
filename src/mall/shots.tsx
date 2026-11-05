@@ -348,7 +348,7 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: "Yes I've heard",
+    at: "yeah I've heard",
     draw: (p) => (
       <Scene
         bg="concourse"
@@ -418,16 +418,16 @@ export const SHOTS: ShotDef[] = [
   },
   {at: 'One for every store', draw: (p) => <MallMap mode="keys" t={p.t} dur={p.dur} />},
   {
-    at: "Tonight I'd need",
-    ev: {one: 'exactly one'},
+    at: "Tonight I'd only",
+    ev: {one: 'one of them'},
     draw: (p) => (
-      <Scene bg="sportsfront" a={{x: 1408, y: 1150, z: 1.9}} b={{x: 1408, y: 1180, z: 2.2}} p={p} over={<Padlock x={1405} y={1300} s={1.3} />} screen={<ItemTag text="EXACTLY ONE" p={p} at={p.ev.one - 0.3} />}>
+      <Scene bg="sportsfront" a={{x: 1408, y: 1150, z: 1.9}} b={{x: 1408, y: 1180, z: 2.2}} p={p} over={<Padlock x={1405} y={1300} s={1.3} />} screen={<ItemTag text="ONLY ONE" p={p} at={p.ev.one - 0.3} />}>
         <Grille x0={SF.x0} y0={SF.y0} x1={SF.x1} y1={SF.y1} frac={1} />
       </Scene>
     ),
   },
   {
-    at: 'The job is simple',
+    at: "The job's pretty",
     draw: (p) => (
       <Scene bg="concourse" a={FULL} b={{x: 1330, y: 880, z: 1.1}} p={p}>
         <Guard x={1150} y={1420} h={hC(1420)} pose={POSES.walkLight} propN="flashlight" beam={520} />
@@ -466,7 +466,7 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: 'Marcus down',
+    at: 'Marcus calls',
     draw: (p) => (
       <Scene bg="garage" a={{x: 1400, y: 1060, z: 2.2}} b={{x: 1405, y: 1055, z: 2.32}} p={p}>
         <Marcus x={1350} y={1250} h={hG(1250)} pose={POSES.radio} propN="radio" mouth="smile" />
@@ -559,5 +559,5 @@ export const SHOTS: ShotDef[] = [
       </Scene>
     ),
   },
-  {at: '=61.6', draw: (p) => <SeriesTitle t={p.t} sub="TO BE CONTINUED" />},
+  {at: '>+wrong', draw: (p) => <SeriesTitle t={p.t} sub="TO BE CONTINUED" />},
 ];

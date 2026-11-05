@@ -82,7 +82,14 @@ This is a test of a second format: a long stick-figure survival story told in st
 - **Copy and pace:** the first minute is rewritten as brisk, conversational storytelling with dry humor (`images/mall/script-v3-minute1.md`). Danny's voice profile is now "quick, confident, never melodramatic", with tight pauses and a 10% lift. It runs at 177 words a minute while speaking, against about 127 in v2.
 - **Marcus's voice:** Gemini's Puck measured 185–220 Hz, which is in the typical female range. Marcus is now Orus, at about 114 Hz (Danny is about 86 Hz). Eight male voices were measured; the takes are in `images/mall/vo/v3aud/`.
 - **More realistic figures:** `Stick.tsx` keeps the same rig and poses but draws more human bodies: a smaller head, wider shoulders, skin tones, a face with ears, a nose and eyebrows, short or long sleeves, filled trousers, hands and shoes, shaded clothes, and zombies with torn clothes and dark eye sockets.
-- **Only the first minute:** `MallPilot` currently renders the 1:07 test (29 shots, a cut every 2.2 seconds) so the direction can be checked before paying for a full episode. The full v2 cut is at commit `976aed9`, and its voice plan and takes stay in `images/mall/vo/v2/`.
+- **Only the first minute:** `MallPilot` renders the first-minute test (29 shots, about a cut every 2.2 seconds) so the direction can be checked before paying for a full episode. The full v2 cut is at commit `976aed9`, and its voice plan and takes stay in `images/mall/vo/v2/`.
+
+**v4–v10: getting Danny's voice right.** Voice-only rounds, story first, then the voice, then scenes. The approved voice is v10 "calm, quicker still" (`images/mall/vo/v10/b`), and `MallPilot` now plays it.
+- **Settings:** the 5a direction (Algenib, Deadpan), with no whisper. Quiet moments are the same voice turned down.
+- **Takes:** each line is the calmest take that still matches 5a's voice (`pick_takes.py`). Each line gets a fixed gain.
+- **Pace:** tight pauses and an 8% speed-up, about 171 words a minute.
+- **Recipe:** `images/mall/voice-recipe.md` lists the exact settings for every future chapter. The notes for each round are in `images/mall/script-v4-minute1.md` to `script-v10-minute1.md`.
+- **Series plan:** `images/mall/series-outline.md` plans the story as a series of 40-minute chapters that split into Shorts.
 
 ![Four frames from the v3 first-minute test: the zombie in Marcus's uniform pressed against the gate; Danny in Lily's paper crown holding up his keys; Danny kneeling as Lily runs off the school bus; Marcus crouched with his radio while a man limps up the garage ramp](docs/mall-v3-storyboard.jpg)
 
