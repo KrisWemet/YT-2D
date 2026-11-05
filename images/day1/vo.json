@@ -1,0 +1,47 @@
+{
+ "m1": {
+  "text": "Sam!",
+  "voice": "am_fenrir",
+  "dur": 1.055,
+  "speech": 0.555,
+  "first": 0.034,
+  "last": 0.457,
+  "phonemes": []
+ },
+ "m2": {
+  "text": "Don't look down!",
+  "voice": "am_fenrir",
+  "dur": 1.311,
+  "speech": 0.811,
+  "first": 0.031,
+  "last": 0.721,
+  "phonemes": []
+ },
+ "m3": {
+  "text": "Look at me!",
+  "voice": "am_fenrir",
+  "dur": 1.204,
+  "speech": 0.704,
+  "first": 0.034,
+  "last": 0.604,
+  "phonemes": []
+ },
+ "m4": {
+  "text": "Look at me!",
+  "voice": "am_fenrir",
+  "dur": 1.311,
+  "speech": 0.811,
+  "first": 0.04,
+  "last": 0.699,
+  "phonemes": []
+ },
+ "s1": {
+  "text": "Three days before this, my biggest worry was a missed paycheck.",
+  "voice": "af_heart",
+  "dur": 3.605,
+  "speech": 3.605,
+  "first": 0.106,
+  "last": 3.502,
+  "phonemes": []
+ }
+}
