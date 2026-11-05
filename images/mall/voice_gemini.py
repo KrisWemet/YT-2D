@@ -175,14 +175,24 @@ def walkie(a):
     return np.clip(b + np.random.default_rng(7).normal(0, 0.012, len(b)).astype(np.float32), -1, 1)
 
 
-def squeeze(a, max_pause):
-    """shorten pauses inside a take: any silence longer than max_pause is cut down to max_pause"""
+def pause_floor(a):
+    """the level below which a stretch counts as a pause: 35 dB under the take's loudest 20 ms
+    (room tone and pauses sit lower than that; soft speech, even in quiet lines, sits higher)"""
+    hop = SR // 50
+    n = len(a) // hop
+    if n == 0:
+        return -40.0
+    return float(10 * np.log10((a[: n * hop].reshape(n, hop) ** 2).mean(1).max() + 1e-12) - 35)
+
+
+def squeeze(a, max_pause, floor_db=-40):
+    """shorten pauses inside a take: any silence (quieter than floor_db) longer than max_pause is cut down to max_pause"""
     hop = SR // 50  # 20 ms
     n = len(a) // hop
     if n == 0:
         return a
     rms = np.sqrt((a[: n * hop].reshape(n, hop) ** 2).mean(1) + 1e-12)
-    quiet = 20 * np.log10(rms) < -40
+    quiet = 20 * np.log10(rms) < floor_db
     keep, i = [], 0
     while i < n:
         j = i
@@ -289,7 +299,7 @@ def take_lines(c):
         a = flatten_pitch(a, c.get("flatten", plan.get("flatten")))
     spans = [(s / tempo, e / tempo) for s, e in line_spans(c, word_times(path))]
     # shorten very long pauses first, at the take's own level, so soft lines never count as silence
-    a, remap = squeeze_map(a, c.get("max_pause", plan.get("max_pause", 0.9)), floor_db=min(-40, active_db(a) - 32))
+    a, remap = squeeze_map(a, c.get("max_pause", plan.get("max_pause", 0.9)), floor_db=pause_floor(a))
     spans = [(remap(s), remap(e)) for s, e in spans]
     idx = np.where(np.abs(a) > 0.03 * np.abs(a).max())[0]
     t0 = max(0, idx[0] - 1200)
@@ -384,6 +394,12 @@ def take48(path, lufs, tempo=1.0, max_pause=0.4):
     if fixed:
         # a short take is repeated to 3 s+ so the loudness meter has enough to gate on (same content, same reading)
         a *= 10 ** ((lufs - measure_lufs(np.tile(a, int(np.ceil(3 * SR / max(len(a), 1)))))) / 20)
+    if fixed:
+        # quiet lines (e.g. -26 LUFS) must not have their soft speech counted as silence: trim and
+        # squeeze relative to the take's own level
+        idx = np.where(np.abs(a) > 0.03 * np.abs(a).max())[0]
+        a = a[max(0, idx[0] - 1200): idx[-1] + 3600] if len(idx) else a
+        return squeeze(a, max_pause, floor_db=pause_floor(a))
     idx = np.where(np.abs(a) > 0.02)[0]
     a = a[max(0, idx[0] - 1200): idx[-1] + 3600] if len(idx) else a
     return squeeze(a, max_pause)
