@@ -172,7 +172,7 @@ Render the mall pilot (1080p, 30 fps) and its thumbnail:
 
 ```bash
 npx remotion render src/index.ts MallPilot out/mall-pilot-v2-1080p.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
-bash images/mall/finish.sh out/mall-pilot-v2-1080p.mp4 out/mall-pilot-v2.mp4   # loudness to -15 LUFS, smaller re-encode for upload
+bash images/mall/finish.sh out/mall-pilot-v2-1080p.mp4 out/mall-pilot-v2.mp4   # about -15 LUFS with one gain + limiter, smaller re-encode
 npx remotion still src/index.ts MallThumb out/mall-thumb.png
 ```
 
@@ -183,7 +183,7 @@ cd images/mall
 python3 voice_gemini.py vo/v2/plan.json vo/v2            # records missing takes, checks each against the script, builds vo.wav
 python3 voice_gemini.py vo/v2/plan.json vo/v2 --check    # re-check every saved take without recording
 python3 align.py vo/v2/vo.wav vo/v2/segments.json ../../src/mall/words.json
-ffmpeg -i vo/v2/vo.wav -af loudnorm=I=-16:TP=-1.5 -b:a 192k ../../public/mall/vo/vo.mp3
+bash vo_export.sh vo/v2/vo.wav ../../public/mall/vo/vo.mp3      # fixed gain + limiter: keeps whispers quiet
 ```
 
 The first test's free local voice is still available: `voice_local.py` (Kokoro, model files from the kokoro-onnx releases on GitHub) writes the same `vo.wav` and `segments.json`.

@@ -1,0 +1,90 @@
+{
+ "duration": 75.783,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform.",
+   "s": 0.3,
+   "e": 6.454,
+   "chunk": "w1"
+  },
+  {
+   "kind": "narr",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding.",
+   "s": 6.904,
+   "e": 12.352,
+   "chunk": "w2"
+  },
+  {
+   "kind": "narr",
+   "text": "An hour ago, I was basically the king of this mall.",
+   "s": 12.952,
+   "e": 17.57,
+   "chunk": "q1"
+  },
+  {
+   "kind": "narr",
+   "text": "Let me back up.",
+   "s": 17.92,
+   "e": 18.657,
+   "chunk": "n1"
+  },
+  {
+   "kind": "narr",
+   "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is.",
+   "s": 19.557,
+   "e": 27.31,
+   "chunk": "n2"
+  },
+  {
+   "kind": "narr",
+   "text": "I work nights for one reason. At three-fifteen every afternoon, I'm standing at the bus stop when my daughter Lily gets off.",
+   "s": 27.66,
+   "e": 36.053,
+   "chunk": "n3"
+  },
+  {
+   "kind": "narr",
+   "text": "She's seven, and she thinks I'm the king of the mall, because I carry forty-two keys, one for every store.",
+   "s": 36.403,
+   "e": 43.6,
+   "chunk": "n4"
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight, I'd only need one of them.",
+   "s": 43.95,
+   "e": 46.385,
+   "chunk": "q2"
+  },
+  {
+   "kind": "narr",
+   "text": "The job's pretty simple. I walk the loop, I rattle the gates, and around one a.m., Marcus calls me from down in the parking garage.",
+   "s": 46.985,
+   "e": 55.836,
+   "chunk": "n5"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard.",
+   "s": 56.186,
+   "e": 62.96,
+   "chunk": "n6"
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight he calls at one-forty, and there's no joke. He's whispering.",
+   "s": 63.41,
+   "e": 68.485,
+   "chunk": "q3"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny. There's a guy on the ramp. He's walking... wrong.",
+   "s": 68.935,
+   "e": 74.183,
+   "chunk": "r1",
+   "id": "marcus1"
+  }
+ ]
+}
