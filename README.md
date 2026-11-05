@@ -84,6 +84,8 @@ This is a test of a second format: a long stick-figure survival story told in st
 - **More realistic figures:** `Stick.tsx` keeps the same rig and poses but draws more human bodies: a smaller head, wider shoulders, skin tones, a face with ears, a nose and eyebrows, short or long sleeves, filled trousers, hands and shoes, shaded clothes, and zombies with torn clothes and dark eye sockets.
 - **Only the first minute:** `MallPilot` currently renders the 1:07 test (29 shots, a cut every 2.2 seconds) so the direction can be checked before paying for a full episode. The full v2 cut is at commit `976aed9`, and its voice plan and takes stay in `images/mall/vo/v2/`.
 
+![Four frames from the v3 first-minute test: the zombie in Marcus's uniform pressed against the gate; Danny in Lily's paper crown holding up his keys; Danny kneeling as Lily runs off the school bus; Marcus crouched with his radio while a man limps up the garage ramp](docs/mall-v3-storyboard.jpg)
+
 **How it differs from the Shorts:**
 - **Backgrounds:** 10 scenes from Seedream 5 Flash on Kie.ai (2K, 3.24 credits each, all used on the first try). The prompts are in `images/mall/prompts.json`.
 - **Characters drawn in code:** there are no AI pictures of characters. The stick figures (with front and back views, a child version, crown, backpack and book), zombies, props, the mall map, labels, cards, the security-camera look and the stores' steel gates are all drawn in code (`src/mall/`). So Danny looks identical in every shot, and a new shot costs nothing.
