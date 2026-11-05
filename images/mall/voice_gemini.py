@@ -1,18 +1,26 @@
 #!/usr/bin/env python3
 """Directed voice-over with Gemini TTS on Kie.ai, checked line by line.
 
-usage: voice_gemini.py PLAN.json OUT_DIR [--only id1,id2] [--no-assemble]
+usage: voice_gemini.py PLAN.json OUT_DIR [--only id1,id2] [--no-assemble] [--tries N]
 
 PLAN.json:
   {"voices": {"danny": {"voice_name", "audio_profile", "accent"}, ...},
    "scene": "...", "sample_context": "...",
    "chunks": [{"id", "who", "style", "pace", "text", "gap", "radio": "marcus1"|null}, ...]}
 
-Each chunk is one short take. Gemini sometimes stops early or repeats itself, so every take is
+Each chunk is one take. Gemini sometimes stops early or repeats itself, so every take is
 transcribed with faster-whisper and compared with the script; a take that doesn't match is
 recorded again (up to 4 tries). Good takes are kept in OUT_DIR/takes/ and reused on re-runs.
 Then the takes are joined with the planned pauses, radio lines get a walkie-talkie filter, and
 OUT_DIR/vo.wav + OUT_DIR/segments.json are written (same format as voice_local.py).
+
+One-take chunks: give a chunk "lines": [{"text", "db"}, ...] instead of "text" and the lines are
+recorded together as one continuous take, so the voice can't drift from line to line. The take
+is split at the pauses between lines using word timings, and each line gets a fixed gain so it
+sits "db" above or below the plain lines (db 0), which land at the chunk's "lufs" (default -18).
+Nothing dynamic touches the performance. Optional per chunk: "pitch" (semitones, e.g. -1.5),
+"tempo", "max_pause" (longer pauses are shortened to this), "temperature". Optional in the plan:
+"takes_dir", so two versions of a voice-over can share one set of takes.
 """
 import concurrent.futures as cf
 import difflib, json, pathlib, re, subprocess, sys, tempfile
@@ -29,7 +37,11 @@ if "--only" in sys.argv:
     only = set(sys.argv[sys.argv.index("--only") + 1].split(","))
 assemble = "--no-assemble" not in sys.argv
 plan = json.loads(pathlib.Path(plan_f).read_text())
-takes = out / "takes"
+for _c in plan["chunks"]:
+    if "lines" in _c:  # a one-take chunk speaks all its lines in one go
+        _c["text"] = " ".join(line["text"] for line in _c["lines"])
+# "takes_dir" (relative to the plan file) lets two versions of a voice-over share the same takes
+takes = (pathlib.Path(plan_f).parent / plan["takes_dir"]).resolve() if "takes_dir" in plan else out / "takes"
 takes.mkdir(parents=True, exist_ok=True)
 SR = 48000
 
@@ -56,7 +68,8 @@ def request(ch):
                          "style": ch.get("style", v.get("style", "Empathetic")), "pace": ch.get("pace", "Natural"),
                          "accent": v.get("accent", "American (Gen)")}],
            "dialogue_turns": [{"speaker_id": "Speaker 1", "text": ch["text"]}],
-           "scene": ch.get("scene", plan.get("scene", "")), "sample_context": plan.get("sample_context", ""), "temperature": 1}
+           "scene": ch.get("scene", plan.get("scene", "")), "sample_context": plan.get("sample_context", ""),
+           "temperature": ch.get("temperature", plan.get("temperature", 1))}
     d = kie.run("google/gemini-3-1-flash-tts", inp, timeout_s=600)
     url = json.loads(d["resultJson"])["resultUrls"][0]
     raw = takes / f"{ch['id']}.try.wav"
@@ -74,7 +87,15 @@ def validate(model, c, path):
     dur = len(a) / 16000
     exp_dur = len(exp_w) / 2.7
     extra = len(got_w) - len(exp_w)  # words the take added (e.g. a stray "shh")
-    ok = sim >= plan.get("min_sim", 0.9) and extra <= 0 and dur >= 0.6 * exp_dur and dur <= 2.2 * exp_dur + 1.5
+    # a long take gets a little slack, since the transcriber may split a contraction ("I've" -> "I have");
+    # every difference is printed so it can be checked by ear
+    allow = c.get("allow_extra", 2 if len(exp_w) > 60 else 0)
+    ok = sim >= plan.get("min_sim", 0.9) and extra <= allow and dur >= 0.6 * exp_dur and dur <= 2.2 * exp_dur + 1.5
+    if len(exp_w) > 60:
+        sm = difflib.SequenceMatcher(None, exp_w, got_w, autojunk=False)
+        diffs = [f"{' '.join(exp_w[i1:i2]) or '-'} -> {' '.join(got_w[j1:j2]) or '-'}"
+                 for op, i1, i2, j1, j2 in sm.get_opcodes() if op != "equal"]
+        got = "differences: " + ("; ".join(diffs) if diffs else "none")
     return ok, sim, dur, exp_dur, got
 
 
@@ -106,7 +127,8 @@ def main():
     chunks = [c for c in plan["chunks"] if only is None or c["id"] in only]
     todo = [c for c in chunks if only is not None or not (takes / f"{c['id']}.wav").exists()]
     spent = 0.0
-    for attempt in range(1, 5):
+    tries = int(sys.argv[sys.argv.index("--tries") + 1]) if "--tries" in sys.argv else 4
+    for attempt in range(1, tries + 1):
         if not todo:
             break
         print(f"attempt {attempt}: {len(todo)} takes", flush=True)
@@ -128,7 +150,8 @@ def main():
                 failed.append(c)
                 continue
             ok, sim, dur, exp_dur, got = validate(model, c, raw)
-            print(f"  {c['id']} sim {sim:.2f} dur {dur:.1f}s (~{exp_dur:.1f}) {'ok' if ok else 'RETRY'} | {got.strip()[:90]}", flush=True)
+            shown = got.strip() if "lines" in c else got.strip()[:90]
+            print(f"  {c['id']} sim {sim:.2f} dur {dur:.1f}s (~{exp_dur:.1f}) {'ok' if ok else 'RETRY'} | {shown}", flush=True)
             if ok:
                 raw.rename(takes / f"{c['id']}.wav")
             else:
@@ -172,6 +195,123 @@ def squeeze(a, max_pause):
     return np.concatenate(keep)
 
 
+def squeeze_map(a, max_pause, floor_db=-40):
+    """squeeze(), plus a function that maps a time in the old audio (s) to the new audio.
+    Anything quieter than floor_db counts as a pause."""
+    hop = SR // 50
+    n = len(a) // hop
+    rms = np.sqrt((a[: n * hop].reshape(n, hop) ** 2).mean(1) + 1e-12)
+    quiet = 20 * np.log10(rms) < floor_db
+    keep, pieces, i, pos = [], [], 0, 0
+    while i < n:
+        j = i
+        while j < n and quiet[j] == quiet[i]:
+            j += 1
+        s0, s1 = i * hop, j * hop
+        half = int(max_pause * SR / 2)
+        parts = [(s0, s0 + half), (s1 - half, s1)] if quiet[i] and s1 - s0 > max_pause * SR else [(s0, s1)]
+        for p0, p1 in parts:
+            pieces.append((p0, p1, pos))
+            keep.append(a[p0:p1])
+            pos += p1 - p0
+        i = j
+    pieces.append((n * hop, len(a), pos))
+    keep.append(a[n * hop:])
+
+    def remap(t):
+        x = t * SR
+        for p0, p1, q in pieces:
+            if x < p1:
+                return (q + max(0.0, x - p0)) / SR
+        return (pos + len(a) - n * hop) / SR
+    return np.concatenate(keep), remap
+
+
+def word_times(path):
+    """(word, start, end) for every word in a take, words normalised like words()"""
+    from faster_whisper import WhisperModel
+    model = WhisperModel("small.en", device="cpu", compute_type="int8")
+    segs, _ = model.transcribe(load16(path), language="en", beam_size=5, word_timestamps=True)
+    return [(tok, w.start, w.end) for s in segs for w in s.words for tok in words(w.word)]
+
+
+def line_spans(c, wt):
+    """start and end (s) of each scripted line inside a one-take chunk"""
+    exp = [(tok, i) for i, line in enumerate(c["lines"]) for tok in words(line["text"])]
+    sm = difflib.SequenceMatcher(None, [e[0] for e in exp], [w[0] for w in wt], autojunk=False)
+    at = [None] * len(exp)
+    for a0, b0, size in sm.get_matching_blocks():
+        for k in range(size):
+            at[a0 + k] = wt[b0 + k][1:]
+    spans = []
+    for i in range(len(c["lines"])):
+        hits = [at[k] for k, e in enumerate(exp) if e[1] == i and at[k]]
+        if not hits:
+            raise SystemExit(f"{c['id']}: can't find line {i + 1} in the take")
+        spans.append((hits[0][0], hits[-1][1]))
+    return spans
+
+
+def active_db(x):
+    """level of the speech in x (dB), ignoring the pauses"""
+    hop = SR // 50
+    n = len(x) // hop
+    if n == 0:
+        return -90.0
+    p = (x[: n * hop].reshape(n, hop) ** 2).mean(1) + 1e-12
+    db = 10 * np.log10(p)
+    on = db > max(db.max() - 30, -60)
+    return float(10 * np.log10(p[on].mean()))
+
+
+def measure_lufs(x):
+    with tempfile.TemporaryDirectory() as d:
+        sf.write(f"{d}/x.wav", x, SR)
+        log = subprocess.run(["ffmpeg", "-nostats", "-i", f"{d}/x.wav", "-af", "ebur128", "-f", "null", "-"],
+                             capture_output=True, text=True).stderr
+    return float(re.findall(r"I:\s+(-?[\d.]+) LUFS", log)[-1])
+
+
+def take_lines(c):
+    """a one-take chunk: keep the performance as it is, shorten very long pauses, give each line a fixed gain"""
+    path = takes / f"{c['id']}.wav"
+    tempo = c.get("tempo", plan.get("tempo", 1.0))
+    af = ([f"atempo={tempo}"] if tempo != 1.0 else []) + \
+         ([f"rubberband=pitch={2 ** (c['pitch'] / 12):.5f}:pitchq=quality"] if c.get("pitch") else [])
+    with tempfile.TemporaryDirectory() as d:
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-ac", "1", "-ar", str(SR)] +
+                       (["-af", ",".join(af)] if af else []) + [f"{d}/o.wav"], check=True)
+        a, _ = sf.read(f"{d}/o.wav", dtype="float32")
+    spans = [(s / tempo, e / tempo) for s, e in line_spans(c, word_times(path))]
+    # shorten very long pauses first, at the take's own level, so soft lines never count as silence
+    a, remap = squeeze_map(a, c.get("max_pause", plan.get("max_pause", 0.9)), floor_db=min(-40, active_db(a) - 32))
+    spans = [(remap(s), remap(e)) for s, e in spans]
+    idx = np.where(np.abs(a) > 0.03 * np.abs(a).max())[0]
+    t0 = max(0, idx[0] - 1200)
+    a = a[t0: idx[-1] + 3600]
+    spans = [(max(0.0, s - t0 / SR), e - t0 / SR) for s, e in spans]
+    # each line's gain changes halfway through the pause before it, with a 40 ms ramp
+    cuts = [0.0] + [(spans[i][1] + spans[i + 1][0]) / 2 for i in range(len(spans) - 1)] + [len(a) / SR]
+    tgt = [line.get("db", 0.0) for line in c["lines"]]
+    lv = [active_db(a[int(s * SR): int(e * SR)]) for s, e in spans]
+    ref = float(np.median([v for v, t in zip(lv, tgt) if t == 0] or lv))
+    gain = [t - (v - ref) for v, t in zip(lv, tgt)]
+    db = np.zeros(len(a), np.float64)
+    for i, g in enumerate(gain):
+        db[int(cuts[i] * SR): int(cuts[i + 1] * SR)] = g
+    r = int(0.04 * SR)
+    cs = np.cumsum(np.pad(db, (r // 2, r - r // 2), mode="edge"))
+    db = (cs[r:] - cs[:-r]) / r
+    a = (a * 10 ** (db[: len(a)] / 20)).astype(np.float32)
+    # the plain lines (db 0) sit at the chunk's loudness; the rest follow from their gains
+    plain = np.concatenate([a[int(s * SR): int(e * SR)] for (s, e), t in zip(spans, tgt) if t == 0] or [a])
+    a *= 10 ** ((c.get("lufs", plan.get("lufs", -18)) - measure_lufs(plain)) / 20)
+    for (s, e), g, line in zip(spans, gain, c["lines"]):
+        said = re.sub(r"\[[^\]]*\]", "", line["text"]).strip()
+        print(f"    {s:6.2f}-{e:6.2f}s  gain {g:+5.1f} dB  {said[:60]}", flush=True)
+    return a, spans
+
+
 def take48(path, lufs, tempo=1.0, max_pause=0.4):
     """resample to 48 kHz mono, even out loudness, speed up a touch, trim and squeeze silences"""
     af = f"loudnorm=I={lufs}:TP=-2:LRA=7" + (f",atempo={tempo}" if tempo != 1.0 else "")
@@ -186,6 +326,17 @@ def take48(path, lufs, tempo=1.0, max_pause=0.4):
 def build():
     timeline, segs, t = [np.zeros(int(0.3 * SR), np.float32)], [], 0.3
     for c in plan["chunks"]:
+        if "lines" in c:  # one continuous take, levelled line by line
+            a, spans = take_lines(c)
+            for i, ((s, e), line) in enumerate(zip(spans, c["lines"])):
+                segs.append({"kind": "narr", "text": re.sub(r"\[[^\]]*\]\s*", "", line["text"]),
+                             "s": round(t + s, 3), "e": round(t + e, 3), "chunk": c["id"], "line": i + 1})
+            timeline.append(a)
+            t += len(a) / SR
+            gap = c.get("gap", 0.45)
+            timeline.append(np.zeros(int(gap * SR), np.float32))
+            t += gap
+            continue
         whisper = c.get("style") == "Whisper"
         lufs = c.get("lufs", -21 if whisper else -19)
         tempo = c.get("tempo", plan.get("tempo", 1.06))

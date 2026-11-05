@@ -1,0 +1,101 @@
+{
+ "duration": 90.052,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform.",
+   "s": 0.3,
+   "e": 7.62,
+   "chunk": "d2b",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding.",
+   "s": 9.16,
+   "e": 14.28,
+   "chunk": "d2b",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "An hour ago, I was basically the king of this mall.",
+   "s": 15.82,
+   "e": 20.04,
+   "chunk": "d2b",
+   "line": 3
+  },
+  {
+   "kind": "narr",
+   "text": "Let me back up.",
+   "s": 22.46,
+   "e": 23.88,
+   "chunk": "d2b",
+   "line": 4
+  },
+  {
+   "kind": "narr",
+   "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is.",
+   "s": 24.02,
+   "e": 32.66,
+   "chunk": "d2b",
+   "line": 5
+  },
+  {
+   "kind": "narr",
+   "text": "I work nights for one reason. At three-fifteen every afternoon, I'm standing at the bus stop when my daughter Lily gets off.",
+   "s": 33.42,
+   "e": 42.58,
+   "chunk": "d2b",
+   "line": 6
+  },
+  {
+   "kind": "narr",
+   "text": "She's seven, and she thinks I'm the king of the mall, because I carry forty-two keys, one for every store.",
+   "s": 43.98,
+   "e": 51.64,
+   "chunk": "d2b",
+   "line": 7
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight, I'd only need one of them.",
+   "s": 54.06,
+   "e": 56.3,
+   "chunk": "d2b",
+   "line": 8
+  },
+  {
+   "kind": "narr",
+   "text": "The job's pretty simple. I walk the loop, I rattle the gates, and around one a.m., Marcus calls me from down in the parking garage.",
+   "s": 57.28,
+   "e": 67.68,
+   "chunk": "d2b",
+   "line": 9
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard.",
+   "s": 69.26,
+   "e": 76.06,
+   "chunk": "d2b",
+   "line": 10
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight he calls at one-forty, and there's no joke. He's whispering.",
+   "s": 77.32,
+   "e": 81.98,
+   "chunk": "d2b",
+   "line": 11
+  },
+  {
+   "kind": "radio",
+   "text": "Danny. There's a guy on the ramp. He's walking... wrong.",
+   "s": 82.739,
+   "e": 88.402,
+   "chunk": "r1",
+   "id": "marcus1"
+  }
+ ]
+}
