@@ -15,7 +15,8 @@ export type BgName =
   | 'deptstore'
   | 'sportsfront'
   | 'sportsinside'
-  | 'busstop';
+  | 'busstop'
+  | 'parkview';
 
 // Camera: centre point (image px) and zoom (1 = whole image fills the frame).
 export type Cam = {x: number; y: number; z: number};
@@ -27,12 +28,18 @@ export const lerpCam = (a: Cam, b: Cam, t: number): Cam => ({
   z: a.z + (b.z - a.z) * t,
 });
 
-// Keep the camera window inside the picture.
-const clampCam = (c: Cam): Cam => {
+// The camera window for an output shape: as wide as the picture allows at zoom z for a wide
+// frame; for a tall frame (a vertical Short), the full height at z with the frame's own width,
+// so a vertical shot can be centred anywhere across the picture. Kept inside the picture.
+const camWindow = (c: Cam, width: number, height: number) => {
   const z = Math.max(1, c.z);
-  const w = BG_W / z;
-  const h = BG_H / z;
-  return {x: Math.min(BG_W - w / 2, Math.max(w / 2, c.x)), y: Math.min(BG_H - h / 2, Math.max(h / 2, c.y)), z};
+  const aspect = width / height;
+  const tall = aspect < BG_W / BG_H;
+  const h = tall ? BG_H / z : BG_W / z / aspect;
+  const w = tall ? h * aspect : BG_W / z;
+  const x = Math.min(BG_W - w / 2, Math.max(w / 2, c.x));
+  const y = Math.min(BG_H - h / 2, Math.max(h / 2, c.y));
+  return {x, y, w, h};
 };
 
 export const World: React.FC<{
@@ -45,10 +52,8 @@ export const World: React.FC<{
   children?: React.ReactNode;
   over?: React.ReactNode; // drawn above the characters, still in picture space
 }> = ({bg, cam, width, height, filter, shake = [0, 0], children, over}) => {
-  const c = clampCam(cam);
-  const w = BG_W / c.z;
-  const h = BG_H / c.z;
-  const vb = `${c.x - w / 2 + shake[0]} ${c.y - h / 2 + shake[1]} ${w} ${h}`;
+  const c = camWindow(cam, width, height);
+  const vb = `${c.x - c.w / 2 + shake[0]} ${c.y - c.h / 2 + shake[1]} ${c.w} ${c.h}`;
   return (
     <svg
       width={width}

@@ -170,6 +170,11 @@ export const LOOKS = {
     skin: SKIN.danny, shirt: UNIFORM.shirt, sleeves: 'short', pants: UNIFORM.pants, hat: 'crown', hair: 'short', hairColor: '#2e231d',
     mustache: true, badge: true, keysOnBelt: true,
   },
+  // the old night guard who handed Danny the keys: grey hair and moustache, an older long-sleeved uniform
+  walt: {
+    skin: SKIN.light, shirt: '#3a4566', sleeves: 'long', pants: '#232a3d', hat: 'guard', hatColor: '#2a3350',
+    hair: 'short', hairColor: '#d4d4d0', mustache: true, badge: true, keysOnBelt: true,
+  },
   shopperA: {skin: SKIN.tan, shirt: '#d9534f', sleeves: 'short', pants: '#2f3440', hair: 'short', hairColor: '#4a3020'},
   shopperB: {skin: SKIN.light, shirt: '#5bc0de', sleeves: 'long', pants: '#454b5a', hair: 'ponytail', hairColor: '#c9a640'},
   shopperC: {skin: SKIN.deep, shirt: '#f0ad4e', sleeves: 'long', pants: '#2b3d5e', hat: 'beanie', hatColor: '#3d6fb0'},

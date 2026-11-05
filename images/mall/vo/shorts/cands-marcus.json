@@ -1,0 +1,121 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with very little inflection, keeping his pitch fairly level and even, like a real person, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man quietly tells what happened during the first hour of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+ "temperature": 1,
+ "chunks": [
+  {
+   "id": "j1-1",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Danny. Why don't zombies ever eat clowns?",
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie, grinning."
+  },
+  {
+   "id": "j1-2",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Danny. Why don't zombies ever eat clowns?",
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie, grinning."
+  },
+  {
+   "id": "j1-3",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Danny. Why don't zombies ever eat clowns?",
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie, grinning."
+  },
+  {
+   "id": "j3-1",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "scene": "In a dark parking garage, a young security guard slowly walks toward a stranger and talks to him, worried and unsure, his walkie-talkie still on."
+  },
+  {
+   "id": "j3-2",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "scene": "In a dark parking garage, a young security guard slowly walks toward a stranger and talks to him, worried and unsure, his walkie-talkie still on."
+  },
+  {
+   "id": "j3-3",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "scene": "In a dark parking garage, a young security guard slowly walks toward a stranger and talks to him, worried and unsure, his walkie-talkie still on."
+  },
+  {
+   "id": "j12-1",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "allow_extra": 2,
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie: the question, a short beat, then the punchline, grinning.",
+   "text": "Danny. Why don't zombies ever eat clowns? Because they taste funny.",
+   "lines": [
+    {
+     "text": "Danny. Why don't zombies ever eat clowns?",
+     "gap": 0.55
+    },
+    {
+     "text": "Because they taste funny."
+    }
+   ]
+  },
+  {
+   "id": "j12-2",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "allow_extra": 2,
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie: the question, a short beat, then the punchline, grinning.",
+   "text": "Danny. Why don't zombies ever eat clowns? Because they taste funny.",
+   "lines": [
+    {
+     "text": "Danny. Why don't zombies ever eat clowns?",
+     "gap": 0.55
+    },
+    {
+     "text": "Because they taste funny."
+    }
+   ]
+  },
+  {
+   "id": "j12-3",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "allow_extra": 2,
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie: the question, a short beat, then the punchline, grinning.",
+   "text": "Danny. Why don't zombies ever eat clowns? Because they taste funny.",
+   "lines": [
+    {
+     "text": "Danny. Why don't zombies ever eat clowns?",
+     "gap": 0.55
+    },
+    {
+     "text": "Because they taste funny."
+    }
+   ]
+  }
+ ]
+}

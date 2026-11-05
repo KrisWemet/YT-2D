@@ -49,13 +49,16 @@ SR = 48000
 FLATTEN_NOW = 0  # set per chunk by build()
 
 NUM = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four", "5": "five", "6": "six", "7": "seven", "8": "eight",
-       "9": "nine", "10": "ten", "20": "twenty", "22": "twenty two", "30": "thirty", "31": "thirty one", "42": "forty two", "140": "one forty", "315": "three fifteen"}
+       "9": "nine", "10": "ten", "15": "fifteen", "20": "twenty", "22": "twenty two", "30": "thirty", "31": "thirty one", "40": "forty",
+       "42": "forty two", "140": "one forty", "315": "three fifteen"}
 
 
 def words(s):
     s = re.sub(r"\[[^\]]*\]", " ", s).lower().replace("-", " ").replace("$", "")
     s = re.sub(r"(\d+)", lambda m: " " + NUM.get(m.group(1), m.group(1)) + " ", s)
     s = s.replace("gonna", "going to").replace("name's", "name is").replace("a.m.", "am").replace("a m", "am")
+    s = re.sub(r"\bs\s*o\s*s\b", "s o s", s)  # "S-O-S" may come back as "SOS"
+    s = re.sub(r"\b10th\b", "tenth", s)
     return re.findall(r"[a-z']+", s)
 
 
@@ -410,9 +413,14 @@ def build():
     for c in plan["chunks"]:
         if "lines" in c:  # one continuous take, levelled line by line
             a, spans = take_lines(c)
+            if c.get("radio"):
+                a = walkie(a)
             for i, ((s, e), line) in enumerate(zip(spans, c["lines"])):
-                segs.append({"kind": "narr", "text": re.sub(r"\[[^\]]*\]\s*", "", line["text"]),
-                             "s": round(t + s, 3), "e": round(t + e, 3), "chunk": c["id"], "line": i + 1})
+                seg = {"kind": "radio" if c.get("radio") else "narr", "text": re.sub(r"\[[^\]]*\]\s*", "", line["text"]),
+                       "s": round(t + s, 3), "e": round(t + e, 3), "chunk": c["id"], "line": i + 1}
+                if c.get("radio"):
+                    seg["id"] = c["radio"]
+                segs.append(seg)
             timeline.append(a)
             t += len(a) / SR
             gap = c.get("gap", 0.45)

@@ -1,0 +1,102 @@
+{
+ "duration": 46.47,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "Every night at one a.m., my best friend tells me a terrible joke on the radio.",
+   "s": 0.3,
+   "e": 4.589,
+   "chunk": "m1"
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight, he whispered.",
+   "s": 4.789,
+   "e": 6.299,
+   "chunk": "m2"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus guards the parking garage. He's twenty-two, he's studying to be a nurse, and he still owes me twenty bucks.",
+   "s": 6.699,
+   "e": 12.855,
+   "chunk": "m3"
+  },
+  {
+   "kind": "narr",
+   "text": "At one on the dot, the radio clicks.",
+   "s": 13.105,
+   "e": 16.428,
+   "chunk": "m4"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny. Why don't zombies ever eat clowns?",
+   "s": 16.728,
+   "e": 20.438,
+   "chunk": "j12",
+   "line": 1,
+   "id": "marcus0"
+  },
+  {
+   "kind": "radio",
+   "text": "Because they taste funny.",
+   "s": 20.988,
+   "e": 22.358,
+   "chunk": "j12",
+   "line": 2,
+   "id": "marcus0"
+  },
+  {
+   "kind": "narr",
+   "text": "He laughs at his own jokes. Every single time.",
+   "s": 22.658,
+   "e": 26.049,
+   "chunk": "m7"
+  },
+  {
+   "kind": "narr",
+   "text": "At one-forty, the radio clicks again.",
+   "s": 26.399,
+   "e": 29.2,
+   "chunk": "m8"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny. There's a guy on the ramp. He's walking... wrong.",
+   "s": 29.5,
+   "e": 33.805,
+   "chunk": "r1",
+   "id": "marcus1"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus doesn't whisper. Ever.",
+   "s": 34.105,
+   "e": 36.392,
+   "chunk": "m10"
+  },
+  {
+   "kind": "radio",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "s": 36.692,
+   "e": 39.793,
+   "chunk": "j3",
+   "id": "marcus2"
+  },
+  {
+   "kind": "narr",
+   "text": "Then the radio did something I'd never heard it do.",
+   "s": 40.193,
+   "e": 43.22,
+   "chunk": "m12"
+  },
+  {
+   "kind": "narr",
+   "text": "It went completely silent.",
+   "s": 43.52,
+   "e": 44.97,
+   "chunk": "m13"
+  }
+ ]
+}

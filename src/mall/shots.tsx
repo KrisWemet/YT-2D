@@ -58,16 +58,16 @@ export const Scene: React.FC<{
 );
 
 // Perspective: standing height (picture px) for a figure whose feet are at y.
-const hC = (y: number) => 1.1 * (y - 880); // concourse
-const hG = (y: number) => 0.57 * (y - 706); // garage
+export const hC = (y: number) => 1.1 * (y - 880); // concourse
+export const hG = (y: number) => 0.57 * (y - 706); // garage
 export const hI = (y: number) => 2.2 * (y - 780); // inside the sporting goods store
 const hF = (y: number) => 1.1 * (y - 870); // food court
 
 type Fig = Omit<StickProps, 'look' | 'pose'> & {look?: Look; pose?: Pose};
 export const Guard: React.FC<Fig> = (p) => <Stick look={LOOKS.guard} pose={POSES.stand} eyes="dot" mouth="flat" {...p} />;
-const Marcus: React.FC<Fig> = (p) => <Stick look={LOOKS.marcus} pose={POSES.stand} eyes="dot" mouth="flat" {...p} />;
+export const Marcus: React.FC<Fig> = (p) => <Stick look={LOOKS.marcus} pose={POSES.stand} eyes="dot" mouth="flat" {...p} />;
 const ZLOOKS = [LOOKS.zombieA, LOOKS.zombieB, LOOKS.zombieC, LOOKS.zombieD, LOOKS.zombieE];
-const Zed: React.FC<Fig & {k?: number}> = ({k = 0, ...p}) => (
+export const Zed: React.FC<Fig & {k?: number}> = ({k = 0, ...p}) => (
   <Stick look={ZLOOKS[k % ZLOOKS.length]} pose={k % 2 ? POSES.zShambleB : POSES.zShamble} eyes="zombie" mouth="zombie" wobble={k + 3} {...p} />
 );
 
@@ -99,8 +99,8 @@ export const Crowd: React.FC<{rows: [number, number, number, (1 | -1)?][]; dim?:
 );
 
 // The sporting goods entrance as seen from outside / inside (picture px).
-const SF = {x0: 716, y0: 690, x1: 2094, y1: 1352};
-const SI = {x0: 1148, y0: 432, x1: 1712, y1: 932};
+export const SF = {x0: 716, y0: 690, x1: 2094, y1: 1352};
+export const SI = {x0: 1148, y0: 432, x1: 1712, y1: 932};
 // the green tent stands in front of the right half of the entrance
 const TENT = '1400,1012 1430,940 1480,850 1530,795 1580,760 1640,738 1700,732 1760,738 1820,760 1900,830 1900,1012';
 // Things beyond the gate: clipped to the opening and hidden behind the tent.
@@ -207,9 +207,9 @@ const outsideGlass: [number, number, number, (1 | -1)?][] = [
   [2700, 1015, 240, -1],
 ];
 
-const insideGuardSit = {x: 1180, y: 1110, h: hI(1110)};
-const marcusAtGate = {x: 1420, y: 936, h: 330};
-const marcusRadio = () => {
+export const insideGuardSit = {x: 1180, y: 1110, h: hI(1110)};
+export const marcusAtGate = {x: 1420, y: 936, h: 330};
+export const marcusRadio = () => {
   const j = jointsOf(POSES.frontPress, marcusAtGate.x, marcusAtGate.y, marcusAtGate.h, 1);
   return {x: j.chestRadio[0], y: j.chestRadio[1]};
 };
@@ -230,12 +230,12 @@ export const HoldGate: React.FC<{frac: number; opacity?: number}> = ({frac, opac
 
 // Daytime bus stop: perspective is shallow, a grown-up at the curb is ~430 px.
 const BUS_DOOR = {x: 2400, y: 1258};
-const Vignette: React.FC<{o?: number}> = ({o = 0.75}) => (
+export const Vignette: React.FC<{o?: number}> = ({o = 0.75}) => (
   <div style={{position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 45%, rgba(0,0,0,${o}) 100%)`}} />
 );
 
-const crouchRadio: Pose = {lean: 25, head: 8, armF: [40, 90], armN: [30, 165], legF: [70, -30], legN: [95, -10]};
-const holdKeys: Pose = {...POSES.holdUp, armN: [120, 160]};
+export const crouchRadio: Pose = {lean: 25, head: 8, armF: [40, 90], armN: [30, 165], legF: [70, -30], legN: [95, -10]};
+export const holdKeys: Pose = {...POSES.holdUp, armN: [120, 160]};
 
 // Shoppers for the Black Friday shot, zombies for the same shot "tonight".
 const lotRows: [number, number, number, (1 | -1)?][] = [
@@ -259,7 +259,7 @@ const WOMAN = {x: 1182, y: 692, h: 100};
 
 /* ---------------- the shot list (v3: the first minute) ---------------- */
 
-const Marcus3 = (p: Partial<StickProps>) => ({...marcusAtGate, look: LOOKS.marcusZ, pose: POSES.frontPress, front: true, eyes: 'zombie' as const, mouth: 'zombie' as const, wobble: 9, ...p});
+export const Marcus3 = (p: Partial<StickProps>) => ({...marcusAtGate, look: LOOKS.marcusZ, pose: POSES.frontPress, front: true, eyes: 'zombie' as const, mouth: 'zombie' as const, wobble: 9, ...p});
 
 export const SHOTS: ShotDef[] = [
   // ---------- Cold open ----------

@@ -1,0 +1,691 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with very little inflection, keeping his pitch fairly level and even, like a real person, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man quietly tells what happened during the first hour of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+ "temperature": 1,
+ "chunks": [
+  {
+   "id": "s1_b2-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Behind him, the hallway is full of them."
+  },
+  {
+   "id": "s1_b2-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Behind him, the hallway is full of them."
+  },
+  {
+   "id": "s1_b2-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Behind him, the hallway is full of them."
+  },
+  {
+   "id": "k1-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I have a key to every store in this mall."
+  },
+  {
+   "id": "k1-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I have a key to every store in this mall."
+  },
+  {
+   "id": "k1-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I have a key to every store in this mall."
+  },
+  {
+   "id": "k2-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The man who gave them to me said never to use the last one."
+  },
+  {
+   "id": "k2-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The man who gave them to me said never to use the last one."
+  },
+  {
+   "id": "k2-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The man who gave them to me said never to use the last one."
+  },
+  {
+   "id": "k3-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'm Danny. I'm the night guard at Maplecrest Mall."
+  },
+  {
+   "id": "k3-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'm Danny. I'm the night guard at Maplecrest Mall."
+  },
+  {
+   "id": "k3-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'm Danny. I'm the night guard at Maplecrest Mall."
+  },
+  {
+   "id": "k4-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I work nights so I can be at the bus stop at three-fifteen when my daughter Lily gets off."
+  },
+  {
+   "id": "k4-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I work nights so I can be at the bus stop at three-fifteen when my daughter Lily gets off."
+  },
+  {
+   "id": "k4-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I work nights so I can be at the bus stop at three-fifteen when my daughter Lily gets off."
+  },
+  {
+   "id": "k5-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "We live with my mom, on the tenth floor of the Parkview Apartments, right across the highway."
+  },
+  {
+   "id": "k5-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "We live with my mom, on the tenth floor of the Parkview Apartments, right across the highway."
+  },
+  {
+   "id": "k5-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "We live with my mom, on the tenth floor of the Parkview Apartments, right across the highway."
+  },
+  {
+   "id": "k6-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night at nine, when I walk in to work, Lily blinks her lamp at the mall three times."
+  },
+  {
+   "id": "k6-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night at nine, when I walk in to work, Lily blinks her lamp at the mall three times."
+  },
+  {
+   "id": "k6-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night at nine, when I walk in to work, Lily blinks her lamp at the mall three times."
+  },
+  {
+   "id": "k7-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It means I love you. I blink my flashlight back."
+  },
+  {
+   "id": "k7-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It means I love you. I blink my flashlight back."
+  },
+  {
+   "id": "k7-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It means I love you. I blink my flashlight back."
+  },
+  {
+   "id": "k8-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I taught her one more signal, S-O-S, for emergencies. She thinks it's a game."
+  },
+  {
+   "id": "k8-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I taught her one more signal, S-O-S, for emergencies. She thinks it's a game."
+  },
+  {
+   "id": "k8-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I taught her one more signal, S-O-S, for emergencies. She thinks it's a game."
+  },
+  {
+   "id": "k9-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Forty-two keys. Old Walt had this job before me, and when he handed them over, he tapped the last one."
+  },
+  {
+   "id": "k9-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Forty-two keys. Old Walt had this job before me, and when he handed them over, he tapped the last one."
+  },
+  {
+   "id": "k9-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Forty-two keys. Old Walt had this job before me, and when he handed them over, he tapped the last one."
+  },
+  {
+   "id": "k10-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "\"That one, you never use,\" he said. \"Don't ask.\""
+  },
+  {
+   "id": "k10-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "\"That one, you never use,\" he said. \"Don't ask.\""
+  },
+  {
+   "id": "k10-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "\"That one, you never use,\" he said. \"Don't ask.\""
+  },
+  {
+   "id": "k11-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Its tag says B3. There is no B3 on the mall map."
+  },
+  {
+   "id": "k11-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Its tag says B3. There is no B3 on the mall map."
+  },
+  {
+   "id": "k11-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Its tag says B3. There is no B3 on the mall map."
+  },
+  {
+   "id": "k13-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "In thirty days, I'd find out what the last one opens."
+  },
+  {
+   "id": "k13-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "In thirty days, I'd find out what the last one opens."
+  },
+  {
+   "id": "k13-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "In thirty days, I'd find out what the last one opens."
+  },
+  {
+   "id": "m1-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night at one a.m., my best friend tells me a terrible joke on the radio."
+  },
+  {
+   "id": "m1-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night at one a.m., my best friend tells me a terrible joke on the radio."
+  },
+  {
+   "id": "m1-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night at one a.m., my best friend tells me a terrible joke on the radio."
+  },
+  {
+   "id": "m2-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight, he whispered."
+  },
+  {
+   "id": "m2-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight, he whispered."
+  },
+  {
+   "id": "m2-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight, he whispered."
+  },
+  {
+   "id": "m3-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus guards the parking garage. He's twenty-two, he's studying to be a nurse, and he still owes me twenty bucks."
+  },
+  {
+   "id": "m3-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus guards the parking garage. He's twenty-two, he's studying to be a nurse, and he still owes me twenty bucks."
+  },
+  {
+   "id": "m3-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus guards the parking garage. He's twenty-two, he's studying to be a nurse, and he still owes me twenty bucks."
+  },
+  {
+   "id": "m4-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At one on the dot, the radio clicks."
+  },
+  {
+   "id": "m4-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At one on the dot, the radio clicks."
+  },
+  {
+   "id": "m4-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At one on the dot, the radio clicks."
+  },
+  {
+   "id": "m7-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He laughs at his own jokes. Every single time."
+  },
+  {
+   "id": "m7-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He laughs at his own jokes. Every single time."
+  },
+  {
+   "id": "m7-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He laughs at his own jokes. Every single time."
+  },
+  {
+   "id": "m8-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At one-forty, the radio clicks again."
+  },
+  {
+   "id": "m8-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At one-forty, the radio clicks again."
+  },
+  {
+   "id": "m8-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At one-forty, the radio clicks again."
+  },
+  {
+   "id": "m10-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus doesn't whisper. Ever."
+  },
+  {
+   "id": "m10-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus doesn't whisper. Ever."
+  },
+  {
+   "id": "m10-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus doesn't whisper. Ever."
+  },
+  {
+   "id": "m12-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then the radio did something I'd never heard it do."
+  },
+  {
+   "id": "m12-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then the radio did something I'd never heard it do."
+  },
+  {
+   "id": "m12-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then the radio did something I'd never heard it do."
+  },
+  {
+   "id": "m13-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It went completely silent."
+  },
+  {
+   "id": "m13-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It went completely silent."
+  },
+  {
+   "id": "m13-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It went completely silent."
+  },
+  {
+   "id": "j1-1",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Danny. Why don't zombies ever eat clowns?",
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie, grinning."
+  },
+  {
+   "id": "j1-2",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Danny. Why don't zombies ever eat clowns?",
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie, grinning."
+  },
+  {
+   "id": "j1-3",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Danny. Why don't zombies ever eat clowns?",
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie, grinning."
+  },
+  {
+   "id": "j2-1",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Because they taste funny.",
+   "scene": "Late at night in a parking garage, a cheerful young security guard delivers the punchline of a corny joke over a walkie-talkie, grinning."
+  },
+  {
+   "id": "j2-2",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Because they taste funny.",
+   "scene": "Late at night in a parking garage, a cheerful young security guard delivers the punchline of a corny joke over a walkie-talkie, grinning."
+  },
+  {
+   "id": "j2-3",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Because they taste funny.",
+   "scene": "Late at night in a parking garage, a cheerful young security guard delivers the punchline of a corny joke over a walkie-talkie, grinning."
+  },
+  {
+   "id": "j3-1",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "scene": "In a dark parking garage, a young security guard slowly walks toward a stranger and talks to him, worried and unsure, his walkie-talkie still on."
+  },
+  {
+   "id": "j3-2",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "scene": "In a dark parking garage, a young security guard slowly walks toward a stranger and talks to him, worried and unsure, his walkie-talkie still on."
+  },
+  {
+   "id": "j3-3",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "scene": "In a dark parking garage, a young security guard slowly walks toward a stranger and talks to him, worried and unsure, his walkie-talkie still on."
+  },
+  {
+   "id": "k1-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I have a key to every store in this mall."
+  },
+  {
+   "id": "k1-5",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I have a key to every store in this mall."
+  },
+  {
+   "id": "k1-6",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I have a key to every store in this mall."
+  },
+  {
+   "id": "k11-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Its tag says B3. There is no B3 on the mall map."
+  },
+  {
+   "id": "k11-5",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Its tag says B3. There is no B3 on the mall map."
+  },
+  {
+   "id": "k11-6",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Its tag says B3. There is no B3 on the mall map."
+  },
+  {
+   "id": "m10-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus doesn't whisper. Ever."
+  },
+  {
+   "id": "m10-5",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus doesn't whisper. Ever."
+  },
+  {
+   "id": "m10-6",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus doesn't whisper. Ever."
+  },
+  {
+   "id": "s1_b2-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Behind him, the hallway is full of them."
+  },
+  {
+   "id": "s1_b2-5",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Behind him, the hallway is full of them."
+  },
+  {
+   "id": "s1_b2-6",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Behind him, the hallway is full of them."
+  },
+  {
+   "id": "j12-1",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "allow_extra": 2,
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie: the question, a short beat, then the punchline, grinning.",
+   "text": "Danny. Why don't zombies ever eat clowns? Because they taste funny.",
+   "lines": [
+    {
+     "text": "Danny. Why don't zombies ever eat clowns?",
+     "gap": 0.55
+    },
+    {
+     "text": "Because they taste funny."
+    }
+   ]
+  },
+  {
+   "id": "j12-2",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "allow_extra": 2,
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie: the question, a short beat, then the punchline, grinning.",
+   "text": "Danny. Why don't zombies ever eat clowns? Because they taste funny.",
+   "lines": [
+    {
+     "text": "Danny. Why don't zombies ever eat clowns?",
+     "gap": 0.55
+    },
+    {
+     "text": "Because they taste funny."
+    }
+   ]
+  },
+  {
+   "id": "j12-3",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "allow_extra": 2,
+   "scene": "Late at night in a parking garage, a cheerful young security guard tells his friend a corny joke over a walkie-talkie: the question, a short beat, then the punchline, grinning.",
+   "text": "Danny. Why don't zombies ever eat clowns? Because they taste funny.",
+   "lines": [
+    {
+     "text": "Danny. Why don't zombies ever eat clowns?",
+     "gap": 0.55
+    },
+    {
+     "text": "Because they taste funny."
+    }
+   ]
+  }
+ ]
+}

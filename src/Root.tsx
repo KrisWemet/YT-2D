@@ -1,4 +1,6 @@
 import React from 'react';
+import {makeShort, shortFrames, FPS as SFPS} from './mall/MallShort';
+import {SHORT1_DEF, SHORT2_DEF, SHORT3_DEF} from './mall/shortsCh1';
 import {Composition, Still} from 'remotion';
 import {RigTest} from './pigeon/RigTest';
 import {PigeonShort} from './pigeon/Short';
@@ -12,6 +14,10 @@ import {MallPilot} from './mall/Pilot';
 import {MallThumb} from './mall/Thumb';
 import {DUR as MDUR, FPS as MFPS} from './mall/timing';
 
+const MallShort1 = makeShort(SHORT1_DEF);
+const MallShort2 = makeShort(SHORT2_DEF);
+const MallShort3 = makeShort(SHORT3_DEF);
+
 export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="PigeonShort" component={PigeonShort} durationInFrames={Math.round(DUR * FPS)} fps={FPS} width={1080} height={1920} />
@@ -24,5 +30,8 @@ export const RemotionRoot: React.FC = () => (
     <Still id="MallTest" component={MallTest} width={1920} height={1080} />
     <Still id="MallThumb" component={MallThumb} width={1920} height={1080} />
     <Composition id="MallPilot" component={MallPilot} durationInFrames={Math.round(MDUR * MFPS)} fps={MFPS} width={1920} height={1080} />
+    <Composition id="MallShort1" component={MallShort1} durationInFrames={shortFrames(SHORT1_DEF)} fps={SFPS} width={1080} height={1920} />
+    <Composition id="MallShort2" component={MallShort2} durationInFrames={shortFrames(SHORT2_DEF)} fps={SFPS} width={1080} height={1920} />
+    <Composition id="MallShort3" component={MallShort3} durationInFrames={shortFrames(SHORT3_DEF)} fps={SFPS} width={1080} height={1920} />
   </>
 );
