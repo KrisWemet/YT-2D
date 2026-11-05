@@ -51,7 +51,7 @@ The banner says "New parts every day". If you settle on a different schedule, th
 
 ## Short 1: The Gate
 
-Upload `out/shorts/night-guard-short-1.mp4`.
+Upload `out/shorts/night-guard-short-1.mp4`, or `out/shorts/night-guard-short-1-with-thumbnail.mp4` if you'll set the thumbnail from the phone app (see **Thumbnail** below).
 
 **Title** (59 of 100 characters):
 
@@ -107,7 +107,10 @@ The whole story, in order. Start with Part 1.
 | Show how many viewers like this video | On |
 | Visibility | Public. Or schedule it, and post each part at the same time every day. |
 
-**Thumbnail:** in the YouTube app, tap **Thumbnail** while uploading and choose the very first frame: the zombie at the gate. Shorts uploaded from a computer can't use a custom thumbnail in the Shorts feed.
+**Thumbnail:** `thumbnails/night-guard-short-1-thumbnail.jpg` (1080×1920). This is what people see on your channel's Shorts tab, in search and on the home page. In the swipe feed the video just plays, so the opening shot does that job there.
+
+- **If Studio on a computer shows "Upload thumbnail" for the Short:** upload `night-guard-short-1.mp4` and upload the image there. YouTube is giving this button to Partner Program channels first.
+- **If it doesn't** (a new channel probably won't have it yet): upload `night-guard-short-1-with-thumbnail.mp4` from the YouTube phone app. Its last quarter-second is the thumbnail. On the details screen, tap the pencil on the thumbnail, drag the slider all the way to the end, and save. Then paste the title, description and tags on a computer: Studio → Content → Shorts → the pencil next to the Short.
 
 **Pinned comment.** Post it once the Short is live, then tap ⋮ → Pin:
 

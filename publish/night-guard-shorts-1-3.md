@@ -22,5 +22,5 @@ All the copy-paste fields and settings are in `night-guard-youtube-setup.md`.
 
 ## Notes
 
-- The thumbnail frame for each is its first frame, the hook.
+- Short 1 has its own thumbnail, `thumbnails/night-guard-short-1-thumbnail.jpg`. How to set it is in `night-guard-youtube-setup.md`. For Shorts 2 and 3, the first frame (the hook) is the thumbnail for now.
 - To re-render after a change: `npx remotion render src/index.ts MallShort1 out/shorts/raw-1.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k`, then `bash images/mall/finish.sh out/shorts/raw-1.mp4 out/shorts/night-guard-short-1.mp4`. Do the same for 2 and 3.
