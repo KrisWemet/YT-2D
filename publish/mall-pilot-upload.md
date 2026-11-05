@@ -1,6 +1,6 @@
 # Upload details: mall pilot
 
-**File:** `out/mall-pilot-1080p.mp4` (render it with the command in the README) · **Thumbnail:** `thumbnails/mall-pilot-thumbnail.jpg`
+**File:** `out/mall-pilot.mp4` (render it with the commands in the README: 1920×1080, 30 fps, 2:38, −15 LUFS) · **Thumbnail:** `thumbnails/mall-pilot-thumbnail.jpg`
 
 The pilot uses the free local Kokoro voice, because ElevenLabs on Kie.ai was down when it was made. If it's re-voiced, the cuts follow the new voice automatically, but the chapter times below have to be read again from the new render.
 

@@ -159,6 +159,7 @@ Render the mall pilot (1080p, 30 fps) and its thumbnail:
 
 ```bash
 npx remotion render src/index.ts MallPilot out/mall-pilot-1080p.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
+bash images/mall/finish.sh out/mall-pilot-1080p.mp4 out/mall-pilot.mp4   # loudness to -15 LUFS, smaller re-encode for upload
 npx remotion still src/index.ts MallThumb out/mall-thumb.png
 ```
 
