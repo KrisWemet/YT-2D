@@ -29,11 +29,13 @@ const idxAt = (time: number) => {
  *   "some words"   cut just before these words are spoken
  *   ">some words"  cut in the pause after these words
  *   ">+some words" cut right after these words end
+ *   "=61.5"        an absolute time in seconds
  *   "@id"          start of a radio line (segment id)
  *   "0"            the very start
  */
 export const resolveCue = (cue: string, fromTime: number): number => {
   if (cue === '0') return 0;
+  if (cue.startsWith('=')) return Number(cue.slice(1)); // an absolute time in seconds
   if (cue.startsWith('@')) {
     const g = SEGMENTS.find((x) => x.id === cue.slice(1));
     if (!g) throw new Error(`no segment ${cue}`);
@@ -58,3 +60,11 @@ export const wordEnd = (phrase: string, fromTime: number) => {
   return WORDS[i + phrase.split(/\s+/).filter(Boolean).length - 1].e;
 };
 export const segment = (id: string) => SEGMENTS.find((x) => x.id === id)!;
+// wordTime that returns null instead of throwing (for cues a script may not have)
+export const maybeWordTime = (phrase: string, fromTime: number): number | null => {
+  try {
+    return wordTime(phrase, fromTime);
+  } catch {
+    return null;
+  }
+};
