@@ -6,9 +6,7 @@ Post them in order, one a day. Each title is the Short's hook, not a part number
 
 ## Short 1: The Gate (about 0:24)
 
-- **Title:** There's a zombie at my gate wearing my best friend's uniform
-- **Description:** I'm the night guard at Maplecrest Mall. One hour ago, I was the king of this mall. #shorts #zombie #survival #story #animation
-- **Pinned comment:** Part 2: the key I was told never to use.
+All the copy-paste fields and settings are in `night-guard-youtube-setup.md`.
 
 ## Short 2: Forty-Two Keys (about 1:01)
 
