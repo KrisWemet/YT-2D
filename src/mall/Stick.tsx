@@ -2,7 +2,7 @@ import React from 'react';
 
 /*
  * Code-drawn figures for the mall series: stick-figure rigs with more realistic bodies
- * (human proportions, skin tones, clothes, hands, shoes, ears, a nose).
+ * (human proportions, skin tones, clothes, hands, shoes, a nose). No ears, by request.
  *
  * Local units: the feet stand on y = 0 and a standing figure is ~300 units tall.
  * Angles are in degrees. 0 points straight down; positive swings toward the way
@@ -378,21 +378,8 @@ const Head: React.FC<{
       {look.hair === 'ponytail' && <path d={`M ${-R * 0.75} ${-R * 0.4} q -22 6 -18 34 q 8 -10 20 -15 Z`} fill={hairC} stroke={ink} strokeWidth={3} strokeLinejoin="round" />}
       {look.hair === 'bun' && <circle cx={-R * 0.6} cy={-R * 0.8} r={10} fill={hairC} stroke={ink} strokeWidth={3} />}
       {look.hat === 'hood' && <path d={`M ${-R - 8} 6 A ${R + 9} ${R + 9} 0 1 1 ${R + 5} -6 L ${R - 2} 8 A ${R - 2} ${R - 2} 0 1 0 ${-R + 3} 14 Z`} fill={hatC} stroke={ink} strokeWidth={3.5} />}
-      {/* ears */}
-      {!ghost && (front || back) && (
-        <>
-          <ellipse cx={-R + 1} cy={2} rx={4.5} ry={6.5} fill={skin} stroke={ink} strokeWidth={2.4} />
-          <ellipse cx={R - 1} cy={2} rx={4.5} ry={6.5} fill={skin} stroke={ink} strokeWidth={2.4} />
-        </>
-      )}
       {/* the head */}
       <circle cx={0} cy={0} r={R} fill={skin} stroke={ink} strokeWidth={LW} />
-      {!ghost && !front && !back && (
-        <g>
-          <ellipse cx={-R * 0.22} cy={2} rx={4.5} ry={6.5} fill={skin} stroke={ink} strokeWidth={2.4} />
-          <path d={`M ${-R * 0.22 - 1} -1 q 2.5 3 0 6`} stroke={shade(skin, 0.7)} strokeWidth={1.6} fill="none" />
-        </g>
-      )}
       {/* soft shade on the side away from the light */}
       {!ghost && <path d={`M ${-R * 0.2} ${-R * 0.98} A ${R} ${R} 0 0 0 ${-R * 0.2} ${R * 0.98} A ${R * 1.15} ${R * 1.15} 0 0 1 ${-R * 0.2} ${-R * 0.98} Z`} fill="#000" opacity={0.08} />}
       {/* hair on top */}
