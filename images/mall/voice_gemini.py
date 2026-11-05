@@ -34,7 +34,7 @@ takes.mkdir(parents=True, exist_ok=True)
 SR = 48000
 
 NUM = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four", "5": "five", "6": "six", "7": "seven", "8": "eight",
-       "9": "nine", "10": "ten", "20": "twenty", "22": "twenty two", "30": "thirty", "31": "thirty one", "42": "forty two"}
+       "9": "nine", "10": "ten", "20": "twenty", "22": "twenty two", "30": "thirty", "31": "thirty one", "42": "forty two", "140": "one forty", "315": "three fifteen"}
 
 
 def words(s):
@@ -91,7 +91,16 @@ def check_all():
     print("re-take:", ",".join(bad) if bad else "none", flush=True)
 
 
+def sane(c):
+    """a take must be a real line of dialogue: some words, no markdown table or rule"""
+    t = re.sub(r"\[[^\]]*\]", " ", c["text"])
+    return len(re.findall(r"[A-Za-z']+", t)) >= 2 and "|" not in t and not re.fullmatch(r"\s*-{3,}\s*", t)
+
+
 def main():
+    bad = [c["id"] for c in plan["chunks"] if not sane(c)]
+    if bad:
+        raise SystemExit("these lines don't look like dialogue, fix the plan first: " + ", ".join(bad))
     from faster_whisper import WhisperModel
     model = WhisperModel("small.en", device="cpu", compute_type="int8")
     chunks = [c for c in plan["chunks"] if only is None or c["id"] in only]

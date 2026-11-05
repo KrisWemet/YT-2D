@@ -21,3 +21,5 @@ images/mall/vo/audition/*/takes/
 images/mall/vo/audition/*.wav
 images/mall/vo/v3/vo.wav
 images/mall/vo/*/takes/*.try.wav
+images/mall/vo/v4/*/vo.wav
+images/mall/vo/**/*.try.wav

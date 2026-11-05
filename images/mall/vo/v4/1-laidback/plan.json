@@ -1,0 +1,101 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties, telling a friend what happened. Relaxed, warm and low-key, with a little dry humor. Conversational and natural, like he is just talking, not performing and not dramatic.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man casually tells a friend what happened at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told in a natural, conversational way.",
+ "tempo": 1.04,
+ "max_pause": 0.35,
+ "chunks": [
+  {
+   "id": "d03",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform.",
+   "gap": 0.32
+  },
+  {
+   "id": "d04",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding.",
+   "gap": 0.32
+  },
+  {
+   "id": "d05",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "An hour ago, I was basically the king of this mall. Let me back up.",
+   "gap": 0.8200000000000001
+  },
+  {
+   "id": "d06",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is.",
+   "gap": 0.32
+  },
+  {
+   "id": "d07",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "I work nights for one reason. At three-fifteen every afternoon, I'm standing at the bus stop when my daughter Lily gets off.",
+   "gap": 0.32
+  },
+  {
+   "id": "d08",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "She's seven, and she thinks I'm the king of the mall, because I carry forty-two keys, one for every store. Tonight, I'd only need one of them.",
+   "gap": 0.32
+  },
+  {
+   "id": "d09",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "The job's pretty simple. I walk the loop, I rattle the gates, and around one a.m., Marcus calls me from down in the parking garage.",
+   "gap": 0.32
+  },
+  {
+   "id": "d10",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard.",
+   "gap": 0.32
+  },
+  {
+   "id": "d11",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Tonight he calls at one-forty, and there's no joke. He's whispering.",
+   "gap": 0.32
+  },
+  {
+   "id": "r1",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[low, tense] Danny. There's a guy on the ramp. He's walking... wrong.",
+   "radio": "marcus1",
+   "gap": 0.4
+  }
+ ]
+}
