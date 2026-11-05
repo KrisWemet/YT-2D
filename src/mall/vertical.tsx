@@ -86,7 +86,12 @@ const groupWords = (words: CWord[]): Group[] => {
   flush();
   return out;
 };
-const show = (w: string) => w.replace(/["“”]/g, '').replace(/[.,;:]+$/g, '').toUpperCase();
+// strip quotes and trailing punctuation, but keep abbreviations like "a.m." whole
+const show = (w: string) => {
+  const x = w.replace(/["“”]/g, '');
+  if (/^[ap]\.m\.?[,;:]?$/i.test(x)) return x.replace(/[,;:]$/, '').replace(/\.?$/, '.').toUpperCase();
+  return x.replace(/[.,;:]+$/g, '').toUpperCase();
+};
 
 export const Captions: React.FC<{words: CWord[]; t: number; y?: number; until?: number}> = ({words, t, y = 1290, until = 1e9}) => {
   const groups = React.useMemo(() => groupWords(words), [words]);
