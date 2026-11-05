@@ -19,7 +19,8 @@ recorded together as one continuous take, so the voice can't drift from line to 
 is split at the pauses between lines using word timings, and each line gets a fixed gain so it
 sits "db" above or below the plain lines (db 0), which land at the chunk's "lufs" (default -18).
 Nothing dynamic touches the performance. Optional per chunk: "pitch" (semitones, e.g. -1.5),
-"tempo", "max_pause" (longer pauses are shortened to this), "temperature". Optional in the plan:
+"tempo", "max_pause" (longer pauses are shortened to this), "temperature", "rejoin" (cut the take
+into its lines and join them with each line's "gap", default 0.35 s). Optional in the plan:
 "takes_dir", so two versions of a voice-over can share one set of takes.
 """
 import concurrent.futures as cf
@@ -290,10 +291,45 @@ def take_lines(c):
     t0 = max(0, idx[0] - 1200)
     a = a[t0: idx[-1] + 3600]
     spans = [(max(0.0, s - t0 / SR), e - t0 / SR) for s, e in spans]
+    if c.get("rejoin"):
+        # cut the take into its lines at the pauses, trim each to its own sound, and join them with
+        # each line's "gap" (default 0.35 s), so the pacing matches a version built line by line
+        cuts = [0.0] + [(spans[i][1] + spans[i + 1][0]) / 2 for i in range(len(spans) - 1)] + [len(a) / SR]
+        parts, new_spans, t = [], [], 0.0
+        for i in range(len(spans)):
+            # a window around the line's words (the transcriber's last word can run long, so the window
+            # stops 0.3 s after it), then trimmed to its clear speech (within 22 dB of the line's peak) plus a
+            # soft onset of up to 0.15 s and a 0.12 s tail, so breaths before and after are left out
+            w0 = max(cuts[i], spans[i][0] - 0.2)
+            w1 = min(cuts[i + 1], spans[i][1] + 0.3)
+            piece = a[int(w0 * SR): int(w1 * SR)]
+            hop = SR // 100
+            n = len(piece) // hop
+            db = 10 * np.log10((piece[: n * hop].reshape(n, hop) ** 2).mean(1) + 1e-12)
+            core = np.where(db > db.max() - 22)[0]        # clear speech; breaths sit lower than this
+            if len(core):
+                k = core[0]                               # keep a soft onset just before it, at most 0.15 s
+                while k > 0 and core[0] - k < 15 and db[k - 1] > db.max() - 32:
+                    k -= 1
+                s0 = max(0, k * hop - int(0.03 * SR))
+                s1 = min(len(piece), (core[-1] + 1) * hop + int(0.12 * SR))
+            else:
+                s0, s1 = 0, len(piece)
+            piece = piece[s0:s1]
+            if i:
+                gap = c["lines"][i - 1].get("gap", 0.35)
+                parts.append(np.zeros(int(gap * SR), np.float32))
+                t += gap
+            new_spans.append((t, t + len(piece) / SR))
+            parts.append(piece)
+            t += len(piece) / SR
+        a, spans = np.concatenate(parts), new_spans
     # each line's gain changes halfway through the pause before it, with a 40 ms ramp
     cuts = [0.0] + [(spans[i][1] + spans[i + 1][0]) / 2 for i in range(len(spans) - 1)] + [len(a) / SR]
     tgt = [line.get("db", 0.0) for line in c["lines"]]
-    lv = [active_db(a[int(s * SR): int(e * SR)]) for s, e in spans]
+    # each line's loudness (gated, so breaths and pauses don't count; short lines repeated to 3 s+)
+    lv = [measure_lufs(np.tile(x, int(np.ceil(3 * SR / max(len(x), 1))))) for x in
+          (a[int(s * SR): int(e * SR)] for s, e in spans)]
     ref = float(np.median([v for v, t in zip(lv, tgt) if t == 0] or lv))
     gain = [t - (v - ref) for v, t in zip(lv, tgt)]
     db = np.zeros(len(a), np.float64)
@@ -313,11 +349,17 @@ def take_lines(c):
 
 
 def take48(path, lufs, tempo=1.0, max_pause=0.4):
-    """resample to 48 kHz mono, even out loudness, speed up a touch, trim and squeeze silences"""
-    af = f"loudnorm=I={lufs}:TP=-2:LRA=7" + (f",atempo={tempo}" if tempo != 1.0 else "")
+    """resample to 48 kHz mono, even out loudness, speed up a touch, trim and squeeze silences.
+    With "level": "fixed" in the plan, the take gets one plain gain to reach its LUFS instead of
+    loudnorm, which rides the gain inside a take and can make lines sound processed differently."""
+    fixed = plan.get("level") == "fixed"
+    af = ",".join(([] if fixed else [f"loudnorm=I={lufs}:TP=-2:LRA=7"]) + ([f"atempo={tempo}"] if tempo != 1.0 else [])) or "anull"
     with tempfile.TemporaryDirectory() as d:
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-ac", "1", "-ar", str(SR), "-af", af, f"{d}/o.wav"], check=True)
         a, _ = sf.read(f"{d}/o.wav", dtype="float32")
+    if fixed:
+        # a short take is repeated to 3 s+ so the loudness meter has enough to gate on (same content, same reading)
+        a *= 10 ** ((lufs - measure_lufs(np.tile(a, int(np.ceil(3 * SR / max(len(a), 1)))))) / 20)
     idx = np.where(np.abs(a) > 0.02)[0]
     a = a[max(0, idx[0] - 1200): idx[-1] + 3600] if len(idx) else a
     return squeeze(a, max_pause)

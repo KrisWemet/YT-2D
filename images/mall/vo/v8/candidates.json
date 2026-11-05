@@ -1,0 +1,421 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with little inflection, like a real person, not an actor.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man quietly tells what happened during the first hour of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+ "temperature": 1,
+ "chunks": [
+  {
+   "id": "w1-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform."
+  },
+  {
+   "id": "w1-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform."
+  },
+  {
+   "id": "w1-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform."
+  },
+  {
+   "id": "w1-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform."
+  },
+  {
+   "id": "w2-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding."
+  },
+  {
+   "id": "w2-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding."
+  },
+  {
+   "id": "w2-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding."
+  },
+  {
+   "id": "w2-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding."
+  },
+  {
+   "id": "q1-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "An hour ago, I was basically the king of this mall."
+  },
+  {
+   "id": "q1-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "An hour ago, I was basically the king of this mall."
+  },
+  {
+   "id": "q1-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "An hour ago, I was basically the king of this mall."
+  },
+  {
+   "id": "q1-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "An hour ago, I was basically the king of this mall."
+  },
+  {
+   "id": "n1-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "n1-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "n1-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "n1-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "n2-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is."
+  },
+  {
+   "id": "n2-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is."
+  },
+  {
+   "id": "n2-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is."
+  },
+  {
+   "id": "n3-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I work nights for one reason. At three-fifteen every afternoon, I'm standing at the bus stop when my daughter Lily gets off."
+  },
+  {
+   "id": "n3-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I work nights for one reason. At three-fifteen every afternoon, I'm standing at the bus stop when my daughter Lily gets off."
+  },
+  {
+   "id": "n3-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I work nights for one reason. At three-fifteen every afternoon, I'm standing at the bus stop when my daughter Lily gets off."
+  },
+  {
+   "id": "n4-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "She's seven, and she thinks I'm the king of the mall, because I carry forty-two keys, one for every store."
+  },
+  {
+   "id": "n4-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "She's seven, and she thinks I'm the king of the mall, because I carry forty-two keys, one for every store."
+  },
+  {
+   "id": "n4-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "She's seven, and she thinks I'm the king of the mall, because I carry forty-two keys, one for every store."
+  },
+  {
+   "id": "q2-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight, I'd only need one of them."
+  },
+  {
+   "id": "q2-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight, I'd only need one of them."
+  },
+  {
+   "id": "q2-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight, I'd only need one of them."
+  },
+  {
+   "id": "n5-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The job's pretty simple. I walk the loop, I rattle the gates, and around one a.m., Marcus calls me from down in the parking garage."
+  },
+  {
+   "id": "n5-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The job's pretty simple. I walk the loop, I rattle the gates, and around one a.m., Marcus calls me from down in the parking garage."
+  },
+  {
+   "id": "n5-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The job's pretty simple. I walk the loop, I rattle the gates, and around one a.m., Marcus calls me from down in the parking garage."
+  },
+  {
+   "id": "n6-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard."
+  },
+  {
+   "id": "n6-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard."
+  },
+  {
+   "id": "n6-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard."
+  },
+  {
+   "id": "n6-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard."
+  },
+  {
+   "id": "q3-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight he calls at one-forty, and there's no joke. He's whispering."
+  },
+  {
+   "id": "q3-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight he calls at one-forty, and there's no joke. He's whispering."
+  },
+  {
+   "id": "q3-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight he calls at one-forty, and there's no joke. He's whispering."
+  },
+  {
+   "id": "q3-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight he calls at one-forty, and there's no joke. He's whispering."
+  },
+  {
+   "id": "n1-5",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "n1-6",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "n1-7",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "n1-8",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "n1-9",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "n1-10",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Let me back up."
+  },
+  {
+   "id": "q1n1-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "An hour ago, I was basically the king of this mall. Let me back up.",
+   "lines": [
+    {
+     "text": "An hour ago, I was basically the king of this mall.",
+     "db": -3.5
+    },
+    {
+     "text": "Let me back up."
+    }
+   ]
+  },
+  {
+   "id": "q1n1-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "An hour ago, I was basically the king of this mall. Let me back up.",
+   "lines": [
+    {
+     "text": "An hour ago, I was basically the king of this mall.",
+     "db": -3.5
+    },
+    {
+     "text": "Let me back up."
+    }
+   ]
+  },
+  {
+   "id": "q1n1-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "An hour ago, I was basically the king of this mall. Let me back up.",
+   "lines": [
+    {
+     "text": "An hour ago, I was basically the king of this mall.",
+     "db": -3.5
+    },
+    {
+     "text": "Let me back up."
+    }
+   ]
+  },
+  {
+   "id": "q1n1-4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "An hour ago, I was basically the king of this mall. Let me back up.",
+   "lines": [
+    {
+     "text": "An hour ago, I was basically the king of this mall.",
+     "db": -3.5
+    },
+    {
+     "text": "Let me back up."
+    }
+   ]
+  },
+  {
+   "id": "n6-5",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard."
+  },
+  {
+   "id": "n6-6",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard."
+  },
+  {
+   "id": "n6-7",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard."
+  },
+  {
+   "id": "n6-8",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard."
+  }
+ ]
+}
