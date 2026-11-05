@@ -9,7 +9,8 @@ import {TYPE_AT, TYPE_STEP} from './Title';
 
 const MP3 = new Set(['breath', 'buzz_canopy', 'buzz_lamp', 'chime', 'crowd', 'drone', 'heartbeat', 'hit', 'night_bed', 'night_muffled', 'pad', 'room', 'title_hit']);
 const src = (f: string) => staticFile(`day1/sfx/${f}.${MP3.has(f) ? 'mp3' : 'wav'}`);
-const db = (d: number) => (d <= -90 ? 0 : 10 ** (d / 20));
+const MASTER = 3; // dB on everything (integrated loudness ~ -15 LUFS)
+const db = (d: number) => (d <= -90 ? 0 : 10 ** ((d + MASTER) / 20));
 const CUT_F = Math.round(B.cut * FPS);
 
 /** level in dB per shot, with short crossfades at the cuts (bed volumes) */
@@ -28,22 +29,22 @@ const perShot = (levels: Partial<Record<string, number>>, fade = 0.06) => (t: nu
 
 type Bed = {f: string; from?: number; vol: (t: number) => number};
 const BEDS: Bed[] = [
-  {f: 'night_bed', vol: perShot({establish: -24, can: -27, ladder: -30, knuckles: -31, boots: -31, face: -34})},
-  {f: 'night_muffled', vol: perShot({window: -25})},
-  {f: 'buzz_canopy', vol: perShot({establish: -30, can: -27, window: -40})},
-  {f: 'buzz_lamp', vol: perShot({ladder: -33, knuckles: -29, boots: -35, face: -34})},
-  {f: 'chime', vol: perShot({establish: -31, can: -34, window: -25})},
-  {f: 'drone', vol: (t) => lerp(-34, -15, Math.pow(clamp(t / B.cut), 1.5))},
-  {f: 'crowd', from: SHOT.ladder[0], vol: perShot({ladder: -31, knuckles: -27, boots: -19, face: -21})},
+  {f: 'night_bed', vol: perShot({establish: -19, can: -23, ladder: -27, knuckles: -28, boots: -29, face: -32})},
+  {f: 'night_muffled', vol: perShot({window: -22})},
+  {f: 'buzz_canopy', vol: perShot({establish: -25, can: -23, window: -36})},
+  {f: 'buzz_lamp', vol: perShot({ladder: -29, knuckles: -26, boots: -31, face: -31})},
+  {f: 'chime', vol: perShot({establish: -26, can: -30, window: -21})},
+  {f: 'drone', vol: (t) => lerp(-28, -15, Math.pow(clamp(t / B.cut), 1.5))},
+  {f: 'crowd', from: SHOT.ladder[0], vol: perShot({ladder: -28, knuckles: -26, boots: -19, face: -21})},
   {f: 'heartbeat', from: SHOT.ladder[0], vol: (t) => lerp(-24, -12, clamp((t - SHOT.ladder[0]) / (B.cut - SHOT.ladder[0])))},
-  {f: 'breath', from: SHOT.ladder[0], vol: perShot({ladder: -30, knuckles: -26, boots: -30, face: -21})},
+  {f: 'breath', from: SHOT.ladder[0], vol: perShot({ladder: -27, knuckles: -25, boots: -28, face: -21})},
 ];
 
 type Cue = {f: string; at: number; db: number};
 const taps = [10.35, 10.62, 11.4, 12.5, 12.95, 13.9, 14.25, 15.1, 16.0];
 const CUES: Cue[] = [
   // wide: the first shape at the edge of the light
-  {f: 'groan2', at: 3.1, db: -31},
+  {f: 'groan2', at: 3.1, db: -26},
   // fast cuts
   {f: 'riser_short', at: SHOT.can[0] - 0.58, db: -25},
   {f: 'hit', at: SHOT.can[0], db: -13},
