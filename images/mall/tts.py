@@ -6,6 +6,8 @@ import json, pathlib, sys
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "pigeon" / "scripts"))
 import kie  # noqa: E402
+import functools
+print = functools.partial(print, flush=True)
 
 outp, tfile, voice = sys.argv[1:4]
 m = sys.argv[4] if len(sys.argv) > 4 else "v2"

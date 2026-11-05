@@ -1,0 +1,51 @@
+{
+ "taskId": "2d121966bea8b441346ab8430accced7",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: the ambience of an empty shopping mall at night: a low steady air conditioning hum, faint electrical buzz of lights, very quiet, distant echo, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/8ae273a5-8215-4bcd-83c6-1cc71dc0810f.mp3\",\"createTime\":1793838402073,\"duration\":13.6,\"id\":\"8ae273a5-8215-4bcd-83c6-1cc71dc0810f\",\"image_url\":\"https://cdn2.suno.ai/image_8ae273a5-8215-4bcd-83c6-1cc71dc0810f.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/8ae273a5-8215-4bcd-83c6-1cc71dc0810f.mp3\",\"tags\":\"Sound effect only, no music, no voice: the ambience of an empty shopping mall at night: a low steady air conditioning hum, faint electrical buzz of lights, very quiet, distant echo, seamless loop\",\"title\":\"Sound effect only, no music, no voice: the ambience of an empty shopping mall...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/44e4c6dd-4390-46ee-bd75-d217bc0f14f4.mp3\",\"createTime\":1793838402073,\"duration\":13.8,\"id\":\"44e4c6dd-4390-46ee-bd75-d217bc0f14f4\",\"image_url\":\"https://cdn2.suno.ai/image_44e4c6dd-4390-46ee-bd75-d217bc0f14f4.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/44e4c6dd-4390-46ee-bd75-d217bc0f14f4.mp3\",\"tags\":\"Sound effect only, no music, no voice: the ambience of an empty shopping mall at night: a low steady air conditioning hum, faint electrical buzz of lights, very quiet, distant echo, seamless loop\",\"title\":\"Sound effect only, no music, no voice: the ambience of an empty shopping mall...\"}],\"msg\":\"success\",\"task_id\":\"2d121966bea8b441346ab8430accced7\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 19,
+ "completeTime": 1793838402073,
+ "createTime": 1793838383236,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: the ambience of an empty shopping mall at night: a low steady air conditioning hum, faint electrical buzz of lights, very quiet, distant echo, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 13.6,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/8ae273a5-8215-4bcd-83c6-1cc71dc0810f.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402073,
+    "image_url": "https://cdn2.suno.ai/image_8ae273a5-8215-4bcd-83c6-1cc71dc0810f.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/8ae273a5-8215-4bcd-83c6-1cc71dc0810f.mp3",
+    "id": "8ae273a5-8215-4bcd-83c6-1cc71dc0810f",
+    "title": "Sound effect only, no music, no voice: the ambience of an empty shopping mall...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: the ambience of an empty shopping mall at night: a low steady air conditioning hum, faint electrical buzz of lights, very quiet, distant echo, seamless loop"
+   },
+   {
+    "duration": 13.8,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/44e4c6dd-4390-46ee-bd75-d217bc0f14f4.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402073,
+    "image_url": "https://cdn2.suno.ai/image_44e4c6dd-4390-46ee-bd75-d217bc0f14f4.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/44e4c6dd-4390-46ee-bd75-d217bc0f14f4.mp3",
+    "id": "44e4c6dd-4390-46ee-bd75-d217bc0f14f4",
+    "title": "Sound effect only, no music, no voice: the ambience of an empty shopping mall...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: the ambience of an empty shopping mall at night: a low steady air conditioning hum, faint electrical buzz of lights, very quiet, distant echo, seamless loop"
+   }
+  ],
+  "task_id": "2d121966bea8b441346ab8430accced7"
+ },
+ "_elapsed": 20.9
+}

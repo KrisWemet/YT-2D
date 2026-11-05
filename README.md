@@ -65,6 +65,25 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 **Sources:** the figures come from [NOAA's hurricane research FAQ](https://www.aoml.noaa.gov/hrd/tcfaq/C5c.html). It was offline when we checked, so they were confirmed through two reports that quote it: [National Geographic](https://www.nationalgeographic.com/science/article/hurricanes-weather-history-nuclear-weapons) and [CNN via WTOP](https://wtop.com/weather-news/2019/08/why-not-bomb-a-hurricane-noaa-gets-asked-about-it-all-the-time/).
 
+## Long-form pilot: The Night Guard Had Every Key
+
+![Four frames from the mall pilot: the night guard walking the empty mall with his flashlight; a security camera showing a crowd coming up the garage ramp; the sporting goods store behind its steel gate with "ONE WAY IN"; zombie faces pressed against the gate](docs/mall-storyboard.jpg)
+
+This is a test of a second format: a long stick-figure survival story told in still pictures, like the "30 days locked inside…" videos. A new picture lands every 2–3 seconds, cut on the exact word, under a first-person voice-over. The pilot is the 2½-minute cold open of a longer episode, in 16:9 at 1080p.
+
+**The story:** a night security guard walks the same loop around Maplecrest Mall (a made-up mall) every night with a flashlight, a radio and a ring of 42 keys, one for every store. At 1:40 a.m. his partner Marcus radios about a man walking strangely up the garage ramp, and then goes quiet. The cameras show the crowd heading for the food court's glass doors. The guard has a few minutes to pick one store to lock himself in. He weighs the pharmacy, the food court and the department store, and picks the sporting goods store because it has only one way in. Then Marcus presses his face against the gate, still wearing his radio, and a stranger's voice comes over both radios.
+
+**How it differs from the Shorts:**
+- **Backgrounds:** 9 night scenes from Seedream 5 Flash on Kie.ai (2K, 3.24 credits each, all used on the first try). The prompts are in `images/mall/prompts.json`.
+- **Characters drawn in code:** there are no AI pictures of characters. The stick figures, zombies, props, the mall map, labels, the security-camera look and the stores' steel gates are all drawn in code (`src/mall/`). So the guard looks identical in every shot, and a new shot costs nothing.
+- **Shots cued by words:** `src/mall/shots.tsx` lists 70 shots, and each starts on a phrase from the narration ("cut just before *Glass doors*"). `timing.ts` turns the phrases into times using the word timings, so a new voice-over re-times every cut by itself.
+- **Voice:** ElevenLabs on Kie.ai timed out on every request the night it was made. The pilot therefore uses [Kokoro](https://github.com/hexgrad/kokoro), an open-source voice model that runs locally for free, with three voices: the narrator, Marcus and the woman on the radio. The radio lines go through a walkie-talkie filter.
+- **Sound:** 13 effects and ambience loops from Suno sounds on Kie.ai (2.5 credits per request, two takes each), mixed in `src/mall/Sfx.tsx`.
+
+**Cost:** 64 Kie.ai credits, about $0.32. That's 32 credits for backgrounds (including one model comparison) and 32 for sounds; the voice was free. A 40-minute episode would use the same pipeline. It needs about 6,000 words, roughly 1,000 shots and maybe 40 more backgrounds, so pictures and sound would cost a dollar or two, plus about 400 credits ($2) if it's voiced with ElevenLabs. Most of the work is writing the script and the shot list.
+
+The upload details are in `publish/mall-pilot-upload.md` and the thumbnail is `thumbnails/mall-pilot-thumbnail.jpg`.
+
 ## The house style
 
 - **Format:** vertical 9:16, 20–25 seconds. The voice sets the length.
@@ -104,10 +123,12 @@ src/
   hurricane/      hurricane Short: one continuous 2.5D shot, sound mix, beat times
   thumbs/         thumbnails, rendered as Remotion stills
   channel/        channel banner and picture, rendered as Remotion stills
-public/           everything the videos load: cut-out sprites, voice-overs, sound effects, thumbnail font
+  mall/           long-form mall pilot: stick-figure rig, overlays, mall map, the 70-shot list, word cues, sound mix, thumbnail
+public/           everything the videos load: cut-out sprites, backgrounds, voice-overs, sound effects, thumbnail font
 images/
   pigeon/         prompts, beat sheet, word timings, raw and keyed pictures, QA sheets, pipeline scripts
   hurricane/      the same for the hurricane Short
+  mall/           the pilot's script, background prompts, Kie.ai helpers (backgrounds, voice, sounds), local voice and word-timing scripts
 scripts/          QA tools (stills, contact sheets, pop scan, verify) and the README storyboard maker
 thumbnails/       final thumbnails, ready to upload (1080×1920 JPG)
 publish/          what goes on YouTube: upload details, channel banner and picture, channel text
@@ -132,6 +153,22 @@ npx remotion still src/index.ts PigeonThumb out/pigeon-thumbnail.png
 npx remotion still src/index.ts HurricaneThumb out/hurricane-thumbnail.png
 npx remotion still src/index.ts ChannelBanner publish/channel-banner.png
 npx remotion still src/index.ts ChannelPicture publish/channel-picture.png
+```
+
+Render the mall pilot (1080p, 30 fps) and its thumbnail:
+
+```bash
+npx remotion render src/index.ts MallPilot out/mall-pilot-1080p.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
+npx remotion still src/index.ts MallThumb out/mall-thumb.png
+```
+
+To re-voice the pilot, build a new voice track and word timings, then render again. Every cut follows the new timings by itself:
+
+```bash
+cd images/mall
+python3 voice_local.py kokoro-v1.0.onnx voices-v1.0.bin vo/local          # Kokoro model files from github.com/thewh1teagle/kokoro-onnx releases
+python3 align.py vo/local/vo.wav vo/local/segments.json ../../src/mall/words.json
+ffmpeg -i vo/local/vo.wav -af loudnorm=I=-16:TP=-1.5 -b:a 192k ../../public/mall/vo/vo.mp3
 ```
 
 Check a render:
@@ -165,6 +202,9 @@ These scripts live in `images/pigeon/scripts/`, with the hurricane's own `prep.p
 | Animation and rendering | [Remotion](https://www.remotion.dev/) 4.0.539 with React and TypeScript |
 | Pictures | GPT Image 2.5 Flare through [Kie.ai](https://kie.ai/), 2K, on a flat key-colour background |
 | Voice | ElevenLabs premade voice "Chris", generated through [vidIQ](https://vidiq.com/) |
+| Mall pilot backgrounds | Seedream 5 Flash through Kie.ai, 2K, 16:9 |
+| Mall pilot voice | [Kokoro](https://github.com/hexgrad/kokoro) via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx), open source, runs locally (ElevenLabs on Kie.ai was down) |
+| Mall pilot sound effects | Suno sounds (V6) through Kie.ai |
 | Word timings | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) |
 | Sound effects | Mostly synthesized with numpy. The pigeon's street and treadmill ambience was generated with Suno through Kie.ai. |
 | Titles | vidIQ title ideas and scores |

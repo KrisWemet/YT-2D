@@ -7,6 +7,10 @@ import {HurricaneShort} from './hurricane/Short';
 import {HurricaneThumb, PigeonThumb} from './thumbs/Thumbs';
 import {DUR as HDUR} from './hurricane/timing';
 import {ChannelBanner, ChannelPicture} from './channel/Channel';
+import {MallTest} from './mall/Test';
+import {MallPilot} from './mall/Pilot';
+import {MallThumb} from './mall/Thumb';
+import {DUR as MDUR, FPS as MFPS} from './mall/timing';
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -17,5 +21,8 @@ export const RemotionRoot: React.FC = () => (
     <Still id="ChannelBanner" component={ChannelBanner} width={2560} height={1440} />
     <Still id="ChannelPicture" component={ChannelPicture} width={800} height={800} />
     <Composition id="RigTest" component={RigTest} durationInFrames={1} fps={60} width={1080} height={1920} />
+    <Still id="MallTest" component={MallTest} width={1920} height={1080} />
+    <Still id="MallThumb" component={MallThumb} width={1920} height={1080} />
+    <Composition id="MallPilot" component={MallPilot} durationInFrames={Math.round(MDUR * MFPS)} fps={MFPS} width={1920} height={1080} />
   </>
 );

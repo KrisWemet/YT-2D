@@ -1,0 +1,51 @@
+{
+ "taskId": "5be43e4cf5f4f3e3eb290bba07e246b6",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a dark, tense, low cinematic drone, slow pulsing sub bass and a faint eerie high tone, suspenseful horror atmosphere, no melody, no drums, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/276b599e-81cc-4258-ac9d-b728208f9960.mp3\",\"createTime\":1793838401835,\"duration\":14.0,\"id\":\"276b599e-81cc-4258-ac9d-b728208f9960\",\"image_url\":\"https://cdn2.suno.ai/image_276b599e-81cc-4258-ac9d-b728208f9960.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/276b599e-81cc-4258-ac9d-b728208f9960.mp3\",\"tags\":\"Sound effect only, no music, no voice: a dark, tense, low cinematic drone, slow pulsing sub bass and a faint eerie high tone, suspenseful horror atmosphere, no melody, no drums, seamless loop\",\"title\":\"Sound effect only, no music, no voice: a dark, tense, low cinematic drone, sl...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/349c9b36-3ac2-4dc7-b3c6-e2ee4ca162d0.mp3\",\"createTime\":1793838401835,\"duration\":12.0,\"id\":\"349c9b36-3ac2-4dc7-b3c6-e2ee4ca162d0\",\"image_url\":\"https://cdn2.suno.ai/image_349c9b36-3ac2-4dc7-b3c6-e2ee4ca162d0.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/349c9b36-3ac2-4dc7-b3c6-e2ee4ca162d0.mp3\",\"tags\":\"Sound effect only, no music, no voice: a dark, tense, low cinematic drone, slow pulsing sub bass and a faint eerie high tone, suspenseful horror atmosphere, no melody, no drums, seamless loop\",\"title\":\"Sound effect only, no music, no voice: a dark, tense, low cinematic drone, sl...\"}],\"msg\":\"success\",\"task_id\":\"5be43e4cf5f4f3e3eb290bba07e246b6\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 18,
+ "completeTime": 1793838401835,
+ "createTime": 1793838383495,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a dark, tense, low cinematic drone, slow pulsing sub bass and a faint eerie high tone, suspenseful horror atmosphere, no melody, no drums, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 14.0,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/276b599e-81cc-4258-ac9d-b728208f9960.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838401835,
+    "image_url": "https://cdn2.suno.ai/image_276b599e-81cc-4258-ac9d-b728208f9960.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/276b599e-81cc-4258-ac9d-b728208f9960.mp3",
+    "id": "276b599e-81cc-4258-ac9d-b728208f9960",
+    "title": "Sound effect only, no music, no voice: a dark, tense, low cinematic drone, sl...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a dark, tense, low cinematic drone, slow pulsing sub bass and a faint eerie high tone, suspenseful horror atmosphere, no melody, no drums, seamless loop"
+   },
+   {
+    "duration": 12.0,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/349c9b36-3ac2-4dc7-b3c6-e2ee4ca162d0.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838401835,
+    "image_url": "https://cdn2.suno.ai/image_349c9b36-3ac2-4dc7-b3c6-e2ee4ca162d0.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/349c9b36-3ac2-4dc7-b3c6-e2ee4ca162d0.mp3",
+    "id": "349c9b36-3ac2-4dc7-b3c6-e2ee4ca162d0",
+    "title": "Sound effect only, no music, no voice: a dark, tense, low cinematic drone, sl...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a dark, tense, low cinematic drone, slow pulsing sub bass and a faint eerie high tone, suspenseful horror atmosphere, no melody, no drums, seamless loop"
+   }
+  ],
+  "task_id": "5be43e4cf5f4f3e3eb290bba07e246b6"
+ },
+ "_elapsed": 21.5
+}

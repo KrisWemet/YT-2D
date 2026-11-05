@@ -1,7 +1,12 @@
 # Mall pilot: "The Night Guard Had Every Key"
 
-Format: 16:9 long-form, a still picture every ~3 seconds, first-person voice-over.
+Format: 16:9 long-form, a still picture every 2–3 seconds, first-person voice-over.
 The pilot is the cold open of a longer episode: the first hour of the outbreak.
+
+Production notes:
+- The voice track (`vo/narrator.txt` plus the three radio lines) runs 2:36. It was made with Kokoro (`voice_local.py`): narrator `am_michael`, Marcus `am_puck`, the woman `af_heart`. ElevenLabs on Kie.ai timed out on every request that night (all refunded).
+- Word timings come from faster-whisper (`align.py`), written to `src/mall/words.json`.
+- 70 shots are listed in `src/mall/shots.tsx`, each cued to a phrase below.
 
 Lines marked **[RADIO: Marcus]** and **[RADIO: Woman]** are read by different voices and played through a radio filter.
 Everything else is the narrator, a night security guard at a made-up mall.
@@ -56,7 +61,7 @@ And the sporting goods store has tents, water filters, and aluminum bats. And on
 
 ## Chapter 5: The Gate
 
-Behind me, the food court doors explode.
+Behind me, I hear the food court doors shatter.
 
 I slide under the gate, yank it down, and lock it. Then I sit in the dark between the tents and the treadmills, and I try not to breathe.
 
