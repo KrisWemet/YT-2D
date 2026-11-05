@@ -1,34 +1,37 @@
-# Upload details: mall pilot
+# Upload details: mall pilot (v2)
 
-**File:** `out/mall-pilot.mp4` (render it with the commands in the README: 1920×1080, 30 fps, 2:38, −15 LUFS) · **Thumbnail:** `thumbnails/mall-pilot-thumbnail.jpg`
+**File:** `out/mall-pilot-v2.mp4` (render it with the commands in the README: 1920×1080, 30 fps, about 4:27, −15 LUFS) · **Thumbnail:** `thumbnails/mall-pilot-thumbnail.jpg`
 
-The pilot uses the free local Kokoro voice, because ElevenLabs on Kie.ai was down when it was made. If it's re-voiced, the cuts follow the new voice automatically, but the chapter times below have to be read again from the new render.
+The voices are Gemini voices on Kie.ai: Algenib for Danny, Puck for Marcus and Achernar for the woman on the radio. If it's re-voiced, the cuts follow the new voice automatically, but the chapter times below have to be read again from the new render.
 
-Upload as **Private** or **Unlisted** first. It's a pilot: a test of the format and the look before committing to a full 40-minute episode.
+Upload as **Private** or **Unlisted** first. It's a pilot: a test of the format, the look and the voice before committing to a full 40-minute episode.
 
 ---
 
 **Title**
 ```
-Zombie Outbreak: Locked in a Mall With Every Key
+The Night Guard Had Every Key | Zombie Outbreak in a Mall
 ```
 
 Other options:
-- The Night Guard Had Every Key (Zombie Outbreak in a Mall)
-- Zombie Outbreak: I Had Minutes to Pick One Store
+- Zombie Outbreak: I Had 42 Keys and 4 Minutes to Pick One Store
+- My Best Friend Was at the Gate (Zombie Outbreak in a Mall)
 
 **Description**
 ```
-It's 1:40 a.m. at Maplecrest Mall. The night guard has a flashlight, a radio and a ring of 42 keys, one for every store. Then the garage camera shows his partner on the ground and a crowd coming up the ramp, and he has minutes to pick one store and lock himself in.
+"The dead man pressing his face against my gate used to be my best friend."
 
-Glass walls. Glass doors. A freezer full of food right where they're coming in. Which store would you have picked?
+Danny Ruiz is the night guard at Maplecrest Mall. He works nights so he can be home when his daughter gets off the school bus, and he has 42 keys, one for every store. At 1:40 a.m. his friend Marcus radios from the parking garage about a man walking wrong up the ramp. Then the radio goes silent.
+
+The food court is made of glass. Danny has four minutes to pick one store and lock himself in. Which one would you have picked?
 
 Chapters
-0:00 The Loop
-0:30 The Ramp
-0:57 Glass
-1:23 Shopping
-1:52 The Gate
+0:00 Cold open
+0:25 The King of the Mall
+1:09 The Ramp
+2:01 Glass
+2:37 Four Minutes
+3:13 The Gate
 
 #zombieoutbreak #survivalstory #stickman
 ```

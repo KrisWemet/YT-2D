@@ -3,7 +3,7 @@ import {AbsoluteFill} from 'remotion';
 import {useFont} from '../thumbs/Thumbs';
 import {Screen, Txt, W} from './Overlays';
 import {Beyond, Crowd, Guard, HoldGate, Scene} from './shots';
-import {POSES} from './Stick';
+import {LOOKS, POSES} from './Stick';
 
 // YouTube thumbnail: the guard with his keys, faces at the gate behind him.
 export const MallThumb: React.FC = () => {
@@ -33,6 +33,7 @@ export const MallThumb: React.FC = () => {
           x={1000}
           y={1185}
           h={575}
+          look={LOOKS.dannyCrown}
           face={1}
           pose={{...POSES.holdUp, lean: -6, head: -4, armN: [125, 165]}}
           propN="keys"

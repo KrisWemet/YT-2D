@@ -69,18 +69,23 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 ![Four frames from the mall pilot: the night guard walking the empty mall with his flashlight; a security camera showing a crowd coming up the garage ramp; the sporting goods store behind its steel gate with "ONE WAY IN"; zombie faces pressed against the gate](docs/mall-storyboard.jpg)
 
-This is a test of a second format: a long stick-figure survival story told in still pictures, like the "30 days locked inside…" videos. A new picture lands every 2–3 seconds, cut on the exact word, under a first-person voice-over. The pilot is the 2½-minute cold open of a longer episode, in 16:9 at 1080p.
+This is a test of a second format: a long stick-figure survival story told in still pictures, like the "30 days locked inside…" videos. A new picture lands every 2–3 seconds, cut on the exact word, under a first-person voice-over. The pilot is the 4½-minute opening of a longer episode, in 16:9 at 1080p.
 
-**The story:** a night security guard walks the same loop around Maplecrest Mall (a made-up mall) every night with a flashlight, a radio and a ring of 42 keys, one for every store. At 1:40 a.m. his partner Marcus radios about a man walking strangely up the garage ramp, and then goes quiet. The cameras show the crowd heading for the food court's glass doors. The guard has a few minutes to pick one store to lock himself in. He weighs the pharmacy, the food court and the department store, and picks the sporting goods store because it has only one way in. Then Marcus presses his face against the gate, still wearing his radio, and a stranger's voice comes over both radios.
+**The story (v2):** "The dead man pressing his face against my gate used to be my best friend." The cold open starts at the worst moment, then rewinds an hour. Danny Ruiz is the night guard at Maplecrest Mall (a made-up mall). He works nights so he's home when his daughter Lily gets off the school bus, and she calls him the king of the mall because he has 42 keys, one for every store. At 1 a.m. his friend Marcus, a 22-year-old nursing student, usually radios with a terrible joke. Tonight Marcus whispers about a man walking wrong up the garage ramp, then goes silent. The glass food court won't hold, and Danny has four minutes to pick one store to lock himself in. He picks the sporting goods store, then Marcus's radio and his own give him away. It ends on "hour 1 of 720" and a woman on the radio who "would turn out to be the most dangerous person in it."
+
+**What changed after the first test** (feedback: more hooks, a better voice, a lead people connect with):
+- **Script:** the cold open, a re-hook every 20–30 seconds, a visible four-minute countdown, and a lead with a life (a daughter, a friend worth losing, a dry sense of humor). The first script is kept as `images/mall/script-v1.md`.
+- **Voice:** directed Gemini voices (`voice_gemini.py`) replace the flat local voice. See below.
+- **New pictures:** a sunny bus-stop background, Lily, Danny at home, a paper crown, Lily's crayon drawing, the series title and end cards, a name tag, Black Friday shoppers against the same lot full of zombies, and a sepia memory insert.
 
 **How it differs from the Shorts:**
-- **Backgrounds:** 9 night scenes from Seedream 5 Flash on Kie.ai (2K, 3.24 credits each, all used on the first try). The prompts are in `images/mall/prompts.json`.
-- **Characters drawn in code:** there are no AI pictures of characters. The stick figures, zombies, props, the mall map, labels, the security-camera look and the stores' steel gates are all drawn in code (`src/mall/`). So the guard looks identical in every shot, and a new shot costs nothing.
-- **Shots cued by words:** `src/mall/shots.tsx` lists 70 shots, and each starts on a phrase from the narration ("cut just before *Glass doors*"). `timing.ts` turns the phrases into times using the word timings, so a new voice-over re-times every cut by itself.
-- **Voice:** ElevenLabs on Kie.ai timed out on every request the night it was made. The pilot therefore uses [Kokoro](https://github.com/hexgrad/kokoro), an open-source voice model that runs locally for free, with three voices: the narrator, Marcus and the woman on the radio. The radio lines go through a walkie-talkie filter.
-- **Sound:** 13 effects and ambience loops from Suno sounds on Kie.ai (2.5 credits per request, two takes each), mixed in `src/mall/Sfx.tsx`.
+- **Backgrounds:** 10 scenes from Seedream 5 Flash on Kie.ai (2K, 3.24 credits each, all used on the first try). The prompts are in `images/mall/prompts.json`.
+- **Characters drawn in code:** there are no AI pictures of characters. The stick figures (with front and back views, a child version, crown, backpack and book), zombies, props, the mall map, labels, cards, the security-camera look and the stores' steel gates are all drawn in code (`src/mall/`). So Danny looks identical in every shot, and a new shot costs nothing.
+- **Shots cued by words:** `src/mall/shots.tsx` lists 86 shots, and each starts on a phrase from the narration ("cut just before *Glass doors*"). `timing.ts` turns the phrases into times using the word timings, so a new voice-over re-times every cut by itself.
+- **Voice:** ElevenLabs on Kie.ai timed out on every request for hours (all refunded), so v2 uses Gemini 3.1 Flash TTS on Kie.ai. Each line is one short take with a voice, a style (Whisper, Deadpan, Vocal Smile…), a pace, a written character profile and inline tags such as `[whispers]`. Gemini sometimes cuts a take short, drops words or adds some, so every take is transcribed and compared with the script, and a take that doesn't match is recorded again; `--check` re-checks saved takes. Long pauses inside takes are shortened and the pace is lifted 6%. The voices are Algenib (Danny), Puck (Marcus) and Achernar (the woman); auditions of the alternatives are in `images/mall/vo/audition/`.
+- **Sound:** 18 effects and ambience loops from Suno sounds on Kie.ai (2.5 credits per request, two takes each) plus a synthesized clock tick, mixed in `src/mall/Sfx.tsx`.
 
-**Cost:** 64 Kie.ai credits, about $0.32. That's 32 credits for backgrounds (including one model comparison) and 32 for sounds; the voice was free. A 40-minute episode would use the same pipeline. It needs about 6,000 words, roughly 1,000 shots and maybe 40 more backgrounds, so pictures and sound would cost a dollar or two, plus about 400 credits ($2) if it's voiced with ElevenLabs. Most of the work is writing the script and the shot list.
+**Cost:** about 130 Kie.ai credits ($0.65) for both versions together. That's 35 credits for backgrounds, 45 for sounds, about 29 for the v2 narration and 22 for voice auditions. A 40-minute episode would use the same pipeline. It needs about 6,000 words, roughly 1,000 shots and maybe 40 more backgrounds, so pictures, sound and Gemini narration would cost a few dollars. Most of the work is writing the script and the shot list.
 
 The upload details are in `publish/mall-pilot-upload.md` and the thumbnail is `thumbnails/mall-pilot-thumbnail.jpg`.
 
@@ -158,19 +163,22 @@ npx remotion still src/index.ts ChannelPicture publish/channel-picture.png
 Render the mall pilot (1080p, 30 fps) and its thumbnail:
 
 ```bash
-npx remotion render src/index.ts MallPilot out/mall-pilot-1080p.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
-bash images/mall/finish.sh out/mall-pilot-1080p.mp4 out/mall-pilot.mp4   # loudness to -15 LUFS, smaller re-encode for upload
+npx remotion render src/index.ts MallPilot out/mall-pilot-v2-1080p.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
+bash images/mall/finish.sh out/mall-pilot-v2-1080p.mp4 out/mall-pilot-v2.mp4   # loudness to -15 LUFS, smaller re-encode for upload
 npx remotion still src/index.ts MallThumb out/mall-thumb.png
 ```
 
-To re-voice the pilot, build a new voice track and word timings, then render again. Every cut follows the new timings by itself:
+To re-voice the pilot, change the voices or lines in `images/mall/vo/v2/plan.json`, delete the takes you want recorded again from `vo/v2/takes/`, rebuild the voice track and word timings, then render again. Every cut follows the new timings by itself:
 
 ```bash
 cd images/mall
-python3 voice_local.py kokoro-v1.0.onnx voices-v1.0.bin vo/local          # Kokoro model files from github.com/thewh1teagle/kokoro-onnx releases
-python3 align.py vo/local/vo.wav vo/local/segments.json ../../src/mall/words.json
-ffmpeg -i vo/local/vo.wav -af loudnorm=I=-16:TP=-1.5 -b:a 192k ../../public/mall/vo/vo.mp3
+python3 voice_gemini.py vo/v2/plan.json vo/v2            # records missing takes, checks each against the script, builds vo.wav
+python3 voice_gemini.py vo/v2/plan.json vo/v2 --check    # re-check every saved take without recording
+python3 align.py vo/v2/vo.wav vo/v2/segments.json ../../src/mall/words.json
+ffmpeg -i vo/v2/vo.wav -af loudnorm=I=-16:TP=-1.5 -b:a 192k ../../public/mall/vo/vo.mp3
 ```
+
+The first test's free local voice is still available: `voice_local.py` (Kokoro, model files from the kokoro-onnx releases on GitHub) writes the same `vo.wav` and `segments.json`.
 
 Check a render:
 
@@ -204,8 +212,8 @@ These scripts live in `images/pigeon/scripts/`, with the hurricane's own `prep.p
 | Pictures | GPT Image 2.5 Flare through [Kie.ai](https://kie.ai/), 2K, on a flat key-colour background |
 | Voice | ElevenLabs premade voice "Chris", generated through [vidIQ](https://vidiq.com/) |
 | Mall pilot backgrounds | Seedream 5 Flash through Kie.ai, 2K, 16:9 |
-| Mall pilot voice | [Kokoro](https://github.com/hexgrad/kokoro) via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx), open source, runs locally (ElevenLabs on Kie.ai was down) |
-| Mall pilot sound effects | Suno sounds (V6) through Kie.ai |
+| Mall pilot voice | Gemini 3.1 Flash TTS through Kie.ai (v2); [Kokoro](https://github.com/hexgrad/kokoro) via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx), open source and local, for the first test |
+| Mall pilot sound effects | Suno sounds (V6) through Kie.ai, plus a synthesized clock tick |
 | Word timings | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) |
 | Sound effects | Mostly synthesized with numpy. The pigeon's street and treadmill ambience was generated with Suno through Kie.ai. |
 | Titles | vidIQ title ideas and scores |
