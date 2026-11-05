@@ -5,3 +5,7 @@ build/
 
 # generation logs
 images/**/*.log
+
+# raw 2K generations (the JPEGs in public/mall/bg are the working copies)
+images/mall/raw/*.png
+__pycache__/
