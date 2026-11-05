@@ -67,7 +67,7 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 ## Long-form pilot: The Night Guard Had Every Key
 
-![Four frames from the mall pilot: the night guard walking the empty mall with his flashlight; a security camera showing a crowd coming up the garage ramp; the sporting goods store behind its steel gate with "ONE WAY IN"; zombie faces pressed against the gate](docs/mall-storyboard.jpg)
+![Four frames from the mall pilot v2: dead Marcus behind the gate with a red ring round his radio and a countdown; Lily's crayon drawing "MY DAD IS THE KING OF THE MALL"; Danny with his flashlight and a shopping list while a countdown runs; zombie faces pressed against the gate](docs/mall-storyboard.jpg)
 
 This is a test of a second format: a long stick-figure survival story told in still pictures, like the "30 days locked inside…" videos. A new picture lands every 2–3 seconds, cut on the exact word, under a first-person voice-over. The pilot is the 4½-minute opening of a longer episode, in 16:9 at 1080p.
 
