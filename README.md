@@ -65,6 +65,24 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 **Sources:** the figures come from [NOAA's hurricane research FAQ](https://www.aoml.noaa.gov/hrd/tcfaq/C5c.html). It was offline when we checked, so they were confirmed through two reports that quote it: [National Geographic](https://www.nationalgeographic.com/science/article/hurricanes-weather-history-nuclear-weapons) and [CNN via WTOP](https://wtop.com/weather-news/2019/08/why-not-bomb-a-hurricane-noaa-gets-asked-about-it-all-the-time/).
 
+## Story: Day 1 — Before We Go (cold open)
+
+![Four frames from the cold open: the gas station at night with the pickup's door hanging open; a handprint smearing down the truck window; hands reaching up for Samantha's boots on the ladder; Samantha looking up into the flashlight](docs/day1-storyboard.jpg)
+
+A 30-second cold open for a story episode, made from a script rather than a science question: 1920×1080 at 30 fps, composition `Day1ColdOpen`. The script and the beat sheet are in [`images/day1/beats.md`](images/day1/beats.md).
+
+1. Night, a gas station off a dark highway with flickering lights. A pickup and trailer sit crooked at the pumps, with the driver's door hanging open.
+2. Fast cuts: a tipped jerry can glugging gas onto the concrete, then a hand slamming against the truck's passenger window and smearing down the glass.
+3. Samantha, in overalls and black work boots, is halfway up the rusty roof ladder, knuckles white and shaking. Hands reach out of the dark for her boots.
+4. Marcus shouts from the roof: "Sam! Don't look down! Look at me! LOOK AT ME!" She looks down. Hard cut to black and silence.
+5. Samantha (V.O.): "Three days before this, my biggest worry was a missed paycheck." Then the title card: **DAY 1**.
+
+Unlike the Shorts, every picture here is drawn in code as SVG: the station, the truck, Samantha, the hands and the title. One schedule in `src/day1/cues.json` drives the light flicker on screen and the buzz in the sound, so each flicker of the lights has its own zap. The voices were generated offline with [Kokoro](https://github.com/thewh1teagle/kokoro-onnx) (`images/day1/vo.py`) and are placeholders until the lines are recorded or made with ElevenLabs. All sound effects are synthesized (`images/day1/sfx.py`).
+
+```bash
+npx remotion render src/index.ts Day1ColdOpen out/day1-cold-open-4K.mp4 --scale=2 --crf=16 --pixel-format=yuv420p
+```
+
 ## The house style
 
 - **Format:** vertical 9:16, 20–25 seconds. The voice sets the length.
@@ -99,15 +117,17 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 ```
 src/
-  Root.tsx        registers the videos, thumbnails and channel art (PigeonShort, HurricaneShort, PigeonThumb, HurricaneThumb, ChannelBanner, ChannelPicture)
+  Root.tsx        registers the videos, thumbnails and channel art (PigeonShort, HurricaneShort, Day1ColdOpen, PigeonThumb, HurricaneThumb, ChannelBanner, ChannelPicture)
   pigeon/         pigeon Short: shots (Street, Lab, Close, CamGuy), pigeon rig and walk, effects, sound mix, beat times
   hurricane/      hurricane Short: one continuous 2.5D shot, sound mix, beat times
+  day1/           "Day 1: Before We Go" cold open: shots drawn in SVG, title card, sound mix, cues.json (all beat times)
   thumbs/         thumbnails, rendered as Remotion stills
   channel/        channel banner and picture, rendered as Remotion stills
 public/           everything the videos load: cut-out sprites, voice-overs, sound effects, thumbnail font
 images/
   pigeon/         prompts, beat sheet, word timings, raw and keyed pictures, QA sheets, pipeline scripts
   hurricane/      the same for the hurricane Short
+  day1/           cold open: script + beat sheet, voice (vo.py) and sound (sfx.py) generators
 scripts/          QA tools (stills, contact sheets, pop scan, verify) and the README storyboard maker
 thumbnails/       final thumbnails, ready to upload (1080×1920 JPG)
 publish/          what goes on YouTube: upload details, channel banner and picture, channel text
@@ -169,6 +189,8 @@ These scripts live in `images/pigeon/scripts/`, with the hurricane's own `prep.p
 | Sound effects | Mostly synthesized with numpy. The pigeon's street and treadmill ambience was generated with Suno through Kie.ai. |
 | Titles | vidIQ title ideas and scores |
 | Thumbnail font | [Luckiest Guy](https://fonts.google.com/specimen/Luckiest+Guy), Apache License 2.0 (license in `public/fonts/`) |
+| Title card fonts (Day 1) | [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue) (SIL OFL 1.1) and [Special Elite](https://fonts.google.com/specimen/Special+Elite) (Apache License 2.0), licenses in `public/fonts/` |
+| Offline voices (Day 1) | [Kokoro TTS](https://github.com/thewh1teagle/kokoro-onnx) (Apache License 2.0), voices `am_fenrir` and `af_heart` |
 
 Remotion is free for individuals and small teams; larger companies need a company license. See [remotion.dev/license](https://www.remotion.dev/license).
 
