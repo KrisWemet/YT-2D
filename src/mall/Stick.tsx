@@ -289,7 +289,7 @@ const Shoe: React.FC<{at: V2; color: string; ink: string}> = ({at, color, ink}) 
   />
 );
 
-const Head: React.FC<{
+export const Head: React.FC<{
   c: V2;
   tilt: number;
   look: Look;

@@ -37,6 +37,18 @@ The old guard told me never to use the last key. I'm about to find out why.
 the night guard, zombie story, zombie apocalypse, zombie animation, animated story, zombie survival, survival story, horror story, scary stories, storytime, zombie shorts, mall zombie, apocalypse story, stick figure animation
 ```
 
+**Picture** (Studio → Customization → Profile → Picture → Upload):
+
+`publish/channel/night-guard-picture.png` (800×800). It's already framed for YouTube's circle, so press **Done** without moving the crop.
+
+**Banner image** (same page, Banner image → Upload):
+
+`publish/channel/night-guard-banner.jpg` (2560×1440). Leave the crop as it is. Phones show only the middle, where Danny and the title are. Computers add the zombies behind the store gates on both sides, and TVs show the whole picture.
+
+Press **Publish** (top right) when the picture, banner and text are in.
+
+The banner says "New parts every day". If you settle on a different schedule, that line can be changed and the banner re-rendered.
+
 ## Short 1: The Gate
 
 Upload `out/shorts/night-guard-short-1.mp4`.

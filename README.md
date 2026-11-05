@@ -104,6 +104,10 @@ This is a test of a second format: a long stick-figure survival story told in st
 
 The upload details are in `publish/mall-pilot-upload.md` and the thumbnail is `thumbnails/mall-pilot-thumbnail.jpg`.
 
+**The Night Guard channel.** The series gets its own YouTube channel. `publish/night-guard-youtube-setup.md` has the channel text and the copy-paste fields for Short 1, and `publish/night-guard-shorts-1-3.md` covers Shorts 1–3. The channel picture and banner in `publish/channel/` are Remotion stills (`src/mall/ChannelArt.tsx`) drawn with the series' own figures and the concourse background. In the banner, zombies press against the store gates from inside: `images/mall/gate_mask.py` picks the gates' bars out of the painting, so the bars can be drawn again in front of the zombies.
+
+![The Night Guard channel banner: Danny with his flashlight in the dark mall concourse next to the title, zombies pressed against the store gates on both sides, Marcus in his uniform among them](publish/channel/night-guard-banner.jpg)
+
 ## The house style
 
 - **Format:** vertical 9:16, 20–25 seconds. The voice sets the length.
@@ -181,6 +185,14 @@ Render the mall pilot (1080p, 30 fps) and its thumbnail:
 npx remotion render src/index.ts MallPilot out/mall-pilot-v2-1080p.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
 bash images/mall/finish.sh out/mall-pilot-v2-1080p.mp4 out/mall-pilot-v2.mp4   # about -15 LUFS with one gain + limiter, smaller re-encode
 npx remotion still src/index.ts MallThumb out/mall-thumb.png
+```
+
+Render The Night Guard channel art (remake the gate mask first only if the concourse background changes):
+
+```bash
+python3 images/mall/gate_mask.py
+npx remotion still src/index.ts NightGuardBanner publish/channel/night-guard-banner.jpg --image-format=jpeg --jpeg-quality=93
+npx remotion still src/index.ts NightGuardPicture publish/channel/night-guard-picture.png
 ```
 
 To re-voice the pilot, change the voices or lines in `images/mall/vo/v2/plan.json`, delete the takes you want recorded again from `vo/v2/takes/`, rebuild the voice track and word timings, then render again. Every cut follows the new timings by itself:
