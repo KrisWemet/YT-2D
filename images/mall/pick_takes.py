@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Pick, for every line, the take that sounds most like a reference voice.
 
-usage: pick_takes.py CANDIDATES.json TAKES_DIR --ref DIR id1,id2,... [--also DIR] [--min-voiced 55]
+usage: pick_takes.py CANDIDATES.json TAKES_DIR --ref DIR id1,id2,... [--also DIR] [--min-voiced 55] [--flat W]
 
 CANDIDATES.json is a voice_gemini.py plan whose chunk ids are "<line>-<n>": several takes of
 the same line with the same direction. The reference is a set of takes that already sound right
@@ -12,6 +12,8 @@ in TAKES_DIR (plus DIR/<line>.wav from --also, if it exists) is measured:
   - pitch: median F0 from a YIN-style tracker (semitones away from the reference)
   - tone colour: mean MFCC (spectral envelope), and brightness (spectral centroid)
   - pace: words per second over the whole line, with pauses over 0.3 s counted as 0.3 s
+  - inflection: how far the pitch moves inside the line (10th-90th percentile, semitones);
+    --flat W adds W to the score for every semitone, so calmer takes win when voices are close
 and the closest take is copied to TAKES_DIR/<line>.wav. picks.json records every score.
 """
 import json, pathlib, re, shutil, subprocess, sys
@@ -69,6 +71,11 @@ def features(x, n_words):
     seg = cm[:, tmin - 1:]
     ok = (rms > rms.max() * 0.08) & (seg.min(1) < 0.45)
     f0 = SR / (tmin + seg.argmin(1)[ok])
+    fr0 = np.where(ok, SR / (tmin + seg.argmin(1)), np.nan)
+    sm = np.array([np.nanmedian(fr0[max(0, i - 3): i + 4]) if ok[i] else np.nan for i in range(len(fr0))])
+    st = 12 * np.log2(sm / np.nanmedian(sm)) if ok.sum() > 15 else np.array([0.0])
+    st = st[~np.isnan(st) & (np.abs(st) < 8)]
+    spread = float(np.percentile(st, 90) - np.percentile(st, 10)) if len(st) > 15 else 0.0
     # pace over the whole line: its length with every pause longer than 0.3 s cut to 0.3 s
     lvl = 20 * np.log10(rms + 1e-9)
     quiet = lvl < lvl.max() - 35
@@ -82,7 +89,7 @@ def features(x, n_words):
         dur += min((j - i) * 0.01, 0.3) if q[i] else (j - i) * 0.01
         i = j
     return {"voiced": voiced, "f0": float(np.median(f0)) if len(f0) > 10 else 0.0, "bright": cent,
-            "mfcc": mfcc, "wps": n_words / max(dur, 0.3)}
+            "mfcc": mfcc, "wps": n_words / max(dur, 0.3), "spread": spread}
 
 
 def n_words(text):
@@ -95,6 +102,7 @@ def main():
     ref_dir, ref_ids = pathlib.Path(sys.argv[i + 1]), sys.argv[i + 2].split(",")
     also = pathlib.Path(sys.argv[sys.argv.index("--also") + 1]) if "--also" in sys.argv else None
     min_voiced = float(sys.argv[sys.argv.index("--min-voiced") + 1]) if "--min-voiced" in sys.argv else 55.0
+    flat = float(sys.argv[sys.argv.index("--flat") + 1]) if "--flat" in sys.argv else 0.0
     plan = json.loads(pathlib.Path(plan_f).read_text())
     text = {}
     for c in plan["chunks"]:
@@ -108,26 +116,29 @@ def main():
     picks = {}
     for line, t in text.items():
         cands = sorted(tdir.glob(f"{line}-*.wav"), key=lambda p: p.name)
-        cands = [p for p in cands if re.fullmatch(rf"{re.escape(line)}-\d+\.wav", p.name)]
+        cands = [p for p in cands if re.fullmatch(rf"{re.escape(line)}-[A-Z]?\d+\.wav", p.name)]
         if also and (also / f"{line}.wav").exists():
             cands.append(also / f"{line}.wav")
         rows = []
         for p in cands:
             ft = features(load(p), n_words(t))
             dist = np.sqrt((12 * np.log2(max(ft["f0"], 1) / R["f0"]) / 1.0) ** 2 + ((ft["bright"] - R["bright"]) / 120) ** 2
-                           + (np.linalg.norm(ft["mfcc"] - R["mfcc"]) / mf_spread) ** 2 + ((ft["wps"] - R["wps"]) / 0.6) ** 2)
+                           + (np.linalg.norm(ft["mfcc"] - R["mfcc"]) / mf_spread) ** 2 + ((ft["wps"] - R["wps"]) / 0.6) ** 2) \
+                + flat * ft["spread"]
             rows.append((dist if ft["voiced"] >= min_voiced else float("inf"), p, ft))
-        rows.sort(key=lambda r: r[0])
+        # near-ties (within 0.1) go to the take whose pitch is closest to the reference
+        rows.sort(key=lambda r: (round(r[0], 1), abs(12 * np.log2(max(r[2]["f0"], 1) / R["f0"]))))
         best = rows[0]
         if best[0] == float("inf"):
             print(f"{line}: no fully voiced take, record more")
             continue
         shutil.copy(best[1], tdir / f"{line}.wav")
         picks[line] = {"picked": str(best[1]), "takes": [{"take": str(p), "distance": None if d == float("inf") else round(float(d), 2),
-                       "voiced": round(ft["voiced"]), "f0": round(ft["f0"]), "bright": round(ft["bright"]), "wps": round(ft["wps"], 2)}
+                       "voiced": round(ft["voiced"]), "f0": round(ft["f0"]), "bright": round(ft["bright"]), "wps": round(ft["wps"], 2),
+                       "spread": round(ft["spread"], 1)}
                        for d, p, ft in rows]}
         print(f"{line}: " + "  ".join(f"{'*' if r is best else ' '}{r[1].stem}({'whisper' if r[0] == float('inf') else f'{r[0]:.1f}'}"
-                                     f"|{r[2]['f0']:.0f}Hz|{r[2]['bright']:.0f}|{r[2]['wps']:.1f}w/s)" for r in rows))
+                                     f"|{r[2]['f0']:.0f}Hz|{r[2]['spread']:.1f}st|{r[2]['wps']:.1f}w/s)" for r in rows))
     (tdir / "picks.json").write_text(json.dumps(picks, indent=1))
 
 

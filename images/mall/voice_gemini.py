@@ -20,7 +20,8 @@ is split at the pauses between lines using word timings, and each line gets a fi
 sits "db" above or below the plain lines (db 0), which land at the chunk's "lufs" (default -18).
 Nothing dynamic touches the performance. Optional per chunk: "pitch" (semitones, e.g. -1.5),
 "tempo", "max_pause" (longer pauses are shortened to this), "temperature", "rejoin" (cut the take
-into its lines and join them with each line's "gap", default 0.35 s). Optional in the plan:
+into its lines and join them with each line's "gap", default 0.35 s), "flatten" (0.3 = narrow the pitch
+rise and fall by 30 %, Praat PSOLA; never applied to radio lines). Optional in the plan:
 "takes_dir", so two versions of a voice-over can share one set of takes.
 """
 import concurrent.futures as cf
@@ -45,6 +46,7 @@ for _c in plan["chunks"]:
 takes = (pathlib.Path(plan_f).parent / plan["takes_dir"]).resolve() if "takes_dir" in plan else out / "takes"
 takes.mkdir(parents=True, exist_ok=True)
 SR = 48000
+FLATTEN_NOW = 0  # set per chunk by build()
 
 NUM = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four", "5": "five", "6": "six", "7": "seven", "8": "eight",
        "9": "nine", "10": "ten", "20": "twenty", "22": "twenty two", "30": "thirty", "31": "thirty one", "42": "forty two", "140": "one forty", "315": "three fifteen"}
@@ -283,6 +285,8 @@ def take_lines(c):
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-ac", "1", "-ar", str(SR)] +
                        (["-af", ",".join(af)] if af else []) + [f"{d}/o.wav"], check=True)
         a, _ = sf.read(f"{d}/o.wav", dtype="float32")
+    if c.get("flatten", plan.get("flatten")):
+        a = flatten_pitch(a, c.get("flatten", plan.get("flatten")))
     spans = [(s / tempo, e / tempo) for s, e in line_spans(c, word_times(path))]
     # shorten very long pauses first, at the take's own level, so soft lines never count as silence
     a, remap = squeeze_map(a, c.get("max_pause", plan.get("max_pause", 0.9)), floor_db=min(-40, active_db(a) - 32))
@@ -348,6 +352,24 @@ def take_lines(c):
     return a, spans
 
 
+def flatten_pitch(a, k):
+    """narrow the pitch movement by k (0.3 = 30 % less rise and fall) around the take's median pitch,
+    keeping timing and voice: Praat's overlap-add (PSOLA) resynthesis"""
+    import parselmouth
+    from parselmouth.praat import call
+    snd = parselmouth.Sound(a.astype(np.float64), sampling_frequency=SR)
+    man = call(snd, "To Manipulation", 0.01, 60, 220)
+    tier = call(man, "Extract pitch tier")
+    n = call(tier, "Get number of points")
+    if n < 5:
+        return a
+    med = float(np.median([call(tier, "Get value at index", i + 1) for i in range(n)]))
+    call(tier, "Formula", f"{med} * exp({1 - k} * ln(self / {med}))")
+    call([tier, man], "Replace pitch tier")
+    out = call(man, "Get resynthesis (overlap-add)").values[0]
+    return np.asarray(out[: len(a)], np.float32)
+
+
 def take48(path, lufs, tempo=1.0, max_pause=0.4):
     """resample to 48 kHz mono, even out loudness, speed up a touch, trim and squeeze silences.
     With "level": "fixed" in the plan, the take gets one plain gain to reach its LUFS instead of
@@ -357,6 +379,8 @@ def take48(path, lufs, tempo=1.0, max_pause=0.4):
     with tempfile.TemporaryDirectory() as d:
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-ac", "1", "-ar", str(SR), "-af", af, f"{d}/o.wav"], check=True)
         a, _ = sf.read(f"{d}/o.wav", dtype="float32")
+    if FLATTEN_NOW:
+        a = flatten_pitch(a, FLATTEN_NOW)
     if fixed:
         # a short take is repeated to 3 s+ so the loudness meter has enough to gate on (same content, same reading)
         a *= 10 ** ((lufs - measure_lufs(np.tile(a, int(np.ceil(3 * SR / max(len(a), 1)))))) / 20)
@@ -379,6 +403,8 @@ def build():
             timeline.append(np.zeros(int(gap * SR), np.float32))
             t += gap
             continue
+        global FLATTEN_NOW
+        FLATTEN_NOW = 0 if c.get("radio") else c.get("flatten", plan.get("flatten", 0))
         whisper = c.get("style") == "Whisper"
         lufs = c.get("lufs", -21 if whisper else -19)
         tempo = c.get("tempo", plan.get("tempo", 1.06))
