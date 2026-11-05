@@ -10,9 +10,9 @@ import React from 'react';
 
 export type Eyes = 'dot' | 'wide' | 'closed' | 'angry' | 'zombie' | 'worried' | 'side';
 export type Mouth = 'none' | 'smile' | 'flat' | 'o' | 'frown' | 'grit' | 'zombie' | 'open';
-export type Hair = 'none' | 'messy' | 'ponytail' | 'bun' | 'spiky';
-export type Hat = 'none' | 'guard' | 'beanie' | 'hood';
-export type Prop = 'none' | 'flashlight' | 'radio' | 'keys' | 'bat' | 'phone';
+export type Hair = 'none' | 'messy' | 'ponytail' | 'bun' | 'spiky' | 'pigtails' | 'short';
+export type Hat = 'none' | 'guard' | 'beanie' | 'hood' | 'crown';
+export type Prop = 'none' | 'flashlight' | 'radio' | 'keys' | 'bat' | 'phone' | 'book';
 
 export type Pose = {
   lean?: number; // torso, forward-positive
@@ -39,6 +39,8 @@ export type Look = {
   torn?: boolean; // ragged shirt hem (zombies)
   radioOnChest?: boolean;
   keysOnBelt?: boolean;
+  backpack?: string; // backpack colour
+  kid?: boolean; // child proportions: bigger head
 };
 
 export type StickProps = {
@@ -113,6 +115,14 @@ export const POSES = {
   frontStand: {lean: 0, head: 0, armF: [-14, -6], armN: [14, 6], legF: [-8, -4], legN: [8, 4]},
   frontPress: {lean: 0, head: 0, armF: [-148, -172], armN: [148, 172], legF: [-8, -4], legN: [8, 4]},
   frontReach: {lean: 0, head: 6, armF: [-110, -140], armN: [115, 145], legF: [-10, -4], legN: [10, 4]},
+  kneelOpen: {lean: 4, head: -6, armF: [75, 120], armN: [100, 140], legF: [8, -95], legN: [85, 5]},
+  runArms: {lean: 12, head: -6, armF: [150, 175], armN: [140, 168], legF: [-35, -100], legN: [55, 5]},
+  waveHi: {lean: 0, head: 6, armF: [-8, -4], armN: [150, 200], legF: [-6, -4], legN: [8, 6]},
+  readBook: {lean: 6, head: 18, armF: [30, 110], armN: [35, 105], legF: [-6, -4], legN: [8, 6]},
+  laugh: {lean: -8, head: -18, armF: [20, 100], armN: [30, 160], legF: [-8, -4], legN: [10, 6]},
+  facepalm: {lean: 4, head: 14, armF: [-8, -4], armN: [40, 172], legF: [-6, -4], legN: [8, 6]},
+  frontShrug: {lean: 0, head: 8, armF: [-60, -120], armN: [60, 120], legF: [-8, -4], legN: [8, 4]},
+  frontArmsOpen: {lean: 0, head: 0, armF: [-100, -115], armN: [100, 115], legF: [-10, -4], legN: [10, 4]},
   // zombies
   zShamble: {lean: 12, head: 16, armF: [80, 92], armN: [88, 98], legF: [-12, -8], legN: [16, 6]},
   zShambleB: {lean: 14, head: 22, armF: [92, 100], armN: [76, 86], legF: [10, 2], legN: [-14, -10]},
@@ -137,6 +147,15 @@ export const LOOKS = {
   },
   teenA: {shirt: '#c0533e', sleeves: true, hat: 'hood', hatColor: '#c0533e'},
   woman: {shirt: '#3f8a86', sleeves: true, hair: 'ponytail', hairColor: '#6a4128'},
+  lily: {shirt: '#e46a9a', sleeves: true, hair: 'pigtails', hairColor: '#6a4128', backpack: '#7a5ac8', kid: true},
+  dannyHome: {shirt: '#5f7f4f', sleeves: true, hair: 'short', hairColor: '#3a2a22', mustache: true},
+  dannyCrown: {
+    shirt: '#2f4475', sleeves: true, hat: 'crown', mustache: true, badge: true, keysOnBelt: true, hair: 'short', hairColor: '#3a2a22',
+  },
+  shopperA: {shirt: '#d9534f', sleeves: true, hair: 'short', hairColor: '#4a3020'},
+  shopperB: {shirt: '#5bc0de', sleeves: true, hair: 'ponytail', hairColor: '#c9a640'},
+  shopperC: {shirt: '#f0ad4e', sleeves: true, hat: 'beanie', hatColor: '#3d6fb0'},
+  shopperD: {shirt: '#9b59b6', sleeves: true, hair: 'bun', hairColor: '#2c2420'},
   teenB: {shirt: '#e2b84a', sleeves: true, hair: 'spiky', hairColor: '#3a2b20'},
   zombieA: {skin: '#b5bfa2', shirt: '#7d8a6b', sleeves: true, torn: true, hair: 'messy', hairColor: '#3b2f25'},
   zombieB: {skin: '#aeb9a6', shirt: '#9b6a5a', sleeves: true, torn: true, hair: 'ponytail', hairColor: '#5a3a28'},
@@ -155,7 +174,7 @@ export const jointsOf = (pose: Pose, x: number, y: number, h: number, face: 1 | 
   const footF = add(kneeF, v(pose.legF[1], SHIN));
   const kneeN = v(pose.legN[0], THIGH);
   const footN = add(kneeN, v(pose.legN[1], SHIN));
-  const hipY = pose.sit ? -12 : -Math.max(footF[1], footN[1], 20);
+  const hipY = pose.sit ? -12 : -Math.max(footF[1], footN[1], kneeF[1] + 6, kneeN[1] + 6, 20);
   const hip: [number, number] = [0, hipY];
   const neck = add(hip, [Math.sin(rad(lean)) * TORSO, -Math.cos(rad(lean)) * TORSO]);
   const hd = rad(lean + (pose.head ?? 0) * 0.5);
@@ -231,6 +250,13 @@ const PropShape: React.FC<{p: Prop; at: [number, number]; ang: number; beam?: nu
         />
       )}
       {p === 'phone' && <rect x={-9} y={-4} width={18} height={30} rx={3} fill="#222" stroke={INK} strokeWidth={4} />}
+      {p === 'book' && (
+        <g transform="rotate(90)">
+          <rect x={-20} y={-14} width={40} height={30} rx={2} fill="#f4f1e6" stroke={INK} strokeWidth={3.5} />
+          <rect x={-22} y={-17} width={44} height={8} rx={2} fill="#3d6fb0" stroke={INK} strokeWidth={3.5} />
+          <line x1={0} y1={-9} x2={0} y2={15} stroke={INK} strokeWidth={2.5} />
+        </g>
+      )}
     </g>
   );
 };
@@ -367,6 +393,32 @@ const Head: React.FC<{
           {!back && <path d={`M ${front ? 0 : 4} -40 l 5 4 l 0 7 l -5 3 l -5 -3 l 0 -7 Z`} fill="#e0b94a" stroke={INK} strokeWidth={2} />}
         </g>
       )}
+      {look.hair === 'short' && (
+        <path
+          d={`M ${-R + 1} -10 Q -26 -42 0 -40 Q 24 -42 ${R - 1} -12 Q 18 -30 0 -29 Q -16 -30 ${-R + 1} -10 Z`}
+          fill={hairColor}
+          stroke={INK}
+          strokeWidth={3.5}
+          strokeLinejoin="round"
+        />
+      )}
+      {look.hair === 'pigtails' && (
+        <g fill={hairColor} stroke={INK} strokeWidth={3.5} strokeLinejoin="round">
+          <path d={`M ${-R + 2} -14 q -30 -6 -26 24 q 8 -10 22 -12 Z`} />
+          <path d={`M ${R - 2} -14 q 30 -6 26 24 q -8 -10 -22 -12 Z`} />
+          <path d={`M ${-R + 1} -6 Q -22 -44 4 -38 Q 28 -36 ${R - 1} -8 Q 8 -26 -4 -22 Q -18 -20 ${-R + 1} -6 Z`} />
+          <circle cx={-R - 4} cy={-10} r={5} fill="#e85a8c" />
+          <circle cx={R + 4} cy={-10} r={5} fill="#e85a8c" />
+        </g>
+      )}
+      {look.hat === 'crown' && (
+        <g>
+          <path d={`M ${-R + 4} -18 L ${-R + 2} -60 L -16 -40 L 0 -66 L 16 -40 L ${R - 2} -60 L ${R - 4} -18 Z`} fill="#f2c94c" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
+          <circle cx={-14} cy={-28} r={4.5} fill="#e2392d" stroke={INK} strokeWidth={2} />
+          <circle cx={2} cy={-30} r={4.5} fill="#3d6fb0" stroke={INK} strokeWidth={2} />
+          <circle cx={17} cy={-28} r={4.5} fill="#3fb36b" stroke={INK} strokeWidth={2} />
+        </g>
+      )}
       {look.hat === 'beanie' && <path d={`M ${-R} -8 Q -30 -54 4 -52 Q 34 -50 ${R} -8 Z`} fill={hatColor} stroke={INK} strokeWidth={4.5} />}
       {!back && eye(ex1, 0)}
       {!back && eye(ex2, 1)}
@@ -424,7 +476,7 @@ export const Stick: React.FC<StickProps> = ({
   const kneeN = v(pose.legN[0], THIGH);
   const footN = add(kneeN, v(pose.legN[1], SHIN));
   // hip height: lowest foot on the ground, or the hip itself sits on the ground
-  const hipY = pose.sit ? -12 : -Math.max(footF[1], footN[1], 20);
+  const hipY = pose.sit ? -12 : -Math.max(footF[1], footN[1], kneeF[1] + 6, kneeN[1] + 6, 20);
   const hip: [number, number] = [0, hipY];
   const neck = add(hip, [Math.sin(rad(lean)) * TORSO, -Math.cos(rad(lean)) * TORSO]);
   const headC = add(neck, [Math.sin(rad(lean + (pose.head ?? 0) * 0.5)) * (R + 4), -Math.cos(rad(lean + (pose.head ?? 0) * 0.5)) * (R + 4)]);
@@ -499,6 +551,19 @@ export const Stick: React.FC<StickProps> = ({
           </linearGradient>
         </defs>
         {limbsFar}
+        {look.backpack && !ghost && (
+          <rect
+            transform={`translate(${(shoulder[0] + hip[0]) / 2 - dir[1] * 0 - 20},${(shoulder[1] + hip[1]) / 2}) rotate(${lean})`}
+            x={-14}
+            y={-30}
+            width={26}
+            height={56}
+            rx={9}
+            fill={look.backpack}
+            stroke={INK}
+            strokeWidth={4.5}
+          />
+        )}
         {/* spine */}
         <Ln a={hip} b={neck} c={inkC} />
         {look.shirt && !ghost && (
@@ -530,7 +595,9 @@ export const Stick: React.FC<StickProps> = ({
             <rect x={1} y={9} width={4} height={10} rx={1.5} fill="#cfcfcf" stroke={INK} strokeWidth={1.8} />
           </g>
         )}
-        <Head c={headC} tilt={pose.head ?? 0} look={ghost ? {skin: '#20232b'} : look} eyes={ghost ? 'dot' : eyes} mouth={ghost ? 'none' : mouth} gaze={look2} back={back || ghost} front={front} />
+        <g transform={look.kid ? `translate(${headC[0]},${headC[1] - 4}) scale(1.3) translate(${-headC[0]},${-headC[1]})` : undefined}>
+          <Head c={headC} tilt={pose.head ?? 0} look={ghost ? {skin: '#20232b'} : look} eyes={ghost ? 'dot' : eyes} mouth={ghost ? 'none' : mouth} gaze={look2} back={back || ghost} front={front} />
+        </g>
         {sweat && !ghost && (
           <path
             transform={`translate(${headC[0] - R * 0.75},${headC[1] - R * 0.35})`}

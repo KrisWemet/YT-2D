@@ -1,0 +1,21 @@
+{
+ "duration": 13.435,
+ "segments": [
+  {
+   "kind": "radio",
+   "text": "Danny. There's a guy coming up the ramp. He's walking... wrong.",
+   "s": 0.3,
+   "e": 6.114,
+   "chunk": "m1",
+   "id": "marcus1"
+  },
+  {
+   "kind": "radio",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "s": 6.714,
+   "e": 11.735,
+   "chunk": "m2",
+   "id": "marcus2"
+  }
+ ]
+}

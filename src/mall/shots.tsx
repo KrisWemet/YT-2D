@@ -1,8 +1,14 @@
 import React from 'react';
 import {AbsoluteFill, interpolate} from 'remotion';
 import {FONT} from '../thumbs/Thumbs';
+import {BigCard, KidDrawing, SeriesTitle} from './Cards';
 import {MallMap} from './MallMap';
 import {
+  BigTimer,
+  NameTag,
+  NoSignal,
+  RewindFx,
+  Shout,
   Arrow,
   CCTV_FILTER,
   CctvOverlay,
@@ -221,42 +227,190 @@ export const HoldGate: React.FC<{frac: number; opacity?: number}> = ({frac, opac
   </Beyond>
 );
 
-/* ---------------- the shot list ---------------- */
+/* ---------------- v2 set-ups ---------------- */
+
+// Daytime bus stop: perspective is shallow, a grown-up at the curb is ~430 px.
+const BUS_DOOR = {x: 2400, y: 1258};
+const Vignette: React.FC<{o?: number}> = ({o = 0.75}) => (
+  <div style={{position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 45%, rgba(0,0,0,${o}) 100%)`}} />
+);
+
+const crouchRadio: Pose = {lean: 25, head: 8, armF: [40, 90], armN: [30, 165], legF: [70, -30], legN: [95, -10]};
+const holdKeys: Pose = {...POSES.holdUp, armN: [120, 160]};
+
+// Shoppers for the Black Friday shot, zombies for the same shot "tonight".
+const lotRows: [number, number, number, (1 | -1)?][] = [
+  [700, 1300, 0, 1], [880, 1420, 0, 1], [1040, 1200, 0, 1], [1180, 1480, 0, 1], [1290, 1260, 0, 1],
+  [1530, 1250, 0, -1], [1640, 1460, 0, -1], [1780, 1190, 0, -1], [1930, 1380, 0, -1], [2100, 1280, 0, -1],
+  [2260, 1470, 0, -1], [560, 1460, 0, 1], [2420, 1330, 0, -1], [1410, 1380, 0, 1],
+];
+const hLot = (y: number) => 0.55 * (y - 820);
+const SHOPPERS = [LOOKS.shopperA, LOOKS.shopperB, LOOKS.shopperC, LOOKS.shopperD, LOOKS.teenA, LOOKS.teenB];
+const BlackFridayBanner: React.FC = () => (
+  <g transform="rotate(-3 1408 566)">
+    <rect x={1140} y={490} width={536} height={150} rx={8} fill="#d8443a" stroke="#1d1a1a" strokeWidth={8} />
+    <text x={1408} y={592} textAnchor="middle" fontFamily={FONT} fontSize={74} fill="#fff6c8" stroke="#1d1a1a" strokeWidth={10} paintOrder="stroke">
+      BLACK FRIDAY
+    </text>
+  </g>
+);
+
+// The woman up on the department store balcony.
+const WOMAN = {x: 1182, y: 692, h: 100};
+
+/* ---------------- the shot list (v2) ---------------- */
 
 export const SHOTS: ShotDef[] = [
-  // ---------- Chapter 1: The Loop ----------
+  // ---------- Cold open ----------
   {
     at: '0',
+    draw: (p) => (
+      <Scene bg="sportsinside" a={{x: 1420, y: 700, z: 3.2}} b={{x: 1420, y: 690, z: 3.6}} p={p}>
+        <Beyond>
+          <Stick {...marcusAtGate} look={LOOKS.marcusZ} pose={POSES.frontPress} front eyes="zombie" mouth="zombie" dim={0.6} wobble={9} />
+        </Beyond>
+        <HoldGate frac={1} opacity={0.85} />
+      </Scene>
+    ),
+  },
+  {
+    at: 'used to be',
+    draw: (p) => (
+      <AbsoluteFill>
+        <Scene bg="garage" a={{x: 1350, y: 1085, z: 2.5}} b={{x: 1355, y: 1080, z: 2.65}} p={p} filter="sepia(0.7) brightness(1.08) blur(1px)">
+          <Marcus x={1350} y={1250} h={hG(1250)} pose={POSES.laugh} propN="radio" eyes="closed" mouth="open" />
+        </Scene>
+        <Vignette o={0.8} />
+      </AbsoluteFill>
+    ),
+  },
+  {
+    at: 'In about ten',
+    ev: {ten: 'ten seconds'},
+    draw: (p) => {
+      const r = marcusRadio();
+      const left = Math.max(1, 10 - Math.floor(p.t * 1.6));
+      return (
+        <AbsoluteFill>
+          <Scene bg="sportsinside" a={{x: r.x, y: r.y - 20, z: 4.4}} b={{x: r.x, y: r.y - 20, z: 4.8}} p={p} over={<Ring x={r.x} y={r.y} rx={34} ry={40} t={p.t} at={0.15} w={5} />}>
+            <Beyond>
+              <Stick {...marcusAtGate} look={LOOKS.marcusZ} pose={POSES.frontPress} front eyes="zombie" mouth="zombie" dim={0.75} wobble={9} />
+            </Beyond>
+            <HoldGate frac={1} opacity={0.8} />
+          </Scene>
+          <Screen>
+            <Txt x={W / 2} y={200} size={150} fill="#ff4d3a" opacity={p.t > p.ev.ten ? 1 : 0}>
+              {`${left}`}
+            </Txt>
+          </Screen>
+        </AbsoluteFill>
+      );
+    },
+  },
+  {
+    at: 'and tell every',
+    draw: (p) => (
+      <Scene bg="sportsinside" a={{x: 1215, y: 800, z: 3}} b={{x: 1215, y: 800, z: 3.25}} p={p} filter="brightness(0.8)">
+        <HoldGate frac={1} />
+        <Guard {...insideGuardSit} pose={POSES.handMouth} eyes="wide" sweat />
+      </Scene>
+    ),
+  },
+  {
+    at: 'One hour ago',
+    draw: (p) => (
+      <Scene bg="concourse" a={{x: 1380, y: 1050, z: 1.9}} b={{x: 1380, y: 1040, z: 2.05}} p={p} filter="brightness(1.1) saturate(1.15)">
+        <Guard x={1360} y={1500} h={hC(1500)} look={LOOKS.dannyCrown} pose={holdKeys} propN="keys" eyes="closed" mouth="smile" />
+      </Scene>
+    ),
+  },
+  {
+    at: 'I had every key',
+    draw: (p) => (
+      <Scene bg="concourse" a={{x: 1400, y: 930, z: 2.9}} b={{x: 1405, y: 925, z: 3.15}} p={p} filter="brightness(1.1) saturate(1.15)">
+        <Guard x={1360} y={1500} h={hC(1500)} look={LOOKS.dannyCrown} pose={holdKeys} propN="keys" eyes="closed" mouth="smile" />
+      </Scene>
+    ),
+  },
+  {
+    at: 'Let me back',
+    draw: (p) => (
+      <AbsoluteFill>
+        <Scene bg="concourse" a={{x: 1380, y: 1040, z: 2.05}} b={{x: 1380, y: 1050, z: 1.7}} p={p} filter="grayscale(0.7) contrast(1.2) brightness(0.9)" shakeXY={[Math.sin(p.frame * 2.1) * 8, 0]}>
+          <Guard x={1360} y={1500} h={hC(1500)} look={LOOKS.dannyCrown} pose={holdKeys} propN="keys" eyes="closed" mouth="smile" />
+        </Scene>
+        <RewindFx t={p.t} frame={p.frame} />
+      </AbsoluteFill>
+    ),
+  },
+  {at: '>+back up', draw: (p) => <SeriesTitle t={p.t} />},
+
+  // ---------- Chapter 1: The King of the Mall ----------
+  {
+    at: "My name's Danny",
+    draw: (p) => (
+      <Scene bg="concourse" a={{x: 1300, y: 1120, z: 1.7}} b={{x: 1310, y: 1110, z: 1.8}} p={p} screen={<NameTag name="DANNY RUIZ" sub="NIGHT SECURITY · MAPLECREST MALL" t={p.t} at={0.4} />}>
+        <Guard x={1420} y={1500} h={hC(1500)} pose={POSES.standRelax} mouth="smile" />
+      </Scene>
+    ),
+  },
+  {
+    at: "Yes I've heard",
+    draw: (p) => (
+      <Scene
+        bg="concourse"
+        a={{x: 1490, y: 905, z: 2.5}}
+        b={{x: 1505, y: 895, z: 2.62}}
+        p={p}
+        screen={
+          <>
+            <Shout x={1430} y={190} text="MALL COP!" t={p.t} at={0.2} />
+            <Shout x={1640} y={360} text="HA HA" t={p.t} at={0.6} rotate={6} size={50} />
+          </>
+        }
+      >
+        <Stick x={1600} y={905} h={150} face={-1} pose={POSES.laugh} look={LOOKS.teenA} eyes="closed" mouth="open" />
+        <Stick x={1558} y={802} h={146} face={-1} pose={POSES.point} look={LOOKS.teenB} eyes="closed" mouth="open" />
+        <Guard x={1380} y={1185} h={335} pose={POSES.stand} eyes="dot" mouth="flat" look2={1} />
+      </Scene>
+    ),
+  },
+  {
+    at: 'I took the night',
+    draw: (p) => (
+      <Scene bg="busstop" a={{x: 1700, y: 1030, z: 1.3}} b={{x: 1760, y: 1040, z: 1.38}} p={p}>
+        <Guard x={1250} y={1440} h={430} look={LOOKS.dannyHome} pose={POSES.standRelax} mouth="smile" look2={1} />
+      </Scene>
+    ),
+  },
+  {
+    at: 'my daughter Lily',
+    draw: (p) => (
+      <Scene bg="busstop" a={{x: 1760, y: 1150, z: 1.6}} b={{x: 1770, y: 1150, z: 1.72}} p={p}>
+        <Guard x={1520} y={1445} h={430} look={LOOKS.dannyHome} pose={POSES.kneelOpen} eyes="closed" mouth="smile" />
+        <Stick x={1880} y={1420} h={300} face={-1} look={LOOKS.lily} pose={POSES.runArms} eyes="closed" mouth="open" />
+      </Scene>
+    ),
+  },
+  {at: "She's seven", draw: (p) => <KidDrawing t={p.t} />},
+  {
+    at: 'Because I have these',
+    ev: {keys: 'keys'},
+    draw: (p) => (
+      <Scene bg="concourse" a={{x: 1350, y: 960, z: 2.15}} b={{x: 1355, y: 950, z: 2.3}} p={p} screen={<ItemTag text="42 KEYS" p={p} at={p.ev.keys - 0.6} />}>
+        <Guard x={1300} y={1500} h={hC(1500)} pose={holdKeys} propN="keys" mouth="smile" />
+      </Scene>
+    ),
+  },
+  {at: 'One for every single', draw: (p) => <MallMap mode="keys" t={p.t} dur={p.dur} />},
+  {
+    at: 'Every night',
     draw: (p) => (
       <Scene bg="concourse" a={FULL} b={{x: 1330, y: 880, z: 1.12}} p={p}>
         <Guard x={1150} y={1420} h={hC(1420)} pose={POSES.walkLight} propN="flashlight" beam={520} />
       </Scene>
     ),
   },
-  {
-    at: 'Eleven at night',
-    ev: {seven: 'seven'},
-    draw: (p) => (
-      <Scene
-        bg="exterior"
-        a={{x: 1408, y: 820, z: 1}}
-        b={{x: 1408, y: 880, z: 1.12}}
-        p={p}
-        over={<MallSign />}
-        screen={
-          <>
-            <Clock x={W / 2} y={215} text={p.t < p.ev.seven - 0.1 ? '11:00' : '7:00'} t={p.t} />
-            <Txt x={W / 2 + 250} y={240} size={56} anchor="start">
-              {p.t < p.ev.seven - 0.1 ? 'PM' : 'AM'}
-            </Txt>
-          </>
-        }
-      >
-        <Guard x={1405} y={1046} h={118} pose={POSES.walkLight} propN="flashlight" beam={70} shadow={0.2} />
-      </Scene>
-    ),
-  },
-  {at: 'I walk the same loop', draw: (p) => <MallMap mode="loop" t={p.t} dur={p.dur} />},
   {
     at: 'I rattle',
     draw: (p) => (
@@ -267,81 +421,50 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: 'I tell the same',
+    at: '>rattle the same gates',
     draw: (p) => (
-      <Scene bg="concourse" a={{x: 1490, y: 905, z: 2.5}} b={{x: 1505, y: 895, z: 2.65}} p={p}>
-        <Stick x={1600} y={905} h={150} face={-1} pose={POSES.standRelax} look={LOOKS.teenA} eyes="dot" mouth="smile" />
-        <Stick x={1558} y={802} h={146} face={-1} pose={POSES.shrug} look={LOOKS.teenB} eyes="closed" mouth="smile" />
-        <Guard x={1380} y={1185} h={335} pose={POSES.pointUp} eyes="angry" mouth="open" />
+      <Scene bg="garage" a={{x: 1400, y: 1060, z: 2.2}} b={{x: 1405, y: 1055, z: 2.32}} p={p}>
+        <Marcus x={1350} y={1250} h={hG(1250)} pose={POSES.radio} propN="radio" mouth="smile" />
       </Scene>
     ),
   },
   {
-    at: 'Nothing ever happens',
+    at: 'to tell me a terrible',
+    ev: {joke: 'terrible'},
     draw: (p) => (
-      <Scene bg="office" a={FULL} b={{x: 1520, y: 780, z: 1.08}} p={p}>
-        <Guard x={2150} y={1545} h={880} face={-1} pose={POSES.yawn} eyes="closed" mouth="o" />
+      <Scene bg="garage" a={{x: 1350, y: 1085, z: 2.5}} b={{x: 1355, y: 1080, z: 2.62}} p={p} screen={<ItemTag text="TERRIBLE JOKE #214" p={p} at={p.ev.joke - 0.1} />}>
+        <Marcus x={1350} y={1250} h={hG(1250)} pose={POSES.laugh} propN="radio" eyes="closed" mouth="open" />
       </Scene>
     ),
   },
   {
-    at: "That's kind of",
+    at: 'Marcus is twenty',
+    ev: {nurse: 'nurse', owes: 'owes'},
     draw: (p) => (
-      <Scene bg="concourse" a={{x: 1360, y: 1130, z: 1.85}} b={{x: 1360, y: 1120, z: 1.95}} p={p}>
-        <Guard x={1360} y={1500} h={hC(1500)} pose={POSES.thumbsUp} mouth="smile" />
+      <Scene
+        bg="garage"
+        a={{x: 1380, y: 1085, z: 2.45}}
+        b={{x: 1385, y: 1080, z: 2.58}}
+        p={p}
+        screen={
+          <>
+            <Tag x={1130} y={330} text="MARCUS, 22" kind="info" t={p.t} at={0.15} size={74} />
+            <Tag x={1130} y={460} text="NURSING STUDENT" kind="info" t={p.t} at={p.ev.nurse - 0.4} size={64} />
+            <Tag x={1130} y={580} text="OWES ME $20" kind="info" t={p.t} at={p.ev.owes - 0.1} size={64} />
+          </>
+        }
+      >
+        <Marcus x={1250} y={1250} h={hG(1250)} pose={POSES.readBook} propN="book" mouth="flat" />
       </Scene>
     ),
   },
   {
-    at: 'I carry three',
-    draw: (p) => (
-      <Scene bg="concourse" a={{x: 1360, y: 1120, z: 1.7}} b={{x: 1360, y: 1110, z: 1.8}} p={p} screen={<ItemTag text="3 THINGS" p={p} at={0.15} />}>
-        <Guard x={1360} y={1500} h={hC(1500)} pose={POSES.standRelax} mouth="smile" />
-      </Scene>
-    ),
-  },
-  {
-    at: 'A flashlight',
-    draw: (p) => (
-      <Scene bg="concourse" a={{x: 1520, y: 1130, z: 1.8}} b={{x: 1540, y: 1120, z: 1.9}} p={p} screen={<ItemTag text="1. FLASHLIGHT" p={p} />}>
-        <Guard x={1250} y={1500} h={hC(1500)} pose={POSES.flashlight} propN="flashlight" beam={650} />
-      </Scene>
-    ),
-  },
-  {
-    at: 'A radio that',
-    draw: (p) => (
-      <Scene bg="concourse" a={{x: 1420, y: 1130, z: 1.8}} b={{x: 1430, y: 1120, z: 1.9}} p={p} screen={<ItemTag text="2. RADIO" p={p} />}>
-        <Guard x={1300} y={1500} h={hC(1500)} pose={POSES.radio} propN="radio" mouth="open" />
-      </Scene>
-    ),
-  },
-  {
-    at: 'the other night guard',
-    draw: (p) => (
-      <Scene bg="garage" a={{x: 1350, y: 1085, z: 2.5}} b={{x: 1355, y: 1080, z: 2.62}} p={p} screen={<ItemTag text="MARCUS" p={p} at={0.2} />}>
-        <Marcus x={1350} y={1250} h={hG(1250)} pose={POSES.wave} mouth="smile" />
-      </Scene>
-    ),
-  },
-  {
-    at: 'And a ring',
-    draw: (p) => (
-      <Scene bg="concourse" a={{x: 1350, y: 960, z: 2.15}} b={{x: 1355, y: 950, z: 2.3}} p={p} screen={<ItemTag text="3. 42 KEYS" p={p} at={0.6} />}>
-        <Guard x={1300} y={1500} h={hC(1500)} pose={{...POSES.holdUp, armN: [120, 160]}} propN="keys" mouth="smile" />
-      </Scene>
-    ),
-  },
-  {at: 'One for every store', draw: (p) => <MallMap mode="keys" t={p.t} dur={p.dur} />},
-
-  // ---------- Chapter 2: The Ramp ----------
-  {
-    at: 'At one forty',
+    at: "Tonight he didn't",
     draw: (p) => (
       <Scene
         bg="office"
         a={FULL}
-        b={{x: 1460, y: 780, z: 1.1}}
+        b={{x: 1460, y: 780, z: 1.12}}
         p={p}
         screen={
           <>
@@ -352,23 +475,33 @@ export const SHOTS: ShotDef[] = [
           </>
         }
       >
-        <Guard x={2150} y={1545} h={880} face={-1} pose={POSES.radio} propN="radio" />
+        <Guard x={2150} y={1545} h={880} face={-1} pose={POSES.radio} propN="radio" eyes="worried" />
       </Scene>
     ),
   },
+
+  // ---------- Chapter 2: The Ramp ----------
   {
     at: '@marcus1',
     draw: (p) => (
       <Scene bg="garage" a={{x: 1760, y: 990, z: 1.75}} b={{x: 1790, y: 985, z: 1.85}} p={p}>
         <Zed k={2} x={2130} y={968} h={150} face={-1} pose={POSES.zLimp} shadow={0.2} />
-        <Marcus x={1450} y={1350} h={hG(1350)} pose={POSES.radio} propN="radio" mouth="open" look2={1} />
+        <Marcus x={1450} y={1350} h={hG(1350)} pose={crouchRadio} propN="radio" eyes="wide" mouth="o" look2={1} />
       </Scene>
     ),
   },
   {
-    at: 'Then I hear him',
+    at: "He's walking",
     draw: (p) => (
-      <Scene bg="office" a={{x: 2080, y: 880, z: 1.7}} b={{x: 2090, y: 870, z: 1.8}} p={p}>
+      <Scene bg="garage" a={{x: 2120, y: 900, z: 3.2}} b={{x: 2125, y: 898, z: 3.5}} p={p} filter="brightness(0.85)">
+        <Zed k={2} x={2130} y={968} h={150} face={-1} pose={POSES.zLimp} shadow={0.2} />
+      </Scene>
+    ),
+  },
+  {
+    at: "Marcus doesn't know",
+    draw: (p) => (
+      <Scene bg="office" a={{x: 2080, y: 880, z: 1.7}} b={{x: 2090, y: 870, z: 1.82}} p={p}>
         <Guard x={2150} y={1545} h={880} face={-1} pose={POSES.radio} propN="radio" eyes="worried" />
       </Scene>
     ),
@@ -383,15 +516,27 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: 'Then nothing',
+    at: 'Then the radio',
     draw: (p) => (
-      <Scene bg="office" a={{x: 2110, y: 790, z: 2.8}} b={{x: 2115, y: 785, z: 3}} p={p}>
-        <Guard x={2150} y={1545} h={880} face={-1} pose={POSES.radio} propN="radio" eyes="wide" sweat />
+      <Scene bg="office" a={{x: 2110, y: 790, z: 2.8}} b={{x: 2115, y: 785, z: 3.05}} p={p}>
+        <Guard x={2150} y={1545} h={880} face={-1} pose={POSES.radio} propN="radio" eyes="worried" />
       </Scene>
     ),
   },
   {
-    at: 'I check the cameras',
+    at: 'It goes completely',
+    ev: {silent: 'silent'},
+    draw: (p) => {
+      const j = jointsOf(POSES.radio, 2150, 1545, 880, -1);
+      return (
+        <Scene bg="office" a={{x: j.handN[0], y: j.handN[1] + 40, z: 3.6}} b={{x: j.handN[0], y: j.handN[1] + 40, z: 3.9}} p={p} screen={<NoSignal t={p.t} at={p.ev.silent - 0.3} />}>
+          <Guard x={2150} y={1545} h={880} face={-1} pose={POSES.radio} propN="radio" eyes="wide" sweat />
+        </Scene>
+      );
+    },
+  },
+  {
+    at: 'I run to the cameras',
     draw: (p) => (
       <Scene bg="office" a={{x: 1408, y: 780, z: 1.12}} b={{x: 1408, y: 770, z: 1.2}} p={p}>
         <Guard x={1760} y={1590} h={930} face={-1} pose={POSES.stand} back />
@@ -421,7 +566,7 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: 'The guy is on top',
+    at: 'The man is on top',
     draw: (p) => (
       <AbsoluteFill>
         <Scene bg="garage" a={{x: 1215, y: 1085, z: 2.7}} b={{x: 1215, y: 1085, z: 2.9}} p={p} filter={CCTV_FILTER}>
@@ -432,7 +577,7 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: 'behind them',
+    at: 'And behind them',
     draw: (p) => (
       <AbsoluteFill>
         <Scene bg="garage" a={{x: 1700, y: 960, z: 1.4}} b={{x: 1750, y: 950, z: 1.5}} p={p} filter={CCTV_FILTER}>
@@ -445,10 +590,10 @@ export const SHOTS: ShotDef[] = [
   },
   {
     at: 'Six',
-    ev: {ten: 'Ten', stop: 'I stop'},
+    ev: {ten: 'ten', thirty: 'thirty'},
     draw: (p) => {
-      const rows = p.t < p.ev.ten - 0.05 ? ramp6 : p.t < p.ev.stop - 0.05 ? ramp10 : rampMany;
-      const label = p.t < p.ev.ten - 0.05 ? '6' : p.t < p.ev.stop - 0.05 ? '10' : 'TOO MANY';
+      const rows = p.t < p.ev.ten - 0.05 ? ramp6 : p.t < p.ev.thirty - 0.05 ? ramp10 : rampMany;
+      const label = p.t < p.ev.ten - 0.05 ? '6' : p.t < p.ev.thirty - 0.05 ? '10' : '30';
       return (
         <AbsoluteFill>
           <Scene bg="garage" a={{x: 1800, y: 950, z: 1.25}} b={{x: 1800, y: 950, z: 1.35}} p={p} filter={CCTV_FILTER}>
@@ -457,7 +602,7 @@ export const SHOTS: ShotDef[] = [
           </Scene>
           <CctvOverlay t={p.t} frame={p.frame} cam="CAM 08 · RAMP" clock="01:41:16" />
           <Screen>
-            <Txt x={W / 2} y={260} size={label.length > 2 ? 130 : 190} fill="#ff4d3a">
+            <Txt x={W / 2} y={260} size={190} fill="#ff4d3a">
               {label}
             </Txt>
           </Screen>
@@ -466,7 +611,21 @@ export const SHOTS: ShotDef[] = [
     },
   },
   {
-    at: '>counting',
+    at: "They're not running",
+    draw: (p) => (
+      <AbsoluteFill>
+        <Scene bg="garage" a={{x: 1700, y: 1000, z: 1.1}} b={{x: 1700, y: 1000, z: 1.2}} p={p} filter={CCTV_FILTER}>
+          <Attack />
+          <Crowd rows={rampMany} />
+          <Crowd rows={rampMany.map(([x, y, h]) => [x - 420, y + 60, h * 1.15, -1] as [number, number, number, -1])} seed={3} />
+        </Scene>
+        <CctvOverlay t={p.t} frame={p.frame} cam="CAM 08 · RAMP" clock="01:41:21" />
+      </AbsoluteFill>
+    ),
+  },
+  {at: 'Every one of them is walking', draw: (p) => <MallMap mode="route" t={p.t} dur={p.dur} />},
+  {
+    at: 'And the food court is made',
     draw: (p) => (
       <Scene bg="foodcourt" a={{x: 2150, y: 830, z: 1.65}} b={{x: 2120, y: 840, z: 1.8}} p={p}>
         <Crowd rows={outsideGlass} dim={0.5} />
@@ -475,34 +634,12 @@ export const SHOTS: ShotDef[] = [
   },
 
   // ---------- Chapter 3: Glass ----------
+  {at: "Here's what nobody", draw: (p) => <Scene bg="exterior" a={FULL} b={{x: 1408, y: 830, z: 1.22}} p={p} over={<MallSign />} />},
   {
-    at: "Here's the thing",
-    draw: (p) => <Scene bg="exterior" a={FULL} b={{x: 1408, y: 830, z: 1.25}} p={p} over={<MallSign />} />,
-  },
-  {
-    at: '>malls',
-    ev: {glass: 'glass'},
-    draw: (p) => (
-      <Scene bg="exterior" a={{x: 1408, y: 840, z: 2.2}} b={{x: 1408, y: 840, z: 2.45}} p={p} over={<MallSign />} screen={<Tag x={W / 2} y={190} text="GLASS" kind="info" t={p.t} at={p.ev.glass} size={96} anchor="middle" />} />
-    ),
-  },
-  {
-    at: 'Glass doors',
-    draw: (p) => <Scene bg="foodcourt" a={{x: 2010, y: 830, z: 2.5}} b={{x: 2010, y: 830, z: 2.7}} p={p} screen={<ItemTag text="GLASS DOORS" p={p} />} />,
-  },
-  {
-    at: 'Glass walls',
-    draw: (p) => <Scene bg="pharmacy" a={{x: 1408, y: 820, z: 1.15}} b={{x: 1408, y: 820, z: 1.3}} p={p} screen={<ItemTag text="GLASS WALLS" p={p} />} />,
-  },
-  {
-    at: 'Glass ceilings',
-    draw: (p) => <Scene bg="concourse" a={{x: 1408, y: 330, z: 2}} b={{x: 1408, y: 300, z: 2.2}} p={p} screen={<Tag x={W / 2} y={H - 120} text="GLASS CEILINGS" t={p.t} at={0.05} size={86} anchor="middle" />} />,
-  },
-  {
-    at: 'A mall is built',
-    ev: {letting: 'letting'},
+    at: "They're built to let",
+    ev: {let: 'let people'},
     draw: (p) => {
-      const k = (d: number) => Math.min(1, Math.max(0, (p.t - p.ev.letting - d) / 0.3));
+      const k = (d: number) => Math.min(1, Math.max(0, (p.t - p.ev.let + 0.2 - d) / 0.3));
       return (
         <Scene
           bg="exterior"
@@ -521,24 +658,40 @@ export const SHOTS: ShotDef[] = [
       );
     },
   },
+  {at: 'Glass doors', draw: (p) => <Scene bg="foodcourt" a={{x: 2010, y: 830, z: 2.5}} b={{x: 2010, y: 830, z: 2.7}} p={p} screen={<ItemTag text="GLASS DOORS" p={p} />} />},
+  {at: 'Glass walls', draw: (p) => <Scene bg="pharmacy" a={{x: 1408, y: 820, z: 1.15}} b={{x: 1408, y: 820, z: 1.3}} p={p} screen={<ItemTag text="GLASS WALLS" p={p} />} />},
   {
-    at: 'Tonight',
+    at: 'Glass ceilings',
+    draw: (p) => <Scene bg="concourse" a={{x: 1408, y: 330, z: 2}} b={{x: 1408, y: 300, z: 2.2}} p={p} screen={<Tag x={W / 2} y={H - 120} text="GLASS CEILINGS" t={p.t} at={0.05} size={86} anchor="middle" />} />,
+  },
+  {
+    at: '>Glass ceilings',
     draw: (p) => (
-      <Scene bg="concourse" a={{x: 1380, y: 1130, z: 1.9}} b={{x: 1380, y: 1120, z: 2}} p={p}>
-        <Guard x={1380} y={1500} h={hC(1500)} pose={POSES.flashlight} propN="flashlight" beam={520} eyes="angry" />
+      <Scene bg="exterior" a={{x: 1408, y: 1000, z: 1.25}} b={{x: 1408, y: 990, z: 1.33}} p={p} over={<BlackFridayBanner />}>
+        {lotRows.map(([x, y, , face], i) => (
+          <Stick key={i} x={x} y={y} h={hLot(y)} face={face ?? 1} look={SHOPPERS[i % SHOPPERS.length]} pose={i % 3 ? POSES.run : POSES.runArms} eyes={i % 2 ? 'wide' : 'dot'} mouth={i % 2 ? 'open' : 'smile'} wobble={i + 20} />
+        ))}
       </Scene>
     ),
   },
   {
-    at: 'But a mall has',
+    at: "Tonight it's a death",
     draw: (p) => (
-      <Scene bg="concourse" a={{x: 1950, y: 1000, z: 1.35}} b={{x: 1980, y: 990, z: 1.45}} p={p}>
-        <Guard x={1720} y={1400} h={hC(1400)} pose={POSES.lookUp} look2={1} />
+      <Scene bg="exterior" a={{x: 1408, y: 990, z: 1.33}} b={{x: 1408, y: 980, z: 1.42}} p={p} filter="sepia(0.35) hue-rotate(-25deg) saturate(1.5) brightness(0.75)" over={<MallSign />}>
+        <Crowd rows={lotRows.map(([x, y, , face]) => [x, y, hLot(y), face] as [number, number, number, (1 | -1)?])} seed={6} />
       </Scene>
     ),
   },
   {
-    at: 'Every store has',
+    at: 'But I know something',
+    draw: (p) => (
+      <Scene bg="concourse" a={{x: 1360, y: 930, z: 2.7}} b={{x: 1365, y: 925, z: 2.9}} p={p}>
+        <Guard x={1300} y={1500} h={hC(1500)} pose={holdKeys} propN="keys" eyes="angry" mouth="smile" />
+      </Scene>
+    ),
+  },
+  {
+    at: 'Every store in this mall',
     ev: {steel: 'steel'},
     draw: (p) => (
       <Scene bg="concourse" a={{x: 330, y: 830, z: 2.3}} b={{x: 330, y: 820, z: 2.45}} p={p} screen={<Tag x={W / 2} y={190} text="STEEL SECURITY GATE" t={p.t} at={p.ev.steel - 0.1} size={84} anchor="middle" />} />
@@ -546,7 +699,7 @@ export const SHOTS: ShotDef[] = [
   },
   {
     at: 'Pull it down',
-    ev: {lock: 'lock'},
+    ev: {lock: 'Lock it'},
     draw: (p) => {
       const locked = p.t >= p.ev.lock - 0.08;
       const pose = {...POSES.pullDown, armF: [150, 160] as [number, number], armN: [140, 155] as [number, number]};
@@ -554,13 +707,7 @@ export const SHOTS: ShotDef[] = [
       const pull = interpolate(p.t, [0, Math.max(0.2, p.ev.lock - 0.1)], [0, 1], {extrapolateRight: 'clamp'});
       const barY = Math.min(SF.y1, j.handN[1] + pull * 120);
       return (
-        <Scene
-          bg="sportsfront"
-          a={{x: 1408, y: 900, z: 1.2}}
-          b={{x: 1408, y: 920, z: 1.28}}
-          p={p}
-          over={locked ? <Padlock x={1405} y={1300} s={1.3} /> : undefined}
-        >
+        <Scene bg="sportsfront" a={{x: 1408, y: 900, z: 1.2}} b={{x: 1408, y: 920, z: 1.28}} p={p} over={locked ? <Padlock x={1405} y={1300} s={1.3} /> : undefined}>
           <Grille x0={SF.x0} y0={SF.y0} x1={SF.x1} y1={SF.y1} frac={locked ? 1 : (barY - SF.y0) / (SF.y1 - SF.y0)} />
           {locked ? (
             <Guard x={1300} y={1530} h={560} face={1} pose={POSES.crouchLock} back />
@@ -572,27 +719,34 @@ export const SHOTS: ShotDef[] = [
     },
   },
   {
-    at: 'and that store becomes',
+    at: 'And that store becomes',
     ev: {vault: 'vault'},
     draw: (p) => (
-      <Scene
-        bg="sportsfront"
-        a={{x: 1408, y: 960, z: 1.12}}
-        b={{x: 1408, y: 960, z: 1.22}}
-        p={p}
-        over={<Padlock x={1405} y={1300} s={1.3} />}
-        screen={<Tag x={W / 2} y={190} text="A VAULT" kind="ok" t={p.t} at={p.ev.vault - 0.1} size={96} anchor="middle" />}
-      >
+      <Scene bg="sportsfront" a={{x: 1408, y: 960, z: 1.12}} b={{x: 1408, y: 960, z: 1.22}} p={p} over={<Padlock x={1405} y={1300} s={1.3} />} screen={<Tag x={W / 2} y={190} text="A VAULT" kind="ok" t={p.t} at={p.ev.vault - 0.1} size={96} anchor="middle" />}>
         <Grille x0={SF.x0} y0={SF.y0} x1={SF.x1} y1={SF.y1} frac={1} />
       </Scene>
     ),
   },
-  {at: "So I don't need", draw: (p) => <MallMap mode="all" t={p.t} dur={p.dur} />},
-  {at: 'I just need to pick', draw: (p) => <MallMap mode="pick" t={p.t} dur={p.dur} />},
-
-  // ---------- Chapter 4: Shopping ----------
+  {at: "I can't save", draw: (p) => <MallMap mode="all" t={p.t} dur={p.dur} />},
+  {at: 'but I can pick', draw: (p) => <MallMap mode="pick" t={p.t} dur={p.dur} />},
   {
-    at: 'I run my loop',
+    at: 'And I have about four',
+    ev: {four: 'four minutes', give: 'gives out'},
+    draw: (p) => (
+      <AbsoluteFill>
+        <Scene bg="foodcourt" a={{x: 2030, y: 840, z: 2.2}} b={{x: 2030, y: 840, z: 2.35}} p={p} over={<Cracks x={2010} y={800} r={230} k={Math.min(1, Math.max(0.15, (p.t - p.ev.give + 0.6) / 0.8))} />}>
+          <Crowd rows={outsideGlass.slice(0, 4).map(([x, y, h]) => [x, y + 15, h * 1.08, -1] as [number, number, number, -1])} dim={0.5} front seed={2} />
+        </Scene>
+        <Screen>
+          <BigTimer text="4:00" t={p.t} at={p.ev.four - 0.1} />
+        </Screen>
+      </AbsoluteFill>
+    ),
+  },
+
+  // ---------- Chapter 4: Four Minutes ----------
+  {
+    at: 'So I run',
     draw: (p) => (
       <Scene bg="concourse" a={{x: 1250, y: 1060, z: 1.45}} b={{x: 1300, y: 1060, z: 1.5}} p={p} screen={<SpeedLines t={p.t} />}>
         <Guard x={1150} y={1450} h={hC(1450)} pose={POSES.runLight} propN="flashlight" beam={420} eyes="angry" mouth="grit" />
@@ -601,10 +755,10 @@ export const SHOTS: ShotDef[] = [
   },
   {at: 'The same loop', draw: (p) => <MallMap mode="thousand" t={p.t} dur={p.dur} />},
   {
-    at: 'But this time',
+    at: 'Except tonight',
     draw: (p) => (
       <Scene bg="concourse" a={{x: 1300, y: 1120, z: 1.7}} b={{x: 1320, y: 1110, z: 1.78}} p={p} screen={<ShoppingList t={p.t} />}>
-        <Guard x={1100} y={1500} h={hC(1500)} pose={POSES.flashlight} propN="flashlight" beam={420} mouth="smile" />
+        <Guard x={1100} y={1500} h={hC(1500)} pose={POSES.flashlight} propN="flashlight" beam={420} eyes="angry" mouth="grit" />
       </Scene>
     ),
   },
@@ -618,10 +772,17 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: 'But the whole front',
-    ev: {glass: 'glass'},
+    at: 'but the whole front',
+    ev: {glass: 'glass', crack: 'crack'},
     draw: (p) => (
-      <Scene bg="pharmacy" a={{x: 1000, y: 900, z: 1.7}} b={{x: 980, y: 900, z: 1.85}} p={p} screen={<Tag x={150} y={200} text="GLASS FRONT" kind="no" t={p.t} at={p.ev.glass - 0.1} size={84} />} />
+      <Scene
+        bg="pharmacy"
+        a={{x: 1000, y: 900, z: 1.7}}
+        b={{x: 980, y: 900, z: 1.85}}
+        p={p}
+        over={p.t >= p.ev.crack - 0.1 ? <Cracks x={880} y={820} r={300} k={Math.min(1, (p.t - p.ev.crack + 0.1) / 0.25)} /> : undefined}
+        screen={<Tag x={150} y={200} text="GLASS FRONT" kind="no" t={p.t} at={p.ev.glass - 0.1} size={84} />}
+      />
     ),
   },
   {
@@ -629,22 +790,21 @@ export const SHOTS: ShotDef[] = [
     ev: {food: 'freezer'},
     draw: (p) => (
       <Scene bg="foodcourt" a={{x: 1300, y: 850, z: 1}} b={{x: 1300, y: 860, z: 1.1}} p={p} screen={<Tag x={150} y={200} text="FREEZER FULL OF FOOD" kind="ok" t={p.t} at={p.ev.food - 0.1} size={80} />}>
-        <Guard x={900} y={1450} h={hF(1450)} pose={POSES.flashlight} propN="flashlight" beam={420} />
+        <Guard x={900} y={1450} h={hF(1450)} pose={POSES.runLight} propN="flashlight" beam={380} eyes="angry" />
       </Scene>
     ),
   },
   {
-    at: "But that's exactly",
-    ev: {coming: 'coming'},
+    at: "That's exactly why",
     draw: (p) => (
-      <Scene bg="foodcourt" a={{x: 2150, y: 830, z: 1.7}} b={{x: 2130, y: 840, z: 1.85}} p={p} screen={<Tag x={150} y={200} text="THEIR WAY IN" kind="no" t={p.t} at={p.ev.coming - 0.1} size={84} />}>
+      <Scene bg="foodcourt" a={{x: 2150, y: 830, z: 1.7}} b={{x: 2130, y: 840, z: 1.85}} p={p} screen={<Tag x={150} y={200} text="THEIR WAY IN" kind="no" t={p.t} at={0.1} size={84} />}>
         <Crowd rows={outsideGlass.map(([x, y, h]) => [x, y + 15, h * 1.08, -1] as [number, number, number, -1])} dim={0.55} front seed={1} />
       </Scene>
     ),
   },
   {
     at: 'The department store has',
-    ev: {beds: 'beds', floor: 'second'},
+    ev: {beds: 'beds', floor: 'second', doors: 'nine different'},
     draw: (p) => (
       <Scene
         bg="deptstore"
@@ -654,7 +814,8 @@ export const SHOTS: ShotDef[] = [
         screen={
           <>
             <Tag x={150} y={200} text="BEDS" kind="ok" t={p.t} at={p.ev.beds - 0.1} size={84} />
-            <Tag x={1050} y={200} text="2ND FLOOR" kind="ok" t={p.t} at={p.ev.floor - 0.1} size={84} />
+            <Tag x={700} y={200} text="2ND FLOOR" kind="ok" t={p.t} at={p.ev.floor - 0.1} size={84} />
+            <Tag x={1400} y={200} text="9 DOORS" kind="no" t={p.t} at={p.ev.doors - 0.1} size={84} />
           </>
         }
       >
@@ -663,15 +824,7 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: "But it's huge",
-    draw: (p) => (
-      <Scene bg="deptstore" a={{x: 1408, y: 820, z: 1.25}} b={{x: 1408, y: 792, z: 1}} p={p}>
-        <Guard x={1420} y={1250} h={230} pose={POSES.standRelax} eyes="worried" />
-      </Scene>
-    ),
-  },
-  {
-    at: 'Too many doors',
+    at: "I can't guard nine",
     draw: (p) => (
       <Scene
         bg="deptstore"
@@ -681,20 +834,27 @@ export const SHOTS: ShotDef[] = [
         over={
           <>
             <Ring x={515} y={955} rx={115} ry={130} t={p.t} at={0.05} />
-            <Ring x={965} y={955} rx={170} ry={125} t={p.t} at={0.18} />
-            <Ring x={1950} y={950} rx={170} ry={120} t={p.t} at={0.31} />
-            <Ring x={2415} y={950} rx={110} ry={110} t={p.t} at={0.44} />
-            <Ring x={185} y={880} rx={150} ry={170} t={p.t} at={0.57} />
-            <Ring x={2650} y={880} rx={150} ry={180} t={p.t} at={0.7} />
+            <Ring x={965} y={955} rx={170} ry={125} t={p.t} at={0.15} />
+            <Ring x={1950} y={950} rx={170} ry={120} t={p.t} at={0.25} />
+            <Ring x={2415} y={950} rx={110} ry={110} t={p.t} at={0.35} />
+            <Ring x={185} y={880} rx={150} ry={170} t={p.t} at={0.45} />
+            <Ring x={2650} y={880} rx={150} ry={180} t={p.t} at={0.55} />
           </>
         }
-        screen={<Tag x={W / 2} y={190} text="TOO MANY DOORS" kind="no" t={p.t} at={0.1} size={88} anchor="middle" />}
       />
     ),
   },
   {
-    at: 'And the sporting goods',
-    ev: {tents: 'tents'},
+    at: 'I can barely',
+    draw: (p) => (
+      <Scene bg="deptstore" a={{x: 1400, y: 1140, z: 1.85}} b={{x: 1400, y: 1135, z: 1.95}} p={p}>
+        <Guard x={1400} y={1480} h={520} pose={POSES.frontShrug} front eyes="closed" mouth="flat" />
+      </Scene>
+    ),
+  },
+  {
+    at: "And then there's the sporting",
+    ev: {tents: 'Tents'},
     draw: (p) => (
       <Scene bg="sportsfront" a={{x: 1408, y: 900, z: 1}} b={{x: 1420, y: 920, z: 1.08}} p={p} screen={<Tag x={150} y={200} text="TENTS" kind="ok" t={p.t} at={p.ev.tents - 0.1} size={84} />}>
         <Grille x0={SF.x0} y0={SF.y0} x1={SF.x1} y1={SF.y1} frac={1} />
@@ -723,7 +883,7 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: 'And only one way',
+    at: 'and only one way',
     ev: {way: 'way'},
     draw: (p) => (
       <Scene
@@ -742,10 +902,10 @@ export const SHOTS: ShotDef[] = [
   // ---------- Chapter 5: The Gate ----------
   {
     at: 'Behind me',
-    ev: {crack: 'food court doors', shatter: 'shatter'},
+    ev: {crack: 'food court doors', shatter: 'explode'},
     draw: (p) => {
       const broke = p.t >= p.ev.shatter - 0.04;
-      const ck = interpolate(p.t, [p.ev.crack, p.ev.shatter], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+      const ck = interpolate(p.t, [p.ev.crack, p.ev.shatter], [0.2, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
       const pressed: [number, number, number, (1 | -1)?][] = [
         [1985, 1036, 300],
         [2095, 1042, 315],
@@ -768,13 +928,7 @@ export const SHOTS: ShotDef[] = [
             b={{x: 2050, y: 840, z: 1.78}}
             p={p}
             shakeXY={shake(p.t, p.ev.shatter, 26, 0.6)}
-            over={
-              broke ? (
-                <Shards x={2010} y={830} t={p.t - p.ev.shatter} n={46} />
-              ) : (
-                ck > 0 && <Cracks x={2010} y={800} r={230} k={ck} />
-              )
-            }
+            over={broke ? <Shards x={2010} y={830} t={p.t - p.ev.shatter} n={46} /> : <Cracks x={2010} y={800} r={230} k={ck} />}
           >
             {broke ? <Crowd rows={inside} seed={2} /> : <Crowd rows={pressed} dim={0.55} front seed={2} />}
           </Scene>
@@ -794,7 +948,7 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: 'yank it down',
+    at: 'Yank it down',
     draw: (p) => {
       const pose = {...POSES.pullDown, lean: 4, armF: [150, 162] as [number, number], armN: [142, 158] as [number, number]};
       const j = jointsOf(pose, 1300, 975, hI(975), -1);
@@ -809,9 +963,10 @@ export const SHOTS: ShotDef[] = [
     },
   },
   {
-    at: 'and lock it',
+    at: 'Lock it with key',
+    ev: {key: 'key number'},
     draw: (p) => (
-      <Scene bg="sportsinside" a={{x: 1330, y: 850, z: 2.8}} b={{x: 1330, y: 855, z: 2.95}} p={p}>
+      <Scene bg="sportsinside" a={{x: 1330, y: 850, z: 2.8}} b={{x: 1330, y: 855, z: 2.95}} p={p} screen={<Tag x={W / 2} y={190} text="KEY #31" kind="key" t={p.t} at={p.ev.key - 0.1} size={92} anchor="middle" />}>
         <HoldGate frac={1} />
         <Padlock x={1350} y={912} s={0.5} />
         <Guard x={1250} y={1000} h={hI(1000)} face={1} pose={POSES.crouchLock} back />
@@ -828,7 +983,7 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
-    at: 'and I try not',
+    at: 'with my hand over',
     draw: (p) => (
       <Scene bg="sportsinside" a={{x: 1215, y: 800, z: 3}} b={{x: 1215, y: 800, z: 3.2}} p={p} filter="brightness(0.8)">
         <HoldGate frac={1} />
@@ -837,77 +992,52 @@ export const SHOTS: ShotDef[] = [
     ),
   },
   {
+    at: 'thinking about',
+    draw: (p) => (
+      <AbsoluteFill>
+        <Scene bg="busstop" a={{x: 2150, y: 1000, z: 1.7}} b={{x: 2170, y: 1000, z: 1.85}} p={p} filter="sepia(0.65) brightness(1.05) blur(1.5px)">
+          <Stick x={BUS_DOOR.x - 20} y={BUS_DOOR.y} h={280} face={-1} look={LOOKS.lily} pose={POSES.waveHi} eyes="closed" mouth="smile" />
+        </Scene>
+        <Vignette o={0.85} />
+      </AbsoluteFill>
+    ),
+  },
+  {
     at: 'Footsteps',
     draw: (p) => (
       <Scene bg="sportsinside" a={{x: 1420, y: 700, z: 2}} b={{x: 1420, y: 700, z: 2.1}} p={p}>
         <Beyond>
-        <Crowd
-          rows={[
-            [1230, 915, 300, 1],
-            [1420, 905, 282, 1],
-            [1610, 920, 305, -1],
-          ]}
-          dim={0.4}
-        />
+          <Crowd rows={[[1230, 915, 300, 1], [1420, 905, 282, 1], [1610, 920, 305, -1]]} dim={0.4} />
         </Beyond>
         <HoldGate frac={1} />
       </Scene>
     ),
   },
   {
-    at: 'shuffling past',
+    at: 'Shuffling past',
     draw: (p) => (
       <Scene bg="sportsinside" a={{x: 1420, y: 700, z: 2.1}} b={{x: 1420, y: 700, z: 2.2}} p={p}>
         <Beyond>
-        <Crowd
-          rows={[
-            [1200, 925, 320, 1],
-            [1300, 912, 295, 1],
-            [1430, 930, 330, -1],
-            [1540, 915, 300, 1],
-            [1640, 928, 325, -1],
-            [1705, 910, 290, 1],
-          ]}
-          dim={0.45}
-          seed={1}
-        />
+          <Crowd rows={[[1200, 925, 320, 1], [1300, 912, 295, 1], [1430, 930, 330, -1], [1540, 915, 300, 1], [1640, 928, 325, -1], [1705, 910, 290, 1]]} dim={0.45} seed={1} />
         </Beyond>
         <HoldGate frac={1} />
       </Scene>
     ),
   },
   {
-    at: 'One of them stops',
+    at: '>Shuffling past the gate',
     draw: (p) => (
       <Scene bg="sportsinside" a={{x: 1420, y: 690, z: 2.5}} b={{x: 1420, y: 685, z: 2.65}} p={p}>
         <Beyond>
-        <Crowd
-          rows={[
-            [1250, 912, 290, 1],
-            [1610, 915, 295, -1],
-          ]}
-          dim={0.35}
-          seed={3}
-        />
-        <Stick {...marcusAtGate} look={LOOKS.marcusZ} pose={POSES.frontStand} front eyes="zombie" mouth="zombie" dim={0.5} wobble={9} />
+          <Crowd rows={[[1250, 912, 290, 1], [1610, 915, 295, -1]]} dim={0.35} seed={3} />
+          <Stick {...marcusAtGate} look={LOOKS.marcusZ} pose={POSES.frontStand} front eyes="zombie" mouth="zombie" dim={0.5} wobble={9} />
         </Beyond>
         <HoldGate frac={1} />
       </Scene>
     ),
   },
   {
-    at: 'It presses its face',
-    draw: (p) => (
-      <Scene bg="sportsinside" a={{x: 1420, y: 690, z: 3.4}} b={{x: 1420, y: 685, z: 3.7}} p={p}>
-        <Beyond>
-          <Stick {...marcusAtGate} look={LOOKS.marcusZ} pose={POSES.frontPress} front eyes="zombie" mouth="zombie" dim={0.55} wobble={9} />
-        </Beyond>
-        <HoldGate frac={1} opacity={0.85} />
-      </Scene>
-    ),
-  },
-  {
-    at: "It's Marcus",
+    at: '>stops',
     draw: (p) => (
       <Scene bg="sportsinside" a={{x: 1420, y: 668, z: 5.2}} b={{x: 1420, y: 666, z: 5.5}} p={p}>
         <Beyond>
@@ -932,7 +1062,7 @@ export const SHOTS: ShotDef[] = [
     },
   },
   {
-    at: 'Then mine crackles',
+    at: "And that's when mine",
     draw: (p) => {
       const r = guardRadio();
       return (
@@ -947,12 +1077,12 @@ export const SHOTS: ShotDef[] = [
     at: '@woman',
     draw: (p) => (
       <Scene bg="deptstore" a={{x: 1182, y: 655, z: 4.6}} b={{x: 1186, y: 652, z: 4.85}} p={p}>
-        <Stick x={1180} y={692} h={100} look={LOOKS.woman} pose={POSES.radio} propN="radio" eyes="worried" mouth="o" shadow={0.15} />
+        <Stick {...WOMAN} look={LOOKS.woman} pose={POSES.radio} propN="radio" eyes="worried" mouth="o" shadow={0.15} />
       </Scene>
     ),
   },
   {
-    at: 'Second floor',
+    at: "I'm on the second",
     draw: (p) => {
       const r = guardRadio();
       return (
@@ -962,6 +1092,19 @@ export const SHOTS: ShotDef[] = [
         </Scene>
       );
     },
+  },
+  {
+    at: "I'm not alone",
+    draw: (p) => (
+      <Scene bg="deptstore" a={{x: 1190, y: 650, z: 4.1}} b={{x: 1190, y: 650, z: 4.4}} p={p}>
+        <g opacity={interpolate(p.t, [0.1, 0.6], [0, 0.9], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}>
+          <Stick x={1085} y={688} h={108} face={1} look={LOOKS.zombieA} pose={POSES.stand} ghost shadow={0} />
+          <Stick x={1270} y={686} h={112} face={-1} look={LOOKS.zombieC} pose={POSES.stand} ghost shadow={0} />
+          <Stick x={1320} y={689} h={104} face={-1} look={LOOKS.zombieB} pose={POSES.stand} ghost shadow={0} />
+        </g>
+        <Stick {...WOMAN} look={LOOKS.woman} pose={POSES.radio} propN="radio" eyes="worried" mouth="o" shadow={0.15} />
+      </Scene>
+    ),
   },
   {
     at: 'Her voice comes',
@@ -990,7 +1133,7 @@ export const SHOTS: ShotDef[] = [
     },
   },
   {
-    at: 'every head',
+    at: 'Every head',
     draw: (p) => (
       <Scene bg="sportsinside" a={{x: 1390, y: 720, z: 2.55}} b={{x: 1390, y: 715, z: 2.8}} p={p} shakeXY={shake(p.t, 0.05, 10, 0.4)}>
         <Beyond>
@@ -1014,26 +1157,25 @@ export const SHOTS: ShotDef[] = [
       </Scene>
     ),
   },
+  {at: 'That was hour one', draw: (p) => <BigCard t={p.t} line1="HOUR 1" />},
+  {at: "I'd spend the next", draw: (p) => <BigCard t={p.t} line1="HOUR 1" line2="OF 720" color2="#f0c53c" />},
   {
-    at: 'That was hour one',
+    at: 'And the woman on the radio',
     draw: (p) => {
-      const o1 = interpolate(p.t, [0.05, 0.4], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-      const o2 = interpolate(p.t, [1.3, 1.8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+      const j = jointsOf(POSES.frontStand, WOMAN.x, WOMAN.y, WOMAN.h, 1);
+      const s = WOMAN.h / 300;
       return (
-        <AbsoluteFill style={{background: '#07080b'}}>
-          <Screen>
-            <Txt x={W / 2} y={400} size={110} opacity={o1}>
-              THAT WAS HOUR ONE.
-            </Txt>
-            <Txt x={W / 2} y={640} size={64} fill="#f0c53c" opacity={o2}>
-              THE NIGHT GUARD HAD EVERY KEY
-            </Txt>
-            <Txt x={W / 2} y={730} size={44} fill="#9aa6c8" opacity={o2}>
-              PILOT
-            </Txt>
-          </Screen>
+        <AbsoluteFill>
+          <Scene bg="deptstore" a={{x: WOMAN.x, y: 652, z: 8.2}} b={{x: WOMAN.x, y: 652, z: 9.2}} p={p} filter="brightness(0.55) saturate(0.7)">
+            <ellipse cx={j.head[0]} cy={j.head[1] + 6} rx={26} ry={34} fill="#d8443a" opacity={0.3} />
+            <Stick {...WOMAN} look={LOOKS.woman} pose={POSES.frontStand} front eyes="dot" mouth="smile" dim={0.35} shadow={0} />
+            <circle cx={j.head[0] - 12 * s} cy={j.head[1] - 4 * s} r={2.2} fill="#fff" />
+            <circle cx={j.head[0] + 12 * s} cy={j.head[1] - 4 * s} r={2.2} fill="#fff" />
+          </Scene>
+          <Vignette o={0.9} />
         </AbsoluteFill>
       );
     },
   },
+  {at: '>dangerous person in it', draw: (p) => <SeriesTitle t={p.t} sub="EPISODE 1 · COMING SOON" />},
 ];

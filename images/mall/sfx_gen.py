@@ -21,6 +21,11 @@ SFX = {
     "garage": (P + "an underground concrete parking garage at night: buzzing fluorescent lights, a low ventilation hum, distant echo, seamless loop", True),
     "breath": (P + "one zombie very close, a raspy wet growling breath and a low gurgling groan, creepy, about three seconds", False),
     "slam": (P + "a deep cinematic impact boom hit with a short reverb tail, dramatic, one hit", False),
+    "rewind": (P + "a VHS tape rewinding fast: a rising whirring squeal with crackle, ending in a soft click, about one and a half seconds", False),
+    "suburb": (P + "a quiet suburban street on a sunny afternoon: birds chirping, leaves rustling, a school bus idling nearby, distant children laughing, seamless loop", True),
+    "crowd": (P + "an excited crowd of shoppers cheering and rushing through doors at a store opening, footsteps, shouting, about four seconds", False),
+    "heartbeat": (P + "a slow heavy heartbeat, close and muffled, tense, steady, seamless loop", True),
+    "musicbox": (P + "a gentle nostalgic music box melody, soft and a little sad, short, about four seconds", False),
 }
 for name in sys.argv[1:]:
     prompt, loop = SFX[name]

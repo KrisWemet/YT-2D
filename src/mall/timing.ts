@@ -1,7 +1,7 @@
 import data from './words.json';
 
 export const FPS = 30;
-export const TAIL = 2.2; // hold the end card after the last word
+export const TAIL = 4.5; // hold the end card after the last word
 export const DUR = data.duration + TAIL;
 
 type Word = {w: string; s: number; e: number; g: string; n: string};
@@ -28,6 +28,7 @@ const idxAt = (time: number) => {
  * Cue syntax:
  *   "some words"   cut just before these words are spoken
  *   ">some words"  cut in the pause after these words
+ *   ">+some words" cut right after these words end
  *   "@id"          start of a radio line (segment id)
  *   "0"            the very start
  */
@@ -38,12 +39,14 @@ export const resolveCue = (cue: string, fromTime: number): number => {
     if (!g) throw new Error(`no segment ${cue}`);
     return g.s - 0.1;
   }
-  const after = cue.startsWith('>');
-  const phrase = after ? cue.slice(1) : cue;
+  const right = cue.startsWith('>+'); // cut right after the phrase ends
+  const after = right || cue.startsWith('>');
+  const phrase = right ? cue.slice(2) : after ? cue.slice(1) : cue;
   const i = findIdx(phrase, idxAt(fromTime));
   if (!after) return Math.max(0, WORDS[i].s - LEAD);
   const last = i + phrase.split(/\s+/).filter(Boolean).length - 1;
   const next = WORDS[last + 1];
+  if (right) return WORDS[last].e + 0.15;
   return next ? (WORDS[last].e + next.s) / 2 : WORDS[last].e + 0.3;
 };
 

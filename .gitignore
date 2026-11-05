@@ -12,3 +12,10 @@ __pycache__/
 
 # the pilot's uncompressed voice track (public/mall/vo/vo.mp3 is the working copy)
 images/mall/vo/local/vo.wav
+
+# voice takes and auditions (raw Gemini files; vo.mp3 in public/ is the working copy)
+images/mall/vo/v2/takes/*.try.wav
+images/mall/vo/v2/vo.wav
+images/mall/vo/audition/*/vo.wav
+images/mall/vo/audition/*/takes/
+images/mall/vo/audition/*.wav

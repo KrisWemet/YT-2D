@@ -1,0 +1,337 @@
+{
+ "duration": 262.876,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "The dead man pressing his face against my gate used to be my best friend.",
+   "s": 0.3,
+   "e": 7.192,
+   "chunk": "c01"
+  },
+  {
+   "kind": "narr",
+   "text": "In about ten seconds, the radio clipped to his chest is going to crackle... and tell every one of them exactly where I'm hiding.",
+   "s": 7.792,
+   "e": 15.954,
+   "chunk": "c02"
+  },
+  {
+   "kind": "narr",
+   "text": "One hour ago, I was the king of this mall. I had every key.",
+   "s": 16.854,
+   "e": 21.317,
+   "chunk": "c03"
+  },
+  {
+   "kind": "narr",
+   "text": "Let me back up.",
+   "s": 21.917,
+   "e": 24.801,
+   "chunk": "c04"
+  },
+  {
+   "kind": "narr",
+   "text": "My name is Danny Ruiz. I'm the night security guard at Maplecrest Mall. And yes, I've heard every mall cop joke there is.",
+   "s": 26.401,
+   "e": 33.669,
+   "chunk": "c05"
+  },
+  {
+   "kind": "narr",
+   "text": "I took the night shift for one reason. It means I'm home every afternoon when my daughter Lily gets off the school bus.",
+   "s": 34.219,
+   "e": 40.709,
+   "chunk": "c06"
+  },
+  {
+   "kind": "narr",
+   "text": "She's seven. She thinks I'm the king of the mall. Because I have these.",
+   "s": 41.209,
+   "e": 46.15,
+   "chunk": "c07"
+  },
+  {
+   "kind": "narr",
+   "text": "Forty-two keys. One for every single store.",
+   "s": 46.6,
+   "e": 50.668,
+   "chunk": "c08"
+  },
+  {
+   "kind": "narr",
+   "text": "Every night, I walk the same loop. I rattle the same gates. And at one a.m., Marcus calls me from the parking garage to tell me a terrible joke.",
+   "s": 51.218,
+   "e": 59.92,
+   "chunk": "c09"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus is twenty-two. He's studying to be a nurse. He still owes me twenty bucks.",
+   "s": 60.42,
+   "e": 66.343,
+   "chunk": "c10"
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight, he didn't tell a joke.",
+   "s": 67.043,
+   "e": 68.96,
+   "chunk": "c11"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny. There's a guy coming up the ramp. He's walking... wrong.",
+   "s": 69.56,
+   "e": 75.616,
+   "chunk": "r1",
+   "id": "marcus1"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus doesn't know how to whisper. But he's whispering.",
+   "s": 76.216,
+   "e": 80.16,
+   "chunk": "c12"
+  },
+  {
+   "kind": "radio",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "s": 80.66,
+   "e": 84.431,
+   "chunk": "r2",
+   "id": "marcus2"
+  },
+  {
+   "kind": "narr",
+   "text": "Then the radio does something I've never heard it do. It goes completely silent.",
+   "s": 85.131,
+   "e": 91.238,
+   "chunk": "c13"
+  },
+  {
+   "kind": "narr",
+   "text": "I run to the cameras. Garage, level two.",
+   "s": 92.038,
+   "e": 95.419,
+   "chunk": "c14"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus is on the ground. The man is on top of him.",
+   "s": 95.919,
+   "e": 101.095,
+   "chunk": "c15"
+  },
+  {
+   "kind": "narr",
+   "text": "And behind them, the ramp is filling up. Six. Ten. Thirty.",
+   "s": 101.645,
+   "e": 107.555,
+   "chunk": "c16"
+  },
+  {
+   "kind": "narr",
+   "text": "They're not running. They don't need to.",
+   "s": 108.105,
+   "e": 111.543,
+   "chunk": "c17"
+  },
+  {
+   "kind": "narr",
+   "text": "Every one of them is walking toward the same place. The food court.",
+   "s": 112.043,
+   "e": 117.496,
+   "chunk": "c18"
+  },
+  {
+   "kind": "narr",
+   "text": "And the food court is made of glass.",
+   "s": 117.896,
+   "e": 120.871,
+   "chunk": "c19"
+  },
+  {
+   "kind": "narr",
+   "text": "Here's what nobody tells you about malls. They're built to let people in. Glass doors. Glass walls. Glass ceilings.",
+   "s": 121.871,
+   "e": 130.087,
+   "chunk": "c20"
+  },
+  {
+   "kind": "narr",
+   "text": "That's great on Black Friday. Tonight, it's a death trap.",
+   "s": 130.587,
+   "e": 136.069,
+   "chunk": "c21"
+  },
+  {
+   "kind": "narr",
+   "text": "But I know something they don't.",
+   "s": 136.669,
+   "e": 139.194,
+   "chunk": "c22"
+  },
+  {
+   "kind": "narr",
+   "text": "Every store in this mall has a steel security gate. Pull it down, lock it, and that store becomes a vault.",
+   "s": 139.694,
+   "e": 147.159,
+   "chunk": "c23"
+  },
+  {
+   "kind": "narr",
+   "text": "I can't save the whole mall. But I can pick one store.",
+   "s": 147.659,
+   "e": 151.606,
+   "chunk": "c24"
+  },
+  {
+   "kind": "narr",
+   "text": "And I have about four minutes before that glass gives out.",
+   "s": 152.006,
+   "e": 156.9,
+   "chunk": "c25"
+  },
+  {
+   "kind": "narr",
+   "text": "So I run. The same loop I've walked a thousand times. Except tonight, I'm shopping for my life.",
+   "s": 157.8,
+   "e": 164.121,
+   "chunk": "c26"
+  },
+  {
+   "kind": "narr",
+   "text": "The pharmacy has medicine. But the whole front is glass. One crack, and I'm done.",
+   "s": 164.571,
+   "e": 170.953,
+   "chunk": "c27"
+  },
+  {
+   "kind": "narr",
+   "text": "The food court has a freezer full of food. That's exactly why they're going there.",
+   "s": 171.403,
+   "e": 176.09,
+   "chunk": "c28"
+  },
+  {
+   "kind": "narr",
+   "text": "The department store has beds, a second floor, and nine different entrances. I can't guard nine doors. I can barely guard one.",
+   "s": 176.54,
+   "e": 184.655,
+   "chunk": "c29"
+  },
+  {
+   "kind": "narr",
+   "text": "And then there's the sporting goods store. Tents. Water filters. Aluminum bats.",
+   "s": 185.155,
+   "e": 191.147,
+   "chunk": "c30"
+  },
+  {
+   "kind": "narr",
+   "text": "And only one way in.",
+   "s": 191.547,
+   "e": 193.049,
+   "chunk": "c31"
+  },
+  {
+   "kind": "narr",
+   "text": "Behind me, the food court doors explode.",
+   "s": 193.949,
+   "e": 197.574,
+   "chunk": "c32"
+  },
+  {
+   "kind": "narr",
+   "text": "I slide under the gate. Yank it down. Lock it with key number thirty-one.",
+   "s": 198.074,
+   "e": 207.215,
+   "chunk": "c33"
+  },
+  {
+   "kind": "narr",
+   "text": "Then I sit in the dark between the tents and the treadmills, with my hand over my mouth, thinking about Lily getting off that bus tomorrow.",
+   "s": 207.915,
+   "e": 216.134,
+   "chunk": "c34"
+  },
+  {
+   "kind": "narr",
+   "text": "Footsteps. Dozens of them. Shuffling past the gate.",
+   "s": 216.934,
+   "e": 221.087,
+   "chunk": "c35"
+  },
+  {
+   "kind": "narr",
+   "text": "One of them stops.",
+   "s": 221.687,
+   "e": 222.882,
+   "chunk": "c36"
+  },
+  {
+   "kind": "narr",
+   "text": "It's Marcus.",
+   "s": 223.582,
+   "e": 224.62,
+   "chunk": "c37"
+  },
+  {
+   "kind": "narr",
+   "text": "He's still wearing his radio.",
+   "s": 225.22,
+   "e": 226.949,
+   "chunk": "c38"
+  },
+  {
+   "kind": "narr",
+   "text": "And that's when mine crackles.",
+   "s": 227.549,
+   "e": 229.208,
+   "chunk": "c39"
+  },
+  {
+   "kind": "radio",
+   "text": "Is anyone still in the mall? I'm on the second floor of the department store... Please. I'm not alone up here.",
+   "s": 229.808,
+   "e": 237.199,
+   "chunk": "r3",
+   "id": "woman"
+  },
+  {
+   "kind": "narr",
+   "text": "Her voice comes out of my radio. And out of Marcus's radio, one second later.",
+   "s": 237.899,
+   "e": 244.189,
+   "chunk": "c40"
+  },
+  {
+   "kind": "narr",
+   "text": "Every head in the hallway turns toward my gate.",
+   "s": 244.789,
+   "e": 248.462,
+   "chunk": "c41"
+  },
+  {
+   "kind": "narr",
+   "text": "That was hour one.",
+   "s": 249.862,
+   "e": 251.976,
+   "chunk": "c42"
+  },
+  {
+   "kind": "narr",
+   "text": "I'd spend the next thirty days locked inside this mall.",
+   "s": 252.676,
+   "e": 256.634,
+   "chunk": "c43"
+  },
+  {
+   "kind": "narr",
+   "text": "And the woman on the radio would turn out to be the most dangerous person in it.",
+   "s": 257.234,
+   "e": 261.176,
+   "chunk": "c44"
+  }
+ ]
+}

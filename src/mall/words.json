@@ -1,2715 +1,3866 @@
 {
-"duration": 155.86,
+"duration": 262.876,
 "segments": [
 {
 "kind": "narr",
-"text": "My job is walking in circles.",
-"s": 0.35,
-"e": 2.346
+"text": "The dead man pressing his face against my gate used to be my best friend.",
+"s": 0.3,
+"e": 7.192,
+"chunk": "c01"
 },
 {
 "kind": "narr",
-"text": "Eleven at night to seven in the morning, I walk the same loop around Maplecrest Mall. I rattle the same steel gates. I tell the same two teenagers to get off the escalator. Nothing ever happens here. That's kind of the point.",
-"s": 2.796,
-"e": 17.305
+"text": "In about ten seconds, the radio clipped to his chest is going to crackle... and tell every one of them exactly where I'm hiding.",
+"s": 7.792,
+"e": 15.954,
+"chunk": "c02"
 },
 {
 "kind": "narr",
-"text": "I carry three things. A flashlight. A radio that talks to Marcus, the other night guard, down in the parking garage. And a ring of forty-two keys. One for every store in the building.",
-"s": 17.755,
-"e": 30.14
+"text": "One hour ago, I was the king of this mall. I had every key.",
+"s": 16.854,
+"e": 21.317,
+"chunk": "c03"
 },
 {
 "kind": "narr",
-"text": "At one forty in the morning, Marcus calls me.",
-"s": 30.59,
-"e": 33.268
+"text": "Let me back up.",
+"s": 21.917,
+"e": 24.801,
+"chunk": "c04"
+},
+{
+"kind": "narr",
+"text": "My name is Danny Ruiz. I'm the night security guard at Maplecrest Mall. And yes, I've heard every mall cop joke there is.",
+"s": 26.401,
+"e": 33.669,
+"chunk": "c05"
+},
+{
+"kind": "narr",
+"text": "I took the night shift for one reason. It means I'm home every afternoon when my daughter Lily gets off the school bus.",
+"s": 34.219,
+"e": 40.709,
+"chunk": "c06"
+},
+{
+"kind": "narr",
+"text": "She's seven. She thinks I'm the king of the mall. Because I have these.",
+"s": 41.209,
+"e": 46.15,
+"chunk": "c07"
+},
+{
+"kind": "narr",
+"text": "Forty-two keys. One for every single store.",
+"s": 46.6,
+"e": 50.668,
+"chunk": "c08"
+},
+{
+"kind": "narr",
+"text": "Every night, I walk the same loop. I rattle the same gates. And at one a.m., Marcus calls me from the parking garage to tell me a terrible joke.",
+"s": 51.218,
+"e": 59.92,
+"chunk": "c09"
+},
+{
+"kind": "narr",
+"text": "Marcus is twenty-two. He's studying to be a nurse. He still owes me twenty bucks.",
+"s": 60.42,
+"e": 66.343,
+"chunk": "c10"
+},
+{
+"kind": "narr",
+"text": "Tonight, he didn't tell a joke.",
+"s": 67.043,
+"e": 68.96,
+"chunk": "c11"
 },
 {
 "kind": "radio",
-"id": "marcus1",
-"text": "Hey, there's a guy walking up the ramp. He's walking... weird.",
-"s": 33.818,
-"e": 36.679
+"text": "Danny. There's a guy coming up the ramp. He's walking... wrong.",
+"s": 69.56,
+"e": 75.616,
+"chunk": "r1",
+"id": "marcus1"
 },
 {
 "kind": "narr",
-"text": "Then I hear him say...",
-"s": 37.279,
-"e": 38.56
+"text": "Marcus doesn't know how to whisper. But he's whispering.",
+"s": 76.216,
+"e": 80.16,
+"chunk": "c12"
 },
 {
 "kind": "radio",
-"id": "marcus2",
-"text": "Sir? ... You okay?",
-"s": 39.11,
-"e": 40.053
+"text": "Sir? Sir, are you okay? You're bleeding...",
+"s": 80.66,
+"e": 84.431,
+"chunk": "r2",
+"id": "marcus2"
 },
 {
 "kind": "narr",
-"text": "Then nothing.",
-"s": 40.653,
-"e": 41.485
+"text": "Then the radio does something I've never heard it do. It goes completely silent.",
+"s": 85.131,
+"e": 91.238,
+"chunk": "c13"
 },
 {
 "kind": "narr",
-"text": "I check the cameras. Garage, level two. Marcus is on the ground. The guy is on top of him. And behind them, more people are coming up the ramp. Six. Ten. I stop counting.",
-"s": 42.335,
-"e": 54.169
+"text": "I run to the cameras. Garage, level two.",
+"s": 92.038,
+"e": 95.419,
+"chunk": "c14"
 },
 {
 "kind": "narr",
-"text": "They're heading for the food court doors.",
-"s": 54.619,
-"e": 56.614
+"text": "Marcus is on the ground. The man is on top of him.",
+"s": 95.919,
+"e": 101.095,
+"chunk": "c15"
 },
 {
 "kind": "narr",
-"text": "Here's the thing nobody tells you about malls. They're made of glass. Glass doors. Glass walls. Glass ceilings. A mall is built for one thing: letting people in.",
-"s": 57.064,
-"e": 67.605
+"text": "And behind them, the ramp is filling up. Six. Ten. Thirty.",
+"s": 101.645,
+"e": 107.555,
+"chunk": "c16"
 },
 {
 "kind": "narr",
-"text": "Tonight, I need the opposite.",
-"s": 68.055,
-"e": 69.723
+"text": "They're not running. They don't need to.",
+"s": 108.105,
+"e": 111.543,
+"chunk": "c17"
 },
 {
 "kind": "narr",
-"text": "But a mall has something your house doesn't. Every store has a steel security gate. Pull it down, lock it, and that store becomes a vault.",
-"s": 70.173,
-"e": 79.205
+"text": "Every one of them is walking toward the same place. The food court.",
+"s": 112.043,
+"e": 117.496,
+"chunk": "c18"
 },
 {
 "kind": "narr",
-"text": "So I don't need to save the whole mall. I just need to pick one store.",
-"s": 79.655,
-"e": 83.682
+"text": "And the food court is made of glass.",
+"s": 117.896,
+"e": 120.871,
+"chunk": "c19"
 },
 {
 "kind": "narr",
-"text": "I run my loop. The same loop I've walked a thousand times. But this time, I'm shopping.",
-"s": 84.132,
-"e": 89.763
+"text": "Here's what nobody tells you about malls. They're built to let people in. Glass doors. Glass walls. Glass ceilings.",
+"s": 121.871,
+"e": 130.087,
+"chunk": "c20"
 },
 {
 "kind": "narr",
-"text": "The pharmacy has medicine. But the whole front is glass.",
-"s": 90.213,
-"e": 93.733
+"text": "That's great on Black Friday. Tonight, it's a death trap.",
+"s": 130.587,
+"e": 136.069,
+"chunk": "c21"
 },
 {
 "kind": "narr",
-"text": "The food court has a freezer full of food. But that's exactly where they're coming in.",
-"s": 94.183,
-"e": 99.122
+"text": "But I know something they don't.",
+"s": 136.669,
+"e": 139.194,
+"chunk": "c22"
 },
 {
 "kind": "narr",
-"text": "The department store has beds and a second floor. But it's huge. Too many doors to watch.",
-"s": 99.572,
-"e": 105.492
+"text": "Every store in this mall has a steel security gate. Pull it down, lock it, and that store becomes a vault.",
+"s": 139.694,
+"e": 147.159,
+"chunk": "c23"
 },
 {
 "kind": "narr",
-"text": "And the sporting goods store has tents, water filters, and aluminum bats. And only one way in.",
-"s": 105.942,
-"e": 112.061
+"text": "I can't save the whole mall. But I can pick one store.",
+"s": 147.659,
+"e": 151.606,
+"chunk": "c24"
 },
 {
 "kind": "narr",
-"text": "Behind me, I hear the food court doors shatter.",
-"s": 112.511,
-"e": 115.283
+"text": "And I have about four minutes before that glass gives out.",
+"s": 152.006,
+"e": 156.9,
+"chunk": "c25"
 },
 {
 "kind": "narr",
-"text": "I slide under the gate, yank it down, and lock it. Then I sit in the dark between the tents and the treadmills, and I try not to breathe.",
-"s": 115.733,
-"e": 124.3
+"text": "So I run. The same loop I've walked a thousand times. Except tonight, I'm shopping for my life.",
+"s": 157.8,
+"e": 164.121,
+"chunk": "c26"
+},
+{
+"kind": "narr",
+"text": "The pharmacy has medicine. But the whole front is glass. One crack, and I'm done.",
+"s": 164.571,
+"e": 170.953,
+"chunk": "c27"
+},
+{
+"kind": "narr",
+"text": "The food court has a freezer full of food. That's exactly why they're going there.",
+"s": 171.403,
+"e": 176.09,
+"chunk": "c28"
+},
+{
+"kind": "narr",
+"text": "The department store has beds, a second floor, and nine different entrances. I can't guard nine doors. I can barely guard one.",
+"s": 176.54,
+"e": 184.655,
+"chunk": "c29"
+},
+{
+"kind": "narr",
+"text": "And then there's the sporting goods store. Tents. Water filters. Aluminum bats.",
+"s": 185.155,
+"e": 191.147,
+"chunk": "c30"
+},
+{
+"kind": "narr",
+"text": "And only one way in.",
+"s": 191.547,
+"e": 193.049,
+"chunk": "c31"
+},
+{
+"kind": "narr",
+"text": "Behind me, the food court doors explode.",
+"s": 193.949,
+"e": 197.574,
+"chunk": "c32"
+},
+{
+"kind": "narr",
+"text": "I slide under the gate. Yank it down. Lock it with key number thirty-one.",
+"s": 198.074,
+"e": 207.215,
+"chunk": "c33"
+},
+{
+"kind": "narr",
+"text": "Then I sit in the dark between the tents and the treadmills, with my hand over my mouth, thinking about Lily getting off that bus tomorrow.",
+"s": 207.915,
+"e": 216.134,
+"chunk": "c34"
 },
 {
 "kind": "narr",
 "text": "Footsteps. Dozens of them. Shuffling past the gate.",
-"s": 124.75,
-"e": 127.935
+"s": 216.934,
+"e": 221.087,
+"chunk": "c35"
 },
 {
 "kind": "narr",
-"text": "One of them stops. It presses its face against the steel and stares right at me.",
-"s": 128.385,
-"e": 133.152
+"text": "One of them stops.",
+"s": 221.687,
+"e": 222.882,
+"chunk": "c36"
 },
 {
 "kind": "narr",
-"text": "It's Marcus. He's still wearing his radio.",
-"s": 133.602,
-"e": 136.303
+"text": "It's Marcus.",
+"s": 223.582,
+"e": 224.62,
+"chunk": "c37"
 },
 {
 "kind": "narr",
-"text": "Then mine crackles.",
-"s": 136.753,
-"e": 138.045
+"text": "He's still wearing his radio.",
+"s": 225.22,
+"e": 226.949,
+"chunk": "c38"
+},
+{
+"kind": "narr",
+"text": "And that's when mine crackles.",
+"s": 227.549,
+"e": 229.208,
+"chunk": "c39"
 },
 {
 "kind": "radio",
-"id": "woman",
-"text": "Is anyone still in the mall? ... I'm in the department store. Second floor. ... Please.",
-"s": 138.595,
-"e": 143.357
+"text": "Is anyone still in the mall? I'm on the second floor of the department store... Please. I'm not alone up here.",
+"s": 229.808,
+"e": 237.199,
+"chunk": "r3",
+"id": "woman"
 },
 {
 "kind": "narr",
 "text": "Her voice comes out of my radio. And out of Marcus's radio, one second later.",
-"s": 143.957,
-"e": 149.332
+"s": 237.899,
+"e": 244.189,
+"chunk": "c40"
 },
 {
 "kind": "narr",
 "text": "Every head in the hallway turns toward my gate.",
-"s": 149.782,
-"e": 152.208
+"s": 244.789,
+"e": 248.462,
+"chunk": "c41"
 },
 {
 "kind": "narr",
 "text": "That was hour one.",
-"s": 152.658,
-"e": 153.81
+"s": 249.862,
+"e": 251.976,
+"chunk": "c42"
+},
+{
+"kind": "narr",
+"text": "I'd spend the next thirty days locked inside this mall.",
+"s": 252.676,
+"e": 256.634,
+"chunk": "c43"
+},
+{
+"kind": "narr",
+"text": "And the woman on the radio would turn out to be the most dangerous person in it.",
+"s": 257.234,
+"e": 261.176,
+"chunk": "c44"
 }
 ],
 "words": [
 {
-"w": "My",
-"s": 0.0,
-"e": 0.5,
+"w": "The",
+"s": 1.44,
+"e": 2.04,
 "g": "narr"
 },
 {
-"w": "job",
-"s": 0.5,
-"e": 0.84,
+"w": "dead",
+"s": 2.04,
+"e": 2.36,
 "g": "narr"
 },
 {
-"w": "is",
-"s": 0.84,
-"e": 1.08,
+"w": "man,",
+"s": 2.36,
+"e": 2.78,
 "g": "narr"
 },
 {
-"w": "walking",
-"s": 1.08,
-"e": 1.46,
+"w": "pressing",
+"s": 3.5,
+"e": 3.6,
 "g": "narr"
 },
 {
-"w": "in",
-"s": 1.46,
-"e": 1.72,
+"w": "his",
+"s": 3.6,
+"e": 3.92,
 "g": "narr"
 },
 {
-"w": "circles.",
-"s": 1.72,
-"e": 2.22,
+"w": "face",
+"s": 3.92,
+"e": 4.14,
 "g": "narr"
 },
 {
-"w": "Eleven",
-"s": 3.02,
-"e": 3.06,
-"g": "narr"
-},
-{
-"w": "at",
-"s": 3.06,
-"e": 3.34,
-"g": "narr"
-},
-{
-"w": "night",
-"s": 3.34,
-"e": 3.56,
-"g": "narr"
-},
-{
-"w": "to",
-"s": 3.56,
-"e": 3.74,
-"g": "narr"
-},
-{
-"w": "seven",
-"s": 3.74,
-"e": 4.04,
-"g": "narr"
-},
-{
-"w": "in",
-"s": 4.04,
-"e": 4.28,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 4.28,
+"w": "against",
+"s": 4.14,
 "e": 4.4,
 "g": "narr"
 },
 {
-"w": "morning,",
+"w": "my",
 "s": 4.4,
-"e": 4.72,
+"e": 4.7,
 "g": "narr"
 },
 {
-"w": "I",
-"s": 4.96,
-"e": 5.08,
+"w": "gate,",
+"s": 4.7,
+"e": 5.06,
 "g": "narr"
 },
 {
-"w": "walk",
-"s": 5.08,
-"e": 5.26,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 5.26,
-"e": 5.5,
-"g": "narr"
-},
-{
-"w": "same",
-"s": 5.5,
-"e": 5.8,
-"g": "narr"
-},
-{
-"w": "loop",
-"s": 5.8,
-"e": 6.1,
-"g": "narr"
-},
-{
-"w": "around",
-"s": 6.1,
-"e": 6.46,
-"g": "narr"
-},
-{
-"w": "Maplecrest",
-"s": 6.46,
-"e": 7.22,
-"g": "narr"
-},
-{
-"w": "Mall.",
-"s": 7.22,
-"e": 7.58,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 8.14,
-"e": 8.34,
-"g": "narr"
-},
-{
-"w": "rattle",
-"s": 8.34,
-"e": 8.66,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 8.66,
-"e": 8.9,
-"g": "narr"
-},
-{
-"w": "same",
-"s": 8.9,
-"e": 9.22,
-"g": "narr"
-},
-{
-"w": "steel",
-"s": 9.22,
-"e": 9.64,
-"g": "narr"
-},
-{
-"w": "gates.",
-"s": 9.64,
-"e": 10.06,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 10.62,
-"e": 10.8,
-"g": "narr"
-},
-{
-"w": "tell",
-"s": 10.8,
-"e": 11.02,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 11.02,
-"e": 11.24,
-"g": "narr"
-},
-{
-"w": "same",
-"s": 11.24,
-"e": 11.5,
-"g": "narr"
-},
-{
-"w": "two",
-"s": 11.5,
-"e": 11.84,
-"g": "narr"
-},
-{
-"w": "teenagers",
-"s": 11.84,
-"e": 12.34,
+"w": "used",
+"s": 5.58,
+"e": 6.02,
 "g": "narr"
 },
 {
 "w": "to",
-"s": 12.34,
-"e": 12.68,
+"s": 6.02,
+"e": 6.2,
 "g": "narr"
 },
 {
-"w": "get",
-"s": 12.68,
-"e": 12.82,
-"g": "narr"
-},
-{
-"w": "off",
-"s": 12.82,
-"e": 13.0,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 13.0,
-"e": 13.18,
-"g": "narr"
-},
-{
-"w": "escalator.",
-"s": 13.18,
-"e": 13.88,
-"g": "narr"
-},
-{
-"w": "Nothing",
-"s": 14.44,
-"e": 14.64,
-"g": "narr"
-},
-{
-"w": "ever",
-"s": 14.64,
-"e": 14.96,
-"g": "narr"
-},
-{
-"w": "happens",
-"s": 14.96,
-"e": 15.36,
-"g": "narr"
-},
-{
-"w": "here.",
-"s": 15.36,
-"e": 15.8,
-"g": "narr"
-},
-{
-"w": "That's",
-"s": 16.12,
-"e": 16.42,
-"g": "narr"
-},
-{
-"w": "kind",
-"s": 16.42,
-"e": 16.6,
-"g": "narr"
-},
-{
-"w": "of",
-"s": 16.6,
-"e": 16.74,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 16.74,
-"e": 16.84,
-"g": "narr"
-},
-{
-"w": "point.",
-"s": 16.84,
-"e": 17.14,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 17.7,
-"e": 17.88,
-"g": "narr"
-},
-{
-"w": "carry",
-"s": 17.88,
-"e": 18.16,
-"g": "narr"
-},
-{
-"w": "three",
-"s": 18.16,
-"e": 18.48,
-"g": "narr"
-},
-{
-"w": "things.",
-"s": 18.48,
-"e": 19.04,
-"g": "narr"
-},
-{
-"w": "A",
-"s": 19.42,
-"e": 19.58,
-"g": "narr"
-},
-{
-"w": "flashlight.",
-"s": 19.58,
-"e": 20.1,
-"g": "narr"
-},
-{
-"w": "A",
-"s": 20.74,
-"e": 20.88,
-"g": "narr"
-},
-{
-"w": "radio",
-"s": 20.88,
-"e": 21.24,
-"g": "narr"
-},
-{
-"w": "that",
-"s": 21.24,
-"e": 21.58,
-"g": "narr"
-},
-{
-"w": "talks",
-"s": 21.58,
-"e": 21.88,
-"g": "narr"
-},
-{
-"w": "to",
-"s": 21.88,
-"e": 22.18,
-"g": "narr"
-},
-{
-"w": "Marcus,",
-"s": 22.18,
-"e": 22.56,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 22.82,
-"e": 22.86,
-"g": "narr"
-},
-{
-"w": "other",
-"s": 22.86,
-"e": 23.08,
-"g": "narr"
-},
-{
-"w": "night",
-"s": 23.08,
-"e": 23.36,
-"g": "narr"
-},
-{
-"w": "guard",
-"s": 23.36,
-"e": 23.7,
-"g": "narr"
-},
-{
-"w": "down",
-"s": 23.7,
-"e": 24.16,
-"g": "narr"
-},
-{
-"w": "in",
-"s": 24.16,
-"e": 24.36,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 24.36,
-"e": 24.48,
-"g": "narr"
-},
-{
-"w": "parking",
-"s": 24.48,
-"e": 24.78,
-"g": "narr"
-},
-{
-"w": "garage.",
-"s": 24.78,
-"e": 25.3,
-"g": "narr"
-},
-{
-"w": "And",
-"s": 25.3,
-"e": 25.96,
-"g": "narr"
-},
-{
-"w": "a",
-"s": 25.96,
-"e": 26.06,
-"g": "narr"
-},
-{
-"w": "ring",
-"s": 26.06,
-"e": 26.3,
-"g": "narr"
-},
-{
-"w": "of",
-"s": 26.3,
-"e": 26.48,
-"g": "narr"
-},
-{
-"w": "forty",
-"s": 26.48,
-"e": 26.88,
-"g": "narr"
-},
-{
-"w": "-two",
-"s": 26.88,
-"e": 27.24,
-"g": "narr"
-},
-{
-"w": "keys.",
-"s": 27.24,
-"e": 27.76,
-"g": "narr"
-},
-{
-"w": "One",
-"s": 28.24,
-"e": 28.44,
-"g": "narr"
-},
-{
-"w": "for",
-"s": 28.44,
-"e": 28.64,
-"g": "narr"
-},
-{
-"w": "every",
-"s": 28.64,
-"e": 28.98,
-"g": "narr"
-},
-{
-"w": "store",
-"s": 28.98,
-"e": 29.36,
-"g": "narr"
-},
-{
-"w": "in",
-"s": 29.36,
-"e": 29.6,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 29.6,
-"e": 29.72,
-"g": "narr"
-},
-{
-"w": "building.",
-"s": 29.72,
-"e": 30.04,
-"g": "narr"
-},
-{
-"w": "At",
-"s": 30.64,
-"e": 30.7,
-"g": "narr"
-},
-{
-"w": "one",
-"s": 30.7,
-"e": 31.0,
-"g": "narr"
-},
-{
-"w": "forty",
-"s": 31.0,
-"e": 31.24,
-"g": "narr"
-},
-{
-"w": "in",
-"s": 31.24,
-"e": 31.42,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 31.42,
-"e": 31.54,
-"g": "narr"
-},
-{
-"w": "morning,",
-"s": 31.54,
-"e": 31.92,
-"g": "narr"
-},
-{
-"w": "Marcus",
-"s": 32.38,
-"e": 32.5,
-"g": "narr"
-},
-{
-"w": "calls",
-"s": 32.5,
-"e": 32.88,
-"g": "narr"
-},
-{
-"w": "me.",
-"s": 32.88,
-"e": 33.32,
-"g": "narr"
-},
-{
-"w": "Hey,",
-"s": 33.84,
-"e": 33.94,
-"g": "marcus1"
-},
-{
-"w": "there's",
-"s": 34.02,
-"e": 34.16,
-"g": "marcus1"
-},
-{
-"w": "a",
-"s": 34.16,
-"e": 34.3,
-"g": "marcus1"
-},
-{
-"w": "guy",
-"s": 34.3,
-"e": 34.46,
-"g": "marcus1"
-},
-{
-"w": "walking",
-"s": 34.46,
-"e": 34.76,
-"g": "marcus1"
-},
-{
-"w": "up",
-"s": 34.76,
-"e": 34.94,
-"g": "marcus1"
-},
-{
-"w": "the",
-"s": 34.94,
-"e": 35.06,
-"g": "marcus1"
-},
-{
-"w": "ramp.",
-"s": 35.06,
-"e": 35.24,
-"g": "marcus1"
-},
-{
-"w": "He's",
-"s": 35.42,
-"e": 35.54,
-"g": "marcus1"
-},
-{
-"w": "walking",
-"s": 35.54,
-"e": 35.86,
-"g": "marcus1"
-},
-{
-"w": "weird.",
-"s": 35.86,
-"e": 36.46,
-"g": "marcus1"
-},
-{
-"w": "Then",
-"s": 37.42,
-"e": 37.46,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 37.46,
-"e": 37.66,
-"g": "narr"
-},
-{
-"w": "hear",
-"s": 37.66,
-"e": 37.86,
-"g": "narr"
-},
-{
-"w": "him",
-"s": 37.86,
-"e": 38.06,
-"g": "narr"
-},
-{
-"w": "say.",
-"s": 38.06,
-"e": 38.4,
-"g": "narr"
-},
-{
-"w": "Sir,",
-"s": 39.26,
-"e": 39.26,
-"g": "marcus2"
-},
-{
-"w": "are",
-"s": 39.36,
-"e": 39.4,
-"g": "marcus2"
-},
-{
-"w": "you",
-"s": 39.4,
-"e": 39.52,
-"g": "marcus2"
-},
-{
-"w": "okay?",
-"s": 39.52,
-"e": 39.84,
-"g": "marcus2"
-},
-{
-"w": "Then",
-"s": 40.66,
-"e": 40.88,
-"g": "narr"
-},
-{
-"w": "nothing.",
-"s": 40.88,
-"e": 41.3,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 42.2,
-"e": 42.46,
-"g": "narr"
-},
-{
-"w": "check",
-"s": 42.46,
-"e": 42.68,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 42.68,
-"e": 42.9,
-"g": "narr"
-},
-{
-"w": "cameras.",
-"s": 42.9,
-"e": 43.3,
-"g": "narr"
-},
-{
-"w": "Garage",
-"s": 44.16,
-"e": 44.16,
-"g": "narr"
-},
-{
-"w": "level",
-"s": 44.16,
-"e": 44.46,
-"g": "narr"
-},
-{
-"w": "two.",
-"s": 44.46,
-"e": 44.92,
-"g": "narr"
-},
-{
-"w": "Marcus",
-"s": 45.52,
-"e": 45.82,
-"g": "narr"
-},
-{
-"w": "is",
-"s": 45.82,
-"e": 46.06,
-"g": "narr"
-},
-{
-"w": "on",
-"s": 46.06,
-"e": 46.22,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 46.22,
-"e": 46.36,
-"g": "narr"
-},
-{
-"w": "ground.",
-"s": 46.36,
-"e": 46.7,
-"g": "narr"
-},
-{
-"w": "The",
-"s": 47.14,
-"e": 47.36,
-"g": "narr"
-},
-{
-"w": "guy",
-"s": 47.36,
-"e": 47.64,
-"g": "narr"
-},
-{
-"w": "is",
-"s": 47.64,
-"e": 47.86,
-"g": "narr"
-},
-{
-"w": "on",
-"s": 47.86,
-"e": 48.06,
-"g": "narr"
-},
-{
-"w": "top",
-"s": 48.06,
-"e": 48.32,
-"g": "narr"
-},
-{
-"w": "of",
-"s": 48.32,
-"e": 48.5,
-"g": "narr"
-},
-{
-"w": "him",
-"s": 48.5,
-"e": 48.68,
-"g": "narr"
-},
-{
-"w": "and",
-"s": 48.68,
-"e": 48.86,
-"g": "narr"
-},
-{
-"w": "behind",
-"s": 48.86,
-"e": 49.22,
-"g": "narr"
-},
-{
-"w": "them",
-"s": 49.22,
-"e": 49.48,
-"g": "narr"
-},
-{
-"w": "more",
-"s": 49.48,
-"e": 49.72,
-"g": "narr"
-},
-{
-"w": "people",
-"s": 49.72,
-"e": 50.02,
-"g": "narr"
-},
-{
-"w": "are",
-"s": 50.02,
-"e": 50.26,
-"g": "narr"
-},
-{
-"w": "coming",
-"s": 50.26,
-"e": 50.48,
-"g": "narr"
-},
-{
-"w": "up",
-"s": 50.48,
-"e": 50.7,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 50.7,
-"e": 50.84,
-"g": "narr"
-},
-{
-"w": "ramp.",
-"s": 50.84,
-"e": 51.22,
-"g": "narr"
-},
-{
-"w": "Six.",
-"s": 51.46,
-"e": 51.82,
-"g": "narr"
-},
-{
-"w": "Ten.",
-"s": 52.26,
-"e": 52.52,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 53.0,
-"e": 53.14,
-"g": "narr"
-},
-{
-"w": "stop",
-"s": 53.14,
-"e": 53.46,
-"g": "narr"
-},
-{
-"w": "counting.",
-"s": 53.46,
-"e": 54.04,
-"g": "narr"
-},
-{
-"w": "They",
-"s": 54.6,
-"e": 54.74,
-"g": "narr"
-},
-{
-"w": "are",
-"s": 54.74,
-"e": 54.84,
-"g": "narr"
-},
-{
-"w": "heading",
-"s": 54.84,
-"e": 55.06,
-"g": "narr"
-},
-{
-"w": "for",
-"s": 55.06,
-"e": 55.32,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 55.32,
-"e": 55.46,
-"g": "narr"
-},
-{
-"w": "food",
-"s": 55.46,
-"e": 55.72,
-"g": "narr"
-},
-{
-"w": "court",
-"s": 55.72,
-"e": 56.0,
-"g": "narr"
-},
-{
-"w": "doors.",
-"s": 56.0,
-"e": 56.48,
-"g": "narr"
-},
-{
-"w": "Here's",
-"s": 57.1,
-"e": 57.36,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 57.36,
-"e": 57.5,
-"g": "narr"
-},
-{
-"w": "thing",
-"s": 57.5,
-"e": 57.66,
-"g": "narr"
-},
-{
-"w": "nobody",
-"s": 57.66,
-"e": 58.06,
-"g": "narr"
-},
-{
-"w": "tells",
-"s": 58.06,
-"e": 58.42,
-"g": "narr"
-},
-{
-"w": "you",
-"s": 58.42,
-"e": 58.68,
-"g": "narr"
-},
-{
-"w": "about",
-"s": 58.68,
-"e": 58.98,
-"g": "narr"
-},
-{
-"w": "malls.",
-"s": 58.98,
-"e": 59.34,
-"g": "narr"
-},
-{
-"w": "They're",
-"s": 59.98,
-"e": 60.18,
-"g": "narr"
-},
-{
-"w": "made",
-"s": 60.18,
-"e": 60.34,
-"g": "narr"
-},
-{
-"w": "of",
-"s": 60.34,
-"e": 60.54,
-"g": "narr"
-},
-{
-"w": "glass.",
-"s": 60.54,
-"e": 60.9,
-"g": "narr"
-},
-{
-"w": "Glass",
-"s": 61.42,
-"e": 61.64,
-"g": "narr"
-},
-{
-"w": "doors.",
-"s": 61.64,
-"e": 62.1,
-"g": "narr"
-},
-{
-"w": "Glass",
-"s": 62.46,
-"e": 62.62,
-"g": "narr"
-},
-{
-"w": "walls.",
-"s": 62.62,
-"e": 63.1,
-"g": "narr"
-},
-{
-"w": "Glass",
-"s": 63.44,
-"e": 63.62,
-"g": "narr"
-},
-{
-"w": "ceilings.",
-"s": 63.62,
-"e": 64.06,
-"g": "narr"
-},
-{
-"w": "A",
-"s": 64.88,
-"e": 65.0,
-"g": "narr"
-},
-{
-"w": "mall",
-"s": 65.0,
-"e": 65.24,
-"g": "narr"
-},
-{
-"w": "is",
-"s": 65.24,
-"e": 65.5,
-"g": "narr"
-},
-{
-"w": "built",
-"s": 65.5,
-"e": 65.72,
-"g": "narr"
-},
-{
-"w": "for",
-"s": 65.72,
-"e": 66.0,
-"g": "narr"
-},
-{
-"w": "one",
-"s": 66.0,
-"e": 66.24,
-"g": "narr"
-},
-{
-"w": "thing",
-"s": 66.24,
-"e": 66.56,
-"g": "narr"
-},
-{
-"w": "letting",
-"s": 66.56,
-"e": 66.86,
-"g": "narr"
-},
-{
-"w": "people",
-"s": 66.86,
-"e": 67.24,
-"g": "narr"
-},
-{
-"w": "in.",
-"s": 67.24,
-"e": 67.58,
-"g": "narr"
-},
-{
-"w": "Tonight,",
-"s": 68.06,
-"e": 68.36,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 68.62,
-"e": 68.76,
-"g": "narr"
-},
-{
-"w": "need",
-"s": 68.76,
-"e": 68.94,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 68.94,
-"e": 69.14,
-"g": "narr"
-},
-{
-"w": "opposite.",
-"s": 69.14,
-"e": 69.52,
-"g": "narr"
-},
-{
-"w": "But",
-"s": 70.14,
-"e": 70.28,
-"g": "narr"
-},
-{
-"w": "a",
-"s": 70.28,
-"e": 70.4,
-"g": "narr"
-},
-{
-"w": "mall",
-"s": 70.4,
-"e": 70.66,
-"g": "narr"
-},
-{
-"w": "has",
-"s": 70.66,
-"e": 70.86,
-"g": "narr"
-},
-{
-"w": "something",
-"s": 70.86,
-"e": 71.22,
-"g": "narr"
-},
-{
-"w": "your",
-"s": 71.22,
-"e": 71.5,
-"g": "narr"
-},
-{
-"w": "house",
-"s": 71.5,
-"e": 71.82,
-"g": "narr"
-},
-{
-"w": "doesn't.",
-"s": 71.82,
-"e": 72.3,
-"g": "narr"
-},
-{
-"w": "Every",
-"s": 72.78,
-"e": 73.1,
-"g": "narr"
-},
-{
-"w": "store",
-"s": 73.1,
-"e": 73.48,
-"g": "narr"
-},
-{
-"w": "has",
-"s": 73.48,
-"e": 73.74,
-"g": "narr"
-},
-{
-"w": "a",
-"s": 73.74,
-"e": 74.08,
-"g": "narr"
-},
-{
-"w": "steel",
-"s": 74.08,
-"e": 74.3,
-"g": "narr"
-},
-{
-"w": "security",
-"s": 74.3,
-"e": 74.94,
-"g": "narr"
-},
-{
-"w": "gate.",
-"s": 74.94,
-"e": 75.32,
-"g": "narr"
-},
-{
-"w": "Pull",
-"s": 75.84,
-"e": 76.02,
-"g": "narr"
-},
-{
-"w": "it",
-"s": 76.02,
-"e": 76.16,
-"g": "narr"
-},
-{
-"w": "down,",
-"s": 76.16,
-"e": 76.58,
-"g": "narr"
-},
-{
-"w": "lock",
-"s": 76.78,
-"e": 76.96,
-"g": "narr"
-},
-{
-"w": "it,",
-"s": 76.96,
-"e": 77.2,
-"g": "narr"
-},
-{
-"w": "and",
-"s": 77.42,
-"e": 77.54,
-"g": "narr"
-},
-{
-"w": "that",
-"s": 77.54,
-"e": 77.72,
-"g": "narr"
-},
-{
-"w": "store",
-"s": 77.72,
-"e": 78.06,
-"g": "narr"
-},
-{
-"w": "becomes",
-"s": 78.06,
-"e": 78.54,
-"g": "narr"
-},
-{
-"w": "a",
-"s": 78.54,
-"e": 78.74,
-"g": "narr"
-},
-{
-"w": "vault.",
-"s": 78.74,
-"e": 79.02,
-"g": "narr"
-},
-{
-"w": "So",
-"s": 79.56,
-"e": 79.8,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 79.8,
-"e": 79.94,
-"g": "narr"
-},
-{
-"w": "don't",
-"s": 79.94,
-"e": 80.08,
-"g": "narr"
-},
-{
-"w": "need",
-"s": 80.08,
-"e": 80.28,
-"g": "narr"
-},
-{
-"w": "to",
-"s": 80.28,
-"e": 80.46,
-"g": "narr"
-},
-{
-"w": "save",
-"s": 80.46,
-"e": 80.68,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 80.68,
-"e": 80.88,
-"g": "narr"
-},
-{
-"w": "whole",
-"s": 80.88,
-"e": 81.14,
-"g": "narr"
-},
-{
-"w": "mall.",
-"s": 81.14,
-"e": 81.46,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 81.9,
-"e": 82.12,
-"g": "narr"
-},
-{
-"w": "just",
-"s": 82.12,
-"e": 82.32,
-"g": "narr"
-},
-{
-"w": "need",
-"s": 82.32,
-"e": 82.56,
-"g": "narr"
-},
-{
-"w": "to",
-"s": 82.56,
-"e": 82.74,
-"g": "narr"
-},
-{
-"w": "pick",
-"s": 82.74,
-"e": 82.88,
-"g": "narr"
-},
-{
-"w": "one",
-"s": 82.88,
-"e": 83.12,
-"g": "narr"
-},
-{
-"w": "store.",
-"s": 83.12,
-"e": 83.56,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 84.1,
-"e": 84.26,
-"g": "narr"
-},
-{
-"w": "run",
-"s": 84.26,
-"e": 84.48,
+"w": "be",
+"s": 6.2,
+"e": 6.3,
 "g": "narr"
 },
 {
 "w": "my",
-"s": 84.48,
-"e": 84.76,
+"s": 6.3,
+"e": 6.48,
 "g": "narr"
 },
 {
-"w": "loop.",
-"s": 84.76,
-"e": 84.98,
+"w": "best",
+"s": 6.48,
+"e": 6.78,
 "g": "narr"
 },
 {
-"w": "The",
-"s": 85.38,
-"e": 85.54,
+"w": "friend.",
+"s": 6.78,
+"e": 7.16,
 "g": "narr"
 },
 {
-"w": "same",
-"s": 85.54,
-"e": 85.82,
+"w": "In",
+"s": 8.0,
+"e": 8.2,
 "g": "narr"
 },
 {
-"w": "loop",
-"s": 85.82,
-"e": 86.12,
+"w": "about",
+"s": 8.2,
+"e": 8.46,
 "g": "narr"
 },
 {
-"w": "I've",
-"s": 86.12,
-"e": 86.38,
+"w": "ten",
+"s": 8.46,
+"e": 8.82,
 "g": "narr"
 },
 {
-"w": "walked",
-"s": 86.38,
-"e": 86.6,
-"g": "narr"
-},
-{
-"w": "a",
-"s": 86.6,
-"e": 86.8,
-"g": "narr"
-},
-{
-"w": "thousand",
-"s": 86.8,
-"e": 87.14,
-"g": "narr"
-},
-{
-"w": "times.",
-"s": 87.14,
-"e": 87.68,
-"g": "narr"
-},
-{
-"w": "But",
-"s": 88.12,
-"e": 88.28,
-"g": "narr"
-},
-{
-"w": "this",
-"s": 88.28,
-"e": 88.48,
-"g": "narr"
-},
-{
-"w": "time,",
-"s": 88.48,
-"e": 88.88,
-"g": "narr"
-},
-{
-"w": "I'm",
-"s": 88.94,
-"e": 89.24,
-"g": "narr"
-},
-{
-"w": "shopping.",
-"s": 89.24,
-"e": 89.6,
-"g": "narr"
-},
-{
-"w": "The",
-"s": 90.14,
-"e": 90.34,
-"g": "narr"
-},
-{
-"w": "pharmacy",
-"s": 90.34,
-"e": 90.7,
-"g": "narr"
-},
-{
-"w": "has",
-"s": 90.7,
-"e": 91.08,
-"g": "narr"
-},
-{
-"w": "medicine.",
-"s": 91.08,
-"e": 91.6,
-"g": "narr"
-},
-{
-"w": "But",
-"s": 91.94,
-"e": 92.16,
+"w": "seconds,",
+"s": 8.82,
+"e": 9.34,
 "g": "narr"
 },
 {
 "w": "the",
-"s": 92.16,
-"e": 92.26,
+"s": 9.82,
+"e": 9.98,
 "g": "narr"
 },
 {
-"w": "whole",
-"s": 92.26,
-"e": 92.54,
+"w": "radio",
+"s": 9.98,
+"e": 10.38,
 "g": "narr"
 },
 {
-"w": "front",
-"s": 92.54,
-"e": 92.84,
+"w": "clip",
+"s": 10.38,
+"e": 10.64,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 10.64,
+"e": 10.84,
+"g": "narr"
+},
+{
+"w": "his",
+"s": 10.84,
+"e": 11.0,
+"g": "narr"
+},
+{
+"w": "chest",
+"s": 11.0,
+"e": 11.34,
 "g": "narr"
 },
 {
 "w": "is",
-"s": 92.84,
-"e": 93.12,
+"s": 11.34,
+"e": 11.56,
 "g": "narr"
 },
 {
-"w": "glass.",
-"s": 93.12,
-"e": 93.46,
+"w": "going",
+"s": 11.56,
+"e": 11.72,
 "g": "narr"
 },
 {
-"w": "The",
-"s": 94.08,
-"e": 94.3,
+"w": "to",
+"s": 11.72,
+"e": 11.9,
 "g": "narr"
 },
 {
-"w": "food",
-"s": 94.3,
-"e": 94.58,
-"g": "narr"
-},
-{
-"w": "court",
-"s": 94.58,
-"e": 94.86,
-"g": "narr"
-},
-{
-"w": "has",
-"s": 94.86,
-"e": 95.14,
-"g": "narr"
-},
-{
-"w": "a",
-"s": 95.14,
-"e": 95.38,
-"g": "narr"
-},
-{
-"w": "freezer",
-"s": 95.38,
-"e": 95.64,
-"g": "narr"
-},
-{
-"w": "full",
-"s": 95.64,
-"e": 95.94,
-"g": "narr"
-},
-{
-"w": "of",
-"s": 95.94,
-"e": 96.12,
-"g": "narr"
-},
-{
-"w": "food.",
-"s": 96.12,
-"e": 96.46,
-"g": "narr"
-},
-{
-"w": "But",
-"s": 96.96,
-"e": 97.2,
-"g": "narr"
-},
-{
-"w": "that's",
-"s": 97.2,
-"e": 97.5,
-"g": "narr"
-},
-{
-"w": "exactly",
-"s": 97.5,
-"e": 97.9,
-"g": "narr"
-},
-{
-"w": "where",
-"s": 97.9,
-"e": 98.24,
-"g": "narr"
-},
-{
-"w": "they're",
-"s": 98.24,
-"e": 98.48,
-"g": "narr"
-},
-{
-"w": "coming",
-"s": 98.48,
-"e": 98.7,
-"g": "narr"
-},
-{
-"w": "in.",
-"s": 98.7,
-"e": 99.06,
-"g": "narr"
-},
-{
-"w": "The",
-"s": 99.48,
-"e": 99.68,
-"g": "narr"
-},
-{
-"w": "department",
-"s": 99.68,
-"e": 100.04,
-"g": "narr"
-},
-{
-"w": "store",
-"s": 100.04,
-"e": 100.44,
-"g": "narr"
-},
-{
-"w": "has",
-"s": 100.44,
-"e": 100.7,
-"g": "narr"
-},
-{
-"w": "beds",
-"s": 100.7,
-"e": 101.12,
+"w": "crackle",
+"s": 11.9,
+"e": 12.38,
 "g": "narr"
 },
 {
 "w": "and",
-"s": 101.12,
-"e": 101.38,
+"s": 12.38,
+"e": 12.96,
+"g": "narr"
+},
+{
+"w": "tell",
+"s": 12.96,
+"e": 13.2,
+"g": "narr"
+},
+{
+"w": "every",
+"s": 13.2,
+"e": 13.66,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 13.66,
+"e": 13.9,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 13.9,
+"e": 13.98,
+"g": "narr"
+},
+{
+"w": "them",
+"s": 13.98,
+"e": 14.2,
+"g": "narr"
+},
+{
+"w": "exactly",
+"s": 14.2,
+"e": 14.78,
+"g": "narr"
+},
+{
+"w": "where",
+"s": 14.78,
+"e": 15.26,
+"g": "narr"
+},
+{
+"w": "I'm",
+"s": 15.26,
+"e": 15.44,
+"g": "narr"
+},
+{
+"w": "hiding.",
+"s": 15.44,
+"e": 15.78,
+"g": "narr"
+},
+{
+"w": "One",
+"s": 16.86,
+"e": 17.12,
+"g": "narr"
+},
+{
+"w": "hour",
+"s": 17.12,
+"e": 17.38,
+"g": "narr"
+},
+{
+"w": "ago,",
+"s": 17.38,
+"e": 17.78,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 18.04,
+"e": 18.38,
+"g": "narr"
+},
+{
+"w": "was",
+"s": 18.38,
+"e": 18.54,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 18.54,
+"e": 18.88,
+"g": "narr"
+},
+{
+"w": "king",
+"s": 18.88,
+"e": 19.16,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 19.16,
+"e": 19.44,
+"g": "narr"
+},
+{
+"w": "this",
+"s": 19.44,
+"e": 19.58,
+"g": "narr"
+},
+{
+"w": "mall.",
+"s": 19.58,
+"e": 19.88,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 20.32,
+"e": 20.48,
+"g": "narr"
+},
+{
+"w": "had",
+"s": 20.48,
+"e": 20.6,
+"g": "narr"
+},
+{
+"w": "every",
+"s": 20.6,
+"e": 20.88,
+"g": "narr"
+},
+{
+"w": "key.",
+"s": 20.88,
+"e": 21.18,
+"g": "narr"
+},
+{
+"w": "Let",
+"s": 23.2,
+"e": 23.8,
+"g": "narr"
+},
+{
+"w": "me",
+"s": 23.8,
+"e": 23.92,
+"g": "narr"
+},
+{
+"w": "back",
+"s": 23.92,
+"e": 24.12,
+"g": "narr"
+},
+{
+"w": "up.",
+"s": 24.12,
+"e": 24.46,
+"g": "narr"
+},
+{
+"w": "My",
+"s": 26.0,
+"e": 26.56,
+"g": "narr"
+},
+{
+"w": "name's",
+"s": 26.56,
+"e": 26.94,
+"g": "narr"
+},
+{
+"w": "Danny",
+"s": 26.94,
+"e": 27.2,
+"g": "narr"
+},
+{
+"w": "Ruiz.",
+"s": 27.2,
+"e": 27.74,
+"g": "narr"
+},
+{
+"w": "I'm",
+"s": 28.4,
+"e": 28.48,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 28.48,
+"e": 28.58,
+"g": "narr"
+},
+{
+"w": "night",
+"s": 28.58,
+"e": 28.74,
+"g": "narr"
+},
+{
+"w": "security",
+"s": 28.74,
+"e": 29.12,
+"g": "narr"
+},
+{
+"w": "guard",
+"s": 29.12,
+"e": 29.5,
+"g": "narr"
+},
+{
+"w": "at",
+"s": 29.5,
+"e": 29.7,
+"g": "narr"
+},
+{
+"w": "Maplecrest",
+"s": 29.7,
+"e": 30.16,
+"g": "narr"
+},
+{
+"w": "Mall.",
+"s": 30.16,
+"e": 30.46,
+"g": "narr"
+},
+{
+"w": "Yes,",
+"s": 31.04,
+"e": 31.46,
+"g": "narr"
+},
+{
+"w": "I've",
+"s": 31.58,
+"e": 31.82,
+"g": "narr"
+},
+{
+"w": "heard",
+"s": 31.82,
+"e": 31.98,
+"g": "narr"
+},
+{
+"w": "every",
+"s": 31.98,
+"e": 32.38,
+"g": "narr"
+},
+{
+"w": "mall",
+"s": 32.38,
+"e": 32.58,
+"g": "narr"
+},
+{
+"w": "cop",
+"s": 32.58,
+"e": 32.82,
+"g": "narr"
+},
+{
+"w": "joke",
+"s": 32.82,
+"e": 33.02,
+"g": "narr"
+},
+{
+"w": "there",
+"s": 33.02,
+"e": 33.24,
+"g": "narr"
+},
+{
+"w": "is.",
+"s": 33.24,
+"e": 33.7,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 34.24,
+"e": 34.4,
+"g": "narr"
+},
+{
+"w": "took",
+"s": 34.4,
+"e": 34.62,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 34.62,
+"e": 34.8,
+"g": "narr"
+},
+{
+"w": "night",
+"s": 34.8,
+"e": 34.98,
+"g": "narr"
+},
+{
+"w": "shift",
+"s": 34.98,
+"e": 35.28,
+"g": "narr"
+},
+{
+"w": "for",
+"s": 35.28,
+"e": 35.56,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 35.56,
+"e": 35.9,
+"g": "narr"
+},
+{
+"w": "reason.",
+"s": 35.9,
+"e": 36.38,
+"g": "narr"
+},
+{
+"w": "That",
+"s": 36.76,
+"e": 36.86,
+"g": "narr"
+},
+{
+"w": "means",
+"s": 36.86,
+"e": 37.02,
+"g": "narr"
+},
+{
+"w": "I'm",
+"s": 37.02,
+"e": 37.24,
+"g": "narr"
+},
+{
+"w": "home",
+"s": 37.24,
+"e": 37.38,
+"g": "narr"
+},
+{
+"w": "every",
+"s": 37.38,
+"e": 37.88,
+"g": "narr"
+},
+{
+"w": "afternoon",
+"s": 37.88,
+"e": 38.38,
+"g": "narr"
+},
+{
+"w": "when",
+"s": 38.38,
+"e": 38.66,
+"g": "narr"
+},
+{
+"w": "my",
+"s": 38.66,
+"e": 38.82,
+"g": "narr"
+},
+{
+"w": "daughter",
+"s": 38.82,
+"e": 39.12,
+"g": "narr"
+},
+{
+"w": "Lily",
+"s": 39.12,
+"e": 39.38,
+"g": "narr"
+},
+{
+"w": "gets",
+"s": 39.38,
+"e": 39.68,
+"g": "narr"
+},
+{
+"w": "off",
+"s": 39.68,
+"e": 39.88,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 39.88,
+"e": 40.04,
+"g": "narr"
+},
+{
+"w": "school",
+"s": 40.04,
+"e": 40.26,
+"g": "narr"
+},
+{
+"w": "bus.",
+"s": 40.26,
+"e": 40.56,
+"g": "narr"
+},
+{
+"w": "She's",
+"s": 41.44,
+"e": 42.0,
+"g": "narr"
+},
+{
+"w": "seven.",
+"s": 42.0,
+"e": 42.24,
+"g": "narr"
+},
+{
+"w": "She",
+"s": 42.66,
+"e": 42.84,
+"g": "narr"
+},
+{
+"w": "thinks",
+"s": 42.84,
+"e": 43.04,
+"g": "narr"
+},
+{
+"w": "I'm",
+"s": 43.04,
+"e": 43.34,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 43.34,
+"e": 43.48,
+"g": "narr"
+},
+{
+"w": "king",
+"s": 43.48,
+"e": 43.88,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 43.88,
+"e": 44.06,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 44.06,
+"e": 44.16,
+"g": "narr"
+},
+{
+"w": "mall.",
+"s": 44.16,
+"e": 44.48,
+"g": "narr"
+},
+{
+"w": "Because",
+"s": 45.36,
+"e": 45.46,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 45.46,
+"e": 45.58,
+"g": "narr"
+},
+{
+"w": "have",
+"s": 45.58,
+"e": 45.7,
+"g": "narr"
+},
+{
+"w": "these.",
+"s": 45.7,
+"e": 46.04,
+"g": "narr"
+},
+{
+"w": "Forty",
+"s": 46.84,
+"e": 47.02,
+"g": "narr"
+},
+{
+"w": "-two",
+"s": 47.02,
+"e": 47.48,
+"g": "narr"
+},
+{
+"w": "keys.",
+"s": 47.48,
+"e": 47.94,
+"g": "narr"
+},
+{
+"w": "One",
+"s": 48.54,
+"e": 48.76,
+"g": "narr"
+},
+{
+"w": "for",
+"s": 48.76,
+"e": 49.04,
+"g": "narr"
+},
+{
+"w": "every",
+"s": 49.04,
+"e": 49.62,
+"g": "narr"
+},
+{
+"w": "single",
+"s": 49.62,
+"e": 50.04,
+"g": "narr"
+},
+{
+"w": "store.",
+"s": 50.04,
+"e": 50.48,
+"g": "narr"
+},
+{
+"w": "Every",
+"s": 50.48,
+"e": 51.44,
+"g": "narr"
+},
+{
+"w": "night,",
+"s": 51.44,
+"e": 51.72,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 52.06,
+"e": 52.24,
+"g": "narr"
+},
+{
+"w": "walk",
+"s": 52.24,
+"e": 52.42,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 52.42,
+"e": 52.64,
+"g": "narr"
+},
+{
+"w": "same",
+"s": 52.64,
+"e": 52.9,
+"g": "narr"
+},
+{
+"w": "loop.",
+"s": 52.9,
+"e": 53.18,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 53.78,
+"e": 53.84,
+"g": "narr"
+},
+{
+"w": "rattle",
+"s": 53.84,
+"e": 54.08,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 54.08,
+"e": 54.3,
+"g": "narr"
+},
+{
+"w": "same",
+"s": 54.3,
+"e": 54.54,
+"g": "narr"
+},
+{
+"w": "gates.",
+"s": 54.54,
+"e": 54.88,
+"g": "narr"
+},
+{
+"w": "And",
+"s": 55.66,
+"e": 55.66,
+"g": "narr"
+},
+{
+"w": "at",
+"s": 55.66,
+"e": 55.78,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 55.78,
+"e": 55.96,
 "g": "narr"
 },
 {
 "w": "a",
-"s": 101.38,
-"e": 101.5,
+"s": 55.96,
+"e": 56.12,
 "g": "narr"
 },
 {
-"w": "second",
-"s": 101.5,
+"w": ".m.,",
+"s": 56.12,
+"e": 56.58,
+"g": "narr"
+},
+{
+"w": "Marcus",
+"s": 56.58,
+"e": 56.58,
+"g": "narr"
+},
+{
+"w": "calls",
+"s": 56.58,
+"e": 56.92,
+"g": "narr"
+},
+{
+"w": "me",
+"s": 56.92,
+"e": 57.12,
+"g": "narr"
+},
+{
+"w": "from",
+"s": 57.12,
+"e": 57.28,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 57.28,
+"e": 57.4,
+"g": "narr"
+},
+{
+"w": "parking",
+"s": 57.4,
+"e": 57.7,
+"g": "narr"
+},
+{
+"w": "garage",
+"s": 57.7,
+"e": 58.06,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 58.06,
+"e": 58.32,
+"g": "narr"
+},
+{
+"w": "tell",
+"s": 58.32,
+"e": 58.48,
+"g": "narr"
+},
+{
+"w": "me",
+"s": 58.48,
+"e": 58.62,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 58.62,
+"e": 58.78,
+"g": "narr"
+},
+{
+"w": "terrible",
+"s": 58.78,
+"e": 59.42,
+"g": "narr"
+},
+{
+"w": "joke.",
+"s": 59.42,
+"e": 59.78,
+"g": "narr"
+},
+{
+"w": "Marcus",
+"s": 61.4,
+"e": 61.56,
+"g": "narr"
+},
+{
+"w": "is",
+"s": 61.56,
+"e": 61.84,
+"g": "narr"
+},
+{
+"w": "twenty",
+"s": 61.84,
+"e": 62.1,
+"g": "narr"
+},
+{
+"w": "-two.",
+"s": 62.1,
+"e": 62.38,
+"g": "narr"
+},
+{
+"w": "He's",
+"s": 62.88,
+"e": 63.06,
+"g": "narr"
+},
+{
+"w": "studying",
+"s": 63.06,
+"e": 63.3,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 63.3,
+"e": 63.46,
+"g": "narr"
+},
+{
+"w": "be",
+"s": 63.46,
+"e": 63.56,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 63.56,
+"e": 63.7,
+"g": "narr"
+},
+{
+"w": "nurse.",
+"s": 63.7,
+"e": 63.9,
+"g": "narr"
+},
+{
+"w": "He",
+"s": 64.8,
+"e": 65.04,
+"g": "narr"
+},
+{
+"w": "still",
+"s": 65.04,
+"e": 65.32,
+"g": "narr"
+},
+{
+"w": "owes",
+"s": 65.32,
+"e": 65.5,
+"g": "narr"
+},
+{
+"w": "me",
+"s": 65.5,
+"e": 65.66,
+"g": "narr"
+},
+{
+"w": "twenty",
+"s": 65.66,
+"e": 65.86,
+"g": "narr"
+},
+{
+"w": "bucks.",
+"s": 65.86,
+"e": 66.14,
+"g": "narr"
+},
+{
+"w": "Tonight,",
+"s": 67.1,
+"e": 67.36,
+"g": "narr"
+},
+{
+"w": "he",
+"s": 67.8,
+"e": 68.0,
+"g": "narr"
+},
+{
+"w": "didn't",
+"s": 68.0,
+"e": 68.24,
+"g": "narr"
+},
+{
+"w": "tell",
+"s": 68.24,
+"e": 68.4,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 68.4,
+"e": 68.58,
+"g": "narr"
+},
+{
+"w": "joke.",
+"s": 68.58,
+"e": 68.82,
+"g": "narr"
+},
+{
+"w": "Danny,",
+"s": 69.84,
+"e": 69.84,
+"g": "marcus1"
+},
+{
+"w": "there's",
+"s": 70.32,
+"e": 70.72,
+"g": "marcus1"
+},
+{
+"w": "a",
+"s": 70.72,
+"e": 70.86,
+"g": "marcus1"
+},
+{
+"w": "guy",
+"s": 70.86,
+"e": 71.16,
+"g": "marcus1"
+},
+{
+"w": "coming",
+"s": 71.16,
+"e": 71.76,
+"g": "marcus1"
+},
+{
+"w": "up",
+"s": 71.76,
+"e": 71.98,
+"g": "marcus1"
+},
+{
+"w": "the",
+"s": 71.98,
+"e": 72.14,
+"g": "marcus1"
+},
+{
+"w": "ramp.",
+"s": 72.14,
+"e": 72.42,
+"g": "marcus1"
+},
+{
+"w": "He's",
+"s": 73.52,
+"e": 73.7,
+"g": "marcus1"
+},
+{
+"w": "walking.",
+"s": 73.7,
+"e": 74.12,
+"g": "marcus1"
+},
+{
+"w": "Wrong.",
+"s": 75.08,
+"e": 75.32,
+"g": "marcus1"
+},
+{
+"w": "Marcus",
+"s": 76.28,
+"e": 76.64,
+"g": "narr"
+},
+{
+"w": "doesn't",
+"s": 76.64,
+"e": 77.48,
+"g": "narr"
+},
+{
+"w": "know",
+"s": 77.48,
+"e": 77.7,
+"g": "narr"
+},
+{
+"w": "how",
+"s": 77.7,
+"e": 77.9,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 77.9,
+"e": 78.04,
+"g": "narr"
+},
+{
+"w": "whisper,",
+"s": 78.04,
+"e": 78.4,
+"g": "narr"
+},
+{
+"w": "but",
+"s": 78.82,
+"e": 79.06,
+"g": "narr"
+},
+{
+"w": "he's",
+"s": 79.06,
+"e": 79.26,
+"g": "narr"
+},
+{
+"w": "whispering.",
+"s": 79.26,
+"e": 79.74,
+"g": "narr"
+},
+{
+"w": "Sir?",
+"s": 80.64,
+"e": 81.0,
+"g": "marcus2"
+},
+{
+"w": "Sir,",
+"s": 81.54,
+"e": 81.82,
+"g": "marcus2"
+},
+{
+"w": "are",
+"s": 82.02,
+"e": 82.02,
+"g": "marcus2"
+},
+{
+"w": "you",
+"s": 82.02,
+"e": 82.64,
+"g": "marcus2"
+},
+{
+"w": "okay?",
+"s": 82.64,
+"e": 82.98,
+"g": "marcus2"
+},
+{
+"w": "You're",
+"s": 83.5,
+"e": 83.84,
+"g": "marcus2"
+},
+{
+"w": "bleeding.",
+"s": 83.84,
+"e": 84.12,
+"g": "marcus2"
+},
+{
+"w": "Then",
+"s": 85.2,
+"e": 85.46,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 85.46,
+"e": 86.1,
+"g": "narr"
+},
+{
+"w": "radio",
+"s": 86.1,
+"e": 86.42,
+"g": "narr"
+},
+{
+"w": "does",
+"s": 86.42,
+"e": 86.72,
+"g": "narr"
+},
+{
+"w": "something",
+"s": 86.72,
+"e": 87.08,
+"g": "narr"
+},
+{
+"w": "I've",
+"s": 87.08,
+"e": 87.46,
+"g": "narr"
+},
+{
+"w": "never",
+"s": 87.46,
+"e": 87.9,
+"g": "narr"
+},
+{
+"w": "heard",
+"s": 87.9,
+"e": 88.34,
+"g": "narr"
+},
+{
+"w": "it",
+"s": 88.34,
+"e": 88.52,
+"g": "narr"
+},
+{
+"w": "do.",
+"s": 88.52,
+"e": 88.76,
+"g": "narr"
+},
+{
+"w": "It",
+"s": 89.04,
+"e": 89.26,
+"g": "narr"
+},
+{
+"w": "goes",
+"s": 89.26,
+"e": 89.46,
+"g": "narr"
+},
+{
+"w": "completely",
+"s": 89.46,
+"e": 90.18,
+"g": "narr"
+},
+{
+"w": "silent.",
+"s": 90.18,
+"e": 91.0,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 92.04,
+"e": 92.48,
+"g": "narr"
+},
+{
+"w": "run",
+"s": 92.48,
+"e": 92.64,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 92.64,
+"e": 92.8,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 92.8,
+"e": 92.9,
+"g": "narr"
+},
+{
+"w": "cameras.",
+"s": 92.9,
+"e": 93.28,
+"g": "narr"
+},
+{
+"w": "Garage",
+"s": 94.26,
+"e": 94.26,
+"g": "narr"
+},
+{
+"w": "level",
+"s": 94.26,
+"e": 94.88,
+"g": "narr"
+},
+{
+"w": "two.",
+"s": 94.88,
+"e": 95.3,
+"g": "narr"
+},
+{
+"w": "Marcus",
+"s": 96.18,
+"e": 96.9,
+"g": "narr"
+},
+{
+"w": "is",
+"s": 96.9,
+"e": 97.12,
+"g": "narr"
+},
+{
+"w": "on",
+"s": 97.12,
+"e": 97.28,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 97.28,
+"e": 97.42,
+"g": "narr"
+},
+{
+"w": "ground.",
+"s": 97.42,
+"e": 97.76,
+"g": "narr"
+},
+{
+"w": "The",
+"s": 98.52,
+"e": 98.8,
+"g": "narr"
+},
+{
+"w": "man",
+"s": 98.8,
+"e": 99.14,
+"g": "narr"
+},
+{
+"w": "is",
+"s": 99.14,
+"e": 99.58,
+"g": "narr"
+},
+{
+"w": "on",
+"s": 99.58,
+"e": 99.92,
+"g": "narr"
+},
+{
+"w": "top",
+"s": 99.92,
+"e": 100.32,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 100.32,
+"e": 100.5,
+"g": "narr"
+},
+{
+"w": "him.",
+"s": 100.5,
+"e": 100.92,
+"g": "narr"
+},
+{
+"w": "And",
+"s": 100.92,
 "e": 101.76,
 "g": "narr"
 },
 {
-"w": "floor.",
+"w": "behind",
 "s": 101.76,
 "e": 102.16,
 "g": "narr"
 },
 {
-"w": "But",
-"s": 102.58,
-"e": 102.78,
-"g": "narr"
-},
-{
-"w": "it's",
-"s": 102.78,
-"e": 103.08,
-"g": "narr"
-},
-{
-"w": "huge.",
-"s": 103.08,
-"e": 103.34,
-"g": "narr"
-},
-{
-"w": "Too",
-"s": 103.98,
-"e": 104.1,
-"g": "narr"
-},
-{
-"w": "many",
-"s": 104.1,
-"e": 104.26,
-"g": "narr"
-},
-{
-"w": "doors",
-"s": 104.26,
-"e": 104.66,
-"g": "narr"
-},
-{
-"w": "to",
-"s": 104.66,
-"e": 104.9,
-"g": "narr"
-},
-{
-"w": "watch.",
-"s": 104.9,
-"e": 105.28,
-"g": "narr"
-},
-{
-"w": "And",
-"s": 105.88,
-"e": 106.06,
+"w": "them,",
+"s": 102.16,
+"e": 102.54,
 "g": "narr"
 },
 {
 "w": "the",
-"s": 106.06,
-"e": 106.18,
+"s": 102.9,
+"e": 103.12,
 "g": "narr"
 },
 {
-"w": "sporting",
-"s": 106.18,
-"e": 106.48,
+"w": "ramp",
+"s": 103.12,
+"e": 103.48,
 "g": "narr"
 },
 {
-"w": "goods",
-"s": 106.48,
-"e": 106.8,
+"w": "is",
+"s": 103.48,
+"e": 103.72,
 "g": "narr"
 },
 {
-"w": "store",
-"s": 106.8,
-"e": 107.18,
+"w": "filling",
+"s": 103.72,
+"e": 104.2,
 "g": "narr"
 },
 {
-"w": "has",
-"s": 107.18,
-"e": 107.46,
+"w": "up.",
+"s": 104.2,
+"e": 104.58,
 "g": "narr"
 },
 {
-"w": "tents,",
-"s": 107.46,
-"e": 107.8,
+"w": "Six,",
+"s": 105.02,
+"e": 105.48,
 "g": "narr"
 },
 {
-"w": "water",
-"s": 108.36,
-"e": 108.52,
+"w": "ten,",
+"s": 106.0,
+"e": 106.4,
 "g": "narr"
 },
 {
-"w": "filters,",
-"s": 108.52,
-"e": 109.0,
+"w": "thirty.",
+"s": 106.88,
+"e": 107.34,
 "g": "narr"
 },
 {
-"w": "and",
-"s": 109.24,
-"e": 109.32,
-"g": "narr"
-},
-{
-"w": "aluminum",
-"s": 109.32,
-"e": 109.74,
-"g": "narr"
-},
-{
-"w": "bats.",
-"s": 109.74,
-"e": 110.2,
-"g": "narr"
-},
-{
-"w": "And",
-"s": 110.8,
-"e": 110.92,
-"g": "narr"
-},
-{
-"w": "only",
-"s": 110.92,
-"e": 111.24,
-"g": "narr"
-},
-{
-"w": "one",
-"s": 111.24,
-"e": 111.5,
-"g": "narr"
-},
-{
-"w": "way",
-"s": 111.5,
-"e": 111.7,
-"g": "narr"
-},
-{
-"w": "in.",
-"s": 111.7,
-"e": 112.02,
-"g": "narr"
-},
-{
-"w": "Behind",
-"s": 112.5,
-"e": 112.84,
-"g": "narr"
-},
-{
-"w": "me,",
-"s": 112.84,
-"e": 113.12,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 113.34,
-"e": 113.52,
-"g": "narr"
-},
-{
-"w": "hear",
-"s": 113.52,
-"e": 113.72,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 113.72,
-"e": 113.92,
-"g": "narr"
-},
-{
-"w": "food",
-"s": 113.92,
-"e": 114.16,
-"g": "narr"
-},
-{
-"w": "court",
-"s": 114.16,
-"e": 114.4,
-"g": "narr"
-},
-{
-"w": "doors",
-"s": 114.4,
-"e": 114.8,
-"g": "narr"
-},
-{
-"w": "shatter.",
-"s": 114.8,
-"e": 115.12,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 115.64,
-"e": 115.88,
-"g": "narr"
-},
-{
-"w": "slide",
-"s": 115.88,
-"e": 116.24,
-"g": "narr"
-},
-{
-"w": "under",
-"s": 116.24,
-"e": 116.54,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 116.54,
-"e": 116.74,
-"g": "narr"
-},
-{
-"w": "gate,",
-"s": 116.74,
-"e": 117.04,
-"g": "narr"
-},
-{
-"w": "yank",
-"s": 117.46,
-"e": 117.62,
-"g": "narr"
-},
-{
-"w": "it",
-"s": 117.62,
-"e": 117.8,
-"g": "narr"
-},
-{
-"w": "down,",
-"s": 117.8,
-"e": 118.16,
-"g": "narr"
-},
-{
-"w": "and",
-"s": 118.36,
-"e": 118.48,
-"g": "narr"
-},
-{
-"w": "lock",
-"s": 118.48,
-"e": 118.72,
-"g": "narr"
-},
-{
-"w": "it.",
-"s": 118.72,
-"e": 119.0,
-"g": "narr"
-},
-{
-"w": "Then",
-"s": 119.48,
-"e": 119.72,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 119.72,
-"e": 119.9,
-"g": "narr"
-},
-{
-"w": "sit",
-"s": 119.9,
-"e": 120.14,
-"g": "narr"
-},
-{
-"w": "in",
-"s": 120.14,
-"e": 120.3,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 120.3,
-"e": 120.4,
-"g": "narr"
-},
-{
-"w": "dark",
-"s": 120.4,
-"e": 120.7,
-"g": "narr"
-},
-{
-"w": "between",
-"s": 120.7,
-"e": 121.02,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 121.02,
-"e": 121.3,
-"g": "narr"
-},
-{
-"w": "tents",
-"s": 121.3,
-"e": 121.5,
-"g": "narr"
-},
-{
-"w": "and",
-"s": 121.5,
-"e": 121.7,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 121.7,
-"e": 121.86,
-"g": "narr"
-},
-{
-"w": "treadmills",
-"s": 121.86,
-"e": 122.32,
-"g": "narr"
-},
-{
-"w": "and",
-"s": 122.32,
-"e": 122.86,
-"g": "narr"
-},
-{
-"w": "I",
-"s": 122.86,
-"e": 123.04,
-"g": "narr"
-},
-{
-"w": "try",
-"s": 123.04,
-"e": 123.26,
+"w": "They're",
+"s": 108.82,
+"e": 109.5,
 "g": "narr"
 },
 {
 "w": "not",
-"s": 123.26,
-"e": 123.54,
+"s": 109.5,
+"e": 109.7,
 "g": "narr"
 },
 {
-"w": "to",
-"s": 123.54,
-"e": 123.76,
+"w": "running.",
+"s": 109.7,
+"e": 110.04,
 "g": "narr"
 },
 {
-"w": "breathe.",
-"s": 123.76,
-"e": 124.02,
+"w": "They",
+"s": 110.68,
+"e": 110.76,
 "g": "narr"
 },
 {
-"w": "Footsteps,",
-"s": 124.86,
-"e": 125.26,
+"w": "don't",
+"s": 110.76,
+"e": 110.92,
 "g": "narr"
 },
 {
-"w": "dozens",
-"s": 125.5,
-"e": 125.68,
+"w": "need",
+"s": 110.92,
+"e": 111.14,
 "g": "narr"
 },
 {
-"w": "of",
-"s": 125.68,
-"e": 126.02,
+"w": "to.",
+"s": 111.14,
+"e": 111.48,
 "g": "narr"
 },
 {
-"w": "them,",
-"s": 126.02,
-"e": 126.3,
-"g": "narr"
-},
-{
-"w": "shuffling",
-"s": 126.56,
-"e": 127.04,
-"g": "narr"
-},
-{
-"w": "past",
-"s": 127.04,
-"e": 127.34,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 127.34,
-"e": 127.6,
-"g": "narr"
-},
-{
-"w": "gate.",
-"s": 127.6,
-"e": 127.84,
-"g": "narr"
-},
-{
-"w": "One",
-"s": 128.4,
-"e": 128.56,
-"g": "narr"
-},
-{
-"w": "of",
-"s": 128.56,
-"e": 128.66,
-"g": "narr"
-},
-{
-"w": "them",
-"s": 128.66,
-"e": 128.8,
-"g": "narr"
-},
-{
-"w": "stops.",
-"s": 128.8,
-"e": 129.18,
-"g": "narr"
-},
-{
-"w": "It",
-"s": 129.82,
-"e": 130.02,
-"g": "narr"
-},
-{
-"w": "presses",
-"s": 130.02,
-"e": 130.28,
-"g": "narr"
-},
-{
-"w": "its",
-"s": 130.28,
-"e": 130.58,
-"g": "narr"
-},
-{
-"w": "face",
-"s": 130.58,
-"e": 130.84,
-"g": "narr"
-},
-{
-"w": "against",
-"s": 130.84,
-"e": 131.18,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 131.18,
-"e": 131.42,
-"g": "narr"
-},
-{
-"w": "steel",
-"s": 131.42,
-"e": 131.74,
-"g": "narr"
-},
-{
-"w": "and",
-"s": 131.74,
-"e": 131.98,
-"g": "narr"
-},
-{
-"w": "stares",
-"s": 131.98,
-"e": 132.32,
-"g": "narr"
-},
-{
-"w": "right",
-"s": 132.32,
-"e": 132.7,
-"g": "narr"
-},
-{
-"w": "at",
-"s": 132.7,
-"e": 132.86,
-"g": "narr"
-},
-{
-"w": "me.",
-"s": 132.86,
-"e": 133.16,
-"g": "narr"
-},
-{
-"w": "It's",
-"s": 133.62,
-"e": 133.9,
-"g": "narr"
-},
-{
-"w": "Marcus.",
-"s": 133.9,
-"e": 134.26,
-"g": "narr"
-},
-{
-"w": "He's",
-"s": 134.7,
-"e": 134.88,
-"g": "narr"
-},
-{
-"w": "still",
-"s": 134.88,
-"e": 135.08,
-"g": "narr"
-},
-{
-"w": "wearing",
-"s": 135.08,
-"e": 135.42,
-"g": "narr"
-},
-{
-"w": "his",
-"s": 135.42,
-"e": 135.64,
-"g": "narr"
-},
-{
-"w": "radio.",
-"s": 135.64,
-"e": 136.12,
-"g": "narr"
-},
-{
-"w": "Then",
-"s": 136.78,
-"e": 136.98,
-"g": "narr"
-},
-{
-"w": "mine",
-"s": 136.98,
-"e": 137.3,
-"g": "narr"
-},
-{
-"w": "crackles.",
-"s": 137.3,
-"e": 137.92,
-"g": "narr"
-},
-{
-"w": "Is",
-"s": 138.68,
-"e": 138.72,
-"g": "woman"
-},
-{
-"w": "anyone",
-"s": 138.72,
-"e": 138.94,
-"g": "woman"
-},
-{
-"w": "still",
-"s": 138.94,
-"e": 139.28,
-"g": "woman"
-},
-{
-"w": "in",
-"s": 139.28,
-"e": 139.44,
-"g": "woman"
-},
-{
-"w": "the",
-"s": 139.44,
-"e": 139.52,
-"g": "woman"
-},
-{
-"w": "mall?",
-"s": 139.52,
-"e": 139.72,
-"g": "woman"
-},
-{
-"w": "I'm",
-"s": 140.2,
-"e": 140.36,
-"g": "woman"
-},
-{
-"w": "in",
-"s": 140.36,
-"e": 140.44,
-"g": "woman"
-},
-{
-"w": "the",
-"s": 140.44,
-"e": 140.54,
-"g": "woman"
-},
-{
-"w": "department",
-"s": 140.54,
-"e": 140.84,
-"g": "woman"
-},
-{
-"w": "store.",
-"s": 140.84,
-"e": 141.26,
-"g": "woman"
-},
-{
-"w": "Second",
-"s": 141.8,
-"e": 141.98,
-"g": "woman"
-},
-{
-"w": "floor.",
-"s": 141.98,
-"e": 142.26,
-"g": "woman"
-},
-{
-"w": "Please.",
-"s": 142.8,
-"e": 143.04,
-"g": "woman"
-},
-{
-"w": "Her",
-"s": 143.98,
-"e": 144.1,
-"g": "narr"
-},
-{
-"w": "voice",
-"s": 144.1,
-"e": 144.44,
-"g": "narr"
-},
-{
-"w": "comes",
-"s": 144.44,
-"e": 144.82,
-"g": "narr"
-},
-{
-"w": "out",
-"s": 144.82,
-"e": 145.14,
-"g": "narr"
-},
-{
-"w": "of",
-"s": 145.14,
-"e": 145.28,
-"g": "narr"
-},
-{
-"w": "my",
-"s": 145.28,
-"e": 145.52,
-"g": "narr"
-},
-{
-"w": "radio.",
-"s": 145.52,
-"e": 146.0,
-"g": "narr"
-},
-{
-"w": "And",
-"s": 146.58,
-"e": 146.68,
-"g": "narr"
-},
-{
-"w": "out",
-"s": 146.68,
-"e": 146.82,
-"g": "narr"
-},
-{
-"w": "of",
-"s": 146.82,
-"e": 147.04,
-"g": "narr"
-},
-{
-"w": "Marcus's",
-"s": 147.04,
-"e": 147.52,
-"g": "narr"
-},
-{
-"w": "radio,",
-"s": 147.52,
-"e": 148.02,
+"w": "Every",
+"s": 113.26,
+"e": 113.62,
 "g": "narr"
 },
 {
 "w": "one",
-"s": 148.36,
-"e": 148.52,
+"s": 113.62,
+"e": 113.88,
 "g": "narr"
 },
 {
-"w": "second",
-"s": 148.52,
-"e": 148.82,
+"w": "of",
+"s": 113.88,
+"e": 114.0,
 "g": "narr"
 },
 {
-"w": "later,",
-"s": 148.82,
-"e": 149.28,
+"w": "them",
+"s": 114.0,
+"e": 114.16,
 "g": "narr"
 },
 {
-"w": "every",
-"s": 149.76,
-"e": 150.02,
+"w": "is",
+"s": 114.16,
+"e": 114.66,
 "g": "narr"
 },
 {
-"w": "head",
-"s": 150.02,
-"e": 150.26,
-"g": "narr"
-},
-{
-"w": "in",
-"s": 150.26,
-"e": 150.4,
-"g": "narr"
-},
-{
-"w": "the",
-"s": 150.4,
-"e": 150.5,
-"g": "narr"
-},
-{
-"w": "hallway",
-"s": 150.5,
-"e": 150.84,
-"g": "narr"
-},
-{
-"w": "turns",
-"s": 150.84,
-"e": 151.26,
+"w": "walking",
+"s": 114.66,
+"e": 114.92,
 "g": "narr"
 },
 {
 "w": "toward",
-"s": 151.26,
-"e": 151.64,
+"s": 114.92,
+"e": 115.2,
 "g": "narr"
 },
 {
-"w": "my",
-"s": 151.64,
-"e": 151.88,
+"w": "the",
+"s": 115.2,
+"e": 115.4,
+"g": "narr"
+},
+{
+"w": "same",
+"s": 115.4,
+"e": 115.7,
+"g": "narr"
+},
+{
+"w": "place.",
+"s": 115.7,
+"e": 116.1,
+"g": "narr"
+},
+{
+"w": "The",
+"s": 116.6,
+"e": 116.7,
+"g": "narr"
+},
+{
+"w": "food",
+"s": 116.7,
+"e": 117.04,
+"g": "narr"
+},
+{
+"w": "court.",
+"s": 117.04,
+"e": 117.36,
+"g": "narr"
+},
+{
+"w": "And",
+"s": 118.02,
+"e": 118.06,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 118.06,
+"e": 118.18,
+"g": "narr"
+},
+{
+"w": "food",
+"s": 118.18,
+"e": 118.52,
+"g": "narr"
+},
+{
+"w": "court",
+"s": 118.52,
+"e": 118.88,
+"g": "narr"
+},
+{
+"w": "is",
+"s": 118.88,
+"e": 119.5,
+"g": "narr"
+},
+{
+"w": "made",
+"s": 119.5,
+"e": 119.72,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 119.72,
+"e": 119.94,
+"g": "narr"
+},
+{
+"w": "glass.",
+"s": 119.94,
+"e": 120.4,
+"g": "narr"
+},
+{
+"w": "Here's",
+"s": 121.74,
+"e": 122.18,
+"g": "narr"
+},
+{
+"w": "what",
+"s": 122.18,
+"e": 122.34,
+"g": "narr"
+},
+{
+"w": "nobody",
+"s": 122.34,
+"e": 122.62,
+"g": "narr"
+},
+{
+"w": "tells",
+"s": 122.62,
+"e": 123.0,
+"g": "narr"
+},
+{
+"w": "you",
+"s": 123.0,
+"e": 123.22,
+"g": "narr"
+},
+{
+"w": "about",
+"s": 123.22,
+"e": 123.48,
+"g": "narr"
+},
+{
+"w": "malls.",
+"s": 123.48,
+"e": 123.82,
+"g": "narr"
+},
+{
+"w": "They're",
+"s": 124.52,
+"e": 124.64,
+"g": "narr"
+},
+{
+"w": "built",
+"s": 124.64,
+"e": 124.84,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 124.84,
+"e": 125.06,
+"g": "narr"
+},
+{
+"w": "let",
+"s": 125.06,
+"e": 125.22,
+"g": "narr"
+},
+{
+"w": "people",
+"s": 125.22,
+"e": 125.52,
+"g": "narr"
+},
+{
+"w": "in.",
+"s": 125.52,
+"e": 126.08,
+"g": "narr"
+},
+{
+"w": "Glass",
+"s": 126.08,
+"e": 126.56,
+"g": "narr"
+},
+{
+"w": "doors.",
+"s": 126.56,
+"e": 127.0,
+"g": "narr"
+},
+{
+"w": "Glass",
+"s": 127.84,
+"e": 127.92,
+"g": "narr"
+},
+{
+"w": "walls.",
+"s": 127.92,
+"e": 128.42,
+"g": "narr"
+},
+{
+"w": "Glass",
+"s": 129.24,
+"e": 129.34,
+"g": "narr"
+},
+{
+"w": "ceilings.",
+"s": 129.34,
+"e": 129.8,
+"g": "narr"
+},
+{
+"w": "It's",
+"s": 131.32,
+"e": 131.96,
+"g": "narr"
+},
+{
+"w": "great",
+"s": 131.96,
+"e": 132.28,
+"g": "narr"
+},
+{
+"w": "on",
+"s": 132.28,
+"e": 132.88,
+"g": "narr"
+},
+{
+"w": "Black",
+"s": 132.88,
+"e": 133.14,
+"g": "narr"
+},
+{
+"w": "Friday.",
+"s": 133.14,
+"e": 133.58,
+"g": "narr"
+},
+{
+"w": "Tonight,",
+"s": 134.16,
+"e": 134.46,
+"g": "narr"
+},
+{
+"w": "it's",
+"s": 134.94,
+"e": 135.2,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 135.2,
+"e": 135.42,
+"g": "narr"
+},
+{
+"w": "death",
+"s": 135.42,
+"e": 135.58,
+"g": "narr"
+},
+{
+"w": "trap.",
+"s": 135.58,
+"e": 135.96,
+"g": "narr"
+},
+{
+"w": "But",
+"s": 137.32,
+"e": 137.52,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 137.52,
+"e": 137.7,
+"g": "narr"
+},
+{
+"w": "know",
+"s": 137.7,
+"e": 137.86,
+"g": "narr"
+},
+{
+"w": "something",
+"s": 137.86,
+"e": 138.24,
+"g": "narr"
+},
+{
+"w": "they",
+"s": 138.24,
+"e": 138.56,
+"g": "narr"
+},
+{
+"w": "don't.",
+"s": 138.56,
+"e": 139.24,
+"g": "narr"
+},
+{
+"w": "Every",
+"s": 140.16,
+"e": 140.7,
+"g": "narr"
+},
+{
+"w": "store",
+"s": 140.7,
+"e": 141.02,
+"g": "narr"
+},
+{
+"w": "in",
+"s": 141.02,
+"e": 141.2,
+"g": "narr"
+},
+{
+"w": "this",
+"s": 141.2,
+"e": 141.38,
+"g": "narr"
+},
+{
+"w": "mall",
+"s": 141.38,
+"e": 141.64,
+"g": "narr"
+},
+{
+"w": "has",
+"s": 141.64,
+"e": 142.0,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 142.0,
+"e": 142.18,
+"g": "narr"
+},
+{
+"w": "steel",
+"s": 142.18,
+"e": 142.48,
+"g": "narr"
+},
+{
+"w": "security",
+"s": 142.48,
+"e": 142.92,
 "g": "narr"
 },
 {
 "w": "gate.",
-"s": 151.88,
-"e": 152.18,
+"s": 142.92,
+"e": 143.26,
 "g": "narr"
 },
 {
-"w": "That",
-"s": 152.66,
-"e": 152.82,
+"w": "Pull",
+"s": 143.74,
+"e": 143.86,
 "g": "narr"
 },
 {
-"w": "was",
-"s": 152.82,
-"e": 153.0,
+"w": "it",
+"s": 143.86,
+"e": 144.0,
 "g": "narr"
 },
 {
-"w": "hour",
-"s": 153.0,
-"e": 153.3,
+"w": "down.",
+"s": 144.0,
+"e": 144.34,
+"g": "narr"
+},
+{
+"w": "Lock",
+"s": 145.04,
+"e": 145.1,
+"g": "narr"
+},
+{
+"w": "it.",
+"s": 145.1,
+"e": 145.32,
+"g": "narr"
+},
+{
+"w": "And",
+"s": 145.78,
+"e": 145.84,
+"g": "narr"
+},
+{
+"w": "that",
+"s": 145.84,
+"e": 145.96,
+"g": "narr"
+},
+{
+"w": "store",
+"s": 145.96,
+"e": 146.22,
+"g": "narr"
+},
+{
+"w": "becomes",
+"s": 146.22,
+"e": 146.52,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 146.52,
+"e": 146.74,
+"g": "narr"
+},
+{
+"w": "vault.",
+"s": 146.74,
+"e": 146.94,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 147.66,
+"e": 147.8,
+"g": "narr"
+},
+{
+"w": "can't",
+"s": 147.8,
+"e": 148.12,
+"g": "narr"
+},
+{
+"w": "save",
+"s": 148.12,
+"e": 148.26,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 148.26,
+"e": 148.44,
+"g": "narr"
+},
+{
+"w": "whole",
+"s": 148.44,
+"e": 148.6,
+"g": "narr"
+},
+{
+"w": "mall,",
+"s": 148.6,
+"e": 148.92,
+"g": "narr"
+},
+{
+"w": "but",
+"s": 149.22,
+"e": 149.48,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 149.48,
+"e": 149.62,
+"g": "narr"
+},
+{
+"w": "can",
+"s": 149.62,
+"e": 149.96,
+"g": "narr"
+},
+{
+"w": "pick",
+"s": 149.96,
+"e": 150.24,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 150.24,
+"e": 150.72,
+"g": "narr"
+},
+{
+"w": "store.",
+"s": 150.72,
+"e": 151.44,
+"g": "narr"
+},
+{
+"w": "And",
+"s": 151.44,
+"e": 152.36,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 152.36,
+"e": 152.94,
+"g": "narr"
+},
+{
+"w": "have",
+"s": 152.94,
+"e": 153.44,
+"g": "narr"
+},
+{
+"w": "about",
+"s": 153.44,
+"e": 154.06,
+"g": "narr"
+},
+{
+"w": "four",
+"s": 154.06,
+"e": 154.64,
+"g": "narr"
+},
+{
+"w": "minutes",
+"s": 154.64,
+"e": 155.08,
+"g": "narr"
+},
+{
+"w": "before",
+"s": 155.08,
+"e": 155.9,
+"g": "narr"
+},
+{
+"w": "that",
+"s": 155.9,
+"e": 156.1,
+"g": "narr"
+},
+{
+"w": "glass",
+"s": 156.1,
+"e": 156.36,
+"g": "narr"
+},
+{
+"w": "gives",
+"s": 156.36,
+"e": 156.56,
+"g": "narr"
+},
+{
+"w": "out.",
+"s": 156.56,
+"e": 157.0,
+"g": "narr"
+},
+{
+"w": "So",
+"s": 157.78,
+"e": 158.22,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 158.22,
+"e": 158.36,
+"g": "narr"
+},
+{
+"w": "run.",
+"s": 158.36,
+"e": 158.68,
+"g": "narr"
+},
+{
+"w": "The",
+"s": 159.32,
+"e": 159.42,
+"g": "narr"
+},
+{
+"w": "same",
+"s": 159.42,
+"e": 159.66,
+"g": "narr"
+},
+{
+"w": "loop",
+"s": 159.66,
+"e": 159.86,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 159.86,
+"e": 160.02,
+"g": "narr"
+},
+{
+"w": "walked",
+"s": 160.02,
+"e": 160.26,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 160.26,
+"e": 160.5,
+"g": "narr"
+},
+{
+"w": "thousand",
+"s": 160.5,
+"e": 160.8,
+"g": "narr"
+},
+{
+"w": "times.",
+"s": 160.8,
+"e": 161.28,
+"g": "narr"
+},
+{
+"w": "Except",
+"s": 161.56,
+"e": 161.8,
+"g": "narr"
+},
+{
+"w": "tonight,",
+"s": 161.8,
+"e": 162.16,
+"g": "narr"
+},
+{
+"w": "I'm",
+"s": 162.6,
+"e": 162.72,
+"g": "narr"
+},
+{
+"w": "shopping",
+"s": 162.72,
+"e": 163.06,
+"g": "narr"
+},
+{
+"w": "for",
+"s": 163.06,
+"e": 163.3,
+"g": "narr"
+},
+{
+"w": "my",
+"s": 163.3,
+"e": 163.46,
+"g": "narr"
+},
+{
+"w": "life.",
+"s": 163.46,
+"e": 163.94,
+"g": "narr"
+},
+{
+"w": "The",
+"s": 165.6,
+"e": 166.16,
+"g": "narr"
+},
+{
+"w": "pharmacy",
+"s": 166.16,
+"e": 166.44,
+"g": "narr"
+},
+{
+"w": "has",
+"s": 166.44,
+"e": 166.72,
+"g": "narr"
+},
+{
+"w": "medicine,",
+"s": 166.72,
+"e": 167.12,
+"g": "narr"
+},
+{
+"w": "but",
+"s": 167.56,
+"e": 167.86,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 167.86,
+"e": 167.96,
+"g": "narr"
+},
+{
+"w": "whole",
+"s": 167.96,
+"e": 168.16,
+"g": "narr"
+},
+{
+"w": "front",
+"s": 168.16,
+"e": 168.4,
+"g": "narr"
+},
+{
+"w": "is",
+"s": 168.4,
+"e": 168.56,
+"g": "narr"
+},
+{
+"w": "glass.",
+"s": 168.56,
+"e": 168.9,
+"g": "narr"
+},
+{
+"w": "One",
+"s": 169.3,
+"e": 169.48,
+"g": "narr"
+},
+{
+"w": "crack,",
+"s": 169.48,
+"e": 169.84,
+"g": "narr"
+},
+{
+"w": "and",
+"s": 170.22,
+"e": 170.42,
+"g": "narr"
+},
+{
+"w": "I'm",
+"s": 170.42,
+"e": 170.56,
+"g": "narr"
+},
+{
+"w": "done.",
+"s": 170.56,
+"e": 170.76,
+"g": "narr"
+},
+{
+"w": "The",
+"s": 172.46,
+"e": 172.98,
+"g": "narr"
+},
+{
+"w": "food",
+"s": 172.98,
+"e": 173.2,
+"g": "narr"
+},
+{
+"w": "court",
+"s": 173.2,
+"e": 173.4,
+"g": "narr"
+},
+{
+"w": "has",
+"s": 173.4,
+"e": 173.64,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 173.64,
+"e": 173.8,
+"g": "narr"
+},
+{
+"w": "freezer",
+"s": 173.8,
+"e": 174.04,
+"g": "narr"
+},
+{
+"w": "full",
+"s": 174.04,
+"e": 174.26,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 174.26,
+"e": 174.4,
+"g": "narr"
+},
+{
+"w": "food.",
+"s": 174.4,
+"e": 174.58,
+"g": "narr"
+},
+{
+"w": "That's",
+"s": 174.64,
+"e": 174.78,
+"g": "narr"
+},
+{
+"w": "exactly",
+"s": 174.78,
+"e": 175.12,
+"g": "narr"
+},
+{
+"w": "why",
+"s": 175.12,
+"e": 175.38,
+"g": "narr"
+},
+{
+"w": "they're",
+"s": 175.38,
+"e": 175.52,
+"g": "narr"
+},
+{
+"w": "going",
+"s": 175.52,
+"e": 175.68,
+"g": "narr"
+},
+{
+"w": "there.",
+"s": 175.68,
+"e": 175.98,
+"g": "narr"
+},
+{
+"w": "The",
+"s": 176.56,
+"e": 177.1,
+"g": "narr"
+},
+{
+"w": "department",
+"s": 177.1,
+"e": 177.42,
+"g": "narr"
+},
+{
+"w": "store",
+"s": 177.42,
+"e": 177.78,
+"g": "narr"
+},
+{
+"w": "has",
+"s": 177.78,
+"e": 178.0,
+"g": "narr"
+},
+{
+"w": "beds,",
+"s": 178.0,
+"e": 178.42,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 178.8,
+"e": 178.84,
+"g": "narr"
+},
+{
+"w": "second",
+"s": 178.84,
+"e": 179.08,
+"g": "narr"
+},
+{
+"w": "floor,",
+"s": 179.08,
+"e": 179.44,
+"g": "narr"
+},
+{
+"w": "and",
+"s": 179.72,
+"e": 179.88,
+"g": "narr"
+},
+{
+"w": "nine",
+"s": 179.88,
+"e": 180.18,
+"g": "narr"
+},
+{
+"w": "different",
+"s": 180.18,
+"e": 180.56,
+"g": "narr"
+},
+{
+"w": "entrances.",
+"s": 180.56,
+"e": 181.06,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 181.06,
+"e": 181.52,
+"g": "narr"
+},
+{
+"w": "can't",
+"s": 181.52,
+"e": 181.78,
+"g": "narr"
+},
+{
+"w": "guard",
+"s": 181.78,
+"e": 181.98,
+"g": "narr"
+},
+{
+"w": "nine",
+"s": 181.98,
+"e": 182.22,
+"g": "narr"
+},
+{
+"w": "doors.",
+"s": 182.22,
+"e": 182.6,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 182.94,
+"e": 183.1,
+"g": "narr"
+},
+{
+"w": "can",
+"s": 183.1,
+"e": 183.6,
+"g": "narr"
+},
+{
+"w": "barely",
+"s": 183.6,
+"e": 183.84,
+"g": "narr"
+},
+{
+"w": "guard",
+"s": 183.84,
+"e": 184.1,
 "g": "narr"
 },
 {
 "w": "one.",
-"s": 153.3,
-"e": 153.7,
+"s": 184.1,
+"e": 184.52,
+"g": "narr"
+},
+{
+"w": "And",
+"s": 185.28,
+"e": 185.3,
+"g": "narr"
+},
+{
+"w": "then",
+"s": 185.3,
+"e": 185.6,
+"g": "narr"
+},
+{
+"w": "there's",
+"s": 185.6,
+"e": 186.28,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 186.28,
+"e": 186.4,
+"g": "narr"
+},
+{
+"w": "sporting",
+"s": 186.4,
+"e": 186.68,
+"g": "narr"
+},
+{
+"w": "goods",
+"s": 186.68,
+"e": 186.96,
+"g": "narr"
+},
+{
+"w": "store.",
+"s": 186.96,
+"e": 187.34,
+"g": "narr"
+},
+{
+"w": "Tents,",
+"s": 187.96,
+"e": 188.16,
+"g": "narr"
+},
+{
+"w": "water",
+"s": 188.88,
+"e": 189.04,
+"g": "narr"
+},
+{
+"w": "filters,",
+"s": 189.04,
+"e": 189.64,
+"g": "narr"
+},
+{
+"w": "aluminum",
+"s": 190.22,
+"e": 190.48,
+"g": "narr"
+},
+{
+"w": "bats,",
+"s": 190.48,
+"e": 190.9,
+"g": "narr"
+},
+{
+"w": "and",
+"s": 191.58,
+"e": 191.68,
+"g": "narr"
+},
+{
+"w": "only",
+"s": 191.68,
+"e": 191.94,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 191.94,
+"e": 192.3,
+"g": "narr"
+},
+{
+"w": "way",
+"s": 192.3,
+"e": 192.56,
+"g": "narr"
+},
+{
+"w": "in.",
+"s": 192.56,
+"e": 192.92,
+"g": "narr"
+},
+{
+"w": "Behind",
+"s": 193.86,
+"e": 194.32,
+"g": "narr"
+},
+{
+"w": "me,",
+"s": 194.32,
+"e": 194.62,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 195.08,
+"e": 195.18,
+"g": "narr"
+},
+{
+"w": "food",
+"s": 195.18,
+"e": 195.48,
+"g": "narr"
+},
+{
+"w": "court",
+"s": 195.48,
+"e": 195.8,
+"g": "narr"
+},
+{
+"w": "doors",
+"s": 195.8,
+"e": 196.28,
+"g": "narr"
+},
+{
+"w": "explode.",
+"s": 196.28,
+"e": 197.18,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 199.72,
+"e": 200.44,
+"g": "narr"
+},
+{
+"w": "slide",
+"s": 200.44,
+"e": 200.92,
+"g": "narr"
+},
+{
+"w": "under",
+"s": 200.92,
+"e": 201.7,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 201.7,
+"e": 201.88,
+"g": "narr"
+},
+{
+"w": "gate.",
+"s": 201.88,
+"e": 202.18,
+"g": "narr"
+},
+{
+"w": "Yank",
+"s": 202.94,
+"e": 203.06,
+"g": "narr"
+},
+{
+"w": "it",
+"s": 203.06,
+"e": 203.22,
+"g": "narr"
+},
+{
+"w": "down.",
+"s": 203.22,
+"e": 203.56,
+"g": "narr"
+},
+{
+"w": "Lock",
+"s": 204.28,
+"e": 204.4,
+"g": "narr"
+},
+{
+"w": "it",
+"s": 204.4,
+"e": 204.66,
+"g": "narr"
+},
+{
+"w": "with",
+"s": 204.66,
+"e": 205.4,
+"g": "narr"
+},
+{
+"w": "key",
+"s": 205.4,
+"e": 205.86,
+"g": "narr"
+},
+{
+"w": "number",
+"s": 205.86,
+"e": 206.26,
+"g": "narr"
+},
+{
+"w": "31.",
+"s": 206.26,
+"e": 206.86,
+"g": "narr"
+},
+{
+"w": "Then",
+"s": 206.86,
+"e": 207.22,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 207.22,
+"e": 208.52,
+"g": "narr"
+},
+{
+"w": "sit",
+"s": 208.52,
+"e": 208.76,
+"g": "narr"
+},
+{
+"w": "in",
+"s": 208.76,
+"e": 208.9,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 208.9,
+"e": 209.02,
+"g": "narr"
+},
+{
+"w": "dark,",
+"s": 209.02,
+"e": 209.34,
+"g": "narr"
+},
+{
+"w": "between",
+"s": 209.82,
+"e": 210.16,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 210.16,
+"e": 210.36,
+"g": "narr"
+},
+{
+"w": "tents",
+"s": 210.36,
+"e": 210.62,
+"g": "narr"
+},
+{
+"w": "and",
+"s": 210.62,
+"e": 210.86,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 210.86,
+"e": 210.92,
+"g": "narr"
+},
+{
+"w": "treadmills,",
+"s": 210.92,
+"e": 211.5,
+"g": "narr"
+},
+{
+"w": "with",
+"s": 212.04,
+"e": 212.24,
+"g": "narr"
+},
+{
+"w": "my",
+"s": 212.24,
+"e": 212.4,
+"g": "narr"
+},
+{
+"w": "hand",
+"s": 212.4,
+"e": 212.74,
+"g": "narr"
+},
+{
+"w": "over",
+"s": 212.74,
+"e": 212.92,
+"g": "narr"
+},
+{
+"w": "my",
+"s": 212.92,
+"e": 213.14,
+"g": "narr"
+},
+{
+"w": "mouth",
+"s": 213.14,
+"e": 213.42,
+"g": "narr"
+},
+{
+"w": "thinking",
+"s": 213.42,
+"e": 213.7,
+"g": "narr"
+},
+{
+"w": "about",
+"s": 213.7,
+"e": 213.98,
+"g": "narr"
+},
+{
+"w": "Lilly",
+"s": 213.98,
+"e": 214.3,
+"g": "narr"
+},
+{
+"w": "getting",
+"s": 214.3,
+"e": 214.64,
+"g": "narr"
+},
+{
+"w": "off",
+"s": 214.64,
+"e": 214.86,
+"g": "narr"
+},
+{
+"w": "that",
+"s": 214.86,
+"e": 215.06,
+"g": "narr"
+},
+{
+"w": "bus",
+"s": 215.06,
+"e": 215.5,
+"g": "narr"
+},
+{
+"w": "tomorrow.",
+"s": 215.5,
+"e": 216.06,
+"g": "narr"
+},
+{
+"w": "Footsteps.",
+"s": 216.94,
+"e": 217.54,
+"g": "narr"
+},
+{
+"w": "Dozens",
+"s": 218.46,
+"e": 218.46,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 218.46,
+"e": 218.8,
+"g": "narr"
+},
+{
+"w": "them.",
+"s": 218.8,
+"e": 218.98,
+"g": "narr"
+},
+{
+"w": "Shuffling",
+"s": 219.62,
+"e": 220.02,
+"g": "narr"
+},
+{
+"w": "past",
+"s": 220.02,
+"e": 220.36,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 220.36,
+"e": 220.6,
+"g": "narr"
+},
+{
+"w": "gate.",
+"s": 220.6,
+"e": 220.9,
+"g": "narr"
+},
+{
+"w": "One",
+"s": 221.68,
+"e": 221.86,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 221.86,
+"e": 221.98,
+"g": "narr"
+},
+{
+"w": "whom",
+"s": 221.98,
+"e": 222.14,
+"g": "narr"
+},
+{
+"w": "stops.",
+"s": 222.14,
+"e": 222.56,
+"g": "narr"
+},
+{
+"w": "Hits",
+"s": 223.42,
+"e": 223.82,
+"g": "narr"
+},
+{
+"w": "Marcus.",
+"s": 223.82,
+"e": 224.24,
+"g": "narr"
+},
+{
+"w": "He's",
+"s": 225.16,
+"e": 225.48,
+"g": "narr"
+},
+{
+"w": "still",
+"s": 225.48,
+"e": 225.68,
+"g": "narr"
+},
+{
+"w": "wearing",
+"s": 225.68,
+"e": 226.0,
+"g": "narr"
+},
+{
+"w": "his",
+"s": 226.0,
+"e": 226.24,
+"g": "narr"
+},
+{
+"w": "radio.",
+"s": 226.24,
+"e": 226.68,
+"g": "narr"
+},
+{
+"w": "And",
+"s": 227.58,
+"e": 227.82,
+"g": "narr"
+},
+{
+"w": "that's",
+"s": 227.82,
+"e": 228.06,
+"g": "narr"
+},
+{
+"w": "when",
+"s": 228.06,
+"e": 228.22,
+"g": "narr"
+},
+{
+"w": "mine",
+"s": 228.22,
+"e": 228.48,
+"g": "narr"
+},
+{
+"w": "crackles.",
+"s": 228.48,
+"e": 229.1,
+"g": "narr"
+},
+{
+"w": "Is",
+"s": 229.86,
+"e": 230.0,
+"g": "woman"
+},
+{
+"w": "anyone",
+"s": 230.0,
+"e": 230.36,
+"g": "woman"
+},
+{
+"w": "still",
+"s": 230.36,
+"e": 230.84,
+"g": "woman"
+},
+{
+"w": "in",
+"s": 230.84,
+"e": 231.06,
+"g": "woman"
+},
+{
+"w": "the",
+"s": 231.06,
+"e": 231.18,
+"g": "woman"
+},
+{
+"w": "mall?",
+"s": 231.18,
+"e": 231.48,
+"g": "woman"
+},
+{
+"w": "I'm",
+"s": 232.08,
+"e": 232.26,
+"g": "woman"
+},
+{
+"w": "on",
+"s": 232.26,
+"e": 232.4,
+"g": "woman"
+},
+{
+"w": "the",
+"s": 232.4,
+"e": 232.6,
+"g": "woman"
+},
+{
+"w": "second",
+"s": 232.6,
+"e": 232.82,
+"g": "woman"
+},
+{
+"w": "floor",
+"s": 232.82,
+"e": 233.22,
+"g": "woman"
+},
+{
+"w": "of",
+"s": 233.22,
+"e": 233.38,
+"g": "woman"
+},
+{
+"w": "the",
+"s": 233.38,
+"e": 233.5,
+"g": "woman"
+},
+{
+"w": "department",
+"s": 233.5,
+"e": 233.8,
+"g": "woman"
+},
+{
+"w": "store.",
+"s": 233.8,
+"e": 234.3,
+"g": "woman"
+},
+{
+"w": "Please.",
+"s": 234.3,
+"e": 235.1,
+"g": "woman"
+},
+{
+"w": "I'm",
+"s": 235.86,
+"e": 236.2,
+"g": "woman"
+},
+{
+"w": "not",
+"s": 236.2,
+"e": 236.36,
+"g": "woman"
+},
+{
+"w": "alone",
+"s": 236.36,
+"e": 236.66,
+"g": "woman"
+},
+{
+"w": "up",
+"s": 236.66,
+"e": 236.86,
+"g": "woman"
+},
+{
+"w": "here.",
+"s": 236.86,
+"e": 237.16,
+"g": "woman"
+},
+{
+"w": "Her",
+"s": 238.2,
+"e": 238.88,
+"g": "narr"
+},
+{
+"w": "voice",
+"s": 238.88,
+"e": 239.18,
+"g": "narr"
+},
+{
+"w": "comes",
+"s": 239.18,
+"e": 239.48,
+"g": "narr"
+},
+{
+"w": "out",
+"s": 239.48,
+"e": 239.74,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 239.74,
+"e": 239.82,
+"g": "narr"
+},
+{
+"w": "my",
+"s": 239.82,
+"e": 239.96,
+"g": "narr"
+},
+{
+"w": "radio.",
+"s": 239.96,
+"e": 240.4,
+"g": "narr"
+},
+{
+"w": "And",
+"s": 241.28,
+"e": 241.96,
+"g": "narr"
+},
+{
+"w": "out",
+"s": 241.96,
+"e": 242.12,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 242.12,
+"e": 242.3,
+"g": "narr"
+},
+{
+"w": "Marcus's",
+"s": 242.3,
+"e": 242.72,
+"g": "narr"
+},
+{
+"w": "radio",
+"s": 242.72,
+"e": 243.02,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 243.02,
+"e": 243.36,
+"g": "narr"
+},
+{
+"w": "second",
+"s": 243.36,
+"e": 243.68,
+"g": "narr"
+},
+{
+"w": "later.",
+"s": 243.68,
+"e": 244.12,
+"g": "narr"
+},
+{
+"w": "Every",
+"s": 244.84,
+"e": 245.22,
+"g": "narr"
+},
+{
+"w": "head",
+"s": 245.22,
+"e": 245.62,
+"g": "narr"
+},
+{
+"w": "in",
+"s": 245.62,
+"e": 245.94,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 245.94,
+"e": 246.08,
+"g": "narr"
+},
+{
+"w": "hallway",
+"s": 246.08,
+"e": 246.56,
+"g": "narr"
+},
+{
+"w": "turns",
+"s": 246.56,
+"e": 247.26,
+"g": "narr"
+},
+{
+"w": "toward",
+"s": 247.26,
+"e": 247.66,
+"g": "narr"
+},
+{
+"w": "my",
+"s": 247.66,
+"e": 247.92,
+"g": "narr"
+},
+{
+"w": "gate.",
+"s": 247.92,
+"e": 248.26,
+"g": "narr"
+},
+{
+"w": "That",
+"s": 250.32,
+"e": 251.0,
+"g": "narr"
+},
+{
+"w": "was",
+"s": 251.0,
+"e": 251.18,
+"g": "narr"
+},
+{
+"w": "hour",
+"s": 251.18,
+"e": 251.36,
+"g": "narr"
+},
+{
+"w": "one.",
+"s": 251.36,
+"e": 251.72,
+"g": "narr"
+},
+{
+"w": "I'd",
+"s": 252.56,
+"e": 252.9,
+"g": "narr"
+},
+{
+"w": "spend",
+"s": 252.9,
+"e": 253.12,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 253.12,
+"e": 253.3,
+"g": "narr"
+},
+{
+"w": "next",
+"s": 253.3,
+"e": 253.66,
+"g": "narr"
+},
+{
+"w": "30",
+"s": 253.66,
+"e": 254.12,
+"g": "narr"
+},
+{
+"w": "days",
+"s": 254.12,
+"e": 254.64,
+"g": "narr"
+},
+{
+"w": "locked",
+"s": 254.64,
+"e": 255.5,
+"g": "narr"
+},
+{
+"w": "inside",
+"s": 255.5,
+"e": 255.98,
+"g": "narr"
+},
+{
+"w": "this",
+"s": 255.98,
+"e": 256.22,
+"g": "narr"
+},
+{
+"w": "mall.",
+"s": 256.22,
+"e": 256.52,
+"g": "narr"
+},
+{
+"w": "And",
+"s": 257.08,
+"e": 257.36,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 257.36,
+"e": 257.46,
+"g": "narr"
+},
+{
+"w": "woman",
+"s": 257.46,
+"e": 257.62,
+"g": "narr"
+},
+{
+"w": "on",
+"s": 257.62,
+"e": 257.86,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 257.86,
+"e": 257.98,
+"g": "narr"
+},
+{
+"w": "radio",
+"s": 257.98,
+"e": 258.38,
+"g": "narr"
+},
+{
+"w": "would",
+"s": 258.38,
+"e": 258.96,
+"g": "narr"
+},
+{
+"w": "turn",
+"s": 258.96,
+"e": 259.12,
+"g": "narr"
+},
+{
+"w": "out",
+"s": 259.12,
+"e": 259.3,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 259.3,
+"e": 259.4,
+"g": "narr"
+},
+{
+"w": "be",
+"s": 259.4,
+"e": 259.52,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 259.52,
+"e": 259.64,
+"g": "narr"
+},
+{
+"w": "most",
+"s": 259.64,
+"e": 259.82,
+"g": "narr"
+},
+{
+"w": "dangerous",
+"s": 259.82,
+"e": 260.34,
+"g": "narr"
+},
+{
+"w": "person",
+"s": 260.34,
+"e": 260.68,
+"g": "narr"
+},
+{
+"w": "in",
+"s": 260.68,
+"e": 261.04,
+"g": "narr"
+},
+{
+"w": "it.",
+"s": 261.04,
+"e": 261.4,
 "g": "narr"
 }
 ]

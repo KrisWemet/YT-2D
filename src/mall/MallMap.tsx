@@ -64,7 +64,7 @@ const KeyIcon: React.FC<{x: number; y: number; s: number}> = ({x, y, s}) => (
   </g>
 );
 
-export type MapMode = 'loop' | 'keys' | 'all' | 'pick' | 'thousand';
+export type MapMode = 'loop' | 'keys' | 'all' | 'pick' | 'thousand' | 'route';
 
 export const MallMap: React.FC<{mode: MapMode; t: number; dur: number}> = ({mode, t, dur}) => {
   const zoom = 1 + 0.04 * (t / Math.max(dur, 0.1));
@@ -149,6 +149,26 @@ export const MallMap: React.FC<{mode: MapMode; t: number; dur: number}> = ({mode
                 </g>
               ) : null;
             })}
+          {mode === 'route' && (() => {
+            // the crowd marches out of the garage toward the food court's glass wall
+            const path: [number, number][] = [[1800, 780], [1800, 565], [1668, 565]];
+            const seg1 = 215, seg2 = 132, L = seg1 + seg2;
+            const at = (d: number): [number, number] => (d <= seg1 ? [1800, 780 - d] : [1800 - (d - seg1), 565]);
+            return (
+              <g>
+                <path d="M 1800 800 V 565 H 1690" fill="none" stroke="#e2392d" strokeWidth={16} strokeDasharray="4 26" strokeLinecap="round" opacity={0.7} />
+                {new Array(26).fill(0).map((_, i) => {
+                  const d = Math.min(L - (i % 6) * 9, t * 95 + 40 - i * 15);
+                  if (d < 0) return null;
+                  const [px, py] = at(d);
+                  const jx = (((i * 37) % 11) - 5) * 3;
+                  const jy = (((i * 53) % 13) - 6) * 3;
+                  return <circle key={i} cx={px + (d >= L - 60 ? jx : 0)} cy={py + jy} r={11} fill="#7fbf5a" stroke="#1d1a1a" strokeWidth={4} />;
+                })}
+                <circle cx={path[2][0] - 18} cy={565} r={60 + Math.sin(t * 6) * 6} fill="none" stroke="#e2392d" strokeWidth={8} />
+              </g>
+            );
+          })()}
           <GuardIcon x={gx} y={gy} s={1.1} />
         </g>
         {mode === 'all' && (() => {

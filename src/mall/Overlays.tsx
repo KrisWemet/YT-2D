@@ -375,3 +375,106 @@ export const Rattle: React.FC<{x: number; y: number; s: number; t: number}> = ({
     )}
   </g>
 );
+
+/* ---------------- v2 additions ---------------- */
+
+// Lower-third name tag that slides in from the left.
+export const NameTag: React.FC<{name: string; sub: string; t: number; at?: number}> = ({name, sub, t, at = 0.2}) => {
+  const k = interpolate(t, [at, at + 0.35], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  if (k <= 0) return null;
+  const x = -700 + 770 * (1 - (1 - k) ** 3);
+  return (
+    <g transform={`translate(${x}, ${H - 250})`}>
+      <rect x={0} y={0} width={640} height={150} rx={10} fill="#101420" opacity={0.88} stroke={INK} strokeWidth={6} />
+      <rect x={0} y={0} width={18} height={150} rx={6} fill="#f0c53c" />
+      <Txt x={44} y={78} size={70} anchor="start">
+        {name}
+      </Txt>
+      <text x={46} y={124} fontFamily="DejaVu Sans, sans-serif" fontWeight={700} fontSize={30} fill="#cfd6e6" letterSpacing="0.08em">
+        {sub}
+      </text>
+    </g>
+  );
+};
+
+// Speech-bubble style shout, popping in (screen coords).
+export const Shout: React.FC<{x: number; y: number; text: string; t: number; at?: number; rotate?: number; size?: number}> = ({x, y, text, t, at = 0, rotate = -6, size = 64}) => {
+  const s = pop(t, at);
+  if (s <= 0) return null;
+  const w = text.length * size * 0.62 + 60;
+  return (
+    <g transform={`translate(${x},${y}) rotate(${rotate}) scale(${s})`}>
+      <path d={`M ${-w / 2} ${-size * 0.85} H ${w / 2} V ${size * 0.45} H ${-w / 2 + 70} L ${-w / 2 + 30} ${size * 1.05} L ${-w / 2 + 40} ${size * 0.45} H ${-w / 2} Z`} fill="#fff" stroke={INK} strokeWidth={7} strokeLinejoin="round" />
+      <text x={0} y={size * 0.12} textAnchor="middle" fontFamily={FONT} fontSize={size} fill="#d8443a">
+        {text}
+      </text>
+    </g>
+  );
+};
+
+const mmss = (sec: number) => {
+  const s = Math.max(0, Math.ceil(sec));
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+};
+
+// Small countdown in the top-right corner.
+export const Countdown: React.FC<{left: number; t: number; urgent?: boolean}> = ({left, t, urgent = false}) => {
+  const flash = urgent && Math.floor(t * 4) % 2 === 0;
+  return (
+    <g transform={`translate(${W - 300}, 70)`}>
+      <rect x={0} y={0} width={240} height={104} rx={14} fill="#14161c" stroke={INK} strokeWidth={7} opacity={0.92} />
+      <text x={120} y={78} textAnchor="middle" fontFamily="DejaVu Sans Mono, monospace" fontWeight={700} fontSize={70} fill={flash ? '#ffffff' : '#ff4d3a'}>
+        {mmss(left)}
+      </text>
+    </g>
+  );
+};
+
+// Big centred timer.
+export const BigTimer: React.FC<{text: string; t: number; at?: number}> = ({text, t, at = 0}) => {
+  const s = pop(t, at, 0.25);
+  if (s <= 0) return null;
+  return (
+    <g transform={`translate(${W / 2}, ${H / 2 + 40}) scale(${s})`}>
+      <rect x={-330} y={-150} width={660} height={240} rx={26} fill="#14161c" stroke={INK} strokeWidth={10} opacity={0.94} />
+      <text x={0} y={50} textAnchor="middle" fontFamily="DejaVu Sans Mono, monospace" fontWeight={700} fontSize={190} fill="#ff4d3a">
+        {text}
+      </text>
+    </g>
+  );
+};
+
+// A radio readout that goes flat: "NO SIGNAL".
+export const NoSignal: React.FC<{t: number; at: number}> = ({t, at}) => {
+  if (t < at) return null;
+  const blink = Math.floor((t - at) * 2.5) % 2 === 0;
+  return (
+    <g transform={`translate(${W / 2}, ${H - 120})`}>
+      <rect x={-340} y={-62} width={680} height={124} rx={62} fill="#101216" opacity={0.86} stroke={INK} strokeWidth={6} />
+      <line x1={-150} y1={0} x2={300} y2={0} stroke="#8fd18a" strokeWidth={6} strokeLinecap="round" />
+      <Txt x={-300} y={18} size={48} anchor="start" fill={blink ? '#ff4d3a' : '#8a3a33'}>
+        NO SIGNAL
+      </Txt>
+    </g>
+  );
+};
+
+// Tape-rewind look over a frame: lines, jitter, and the ◀◀ symbol.
+export const RewindFx: React.FC<{t: number; frame: number}> = ({t, frame}) => {
+  const lines = [];
+  for (let i = 0; i < 9; i++) {
+    const y = (random(`rw${i}-${Math.floor(frame / 2)}`) * H) | 0;
+    lines.push(<rect key={i} x={0} y={y} width={W} height={4 + (i % 3) * 3} fill="#ffffff" opacity={0.22} />);
+  }
+  return (
+    <Screen>
+      {lines}
+      <g transform="translate(110, 120)" opacity={Math.floor(t * 4) % 2 === 0 ? 1 : 0.6}>
+        <path d="M 60 -40 L 0 0 L 60 40 Z M 120 -40 L 60 0 L 120 40 Z" fill="#ffffff" stroke={INK} strokeWidth={6} strokeLinejoin="round" />
+        <Txt x={150} y={22} size={60} anchor="start">
+          REWIND
+        </Txt>
+      </g>
+    </Screen>
+  );
+};

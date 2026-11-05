@@ -1,0 +1,51 @@
+{
+ "taskId": "f4e38d2d92e73b6e70e7a36eb80692b0",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: an excited crowd of shoppers cheering and rushing through doors at a store opening, footsteps, shouting, about four seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/62a47ba3-0f65-4836-8bd1-19b9dd6430fd.mp3\",\"createTime\":1793844688872,\"duration\":2.4,\"id\":\"62a47ba3-0f65-4836-8bd1-19b9dd6430fd\",\"image_url\":\"https://cdn2.suno.ai/image_62a47ba3-0f65-4836-8bd1-19b9dd6430fd.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/62a47ba3-0f65-4836-8bd1-19b9dd6430fd.mp3\",\"tags\":\"Sound effect only, no music, no voice: an excited crowd of shoppers cheering and rushing through doors at a store opening, footsteps, shouting, about four seconds\",\"title\":\"Sound effect only, no music, no voice: an excited crowd of shoppers cheering ...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/0c662a24-163b-4514-94fc-0fefc706dabf.mp3\",\"createTime\":1793844688872,\"duration\":2.36,\"id\":\"0c662a24-163b-4514-94fc-0fefc706dabf\",\"image_url\":\"https://cdn2.suno.ai/image_0c662a24-163b-4514-94fc-0fefc706dabf.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/0c662a24-163b-4514-94fc-0fefc706dabf.mp3\",\"tags\":\"Sound effect only, no music, no voice: an excited crowd of shoppers cheering and rushing through doors at a store opening, footsteps, shouting, about four seconds\",\"title\":\"Sound effect only, no music, no voice: an excited crowd of shoppers cheering ...\"}],\"msg\":\"success\",\"task_id\":\"f4e38d2d92e73b6e70e7a36eb80692b0\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 18,
+ "completeTime": 1793844688872,
+ "createTime": 1793844670050,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: an excited crowd of shoppers cheering and rushing through doors at a store opening, footsteps, shouting, about four seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 2.4,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/62a47ba3-0f65-4836-8bd1-19b9dd6430fd.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793844688872,
+    "image_url": "https://cdn2.suno.ai/image_62a47ba3-0f65-4836-8bd1-19b9dd6430fd.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/62a47ba3-0f65-4836-8bd1-19b9dd6430fd.mp3",
+    "id": "62a47ba3-0f65-4836-8bd1-19b9dd6430fd",
+    "title": "Sound effect only, no music, no voice: an excited crowd of shoppers cheering ...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: an excited crowd of shoppers cheering and rushing through doors at a store opening, footsteps, shouting, about four seconds"
+   },
+   {
+    "duration": 2.36,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/0c662a24-163b-4514-94fc-0fefc706dabf.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793844688872,
+    "image_url": "https://cdn2.suno.ai/image_0c662a24-163b-4514-94fc-0fefc706dabf.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/0c662a24-163b-4514-94fc-0fefc706dabf.mp3",
+    "id": "0c662a24-163b-4514-94fc-0fefc706dabf",
+    "title": "Sound effect only, no music, no voice: an excited crowd of shoppers cheering ...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: an excited crowd of shoppers cheering and rushing through doors at a store opening, footsteps, shouting, about four seconds"
+   }
+  ],
+  "task_id": "f4e38d2d92e73b6e70e7a36eb80692b0"
+ },
+ "_elapsed": 21.1
+}

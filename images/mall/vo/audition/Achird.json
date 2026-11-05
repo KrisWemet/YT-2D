@@ -1,0 +1,20 @@
+{
+ "speakers": [
+  {
+   "speaker_id": "Speaker 1",
+   "voice_name": "Achird",
+   "audio_profile": "Danny Ruiz, 38, a night security guard and single dad. Warm, a little gravelly, with a dry sense of humor. He is telling the story of the worst night of his life, quietly, like it still shakes him.",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "accent": "American (Gen)"
+  }
+ ],
+ "dialogue_turns": [
+  {
+   "speaker_id": "Speaker 1",
+   "text": "[whispers] The dead man pressing his face against my gate used to be my best friend. [tense] In about ten seconds, the radio clipped to his chest is going to crackle... and tell every one of them exactly where I'm hiding. [pause] [wry] My name is Danny Ruiz. I'm the night security guard at Maplecrest Mall. And yes, I've heard every mall cop joke there is."
+  }
+ ],
+ "scene": "Late at night. Danny sits alone in the dark and tells what happened in the first hour of a zombie outbreak at the shopping mall where he works. Intimate and close to the microphone, no music.",
+ "sample_context": "A first-person survival story told as a YouTube narration."
+}
