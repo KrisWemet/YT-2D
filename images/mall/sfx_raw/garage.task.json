@@ -1,0 +1,51 @@
+{
+ "taskId": "45b8f8147409d49da362121bd85acb39",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: an underground concrete parking garage at night: buzzing fluorescent lights, a low ventilation hum, distant echo, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/86fc4960-6d8b-4bbb-83e7-f7f6195d200e.mp3\",\"createTime\":1793838403726,\"duration\":13.16,\"id\":\"86fc4960-6d8b-4bbb-83e7-f7f6195d200e\",\"image_url\":\"https://cdn2.suno.ai/image_86fc4960-6d8b-4bbb-83e7-f7f6195d200e.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/86fc4960-6d8b-4bbb-83e7-f7f6195d200e.mp3\",\"tags\":\"Sound effect only, no music, no voice: an underground concrete parking garage at night: buzzing fluorescent lights, a low ventilation hum, distant echo, seamless loop\",\"title\":\"Sound effect only, no music, no voice: an underground concrete parking garage...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/26b786f8-d3cd-42a9-b03c-6cb9287389eb.mp3\",\"createTime\":1793838403726,\"duration\":12.68,\"id\":\"26b786f8-d3cd-42a9-b03c-6cb9287389eb\",\"image_url\":\"https://cdn2.suno.ai/image_26b786f8-d3cd-42a9-b03c-6cb9287389eb.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/26b786f8-d3cd-42a9-b03c-6cb9287389eb.mp3\",\"tags\":\"Sound effect only, no music, no voice: an underground concrete parking garage at night: buzzing fluorescent lights, a low ventilation hum, distant echo, seamless loop\",\"title\":\"Sound effect only, no music, no voice: an underground concrete parking garage...\"}],\"msg\":\"success\",\"task_id\":\"45b8f8147409d49da362121bd85acb39\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 19,
+ "completeTime": 1793838403726,
+ "createTime": 1793838383514,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: an underground concrete parking garage at night: buzzing fluorescent lights, a low ventilation hum, distant echo, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 13.16,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/86fc4960-6d8b-4bbb-83e7-f7f6195d200e.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838403726,
+    "image_url": "https://cdn2.suno.ai/image_86fc4960-6d8b-4bbb-83e7-f7f6195d200e.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/86fc4960-6d8b-4bbb-83e7-f7f6195d200e.mp3",
+    "id": "86fc4960-6d8b-4bbb-83e7-f7f6195d200e",
+    "title": "Sound effect only, no music, no voice: an underground concrete parking garage...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: an underground concrete parking garage at night: buzzing fluorescent lights, a low ventilation hum, distant echo, seamless loop"
+   },
+   {
+    "duration": 12.68,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/26b786f8-d3cd-42a9-b03c-6cb9287389eb.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838403726,
+    "image_url": "https://cdn2.suno.ai/image_26b786f8-d3cd-42a9-b03c-6cb9287389eb.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/26b786f8-d3cd-42a9-b03c-6cb9287389eb.mp3",
+    "id": "26b786f8-d3cd-42a9-b03c-6cb9287389eb",
+    "title": "Sound effect only, no music, no voice: an underground concrete parking garage...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: an underground concrete parking garage at night: buzzing fluorescent lights, a low ventilation hum, distant echo, seamless loop"
+   }
+  ],
+  "task_id": "45b8f8147409d49da362121bd85acb39"
+ },
+ "_elapsed": 21.4
+}

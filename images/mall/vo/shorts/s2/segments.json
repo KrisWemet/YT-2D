@@ -1,0 +1,96 @@
+{
+ "duration": 59.521,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "I have a key to every store in this mall.",
+   "s": 0.3,
+   "e": 3.574,
+   "chunk": "k1"
+  },
+  {
+   "kind": "narr",
+   "text": "The man who gave them to me said never to use the last one.",
+   "s": 3.774,
+   "e": 7.567,
+   "chunk": "k2"
+  },
+  {
+   "kind": "narr",
+   "text": "I'm Danny. I'm the night guard at Maplecrest Mall.",
+   "s": 7.917,
+   "e": 11.263,
+   "chunk": "k3"
+  },
+  {
+   "kind": "narr",
+   "text": "I work nights so I can be at the bus stop at three-fifteen when my daughter Lily gets off.",
+   "s": 11.463,
+   "e": 17.154,
+   "chunk": "k4"
+  },
+  {
+   "kind": "narr",
+   "text": "We live with my mom, on the tenth floor of the Parkview Apartments, right across the highway.",
+   "s": 17.454,
+   "e": 22.303,
+   "chunk": "k5"
+  },
+  {
+   "kind": "narr",
+   "text": "Every night at nine, when I walk in to work, Lily blinks her lamp at the mall three times.",
+   "s": 22.553,
+   "e": 29.0,
+   "chunk": "k6"
+  },
+  {
+   "kind": "narr",
+   "text": "It means I love you. I blink my flashlight back.",
+   "s": 29.2,
+   "e": 31.66,
+   "chunk": "k7"
+  },
+  {
+   "kind": "narr",
+   "text": "I taught her one more signal, S-O-S, for emergencies. She thinks it's a game.",
+   "s": 32.01,
+   "e": 36.269,
+   "chunk": "k8"
+  },
+  {
+   "kind": "narr",
+   "text": "Forty-two keys. Old Walt had this job before me, and when he handed them over, he tapped the last one.",
+   "s": 36.669,
+   "e": 43.023,
+   "chunk": "k9"
+  },
+  {
+   "kind": "narr",
+   "text": "\"That one, you never use,\" he said. \"Don't ask.\"",
+   "s": 43.223,
+   "e": 47.827,
+   "chunk": "k10"
+  },
+  {
+   "kind": "narr",
+   "text": "Its tag says B3. There is no B3 on the mall map.",
+   "s": 48.127,
+   "e": 52.503,
+   "chunk": "k11"
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight, I'd only need one of them.",
+   "s": 52.853,
+   "e": 54.741,
+   "chunk": "q2"
+  },
+  {
+   "kind": "narr",
+   "text": "In thirty days, I'd find out what the last one opens.",
+   "s": 55.091,
+   "e": 58.021,
+   "chunk": "k13"
+  }
+ ]
+}

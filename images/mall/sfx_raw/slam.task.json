@@ -1,0 +1,51 @@
+{
+ "taskId": "6cacdc77bf820e3d04ac7c941a69985f",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a deep cinematic impact boom hit with a short reverb tail, dramatic, one hit\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/dfe8ebc6-606c-48d4-904c-900d689c15c8.mp3\",\"createTime\":1793838402065,\"duration\":2.32,\"id\":\"dfe8ebc6-606c-48d4-904c-900d689c15c8\",\"image_url\":\"https://cdn2.suno.ai/image_dfe8ebc6-606c-48d4-904c-900d689c15c8.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/dfe8ebc6-606c-48d4-904c-900d689c15c8.mp3\",\"tags\":\"Sound effect only, no music, no voice: a deep cinematic impact boom hit with a short reverb tail, dramatic, one hit\",\"title\":\"Sound effect only, no music, no voice: a deep cinematic impact boom hit with ...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/4d562632-d437-4f9b-84eb-1b69f3ab78c8.mp3\",\"createTime\":1793838402065,\"duration\":2.4,\"id\":\"4d562632-d437-4f9b-84eb-1b69f3ab78c8\",\"image_url\":\"https://cdn2.suno.ai/image_4d562632-d437-4f9b-84eb-1b69f3ab78c8.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/4d562632-d437-4f9b-84eb-1b69f3ab78c8.mp3\",\"tags\":\"Sound effect only, no music, no voice: a deep cinematic impact boom hit with a short reverb tail, dramatic, one hit\",\"title\":\"Sound effect only, no music, no voice: a deep cinematic impact boom hit with ...\"}],\"msg\":\"success\",\"task_id\":\"6cacdc77bf820e3d04ac7c941a69985f\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 18,
+ "completeTime": 1793838402065,
+ "createTime": 1793838383594,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a deep cinematic impact boom hit with a short reverb tail, dramatic, one hit\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 2.32,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/dfe8ebc6-606c-48d4-904c-900d689c15c8.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402065,
+    "image_url": "https://cdn2.suno.ai/image_dfe8ebc6-606c-48d4-904c-900d689c15c8.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/dfe8ebc6-606c-48d4-904c-900d689c15c8.mp3",
+    "id": "dfe8ebc6-606c-48d4-904c-900d689c15c8",
+    "title": "Sound effect only, no music, no voice: a deep cinematic impact boom hit with ...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a deep cinematic impact boom hit with a short reverb tail, dramatic, one hit"
+   },
+   {
+    "duration": 2.4,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/4d562632-d437-4f9b-84eb-1b69f3ab78c8.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402065,
+    "image_url": "https://cdn2.suno.ai/image_4d562632-d437-4f9b-84eb-1b69f3ab78c8.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/4d562632-d437-4f9b-84eb-1b69f3ab78c8.mp3",
+    "id": "4d562632-d437-4f9b-84eb-1b69f3ab78c8",
+    "title": "Sound effect only, no music, no voice: a deep cinematic impact boom hit with ...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a deep cinematic impact boom hit with a short reverb tail, dramatic, one hit"
+   }
+  ],
+  "task_id": "6cacdc77bf820e3d04ac7c941a69985f"
+ },
+ "_elapsed": 21.1
+}

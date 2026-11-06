@@ -1,0 +1,60 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with very little inflection, keeping his pitch fairly level and even, like a real person, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  },
+  "marcus_gate": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice. He is badly hurt and worn out, sitting against the bars of a store gate in the dark, talking to his best friend on the other side. He still sounds like himself, warm and a little funny.",
+   "accent": "American (Gen)"
+  },
+  "vera": {
+   "voice_name": "Gacrux",
+   "audio_profile": "Vera, a woman in her forties. Calm, warm and funny, and she never raises her voice. She sounds friendly and in control, which is what makes her frightening.",
+   "accent": "American (Gen)"
+  },
+  "broadcast": {
+   "voice_name": "Charon",
+   "audio_profile": "An official announcer reading a recorded emergency alert, steady, clear and unhurried.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man quietly tells what happened during the first hour of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+ "level": "fixed",
+ "tempo": 1.08,
+ "max_pause": 0.22,
+ "chunks": [
+  {
+   "id": "c8d-1",
+   "who": "vera",
+   "style": "Whisper",
+   "pace": "Natural",
+   "scene": "A frightened woman whispers into a security walkie-talkie, hiding upstairs in a dark department store at night.",
+   "text": "Is anyone still in the mall? I'm on the second floor of the department store. Please. I'm not alone up here."
+  },
+  {
+   "id": "c8d-2",
+   "who": "vera",
+   "style": "Whisper",
+   "pace": "Natural",
+   "scene": "A frightened woman whispers into a security walkie-talkie, hiding upstairs in a dark department store at night.",
+   "text": "Is anyone still in the mall? I'm on the second floor of the department store. Please. I'm not alone up here."
+  },
+  {
+   "id": "c8d-3",
+   "who": "vera",
+   "style": "Whisper",
+   "pace": "Natural",
+   "scene": "A frightened woman whispers into a security walkie-talkie, hiding upstairs in a dark department store at night.",
+   "text": "Is anyone still in the mall? I'm on the second floor of the department store. Please. I'm not alone up here."
+  }
+ ]
+}

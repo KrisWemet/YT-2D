@@ -1,0 +1,51 @@
+{
+ "taskId": "39844feb8249824967a05f032a373442",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a key turning in a heavy padlock, then a sharp metal click as the lock snaps shut, close up, quiet room\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/8591b313-67c4-4a52-a9f8-46349fc63e75.mp3\",\"createTime\":1793838403214,\"duration\":11.16,\"id\":\"8591b313-67c4-4a52-a9f8-46349fc63e75\",\"image_url\":\"https://cdn2.suno.ai/image_8591b313-67c4-4a52-a9f8-46349fc63e75.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/8591b313-67c4-4a52-a9f8-46349fc63e75.mp3\",\"tags\":\"Sound effect only, no music, no voice: a key turning in a heavy padlock, then a sharp metal click as the lock snaps shut, close up, quiet room\",\"title\":\"Sound effect only, no music, no voice: a key turning in a heavy padlock, then...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/6087cc77-11e2-4c46-9907-3f6349866215.mp3\",\"createTime\":1793838403214,\"duration\":2.76,\"id\":\"6087cc77-11e2-4c46-9907-3f6349866215\",\"image_url\":\"https://cdn2.suno.ai/image_6087cc77-11e2-4c46-9907-3f6349866215.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/6087cc77-11e2-4c46-9907-3f6349866215.mp3\",\"tags\":\"Sound effect only, no music, no voice: a key turning in a heavy padlock, then a sharp metal click as the lock snaps shut, close up, quiet room\",\"title\":\"Sound effect only, no music, no voice: a key turning in a heavy padlock, then...\"}],\"msg\":\"success\",\"task_id\":\"39844feb8249824967a05f032a373442\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 20,
+ "completeTime": 1793838403214,
+ "createTime": 1793838383477,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a key turning in a heavy padlock, then a sharp metal click as the lock snaps shut, close up, quiet room\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 11.16,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/8591b313-67c4-4a52-a9f8-46349fc63e75.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838403214,
+    "image_url": "https://cdn2.suno.ai/image_8591b313-67c4-4a52-a9f8-46349fc63e75.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/8591b313-67c4-4a52-a9f8-46349fc63e75.mp3",
+    "id": "8591b313-67c4-4a52-a9f8-46349fc63e75",
+    "title": "Sound effect only, no music, no voice: a key turning in a heavy padlock, then...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a key turning in a heavy padlock, then a sharp metal click as the lock snaps shut, close up, quiet room"
+   },
+   {
+    "duration": 2.76,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/6087cc77-11e2-4c46-9907-3f6349866215.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838403214,
+    "image_url": "https://cdn2.suno.ai/image_6087cc77-11e2-4c46-9907-3f6349866215.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/6087cc77-11e2-4c46-9907-3f6349866215.mp3",
+    "id": "6087cc77-11e2-4c46-9907-3f6349866215",
+    "title": "Sound effect only, no music, no voice: a key turning in a heavy padlock, then...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a key turning in a heavy padlock, then a sharp metal click as the lock snaps shut, close up, quiet room"
+   }
+  ],
+  "task_id": "39844feb8249824967a05f032a373442"
+ },
+ "_elapsed": 21.2
+}

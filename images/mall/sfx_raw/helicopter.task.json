@@ -1,0 +1,51 @@
+{
+ "taskId": "b42a3182922eaa4d74ec5577641f5ce9",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a helicopter flying overhead and passing by, loud rotor thumping that rises and fades away into the distance, outdoors, about six seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/5ce9d0f9-b705-4612-ba35-ace7b7b57683.mp3\",\"createTime\":1793925855831,\"duration\":5.56,\"id\":\"5ce9d0f9-b705-4612-ba35-ace7b7b57683\",\"image_url\":\"https://cdn2.suno.ai/image_5ce9d0f9-b705-4612-ba35-ace7b7b57683.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/5ce9d0f9-b705-4612-ba35-ace7b7b57683.mp3\",\"tags\":\"Sound effect only, no music, no voice: a helicopter flying overhead and passing by, loud rotor thumping that rises and fades away into the distance, outdoors, about six seconds\",\"title\":\"Sound effect only, no music, no voice: a helicopter flying overhead and passi...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/7c23a16f-ed6a-4478-8968-4da063d67138.mp3\",\"createTime\":1793925855831,\"duration\":7.2,\"id\":\"7c23a16f-ed6a-4478-8968-4da063d67138\",\"image_url\":\"https://cdn2.suno.ai/image_7c23a16f-ed6a-4478-8968-4da063d67138.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/7c23a16f-ed6a-4478-8968-4da063d67138.mp3\",\"tags\":\"Sound effect only, no music, no voice: a helicopter flying overhead and passing by, loud rotor thumping that rises and fades away into the distance, outdoors, about six seconds\",\"title\":\"Sound effect only, no music, no voice: a helicopter flying overhead and passi...\"}],\"msg\":\"success\",\"task_id\":\"b42a3182922eaa4d74ec5577641f5ce9\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 18,
+ "completeTime": 1793925855831,
+ "createTime": 1793925836534,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a helicopter flying overhead and passing by, loud rotor thumping that rises and fades away into the distance, outdoors, about six seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "successFlag": 1,
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 5.56,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/5ce9d0f9-b705-4612-ba35-ace7b7b57683.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925855831,
+    "image_url": "https://cdn2.suno.ai/image_5ce9d0f9-b705-4612-ba35-ace7b7b57683.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/5ce9d0f9-b705-4612-ba35-ace7b7b57683.mp3",
+    "id": "5ce9d0f9-b705-4612-ba35-ace7b7b57683",
+    "title": "Sound effect only, no music, no voice: a helicopter flying overhead and passi...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a helicopter flying overhead and passing by, loud rotor thumping that rises and fades away into the distance, outdoors, about six seconds"
+   },
+   {
+    "duration": 7.2,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/7c23a16f-ed6a-4478-8968-4da063d67138.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925855831,
+    "image_url": "https://cdn2.suno.ai/image_7c23a16f-ed6a-4478-8968-4da063d67138.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/7c23a16f-ed6a-4478-8968-4da063d67138.mp3",
+    "id": "7c23a16f-ed6a-4478-8968-4da063d67138",
+    "title": "Sound effect only, no music, no voice: a helicopter flying overhead and passi...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a helicopter flying overhead and passing by, loud rotor thumping that rises and fades away into the distance, outdoors, about six seconds"
+   }
+  ],
+  "task_id": "b42a3182922eaa4d74ec5577641f5ce9"
+ },
+ "_elapsed": 21.0
+}

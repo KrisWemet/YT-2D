@@ -1,0 +1,76 @@
+{
+ "duration": 63.008,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "There's a zombie pressed against my gate. And it's wearing my best friend's uniform.",
+   "s": 0.3,
+   "e": 5.811,
+   "chunk": "d01"
+  },
+  {
+   "kind": "narr",
+   "text": "The radio on his chest is about to tell every one of them where I'm hiding.",
+   "s": 6.091,
+   "e": 9.973,
+   "chunk": "d02"
+  },
+  {
+   "kind": "narr",
+   "text": "An hour ago, I was the king of this mall. Let me back up.",
+   "s": 10.253,
+   "e": 14.227,
+   "chunk": "d03"
+  },
+  {
+   "kind": "narr",
+   "text": "I'm Danny. Night security at Maplecrest Mall. Yes, I've heard every mall cop joke.",
+   "s": 15.127,
+   "e": 19.936,
+   "chunk": "d04"
+  },
+  {
+   "kind": "narr",
+   "text": "I work nights for one reason: at three-fifteen every afternoon, I'm at the bus stop when my daughter Lily gets off the bus.",
+   "s": 20.216,
+   "e": 26.754,
+   "chunk": "d05"
+  },
+  {
+   "kind": "narr",
+   "text": "She's seven, and she thinks I'm the king of the mall. Because I carry forty-two keys. One for every store. Tonight, I'd need exactly one.",
+   "s": 27.034,
+   "e": 36.9,
+   "chunk": "d06"
+  },
+  {
+   "kind": "narr",
+   "text": "The job is simple. Walk the loop. Rattle the gates. And at one a.m., take a call from Marcus down in the parking garage.",
+   "s": 37.25,
+   "e": 43.912,
+   "chunk": "d07"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes on Earth.",
+   "s": 44.192,
+   "e": 51.844,
+   "chunk": "d08"
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight he calls at one-forty. No joke. He's whispering.",
+   "s": 52.124,
+   "e": 56.721,
+   "chunk": "d09"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny. There's a guy on the ramp. He's walking... wrong.",
+   "s": 57.071,
+   "e": 61.408,
+   "chunk": "r1",
+   "id": "marcus1"
+  }
+ ]
+}

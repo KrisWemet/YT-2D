@@ -1,0 +1,402 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny Ruiz, 38, a night security guard and single dad. Warm, a little gravelly, with a dry sense of humor. He is telling the story of the worst night of his life, quietly, like it still shakes him.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Puck",
+   "audio_profile": "Marcus, 22, a cheerful young night security guard and nursing student who suddenly sees something terrifying.",
+   "accent": "American (Gen)"
+  },
+  "woman": {
+   "voice_name": "Achernar",
+   "audio_profile": "A young woman hiding in a dark department store, terrified, whispering into a walkie-talkie so nothing hears her.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "Late at night. Danny sits alone in the dark and tells what happened in the first hour of a zombie outbreak at the shopping mall where he works. Intimate and close to the microphone, no music.",
+ "sample_context": "A first-person survival story told as a YouTube narration.",
+ "chunks": [
+  {
+   "id": "c01",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispers] The dead man pressing his face against my gate used to be my best friend.",
+   "gap": 0.6
+  },
+  {
+   "id": "c02",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispers] In about ten seconds, the radio clipped to his chest is going to crackle... and tell every one of them exactly where I'm hiding.",
+   "gap": 0.9
+  },
+  {
+   "id": "c03",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[quietly, bitter] One hour ago, I was the king of this mall. I had every key.",
+   "gap": 0.6
+  },
+  {
+   "id": "c04",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "[sighs] Let me back up.",
+   "gap": 1.6
+  },
+  {
+   "id": "c05",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My name is Danny Ruiz. I'm the night security guard at Maplecrest Mall. [dry] And yes, I've heard every mall cop joke there is.",
+   "gap": 0.55
+  },
+  {
+   "id": "c06",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "I took the night shift for one reason. [warmly] It means I'm home every afternoon when my daughter Lily gets off the school bus.",
+   "gap": 0.5
+  },
+  {
+   "id": "c07",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "[smiling] She's seven. She thinks I'm the king of the mall. Because I have these.",
+   "gap": 0.45
+  },
+  {
+   "id": "c08",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "Forty-two keys. One for every single store.",
+   "gap": 0.55
+  },
+  {
+   "id": "c09",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night, I walk the same loop. I rattle the same gates. And at one a.m., Marcus calls me from the parking garage to tell me a terrible joke.",
+   "gap": 0.5
+  },
+  {
+   "id": "c10",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "[fondly] Marcus is twenty-two. He's studying to be a nurse. He still owes me twenty bucks.",
+   "gap": 0.7
+  },
+  {
+   "id": "c11",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[serious, slow] Tonight, he didn't tell a joke.",
+   "gap": 0.6
+  },
+  {
+   "id": "r1",
+   "who": "marcus",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispering, scared] Danny. There's a guy coming up the ramp. He's walking... wrong.",
+   "radio": "marcus1",
+   "gap": 0.6
+  },
+  {
+   "id": "c12",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Marcus doesn't know how to whisper. [tense] But he's whispering.",
+   "gap": 0.5
+  },
+  {
+   "id": "r2",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[nervous, calling out] Sir? Sir, are you okay? You're bleeding...",
+   "radio": "marcus2",
+   "gap": 0.7
+  },
+  {
+   "id": "c13",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Then the radio does something I've never heard it do. [quietly] It goes completely silent.",
+   "gap": 0.8
+  },
+  {
+   "id": "c14",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[urgent] I run to the cameras. Garage, level two.",
+   "gap": 0.5
+  },
+  {
+   "id": "c15",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[shaken] Marcus is on the ground. The man is on top of him.",
+   "gap": 0.55
+  },
+  {
+   "id": "c16",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[tense] And behind them, the ramp is filling up. Six. Ten. Thirty.",
+   "gap": 0.55
+  },
+  {
+   "id": "c17",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "[ominous] They're not running. They don't need to.",
+   "gap": 0.5
+  },
+  {
+   "id": "c18",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Every one of them is walking toward the same place. The food court.",
+   "gap": 0.4
+  },
+  {
+   "id": "c19",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[grimly] And the food court is made of glass.",
+   "gap": 1.0
+  },
+  {
+   "id": "c20",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Here's what nobody tells you about malls. They're built to let people in. Glass doors. Glass walls. Glass ceilings.",
+   "gap": 0.5
+  },
+  {
+   "id": "c21",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That's great on Black Friday. [darkly] Tonight, it's a death trap.",
+   "gap": 0.6
+  },
+  {
+   "id": "c22",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "[a small, determined smile] But I know something they don't.",
+   "gap": 0.5
+  },
+  {
+   "id": "c23",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "Every store in this mall has a steel security gate. Pull it down, lock it, and that store becomes a vault.",
+   "gap": 0.5
+  },
+  {
+   "id": "c24",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "I can't save the whole mall. But I can pick one store.",
+   "gap": 0.4
+  },
+  {
+   "id": "c25",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[urgent] And I have about four minutes before that glass gives out.",
+   "gap": 0.9
+  },
+  {
+   "id": "c26",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Rapid Fire",
+   "text": "[breathless, running] So I run. The same loop I've walked a thousand times. Except tonight, I'm shopping for my life.",
+   "gap": 0.45
+  },
+  {
+   "id": "c27",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Rapid Fire",
+   "text": "[breathless] The pharmacy has medicine. But the whole front is glass. One crack, and I'm done.",
+   "gap": 0.45
+  },
+  {
+   "id": "c28",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Rapid Fire",
+   "text": "[breathless] The food court has a freezer full of food. That's exactly why they're going there.",
+   "gap": 0.45
+  },
+  {
+   "id": "c29",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Rapid Fire",
+   "text": "[breathless] The department store has beds, a second floor, and nine different entrances. I can't guard nine doors. [exasperated] I can barely guard one.",
+   "gap": 0.5
+  },
+  {
+   "id": "c30",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "And then there's the sporting goods store. Tents. Water filters. Aluminum bats.",
+   "gap": 0.4
+  },
+  {
+   "id": "c31",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[relieved] And only one way in.",
+   "gap": 0.9
+  },
+  {
+   "id": "c32",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[urgent] Behind me, the food court doors explode.",
+   "gap": 0.5
+  },
+  {
+   "id": "c33",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Staccato",
+   "text": "[breathless] I slide under the gate. Yank it down. Lock it with key number thirty-one.",
+   "gap": 0.7
+  },
+  {
+   "id": "c34",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispers] Then I sit in the dark between the tents and the treadmills, with my hand over my mouth, thinking about Lily getting off that bus tomorrow.",
+   "gap": 0.8
+  },
+  {
+   "id": "c35",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispers] Footsteps. Dozens of them. Shuffling past the gate.",
+   "gap": 0.6
+  },
+  {
+   "id": "c36",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispers] One of them stops.",
+   "gap": 0.7
+  },
+  {
+   "id": "c37",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispers, heartbroken] It's Marcus.",
+   "gap": 0.6
+  },
+  {
+   "id": "c38",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispers] He's still wearing his radio.",
+   "gap": 0.6
+  },
+  {
+   "id": "c39",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispers, dread] And that's when mine crackles.",
+   "gap": 0.6
+  },
+  {
+   "id": "r3",
+   "who": "woman",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispering, frightened] Is anyone still in the mall? I'm on the second floor of the department store... Please. I'm not alone up here.",
+   "radio": "woman",
+   "gap": 0.7
+  },
+  {
+   "id": "c40",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[whispers] Her voice comes out of my radio. And out of Marcus's radio, one second later.",
+   "gap": 0.6
+  },
+  {
+   "id": "c41",
+   "who": "danny",
+   "style": "Whisper",
+   "pace": "Natural",
+   "text": "[terrified whisper] Every head in the hallway turns toward my gate.",
+   "gap": 1.4
+  },
+  {
+   "id": "c42",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[calm, reflective] That was hour one.",
+   "gap": 0.7
+  },
+  {
+   "id": "c43",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "I'd spend the next thirty days locked inside this mall.",
+   "gap": 0.6
+  },
+  {
+   "id": "c44",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "[ominous] And the woman on the radio would turn out to be the most dangerous person in it.",
+   "gap": 0.5
+  }
+ ]
+}

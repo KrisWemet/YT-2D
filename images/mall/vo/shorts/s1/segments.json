@@ -1,0 +1,42 @@
+{
+ "duration": 22.737,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform.",
+   "s": 0.3,
+   "e": 5.947,
+   "chunk": "w1"
+  },
+  {
+   "kind": "narr",
+   "text": "Behind him, the hallway is full of them.",
+   "s": 6.197,
+   "e": 8.907,
+   "chunk": "s1_b2"
+  },
+  {
+   "kind": "narr",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding.",
+   "s": 9.157,
+   "e": 15.137,
+   "chunk": "w2"
+  },
+  {
+   "kind": "narr",
+   "text": "An hour ago, I was basically the king of this mall.",
+   "s": 15.487,
+   "e": 19.987,
+   "chunk": "q1n1",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Let me back up.",
+   "s": 20.237,
+   "e": 21.137,
+   "chunk": "q1n1",
+   "line": 2
+  }
+ ]
+}

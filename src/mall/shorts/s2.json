@@ -1,0 +1,2665 @@
+{
+"duration": 59.521,
+"segments": [
+{
+"kind": "narr",
+"text": "I have a key to every store in this mall.",
+"s": 0.3,
+"e": 3.574,
+"chunk": "k1"
+},
+{
+"kind": "narr",
+"text": "The man who gave them to me said never to use the last one.",
+"s": 3.774,
+"e": 7.567,
+"chunk": "k2"
+},
+{
+"kind": "narr",
+"text": "I'm Danny. I'm the night guard at Maplecrest Mall.",
+"s": 7.917,
+"e": 11.263,
+"chunk": "k3"
+},
+{
+"kind": "narr",
+"text": "I work nights so I can be at the bus stop at three-fifteen when my daughter Lily gets off.",
+"s": 11.463,
+"e": 17.154,
+"chunk": "k4"
+},
+{
+"kind": "narr",
+"text": "We live with my mom, on the tenth floor of the Parkview Apartments, right across the highway.",
+"s": 17.454,
+"e": 22.303,
+"chunk": "k5"
+},
+{
+"kind": "narr",
+"text": "Every night at nine, when I walk in to work, Lily blinks her lamp at the mall three times.",
+"s": 22.553,
+"e": 29.0,
+"chunk": "k6"
+},
+{
+"kind": "narr",
+"text": "It means I love you. I blink my flashlight back.",
+"s": 29.2,
+"e": 31.66,
+"chunk": "k7"
+},
+{
+"kind": "narr",
+"text": "I taught her one more signal, S-O-S, for emergencies. She thinks it's a game.",
+"s": 32.01,
+"e": 36.269,
+"chunk": "k8"
+},
+{
+"kind": "narr",
+"text": "Forty-two keys. Old Walt had this job before me, and when he handed them over, he tapped the last one.",
+"s": 36.669,
+"e": 43.023,
+"chunk": "k9"
+},
+{
+"kind": "narr",
+"text": "\"That one, you never use,\" he said. \"Don't ask.\"",
+"s": 43.223,
+"e": 47.827,
+"chunk": "k10"
+},
+{
+"kind": "narr",
+"text": "Its tag says B3. There is no B3 on the mall map.",
+"s": 48.127,
+"e": 52.503,
+"chunk": "k11"
+},
+{
+"kind": "narr",
+"text": "Tonight, I'd only need one of them.",
+"s": 52.853,
+"e": 54.741,
+"chunk": "q2"
+},
+{
+"kind": "narr",
+"text": "In thirty days, I'd find out what the last one opens.",
+"s": 55.091,
+"e": 58.021,
+"chunk": "k13"
+}
+],
+"words": [
+{
+"w": "I",
+"s": 0.0,
+"e": 0.52,
+"g": "narr"
+},
+{
+"w": "have",
+"s": 0.52,
+"e": 0.7,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 0.7,
+"e": 0.84,
+"g": "narr"
+},
+{
+"w": "key",
+"s": 0.84,
+"e": 1.06,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 1.06,
+"e": 1.56,
+"g": "narr"
+},
+{
+"w": "every",
+"s": 1.56,
+"e": 1.92,
+"g": "narr"
+},
+{
+"w": "store",
+"s": 1.92,
+"e": 2.36,
+"g": "narr"
+},
+{
+"w": "in",
+"s": 2.36,
+"e": 2.8,
+"g": "narr"
+},
+{
+"w": "this",
+"s": 2.8,
+"e": 2.94,
+"g": "narr"
+},
+{
+"w": "mall.",
+"s": 2.94,
+"e": 3.2,
+"g": "narr"
+},
+{
+"w": "The",
+"s": 3.74,
+"e": 3.92,
+"g": "narr"
+},
+{
+"w": "man",
+"s": 3.92,
+"e": 4.14,
+"g": "narr"
+},
+{
+"w": "who",
+"s": 4.14,
+"e": 4.36,
+"g": "narr"
+},
+{
+"w": "gave",
+"s": 4.36,
+"e": 4.52,
+"g": "narr"
+},
+{
+"w": "them",
+"s": 4.52,
+"e": 4.72,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 4.72,
+"e": 4.88,
+"g": "narr"
+},
+{
+"w": "me",
+"s": 4.88,
+"e": 5.26,
+"g": "narr"
+},
+{
+"w": "said",
+"s": 5.26,
+"e": 5.7,
+"g": "narr"
+},
+{
+"w": "never",
+"s": 5.7,
+"e": 6.34,
+"g": "narr"
+},
+{
+"w": "to",
+"s": 6.34,
+"e": 6.6,
+"g": "narr"
+},
+{
+"w": "use",
+"s": 6.6,
+"e": 6.8,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 6.8,
+"e": 6.98,
+"g": "narr"
+},
+{
+"w": "last",
+"s": 6.98,
+"e": 7.2,
+"g": "narr"
+},
+{
+"w": "one.",
+"s": 7.2,
+"e": 7.58,
+"g": "narr"
+},
+{
+"w": "I'm",
+"s": 8.24,
+"e": 8.32,
+"g": "narr"
+},
+{
+"w": "Danny.",
+"s": 8.32,
+"e": 8.58,
+"g": "narr"
+},
+{
+"w": "I'm",
+"s": 9.18,
+"e": 9.24,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 9.24,
+"e": 9.36,
+"g": "narr"
+},
+{
+"w": "night",
+"s": 9.36,
+"e": 9.56,
+"g": "narr"
+},
+{
+"w": "guard",
+"s": 9.56,
+"e": 9.84,
+"g": "narr"
+},
+{
+"w": "at",
+"s": 9.84,
+"e": 10.36,
+"g": "narr"
+},
+{
+"w": "Maplecrest",
+"s": 10.36,
+"e": 10.82,
+"g": "narr"
+},
+{
+"w": "Mall.",
+"s": 10.82,
+"e": 11.14,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 12.04,
+"e": 12.06,
+"g": "narr"
+},
+{
+"w": "work",
+"s": 12.06,
+"e": 12.28,
+"g": "narr"
+},
+{
+"w": "nights",
+"s": 12.28,
+"e": 12.64,
+"g": "narr"
+},
+{
+"w": "so",
+"s": 12.64,
+"e": 13.24,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 13.24,
+"e": 13.4,
+"g": "narr"
+},
+{
+"w": "can",
+"s": 13.4,
+"e": 13.56,
+"g": "narr"
+},
+{
+"w": "be",
+"s": 13.56,
+"e": 14.02,
+"g": "narr"
+},
+{
+"w": "at",
+"s": 14.02,
+"e": 14.12,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 14.12,
+"e": 14.24,
+"g": "narr"
+},
+{
+"w": "bus",
+"s": 14.24,
+"e": 14.42,
+"g": "narr"
+},
+{
+"w": "stop",
+"s": 14.42,
+"e": 14.7,
+"g": "narr"
+},
+{
+"w": "at",
+"s": 14.7,
+"e": 14.92,
+"g": "narr"
+},
+{
+"w": "three",
+"s": 14.92,
+"e": 15.24,
+"g": "narr"
+},
+{
+"w": "fifteen",
+"s": 15.24,
+"e": 15.64,
+"g": "narr"
+},
+{
+"w": "when",
+"s": 15.64,
+"e": 15.94,
+"g": "narr"
+},
+{
+"w": "my",
+"s": 15.94,
+"e": 16.08,
+"g": "narr"
+},
+{
+"w": "daughter",
+"s": 16.08,
+"e": 16.36,
+"g": "narr"
+},
+{
+"w": "Lily",
+"s": 16.36,
+"e": 16.52,
+"g": "narr"
+},
+{
+"w": "gets",
+"s": 16.52,
+"e": 16.82,
+"g": "narr"
+},
+{
+"w": "off.",
+"s": 16.82,
+"e": 17.14,
+"g": "narr"
+},
+{
+"w": "We",
+"s": 17.56,
+"e": 17.8,
+"g": "narr"
+},
+{
+"w": "live",
+"s": 17.8,
+"e": 17.94,
+"g": "narr"
+},
+{
+"w": "with",
+"s": 17.94,
+"e": 18.14,
+"g": "narr"
+},
+{
+"w": "my",
+"s": 18.14,
+"e": 18.3,
+"g": "narr"
+},
+{
+"w": "mom",
+"s": 18.3,
+"e": 18.52,
+"g": "narr"
+},
+{
+"w": "on",
+"s": 18.52,
+"e": 18.96,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 18.96,
+"e": 19.1,
+"g": "narr"
+},
+{
+"w": "tenth",
+"s": 19.1,
+"e": 19.3,
+"g": "narr"
+},
+{
+"w": "floor",
+"s": 19.3,
+"e": 19.62,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 19.62,
+"e": 19.82,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 19.82,
+"e": 19.98,
+"g": "narr"
+},
+{
+"w": "Parkview",
+"s": 19.98,
+"e": 20.46,
+"g": "narr"
+},
+{
+"w": "Apartments",
+"s": 20.46,
+"e": 21.04,
+"g": "narr"
+},
+{
+"w": "right",
+"s": 21.04,
+"e": 21.42,
+"g": "narr"
+},
+{
+"w": "across",
+"s": 21.42,
+"e": 21.68,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 21.68,
+"e": 21.88,
+"g": "narr"
+},
+{
+"w": "highway.",
+"s": 21.88,
+"e": 22.18,
+"g": "narr"
+},
+{
+"w": "Every",
+"s": 23.74,
+"e": 24.02,
+"g": "narr"
+},
+{
+"w": "night",
+"s": 24.02,
+"e": 24.22,
+"g": "narr"
+},
+{
+"w": "at",
+"s": 24.22,
+"e": 24.38,
+"g": "narr"
+},
+{
+"w": "nine",
+"s": 24.38,
+"e": 24.68,
+"g": "narr"
+},
+{
+"w": "when",
+"s": 24.68,
+"e": 25.16,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 25.16,
+"e": 25.3,
+"g": "narr"
+},
+{
+"w": "walk",
+"s": 25.3,
+"e": 25.48,
+"g": "narr"
+},
+{
+"w": "into",
+"s": 25.48,
+"e": 25.72,
+"g": "narr"
+},
+{
+"w": "work,",
+"s": 25.72,
+"e": 26.06,
+"g": "narr"
+},
+{
+"w": "Lily",
+"s": 26.42,
+"e": 26.48,
+"g": "narr"
+},
+{
+"w": "blinks",
+"s": 26.48,
+"e": 26.9,
+"g": "narr"
+},
+{
+"w": "her",
+"s": 26.9,
+"e": 27.1,
+"g": "narr"
+},
+{
+"w": "lamp",
+"s": 27.1,
+"e": 27.36,
+"g": "narr"
+},
+{
+"w": "at",
+"s": 27.36,
+"e": 27.58,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 27.58,
+"e": 27.68,
+"g": "narr"
+},
+{
+"w": "mall",
+"s": 27.68,
+"e": 27.86,
+"g": "narr"
+},
+{
+"w": "three",
+"s": 27.86,
+"e": 28.32,
+"g": "narr"
+},
+{
+"w": "times.",
+"s": 28.32,
+"e": 28.82,
+"g": "narr"
+},
+{
+"w": "It",
+"s": 29.2,
+"e": 29.32,
+"g": "narr"
+},
+{
+"w": "means",
+"s": 29.32,
+"e": 29.44,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 29.44,
+"e": 29.64,
+"g": "narr"
+},
+{
+"w": "love",
+"s": 29.64,
+"e": 29.76,
+"g": "narr"
+},
+{
+"w": "you.",
+"s": 29.76,
+"e": 30.0,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 30.38,
+"e": 30.42,
+"g": "narr"
+},
+{
+"w": "blink",
+"s": 30.42,
+"e": 30.6,
+"g": "narr"
+},
+{
+"w": "my",
+"s": 30.6,
+"e": 30.78,
+"g": "narr"
+},
+{
+"w": "flashlight",
+"s": 30.78,
+"e": 31.14,
+"g": "narr"
+},
+{
+"w": "back.",
+"s": 31.14,
+"e": 31.54,
+"g": "narr"
+},
+{
+"w": "I",
+"s": 32.02,
+"e": 32.14,
+"g": "narr"
+},
+{
+"w": "totter",
+"s": 32.14,
+"e": 32.42,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 32.42,
+"e": 32.58,
+"g": "narr"
+},
+{
+"w": "more",
+"s": 32.58,
+"e": 32.76,
+"g": "narr"
+},
+{
+"w": "signal.",
+"s": 32.76,
+"e": 33.1,
+"g": "narr"
+},
+{
+"w": "SOS",
+"s": 33.48,
+"e": 33.8,
+"g": "narr"
+},
+{
+"w": "for",
+"s": 33.8,
+"e": 34.44,
+"g": "narr"
+},
+{
+"w": "emergencies.",
+"s": 34.44,
+"e": 34.84,
+"g": "narr"
+},
+{
+"w": "She",
+"s": 35.42,
+"e": 35.52,
+"g": "narr"
+},
+{
+"w": "thinks",
+"s": 35.52,
+"e": 35.72,
+"g": "narr"
+},
+{
+"w": "it's",
+"s": 35.72,
+"e": 35.96,
+"g": "narr"
+},
+{
+"w": "a",
+"s": 35.96,
+"e": 36.08,
+"g": "narr"
+},
+{
+"w": "game.",
+"s": 36.08,
+"e": 36.22,
+"g": "narr"
+},
+{
+"w": "Forty",
+"s": 36.8,
+"e": 36.98,
+"g": "narr"
+},
+{
+"w": "-two",
+"s": 36.98,
+"e": 37.34,
+"g": "narr"
+},
+{
+"w": "keys.",
+"s": 37.34,
+"e": 37.7,
+"g": "narr"
+},
+{
+"w": "Old",
+"s": 38.24,
+"e": 38.42,
+"g": "narr"
+},
+{
+"w": "Walt",
+"s": 38.42,
+"e": 38.68,
+"g": "narr"
+},
+{
+"w": "had",
+"s": 38.68,
+"e": 38.94,
+"g": "narr"
+},
+{
+"w": "this",
+"s": 38.94,
+"e": 39.18,
+"g": "narr"
+},
+{
+"w": "job",
+"s": 39.18,
+"e": 39.42,
+"g": "narr"
+},
+{
+"w": "before",
+"s": 39.42,
+"e": 39.78,
+"g": "narr"
+},
+{
+"w": "me",
+"s": 39.78,
+"e": 40.02,
+"g": "narr"
+},
+{
+"w": "and",
+"s": 40.02,
+"e": 40.2,
+"g": "narr"
+},
+{
+"w": "when",
+"s": 40.2,
+"e": 40.62,
+"g": "narr"
+},
+{
+"w": "he",
+"s": 40.62,
+"e": 40.78,
+"g": "narr"
+},
+{
+"w": "handed",
+"s": 40.78,
+"e": 40.98,
+"g": "narr"
+},
+{
+"w": "them",
+"s": 40.98,
+"e": 41.18,
+"g": "narr"
+},
+{
+"w": "over",
+"s": 41.18,
+"e": 41.44,
+"g": "narr"
+},
+{
+"w": "he",
+"s": 41.44,
+"e": 41.76,
+"g": "narr"
+},
+{
+"w": "tapped",
+"s": 41.76,
+"e": 42.1,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 42.1,
+"e": 42.32,
+"g": "narr"
+},
+{
+"w": "last",
+"s": 42.32,
+"e": 42.58,
+"g": "narr"
+},
+{
+"w": "one.",
+"s": 42.58,
+"e": 42.94,
+"g": "narr"
+},
+{
+"w": "That",
+"s": 43.66,
+"e": 44.14,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 44.14,
+"e": 44.36,
+"g": "narr"
+},
+{
+"w": "you",
+"s": 44.36,
+"e": 44.82,
+"g": "narr"
+},
+{
+"w": "never",
+"s": 44.82,
+"e": 45.04,
+"g": "narr"
+},
+{
+"w": "use,",
+"s": 45.04,
+"e": 45.4,
+"g": "narr"
+},
+{
+"w": "he",
+"s": 45.76,
+"e": 45.92,
+"g": "narr"
+},
+{
+"w": "said.",
+"s": 45.92,
+"e": 46.16,
+"g": "narr"
+},
+{
+"w": "Don't",
+"s": 46.88,
+"e": 47.14,
+"g": "narr"
+},
+{
+"w": "ask.",
+"s": 47.14,
+"e": 47.4,
+"g": "narr"
+},
+{
+"w": "Its",
+"s": 48.14,
+"e": 48.38,
+"g": "narr"
+},
+{
+"w": "tag",
+"s": 48.38,
+"e": 48.74,
+"g": "narr"
+},
+{
+"w": "says",
+"s": 48.74,
+"e": 49.22,
+"g": "narr"
+},
+{
+"w": "B3.",
+"s": 49.22,
+"e": 49.92,
+"g": "narr"
+},
+{
+"w": "There",
+"s": 50.34,
+"e": 50.48,
+"g": "narr"
+},
+{
+"w": "is",
+"s": 50.48,
+"e": 50.66,
+"g": "narr"
+},
+{
+"w": "no",
+"s": 50.66,
+"e": 50.9,
+"g": "narr"
+},
+{
+"w": "B3",
+"s": 50.9,
+"e": 51.44,
+"g": "narr"
+},
+{
+"w": "on",
+"s": 51.44,
+"e": 51.82,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 51.82,
+"e": 51.94,
+"g": "narr"
+},
+{
+"w": "mall",
+"s": 51.94,
+"e": 52.1,
+"g": "narr"
+},
+{
+"w": "map.",
+"s": 52.1,
+"e": 52.4,
+"g": "narr"
+},
+{
+"w": "Tonight",
+"s": 52.94,
+"e": 53.32,
+"g": "narr"
+},
+{
+"w": "I'd",
+"s": 53.32,
+"e": 53.84,
+"g": "narr"
+},
+{
+"w": "only",
+"s": 53.84,
+"e": 53.98,
+"g": "narr"
+},
+{
+"w": "need",
+"s": 53.98,
+"e": 54.18,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 54.18,
+"e": 54.38,
+"g": "narr"
+},
+{
+"w": "of",
+"s": 54.38,
+"e": 54.5,
+"g": "narr"
+},
+{
+"w": "them.",
+"s": 54.5,
+"e": 54.66,
+"g": "narr"
+},
+{
+"w": "In",
+"s": 55.1,
+"e": 55.24,
+"g": "narr"
+},
+{
+"w": "thirty",
+"s": 55.24,
+"e": 55.5,
+"g": "narr"
+},
+{
+"w": "days",
+"s": 55.5,
+"e": 55.94,
+"g": "narr"
+},
+{
+"w": "I'd",
+"s": 55.94,
+"e": 56.5,
+"g": "narr"
+},
+{
+"w": "find",
+"s": 56.5,
+"e": 56.68,
+"g": "narr"
+},
+{
+"w": "out",
+"s": 56.68,
+"e": 56.86,
+"g": "narr"
+},
+{
+"w": "what",
+"s": 56.86,
+"e": 57.0,
+"g": "narr"
+},
+{
+"w": "the",
+"s": 57.0,
+"e": 57.12,
+"g": "narr"
+},
+{
+"w": "last",
+"s": 57.12,
+"e": 57.32,
+"g": "narr"
+},
+{
+"w": "one",
+"s": 57.32,
+"e": 57.52,
+"g": "narr"
+},
+{
+"w": "opens.",
+"s": 57.52,
+"e": 57.82,
+"g": "narr"
+}
+],
+"cwords": [
+{
+"w": "I",
+"n": "i",
+"s": 0.25,
+"e": 0.52,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "have",
+"n": "have",
+"s": 0.52,
+"e": 0.7,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "a",
+"n": "a",
+"s": 0.7,
+"e": 0.84,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "key",
+"n": "key",
+"s": 0.84,
+"e": 1.06,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "to",
+"n": "to",
+"s": 1.17,
+"e": 1.56,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "every",
+"n": "every",
+"s": 1.56,
+"e": 1.92,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "store",
+"n": "store",
+"s": 1.92,
+"e": 2.36,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "in",
+"n": "in",
+"s": 2.41,
+"e": 2.8,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "this",
+"n": "this",
+"s": 2.8,
+"e": 2.94,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "mall.",
+"n": "mall",
+"s": 2.94,
+"e": 3.2,
+"seg": 0,
+"kind": "narr",
+"id": null
+},
+{
+"w": "The",
+"n": "the",
+"s": 3.74,
+"e": 3.92,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "man",
+"n": "man",
+"s": 3.92,
+"e": 4.14,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "who",
+"n": "who",
+"s": 4.14,
+"e": 4.36,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "gave",
+"n": "gave",
+"s": 4.36,
+"e": 4.52,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "them",
+"n": "them",
+"s": 4.52,
+"e": 4.72,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "to",
+"n": "to",
+"s": 4.72,
+"e": 4.88,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "me",
+"n": "me",
+"s": 4.88,
+"e": 5.26,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "said",
+"n": "said",
+"s": 5.26,
+"e": 5.7,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "never",
+"n": "never",
+"s": 5.7,
+"e": 6.34,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "to",
+"n": "to",
+"s": 6.34,
+"e": 6.6,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "use",
+"n": "use",
+"s": 6.6,
+"e": 6.8,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 6.8,
+"e": 6.98,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "last",
+"n": "last",
+"s": 6.98,
+"e": 7.2,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "one.",
+"n": "one",
+"s": 7.2,
+"e": 7.58,
+"seg": 1,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I'm",
+"n": "i'm",
+"s": 8.24,
+"e": 8.32,
+"seg": 2,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Danny.",
+"n": "danny",
+"s": 8.32,
+"e": 8.58,
+"seg": 2,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I'm",
+"n": "i'm",
+"s": 9.18,
+"e": 9.24,
+"seg": 2,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 9.24,
+"e": 9.36,
+"seg": 2,
+"kind": "narr",
+"id": null
+},
+{
+"w": "night",
+"n": "night",
+"s": 9.36,
+"e": 9.56,
+"seg": 2,
+"kind": "narr",
+"id": null
+},
+{
+"w": "guard",
+"n": "guard",
+"s": 9.56,
+"e": 9.84,
+"seg": 2,
+"kind": "narr",
+"id": null
+},
+{
+"w": "at",
+"n": "at",
+"s": 9.97,
+"e": 10.36,
+"seg": 2,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Maplecrest",
+"n": "maplecrest",
+"s": 10.36,
+"e": 10.82,
+"seg": 2,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Mall.",
+"n": "mall",
+"s": 10.82,
+"e": 11.14,
+"seg": 2,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I",
+"n": "i",
+"s": 12.04,
+"e": 12.06,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "work",
+"n": "work",
+"s": 12.06,
+"e": 12.28,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "nights",
+"n": "nights",
+"s": 12.28,
+"e": 12.64,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "so",
+"n": "so",
+"s": 12.85,
+"e": 13.24,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I",
+"n": "i",
+"s": 13.24,
+"e": 13.4,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "can",
+"n": "can",
+"s": 13.4,
+"e": 13.56,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "be",
+"n": "be",
+"s": 13.63,
+"e": 14.02,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "at",
+"n": "at",
+"s": 14.02,
+"e": 14.12,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 14.12,
+"e": 14.24,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "bus",
+"n": "bus",
+"s": 14.24,
+"e": 14.42,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "stop",
+"n": "stop",
+"s": 14.42,
+"e": 14.7,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "at",
+"n": "at",
+"s": 14.7,
+"e": 14.92,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "three-fifteen",
+"n": "threefifteen",
+"s": 14.92,
+"e": 15.64,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "when",
+"n": "when",
+"s": 15.64,
+"e": 15.94,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "my",
+"n": "my",
+"s": 15.94,
+"e": 16.08,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "daughter",
+"n": "daughter",
+"s": 16.08,
+"e": 16.36,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Lily",
+"n": "lily",
+"s": 16.36,
+"e": 16.52,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "gets",
+"n": "gets",
+"s": 16.52,
+"e": 16.82,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "off.",
+"n": "off",
+"s": 16.82,
+"e": 17.14,
+"seg": 3,
+"kind": "narr",
+"id": null
+},
+{
+"w": "We",
+"n": "we",
+"s": 17.56,
+"e": 17.8,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "live",
+"n": "live",
+"s": 17.8,
+"e": 17.94,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "with",
+"n": "with",
+"s": 17.94,
+"e": 18.14,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "my",
+"n": "my",
+"s": 18.14,
+"e": 18.3,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "mom,",
+"n": "mom",
+"s": 18.3,
+"e": 18.52,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "on",
+"n": "on",
+"s": 18.57,
+"e": 18.96,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 18.96,
+"e": 19.1,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "tenth",
+"n": "tenth",
+"s": 19.1,
+"e": 19.3,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "floor",
+"n": "floor",
+"s": 19.3,
+"e": 19.62,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "of",
+"n": "of",
+"s": 19.62,
+"e": 19.82,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 19.82,
+"e": 19.98,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Parkview",
+"n": "parkview",
+"s": 19.98,
+"e": 20.46,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Apartments,",
+"n": "apartments",
+"s": 20.46,
+"e": 21.04,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "right",
+"n": "right",
+"s": 21.04,
+"e": 21.42,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "across",
+"n": "across",
+"s": 21.42,
+"e": 21.68,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 21.68,
+"e": 21.88,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "highway.",
+"n": "highway",
+"s": 21.88,
+"e": 22.18,
+"seg": 4,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Every",
+"n": "every",
+"s": 23.74,
+"e": 24.02,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "night",
+"n": "night",
+"s": 24.02,
+"e": 24.22,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "at",
+"n": "at",
+"s": 24.22,
+"e": 24.38,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "nine,",
+"n": "nine",
+"s": 24.38,
+"e": 24.68,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "when",
+"n": "when",
+"s": 24.68,
+"e": 25.16,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I",
+"n": "i",
+"s": 25.16,
+"e": 25.3,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "walk",
+"n": "walk",
+"s": 25.3,
+"e": 25.48,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "in",
+"n": "in",
+"s": 25.48,
+"e": 25.6,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "to",
+"n": "to",
+"s": 25.6,
+"e": 25.72,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "work,",
+"n": "work",
+"s": 25.72,
+"e": 26.06,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Lily",
+"n": "lily",
+"s": 26.42,
+"e": 26.48,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "blinks",
+"n": "blinks",
+"s": 26.48,
+"e": 26.9,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "her",
+"n": "her",
+"s": 26.9,
+"e": 27.1,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "lamp",
+"n": "lamp",
+"s": 27.1,
+"e": 27.36,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "at",
+"n": "at",
+"s": 27.36,
+"e": 27.58,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 27.58,
+"e": 27.68,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "mall",
+"n": "mall",
+"s": 27.68,
+"e": 27.86,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "three",
+"n": "three",
+"s": 27.86,
+"e": 28.32,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "times.",
+"n": "times",
+"s": 28.32,
+"e": 28.82,
+"seg": 5,
+"kind": "narr",
+"id": null
+},
+{
+"w": "It",
+"n": "it",
+"s": 29.2,
+"e": 29.32,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "means",
+"n": "means",
+"s": 29.32,
+"e": 29.44,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I",
+"n": "i",
+"s": 29.44,
+"e": 29.64,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "love",
+"n": "love",
+"s": 29.64,
+"e": 29.76,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "you.",
+"n": "you",
+"s": 29.76,
+"e": 30.0,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I",
+"n": "i",
+"s": 30.38,
+"e": 30.42,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "blink",
+"n": "blink",
+"s": 30.42,
+"e": 30.6,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "my",
+"n": "my",
+"s": 30.6,
+"e": 30.78,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "flashlight",
+"n": "flashlight",
+"s": 30.78,
+"e": 31.14,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "back.",
+"n": "back",
+"s": 31.14,
+"e": 31.54,
+"seg": 6,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I",
+"n": "i",
+"s": 32.02,
+"e": 32.14,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "taught",
+"n": "taught",
+"s": 32.14,
+"e": 32.327,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "her",
+"n": "her",
+"s": 32.327,
+"e": 32.42,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "one",
+"n": "one",
+"s": 32.42,
+"e": 32.58,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "more",
+"n": "more",
+"s": 32.58,
+"e": 32.76,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "signal,",
+"n": "signal",
+"s": 32.76,
+"e": 33.1,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "S-O-S,",
+"n": "sos",
+"s": 33.48,
+"e": 33.8,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "for",
+"n": "for",
+"s": 33.93,
+"e": 34.44,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "emergencies.",
+"n": "emergencies",
+"s": 34.44,
+"e": 34.84,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "She",
+"n": "she",
+"s": 35.42,
+"e": 35.52,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "thinks",
+"n": "thinks",
+"s": 35.52,
+"e": 35.72,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "it's",
+"n": "it's",
+"s": 35.72,
+"e": 35.96,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "a",
+"n": "a",
+"s": 35.96,
+"e": 36.08,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "game.",
+"n": "game",
+"s": 36.08,
+"e": 36.22,
+"seg": 7,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Forty-two",
+"n": "fortytwo",
+"s": 36.669,
+"e": 37.34,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "keys.",
+"n": "keys",
+"s": 37.34,
+"e": 37.7,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Old",
+"n": "old",
+"s": 38.24,
+"e": 38.42,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Walt",
+"n": "walt",
+"s": 38.42,
+"e": 38.68,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "had",
+"n": "had",
+"s": 38.68,
+"e": 38.94,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "this",
+"n": "this",
+"s": 38.94,
+"e": 39.18,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "job",
+"n": "job",
+"s": 39.18,
+"e": 39.42,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "before",
+"n": "before",
+"s": 39.42,
+"e": 39.78,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "me,",
+"n": "me",
+"s": 39.78,
+"e": 40.02,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "and",
+"n": "and",
+"s": 40.02,
+"e": 40.2,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "when",
+"n": "when",
+"s": 40.2,
+"e": 40.62,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "he",
+"n": "he",
+"s": 40.62,
+"e": 40.78,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "handed",
+"n": "handed",
+"s": 40.78,
+"e": 40.98,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "them",
+"n": "them",
+"s": 40.98,
+"e": 41.18,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "over,",
+"n": "over",
+"s": 41.18,
+"e": 41.44,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "he",
+"n": "he",
+"s": 41.44,
+"e": 41.76,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "tapped",
+"n": "tapped",
+"s": 41.76,
+"e": 42.1,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 42.1,
+"e": 42.32,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "last",
+"n": "last",
+"s": 42.32,
+"e": 42.58,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "one.",
+"n": "one",
+"s": 42.58,
+"e": 42.94,
+"seg": 8,
+"kind": "narr",
+"id": null
+},
+{
+"w": "\"That",
+"n": "that",
+"s": 43.66,
+"e": 44.14,
+"seg": 9,
+"kind": "narr",
+"id": null
+},
+{
+"w": "one,",
+"n": "one",
+"s": 44.14,
+"e": 44.36,
+"seg": 9,
+"kind": "narr",
+"id": null
+},
+{
+"w": "you",
+"n": "you",
+"s": 44.36,
+"e": 44.82,
+"seg": 9,
+"kind": "narr",
+"id": null
+},
+{
+"w": "never",
+"n": "never",
+"s": 44.82,
+"e": 45.04,
+"seg": 9,
+"kind": "narr",
+"id": null
+},
+{
+"w": "use,\"",
+"n": "use",
+"s": 45.04,
+"e": 45.4,
+"seg": 9,
+"kind": "narr",
+"id": null
+},
+{
+"w": "he",
+"n": "he",
+"s": 45.76,
+"e": 45.92,
+"seg": 9,
+"kind": "narr",
+"id": null
+},
+{
+"w": "said.",
+"n": "said",
+"s": 45.92,
+"e": 46.16,
+"seg": 9,
+"kind": "narr",
+"id": null
+},
+{
+"w": "\"Don't",
+"n": "don't",
+"s": 46.88,
+"e": 47.14,
+"seg": 9,
+"kind": "narr",
+"id": null
+},
+{
+"w": "ask.\"",
+"n": "ask",
+"s": 47.14,
+"e": 47.4,
+"seg": 9,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Its",
+"n": "its",
+"s": 48.14,
+"e": 48.38,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "tag",
+"n": "tag",
+"s": 48.38,
+"e": 48.74,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "says",
+"n": "says",
+"s": 48.74,
+"e": 49.22,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "B3.",
+"n": "b3",
+"s": 49.53,
+"e": 49.92,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "There",
+"n": "there",
+"s": 50.34,
+"e": 50.48,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "is",
+"n": "is",
+"s": 50.48,
+"e": 50.66,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "no",
+"n": "no",
+"s": 50.66,
+"e": 50.9,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "B3",
+"n": "b3",
+"s": 51.05,
+"e": 51.44,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "on",
+"n": "on",
+"s": 51.44,
+"e": 51.82,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 51.82,
+"e": 51.94,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "mall",
+"n": "mall",
+"s": 51.94,
+"e": 52.1,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "map.",
+"n": "map",
+"s": 52.1,
+"e": 52.4,
+"seg": 10,
+"kind": "narr",
+"id": null
+},
+{
+"w": "Tonight,",
+"n": "tonight",
+"s": 52.94,
+"e": 53.32,
+"seg": 11,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I'd",
+"n": "i'd",
+"s": 53.33,
+"e": 53.84,
+"seg": 11,
+"kind": "narr",
+"id": null
+},
+{
+"w": "only",
+"n": "only",
+"s": 53.84,
+"e": 53.98,
+"seg": 11,
+"kind": "narr",
+"id": null
+},
+{
+"w": "need",
+"n": "need",
+"s": 53.98,
+"e": 54.18,
+"seg": 11,
+"kind": "narr",
+"id": null
+},
+{
+"w": "one",
+"n": "one",
+"s": 54.18,
+"e": 54.38,
+"seg": 11,
+"kind": "narr",
+"id": null
+},
+{
+"w": "of",
+"n": "of",
+"s": 54.38,
+"e": 54.5,
+"seg": 11,
+"kind": "narr",
+"id": null
+},
+{
+"w": "them.",
+"n": "them",
+"s": 54.5,
+"e": 54.66,
+"seg": 11,
+"kind": "narr",
+"id": null
+},
+{
+"w": "In",
+"n": "in",
+"s": 55.1,
+"e": 55.24,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "thirty",
+"n": "thirty",
+"s": 55.24,
+"e": 55.5,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "days,",
+"n": "days",
+"s": 55.5,
+"e": 55.94,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "I'd",
+"n": "i'd",
+"s": 55.99,
+"e": 56.5,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "find",
+"n": "find",
+"s": 56.5,
+"e": 56.68,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "out",
+"n": "out",
+"s": 56.68,
+"e": 56.86,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "what",
+"n": "what",
+"s": 56.86,
+"e": 57.0,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "the",
+"n": "the",
+"s": 57.0,
+"e": 57.12,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "last",
+"n": "last",
+"s": 57.12,
+"e": 57.32,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "one",
+"n": "one",
+"s": 57.32,
+"e": 57.52,
+"seg": 12,
+"kind": "narr",
+"id": null
+},
+{
+"w": "opens.",
+"n": "opens",
+"s": 57.52,
+"e": 57.82,
+"seg": 12,
+"kind": "narr",
+"id": null
+}
+]
+}

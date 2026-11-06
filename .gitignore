@@ -5,3 +5,31 @@ build/
 
 # generation logs
 images/**/*.log
+
+# raw 2K generations (the JPEGs in public/mall/bg are the working copies)
+images/mall/raw/*.png
+__pycache__/
+
+# the pilot's uncompressed voice track (public/mall/vo/vo.mp3 is the working copy)
+images/mall/vo/local/vo.wav
+
+# voice takes and auditions (raw Gemini files; vo.mp3 in public/ is the working copy)
+images/mall/vo/v2/takes/*.try.wav
+images/mall/vo/v2/vo.wav
+images/mall/vo/audition/*/vo.wav
+images/mall/vo/audition/*/takes/
+images/mall/vo/audition/*.wav
+images/mall/vo/v3/vo.wav
+images/mall/vo/*/takes/*.try.wav
+images/mall/vo/v4/*/vo.wav
+images/mall/vo/**/*.try.wav
+images/mall/vo/v5/*/vo.wav
+images/mall/vo/v6/*/vo.wav
+images/mall/vo/v7/*/vo.wav
+images/mall/vo/v8/vo.wav
+images/mall/vo/v9/*/vo.wav
+images/mall/vo/v10/*/vo.wav
+images/mall/vo/shorts/*/vo.wav
+out/shorts/
+images/mall/vo/ch1/vo.wav
+images/mall/vo/ch1/takes/*-[0-9].wav

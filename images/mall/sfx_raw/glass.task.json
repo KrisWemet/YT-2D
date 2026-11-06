@@ -1,0 +1,51 @@
+{
+ "taskId": "58693c4dff27942807e8a78ad16370fb",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a huge glass shop door shattering violently, a big crash and thousands of glass shards falling and tinkling on a tile floor, one event, about three seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/e1009095-3ee4-44f0-b461-7638244d74b3.mp3\",\"createTime\":1793838402440,\"duration\":2.8,\"id\":\"e1009095-3ee4-44f0-b461-7638244d74b3\",\"image_url\":\"https://cdn2.suno.ai/image_e1009095-3ee4-44f0-b461-7638244d74b3.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/e1009095-3ee4-44f0-b461-7638244d74b3.mp3\",\"tags\":\"Sound effect only, no music, no voice: a huge glass shop door shattering violently, a big crash and thousands of glass shards falling and tinkling on a tile floor, one event, about three seconds\",\"title\":\"Sound effect only, no music, no voice: a huge glass shop door shattering viol...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/15bc89fc-9970-4b02-bb7b-7082c8ab733e.mp3\",\"createTime\":1793838402440,\"duration\":2.8,\"id\":\"15bc89fc-9970-4b02-bb7b-7082c8ab733e\",\"image_url\":\"https://cdn2.suno.ai/image_15bc89fc-9970-4b02-bb7b-7082c8ab733e.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/15bc89fc-9970-4b02-bb7b-7082c8ab733e.mp3\",\"tags\":\"Sound effect only, no music, no voice: a huge glass shop door shattering violently, a big crash and thousands of glass shards falling and tinkling on a tile floor, one event, about three seconds\",\"title\":\"Sound effect only, no music, no voice: a huge glass shop door shattering viol...\"}],\"msg\":\"success\",\"task_id\":\"58693c4dff27942807e8a78ad16370fb\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 19,
+ "completeTime": 1793838402440,
+ "createTime": 1793838383254,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a huge glass shop door shattering violently, a big crash and thousands of glass shards falling and tinkling on a tile floor, one event, about three seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 2.8,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/e1009095-3ee4-44f0-b461-7638244d74b3.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402440,
+    "image_url": "https://cdn2.suno.ai/image_e1009095-3ee4-44f0-b461-7638244d74b3.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/e1009095-3ee4-44f0-b461-7638244d74b3.mp3",
+    "id": "e1009095-3ee4-44f0-b461-7638244d74b3",
+    "title": "Sound effect only, no music, no voice: a huge glass shop door shattering viol...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a huge glass shop door shattering violently, a big crash and thousands of glass shards falling and tinkling on a tile floor, one event, about three seconds"
+   },
+   {
+    "duration": 2.8,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/15bc89fc-9970-4b02-bb7b-7082c8ab733e.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402440,
+    "image_url": "https://cdn2.suno.ai/image_15bc89fc-9970-4b02-bb7b-7082c8ab733e.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/15bc89fc-9970-4b02-bb7b-7082c8ab733e.mp3",
+    "id": "15bc89fc-9970-4b02-bb7b-7082c8ab733e",
+    "title": "Sound effect only, no music, no voice: a huge glass shop door shattering viol...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a huge glass shop door shattering violently, a big crash and thousands of glass shards falling and tinkling on a tile floor, one event, about three seconds"
+   }
+  ],
+  "task_id": "58693c4dff27942807e8a78ad16370fb"
+ },
+ "_elapsed": 20.9
+}

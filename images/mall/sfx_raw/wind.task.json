@@ -1,0 +1,51 @@
+{
+ "taskId": "565a5fa6ad8cad3c3a8237554f9e2f50",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: wind on a flat rooftop in the afternoon, steady gusts, a distant city with faint sirens far away, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/34ad2b0a-5c3a-4466-9c85-d709a14aec06.mp3\",\"createTime\":1793925879937,\"duration\":13.28,\"id\":\"34ad2b0a-5c3a-4466-9c85-d709a14aec06\",\"image_url\":\"https://cdn2.suno.ai/image_34ad2b0a-5c3a-4466-9c85-d709a14aec06.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/34ad2b0a-5c3a-4466-9c85-d709a14aec06.mp3\",\"tags\":\"Sound effect only, no music, no voice: wind on a flat rooftop in the afternoon, steady gusts, a distant city with faint sirens far away, seamless loop\",\"title\":\"Sound effect only, no music, no voice: wind on a flat rooftop in the afternoo...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/058a5561-34d1-4b3b-8d7a-7e8202ad9e9c.mp3\",\"createTime\":1793925879937,\"duration\":14.0,\"id\":\"058a5561-34d1-4b3b-8d7a-7e8202ad9e9c\",\"image_url\":\"https://cdn2.suno.ai/image_058a5561-34d1-4b3b-8d7a-7e8202ad9e9c.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/058a5561-34d1-4b3b-8d7a-7e8202ad9e9c.mp3\",\"tags\":\"Sound effect only, no music, no voice: wind on a flat rooftop in the afternoon, steady gusts, a distant city with faint sirens far away, seamless loop\",\"title\":\"Sound effect only, no music, no voice: wind on a flat rooftop in the afternoo...\"}],\"msg\":\"success\",\"task_id\":\"565a5fa6ad8cad3c3a8237554f9e2f50\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 20,
+ "completeTime": 1793925879937,
+ "createTime": 1793925858546,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "paramJson": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: wind on a flat rooftop in the afternoon, steady gusts, a distant city with faint sirens far away, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "successFlag": 1,
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 13.28,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/34ad2b0a-5c3a-4466-9c85-d709a14aec06.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925879937,
+    "image_url": "https://cdn2.suno.ai/image_34ad2b0a-5c3a-4466-9c85-d709a14aec06.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/34ad2b0a-5c3a-4466-9c85-d709a14aec06.mp3",
+    "id": "34ad2b0a-5c3a-4466-9c85-d709a14aec06",
+    "title": "Sound effect only, no music, no voice: wind on a flat rooftop in the afternoo...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: wind on a flat rooftop in the afternoon, steady gusts, a distant city with faint sirens far away, seamless loop"
+   },
+   {
+    "duration": 14.0,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/058a5561-34d1-4b3b-8d7a-7e8202ad9e9c.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925879937,
+    "image_url": "https://cdn2.suno.ai/image_058a5561-34d1-4b3b-8d7a-7e8202ad9e9c.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/058a5561-34d1-4b3b-8d7a-7e8202ad9e9c.mp3",
+    "id": "058a5561-34d1-4b3b-8d7a-7e8202ad9e9c",
+    "title": "Sound effect only, no music, no voice: wind on a flat rooftop in the afternoo...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: wind on a flat rooftop in the afternoon, steady gusts, a distant city with faint sirens far away, seamless loop"
+   }
+  ],
+  "task_id": "565a5fa6ad8cad3c3a8237554f9e2f50"
+ },
+ "_elapsed": 26.1
+}

@@ -1,0 +1,51 @@
+{
+ "taskId": "36e508568547923e2332f9fda90599a1",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising whirring squeal with crackle, ending in a soft click, about one and a half seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/9707de40-d981-440f-9b21-ab4b8e4bdddb.mp3\",\"createTime\":1793844689312,\"duration\":3.12,\"id\":\"9707de40-d981-440f-9b21-ab4b8e4bdddb\",\"image_url\":\"https://cdn2.suno.ai/image_9707de40-d981-440f-9b21-ab4b8e4bdddb.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/9707de40-d981-440f-9b21-ab4b8e4bdddb.mp3\",\"tags\":\"Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising whirring squeal with crackle, ending in a soft click, about one and a half seconds\",\"title\":\"Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising wh...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/41888fc6-df4e-4100-8cbe-92f93683ffd7.mp3\",\"createTime\":1793844689312,\"duration\":4.36,\"id\":\"41888fc6-df4e-4100-8cbe-92f93683ffd7\",\"image_url\":\"https://cdn2.suno.ai/image_41888fc6-df4e-4100-8cbe-92f93683ffd7.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/41888fc6-df4e-4100-8cbe-92f93683ffd7.mp3\",\"tags\":\"Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising whirring squeal with crackle, ending in a soft click, about one and a half seconds\",\"title\":\"Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising wh...\"}],\"msg\":\"success\",\"task_id\":\"36e508568547923e2332f9fda90599a1\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 19,
+ "completeTime": 1793844689312,
+ "createTime": 1793844669985,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising whirring squeal with crackle, ending in a soft click, about one and a half seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 3.12,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/9707de40-d981-440f-9b21-ab4b8e4bdddb.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793844689312,
+    "image_url": "https://cdn2.suno.ai/image_9707de40-d981-440f-9b21-ab4b8e4bdddb.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/9707de40-d981-440f-9b21-ab4b8e4bdddb.mp3",
+    "id": "9707de40-d981-440f-9b21-ab4b8e4bdddb",
+    "title": "Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising wh...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising whirring squeal with crackle, ending in a soft click, about one and a half seconds"
+   },
+   {
+    "duration": 4.36,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/41888fc6-df4e-4100-8cbe-92f93683ffd7.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793844689312,
+    "image_url": "https://cdn2.suno.ai/image_41888fc6-df4e-4100-8cbe-92f93683ffd7.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/41888fc6-df4e-4100-8cbe-92f93683ffd7.mp3",
+    "id": "41888fc6-df4e-4100-8cbe-92f93683ffd7",
+    "title": "Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising wh...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a VHS tape rewinding fast: a rising whirring squeal with crackle, ending in a soft click, about one and a half seconds"
+   }
+  ],
+  "task_id": "36e508568547923e2332f9fda90599a1"
+ },
+ "_elapsed": 20.8
+}

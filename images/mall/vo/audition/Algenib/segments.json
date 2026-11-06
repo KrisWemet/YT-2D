@@ -1,0 +1,40 @@
+{
+ "duration": 44.865,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "The dead man pressing his face against my gate used to be my best friend.",
+   "s": 0.3,
+   "e": 6.543,
+   "chunk": "a1"
+  },
+  {
+   "kind": "narr",
+   "text": "In about ten seconds, the radio clipped to his chest is going to crackle... and tell every one of them exactly where I'm hiding.",
+   "s": 7.143,
+   "e": 19.136,
+   "chunk": "a2"
+  },
+  {
+   "kind": "narr",
+   "text": "My name is Danny Ruiz. I'm the night security guard at Maplecrest Mall. And yes, I've heard every mall cop joke there is.",
+   "s": 20.036,
+   "e": 30.55,
+   "chunk": "a3"
+  },
+  {
+   "kind": "narr",
+   "text": "I took the night shift for one reason. It means I'm home every afternoon when my daughter Lily gets off the school bus.",
+   "s": 31.15,
+   "e": 39.49,
+   "chunk": "a4"
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight, he didn't tell a joke.",
+   "s": 40.19,
+   "e": 43.165,
+   "chunk": "a5"
+  }
+ ]
+}

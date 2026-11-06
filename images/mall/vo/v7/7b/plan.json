@@ -1,0 +1,86 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, late thirties, with a deep, rough, gravelly voice. He's worn out and still shaken, and he tells it slowly and plainly in his own natural voice, with little inflection, like a real person remembering something awful, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "Late at night, a tired man who hasn't slept since that night sits at a microphone and slowly tells what happened in the first hour of a zombie outbreak at the mall where he works. He takes his time, with small pauses where it still gets to him. Plain and natural, no music.",
+ "sample_context": "A first-person story told slowly and plainly, in a deep, rough, shaken voice.",
+ "temperature": 0.8,
+ "takes_dir": "../../v6/takes",
+ "max_pause": 0.45,
+ "lufs": -18,
+ "chunks": [
+  {
+   "id": "d2b",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "The Drift",
+   "lines": [
+    {
+     "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform.",
+     "db": -9
+    },
+    {
+     "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding.",
+     "db": -9
+    },
+    {
+     "text": "An hour ago, I was basically the king of this mall.",
+     "db": -5
+    },
+    {
+     "text": "Let me back up.",
+     "db": 0
+    },
+    {
+     "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is.",
+     "db": 0
+    },
+    {
+     "text": "I work nights for one reason. At three-fifteen every afternoon, I'm standing at the bus stop when my daughter Lily gets off.",
+     "db": 0
+    },
+    {
+     "text": "She's seven, and she thinks I'm the king of the mall, because I carry forty-two keys, one for every store.",
+     "db": 0
+    },
+    {
+     "text": "Tonight, I'd only need one of them.",
+     "db": -3
+    },
+    {
+     "text": "The job's pretty simple. I walk the loop, I rattle the gates, and around one a.m., Marcus calls me from down in the parking garage.",
+     "db": 0
+    },
+    {
+     "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard.",
+     "db": 0
+    },
+    {
+     "text": "Tonight he calls at one-forty, and there's no joke. He's whispering.",
+     "db": -3
+    }
+   ],
+   "gap": 0.6,
+   "pitch": -1.5
+  },
+  {
+   "id": "r1",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "radio": "marcus1",
+   "text": "[low, tense] Danny. There's a guy on the ramp. He's walking... wrong.",
+   "lufs": -19,
+   "gap": 0.45
+  }
+ ]
+}

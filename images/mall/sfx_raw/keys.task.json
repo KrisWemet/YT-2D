@@ -1,0 +1,51 @@
+{
+ "taskId": "d01e8c100b8ffd14fa660e3fc9e51c5f",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a big ring of metal keys jingling and rattling in a hand, close up, short\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/cef627b4-618f-4509-ba3a-6186b4d5fe3d.mp3\",\"createTime\":1793838402140,\"duration\":2.0,\"id\":\"cef627b4-618f-4509-ba3a-6186b4d5fe3d\",\"image_url\":\"https://cdn2.suno.ai/image_cef627b4-618f-4509-ba3a-6186b4d5fe3d.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/cef627b4-618f-4509-ba3a-6186b4d5fe3d.mp3\",\"tags\":\"Sound effect only, no music, no voice: a big ring of metal keys jingling and rattling in a hand, close up, short\",\"title\":\"Sound effect only, no music, no voice: a big ring of metal keys jingling and ...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/c5e50cfb-4fbe-4f5a-83ea-0bcb4d1bd270.mp3\",\"createTime\":1793838402140,\"duration\":2.32,\"id\":\"c5e50cfb-4fbe-4f5a-83ea-0bcb4d1bd270\",\"image_url\":\"https://cdn2.suno.ai/image_c5e50cfb-4fbe-4f5a-83ea-0bcb4d1bd270.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/c5e50cfb-4fbe-4f5a-83ea-0bcb4d1bd270.mp3\",\"tags\":\"Sound effect only, no music, no voice: a big ring of metal keys jingling and rattling in a hand, close up, short\",\"title\":\"Sound effect only, no music, no voice: a big ring of metal keys jingling and ...\"}],\"msg\":\"success\",\"task_id\":\"d01e8c100b8ffd14fa660e3fc9e51c5f\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 19,
+ "completeTime": 1793838402140,
+ "createTime": 1793838383271,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a big ring of metal keys jingling and rattling in a hand, close up, short\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 2.0,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/cef627b4-618f-4509-ba3a-6186b4d5fe3d.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402140,
+    "image_url": "https://cdn2.suno.ai/image_cef627b4-618f-4509-ba3a-6186b4d5fe3d.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/cef627b4-618f-4509-ba3a-6186b4d5fe3d.mp3",
+    "id": "cef627b4-618f-4509-ba3a-6186b4d5fe3d",
+    "title": "Sound effect only, no music, no voice: a big ring of metal keys jingling and ...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a big ring of metal keys jingling and rattling in a hand, close up, short"
+   },
+   {
+    "duration": 2.32,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/c5e50cfb-4fbe-4f5a-83ea-0bcb4d1bd270.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402140,
+    "image_url": "https://cdn2.suno.ai/image_c5e50cfb-4fbe-4f5a-83ea-0bcb4d1bd270.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/c5e50cfb-4fbe-4f5a-83ea-0bcb4d1bd270.mp3",
+    "id": "c5e50cfb-4fbe-4f5a-83ea-0bcb4d1bd270",
+    "title": "Sound effect only, no music, no voice: a big ring of metal keys jingling and ...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a big ring of metal keys jingling and rattling in a hand, close up, short"
+   }
+  ],
+  "task_id": "d01e8c100b8ffd14fa660e3fc9e51c5f"
+ },
+ "_elapsed": 20.9
+}

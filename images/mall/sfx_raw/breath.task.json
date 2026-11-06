@@ -1,0 +1,51 @@
+{
+ "taskId": "c44eff85b3e82085dfd9746d0b3df179",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: one zombie very close, a raspy wet growling breath and a low gurgling groan, creepy, about three seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/01622a53-3fff-4723-ae85-2fa51c68e3f6.mp3\",\"createTime\":1793838402862,\"duration\":8.68,\"id\":\"01622a53-3fff-4723-ae85-2fa51c68e3f6\",\"image_url\":\"https://cdn2.suno.ai/image_01622a53-3fff-4723-ae85-2fa51c68e3f6.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/01622a53-3fff-4723-ae85-2fa51c68e3f6.mp3\",\"tags\":\"Sound effect only, no music, no voice: one zombie very close, a raspy wet growling breath and a low gurgling groan, creepy, about three seconds\",\"title\":\"Sound effect only, no music, no voice: one zombie very close, a raspy wet gro...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/85273356-53e5-4399-981c-118ba463fcdc.mp3\",\"createTime\":1793838402862,\"duration\":6.72,\"id\":\"85273356-53e5-4399-981c-118ba463fcdc\",\"image_url\":\"https://cdn2.suno.ai/image_85273356-53e5-4399-981c-118ba463fcdc.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/85273356-53e5-4399-981c-118ba463fcdc.mp3\",\"tags\":\"Sound effect only, no music, no voice: one zombie very close, a raspy wet growling breath and a low gurgling groan, creepy, about three seconds\",\"title\":\"Sound effect only, no music, no voice: one zombie very close, a raspy wet gro...\"}],\"msg\":\"success\",\"task_id\":\"c44eff85b3e82085dfd9746d0b3df179\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 18,
+ "completeTime": 1793838402862,
+ "createTime": 1793838383554,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: one zombie very close, a raspy wet growling breath and a low gurgling groan, creepy, about three seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 8.68,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/01622a53-3fff-4723-ae85-2fa51c68e3f6.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402862,
+    "image_url": "https://cdn2.suno.ai/image_01622a53-3fff-4723-ae85-2fa51c68e3f6.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/01622a53-3fff-4723-ae85-2fa51c68e3f6.mp3",
+    "id": "01622a53-3fff-4723-ae85-2fa51c68e3f6",
+    "title": "Sound effect only, no music, no voice: one zombie very close, a raspy wet gro...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: one zombie very close, a raspy wet growling breath and a low gurgling groan, creepy, about three seconds"
+   },
+   {
+    "duration": 6.72,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/85273356-53e5-4399-981c-118ba463fcdc.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402862,
+    "image_url": "https://cdn2.suno.ai/image_85273356-53e5-4399-981c-118ba463fcdc.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/85273356-53e5-4399-981c-118ba463fcdc.mp3",
+    "id": "85273356-53e5-4399-981c-118ba463fcdc",
+    "title": "Sound effect only, no music, no voice: one zombie very close, a raspy wet gro...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: one zombie very close, a raspy wet growling breath and a low gurgling groan, creepy, about three seconds"
+   }
+  ],
+  "task_id": "c44eff85b3e82085dfd9746d0b3df179"
+ },
+ "_elapsed": 21.4
+}

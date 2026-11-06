@@ -1,0 +1,258 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with very little inflection, keeping his pitch fairly level and even, like a real person, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  },
+  "marcus_gate": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice. He is badly hurt and worn out, sitting against the bars of a store gate in the dark, talking to his best friend on the other side. He still sounds like himself, warm and a little funny.",
+   "accent": "American (Gen)"
+  },
+  "vera": {
+   "voice_name": "Gacrux",
+   "audio_profile": "Vera, a woman in her forties. Calm, warm and funny, and she never raises her voice. She sounds friendly and in control, which is what makes her frightening.",
+   "accent": "American (Gen)"
+  },
+  "broadcast": {
+   "voice_name": "Charon",
+   "audio_profile": "An official announcer reading a recorded emergency alert, steady, clear and unhurried.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man quietly tells what happened during the first hour of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+ "level": "fixed",
+ "tempo": 1.08,
+ "max_pause": 0.22,
+ "chunks": [
+  {
+   "id": "c4g-1",
+   "who": "marcus",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A badly hurt young security guard speaks into his walkie-talkie from the floor of a parking garage.",
+   "text": "[weak, hurting] Danny... don't come down. Lock up."
+  },
+  {
+   "id": "c4g-2",
+   "who": "marcus",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A badly hurt young security guard speaks into his walkie-talkie from the floor of a parking garage.",
+   "text": "[weak, hurting] Danny... don't come down. Lock up."
+  },
+  {
+   "id": "c4g-3",
+   "who": "marcus",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A badly hurt young security guard speaks into his walkie-talkie from the floor of a parking garage.",
+   "text": "[weak, hurting] Danny... don't come down. Lock up."
+  },
+  {
+   "id": "c6k-1",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Danny. It's me."
+  },
+  {
+   "id": "c6k-2",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Danny. It's me."
+  },
+  {
+   "id": "c6k-3",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Danny. It's me."
+  },
+  {
+   "id": "c7a-1",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Come on, man. Open it. Please."
+  },
+  {
+   "id": "c7a-2",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Come on, man. Open it. Please."
+  },
+  {
+   "id": "c7a-3",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Come on, man. Open it. Please."
+  },
+  {
+   "id": "c7g-1",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Hey. It's okay. I wouldn't open it either."
+  },
+  {
+   "id": "c7g-2",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Hey. It's okay. I wouldn't open it either."
+  },
+  {
+   "id": "c7g-3",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Hey. It's okay. I wouldn't open it either."
+  },
+  {
+   "id": "c7j-1",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "I'm not gonna lie, man. I'm kind of scared."
+  },
+  {
+   "id": "c7j-2",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "I'm not gonna lie, man. I'm kind of scared."
+  },
+  {
+   "id": "c7j-3",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "I'm not gonna lie, man. I'm kind of scared."
+  },
+  {
+   "id": "c7l-1",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Tell Lily the king's still in his castle."
+  },
+  {
+   "id": "c7l-2",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Tell Lily the king's still in his castle."
+  },
+  {
+   "id": "c7l-3",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "Tell Lily the king's still in his castle."
+  },
+  {
+   "id": "c7n-1",
+   "who": "marcus_gate",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "lines": [
+    {
+     "text": "What's a zombie's favorite kind of bean?",
+     "gap": 0.6
+    },
+    {
+     "text": "A human bean.",
+     "gap": 0.35
+    }
+   ],
+   "text": "What's a zombie's favorite kind of bean? A human bean."
+  },
+  {
+   "id": "c7n-2",
+   "who": "marcus_gate",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "lines": [
+    {
+     "text": "What's a zombie's favorite kind of bean?",
+     "gap": 0.6
+    },
+    {
+     "text": "A human bean.",
+     "gap": 0.35
+    }
+   ],
+   "text": "What's a zombie's favorite kind of bean? A human bean."
+  },
+  {
+   "id": "c7n-3",
+   "who": "marcus_gate",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "lines": [
+    {
+     "text": "What's a zombie's favorite kind of bean?",
+     "gap": 0.6
+    },
+    {
+     "text": "A human bean.",
+     "gap": 0.35
+    }
+   ],
+   "text": "What's a zombie's favorite kind of bean? A human bean."
+  },
+  {
+   "id": "c7p-1",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "And Danny? I still owe you twenty bucks."
+  },
+  {
+   "id": "c7p-2",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "And Danny? I still owe you twenty bucks."
+  },
+  {
+   "id": "c7p-3",
+   "who": "marcus_gate",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Two best friends talk quietly through the bars of a locked store gate in a dark mall, during a zombie outbreak.",
+   "text": "And Danny? I still owe you twenty bucks."
+  }
+ ]
+}
