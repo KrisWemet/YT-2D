@@ -1,6 +1,7 @@
 import React from 'react';
 import {interpolate, random} from 'remotion';
 import {FONT} from '../thumbs/Thumbs';
+import {ShortLayout} from './ShortLayout';
 
 const INK = '#1d1a1a';
 export const W = 1920;
@@ -44,11 +45,15 @@ export const Txt: React.FC<{
 );
 
 // Screen-space layer (1920x1080 SVG) for text and icons.
-export const Screen: React.FC<{children: React.ReactNode}> = ({children}) => (
-  <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{position: 'absolute', inset: 0}}>
-    {children}
-  </svg>
-);
+export const Screen: React.FC<{children: React.ReactNode}> = ({children}) => {
+  const vertical = React.useContext(ShortLayout);
+  return (
+    <svg width={vertical ? 1080 : W} height={vertical ? 608 : H} viewBox={`0 0 ${W} ${H}`}
+      style={vertical ? {position: 'absolute', left: 0, top: 420} : {position: 'absolute', inset: 0}}>
+      {children}
+    </svg>
+  );
+};
 
 const Icon: React.FC<{kind: 'ok' | 'no' | 'key' | 'info'; r: number}> = ({kind, r}) => {
   if (kind === 'ok')

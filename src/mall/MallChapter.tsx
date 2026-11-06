@@ -29,7 +29,7 @@ export type ChapterDef = {
 
 export const chapterFrames = (def: ChapterDef) => Math.round((def.data.duration + def.tail) * FPS);
 
-const resolveChapter = (def: ChapterDef) => {
+export const resolveChapter = (def: ChapterDef) => {
   const cues = makeCues(def.data);
   const DUR = def.data.duration + def.tail;
   let prev = 0;
@@ -65,7 +65,7 @@ const resolveChapter = (def: ChapterDef) => {
 const db = (d: number) => 10 ** (d / 20);
 const f = (s: number) => Math.max(0, Math.round(s * FPS));
 
-const ChapterSfx: React.FC<{r: ReturnType<typeof resolveChapter>}> = ({r}) => (
+export const ChapterSfx: React.FC<{r: ReturnType<typeof resolveChapter>}> = ({r}) => (
   <>
     {r.hits.map((h, i) => (
       <Sequence key={`h${i}`} from={f(h.t)} layout="none">

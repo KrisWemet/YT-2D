@@ -186,3 +186,62 @@ export const NightGuardShort1Thumb: React.FC = () => {
     </AbsoluteFill>
   );
 };
+
+// ------------------------------------------------------------------ Short 2: Forty-Two Keys
+export const NightGuardShort2Thumb: React.FC = () => {
+  useFont();
+  const pose: Pose = {...POSES.frontStand, armF: [-10, -5], armN: [86.7, 179.3]};
+  const scale = 8;
+  const head = jointsOf(pose, 0, 0, 300).head;
+  const floor = 830 - head[1] * scale;
+  return (
+    <AbsoluteFill style={{background: '#060b16', overflow: 'hidden'}}>
+      <svg width={TW} height={TH} viewBox={`0 0 ${TW} ${TH}`} style={{position: 'absolute', inset: 0}}>
+        <defs>
+          <radialGradient id="keyAlarm" cx="75%" cy="45%" r="70%">
+            <stop offset="0" stopColor="#ed342f" stopOpacity={0.8} />
+            <stop offset="0.48" stopColor="#8e111d" stopOpacity={0.34} />
+            <stop offset="1" stopColor="#050917" stopOpacity={0.1} />
+          </radialGradient>
+          <linearGradient id="keyMetal" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#fcffff" />
+            <stop offset="0.25" stopColor="#b9d3e1" />
+            <stop offset="0.5" stopColor="#f1f7f9" />
+            <stop offset="0.74" stopColor="#718b9c" />
+            <stop offset="1" stopColor="#dce7ec" />
+          </linearGradient>
+          <linearGradient id="keyVignette" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#02050b" stopOpacity={0.78} />
+            <stop offset="0.4" stopColor="#02050b" stopOpacity={0} />
+            <stop offset="0.76" stopColor="#02050b" stopOpacity={0} />
+            <stop offset="1" stopColor="#02050b" stopOpacity={0.94} />
+          </linearGradient>
+        </defs>
+        <image href={staticFile('mall/bg/concourse.jpg')} x={-1167} y={0} width={3414} height={1920}
+          style={{filter: 'blur(5px) brightness(0.32) saturate(0.6)'}} />
+        <rect width={TW} height={TH} fill="url(#keyAlarm)" />
+        <Stick x={330} y={floor} h={300 * scale} look={LOOKS.guard} pose={pose}
+          front eyes="wide" mouth="o" look2={1} wobble={3} shadow={0} />
+        {/* The forbidden key has the same silver finish and red B3 tag as the story. */}
+        <g transform="translate(750,710) rotate(28)" stroke="#080b10" strokeWidth={15} strokeLinejoin="round">
+          <path d="M -24 95 L -24 340 L 56 340 L 56 302 L 20 302 L 20 273 L 62 273 L 62 240 L 20 240 L 20 95 Z" fill="url(#keyMetal)" />
+          <circle r={110} fill="url(#keyMetal)" />
+          <circle r={51} fill="#111c2c" strokeWidth={13} />
+          <path d="M -68 -58 Q -20 -103 48 -68 M -7 140 V 235" fill="none" stroke="#fff" strokeWidth={9} strokeLinecap="round" opacity={0.85} />
+        </g>
+        <path d="M 830 780 Q 920 824 843 892" fill="none" stroke="#080b10" strokeWidth={15} />
+        <path d="M 830 780 Q 920 824 843 892" fill="none" stroke="#d0b37c" strokeWidth={7} />
+        <g transform="translate(850,935) rotate(10)">
+          <rect x={-107} y={-62} width={214} height={124} rx={16} fill="#e6322b" stroke="#080b10" strokeWidth={13} />
+          <circle cx={-80} cy={-40} r={8} fill="#090c12" />
+          <text x={4} y={33} textAnchor="middle" fontFamily={FONT} fontSize={99} fill="#fff6dc" stroke="#080b10" strokeWidth={5} paintOrder="stroke">B3</text>
+        </g>
+        <rect width={TW} height={TH} fill="url(#keyVignette)" />
+        <Headline x={TW / 2} y={1160} size={148} parts={[["NEVER USE", '#ffffff']]} rot={-2} />
+        <Headline x={TW / 2} y={1320} size={184} parts={[["THIS KEY", GOLD]]} rot={-2} />
+        <text x={TW / 2} y={215} textAnchor="middle" fontFamily={FONT} fontSize={62} fill={GOLD}
+          stroke="#080b10" strokeWidth={10} paintOrder="stroke">THE NIGHT GUARD</text>
+      </svg>
+    </AbsoluteFill>
+  );
+};
