@@ -1,0 +1,93 @@
+# The Night Guard: project file
+
+A stick-figure zombie survival story for YouTube. It has long chapters (16:9) and Shorts (9:16) cut from them. Still pictures change every 2–3 seconds, cut on the spoken word, under Danny's first-person narration.
+
+> A night guard with a key to every store gets locked inside his mall the night the dead rise. His seven-year-old daughter is a mile and a half away across the highway and blinks a flashlight at him every night. The woman on the radio wants the one key he was told never to use.
+
+- **Series plan:** `images/mall/series-outline.md`. Book One, *Forty-Two Keys*, has six chapters covering 30 days in the mall.
+- **Voice recipe:** `images/mall/voice-recipe.md`. Use the approved v10 voice for every new line.
+- **Code:** `src/mall/`, rendered with Remotion. The compositions are registered in `src/Root.tsx`.
+
+## Status
+
+| Item | Format | Length | Status | Upload kit |
+|---|---|---|---|---|
+| Chapter 1: The King of the Mall | 16:9, 1080p | 14:42 | ✅ Rendered | `publish/night-guard-chapter-1.md` + `.srt` |
+| Short 1: The Gate | 9:16 | 0:24 | ✅ Rendered, thumbnail made | `publish/night-guard-youtube-setup.md` |
+| Short 2: Forty-Two Keys | 9:16 | 1:01 | ✅ Rendered | `publish/night-guard-shorts-1-3.md` |
+| Short 3: One-Forty | 9:16 | 0:48 | ✅ Rendered | `publish/night-guard-shorts-1-3.md` |
+| Shorts 4–14 from Chapter 1 | 9:16 | ~0:45–1:30 each | ⬜ To make | the outline's 14 segments |
+| Chapter 1 thumbnail (16:9) | still | | ⬜ To make | |
+| Chapter 2: The Boy in the Ceiling | 16:9 | ~15:00 | ⬜ To write | outline, Chapter 2 |
+| Chapters 3–6 | 16:9 | | ⬜ Planned | outline |
+| Channel picture and banner | stills | | ✅ Done | `publish/channel/` |
+
+## Long videos (chapters)
+
+Each chapter runs about 15 minutes and is built in this order: **script, then voice, then pictures cut to the voice.**
+
+1. **Script:** `images/mall/chapterN/make_plans.py` writes `script.md` and the voice plan. Edit that file, not its outputs.
+2. **Voice:** `cd images/mall && python3 voice_gemini.py vo/chN/plan.json vo/chN`. Pick takes with `pick_takes.py`, then build `vo.wav`.
+3. **Timings:** `align.py`, then `caption_words.py`, write the word timings to `src/mall/chapterN/chN.json`.
+4. **Pictures:** write the shot lists in `src/mall/chapterN/shots0*.tsx`, each shot cued by a phrase in the narration. Check them with `check_cues.py`.
+5. **Render:** `npx remotion render src/index.ts MallChapter1 out/chapter1/night-guard-ch1-render.mp4 --concurrency=4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k`, then `bash images/mall/finish.sh <render> <final>` to bring the sound to −15 LUFS.
+6. **Captions:** `python3 images/mall/make_srt.py src/mall/chapterN/chN.json publish/night-guard-chapter-N.srt`.
+
+The Chapter 1 steps are in full in `publish/night-guard-chapter-1.md`.
+
+## Shorts
+
+Every chapter is 14 segments of about 2½–3 minutes, and each segment can be cut into a Short. The rules are in the outline, under "How every chapter splits into Shorts":
+
+- **Hook:** the first 2 seconds work for a brand-new viewer.
+- **Turn:** one problem and one turn.
+- **Cliff:** end on a question.
+- **Title:** use the hook, never "Part 7".
+- **End card:** "The full chapter is on the channel."
+- **Schedule:** one Short a day, so one chapter gives about two weeks of Shorts.
+
+How they're made:
+
+- **Scripts:** `images/mall/shorts/ch1-shorts-1-3.md`.
+- **Code:** `src/mall/shortsCh1.tsx`, with `MallShort.tsx` as the generic renderer and the vertical toolkit in `vertical.tsx`.
+- **Captions:** burned in word by word, in gold for Danny and green for radio voices.
+- **Render:** `npx remotion render src/index.ts MallShort1 out/shorts/raw-1.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k`, then `finish.sh`.
+- **Thumbnail:** `src/mall/ShortThumbs.tsx`. `images/mall/append_thumb.sh` adds the thumbnail as the last frames, so it can be picked in the YouTube app.
+
+## Characters
+
+| Character | Voice (Gemini on Kie.ai) | Look |
+|---|---|---|
+| Danny Ruiz, night guard (narrator) | Algenib, Deadpan, tempo 1.08 | navy uniform, guard cap, moustache, keys |
+| Marcus, 22, garage guard and nursing student | Orus | navy uniform, beard, radio on his chest (worn upside down) |
+| Lily, 7, Danny's daughter | — | pink shirt, pigtails |
+| Vera, the woman on the radio | Gacrux, whispering | not shown yet |
+| Emergency broadcast | Charon | |
+
+Stick-figure redesign options for Marcus are in `src/mall/MarcusVariants.tsx` (work in progress).
+
+## Where things live
+
+| What | Where |
+|---|---|
+| Rendered videos (not in git, download them) | `out/chapter1/`, `out/shorts/` |
+| Upload kits: titles, descriptions, captions | `publish/night-guard-*.md`, `publish/night-guard-chapter-1.srt` |
+| Channel art and thumbnails | `publish/channel/`, `thumbnails/` |
+| Backgrounds and sounds | `public/mall/bg/`, `public/mall/sfx/` (prompts in `images/mall/prompts.json`, `sfx_gen.py`) |
+| Voice takes | `images/mall/vo/<round>/takes/` |
+
+## Costs (Kie.ai credits)
+
+- **Chapter 1:** about 278 credits (~$1.40), mostly for the voice.
+- **Shorts 1–3:** about 51 credits.
+- **Each new background:** 3.24 credits.
+- **Each new sound:** 2.5 credits for two variants.
+
+The balance was 412.74 on Nov 6, 2026.
+
+## Next up
+
+1. Make a 16:9 thumbnail for Chapter 1.
+2. Cut Shorts 4–14 from Chapter 1's segments.
+3. Choose a stick-figure style for Marcus, and maybe Danny, before Chapter 2.
+4. Write Chapter 2, *The Boy in the Ceiling*, from the outline.
