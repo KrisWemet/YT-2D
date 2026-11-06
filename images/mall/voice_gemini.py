@@ -48,14 +48,36 @@ takes.mkdir(parents=True, exist_ok=True)
 SR = 48000
 FLATTEN_NOW = 0  # set per chunk by build()
 
-NUM = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four", "5": "five", "6": "six", "7": "seven", "8": "eight",
-       "9": "nine", "10": "ten", "15": "fifteen", "20": "twenty", "22": "twenty two", "30": "thirty", "31": "thirty one", "40": "forty",
-       "42": "forty two", "140": "one forty", "315": "three fifteen"}
+NUM = {"140": "one forty", "315": "three fifteen"}  # numbers said the way a clock reads them
+ONES = ("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen "
+        "eighteen nineteen").split()
+TENS = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+
+
+def say(n):
+    """an integer in words, the way the transcriber's digits are read back ("72" -> "seventy two")"""
+    n = int(n)
+    if n < 20:
+        return ONES[n]
+    if n < 100:
+        return TENS[n // 10] + ("" if n % 10 == 0 else " " + ONES[n % 10])
+    if n < 1000:
+        return ONES[n // 100] + " hundred" + ("" if n % 100 == 0 else " " + say(n % 100))
+    return " ".join(ONES[int(d)] for d in str(n))
+
+
+def clock(m):
+    """2:31 -> two thirty one, 9:01 -> nine oh one, 9:00 -> nine"""
+    h, mm = int(m.group(1)), int(m.group(2))
+    return f" {say(h)} " + ("" if mm == 0 else ("oh " + say(mm) if mm < 10 else say(mm))) + " "
 
 
 def words(s):
     s = re.sub(r"\[[^\]]*\]", " ", s).lower().replace("-", " ").replace("$", "")
-    s = re.sub(r"(\d+)", lambda m: " " + NUM.get(m.group(1), m.group(1)) + " ", s)
+    ords = {"1st": "first", "2nd": "second", "3rd": "third", "4th": "fourth", "5th": "fifth", "6th": "sixth", "10th": "tenth"}
+    s = re.sub(r"\b(\d+(?:st|nd|rd|th))\b", lambda m: ords.get(m.group(1), m.group(1)), s)
+    s = re.sub(r"\b(\d{1,2}):(\d\d)\b", clock, s)
+    s = re.sub(r"(\d+)", lambda m: " " + NUM.get(m.group(1), say(m.group(1))) + " ", s)
     s = s.replace("gonna", "going to").replace("name's", "name is").replace("a.m.", "am").replace("a m", "am")
     s = re.sub(r"\bs\s*o\s*s\b", "s o s", s)  # "S-O-S" may come back as "SOS"
     s = re.sub(r"\b10th\b", "tenth", s)

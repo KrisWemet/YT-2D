@@ -61,7 +61,7 @@ export const Scene: React.FC<{
 export const hC = (y: number) => 1.1 * (y - 880); // concourse
 export const hG = (y: number) => 0.57 * (y - 706); // garage
 export const hI = (y: number) => 2.2 * (y - 780); // inside the sporting goods store
-const hF = (y: number) => 1.1 * (y - 870); // food court
+export const hF = (y: number) => 1.1 * (y - 870); // food court
 
 type Fig = Omit<StickProps, 'look' | 'pose'> & {look?: Look; pose?: Pose};
 export const Guard: React.FC<Fig> = (p) => <Stick look={LOOKS.guard} pose={POSES.stand} eyes="dot" mouth="flat" {...p} />;
@@ -123,15 +123,15 @@ const Box: React.FC<{x0: number; y0: number; x1: number; y1: number; t: number; 
   return <rect x={x0} y={y0} width={x1 - x0} height={y1 - y0} rx={18} fill="none" stroke={color} strokeWidth={w} strokeDasharray={`${per * k} ${per}`} strokeLinecap="round" />;
 };
 
-const MallSign: React.FC = () => (
+export const MallSign: React.FC = () => (
   <text x={1408} y={598} textAnchor="middle" fontFamily={FONT} fontSize={86} fill="#5a3b26" letterSpacing="0.06em">
     MAPLECREST
   </text>
 );
 
-const ItemTag: React.FC<{text: string; p: P; at?: number}> = ({text, p, at = 0.05}) => <Tag x={W / 2} y={190} text={text} t={p.t} at={at} size={86} anchor="middle" />;
+export const ItemTag: React.FC<{text: string; p: P; at?: number}> = ({text, p, at = 0.05}) => <Tag x={W / 2} y={190} text={text} t={p.t} at={at} size={86} anchor="middle" />;
 
-const SpeedLines: React.FC<{t: number}> = ({t}) => (
+export const SpeedLines: React.FC<{t: number}> = ({t}) => (
   <g stroke="#ffffff" strokeLinecap="round" opacity={0.55}>
     {[0, 1, 2, 3, 4, 5, 6].map((i) => {
       const y = 380 + i * 95;
@@ -163,7 +163,7 @@ const ShoppingList: React.FC<{t: number}> = ({t}) => {
 
 /* ---------------- recurring set-ups ---------------- */
 
-const ramp6: [number, number, number, (1 | -1)?][] = [
+export const ramp6: [number, number, number, (1 | -1)?][] = [
   [1990, 1010, 155],
   [2120, 965, 140],
   [2250, 920, 125],
@@ -171,8 +171,8 @@ const ramp6: [number, number, number, (1 | -1)?][] = [
   [2060, 1060, 168],
   [2290, 990, 140],
 ];
-const ramp10 = [...ramp6, [1880, 1060, 172], [2200, 1040, 158], [2430, 930, 118], [1780, 1110, 190]] as [number, number, number, (1 | -1)?][];
-const rampMany = [
+export const ramp10 = [...ramp6, [1880, 1060, 172], [2200, 1040, 158], [2430, 930, 118], [1780, 1110, 190]] as [number, number, number, (1 | -1)?][];
+export const rampMany = [
   ...ramp10,
   [1700, 1150, 205],
   [1620, 1080, 200],
@@ -191,14 +191,14 @@ const rampMany = [
 ] as [number, number, number, (1 | -1)?][];
 
 // Marcus down on the garage floor with the first one over him.
-const Attack: React.FC = () => (
+export const Attack: React.FC = () => (
   <g>
     <Marcus x={1290} y={1160} h={hG(1160)} pose={POSES.lyingDown} eyes="closed" mouth="flat" shadow={0.3} />
     <Zed k={2} x={1150} y={1166} h={hG(1166)} face={1} pose={POSES.zCrouchEat} />
   </g>
 );
 
-const outsideGlass: [number, number, number, (1 | -1)?][] = [
+export const outsideGlass: [number, number, number, (1 | -1)?][] = [
   [1960, 1012, 235, -1],
   [2075, 1000, 215, -1],
   [2240, 1022, 250, -1],
@@ -238,14 +238,14 @@ export const crouchRadio: Pose = {lean: 25, head: 8, armF: [40, 90], armN: [30, 
 export const holdKeys: Pose = {...POSES.holdUp, armN: [120, 160]};
 
 // Shoppers for the Black Friday shot, zombies for the same shot "tonight".
-const lotRows: [number, number, number, (1 | -1)?][] = [
+export const lotRows: [number, number, number, (1 | -1)?][] = [
   [700, 1300, 0, 1], [880, 1420, 0, 1], [1040, 1200, 0, 1], [1180, 1480, 0, 1], [1290, 1260, 0, 1],
   [1530, 1250, 0, -1], [1640, 1460, 0, -1], [1780, 1190, 0, -1], [1930, 1380, 0, -1], [2100, 1280, 0, -1],
   [2260, 1470, 0, -1], [560, 1460, 0, 1], [2420, 1330, 0, -1], [1410, 1380, 0, 1],
 ];
-const hLot = (y: number) => 0.55 * (y - 820);
-const SHOPPERS = [LOOKS.shopperA, LOOKS.shopperB, LOOKS.shopperC, LOOKS.shopperD, LOOKS.teenA, LOOKS.teenB];
-const BlackFridayBanner: React.FC = () => (
+export const hLot = (y: number) => 0.55 * (y - 820);
+export const SHOPPERS = [LOOKS.shopperA, LOOKS.shopperB, LOOKS.shopperC, LOOKS.shopperD, LOOKS.teenA, LOOKS.teenB];
+export const BlackFridayBanner: React.FC = () => (
   <g transform="rotate(-3 1408 566)">
     <rect x={1140} y={490} width={536} height={150} rx={8} fill="#d8443a" stroke="#1d1a1a" strokeWidth={8} />
     <text x={1408} y={592} textAnchor="middle" fontFamily={FONT} fontSize={74} fill="#fff6c8" stroke="#1d1a1a" strokeWidth={10} paintOrder="stroke">

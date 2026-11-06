@@ -16,7 +16,10 @@ export type BgName =
   | 'sportsfront'
   | 'sportsinside'
   | 'busstop'
-  | 'parkview';
+  | 'parkview'
+  | 'roof'
+  | 'stockroom'
+  | 'apartment';
 
 // Camera: centre point (image px) and zoom (1 = whole image fills the frame).
 export type Cam = {x: number; y: number; z: number};

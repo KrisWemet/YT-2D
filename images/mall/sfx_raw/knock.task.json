@@ -1,0 +1,51 @@
+{
+ "taskId": "20d6eba9f35467a4f79e42602dfb9e98",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: three knocks with bare knuckles on a steel roll-down security gate in a quiet dark hall: one knock, two quick knocks, one more knock, metallic and hollow, close\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/c8a05d1a-c3de-4cd5-b1b5-4a52607686ac.mp3\",\"createTime\":1793925833563,\"duration\":12.68,\"id\":\"c8a05d1a-c3de-4cd5-b1b5-4a52607686ac\",\"image_url\":\"https://cdn2.suno.ai/image_c8a05d1a-c3de-4cd5-b1b5-4a52607686ac.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/c8a05d1a-c3de-4cd5-b1b5-4a52607686ac.mp3\",\"tags\":\"Sound effect only, no music, no voice: three knocks with bare knuckles on a steel roll-down security gate in a quiet dark hall: one knock, two quick knocks, one more knock, metallic and hollow, close\",\"title\":\"Sound effect only, no music, no voice: three knocks with bare knuckles on a s...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/7e5a2e2b-e1d5-469a-a2ab-69d32cf18f72.mp3\",\"createTime\":1793925833563,\"duration\":10.0,\"id\":\"7e5a2e2b-e1d5-469a-a2ab-69d32cf18f72\",\"image_url\":\"https://cdn2.suno.ai/image_7e5a2e2b-e1d5-469a-a2ab-69d32cf18f72.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/7e5a2e2b-e1d5-469a-a2ab-69d32cf18f72.mp3\",\"tags\":\"Sound effect only, no music, no voice: three knocks with bare knuckles on a steel roll-down security gate in a quiet dark hall: one knock, two quick knocks, one more knock, metallic and hollow, close\",\"title\":\"Sound effect only, no music, no voice: three knocks with bare knuckles on a s...\"}],\"msg\":\"success\",\"task_id\":\"20d6eba9f35467a4f79e42602dfb9e98\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 18,
+ "completeTime": 1793925833563,
+ "createTime": 1793925814518,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: three knocks with bare knuckles on a steel roll-down security gate in a quiet dark hall: one knock, two quick knocks, one more knock, metallic and hollow, close\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "successFlag": 1,
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 12.68,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/c8a05d1a-c3de-4cd5-b1b5-4a52607686ac.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925833563,
+    "image_url": "https://cdn2.suno.ai/image_c8a05d1a-c3de-4cd5-b1b5-4a52607686ac.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/c8a05d1a-c3de-4cd5-b1b5-4a52607686ac.mp3",
+    "id": "c8a05d1a-c3de-4cd5-b1b5-4a52607686ac",
+    "title": "Sound effect only, no music, no voice: three knocks with bare knuckles on a s...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: three knocks with bare knuckles on a steel roll-down security gate in a quiet dark hall: one knock, two quick knocks, one more knock, metallic and hollow, close"
+   },
+   {
+    "duration": 10.0,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/7e5a2e2b-e1d5-469a-a2ab-69d32cf18f72.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925833563,
+    "image_url": "https://cdn2.suno.ai/image_7e5a2e2b-e1d5-469a-a2ab-69d32cf18f72.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/7e5a2e2b-e1d5-469a-a2ab-69d32cf18f72.mp3",
+    "id": "7e5a2e2b-e1d5-469a-a2ab-69d32cf18f72",
+    "title": "Sound effect only, no music, no voice: three knocks with bare knuckles on a s...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: three knocks with bare knuckles on a steel roll-down security gate in a quiet dark hall: one knock, two quick knocks, one more knock, metallic and hollow, close"
+   }
+  ],
+  "task_id": "20d6eba9f35467a4f79e42602dfb9e98"
+ },
+ "_elapsed": 20.8
+}

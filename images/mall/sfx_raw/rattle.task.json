@@ -1,0 +1,51 @@
+{
+ "taskId": "da12f737623f9f759d53b73ac85ca5f3",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: someone shaking a steel roll-down security gate in an empty mall hallway, a short burst of loud metallic rattling, about two seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/fdbf5df2-85f8-4012-a83c-a14243bcf04a.mp3\",\"createTime\":1793925873483,\"duration\":2.8,\"id\":\"fdbf5df2-85f8-4012-a83c-a14243bcf04a\",\"image_url\":\"https://cdn2.suno.ai/image_fdbf5df2-85f8-4012-a83c-a14243bcf04a.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/fdbf5df2-85f8-4012-a83c-a14243bcf04a.mp3\",\"tags\":\"Sound effect only, no music, no voice: someone shaking a steel roll-down security gate in an empty mall hallway, a short burst of loud metallic rattling, about two seconds\",\"title\":\"Sound effect only, no music, no voice: someone shaking a steel roll-down secu...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/492e45ba-0f82-4f49-9211-e85abbd59226.mp3\",\"createTime\":1793925873483,\"duration\":2.76,\"id\":\"492e45ba-0f82-4f49-9211-e85abbd59226\",\"image_url\":\"https://cdn2.suno.ai/image_492e45ba-0f82-4f49-9211-e85abbd59226.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/492e45ba-0f82-4f49-9211-e85abbd59226.mp3\",\"tags\":\"Sound effect only, no music, no voice: someone shaking a steel roll-down security gate in an empty mall hallway, a short burst of loud metallic rattling, about two seconds\",\"title\":\"Sound effect only, no music, no voice: someone shaking a steel roll-down secu...\"}],\"msg\":\"success\",\"task_id\":\"da12f737623f9f759d53b73ac85ca5f3\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 19,
+ "completeTime": 1793925873483,
+ "createTime": 1793925854138,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: someone shaking a steel roll-down security gate in an empty mall hallway, a short burst of loud metallic rattling, about two seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "successFlag": 1,
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 2.8,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/fdbf5df2-85f8-4012-a83c-a14243bcf04a.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925873483,
+    "image_url": "https://cdn2.suno.ai/image_fdbf5df2-85f8-4012-a83c-a14243bcf04a.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/fdbf5df2-85f8-4012-a83c-a14243bcf04a.mp3",
+    "id": "fdbf5df2-85f8-4012-a83c-a14243bcf04a",
+    "title": "Sound effect only, no music, no voice: someone shaking a steel roll-down secu...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: someone shaking a steel roll-down security gate in an empty mall hallway, a short burst of loud metallic rattling, about two seconds"
+   },
+   {
+    "duration": 2.76,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/492e45ba-0f82-4f49-9211-e85abbd59226.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925873483,
+    "image_url": "https://cdn2.suno.ai/image_492e45ba-0f82-4f49-9211-e85abbd59226.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/492e45ba-0f82-4f49-9211-e85abbd59226.mp3",
+    "id": "492e45ba-0f82-4f49-9211-e85abbd59226",
+    "title": "Sound effect only, no music, no voice: someone shaking a steel roll-down secu...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: someone shaking a steel roll-down security gate in an empty mall hallway, a short burst of loud metallic rattling, about two seconds"
+   }
+  ],
+  "task_id": "da12f737623f9f759d53b73ac85ca5f3"
+ },
+ "_elapsed": 21.2
+}

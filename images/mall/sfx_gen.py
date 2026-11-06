@@ -26,6 +26,12 @@ SFX = {
     "crowd": (P + "an excited crowd of shoppers cheering and rushing through doors at a store opening, footsteps, shouting, about four seconds", False),
     "heartbeat": (P + "a slow heavy heartbeat, close and muffled, tense, steady, seamless loop", True),
     "musicbox": (P + "a gentle nostalgic music box melody, soft and a little sad, short, about four seconds", False),
+    # Chapter 1
+    "knock": (P + "three knocks with bare knuckles on a steel roll-down security gate in a quiet dark hall: one knock, two quick knocks, one more knock, metallic and hollow, close", False),
+    "helicopter": (P + "a helicopter flying overhead and passing by, loud rotor thumping that rises and fades away into the distance, outdoors, about six seconds", False),
+    "wind": (P + "wind on a flat rooftop in the afternoon, steady gusts, a distant city with faint sirens far away, seamless loop", True),
+    "rattle": (P + "someone shaking a steel roll-down security gate in an empty mall hallway, a short burst of loud metallic rattling, about two seconds", False),
+    "creak": (P + "a heavy steel security gate straining and bending under the weight of a crowd pushing on it, deep metallic groaning and creaking, rattling bars, about four seconds", False),
 }
 for name in sys.argv[1:]:
     prompt, loop = SFX[name]
