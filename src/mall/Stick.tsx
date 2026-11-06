@@ -74,8 +74,8 @@ export type StickProps = {
 };
 
 type V2 = [number, number];
-const INK = '#1d1a1a';
-const LW = 4.2; // outline width
+const INK = '#0b0c0c';
+const LW = 3.6; // outline width
 const R = 28; // head radius
 const NECK = 8;
 const TORSO = 94;
@@ -294,12 +294,13 @@ export const Head: React.FC<{
   ghost: boolean;
   ink: string;
 }> = ({c, tilt, look, eyes, mouth, gaze, back, front, ghost, ink}) => {
-  const skin = ghost ? '#20232b' : shade(look.skin ?? SKIN.light, look.torn ? 1.2 : 1.35);
+  const skin = ghost ? '#20232b' : shade(look.skin ?? SKIN.light, look.torn ? 1.08 : 1.04);
   const hairC = ghost ? '#20232b' : look.hairColor ?? '#2b211b';
   const hatC = ghost ? '#20232b' : look.hatColor ?? UNIFORM.hat;
+  const infected = eyes === 'zombie';
   const g = gaze * 2.2 + (eyes === 'side' ? -2 : 0);
   // three-quarter view: the face sits toward +x; front view: centred
-  const ex = front ? [-9.5, 9.5] : [R * 0.12, R * 0.56];
+  const ex = front ? [-10, 10] : [-1, 14];
   const ey = -R * 0.1;
   const browY = ey - 7;
   const mx = front ? 0 : R * 0.5;
@@ -311,7 +312,7 @@ export const Head: React.FC<{
       case 'wide':
         return (
           <g key={k}>
-            <ellipse cx={x} cy={ey} rx={4.6} ry={5.6} fill="#fff" stroke={ink} strokeWidth={2.2} />
+            <ellipse cx={x} cy={ey} rx={6} ry={7} fill="#fff" stroke={ink} strokeWidth={2.2} />
             <circle cx={x + g + 0.6} cy={ey + 0.4} r={2.2} fill={ink} />
           </g>
         );
@@ -320,8 +321,12 @@ export const Head: React.FC<{
       case 'zombie':
         return (
           <g key={k}>
-            <ellipse cx={x} cy={ey} rx={4.2} ry={4.6} fill="#e7ead2" stroke={ink} strokeWidth={1.8} />
-            <circle cx={x + g * 0.5} cy={ey + 0.5} r={1.2} fill={ink} />
+            <ellipse cx={x} cy={ey + 2} rx={8} ry={9} fill="#465335" opacity={0.6} />
+            <path d={`M ${x - 7} ${ey - 3} Q ${x} ${ey + 2} ${x + 7} ${ey - 3} Q ${x + 7} ${ey + 11} ${x} ${ey + 9} Q ${x - 7} ${ey + 8} ${x - 7} ${ey - 3} Z`}
+              fill="#fff9e9" stroke={ink} strokeWidth={1.8} />
+            <circle cx={x + g * 0.5} cy={ey + 4} r={1.5} fill={ink} />
+            <path d={`M ${x - 7} ${ey - (k === 0 ? 5 : 1)} L ${x + 7} ${ey - (k === 0 ? 1 : 5)}`}
+              stroke={ink} strokeWidth={3.8} strokeLinecap="round" />
           </g>
         );
       default:
@@ -354,14 +359,21 @@ export const Head: React.FC<{
           </g>
         );
       case 'zombie':
-        return <path d={`M ${mx - 6.5} ${my - 1} L ${mx + 6.5} ${my - 1} L ${mx + 5} ${my + 6} L ${mx - 5} ${my + 6} Z`} fill="#3a2424" stroke={ink} strokeWidth={1.8} strokeLinejoin="round" />;
+        return (
+          <g transform={`translate(${front ? 0 : 8},12)`} stroke={ink} strokeLinejoin="round">
+            <path d="M -14 -2 Q -9 -9 -1 -3 Q 4 1 12 -2 Q 18 -1 15 8 Q 6 5 0 9 Q -7 12 -15 7 Z" fill="#12110d" strokeWidth={2.2} />
+            <path d="M -11 -3 L -8 4 L -5 -3 Z M -2 -1 L 1 5 L 4 0 Z M 8 -1 L 11 4 L 13 -1 Z M -12 7 L -9 2 L -6 9 Z M -3 8 L 0 3 L 3 7 Z M 7 6 L 10 2 L 12 7 Z"
+              fill="#e8d569" strokeWidth={0.7} />
+            <path d="M -8 14 Q 0 10 7 12" fill="none" strokeWidth={1.6} strokeLinecap="round" />
+          </g>
+        );
       default:
         return null;
     }
   })();
 
   return (
-    <g transform={`translate(${c[0]},${c[1]}) rotate(${tilt})`}>
+    <g transform={`translate(${c[0]},${c[1]}) rotate(${tilt}) scale(1.1)`}>
       {/* hair that hangs behind the head */}
       {look.hair === 'ponytail' && <path d={`M ${-R * 0.75} ${-R * 0.4} q -22 6 -18 34 q 8 -10 20 -15 Z`} fill={hairC} stroke={ink} strokeWidth={3} strokeLinejoin="round" />}
       {look.hair === 'bun' && <circle cx={-R * 0.6} cy={-R * 0.8} r={10} fill={hairC} stroke={ink} strokeWidth={3} />}
@@ -429,7 +441,7 @@ export const Head: React.FC<{
           {eye(ex[1], 1)}
           {brow(ex[0], 0)}
           {brow(ex[1], 1)}
-          {look.beard && (
+          {look.beard && !infected && (
             <path
               d={front ? `M ${-R * 0.82} ${R * 0.22} Q 0 ${R * 1.22} ${R * 0.82} ${R * 0.22} Q 0 ${R * 0.7} ${-R * 0.82} ${R * 0.22} Z` : `M ${-R * 0.12} ${R * 0.5} Q ${R * 0.4} ${R * 1.12} ${R * 0.92} ${R * 0.32} Q ${R * 0.62} ${R * 0.66} ${R * 0.44} ${R * 0.6} Q ${R * 0.2} ${R * 0.66} ${-R * 0.12} ${R * 0.5} Z`}
               fill={hairC}
@@ -450,6 +462,12 @@ export const Head: React.FC<{
           )}
           {look.goatee && (
             <path d={`M ${mx - 5.5} ${my + 3.5} Q ${mx} ${my + 13} ${mx + 5.5} ${my + 3.5} Q ${mx} ${my + 7} ${mx - 5.5} ${my + 3.5} Z`} fill={hairC} stroke={ink} strokeWidth={1.5} strokeLinejoin="round" />
+          )}
+          {infected && (
+            <g fill="none" stroke={ink} strokeWidth={1.5} strokeLinecap="round">
+              <path d="M -2 -10 l 1 4 M 2 -10 l -1 4 M 2 2 l 2 7 l -4 1" />
+              <path d="M -20 7 l -2 3 M -17 9 l -2 4 M 20 8 l 2 3 M 18 10 l 2 4" />
+            </g>
           )}
           {mouthEl}
           {look.glasses && (
@@ -503,25 +521,20 @@ export const Stick: React.FC<StickProps> = ({
   const {lean, hip, neck, headC, shoulder} = k;
   const bulk = look.bulk ?? 1;
   const ink = ghost ? '#1a1c22' : INK;
-  // Keep the dark outline on bright plates and a lighter stroke inside it on night plates.
-  const stickColor = (color: string, far = false) => ghost ? '#20232b' : shade(color, far ? 1.28 : 1.48);
   const shirt = look.shirt ?? '#7a8494';
-  const pants = look.pants ?? '#2b2f38';
   const skin = look.skin ?? SKIN.light;
   const fid = React.useMemo(() => `wob${filterId++}`, []);
 
   const leg = (knee: V2, foot: V2, far: boolean) => (
     <>
-      <Limb pts={[hip, knee, foot]} w={7 * bulk} c={stickColor(pants, far)} ink={ink} />
-      <Limb pts={[foot, add(foot, [12, 2])]} w={6.5 * bulk} c={stickColor(look.shoes ?? pants, far)} ink={ink} />
+      <Limb pts={[add(hip, [far ? -7 : 7, 0]), knee, foot]} w={5.5 * bulk} c={ink} ink={ink} />
+      <Limb pts={[foot, add(foot, [12, 2])]} w={5.5 * bulk} c={ink} ink={ink} />
     </>
   );
   const arm = (elbow: V2, hand: V2, prop: Prop, far: boolean, angle: number) => (
     <>
-      <Limb pts={[shoulder, elbow, hand]} w={6.5 * bulk} c={stickColor(look.sleeves === 'long' ? shirt : skin, far)} ink={ink} />
-      {look.sleeves && look.sleeves !== 'long' && (
-        <Limb pts={[shoulder, lerp(shoulder, elbow, 0.58)]} w={6.5 * bulk} c={stickColor(shirt, far)} ink={ink} />
-      )}
+      <Limb pts={[add(shoulder, [(far ? -16 : 16) * Math.cos(rad(lean)), (far ? -16 : 16) * Math.sin(rad(lean))]), elbow, hand]} w={4.8 * bulk} c={ink} ink={ink} />
+      <circle cx={hand[0]} cy={hand[1]} r={4.6 * bulk} fill={ghost ? ink : skin} stroke={ink} strokeWidth={2.5} />
       {!ghost && <PropShape p={prop} at={hand} ang={angle} beam={beam} />}
     </>
   );
@@ -541,21 +554,36 @@ export const Stick: React.FC<StickProps> = ({
           </linearGradient>
         </defs>
         {leg(k.kneeF, k.footF, true)}
+        {leg(k.kneeN, k.footN, false)}
         {arm(k.elbowF, k.handF, propF, true, pose.armF[1])}
-        <Limb pts={[headC, shoulder]} w={6 * bulk} c={stickColor(skin)} ink={ink} />
-        <Limb pts={[shoulder, hip]} w={9 * bulk} c={stickColor(shirt)} ink={ink} />
+        <Limb pts={[headC, shoulder]} w={5 * bulk} c={ink} ink={ink} />
         <g transform={`translate(${neck}) rotate(${lean})`}>
-          {look.backpack && !ghost && <rect x={-20} y={25} width={18} height={42} rx={7} fill={look.backpack} stroke={ink} strokeWidth={3} />}
-          {look.vest && !ghost && (
+          <defs>
+            <linearGradient id={`${fid}Uniform`} x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stopColor={shade(shirt, 0.8)} />
+              <stop offset="0.55" stopColor={shirt} />
+              <stop offset="1" stopColor={shade(shirt, 0.9)} />
+            </linearGradient>
+          </defs>
+          <path d="M -14 -7 Q -24 12 -21 63 L -18 86 Q -15 100 0 100 Q 15 100 18 86 L 21 63 Q 24 12 14 -7 Q 0 -14 -14 -7 Z"
+            transform={`scale(${bulk},1)`} fill={ghost ? ink : `url(#${fid}Uniform)`} stroke={ink} strokeWidth={4} />
+          {!ghost && (
             <g>
-              <path d="M 0 14 V 70" fill="none" stroke={ink} strokeWidth={16} strokeLinecap="round" />
-              <path d="M 0 14 V 70" fill="none" stroke={look.vest} strokeWidth={12} strokeLinecap="round" />
-              <path d="M -6 45 H 6 M -6 57 H 6" fill="none" stroke="#e8eef1" strokeWidth={4} />
+              <path d="M -19 78 H 19" stroke={ink} strokeWidth={7} />
+              <rect x={-5} y={74} width={10} height={8} rx={2} fill="#40516a" stroke={ink} strokeWidth={2} />
             </g>
           )}
-          {look.torn && !ghost && <path d="M -4 66 l 4 -4 l 1 3 l 4 -4" fill="none" stroke={ink} strokeWidth={2.4} />}
+          {look.backpack && !ghost && <rect x={-29} y={25} width={18} height={42} rx={7} fill={look.backpack} stroke={ink} strokeWidth={3} />}
+          {look.vest && !ghost && (
+            <g>
+              <path d="M 0 14 V 68" fill="none" stroke={ink} strokeWidth={34} strokeLinecap="round" />
+              <path d="M 0 14 V 68" fill="none" stroke={look.vest} strokeWidth={29} strokeLinecap="round" />
+              <path d="M -15 45 H 15 M -15 57 H 15" fill="none" stroke="#e8eef1" strokeWidth={4} />
+            </g>
+          )}
+          {look.torn && !ghost && <path d="M 9 61 l 4 -5 l -1 5 l 4 -3" fill="none" stroke={ink} strokeWidth={2.4} />}
           {look.badge && !ghost && !back && (
-            <path d="M 4 15 l 5 2 v 5 l -5 4 l -5 -4 v -5 Z" fill="#e0b94a" stroke={ink} strokeWidth={1.8} />
+            <path d="M 9 16 l 6 3 v 8 l -6 5 l -6 -5 v -8 Z" fill="#e0b94a" stroke={ink} strokeWidth={1.8} />
           )}
           {look.radioOnChest && !ghost && !back && (
             <g transform={`translate(-10,24) rotate(${look.radioFlip ? 180 : 0})`}>
@@ -565,7 +593,7 @@ export const Stick: React.FC<StickProps> = ({
             </g>
           )}
           {look.keysOnBelt && !ghost && (
-            <g transform={`translate(5,${TORSO - 4})`}>
+            <g transform={`translate(17,${TORSO - 12})`}>
               <circle cx={0} cy={3} r={5.5} fill="none" stroke="#c9a640" strokeWidth={2.4} />
               <rect x={-4.5} y={6} width={3.2} height={9} rx={1.2} fill="#d9b64c" stroke={ink} strokeWidth={1.4} />
               <rect x={0.8} y={7} width={3.2} height={8} rx={1.2} fill="#cfcfcf" stroke={ink} strokeWidth={1.4} />
@@ -578,8 +606,7 @@ export const Stick: React.FC<StickProps> = ({
         {sweat && !ghost && (
           <path transform={`translate(${headC[0] - R * 0.7},${headC[1] - R * 0.4})`} d="M 0 -10 Q 6 0 0 5 Q -6 0 0 -10 Z" fill="#9fd3ff" stroke={ink} strokeWidth={2} />
         )}
-        {/* near side last */}
-        {leg(k.kneeN, k.footN, false)}
+        {/* near arm and its held prop overlap the body. */}
         {arm(k.elbowN, k.handN, propN, false, pose.armN[1])}
       </g>
     </g>

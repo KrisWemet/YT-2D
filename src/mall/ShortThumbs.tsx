@@ -32,15 +32,8 @@ const grip: Pose = {...POSES.frontStand, head: 5, armF: [-50.8, -175.1], armN: [
 const {head} = jointsOf(grip, 0, 0, 300);
 const thumbLook = {...LOOKS.marcusZ, skin: '#8ea66c', beard: false};
 const ZombieMarcus: React.FC = () => (
-  <>
-    <Stick x={-head[0]} y={-head[1]} h={300} look={thumbLook} pose={grip}
-      front eyes="zombie" shadow={0} wobble={9} />
-    {/* Keep the broken-tooth snarl legible in the thumbnail crop. */}
-    <g transform={`rotate(${grip.head})`} stroke={INK} strokeLinejoin="round">
-      <path d="M -9 10 Q 0 7 9 10 L 7 22 Q 0 25 -7 22 Z" fill="#2a1212" strokeWidth={2} />
-      <path d="M -7 10 H -3 L -4 14 H -6 Z M 2 10 H 6 L 5 12 H 2 Z" fill="#e9e4c8" strokeWidth={0.9} />
-    </g>
-  </>
+  <Stick x={-head[0]} y={-head[1]} h={300} look={thumbLook} pose={grip}
+    front eyes="zombie" mouth="zombie" shadow={0} wobble={9} />
 );
 
 // The hands wrap in front of the bars, the rest of Marcus stays behind them.
@@ -167,7 +160,7 @@ export const NightGuardShort1Thumb: React.FC = () => {
         <g filter="url(#t1Wob)">
           <g strokeLinecap="round">
             <line x1={-60} y1={2010} x2={hand.x} y2={hand.y} stroke={INK} strokeWidth={60} />
-            <line x1={-60} y1={2010} x2={hand.x} y2={hand.y} stroke={LOOKS.guard.skin} strokeWidth={44} />
+            <line x1={-60} y1={2010} x2={hand.x} y2={hand.y} stroke={INK} strokeWidth={36} />
           </g>
           <g transform={`translate(${hand.x} ${hand.y}) rotate(${(Math.atan2(lens.x - hand.x, -(lens.y - hand.y)) * 180) / Math.PI})`}>
             <rect x={-30} y={-175} width={60} height={150} rx={14} fill="#2a2a2e" stroke={INK} strokeWidth={14} />
