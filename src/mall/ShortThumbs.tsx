@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, staticFile} from 'remotion';
 import {FONT, useFont} from '../thumbs/Thumbs';
-import {Head, Look, LOOKS} from './Stick';
+import {jointsOf, LOOKS, Pose, POSES, Stick} from './Stick';
 
 /*
  * Thumbnails for the mall Shorts, 1080x1920.
@@ -25,88 +25,28 @@ const Wobble: React.FC<{id: string; seed?: number}> = ({id, seed = 1}) => (
   </filter>
 );
 
-/** Thick limb with an ink outline, in the rig's style (local units). */
-const Limb: React.FC<{pts: Array<[number, number]>; w: number; c: string}> = ({pts, w, c}) => {
-  const d = pts.map((p) => p.join(',')).join(' ');
-  return (
-    <>
-      <polyline points={d} fill="none" stroke={INK} strokeWidth={w + 7.6} strokeLinecap="round" strokeLinejoin="round" />
-      <polyline points={d} fill="none" stroke={c} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" />
-    </>
-  );
-};
-
-// Marcus, dead, front-on, gripping the two gate bars beside his face. Local units: head radius 28
-// at the origin, bars at x = ±BAR_X.
+// Same Marcus rig as the episode. The head is the thumbnail's local origin and
+// this pose puts both hands on the existing gate bars at (±46, 30).
 const BAR_X = 46;
-// No drawn beard: front-on, its outline reads as a grin. Stubble and a gaping mouth are drawn below.
-const ZLOOK: Look = {...LOOKS.marcusZ, skin: '#8ea66c', beard: false};
-const R = 28;
-const ZombieFace: React.FC = () => (
-  <g transform="rotate(5)">
-    {/* stubble, and patches of decay */}
-    <path d={`M ${-R * 0.86} ${R * 0.12} Q ${-R * 0.8} ${R * 0.9} 0 ${R * 0.95} Q ${R * 0.8} ${R * 0.9} ${R * 0.86} ${R * 0.12} Q ${R * 0.45} ${R * 0.5} 0 ${R * 0.52} Q ${-R * 0.45} ${R * 0.5} ${-R * 0.86} ${R * 0.12} Z`} fill="#2b3320" opacity={0.42} />
-    <ellipse cx={-19} cy={2} rx={4} ry={3} fill="#5d6e45" opacity={0.7} />
-    <ellipse cx={17} cy={6} rx={3.2} ry={2.4} fill="#5d6e45" opacity={0.7} />
-    {/* gaping mouth with broken teeth */}
-    <path d="M -9.5 9.5 Q 0 7 9.5 10 L 7.5 22 Q 0 26.5 -7 22.5 Z" fill="#2a1212" stroke={INK} strokeWidth={2} strokeLinejoin="round" />
-    <path d="M -7 21 Q 0 24 6 21.5 L 5.5 23.5 Q 0 25.5 -6.5 23.2 Z" fill="#6b2a2a" />
-    {[-6.5, -2.2, 2.3, 6.4].map((x, i) => (
-      <path key={x} d={`M ${x - 1.8} ${9.3 + (i === 2 ? 0.4 : 0)} L ${x + 1.8} ${9.3 + (i === 2 ? 0.4 : 0)} L ${x + 1.2} ${i % 2 ? 13 : 12} L ${x - 1.4} ${i % 2 ? 12.6 : 13.4} Z`} fill="#e9e4c8" stroke={INK} strokeWidth={0.9} strokeLinejoin="round" />
-    ))}
-    <path d="M 3 22.8 L 4.6 20 L 6 22.4 Z M -5 23 L -3.6 20.4 L -2.4 23.4 Z" fill="#e9e4c8" stroke={INK} strokeWidth={0.8} strokeLinejoin="round" />
-  </g>
-);
-const ZombieMarcus: React.FC = () => {
-  const skin = ZLOOK.skin as string;
-  const shirt = ZLOOK.shirt as string;
-  const arm = (sx: number) => {
-    const sh: [number, number] = [46 * sx, 50];
-    const el: [number, number] = [70 * sx, 74];
-    const fist: [number, number] = [BAR_X * sx, 30];
-    const sleeveEnd: [number, number] = [sh[0] + (el[0] - sh[0]) * 0.7, sh[1] + (el[1] - sh[1]) * 0.7];
-    return (
-      <g key={sx}>
-        <Limb pts={[el, fist]} w={11} c={skin} />
-        <Limb pts={[sh, el]} w={14.5} c={skin} />
-        <Limb pts={[sh, sleeveEnd]} w={17} c={shirt} />
-      </g>
-    );
-  };
-  return (
-    <g filter="url(#t1Wob)">
-      {/* neck and torn uniform */}
-      <rect x={-6.5} y={18} width={13} height={28} fill={skin} stroke={INK} strokeWidth={4.2} />
-      {arm(-1)}
-      {arm(1)}
-      <path d="M -66 170 L -61 62 Q -57 45 -32 40 L 32 40 Q 57 45 61 62 L 66 170 Z" fill={shirt} stroke={INK} strokeWidth={4.2} strokeLinejoin="round" />
-      <path d="M -32 40 Q -57 45 -61 62 L -66 170 L -36 170 L -30 52 Z" fill="#000" opacity={0.15} />
-      <path d="M -15 40 L -4 54 L -22 50 Z M 15 40 L 4 54 L 22 50 Z" fill="#26375e" stroke={INK} strokeWidth={2.4} strokeLinejoin="round" />
-      <path d="M 18 92 l 5 6 l -3 5 l 6 7 M -40 104 l 6 4 l -2 6 l 7 5" fill="none" stroke={INK} strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" />
-      {/* radio, still on, and the badge */}
-      <g transform="translate(-26 70)">
-        <line x1={4} y1={-9} x2={4} y2={-24} stroke={INK} strokeWidth={3.4} strokeLinecap="round" />
-        <rect x={-7} y={-10} width={15} height={22} rx={3} fill="#262629" stroke={INK} strokeWidth={2.6} />
-        <rect x={-3.5} y={-6} width={8} height={5.5} fill="#8fd18a" />
-      </g>
-      <path transform="translate(26 66) scale(1.6)" d="M 0 -6 L 5 -3.5 L 4 3.5 L 0 7 L -4 3.5 L -5 -3.5 Z" fill="#e0b94a" stroke={INK} strokeWidth={1.6} />
-      <Head c={[0, 0]} tilt={5} look={ZLOOK} eyes="zombie" mouth="none" gaze={0} back={false} front ghost={false} ink={INK} />
-      <ZombieFace />
+const grip: Pose = {...POSES.frontStand, head: 5, armF: [-50.8, -175.1], armN: [51.3, 171.6]};
+const {head} = jointsOf(grip, 0, 0, 300);
+const thumbLook = {...LOOKS.marcusZ, skin: '#8ea66c', beard: false};
+const ZombieMarcus: React.FC = () => (
+  <>
+    <Stick x={-head[0]} y={-head[1]} h={300} look={thumbLook} pose={grip}
+      front eyes="zombie" shadow={0} wobble={9} />
+    {/* Keep the broken-tooth snarl legible in the thumbnail crop. */}
+    <g transform={`rotate(${grip.head})`} stroke={INK} strokeLinejoin="round">
+      <path d="M -9 10 Q 0 7 9 10 L 7 22 Q 0 25 -7 22 Z" fill="#2a1212" strokeWidth={2} />
+      <path d="M -7 10 H -3 L -4 14 H -6 Z M 2 10 H 6 L 5 12 H 2 Z" fill="#e9e4c8" strokeWidth={0.9} />
     </g>
-  );
-};
+  </>
+);
 
-/** The fists round the bars, drawn over them (local units). */
+// The hands wrap in front of the bars, the rest of Marcus stays behind them.
 const ZombieFists: React.FC = () => (
-  <g filter="url(#t1Wob)">
-    {[-1, 1].map((sx) => (
-      <g key={sx} transform={`translate(${BAR_X * sx} 30)`}>
-        <rect x={-10} y={-8} width={20} height={16} rx={7} fill={ZLOOK.skin} stroke={INK} strokeWidth={3.4} />
-        {[-4.5, 0, 4.5].map((dx) => (
-          <line key={dx} x1={dx} y1={-6} x2={dx} y2={1} stroke={INK} strokeWidth={1.6} strokeLinecap="round" />
-        ))}
-      </g>
-    ))}
+  <g filter="url(#t1Wob)" stroke={INK} strokeWidth={2.2} fill={thumbLook.skin}>
+    {[-BAR_X, BAR_X].map((x) => <circle key={x} cx={x} cy={30} r={5.5} />)}
   </g>
 );
 
@@ -225,11 +165,14 @@ export const NightGuardShort1Thumb: React.FC = () => {
         {/* Danny's flashlight, from the bottom left */}
         <polygon points={`${lens.x - 30},${lens.y + 10} ${MX - 300},${MY - 120} ${MX + 260},${MY + 60} ${lens.x + 30},${lens.y + 30}`} fill="url(#t1Beam)" style={{mixBlendMode: 'screen'}} />
         <g filter="url(#t1Wob)">
-          <Limb pts={[[-60, 2010], [hand.x, hand.y]]} w={70} c="#d6a17a" />
+          <g strokeLinecap="round">
+            <line x1={-60} y1={2010} x2={hand.x} y2={hand.y} stroke={INK} strokeWidth={60} />
+            <line x1={-60} y1={2010} x2={hand.x} y2={hand.y} stroke={LOOKS.guard.skin} strokeWidth={44} />
+          </g>
           <g transform={`translate(${hand.x} ${hand.y}) rotate(${(Math.atan2(lens.x - hand.x, -(lens.y - hand.y)) * 180) / Math.PI})`}>
             <rect x={-30} y={-175} width={60} height={150} rx={14} fill="#2a2a2e" stroke={INK} strokeWidth={14} />
             <rect x={-40} y={-200} width={80} height={46} rx={10} fill="#3b3b40" stroke={INK} strokeWidth={14} />
-            <circle cx={0} cy={0} r={46} fill="#d6a17a" stroke={INK} strokeWidth={14} />
+            <circle cx={0} cy={0} r={28} fill={LOOKS.guard.skin} stroke={INK} strokeWidth={9} />
           </g>
         </g>
         <circle cx={lens.x} cy={lens.y} r={150} fill="url(#t1Lens)" style={{mixBlendMode: 'screen'}} />
