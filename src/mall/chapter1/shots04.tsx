@@ -136,7 +136,7 @@ export const SHOTS_12_14: CShot[] = [
             </clipPath>
           </defs>
           <g clipPath="url(#hatchclip)">
-            <Guard x={HATCH.x} y={1700 - rise * 260} h={620} pose={POSES.lookUp} eyes="wide" mouth="o" front />
+            <Guard x={HATCH.x} y={1900 - rise * 260} h={620} pose={POSES.lookUp} eyes="wide" mouth="o" front />
           </g>
         </RoofScene>
       );
@@ -197,17 +197,17 @@ export const SHOTS_12_14: CShot[] = [
       </RoofScene>
     ),
   },
+  {at: 'And on the other side', draw: (p) => <RoofScene p={p} a={{x: 1500, y: 700, z: 1.3}} b={{x: 1800, y: 560, z: 2.3}} />},
   {
-    at: 'And on the other side',
-    ev: {win: 'Tenth floor'},
+    at: 'Tenth floor',
     draw: (p) => (
-      <RoofScene p={p} a={{x: 1700, y: 600, z: 1.6}} b={{x: ROOF_WIN.x, y: ROOF_WIN.y + 60, z: 4.0}}>
-        {p.t >= p.ev.win - 0.2 && <Ring x={ROOF_WIN.x} y={ROOF_WIN.y} rx={30} ry={30} t={p.t} at={p.ev.win - 0.2} w={5} />}
+      <RoofScene p={p} a={{x: ROOF_WIN.x, y: ROOF_WIN.y + 80, z: 3.6}} b={{x: ROOF_WIN.x, y: ROOF_WIN.y + 60, z: 4.4}}>
+        <Ring x={ROOF_WIN.x} y={ROOF_WIN.y} rx={30} ry={30} t={p.t} at={0.6} w={5} />
       </RoofScene>
     ),
   },
   {
-    at: 'I could see my daughter',
+    at: 'I could see my',
     draw: (p) => (
       <RoofScene p={p} a={{x: 1500, y: 900, z: 1.25}} b={{x: 1500, y: 880, z: 1.3}}>
         <Stick x={1250} y={1300} h={500} look={LOOKS.guard} pose={POSES.stand} back />
@@ -319,7 +319,7 @@ export const SHOTS_12_14: CShot[] = [
       return <TowerNight p={p} a={{x: 1000, y: 330, z: 3.4}} b={{x: 1000, y: 320, z: 3.6}} blackout={1} win={on} />;
     },
   },
-  {at: 'Not her lamp', draw: (p) => <TowerNight p={p} a={{x: LILY_WIN.x, y: LILY_WIN.y, z: 6.0}} b={{x: LILY_WIN.x, y: LILY_WIN.y, z: 6.6}} blackout={1} win={p.t < 1.2 ? 1 : 0} />},
+  {at: 'Not her lamp', draw: (p) => <TowerNight p={p} a={{x: LILY_WIN.x, y: LILY_WIN.y, z: 6.0}} b={{x: LILY_WIN.x, y: LILY_WIN.y, z: 6.6}} blackout={1} win={1} />},
   {
     at: "She's alive",
     draw: (p) => (
@@ -331,7 +331,7 @@ export const SHOTS_12_14: CShot[] = [
   {
     at: "She's seven years old",
     draw: (p) => (
-      <Scene bg="apartment" a={{x: 2300, y: 820, z: 2.0}} b={{x: 2320, y: 810, z: 2.15}} p={p} filter="brightness(0.32) saturate(0.6) hue-rotate(190deg)">
+      <Scene bg="apartment" a={{x: 2300, y: 820, z: 2.0}} b={{x: 2320, y: 810, z: 2.15}} p={p} filter="brightness(0.6) saturate(0.75)" bgFilter="brightness(0.54) saturate(0.8) hue-rotate(190deg)">
         <Stick x={2330} y={1180} h={330} look={LOOKS.lily} pose={POSES.pointUp} propN="flashlight" beam={p.frame % 30 < 12 ? 500 : 0} back />
         <Stick x={2060} y={1240} h={560} look={LITA} pose={POSES.stand} back />
       </Scene>

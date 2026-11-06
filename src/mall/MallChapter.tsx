@@ -116,6 +116,9 @@ const SegTag: React.FC<{text: string; t: number}> = ({text, t}) => {
   );
 };
 
+// Start and end of every shot (seconds), for QA tools.
+export const shotTimes = (def: ChapterDef) => resolveChapter(def).shots.map((s) => [s.start, s.end] as [number, number]);
+
 export const makeChapter = (def: ChapterDef): React.FC => {
   const r = resolveChapter(def);
   const Chapter: React.FC = () => {

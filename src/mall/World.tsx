@@ -1,5 +1,5 @@
 import React from 'react';
-import {staticFile} from 'remotion';
+import {Img, staticFile} from 'remotion';
 
 // Background sizes in pixels (Seedream 5 Flash 2K, 16:9).
 export const BG_W = 2816;
@@ -51,23 +51,28 @@ export const World: React.FC<{
   width: number;
   height: number;
   filter?: string;
+  bgFilter?: string; // applied to the background picture only (e.g. day-for-night), under `filter`
   shake?: [number, number];
   children?: React.ReactNode;
   over?: React.ReactNode; // drawn above the characters, still in picture space
-}> = ({bg, cam, width, height, filter, shake = [0, 0], children, over}) => {
+}> = ({bg, cam, width, height, filter, bgFilter, shake = [0, 0], children, over}) => {
   const c = camWindow(cam, width, height);
-  const vb = `${c.x - c.w / 2 + shake[0]} ${c.y - c.h / 2 + shake[1]} ${c.w} ${c.h}`;
+  const vx = c.x - c.w / 2 + shake[0];
+  const vy = c.y - c.h / 2 + shake[1];
+  const vb = `${vx} ${vy} ${c.w} ${c.h}`;
+  // The painting is an HTML <Img> (Remotion waits for it to load before taking the frame; an SVG
+  // <image> isn't waited for, so the first frames after a cut could still show the last picture),
+  // placed exactly where the SVG's "slice" viewBox puts picture pixels. The figures stay in the SVG.
+  const s = Math.max(width / c.w, height / c.h);
+  const left = (width - c.w * s) / 2 - vx * s;
+  const top = (height - c.h * s) / 2 - vy * s;
   return (
-    <svg
-      width={width}
-      height={height}
-      viewBox={vb}
-      preserveAspectRatio="xMidYMid slice"
-      style={{position: 'absolute', inset: 0, filter}}
-    >
-      <image href={staticFile(`mall/bg/${bg}.jpg`)} x={0} y={0} width={BG_W} height={BG_H} />
-      {children}
-      {over}
-    </svg>
+    <div style={{position: 'absolute', left: 0, top: 0, width, height, overflow: 'hidden', filter}}>
+      <Img src={staticFile(`mall/bg/${bg}.jpg`)} style={{position: 'absolute', left, top, width: BG_W * s, height: BG_H * s, maxWidth: 'none', filter: bgFilter}} />
+      <svg width={width} height={height} viewBox={vb} preserveAspectRatio="xMidYMid slice" style={{position: 'absolute', left: 0, top: 0}}>
+        {children}
+        {over}
+      </svg>
+    </div>
   );
 };

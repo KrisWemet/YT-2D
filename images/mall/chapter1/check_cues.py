@@ -58,7 +58,7 @@ def main():
     for f in FILES:
         src = (ROOT / "src/mall/chapter1" / f).read_text()
         for m in shot_re.finditer(src):
-            ev = dict(re.findall(r"(\w+):\s*['\"](.*?)['\"]", m.group(3) or ""))
+            ev = {k: v for k, _, v in re.findall(r"(\w+):\s*(['\"])(.*?)\2", m.group(3) or "")}
             shots.append((f, m.group(2), ev))
     prev, bad, rows = 0.0, 0, []
     for k, (f, cue, ev) in enumerate(shots):

@@ -150,9 +150,6 @@ export const KeyInHand: React.FC<{t: number; shake?: number; tag?: string}> = ({
               {tag}
             </text>
           </g>
-          {/* fingers */}
-          <path d="M -170 -50 q -40 30 -10 80 q 30 30 70 10 q 20 -30 -10 -60 q -20 -30 -50 -30 Z" fill="#d6a17a" stroke={INK} strokeWidth={7} />
-          <path d="M -150 -36 q 24 6 30 30 M -160 0 q 20 0 32 20" fill="none" stroke={INK} strokeWidth={4} />
         </g>
       </Screen>
     </AbsoluteFill>
@@ -196,7 +193,7 @@ export const B3Door16: React.FC<{t: number; dur: number; frame: number}> = ({t, 
 };
 
 // The mall map with something on top: a stamp ("NO B3") or arrows converging on the food court.
-export const MapCard: React.FC<{t: number; dur: number; stamp?: string; stampAt?: number; arrows?: boolean; mode?: 'keys' | 'pick' | 'loop' | 'route' | 'all'}> = ({
+export const MapCard: React.FC<{t: number; dur: number; stamp?: string; stampAt?: number; arrows?: boolean; mode?: 'keys' | 'pick' | 'loop' | 'route' | 'all' | 'plain'}> = ({
   t,
   dur,
   stamp,
@@ -210,26 +207,34 @@ export const MapCard: React.FC<{t: number; dur: number; stamp?: string; stampAt?
     <AbsoluteFill style={{background: '#10141c'}}>
       <MallMap mode={mode} t={t} dur={dur} />
       <Screen>
-        {arrows &&
-          [
-            [140, 160],
-            [140, 960],
-            [960, 1040],
-            [1800, 120],
-            [1820, 980],
-            [960, 80],
-          ].map(([x, y], i) => {
-            const tx = 1525;
-            const ty = 565;
-            const x1 = x + (tx - x) * 0.82 * a;
-            const y1 = y + (ty - y) * 0.82 * a;
-            return (
-              <g key={i}>
-                <line x1={x} y1={y} x2={x1} y2={y1} stroke={INK} strokeWidth={30} strokeLinecap="round" opacity={0.9} />
-                <line x1={x} y1={y} x2={x1} y2={y1} stroke={RED} strokeWidth={16} strokeLinecap="round" />
-              </g>
-            );
-          })}
+        {arrows && (
+          <g>
+            <rect x={1400} y={230} width={250} height={670} fill={RED} opacity={0.25 + 0.2 * Math.sin(t * 6)} />
+            {[
+              [1880, 300],
+              [1880, 820],
+              [1525, 1040],
+              [1525, 110],
+              [1200, 980],
+              [1200, 140],
+            ].map(([x, y], i) => {
+              const tx = 1525;
+              const ty = 565;
+              const len = Math.hypot(tx - x, ty - y);
+              const k = Math.min(1, a) * 0.62;
+              const x1 = x + (tx - x) * k;
+              const y1 = y + (ty - y) * k;
+              const ang = (Math.atan2(ty - y, tx - x) * 180) / Math.PI;
+              return (
+                <g key={i} opacity={len > 0 ? 1 : 0}>
+                  <line x1={x} y1={y} x2={x1} y2={y1} stroke={INK} strokeWidth={30} strokeLinecap="round" />
+                  <line x1={x} y1={y} x2={x1} y2={y1} stroke={RED} strokeWidth={16} strokeLinecap="round" />
+                  <path transform={`translate(${x1},${y1}) rotate(${ang})`} d="M 26 0 L -18 -24 L -18 24 Z" fill={RED} stroke={INK} strokeWidth={6} strokeLinejoin="round" />
+                </g>
+              );
+            })}
+          </g>
+        )}
         {stamp && t >= stampAt && (
           <g transform={`translate(${W / 2}, ${H / 2 + 40}) rotate(-8) scale(${k})`} opacity={0.95}>
             <rect x={-280} y={-100} width={560} height={160} rx={18} fill="#10141c" opacity={0.6} />
@@ -404,9 +409,15 @@ export const PhoneCard: React.FC<{
         </g>
       );
     // reply
-    const typed = 'Stay put. I love you. Tell Lily the king’s still in his castle.';
-    const n = Math.floor(clamp01(t / 2.2) * typed.length);
-    const lines = [typed.slice(0, n).slice(0, 18), typed.slice(0, n).slice(18, 36), typed.slice(0, n).slice(36, 54), typed.slice(0, n).slice(54)];
+    // typed out letter by letter, wrapped at word boundaries
+    const wrapped = ['Stay put. I love', 'you. Tell Lily', 'the king’s still', 'in his castle.'];
+    const total = wrapped.reduce((k, l) => k + l.length + 1, 0);
+    let n = Math.floor(clamp01(t / 2.2) * total);
+    const lines = wrapped.map((l) => {
+      const shown = l.slice(0, Math.max(0, n));
+      n -= l.length + 1;
+      return shown;
+    });
     return (
       <g>
         <text x={x0 + 230} y={y0 + 110} textAnchor="middle" fontFamily="DejaVu Sans, sans-serif" fontWeight={700} fontSize={34} fill="#cfd6e6">
@@ -467,8 +478,8 @@ export const AlertCard: React.FC<{t: number; line2At?: number}> = ({t, line2At =
             RESCUE WITHIN 30 DAYS
           </Txt>
         </g>
-        <rect x={0} y={H - 110} width={W} height={110} fill="#1d2230" />
-        <text x={W / 2 - ((t * 240) % 900) + 450} y={H - 42} textAnchor="middle" fontFamily="DejaVu Sans, sans-serif" fontWeight={700} fontSize={40} fill="#cfd6e6">
+        <rect x={0} y={150} width={W} height={80} fill="#1d2230" />
+        <text x={W / 2 + 300 - ((t * 200) % 600)} y={204} textAnchor="middle" fontFamily="DejaVu Sans, sans-serif" fontWeight={700} fontSize={36} fill="#cfd6e6">
           STAY INDOORS · AVOID CONTACT · STAY TUNED
         </text>
       </Screen>
@@ -486,11 +497,16 @@ export const ListCard: React.FC<{t: number; title?: string; lines: string[]; at?
           <rect x={430} y={80} width={1060} height={920} fill="#f7f1dc" stroke="#d9cfb4" strokeWidth={4} />
         </g>
       )}
-      {title && (
-        <Txt x={W / 2} y={paper ? 200 : 230} size={paper ? 80 : 96} fill={paper ? INK : color}>
-          {title}
-        </Txt>
-      )}
+      {title &&
+        (paper ? (
+          <text x={W / 2} y={210} textAnchor="middle" fontFamily={FONT} fontSize={80} fill="#c8332f">
+            {title}
+          </text>
+        ) : (
+          <Txt x={W / 2} y={230} size={96} fill={color}>
+            {title}
+          </Txt>
+        ))}
       {lines.map((l, i) => {
         const a = at ? at[i] : 0.25 + i * 0.35;
         const k = pop(t, a);

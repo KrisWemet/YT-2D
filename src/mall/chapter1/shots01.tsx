@@ -208,7 +208,15 @@ export const SHOTS_1_3: CShot[] = [
       );
     },
   },
-  {at: "She's seven", draw: (p) => <KidDrawing t={p.t} />},
+  {
+    at: "She's seven",
+    draw: (p) => (
+      <Scene bg="busstop" a={{x: 1880, y: 1180, z: 2.6}} b={{x: 1885, y: 1175, z: 2.75}} p={p}>
+        <Stick x={1880} y={1420} h={300} face={-1} look={LOOKS.lily} pose={POSES.waveHi} eyes="closed" mouth="open" />
+      </Scene>
+    ),
+  },
+  {at: 'She drew me a picture', draw: (p) => <KidDrawing t={p.t} />},
   {
     at: "It's taped to the monitor",
     draw: (p) => (
@@ -290,7 +298,29 @@ export const SHOTS_1_3: CShot[] = [
   {
     at: 'Forty-two keys',
     draw: (p) => (
+      <AbsoluteFill>
+        <KeyRing16 t={p.t} />
+        <Screen>
+          <Txt x={W / 2} y={930} size={130} fill="#f0c53c">
+            42 KEYS
+          </Txt>
+        </Screen>
+      </AbsoluteFill>
+    ),
+  },
+  {
+    at: 'Old Walt had this job',
+    draw: (p) => (
       <OfficeScene p={p} a={{x: 1900, y: 1000, z: 1.6}} b={{x: 1910, y: 990, z: 1.7}} danny={{x: 2250, pose: holdKeys, propN: 'keys', look2: -1}}>
+        <Stick x={1650} y={1545} h={880} face={1} look={LOOKS.walt} pose={POSES.stand} eyes="dot" mouth="flat" />
+      </OfficeScene>
+    ),
+  },
+  // Walt's finger on the last key on the ring
+  {
+    at: 'he tapped the last',
+    draw: (p) => (
+      <OfficeScene p={p} a={{x: 2010, y: 790, z: 3.0}} b={{x: 2015, y: 790, z: 3.25}} danny={{x: 2250, pose: holdKeys, propN: 'keys', look2: -1}}>
         <Stick x={1650} y={1545} h={880} face={1} look={LOOKS.walt} pose={POSES.point} eyes="dot" mouth="flat" />
       </OfficeScene>
     ),

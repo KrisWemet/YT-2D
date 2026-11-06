@@ -6,8 +6,8 @@ import {BigTimer, Flash, Grille, Padlock, Rattle, Screen, Shards, shake, Tag, Tx
 import {Attack, Crowd, Guard, hC, hG, insideGuardSit, ItemTag, Marcus, outsideGlass, ramp10, ramp6, rampMany, Scene, SF, SpeedLines, Zed} from '../shots';
 import {jointsOf, LOOKS, POSES, Stick} from '../Stick';
 import {FULL} from '../World';
-import {KeyInHand, KeyRing16, MapCard, NapkinPlan, NewsCard, PhoneCard, Polaroids, Raccoon, RadioCard, SleepingBag} from './props';
-import {CctvScene, GateScene, HALL_ROWS, MarcusAtGate, marcusHurt, OfficeScene, TopClock} from './scenes';
+import {KeyInHand, KeyRing16, ListCard, MapCard, NapkinPlan, NewsCard, PhoneCard, Polaroids, Raccoon, RadioCard, SleepingBag} from './props';
+import {CctvScene, GateScene, HALL_ROWS, handOnBar, MarcusAtGate, marcusHurt, OfficeScene, TopClock} from './scenes';
 
 /* Chapter 1, segments 4-7: camera six, four minutes, key thirty-one, the last joke. */
 
@@ -183,6 +183,7 @@ export const SHOTS_4_7: CShot[] = [
       />
     ),
   },
+  {at: 'and then a recording', draw: (p) => <ListCard t={p.t} lines={['ALL CIRCUITS', 'ARE BUSY']} at={[0.3, 0.55]} />},
   {at: "My mom's phone", ev: {vm: 'voicemail'}, draw: (p) => <PhoneCard t={p.t} mode="calling" vmAt={p.ev.vm} />},
   {at: 'So did the next', draw: (p) => <PhoneCard t={p.t} mode="log" />},
   {
@@ -277,7 +278,7 @@ export const SHOTS_4_7: CShot[] = [
       />
     ),
   },
-  {at: 'They were all heading', draw: (p) => <MapCard t={p.t} dur={p.dur} arrows mode="all" />},
+  {at: 'They were all heading', draw: (p) => <MapCard t={p.t} dur={p.dur} arrows mode="plain" />},
   {
     at: 'And the food court is made',
     draw: (p) => (
@@ -288,7 +289,7 @@ export const SHOTS_4_7: CShot[] = [
   },
 
   // ================= 5. Four Minutes =================
-  {at: 'I did the math', draw: (p) => <AbsoluteFill style={{background: '#07080b'}}><BigTimer text="4:00" t={p.t} /></AbsoluteFill>},
+  {at: 'I did the math', draw: (p) => <AbsoluteFill style={{background: '#07080b'}}><Screen><BigTimer text="4:00" t={p.t} /></Screen></AbsoluteFill>},
   {at: 'Four minutes to pick', draw: (p) => <MapCard t={p.t} dur={p.dur} mode="pick" />},
   {
     at: 'Which one would you pick',
@@ -426,7 +427,7 @@ export const SHOTS_4_7: CShot[] = [
     at: 'Under the gate',
     ev: {lock: 'lock it'},
     draw: (p) => (
-      <GateScene p={p} a={{x: 1430, y: 760, z: 2.2}} b={{x: 1430, y: 770, z: 2.35}} gate={Math.min(1, p.t / Math.max(0.3, p.ev.lock))} gateOpacity={1}>
+      <GateScene p={p} a={{x: 1430, y: 715, z: 2.1}} b={{x: 1430, y: 725, z: 2.2}} gate={Math.min(1, p.t / Math.max(0.3, p.ev.lock))} gateOpacity={1}>
         <Guard x={1380} y={1000} h={hI(1000)} pose={POSES.pullDown} eyes="wide" back />
       </GateScene>
     ),
@@ -442,7 +443,7 @@ export const SHOTS_4_7: CShot[] = [
   {
     at: 'I have never done',
     draw: (p) => (
-      <GateScene p={p} a={{x: 1300, y: 860, z: 2.6}} b={{x: 1300, y: 860, z: 2.75}} gateOpacity={1}>
+      <GateScene p={p} a={{x: 1300, y: 745, z: 2.5}} b={{x: 1300, y: 750, z: 2.65}} gateOpacity={1}>
         <Guard x={1300} y={1010} h={hI(1010)} pose={POSES.scared} eyes="wide" mouth="o" sweat />
       </GateScene>
     ),
@@ -577,8 +578,8 @@ export const SHOTS_4_7: CShot[] = [
   {
     at: 'I turned on my flashlight',
     draw: (p) => (
-      <GateScene p={p} a={{x: 1400, y: 820, z: 1.9}} b={{x: 1400, y: 820, z: 2.0}} filter="brightness(0.6)" beyond={<MarcusAtGate dim={0.4} />}>
-        <Guard x={1180} y={1180} h={hI(1180)} pose={POSES.flashlight} propN="flashlight" beam={p.t > 0.3 ? 420 : 0} back />
+      <GateScene p={p} a={{x: 1400, y: 740, z: 1.8}} b={{x: 1400, y: 730, z: 1.9}} filter="brightness(0.6)" beyond={<MarcusAtGate dim={0.4} />}>
+        <Guard x={1180} y={1120} h={hI(1120)} pose={POSES.flashlight} propN="flashlight" beam={p.t > 0.3 ? 380 : 0} back />
       </GateScene>
     ),
   },
@@ -594,8 +595,7 @@ export const SHOTS_4_7: CShot[] = [
         gateOpacity={0.7}
         beyond={
           <>
-            <MarcusAtGate pose={POSES.frontStand} />
-            {p.t >= p.ev.sleeve - 0.3 && <ellipse cx={1468} cy={790} rx={22} ry={34} fill="#3a1414" opacity={0.75} />}
+            <MarcusAtGate pose={POSES.frontStand} sleeve={p.t >= p.ev.sleeve - 0.3 ? 1 : 0} />
           </>
         }
       />
@@ -606,23 +606,18 @@ export const SHOTS_4_7: CShot[] = [
   // ================= 7. The Last Joke =================
   {
     at: 'Come on man',
-    draw: (p) => <GateScene p={p} a={{x: 1420, y: 700, z: 3.2}} b={{x: 1420, y: 700, z: 3.45}} filter="brightness(0.95)" gateOpacity={0.75} beyond={<MarcusAtGate pose={POSES.frontReach} eyes="worried" mouth="open" />} />,
+    draw: (p) => <GateScene p={p} a={{x: 1410, y: 700, z: 3.2}} b={{x: 1410, y: 700, z: 3.45}} filter="brightness(0.95)" gateOpacity={0.75} beyond={<MarcusAtGate pose={handOnBar} eyes="worried" mouth="open" sleeve={1} />} />,
   },
   {
     at: 'There was a bite',
     draw: (p) => (
       <GateScene
         p={p}
-        a={{x: 1475, y: 790, z: 6.0}}
-        b={{x: 1475, y: 790, z: 6.4}}
+        a={{x: 1436, y: 760, z: 6.0}}
+        b={{x: 1436, y: 762, z: 6.4}}
         filter="brightness(1.0)"
         gateOpacity={0.6}
-        beyond={
-          <>
-            <MarcusAtGate pose={POSES.frontStand} />
-            <ellipse cx={1468} cy={792} rx={16} ry={22} fill="#3a1414" opacity={0.8} />
-          </>
-        }
+        beyond={<MarcusAtGate pose={POSES.frontStand} sleeve={1} bite />}
       />
     ),
   },
@@ -643,8 +638,8 @@ export const SHOTS_4_7: CShot[] = [
     draw: (p) => (
       <GateScene
         p={p}
-        a={{x: 1400, y: 800, z: 1.8}}
-        b={{x: 1400, y: 800, z: 1.9}}
+        a={{x: 1400, y: 740, z: 1.8}}
+        b={{x: 1400, y: 730, z: 1.9}}
         filter="brightness(0.75)"
         beyond={
           <>
@@ -653,7 +648,7 @@ export const SHOTS_4_7: CShot[] = [
           </>
         }
       >
-        <Guard x={1250} y={1150} h={hI(1150)} pose={holdKeysLow} propN="keys" back />
+        <Guard x={1250} y={1120} h={hI(1120)} pose={holdKeysLow} propN="keys" back />
       </GateScene>
     ),
   },
@@ -668,19 +663,23 @@ export const SHOTS_4_7: CShot[] = [
   },
   {
     at: 'Marcus watched my face',
-    draw: (p) => <GateScene p={p} a={{x: 1420, y: 640, z: 4.6}} b={{x: 1420, y: 640, z: 4.9}} gateOpacity={0.6} filter="brightness(0.95)" beyond={<MarcusAtGate eyes="dot" />} />,
+    draw: (p) => <GateScene p={p} a={{x: 1420, y: 640, z: 4.6}} b={{x: 1420, y: 640, z: 4.9}} gateOpacity={0.6} filter="brightness(0.95)" beyond={<MarcusAtGate eyes="dot" sleeve={1} />} />,
   },
   {
     at: 'And he got it',
-    draw: (p) => <GateScene p={p} a={{x: 1420, y: 640, z: 4.9}} b={{x: 1420, y: 640, z: 5.1}} gateOpacity={0.6} filter="brightness(0.95)" beyond={<MarcusAtGate eyes="closed" />} />,
+    draw: (p) => <GateScene p={p} a={{x: 1420, y: 640, z: 4.9}} b={{x: 1420, y: 640, z: 5.1}} gateOpacity={0.6} filter="brightness(0.95)" beyond={<MarcusAtGate eyes="closed" sleeve={1} />} />,
   },
   {
     at: "Hey It's okay",
-    draw: (p) => <GateScene p={p} a={{x: 1420, y: 650, z: 4.2}} b={{x: 1420, y: 650, z: 4.4}} gateOpacity={0.6} filter="brightness(0.95)" beyond={<MarcusAtGate eyes="dot" mouth="smile" />} />,
+    draw: (p) => <GateScene p={p} a={{x: 1420, y: 650, z: 4.2}} b={{x: 1420, y: 650, z: 4.4}} gateOpacity={0.6} filter="brightness(0.95)" beyond={<MarcusAtGate eyes="dot" mouth="smile" sleeve={1} />} />,
   },
   {
     at: 'He sat down with his back',
-    draw: (p) => <BackToBack p={p} a={{x: 1430, y: 800, z: 2.2}} b={{x: 1430, y: 800, z: 2.35}} />,
+    draw: (p) => <BackToBack p={p} a={{x: 1330, y: 790, z: 2.4}} b={{x: 1330, y: 795, z: 2.55}} />,
+  },
+  {
+    at: 'And we whispered',
+    draw: (p) => <BackToBack p={p} a={{x: 1300, y: 770, z: 3.5}} b={{x: 1300, y: 770, z: 3.75}} />,
   },
   {
     at: 'About stupid stuff',
@@ -719,31 +718,31 @@ export const SHOTS_4_7: CShot[] = [
   },
   {
     at: "I'm not gonna lie",
-    draw: (p) => <BackToBack p={p} a={{x: 1500, y: 760, z: 3.6}} b={{x: 1500, y: 760, z: 3.8}} marcusHead={-18} />,
+    draw: (p) => <BackToBack p={p} a={{x: 1280, y: 780, z: 3.8}} b={{x: 1280, y: 780, z: 4.0}} marcusHead={-18} />,
   },
   {
     at: 'So was I',
-    draw: (p) => <BackToBack p={p} a={{x: 1360, y: 900, z: 3.0}} b={{x: 1360, y: 900, z: 3.2}} dannyEyes="closed" />,
+    draw: (p) => <BackToBack p={p} a={{x: 1350, y: 830, z: 3.4}} b={{x: 1350, y: 830, z: 3.6}} dannyEyes="closed" />,
   },
   {
     at: 'Which was true',
-    draw: (p) => <BackToBack p={p} a={{x: 1430, y: 860, z: 2.6}} b={{x: 1430, y: 860, z: 2.8}} dannyEyes="worried" />,
+    draw: (p) => <BackToBack p={p} a={{x: 1320, y: 810, z: 2.8}} b={{x: 1320, y: 810, z: 3.0}} dannyEyes="worried" />,
   },
   {
     at: "Tell Lily the king's",
-    draw: (p) => <GateScene p={p} a={{x: 1420, y: 650, z: 4.4}} b={{x: 1420, y: 650, z: 4.7}} gateOpacity={0.6} filter="brightness(0.9)" beyond={<MarcusAtGate eyes="closed" mouth="smile" />} />,
+    draw: (p) => <GateScene p={p} a={{x: 1420, y: 650, z: 4.4}} b={{x: 1420, y: 650, z: 4.7}} gateOpacity={0.6} filter="brightness(0.9)" beyond={<MarcusAtGate eyes="closed" mouth="smile" sleeve={1} />} />,
   },
   {
     at: "Then because he's Marcus",
-    draw: (p) => <GateScene p={p} a={{x: 1420, y: 660, z: 3.8}} b={{x: 1420, y: 660, z: 4.0}} gateOpacity={0.6} filter="brightness(0.9)" beyond={<MarcusAtGate eyes="dot" mouth="smile" />} />,
+    draw: (p) => <GateScene p={p} a={{x: 1420, y: 660, z: 3.8}} b={{x: 1420, y: 660, z: 4.0}} gateOpacity={0.6} filter="brightness(0.9)" beyond={<MarcusAtGate eyes="dot" mouth="smile" sleeve={1} />} />,
   },
   {
     at: "What's a zombie's favorite",
-    draw: (p) => <GateScene p={p} a={{x: 1420, y: 640, z: 4.8}} b={{x: 1420, y: 640, z: 5.0}} gateOpacity={0.6} filter="brightness(0.9)" beyond={<MarcusAtGate eyes="dot" mouth="smile" />} />,
+    draw: (p) => <GateScene p={p} a={{x: 1420, y: 640, z: 4.8}} b={{x: 1420, y: 640, z: 5.0}} gateOpacity={0.6} filter="brightness(0.9)" beyond={<MarcusAtGate eyes="dot" mouth="smile" sleeve={1} />} />,
   },
   {
     at: 'A human bean',
-    draw: (p) => <GateScene p={p} a={{x: 1420, y: 650, z: 4.5}} b={{x: 1420, y: 650, z: 4.6}} gateOpacity={0.6} filter="brightness(0.9)" beyond={<MarcusAtGate eyes="closed" mouth="open" />} />,
+    draw: (p) => <GateScene p={p} a={{x: 1420, y: 650, z: 4.5}} b={{x: 1420, y: 650, z: 4.6}} gateOpacity={0.6} filter="brightness(0.9)" beyond={<MarcusAtGate eyes="closed" mouth="open" sleeve={1} />} />,
   },
   {
     at: "It wasn't funny",
@@ -761,13 +760,13 @@ export const SHOTS_4_7: CShot[] = [
     at: 'And Danny I still owe',
     ev: {bucks: 'twenty bucks'},
     draw: (p) => (
-      <GateScene p={p} a={{x: 1420, y: 700, z: 3.4}} b={{x: 1420, y: 700, z: 3.6}} gateOpacity={0.65} filter="brightness(0.85)" beyond={<MarcusAtGate pose={POSES.frontReach} eyes="closed" mouth="smile" />} screen={<ItemTag text="$20" p={p} at={p.ev.bucks - 0.3} />} />
+      <GateScene p={p} a={{x: 1420, y: 700, z: 3.4}} b={{x: 1420, y: 700, z: 3.6}} gateOpacity={0.65} filter="brightness(0.85)" beyond={<MarcusAtGate pose={handOnBar} eyes="closed" mouth="smile" sleeve={1} />} screen={<ItemTag text="$20" p={p} at={p.ev.bucks - 0.3} />} />
     ),
   },
   {
     at: 'At two thirty-one',
     draw: (p) => (
-      <GateScene p={p} a={{x: 1430, y: 760, z: 2.4}} b={{x: 1430, y: 760, z: 2.6}} filter="brightness(0.6)" beyond={<MarcusAtGate pose={POSES.sitHug} eyes="closed" y={980} />} screen={<TopClock text="2:31" ampm="AM" t={p.t} />} />
+      <GateScene p={p} a={{x: 1430, y: 760, z: 2.4}} b={{x: 1430, y: 760, z: 2.6}} filter="brightness(0.6)" beyond={<MarcusAtGate pose={POSES.sitHug} eyes="closed" x={1300} y={936} h={300} />} screen={<TopClock text="2:31" ampm="AM" t={p.t} />} />
     ),
   },
   {
@@ -782,7 +781,7 @@ export const SHOTS_4_7: CShot[] = [
             a={{x: 1430, y: 720, z: 2.8}}
             b={{x: 1430, y: 690, z: 3.4}}
             filter="brightness(0.7)"
-            beyond={up ? <MarcusAtGate dead /> : <MarcusAtGate pose={POSES.sitHug} eyes="closed" y={980} />}
+            beyond={up ? <MarcusAtGate dead /> : <MarcusAtGate pose={POSES.sitHug} eyes="closed" x={1300} y={936} h={300} />}
             screen={<TopClock text="2:39" ampm="AM" t={p.t} />}
           />
           <Flash t={p.t} at={p.ev.up} color="#9fe3a0" />
@@ -791,6 +790,9 @@ export const SHOTS_4_7: CShot[] = [
     },
   },
 ];
+
+// where the two of them sit, back to back through the gate
+const B2B = {danny: 1352, marcus: 1268};
 
 // Danny holding the keys out low toward the lock
 const holdKeysLow = {...POSES.holdUp, armN: [70, 110] as [number, number]};
@@ -809,9 +811,9 @@ const BackToBack: React.FC<{p: Parameters<CShot['draw']>[0]; a: {x: number; y: n
     b={b}
     filter="brightness(0.8)"
     gateOpacity={1}
-    beyond={<Stick x={1500} y={960} h={320} look={marcusHurt} pose={{...POSES.sitHug, head: marcusHead}} back face={-1} shadow={0} />}
+    beyond={<Stick x={B2B.marcus} y={934} h={300} look={marcusHurt} pose={{...POSES.sitHug, head: marcusHead}} back face={-1} shadow={0} />}
   >
-    <Stick x={1360} y={1010} h={hI(1010)} look={LOOKS.guard} pose={POSES.sitHug} front eyes={dannyEyes} mouth="flat" shadow={0.3} />
+    <Stick x={B2B.danny} y={952} h={hI(952)} look={LOOKS.guard} pose={POSES.sitHug} front eyes={dannyEyes} mouth="flat" shadow={0.3} />
   </GateScene>
 );
 

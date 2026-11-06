@@ -27,13 +27,13 @@ def stamp(t):
 def two_lines(text):
     if len(text) <= 42:
         return text
+    # the most even break; a caption a little over 84 characters still gets two lines
     words, best = text.split(), None
     for i in range(1, len(words)):
         a, b = " ".join(words[:i]), " ".join(words[i:])
-        if len(a) <= 42 and len(b) <= 42:
-            score = abs(len(a) - len(b))
-            if best is None or score < best[0]:
-                best = (score, a + "\n" + b)
+        score = (max(len(a), len(b)) > 42, abs(len(a) - len(b)))
+        if best is None or score < best[0]:
+            best = (score, a + "\n" + b)
     return best[1] if best else text
 
 

@@ -1,0 +1,34 @@
+{
+ "c2r": {
+  "picked": "vo/ch1/takes/c2r-3.wav",
+  "takes": [
+   {
+    "take": "vo/ch1/takes/c2r-3.wav",
+    "distance": 3.52,
+    "voiced": 60,
+    "f0": 91,
+    "bright": 387,
+    "wps": 3.17,
+    "spread": 3.3
+   },
+   {
+    "take": "vo/ch1/takes/c2r-1.wav",
+    "distance": 8.38,
+    "voiced": 59,
+    "f0": 113,
+    "bright": 403,
+    "wps": 3.31,
+    "spread": 6.4
+   },
+   {
+    "take": "vo/ch1/takes/c2r-4.wav",
+    "distance": null,
+    "voiced": 37,
+    "f0": 89,
+    "bright": 608,
+    "wps": 3.47,
+    "spread": 3.5
+   }
+  ]
+ }
+}

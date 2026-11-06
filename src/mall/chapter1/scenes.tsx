@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {CCTV_FILTER, CctvOverlay, Clock, Screen, Txt, W} from '../Overlays';
 import {Beyond, HoldGate, P, Scene} from '../shots';
-import {Look, LOOKS, Pose, POSES, Stick, StickProps} from '../Stick';
+import {jointsOf, Look, LOOKS, Pose, POSES, Stick, StickProps} from '../Stick';
 import {BgName, Cam} from '../World';
 import {LILY_WIN, TowerWindow} from '../vertical';
 
@@ -11,7 +11,8 @@ import {LILY_WIN, TowerWindow} from '../vertical';
 // ---------- inside Summit Outdoors, looking at the gate (sportsinside) ----------
 // The gate opening is x 1148-1712, y 432-932; the floor inside runs down to y 1584.
 export const GATE = {x: 1430, floor: 936};
-export const marcusHurt: Look = {...LOOKS.marcus, skin: '#8e8a80', shirt: '#2f4472'};
+// Alive but bitten: pale, and no drawn beard (front-on, its outline reads as a zombie grin).
+export const marcusHurt: Look = {...LOOKS.marcus, skin: '#9a7a68', shirt: '#2f4472', beard: false};
 export const marcusDead: Look = LOOKS.marcusZ;
 
 export const GateScene: React.FC<{
@@ -34,22 +35,46 @@ export const GateScene: React.FC<{
   </Scene>
 );
 
-// Marcus standing at the gate, seen from inside (alive and hurt, or dead).
-export const MarcusAtGate: React.FC<Partial<StickProps> & {dead?: boolean}> = ({dead, ...p}) => (
-  <Stick
-    x={1420}
-    y={936}
-    h={330}
-    look={dead ? marcusDead : marcusHurt}
-    pose={dead ? POSES.frontPress : POSES.frontStand}
-    front
-    eyes={dead ? 'zombie' : 'worried'}
-    mouth={dead ? 'zombie' : 'flat'}
-    wobble={9}
-    shadow={0}
-    {...p}
-  />
-);
+// Marcus standing at the gate, seen from inside (alive and hurt, or dead). `sleeve` (0..1) shows the
+// dark, wet stain on his near forearm; `bite` adds the bite mark in it.
+export const MarcusAtGate: React.FC<Partial<StickProps> & {dead?: boolean; sleeve?: number; bite?: boolean}> = ({dead, sleeve = 0, bite, ...p}) => {
+  const x = p.x ?? 1420;
+  const y = p.y ?? 936;
+  const h = p.h ?? 330;
+  const pose = p.pose ?? (dead ? POSES.frontPress : POSES.frontStand);
+  const j = jointsOf(pose, x, y, h, 1);
+  // along the near arm, from the neck to the hand: the stain sits on the forearm
+  const dx = j.handN[0] - j.neck[0];
+  const dy = j.handN[1] - j.neck[1];
+  const cx = j.neck[0] + dx * 0.68;
+  const cy = j.neck[1] + dy * 0.68;
+  const ang = (-Math.atan2(dx, dy) * 180) / Math.PI;
+  const k = h / 330;
+  return (
+    <>
+      <Stick
+        x={x}
+        y={y}
+        h={h}
+        look={dead ? marcusDead : marcusHurt}
+        pose={pose}
+        front
+        eyes={dead ? 'zombie' : 'worried'}
+        mouth={dead ? 'zombie' : 'flat'}
+        wobble={9}
+        shadow={0}
+        {...p}
+      />
+      {sleeve > 0 && (
+        <g transform={`translate(${cx},${cy}) rotate(${ang}) scale(${k})`} opacity={sleeve}>
+          <ellipse cx={0} cy={0} rx={8} ry={28} fill="#3a1010" opacity={0.75} />
+          <ellipse cx={1} cy={14} rx={5} ry={9} fill="#5a1212" opacity={0.8} />
+          {bite && <path d="M -7 6 a 7 6 0 0 0 14 0" fill="none" stroke="#1a0606" strokeWidth={2.6} strokeDasharray="2.4 1.8" />}
+        </g>
+      )}
+    </>
+  );
+};
 
 // The crowd in the hallway beyond the gate.
 export const HALL_ROWS: [number, number, number][] = [
@@ -159,10 +184,12 @@ export const RoofScene: React.FC<{
   over?: React.ReactNode;
   children?: React.ReactNode;
 }> = ({p, a, b, time = 'day', screen, over, children}) => {
-  const filter =
-    time === 'day' ? 'saturate(1.05)' : time === 'dusk' ? 'sepia(0.35) saturate(1.3) brightness(0.85) hue-rotate(-12deg)' : 'brightness(0.22) saturate(0.6) hue-rotate(185deg)';
+  // Night is day-for-night: the picture is darkened and turned blue, while the people are only
+  // dimmed (a hue shift on them would turn the blue uniform orange).
+  const filter = time === 'day' ? 'saturate(1.05)' : time === 'dusk' ? 'sepia(0.35) saturate(1.3) brightness(0.85) hue-rotate(-12deg)' : 'brightness(0.72) saturate(0.75)';
+  const bgFilter = time === 'night' ? 'brightness(0.56) saturate(0.9) hue-rotate(185deg)' : undefined;
   return (
-    <Scene bg="roof" a={a} b={b} p={p} filter={filter} screen={screen} over={over}>
+    <Scene bg="roof" a={a} b={b} p={p} filter={filter} bgFilter={bgFilter} screen={screen} over={over}>
       {children}
     </Scene>
   );
@@ -179,7 +206,8 @@ export const TowerNight: React.FC<{
   children?: React.ReactNode;
 }> = ({p, a, b, blackout = 0, win = 0, screen, children}) => {
   const k = blackout;
-  const filter = `brightness(${1 - 0.8 * k}) saturate(${1 - 0.5 * k})`;
+  // "I could barely see the shape of her building": dark enough that the painted windows go out
+  const filter = `brightness(${1 - 0.72 * k}) saturate(${1 - 0.8 * k})`;
   return (
     <Scene bg="parkview" a={a} b={b} p={p} filter={filter} screen={screen}>
       {children}
@@ -207,3 +235,6 @@ export const Dan: React.FC<Partial<StickProps> & {pose?: Pose}> = (p) => (
 );
 
 export const ScreenOnly: React.FC<{children: React.ReactNode}> = ({children}) => <Screen>{children}</Screen>;
+
+// Marcus (alive, hurt) holding a bar of the gate with his far hand; the bitten near arm hangs.
+export const handOnBar: Pose = {lean: 0, head: 4, armF: [-135, -170], armN: [14, 6], legF: [-8, -4], legN: [8, 4]};

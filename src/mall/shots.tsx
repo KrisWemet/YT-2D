@@ -44,13 +44,14 @@ export const Scene: React.FC<{
   b?: Cam;
   p: P;
   filter?: string;
+  bgFilter?: string;
   shakeXY?: [number, number];
   children?: React.ReactNode;
   over?: React.ReactNode;
   screen?: React.ReactNode;
-}> = ({bg, a, b, p, filter, shakeXY, children, over, screen}) => (
+}> = ({bg, a, b, p, filter, bgFilter, shakeXY, children, over, screen}) => (
   <AbsoluteFill>
-    <World bg={bg} cam={camAt(a, b, p)} width={W} height={H} filter={filter} shake={shakeXY} over={over}>
+    <World bg={bg} cam={camAt(a, b, p)} width={W} height={H} filter={filter} bgFilter={bgFilter} shake={shakeXY} over={over}>
       {children}
     </World>
     {screen && <Screen>{screen}</Screen>}

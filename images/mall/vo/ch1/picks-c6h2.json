@@ -1,0 +1,34 @@
+{
+ "c6h2": {
+  "picked": "vo/ch1/takes/c6h2-4.wav",
+  "takes": [
+   {
+    "take": "vo/ch1/takes/c6h2-4.wav",
+    "distance": 4.8,
+    "voiced": 70,
+    "f0": 76,
+    "bright": 331,
+    "wps": 3.4,
+    "spread": 3.3
+   },
+   {
+    "take": "vo/ch1/takes/c6h2-2.wav",
+    "distance": 5.02,
+    "voiced": 81,
+    "f0": 89,
+    "bright": 272,
+    "wps": 3.5,
+    "spread": 5.9
+   },
+   {
+    "take": "vo/ch1/takes/c6h2-3.wav",
+    "distance": 6.91,
+    "voiced": 93,
+    "f0": 110,
+    "bright": 220,
+    "wps": 3.26,
+    "spread": 4.7
+   }
+  ]
+ }
+}

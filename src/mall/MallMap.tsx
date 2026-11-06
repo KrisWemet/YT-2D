@@ -64,7 +64,7 @@ const KeyIcon: React.FC<{x: number; y: number; s: number}> = ({x, y, s}) => (
   </g>
 );
 
-export type MapMode = 'loop' | 'keys' | 'all' | 'pick' | 'thousand' | 'route';
+export type MapMode = 'loop' | 'keys' | 'all' | 'pick' | 'thousand' | 'route' | 'plain';
 
 export const MallMap: React.FC<{mode: MapMode; t: number; dur: number}> = ({mode, t, dur}) => {
   const zoom = 1 + 0.04 * (t / Math.max(dur, 0.1));

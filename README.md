@@ -110,6 +110,14 @@ Short 1's thumbnail, `thumbnails/night-guard-short-1-thumbnail.jpg`, is the Remo
 
 ![The Night Guard channel banner: Danny with his flashlight in the dark mall concourse next to the title, zombies pressed against the store gates on both sides, Marcus in his uniform among them](publish/channel/night-guard-banner.jpg)
 
+**Chapter 1: The King of the Mall (14:42).** This is the first full chapter. It covers the whole first night and the first day, in 16:9 at 1080p (`MallChapter1`).
+- **Story:** about 2,500 words in 14 sections, from the cold open at the gate to Lily's three blinks from the tenth floor. The script is `images/mall/chapter1/script.md`. `make_plans.py` writes the script and the voice plan, and reuses lines that were already recorded for the Shorts.
+- **Voice:** the approved v10 recipe, with 169 chunks and the calmest matching take of each (`images/mall/vo/ch1/`).
+- **Pictures:** 265 shots, a new picture about every 3.3 seconds, each cued by a phrase in the narration (`src/mall/chapter1/`). `MallChapter.tsx` is the 16:9 renderer. It adds a "where and when" tag at each section (for example "1:48 A.M. · SUMMIT OUTDOORS"), a name badge while a radio voice talks, and the sound effects and beds. `check_cues.py` checks every cue against the word timings.
+- **New assets:** three backgrounds (the roof, the stockroom and Lily's apartment) and eight sounds. New cards include the mall map, the radio, the phone, the emergency alert, lists, two clocks, a news ticker and polaroids.
+- **Captions and upload:** `publish/night-guard-chapter-1.srt` comes from the script's own words (`images/mall/make_srt.py`). The title, description, chapter times and settings are in `publish/night-guard-chapter-1.md`.
+- **Cost:** about 278 Kie.ai credits (about $1.40): about 248 for the voice, 10 for the backgrounds and 20 for the sounds. Gemini's takes ran about 1.6 times longer than estimated, which doubled the voice cost.
+
 ## The house style
 
 - **Format:** vertical 9:16, 20–25 seconds. The voice sets the length.
@@ -187,6 +195,13 @@ Render the mall pilot (1080p, 30 fps) and its thumbnail:
 npx remotion render src/index.ts MallPilot out/mall-pilot-v2-1080p.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
 bash images/mall/finish.sh out/mall-pilot-v2-1080p.mp4 out/mall-pilot-v2.mp4   # about -15 LUFS with one gain + limiter, smaller re-encode
 npx remotion still src/index.ts MallThumb out/mall-thumb.png
+```
+
+Render Chapter 1 (about an hour on 4 cores; the steps to rebuild its voice and captions are in `publish/night-guard-chapter-1.md`):
+
+```bash
+npx remotion render src/index.ts MallChapter1 out/chapter1/night-guard-ch1-render.mp4 --concurrency=4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
+bash images/mall/finish.sh out/chapter1/night-guard-ch1-render.mp4 out/chapter1/night-guard-chapter-1.mp4
 ```
 
 Render The Night Guard channel art and Short 1's thumbnail (remake the gate mask first only if the concourse background changes):

@@ -12,6 +12,8 @@ import {GateScene, HALL_ROWS, MarcusAtGate, TopClock} from './scenes';
 
 const MORNING = 'brightness(1.12) saturate(0.55) contrast(0.95)';
 const hI = (y: number) => 2.2 * (y - 780);
+// Danny lying on the store floor: hips here, head toward the gate side (-x), feet toward the tent
+const LIE_X = 1750;
 const pressRows = HALL_ROWS.map(([x, y, h]) => [x, y, h, -1] as [number, number, number, -1]);
 
 // Dead Marcus at the gate, his radio circled (cold-open framing).
@@ -66,16 +68,16 @@ export const SHOTS_8_11: CShot[] = [
   {at: 'Is anyone still in the mall', draw: (p) => <RadioCard t={p.t} frame={p.frame} state="on" />},
   {
     at: "I'm on the second floor",
-    draw: (p) => <Scene bg="deptstore" a={{x: 1408, y: 700, z: 1.5}} b={{x: 1408, y: 520, z: 2.4}} p={p} filter="brightness(0.45) saturate(0.7)" />,
+    draw: (p) => <Scene bg="deptstore" a={{x: 1408, y: 700, z: 1.5}} b={{x: 1408, y: 520, z: 2.4}} p={p} filter="brightness(0.62) saturate(0.7)" />,
   },
   {
     at: "I'm not alone up here",
-    draw: (p) => <Scene bg="deptstore" a={{x: 1408, y: 470, z: 2.6}} b={{x: 1408, y: 460, z: 2.9}} p={p} filter="brightness(0.38) saturate(0.6)" />,
+    draw: (p) => <Scene bg="deptstore" a={{x: 1408, y: 470, z: 2.6}} b={{x: 1408, y: 460, z: 2.9}} p={p} filter="brightness(0.55) saturate(0.6)" />,
   },
   {
     at: 'A woman Whispering',
     draw: (p) => (
-      <Scene bg="deptstore" a={{x: 1300, y: 460, z: 3.2}} b={{x: 1310, y: 455, z: 3.5}} p={p} filter="brightness(0.35) saturate(0.6)">
+      <Scene bg="deptstore" a={{x: 1300, y: 460, z: 3.2}} b={{x: 1310, y: 455, z: 3.5}} p={p} filter="brightness(0.5) saturate(0.6)">
         <circle cx={1240 + Math.sin(p.t * 2) * 30} cy={430} r={26} fill="#fff2c2" opacity={0.25} />
       </Scene>
     ),
@@ -232,9 +234,9 @@ export const SHOTS_8_11: CShot[] = [
   {
     at: 'and I lay there',
     draw: (p) => (
-      <GateScene p={p} a={{x: 1250, y: 980, z: 2.6}} b={{x: 1250, y: 980, z: 2.75}} filter="brightness(0.6)">
-        <Guard x={1180} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="wide" />
-        <SleepingBag x={1450} y={1150} s={0.9} />
+      <GateScene p={p} a={{x: 1640, y: 1050, z: 2.2}} b={{x: 1640, y: 1050, z: 2.35}} filter="brightness(0.6)">
+        <SleepingBag x={1235} y={1112} s={0.9} />
+        <Guard x={LIE_X} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="wide" />
       </GateScene>
     ),
   },
@@ -288,10 +290,10 @@ export const SHOTS_8_11: CShot[] = [
   {
     at: 'I can hear you breathing',
     draw: (p) => {
-      const j = jointsOf(POSES.lyingDown, 1180, 1180, hI(1180) * 0.9, 1);
+      const j = jointsOf(POSES.lyingDown, LIE_X, 1180, hI(1180) * 0.9, 1);
       return (
         <GateScene p={p} a={{x: j.head[0], y: j.head[1], z: 4.6}} b={{x: j.head[0], y: j.head[1], z: 5.0}} filter="brightness(0.65)">
-          <Guard x={1180} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="wide" sweat />
+          <Guard x={LIE_X} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="wide" sweat />
         </GateScene>
       );
     },
@@ -299,9 +301,9 @@ export const SHOTS_8_11: CShot[] = [
   {
     at: "She didn't sound scared",
     draw: (p) => (
-      <GateScene p={p} a={{x: 1300, y: 1000, z: 2.4}} b={{x: 1300, y: 1000, z: 2.6}} filter="brightness(0.65)">
-        <Guard x={1180} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="wide" />
-        <SleepingBag x={1450} y={1150} s={0.9} glow={1} />
+      <GateScene p={p} a={{x: 1560, y: 1060, z: 2.4}} b={{x: 1560, y: 1060, z: 2.6}} filter="brightness(0.65)">
+        <SleepingBag x={1235} y={1112} s={0.9} glow={1} />
+        <Guard x={LIE_X} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="wide" />
       </GateScene>
     ),
   },
@@ -310,9 +312,9 @@ export const SHOTS_8_11: CShot[] = [
   {
     at: "I didn't say a word",
     draw: (p) => (
-      <GateScene p={p} a={{x: 1380, y: 1060, z: 3.4}} b={{x: 1380, y: 1060, z: 3.6}} filter="brightness(0.6)">
-        <Guard x={1180} y={1180} h={hI(1180) * 0.9} pose={{...POSES.lyingDown, armN: [-20, 10]}} eyes="closed" />
-        <SleepingBag x={1450} y={1150} s={0.9} glow={0.6} />
+      <GateScene p={p} a={{x: 1400, y: 1150, z: 3.4}} b={{x: 1400, y: 1150, z: 3.6}} filter="brightness(0.6)">
+        <SleepingBag x={1235} y={1112} s={0.9} glow={0.6} />
+        <Guard x={LIE_X} y={1180} h={hI(1180) * 0.9} pose={{...POSES.lyingDown, armN: [-20, 10]}} eyes="closed" />
       </GateScene>
     ),
   },
@@ -321,8 +323,8 @@ export const SHOTS_8_11: CShot[] = [
   {
     at: "I didn't sleep",
     draw: (p) => (
-      <GateScene p={p} a={{x: 1250, y: 980, z: 2.6}} b={{x: 1250, y: 980, z: 2.75}} filter="brightness(0.55)">
-        <Guard x={1180} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="dot" />
+      <GateScene p={p} a={{x: 1640, y: 1040, z: 2.6}} b={{x: 1640, y: 1040, z: 2.75}} filter="brightness(0.55)">
+        <Guard x={LIE_X} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="dot" />
       </GateScene>
     ),
   },
@@ -359,7 +361,7 @@ export const SHOTS_8_11: CShot[] = [
   {
     at: 'So who was she',
     draw: (p) => (
-      <Scene bg="deptstore" a={{x: 1408, y: 520, z: 2.0}} b={{x: 1408, y: 480, z: 2.4}} p={p} filter="brightness(0.4) saturate(0.6)">
+      <Scene bg="deptstore" a={{x: 1408, y: 520, z: 2.0}} b={{x: 1408, y: 480, z: 2.4}} p={p} filter="brightness(0.55) saturate(0.6)">
         <path d={`M ${1250 + Math.sin(p.t * 1.3) * 120} 430 L ${1050 + Math.sin(p.t * 1.3) * 120} 620 L ${1300 + Math.sin(p.t * 1.3) * 120} 640 Z`} fill="#fff2c2" opacity={0.3} />
       </Scene>
     ),
@@ -369,18 +371,18 @@ export const SHOTS_8_11: CShot[] = [
   {
     at: "I don't remember falling",
     draw: (p) => (
-      <GateScene p={p} a={{x: 1250, y: 980, z: 2.6}} b={{x: 1250, y: 980, z: 2.7}} filter="brightness(0.75) saturate(0.6)">
-        <Guard x={1180} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="closed" />
+      <GateScene p={p} a={{x: 1640, y: 1040, z: 2.6}} b={{x: 1640, y: 1040, z: 2.7}} filter="brightness(0.75) saturate(0.6)">
+        <Guard x={LIE_X} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="closed" />
       </GateScene>
     ),
   },
   {
     at: 'I remember waking up',
     draw: (p) => {
-      const j = jointsOf(POSES.lyingDown, 1180, 1180, hI(1180) * 0.9, 1);
+      const j = jointsOf(POSES.lyingDown, LIE_X, 1180, hI(1180) * 0.9, 1);
       return (
         <GateScene p={p} a={{x: j.head[0], y: j.head[1], z: 4.4}} b={{x: j.head[0], y: j.head[1], z: 4.6}} filter="brightness(0.85) saturate(0.6)">
-          <Guard x={1180} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="wide" />
+          <Guard x={LIE_X} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="wide" />
         </GateScene>
       );
     },
@@ -389,8 +391,8 @@ export const SHOTS_8_11: CShot[] = [
   {
     at: 'I waited an hour',
     draw: (p) => (
-      <GateScene p={p} a={{x: 1300, y: 900, z: 2.0}} b={{x: 1300, y: 900, z: 2.1}} filter="brightness(0.95) saturate(0.6)" screen={<TopClock text="7:40" ampm="AM" t={p.t} />}>
-        <Guard x={1180} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="dot" />
+      <GateScene p={p} a={{x: 1620, y: 980, z: 2.0}} b={{x: 1620, y: 980, z: 2.1}} filter="brightness(0.95) saturate(0.6)" screen={<TopClock text="7:40" ampm="AM" t={p.t} />}>
+        <Guard x={LIE_X} y={1180} h={hI(1180) * 0.9} pose={POSES.lyingDown} eyes="dot" />
       </GateScene>
     ),
   },
