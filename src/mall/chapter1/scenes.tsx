@@ -42,12 +42,12 @@ export const MarcusAtGate: React.FC<Partial<StickProps> & {dead?: boolean; sleev
   const y = p.y ?? 936;
   const h = p.h ?? 330;
   const pose = p.pose ?? (dead ? POSES.frontPress : POSES.frontStand);
-  const j = jointsOf(pose, x, y, h, 1);
-  // along the near arm, from the neck to the hand: the stain sits on the forearm
-  const dx = j.handN[0] - j.neck[0];
-  const dy = j.handN[1] - j.neck[1];
-  const cx = j.neck[0] + dx * 0.68;
-  const cy = j.neck[1] + dy * 0.68;
+  const j = jointsOf(pose, x, y, h, p.face ?? 1);
+  // Align the stain with the near forearm, including bent and mirrored poses.
+  const dx = j.handN[0] - j.elbowN[0];
+  const dy = j.handN[1] - j.elbowN[1];
+  const cx = j.elbowN[0] + dx * 0.5;
+  const cy = j.elbowN[1] + dy * 0.5;
   const ang = (-Math.atan2(dx, dy) * 180) / Math.PI;
   const k = h / 330;
   return (
@@ -67,9 +67,9 @@ export const MarcusAtGate: React.FC<Partial<StickProps> & {dead?: boolean; sleev
       />
       {sleeve > 0 && (
         <g transform={`translate(${cx},${cy}) rotate(${ang}) scale(${k})`} opacity={sleeve}>
-          <ellipse cx={0} cy={0} rx={8} ry={28} fill="#3a1010" opacity={0.75} />
-          <ellipse cx={1} cy={14} rx={5} ry={9} fill="#5a1212" opacity={0.8} />
-          {bite && <path d="M -7 6 a 7 6 0 0 0 14 0" fill="none" stroke="#1a0606" strokeWidth={2.6} strokeDasharray="2.4 1.8" />}
+          <ellipse cx={0} cy={0} rx={4.6} ry={24} fill="#3a1010" opacity={0.75} />
+          <ellipse cx={1} cy={14} rx={3.4} ry={8} fill="#5a1212" opacity={0.8} />
+          {bite && <path d="M -4 6 a 4 4 0 0 0 8 0" fill="none" stroke="#1a0606" strokeWidth={1.8} strokeDasharray="1.8 1.2" />}
         </g>
       )}
     </>
