@@ -11,7 +11,7 @@ import React from 'react';
 
 export type Eyes = 'dot' | 'wide' | 'closed' | 'angry' | 'zombie' | 'worried' | 'side';
 export type Mouth = 'none' | 'smile' | 'flat' | 'o' | 'frown' | 'grit' | 'zombie' | 'open';
-export type Hair = 'none' | 'messy' | 'ponytail' | 'bun' | 'spiky' | 'pigtails' | 'short';
+export type Hair = 'none' | 'messy' | 'ponytail' | 'bun' | 'spiky' | 'pigtails' | 'short' | 'hightop';
 export type Hat = 'none' | 'guard' | 'beanie' | 'hood' | 'crown';
 export type Prop = 'none' | 'flashlight' | 'radio' | 'keys' | 'bat' | 'phone' | 'book';
 
@@ -43,6 +43,11 @@ export type Look = {
   keysOnBelt?: boolean;
   backpack?: string; // backpack colour
   kid?: boolean; // child proportions: bigger head
+  vest?: string; // hi-vis vest colour, worn over the shirt, with two reflective stripes
+  glasses?: boolean | 'cracked';
+  goatee?: boolean;
+  bulk?: number; // build: 1 = average, more = a broader torso and thicker limbs
+  radioFlip?: boolean; // the chest radio clipped on upside down (antenna down)
 };
 
 export type StickProps = {
@@ -186,8 +191,9 @@ export const LOOKS = {
   zombieE: {skin: '#a8b094', shirt: '#6e5a7e', sleeves: 'long', pants: '#363a46', torn: true, hair: 'spiky', hairColor: '#7a5a3a'},
 } satisfies Record<string, Look>;
 
-// Skeleton in local units (shared by <Stick> and jointsOf).
-const skeleton = (pose: Pose) => {
+// Skeleton in local units (shared by <Stick>, jointsOf and the other figure styles).
+export const HEAD_R = 28;
+export const skeleton = (pose: Pose) => {
   const lean = pose.lean ?? 0;
   const kneeF = v(pose.legF[0], THIGH);
   const footF = add(kneeF, v(pose.legF[1], SHIN));
@@ -375,7 +381,7 @@ export const Head: React.FC<{
         return null;
     }
   })();
-  const sideburn = !front && !back && (look.hat === 'guard' || look.hat === 'crown' || look.hair === 'short');
+  const sideburn = !front && !back && (look.hat === 'guard' || look.hat === 'crown' || look.hair === 'short' || look.hair === 'hightop');
 
   return (
     <g transform={`translate(${c[0]},${c[1]}) rotate(${tilt})`}>
@@ -391,6 +397,15 @@ export const Head: React.FC<{
       {look.hair === 'short' && !look.hat && (
         <path
           d={front ? `M ${-R + 1} -6 Q ${-R + 2} ${-R - 6} 0 ${-R - 5} Q ${R - 2} ${-R - 6} ${R - 1} -6 Q 10 -18 0 -17 Q -10 -18 ${-R + 1} -6 Z` : `M ${-R + 2} 4 Q ${-R - 2} ${-R - 2} 2 ${-R - 5} Q ${R - 2} ${-R - 4} ${R - 2} ${-R * 0.42} Q ${R * 0.35} ${-R * 0.62} ${-R * 0.05} ${-R * 0.55} Q ${-R * 0.35} ${-R * 0.3} ${-R * 0.5} 4 Z`}
+          fill={hairC}
+          stroke={ink}
+          strokeWidth={2.6}
+          strokeLinejoin="round"
+        />
+      )}
+      {look.hair === 'hightop' && !look.hat && (
+        <path
+          d={front ? `M ${-R + 1} -4 L ${-R - 1} ${-R - 4} Q ${-R} ${-R - 15} ${-R + 7} ${-R - 15} L ${R - 7} ${-R - 15} Q ${R} ${-R - 15} ${R + 1} ${-R - 4} L ${R - 1} -4 Q 10 -19 0 -18 Q -10 -19 ${-R + 1} -4 Z` : `M ${-R + 1} 3 L ${-R - 1} ${-R + 2} Q ${-R} ${-R - 15} ${-R + 8} ${-R - 15} L ${R - 9} ${-R - 13} Q ${R - 3} ${-R - 12} ${R - 3} ${-R - 6} L ${R - 2} ${-R * 0.48} Q ${R * 0.4} ${-R * 0.64} ${R * 0.05} ${-R * 0.54} Q ${-R * 0.34} ${-R * 0.32} ${-R * 0.44} 4 Z`}
           fill={hairC}
           stroke={ink}
           strokeWidth={2.6}
@@ -465,7 +480,28 @@ export const Head: React.FC<{
               strokeLinejoin="round"
             />
           )}
+          {look.goatee && (
+            <path d={`M ${mx - 5.5} ${my + 3.5} Q ${mx} ${my + 13} ${mx + 5.5} ${my + 3.5} Q ${mx} ${my + 7} ${mx - 5.5} ${my + 3.5} Z`} fill={hairC} stroke={ink} strokeWidth={1.5} strokeLinejoin="round" />
+          )}
           {mouthEl}
+          {look.glasses && (
+            <g fill="#fff" fillOpacity={0.16} stroke={ink} strokeWidth={2.2}>
+              {front ? (
+                <>
+                  <circle cx={ex[0]} cy={ey} r={6.6} />
+                  <circle cx={ex[1]} cy={ey} r={6.6} />
+                  <path d={`M ${ex[0] + 6.6} ${ey} L ${ex[1] - 6.6} ${ey} M ${ex[0] - 6.6} ${ey} L ${-R + 1} ${ey - 2} M ${ex[1] + 6.6} ${ey} L ${R - 1} ${ey - 2}`} fill="none" />
+                </>
+              ) : (
+                <>
+                  <ellipse cx={ex[0]} cy={ey} rx={4.8} ry={6} />
+                  <circle cx={ex[1]} cy={ey} r={6.4} />
+                  <path d={`M ${ex[0] + 4.8} ${ey} L ${ex[1] - 6.4} ${ey} M ${ex[0] - 4.8} ${ey} L ${-R * 0.45} ${ey - 1.5}`} fill="none" />
+                </>
+              )}
+              {look.glasses === 'cracked' && <path d={`M ${ex[1] - 4} ${ey - 5} L ${ex[1] - 0.5} ${ey - 1} L ${ex[1] - 3} ${ey + 1.5} L ${ex[1] + 2.5} ${ey + 5}`} fill="none" strokeWidth={1.5} />}
+            </g>
+          )}
         </g>
       )}
     </g>
@@ -504,15 +540,18 @@ export const Stick: React.FC<StickProps> = ({
   const pants = ghost ? '#20232b' : look.pants ?? '#2b2f38';
   const shoes = ghost ? '#1a1c22' : look.shoes ?? '#1d1d20';
   const sleeve = look.sleeves === 'long' ? 1 : look.sleeves ? 0.5 : 0;
+  const bk = look.bulk ?? 1; // build
+  const SW = SH_W * bk;
+  const HW = HIP_W * (1 + (bk - 1) * 0.8);
 
   // torso: shoulders wider than the waist, along the spine
   const top = add(shoulder, [dir[0] * 7, dir[1] * 7]);
   const waist = add(hip, [dir[0] * 4, dir[1] * 4]);
   const sh = (sgn: number, w: number, p: V2): V2 => [p[0] + perp[0] * w * sgn, p[1] + perp[1] * w * sgn];
-  const tF = sh(1, SH_W, top);
-  const tB = sh(-1, SH_W, top);
-  const wB = sh(-1, HIP_W + 1, waist);
-  const wF = sh(1, HIP_W + 1, waist);
+  const tF = sh(1, SW, top);
+  const tB = sh(-1, SW, top);
+  const wB = sh(-1, HW + 1, waist);
+  const wF = sh(1, HW + 1, waist);
   let shirtPath = `M ${tB[0]} ${tB[1]} Q ${top[0] - dir[0] * 6} ${top[1] - dir[1] * 6} ${tF[0]} ${tF[1]} L ${wF[0]} ${wF[1]} `;
   if (look.torn && !ghost) {
     for (let i = 1; i < 6; i++) {
@@ -529,7 +568,7 @@ export const Stick: React.FC<StickProps> = ({
 
   const leg = (knee: V2, foot: V2, far: boolean) => (
     <g opacity={far && !ghost ? 0.94 : 1}>
-      <Limb pts={[add(hip, [0, -2]), knee, foot]} w={18} c={far ? shade(pants, 0.8) : pants} ink={ink} />
+      <Limb pts={[add(hip, [0, -2]), knee, foot]} w={18 * bk} c={far ? shade(pants, 0.8) : pants} ink={ink} />
       {look.torn && !ghost && <path d={`M ${foot[0] - 8} ${foot[1] - 10} l 4 6 l 4 -5 l 4 6 l 4 -6`} stroke={ink} strokeWidth={1.6} fill="none" />}
       <Shoe at={[foot[0] + 1, foot[1] + 5]} color={far ? shade(shoes, 0.85) : shoes} ink={ink} />
     </g>
@@ -539,10 +578,10 @@ export const Stick: React.FC<StickProps> = ({
     const foreColor = sleeve === 1 ? (far ? shade(shirt, 0.82) : shirt) : far ? shade(skin, 0.9) : skin;
     return (
       <g>
-        <Limb pts={[shoulder, elbow]} w={14.5} c={upperColor} ink={ink} />
-        <Limb pts={[elbow, hand]} w={sleeve === 1 ? 13 : 11} c={foreColor} ink={ink} />
-        {sleeve === 0.5 && <Limb pts={[shoulder, lerp(shoulder, elbow, 0.62)]} w={17} c={far ? shade(shirt, 0.82) : shirt} ink={ink} />}
-        <circle cx={hand[0]} cy={hand[1]} r={7.2} fill={far ? shade(skin, 0.9) : skin} stroke={ink} strokeWidth={LW * 0.8} />
+        <Limb pts={[shoulder, elbow]} w={14.5 * bk} c={upperColor} ink={ink} />
+        <Limb pts={[elbow, hand]} w={(sleeve === 1 ? 13 : 11) * bk} c={foreColor} ink={ink} />
+        {sleeve === 0.5 && <Limb pts={[shoulder, lerp(shoulder, elbow, 0.62)]} w={17 * bk} c={far ? shade(shirt, 0.82) : shirt} ink={ink} />}
+        <circle cx={hand[0]} cy={hand[1]} r={7.2 * (1 + (bk - 1) * 0.6)} fill={far ? shade(skin, 0.9) : skin} stroke={ink} strokeWidth={LW * 0.8} />
         {!ghost && <PropShape p={prop} at={hand} ang={forearmAngle(elbow, hand)} beam={beam} />}
       </g>
     );
@@ -591,6 +630,45 @@ export const Stick: React.FC<StickProps> = ({
             strokeLinejoin="round"
           />
         )}
+        {look.vest && !ghost && (() => {
+          const nB = sh(-1, 8, top);
+          const nF = sh(1, 8, top);
+          const vee = add(top, [-dir[0] * 28, -dir[1] * 28]);
+          const vB = sh(-1, SW - 0.5, top);
+          const vF = sh(1, SW - 0.5, top);
+          const bB = sh(-1, HW + 2.5, add(waist, [-dir[0] * 3, -dir[1] * 3]));
+          const bF = sh(1, HW + 2.5, add(waist, [-dir[0] * 3, -dir[1] * 3]));
+          let d = back ? `M ${vB[0]} ${vB[1]} L ${vF[0]} ${vF[1]} ` : `M ${vB[0]} ${vB[1]} L ${nB[0]} ${nB[1]} L ${vee[0]} ${vee[1]} L ${nF[0]} ${nF[1]} L ${vF[0]} ${vF[1]} `;
+          d += `L ${bF[0]} ${bF[1]} `;
+          if (look.torn) {
+            for (let i = 1; i < 6; i++) {
+              const b = lerp(bF, bB, i / 6);
+              const jag = i % 2 ? 10 : 2;
+              d += `L ${b[0] - dir[0] * jag} ${b[1] - dir[1] * jag} `;
+            }
+          }
+          d += `L ${bB[0]} ${bB[1]} Z`;
+          const stripe = (t: number) => {
+            const p = lerp(top, waist, t);
+            const w = SW + (HW + 2.5 - SW) * t - 1.5;
+            const a = sh(-1, w, p);
+            const b = sh(1, w, p);
+            return (
+              <g key={t}>
+                <line x1={a[0]} y1={a[1]} x2={b[0]} y2={b[1]} stroke={ink} strokeWidth={8} />
+                <line x1={a[0]} y1={a[1]} x2={b[0]} y2={b[1]} stroke="#e8eef1" strokeWidth={4.6} />
+              </g>
+            );
+          };
+          return (
+            <g>
+              <path d={d} fill={look.vest} stroke={ink} strokeWidth={LW} strokeLinejoin="round" />
+              {stripe(0.5)}
+              {stripe(0.74)}
+              <path d={shadeBack} fill="#000" opacity={0.1} />
+            </g>
+          );
+        })()}
         {look.badge && !ghost && !back && (
           <path
             transform={`translate(${top[0] - dir[0] * 22 + perp[0] * (front ? 9 : 10)},${top[1] - dir[1] * 22 + perp[1] * (front ? 9 : 10)}) rotate(${lean})`}
@@ -601,14 +679,14 @@ export const Stick: React.FC<StickProps> = ({
           />
         )}
         {look.radioOnChest && !ghost && !back && (
-          <g transform={`translate(${top[0] - dir[0] * 22 - perp[0] * 10},${top[1] - dir[1] * 22 - perp[1] * 10}) rotate(${lean})`}>
+          <g transform={`translate(${top[0] - dir[0] * 22 - perp[0] * 10},${top[1] - dir[1] * 22 - perp[1] * 10}) rotate(${lean + (look.radioFlip ? 180 : 0)})`}>
             <line x1={3.5} y1={-7} x2={3.5} y2={-20} stroke={ink} strokeWidth={3.2} strokeLinecap="round" />
             <rect x={-6} y={-8} width={13} height={19} rx={2.6} fill="#262629" stroke={ink} strokeWidth={2.4} />
             <rect x={-2.5} y={-4.5} width={7} height={4.5} fill="#8fd18a" />
           </g>
         )}
         {/* belt */}
-        <Limb pts={[add(sh(-1, HIP_W + 1, waist), [-dir[0] * 4, -dir[1] * 4]), add(sh(1, HIP_W + 1, waist), [-dir[0] * 4, -dir[1] * 4])]} w={3.5} c={ghost ? '#20232b' : '#16181f'} ink={ink} />
+        <Limb pts={[add(sh(-1, HW + 1, waist), [-dir[0] * 4, -dir[1] * 4]), add(sh(1, HW + 1, waist), [-dir[0] * 4, -dir[1] * 4])]} w={3.5} c={ghost ? '#20232b' : '#16181f'} ink={ink} />
         {look.keysOnBelt && !ghost && (
           <g transform={`translate(${waist[0] + perp[0] * 9},${waist[1] + perp[1] * 9 + 4})`}>
             <circle cx={0} cy={3} r={5.5} fill="none" stroke="#c9a640" strokeWidth={2.4} />

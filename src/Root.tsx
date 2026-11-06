@@ -13,6 +13,7 @@ import {DUR as HDUR} from './hurricane/timing';
 import {ChannelBanner, ChannelPicture} from './channel/Channel';
 import {NightGuardBanner, NightGuardPicture} from './mall/ChannelArt';
 import {NightGuardShort1Thumb} from './mall/ShortThumbs';
+import {MarcusVariants} from './mall/MarcusVariants';
 import {MallTest} from './mall/Test';
 import {MallPilot} from './mall/Pilot';
 import {MallThumb} from './mall/Thumb';
@@ -34,6 +35,7 @@ export const RemotionRoot: React.FC = () => (
     <Still id="NightGuardBanner" component={NightGuardBanner} width={2560} height={1440} />
     <Still id="NightGuardPicture" component={NightGuardPicture} width={800} height={800} />
     <Still id="NightGuardShort1Thumb" component={NightGuardShort1Thumb} width={1080} height={1920} />
+    <Still id="MarcusVariants" component={MarcusVariants} width={2560} height={1440} />
     <Composition id="RigTest" component={RigTest} durationInFrames={1} fps={60} width={1080} height={1920} />
     <Still id="MallTest" component={MallTest} width={1920} height={1080} />
     <Still id="MallThumb" component={MallThumb} width={1920} height={1080} />
