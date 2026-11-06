@@ -1,4 +1,5 @@
 import React from 'react';
+import {ChapterShort, CHAPTER_CUTS} from './mall/ChapterShorts';
 import {makeShort, shortFrames, FPS as SFPS} from './mall/MallShort';
 import {SHORT1_DEF, SHORT2_DEF, SHORT3_DEF} from './mall/shortsCh1';
 import {chapterFrames, makeChapter, FPS as CFPS} from './mall/MallChapter';
@@ -26,6 +27,10 @@ const MallChapter1 = makeChapter(CHAPTER1_DEF);
 
 export const RemotionRoot: React.FC = () => (
   <>
+    {CHAPTER_CUTS.map((cut, i) => (
+      <Composition key={i} id={`NightGuardPart${String(i + 1).padStart(2, '0')}`} component={ChapterShort}
+        defaultProps={{part: i + 1}} durationInFrames={cut.frames} fps={30} width={1080} height={1920} />
+    ))}
     <Composition id="PigeonShort" component={PigeonShort} durationInFrames={Math.round(DUR * FPS)} fps={FPS} width={1080} height={1920} />
     <Composition id="HurricaneShort" component={HurricaneShort} durationInFrames={Math.round(HDUR * FPS)} fps={FPS} width={1080} height={1920} />
     <Still id="PigeonThumb" component={PigeonThumb} width={1080} height={1920} />
