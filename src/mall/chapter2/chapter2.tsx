@@ -1,7 +1,9 @@
 import React from 'react';
 import type {ShortData} from '../cues';
-import {ChapterDef,CShot} from '../MallChapter';
+import {ChapterDef,CShot,FPS} from '../MallChapter';
 import {Chapter2Scene,Mode} from './scenes';
+import {ROOF_RECUT_END, ROOF_RECUT_START, RoofCutaways} from './roof-cutaways';
+import type {P} from '../shots';
 import ch2 from './ch2.json';
 
 export const CHAPTER2_READY=ch2.timing==='recorded'&&ch2.voiceReady;
@@ -30,11 +32,14 @@ const modeFor=(c:Chunk):Mode=>{
 const shots:CShot[]=[];
 for(let i=0;i<ch2.segments.length;i++){
  const c=ch2.segments[i];const mode=modeFor(c);const start=Math.max(0,c.s-.08);
- shots.push({at:i===0?'0':`=${start}`,draw:p=><Chapter2Scene p={p} mode={mode} section={c.section} speaker={c.who} variant={i}/>});
+ const draw = (p: P, variant: number) => c.section === 2 && p.frame >= ROOF_RECUT_START * FPS && p.frame < ROOF_RECUT_END * FPS
+  ? <RoofCutaways frame={p.frame} />
+  : <Chapter2Scene p={p} mode={mode} section={c.section} speaker={c.who} variant={variant}/>;
+ shots.push({at:i===0?'0':`=${start}`,draw:p=>draw(p,i)});
  // A second angle keeps extended narration moving, anchored to the recorded chunk.
  if(c.e-c.s>12){
   const mid=(c.s+c.e)/2;
-  shots.push({at:`=${mid}`,draw:p=><Chapter2Scene p={p} mode={mode} section={c.section} speaker={c.who} variant={i+1}/>});
+  shots.push({at:`=${mid}`,draw:p=>draw(p,i+1)});
  }
  if(c.section===1&&(i===ch2.segments.length-1||ch2.segments[i+1].section!==1)){
   shots.push({at:`=${c.e+.15}`,draw:p=><Chapter2Scene p={p} mode="title" section={1} variant={0}/>});
