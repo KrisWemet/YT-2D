@@ -140,7 +140,7 @@ export const makeChapter = (def: ChapterDef): React.FC => {
             {name && <RadioBadge name={name} t={t} color={name === 'MARCUS' ? '#8fd18a' : name === 'EMERGENCY ALERT' ? '#f0c53c' : '#e58fb4'} />}
           </Screen>
         )}
-        <Audio src={staticFile(def.vo)} />
+        {def.vo && <Audio src={staticFile(def.vo)} />}
         <ChapterSfx r={r} />
       </AbsoluteFill>
     );

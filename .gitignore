@@ -33,3 +33,8 @@ images/mall/vo/shorts/*/vo.wav
 out/shorts/
 images/mall/vo/ch1/vo.wav
 images/mall/vo/ch1/takes/*-[0-9].wav
+
+# Chapter Two raw narration and local speech models
+images/mall/vo/ch2/takes/
+images/mall/vo/ch2/vo.wav
+images/mall/chapter2/models/
