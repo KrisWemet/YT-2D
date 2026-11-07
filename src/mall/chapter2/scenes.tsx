@@ -3,7 +3,7 @@ import {AbsoluteFill, interpolate} from 'remotion';
 import {Screen, Txt, Padlock, Waves, RewindFx} from '../Overlays';
 import {Scene, Guard, Zed, P, Beyond, HoldGate, Vignette} from '../shots';
 import {Stick, StickProps, LOOKS, Pose, POSES, jointsOf} from '../Stick';
-import {RoofScene, TowerNight, ROOF_WIN} from '../chapter1/scenes';
+import {ROOF_WIN} from '../chapter1/scenes';
 import {KeyRing16, KeyInHand, RadioCard, SleepingBag} from '../chapter1/props';
 import {threeBlinks} from '../vertical';
 import {World, FULL} from '../World';
@@ -72,70 +72,81 @@ const Store:React.FC<{p:P;mode:Mode;variant:number;speaker?:string;section:numbe
  </Scene>;
 };
 
+// The painted cutaway fixes the ledge at y=426 in screen coordinates. Animate only
+// the figures, the tile break, and the loose boot, so all three share the same camera.
 const Ceiling:React.FC<{p:P;mode:Mode;variant:number;section:number}>=({p,mode,variant,section})=>{
- const fall=mode==='fall',rescue=mode==='rescue',detail=variant%3;
- const zoom=mode==='cut'?1.8:mode==='marcus'?1.4:detail===1?1.15:1;
- const pan=mode==='cut'?[-1230,-310]:mode==='marcus'?[-230,-210]:detail===1?[-100,-40]:[0,0];
+ const fall=mode==='fall', rescue=mode==='rescue', cut=mode==='cut';
+ const close=mode==='marcus'||mode==='crowd';
+ const zoom=cut?1.8:close?1.45:variant%3===1?1.15:1;
+ const pan=cut?[-1230,-270]:close?[-330,-405]:zoom>1?[-120,-40]:[0,0];
  const move=mode==='ceiling'?Math.min(70,p.t*4):0;
  const shake=fall?Math.sin(p.t*18)*1.5:0;
- const bootF=mode==='boot'?clamp(p.t/1.7):0;
- return <AbsoluteFill style={{background:'#111921'}}>
- <World bg="concourse" cam={{...FULL,z:1.08}} width={1920} height={1080} filter="brightness(.5) saturate(.6)"/>
- <Screen><defs><linearGradient id="ceilingFog" x1="0" y1="0" x2="0" y2="1"><stop stopColor="#09101a" stopOpacity={0}/><stop offset="1" stopColor="#182736" stopOpacity={.85}/></linearGradient></defs>
- <g transform={`translate(${pan[0]},${pan[1]}) scale(${zoom})`}>
- <ellipse cx={1040} cy={970} rx={350} ry={104} fill="#657272" stroke={INK} strokeWidth={12}/><ellipse cx={1040} cy={947} rx={300} ry={66} fill="#26353a" stroke={INK} strokeWidth={7}/><ellipse cx={1040} cy={940} rx={265} ry={49} fill="#3b4244"/>
- {/* Distant bodies give the crowd its scale, while foreground characters retain the approved rig. */}
- {Array.from({length:78},(_,i)=>{const x=130+(i*139)%1650,y=700+Math.floor(i/18)*47;return <g key={i} transform={`translate(${x},${y})`} opacity={.6}><circle cy={-68} r={13} fill={i%3?'#68735d':'#8a9574'} stroke={INK} strokeWidth={4}/><path d="M0-53V-18M0-43L-23-27M0-43L22-24M0-18L-12 2M0-18L12 3" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round"/></g>})}
- {Array.from({length:16},(_,i)=><Zed key={i} x={100+i*111+Math.sin(p.t*.3+i)*3} y={1000+(i%3)*28} h={190+(i%3)*18} k={i} face={i%2?1:-1} shadow={0} dim={.78}/>)}
- <Stick x={730+Math.sin(p.t*.25)*12} y={1020} h={265} look={{...LOOKS.marcusZ,radioOnChest:false}} pose={mode==='marcus'?POSES.rattle:fall?POSES.lookUp:POSES.zLimp} eyes="zombie" mouth="zombie" shadow={.15}/>
- <rect width={1920} height={540} fill="#1c2730" stroke={INK} strokeWidth={10}/>
- {[0,1,2,3,4,5].map(i=><g key={i}><path d={`M${i*400-90} 0L${i*370+70} 505`} stroke="#0c1117" strokeWidth={47}/><path d={`M${i*400-90} 0L${i*370+70} 505`} stroke="#3c4b55" strokeWidth={27}/></g>)}
- <path d="M0 140H1920M0 270H1920" stroke={INK} strokeWidth={33}/><path d="M0 140H1920M0 270H1920" stroke="#6c7470" strokeWidth={18}/>
- <path d="M0 497H1920" stroke={INK} strokeWidth={52}/><path d="M0 491H1920" stroke="#6a746e" strokeWidth={25}/>
- {Array.from({length:15},(_,i)=><path key={i} d={`M${i*150} 512V540`} stroke="#90938a" strokeWidth={4}/>)}
- {(fall||rescue)&&<><path d="M930 510L945 480L970 512L1013 475L1048 517L1080 490L1114 520V554H930Z" fill="#080b10" stroke={INK} strokeWidth={7}/><path d="M946 541L995 595L1020 552M1064 540L1102 574" fill="#9b9e93" stroke={INK} strokeWidth={5}/></>}
- <g transform={`translate(${shake},0)`}>
- {fall?<><Guard x={980} y={505} h={350} pose={hanging} eyes="wide" mouth="grit" sweat shadow={0}/><Theo x={563} y={500} h={320} face={1} pose={pull}/></>:
- rescue?<><Guard x={980} y={480} h={350} face={-1} pose={crawl} eyes="wide" mouth="grit" sweat shadow={0}/><Theo x={563} y={480} h={320} face={1} pose={pull} hurt/><path d="M665 430L430 260L410 260L620 430" fill="none" stroke="#c1a364" strokeWidth={8}/></>:
- <><Guard x={660+move} y={476} h={350} pose={crawl} eyes="worried" shadow={0}/><Theo x={1270+move} y={475} h={320} pose={crawl} hurt={section>=10}/><Jug x={1130+move} y={450} s={.43} full={section>=12}/></>}
- </g>
- {fall&&Array.from({length:8},(_,i)=><path key={i} d="M-6-3L9-6L7 7Z" transform={`translate(${960+i*17},${570+((p.t*74+i*83)%330)}) rotate(${p.t*20+i*32})`} fill="#b7b5a2"/>)}
- {mode==='boot'&&<g transform={`translate(1060,${560+bootF*340}) rotate(${bootF*110})`}><path d="M-25-40H24V12H66Q82 20 75 35H-29Z" fill="#34343a" stroke={INK} strokeWidth={8}/></g>}
- </g>
- <rect width={1920} height={1080} fill="url(#ceilingFog)" opacity={.22}/>
- </Screen><Vignette o={.28}/></AbsoluteFill>;
+ const bootFall=mode==='boot'?clamp(p.t/1.7):0;
+ return <AbsoluteFill style={{background:'#111921',overflow:'hidden'}}>
+  <AbsoluteFill style={{transform:`translate(${pan[0]}px,${pan[1]}px) scale(${zoom})`,transformOrigin:'0 0'}}>
+   <World bg="ch2-ceiling" cam={FULL} width={1920} height={1080}/>
+   <Screen>
+    {/* Smaller figures occupy the floor behind the fountain, with larger figures in front. */}
+    {Array.from({length:78},(_,i)=>{
+     const row=Math.floor(i/17),span=650+row*260;
+     const x=960-span/2+((i*139)%span),y=714+row*47;
+     const size=.62+row*.08;
+     return <g key={i} transform={`translate(${x},${y}) scale(${size})`} opacity={.78}>
+      <circle cy={-68} r={13} fill={i%3?'#68735d':'#8a9574'} stroke={INK} strokeWidth={4}/>
+      <path d="M0-53V-18M0-43L-23-27M0-43L22-24M0-18L-12 2M0-18L12 3" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round"/>
+     </g>;
+    })}
+    {Array.from({length:16},(_,i)=><Zed key={i} x={100+i*111+Math.sin(p.t*.3+i)*3} y={1018+(i%3)*18} h={178+(i%3)*18} k={i} face={i%2?1:-1} shadow={.1} dim={.88}/>)}
+    <Stick x={730+Math.sin(p.t*.25)*12} y={1020} h={235} look={{...LOOKS.marcusZ,radioOnChest:false}} pose={mode==='marcus'?POSES.rattle:fall?POSES.lookUp:POSES.zLimp} eyes="zombie" mouth="zombie" shadow={.15}/>
+    {(fall||rescue)&&<>
+     <path d="M930 431L950 408L974 432L1013 402L1048 430L1080 415L1114 438V475H930Z" fill="#111821" stroke={INK} strokeWidth={6}/>
+     <path d="M947 470L985 514L1020 476M1064 467L1102 499" fill="#9b9e93" stroke={INK} strokeWidth={5}/>
+    </>}
+    <g transform={`translate(${shake},0)`}>
+     {fall?<>
+      <Guard x={980} y={428} h={350} pose={hanging} eyes="wide" mouth="grit" sweat shadow={0}/>
+      <Theo x={563} y={423} h={320} face={1} pose={pull}/>
+     </>:rescue?<>
+      <path d="M650 353L405 168L386 170L619 362" fill="none" stroke="#c1a364" strokeWidth={8}/>
+      <Guard x={980} y={414} h={350} face={-1} pose={crawl} eyes="wide" mouth="grit" sweat shadow={0}/>
+      <Theo x={563} y={414} h={320} face={1} pose={pull} hurt/>
+     </>:<>
+      <Guard x={660+move} y={411} h={350} pose={crawl} eyes="worried" shadow={0}/>
+      <Theo x={1270+move} y={411} h={320} pose={crawl} hurt={section>=10}/>
+      <Jug x={1130+move} y={393} s={.43} full={section>=12}/>
+     </>}
+    </g>
+    {fall&&Array.from({length:8},(_,i)=><path key={i} d="M-6-3L9-6L7 7Z" transform={`translate(${960+i*17},${500+((p.t*74+i*83)%380)}) rotate(${p.t*20+i*32})`} fill="#b7b5a2"/>)}
+    {mode==='boot'&&<g transform={`translate(1005,${505+bootFall*407}) rotate(${bootFall*110})`}><path d="M-25-40H24V12H66Q82 20 75 35H-29Z" fill="#34343a" stroke={INK} strokeWidth={8}/></g>}
+   </Screen>
+  </AbsoluteFill>
+  <Vignette o={.16}/>
+ </AbsoluteFill>;
 };
 
-const Pump:React.FC<{p:P;mode:Mode;variant:number;speaker?:string;section:number}>=({p,mode,variant,speaker,section})=>{
- const tankDetail=mode==='tank';const focus=tankDetail?cam(1470,700,1.65):cam(1408,950,1.08);
- return <Scene bg="stockroom" a={focus} b={{...focus,z:focus.z+.06}} p={p} filter="brightness(.85) saturate(.72)">
- <rect x={400} y={290} width={1710} height={1090} rx={110} fill="#5b777a" stroke={INK} strokeWidth={21}/>
- <path d="M460 370Q1250 200 2040 370M460 1270Q1250 1440 2040 1270" fill="none" stroke="#a2b4ab" strokeWidth={14} opacity={.6}/>
- <path d="M780 310V1370M1640 310V1370" stroke="#354d55" strokeWidth={28}/>
- <rect x={1060} y={510} width={620} height={165} rx={20} fill="#e1dbbd" stroke={INK} strokeWidth={12}/>
- <text x={1370} y={585} fontFamily="DejaVu Sans,sans-serif" fontWeight={900} fontSize={66} textAnchor="middle" fill="#1d2c32">8,000 GALLONS</text>
- <text x={1370} y={637} fontFamily="DejaVu Sans,sans-serif" fontWeight={700} fontSize={25} textAnchor="middle" fill="#39494e">FOUNTAIN RESERVOIR</text>
- <rect x={1760} y={650} width={100} height={440} rx={30} fill="#213d4d" stroke={INK} strokeWidth={13}/>
- <path d={`M1774 ${740+Math.sin(p.t*.5)*4}Q1810 730 1847 744V1060H1774Z`} fill="#7cb0b7" opacity={.8}/>
- <path d="M1950 1100H2350V1300H2450" stroke={INK} strokeWidth={43} fill="none"/><path d="M1950 1100H2350V1300H2450" stroke="#87999b" strokeWidth={25} fill="none"/>
- <circle cx={2260} cy={1098} r={45} fill="none" stroke="#a25c47" strokeWidth={15}/><path d="M2220 1060L2296 1135M2220 1135L2296 1060" stroke="#a25c47" strokeWidth={10}/>
- {section!==7&&<><Guard x={800} y={1510} h={610} pose={mode==='tank'?POSES.holdUp:POSES.sitChair} eyes="worried" mouth={speaker==='danny'&&Math.floor(p.t*5)%3?'open':'flat'}/>
- <Theo x={2050} y={1510} h={560} face={-1} pose={POSES.sitChair} hurt mouth={speaker==='theo'&&Math.floor(p.t*5)%3?'open':'flat'}/></>}
- <Jug x={1320} y={1470} s={1.05}/><Jug x={1520} y={1480} s={1.05}/>
+const Pump:React.FC<{p:P;mode:Mode;variant:number;speaker?:string;section:number}>=({p,mode,speaker,section})=>{
+ const tankDetail=mode==='tank';
+ const focus=tankDetail?cam(1404,752,1.57):cam(1408,865,1.02);
+ return <Scene bg="ch2-pump" a={focus} b={{...focus,z:focus.z+.05}} p={p}>
+  <text x={1404} y={693} fontFamily="DejaVu Sans,sans-serif" fontWeight={900} fontSize={47} textAnchor="middle" fill="#293130">8,000 GALLONS</text>
+  <text x={1404} y={739} fontFamily="DejaVu Sans,sans-serif" fontWeight={700} fontSize={19} textAnchor="middle" fill="#3a4039">FOUNTAIN RESERVOIR</text>
+  {section!==7&&<>
+   <Guard x={810} y={1425} h={590} pose={tankDetail?POSES.holdUp:POSES.standRelax} eyes="worried" mouth={speaker==='danny'&&Math.floor(p.t*5)%3?'open':'flat'}/>
+   <Theo x={2110} y={1430} h={510} face={-1} hurt mouth={speaker==='theo'&&Math.floor(p.t*5)%3?'open':'flat'}/>
+   <Jug x={1330} y={1400} s={.87}/><Jug x={1500} y={1420} s={.87}/>
+  </>}
  </Scene>;
 };
 
-const Cinema:React.FC<{p:P;mode:Mode;variant:number}>=({p,mode,variant})=><AbsoluteFill style={{background:'#131c27'}}>
- <World bg="stockroom" cam={{...FULL,z:1.1}} width={1920} height={1080} filter="brightness(.55)"/>
- <Screen><rect x={0} y={0} width={1920} height={750} fill="#17212b" opacity={.9}/><path d="M0 750H1920" stroke={INK} strokeWidth={30}/><path d="M0 735H1920" stroke="#7b8583" strokeWidth={12}/>
- <path d="M0 330H1920M250 0V735M670 0V735M1110 0V735" stroke="#35444a" strokeWidth={20}/>
- <rect x={1310} y={160} width={390} height={580} rx={3} fill="#4c5a60" stroke={INK} strokeWidth={14}/><rect x={1355} y={222} width={300} height={75} fill="#b3baa9" stroke={INK} strokeWidth={5}/>
- <text x={1505} y={270} fill="#16272c" textAnchor="middle" fontFamily="DejaVu Sans,sans-serif" fontSize={32} fontWeight={800}>CINEMA SERVICE</text><path d="M1600 475H1650" stroke={INK} strokeWidth={15}/>
- <SleepingBag x={640} y={720} s={1.1}/><rect x={370} y={662} width={85} height={60} fill="#d5ccb9" stroke={INK} strokeWidth={5} transform="rotate(-12 370 662)"/>
- <Jug x={855} y={690} s={.45} full={false}/><Guard x={1240} y={730} h={350} pose={mode==='door'?POSES.lock:POSES.crouch} propN={mode==='door'?'keys':'none'} eyes="worried" shadow={0}/><Theo x={960} y={730} h={320} face={1} pose={POSES.crouch}/>
- <rect x={0} y={880} width={1920} height={200} fill="#111922"/>{Array.from({length:10},(_,i)=><rect key={i} x={i*205-15} y={900} width={175} height={180} rx={40} fill="#534143" stroke={INK} strokeWidth={9}/>)}
- <rect x={110} y={60} width={230} height={132} rx={14} fill="#36434c" stroke={INK} strokeWidth={9}/><circle cx={185} cy={63} r={66} fill="#64716f" stroke={INK} strokeWidth={8}/><circle cx={320} cy={63} r={66} fill="#64716f" stroke={INK} strokeWidth={8}/><path d="M340 110L480 70V180L340 150Z" fill="#39494f" stroke={INK} strokeWidth={8}/>
- </Screen></AbsoluteFill>;
+const Cinema:React.FC<{p:P;mode:Mode;variant:number}>=({p,mode,variant})=>{
+ const focus=mode==='door'?cam(1890,925,1.25):cam(1408,836,1.03);
+ return <Scene bg="ch2-cinema" a={focus} b={{...focus,z:focus.z+.06}} p={p}>
+  <text x={2235} y={521} fill="#30332d" textAnchor="middle" fontFamily="DejaVu Sans,sans-serif" fontSize={25} fontWeight={900}>CINEMA</text>
+  <text x={2235} y={549} fill="#30332d" textAnchor="middle" fontFamily="DejaVu Sans,sans-serif" fontSize={22} fontWeight={800}>SERVICE</text>
+  <Theo x={1205} y={1425} h={530} pose={POSES.standRelax}/>
+  <Guard x={1840} y={1395} h={625} pose={mode==='door'?POSES.lock:POSES.standRelax} propN={mode==='door'?'keys':'none'} eyes="worried"/>
+ </Scene>;
+};
 
 const Route:React.FC<{p:P}>=({p})=><AbsoluteFill style={{background:'#17212e'}}><World bg="concourse" cam={FULL} width={1920} height={1080} filter="brightness(.18) blur(5px)"/><Screen>
  <Txt x={960} y={220} size={70} fill={GOLD}>THE WAY THROUGH</Txt>
@@ -144,27 +155,44 @@ const Route:React.FC<{p:P}>=({p})=><AbsoluteFill style={{background:'#17212e'}}>
  <path d="M610 700H1130" stroke="#ae594a" strokeWidth={13}/><Txt x={870} y={790} size={40} fill="#e5ba9b">THE COURT BELOW</Txt>
  </Screen></AbsoluteFill>;
 
-const Roof:React.FC<{p:P;mode:Mode;variant:number;section:number}>=({p,mode,variant,section})=>{
- const final=section===14;const phase=threeBlinks(p.t,.3);const third=mode==='signal'?phase:0;
- if(mode==='window')return <TowerNight p={p} a={{x:1030,y:500,z:2}} b={{x:1030,y:490,z:2.08}} blackout={1} win={phase}/>;
- return <RoofScene p={p} a={{x:1430,y:990,z:1.06}} b={{x:1430,y:980,z:1.11}} time="night">
- <Guard x={1130} y={1520} h={600} pose={mode==='radio'?POSES.radio:POSES.flashlight} propN={mode==='radio'?'radio':'flashlight'} eyes={mode==='signal'?'wide':'worried'} mouth="flat"/>
- {section>=13&&<Theo x={570} y={1510} h={530} face={1} pose={POSES.standRelax} hurt bandaged clean/>}
- {mode==='signal'&&<g><rect x={2220} y={640} width={480} height={110} fill="#1e2632" stroke={INK} strokeWidth={8}/><path d="M2200 640H2720" stroke="#586574" strokeWidth={14}/><rect x={2470} y={530} width={125} height={110} fill="#070b12" stroke={INK} strokeWidth={8}/>
- {/* Vera remains unseen. This is a light on the department store roof, never the hotel. */}
- <path d="M2470 560L1900 275L1885 310Z" fill="#fff3b7" opacity={third*.52}/><circle cx={2474} cy={558} r={12} fill="#fff8d8" opacity={third}/>
- <text x={2450} y={793} textAnchor="middle" fontFamily="DejaVu Sans,sans-serif" fontSize={32} fontWeight={800} fill="#c2c8cc">DEPARTMENT STORE</text></g>}
- <rect x={ROOF_WIN.x-11} y={ROOF_WIN.y-12} width={22} height={25} fill="#fff5c3" opacity={phase}/>
- </RoofScene>;
-};
-const Drill:React.FC<{p:P;variant:number}>=({p,variant})=><Scene bg="foodcourt" a={{x:1200,y:950,z:1.35}} b={{x:1220,y:950,z:1.42}} p={p} filter="sepia(.28) brightness(.63)">
- <rect x={300} y={200} width={850} height={1060} fill="#35424a" stroke={INK} strokeWidth={15}/><path d="M500 1240V480H950V1240" fill="#26343c" stroke={INK} strokeWidth={20}/>
- <Stick x={1220} y={1390} h={540} look={{...LOOKS.woman,shirt:'#4e6573'}} pose={POSES.point} back ghost/>
- <Stick x={760} y={1395} h={575} look={{...LOOKS.shopperC,bulk:1.2}} pose={POSES.holdUp} back ghost/>
- <Stick x={1640} y={1360} h={510} look={LOOKS.teenB} pose={POSES.scared} back ghost/>
- <g transform={`translate(${735+Math.sin(p.t*40)*2},805)`}><rect x={-115} y={-40} width={220} height={90} rx={15} fill="#b2944c" stroke={INK} strokeWidth={12}/><path d="M-82 40V110H-15V40" fill="#39464b" stroke={INK} strokeWidth={10}/><path d="M-180 0H-110" stroke="#a9b3b3" strokeWidth={16}/></g>
- <Waves x={515} y={810} t={p.t} size={120} color="#d5b45b" dir={-1}/>
+const Roof:React.FC<{p:P;mode:Mode;variant:number;section:number}>=({p,mode,section})=>{
+ const phase=threeBlinks(p.t,.3);
+ const windowShot=mode==='window';
+ const focus=windowShot?cam(ROOF_WIN.x,402,3.0):cam(1430,955,1.025);
+ const signal=mode==='signal'?phase:0;
+ return <Scene bg="ch2-roof-night" a={focus} b={{...focus,z:focus.z+.04}} p={p}>
+  {windowShot?<>
+   <ellipse cx={ROOF_WIN.x} cy={ROOF_WIN.y} rx={22} ry={18} fill="#ffebad" opacity={phase*.23}/>
+   <rect x={ROOF_WIN.x-9} y={ROOF_WIN.y-10} width={18} height={20} fill="#fff3c3" opacity={phase}/>
+  </>:<>
+   <Guard x={1190} y={1530} h={595} pose={mode==='radio'?POSES.radio:POSES.flashlight} propN={mode==='radio'?'radio':'flashlight'} eyes={mode==='signal'?'wide':'worried'} mouth="flat" dim={.83}/>
+   {section>=13&&<Theo x={865} y={1520} h={500} face={1} pose={POSES.standRelax} hurt bandaged clean dim={.83}/>}
+  </>}
+  {mode==='signal'&&<g>
+   {/* The copied signal comes from the low painted department store roof. */}
+   <path d={`M2450 715L${ROOF_WIN.x-8} ${ROOF_WIN.y-14}L${ROOF_WIN.x+15} ${ROOF_WIN.y+9}Z`} fill="#fff0ab" opacity={signal*.48}/>
+   <circle cx={2450} cy={715} r={13} fill="#fff8d8" opacity={signal}/>
+   <text x={2510} y={870} textAnchor="middle" fontFamily="DejaVu Sans,sans-serif" fontSize={29} fontWeight={800} fill="#8192a4">DEPARTMENT STORE</text>
+  </g>}
  </Scene>;
+};
+
+const Drill:React.FC<{p:P;variant:number}>=({p})=>{
+ const workerX=950,workerY=1440,workerH=640;
+ const drillPose:Pose={...POSES.flashlight,armN:[90,90],armF:[100,82]};
+ const {handN}=jointsOf(drillPose,workerX,workerY,workerH,-1);
+ return <Scene bg="ch2-service-hall" a={cam(1350,890,1.035)} b={cam(1320,890,1.09)} p={p} filter="sepia(.15) brightness(.92)">
+  <Stick x={2260} y={1190} h={425} look={LOOKS.teenB} pose={POSES.scared} back ghost/>
+  <Stick x={1510} y={1375} h={520} look={{...LOOKS.woman,shirt:'#4e6573'}} pose={POSES.point} face={-1} back ghost/>
+  <Stick x={workerX} y={workerY} h={workerH} look={{...LOOKS.shopperC,bulk:1.2}} pose={drillPose} face={-1} back ghost/>
+  <g transform={`translate(${handN[0]-62+Math.sin(p.t*40)*2},${handN[1]-61})`}>
+   <rect x={-112} y={-35} width={208} height={74} rx={14} fill="#a98d4d" stroke={INK} strokeWidth={10}/>
+   <path d="M42 37V72H72V37" fill="#39464b" stroke={INK} strokeWidth={10}/>
+   <path d="M-200 0H-111" stroke="#9ba8aa" strokeWidth={13}/>
+  </g>
+  <Waves x={510} y={handN[1]-62} t={p.t} size={95} color="#d5b45b" dir={-1}/>
+ </Scene>;
+};
 
 export const Chapter2Scene:React.FC<{p:P;mode:Mode;variant:number;section:number;speaker?:string}>=props=>{
  const {p,mode,variant,section}=props;
