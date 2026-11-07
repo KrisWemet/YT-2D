@@ -42,10 +42,10 @@ def request(c,index):
  inp={'speakers':[{'speaker_id':'Speaker 1','voice_name':v['voice_name'],
        'audio_profile':v.get('audio_profile',''),'style':c.get('style','Deadpan'),
        'pace':'Natural','accent':'American (Gen)'}],
-      'dialogue_turns':[{'speaker_id':'Speaker 1','text':c['text']}],
-      'scene':plan['scene'] if c['who']=='danny' else
+      'dialogue_turns':[{'speaker_id':'Speaker 1','text':c.get('synthesis_text',c['text'])}],
+      'scene':c.get('delivery_scene') or (plan['scene'] if c['who']=='danny' else
        'A wary teenage boy and a night guard speak plainly in a dark mall.' if c['who']=='theo' else
-       'A woman talks over a security walkie-talkie at night, unhurried and amused.',
+       'A woman talks over a security walkie-talkie at night, unhurried and amused.'),
       'sample_context':plan['sample_context'],'temperature':1}
  kie=ns['kie'];task=meta.with_suffix('.task.json')
  if task.exists():
@@ -136,6 +136,26 @@ for c in chunks:
 if missing:raise SystemExit('Unaccepted or missing chunks; resume and retake these before final rendering: '+','.join(missing))
 if args.only:raise SystemExit('Selected chunks recorded. Run --build-only without --only to assemble the chapter.')
 ns['build']()
+# Leave a ten-second end card. If the recordings fall outside the requested
+# half-hour range, make one pitch-preserving tempo adjustment before alignment.
+segments_file=VO/'segments.json'
+assembled=json.loads(segments_file.read_text())
+target=30*60-10
+if abs(assembled['duration']-target)>45:
+ original=VO/'vo.wav'
+ adjusted=VO/'vo-fitted.wav'
+ tempo=assembled['duration']/target
+ subprocess.run(['ffmpeg','-v','error','-y','-i',str(original),'-af',f'atempo={tempo:.8f}',str(adjusted)],check=True)
+ actual=sf.info(adjusted).duration
+ ratio=actual/assembled['duration']
+ for segment in assembled['segments']:
+  for key in ('s','e'):
+   segment[key]=round(segment[key]*ratio,3)
+ assembled['duration']=round(actual,3)
+ adjusted.replace(original)
+ segments_file.write_text(json.dumps(assembled,indent=1))
+ print(f'Fitted narration to {actual:.2f}s at {tempo:.3f}× tempo, retaining pitch.',flush=True)
+(ROOT/'public/mall/ch2').mkdir(parents=True,exist_ok=True)
 subprocess.run([sys.executable,str(HERE/'make_plan.py')],check=True)
 subprocess.run(['bash',str(MALL/'vo_export.sh'),str(VO/'vo.wav'),str(ROOT/'public/mall/ch2/vo.mp3')],check=True)
 # Align each assembled spoken chunk independently to prevent drift over the half-hour narration.

@@ -45,12 +45,16 @@ for part in parts:
    else:
     chunk_idx+=1
     chunks.append({'id':f'c2_{number:02d}_v{chunk_idx:03d}','who':who,'text':text,'section':number,
-                   'paragraphs':[pid],'style':'Deadpan' if who=='danny' else 'Natural',
+                   'paragraphs':[pid],'style':'Deadpan',
                    'pace':'Natural','gap':0.20,'lufs':-20.5 if number in [1,9,10] else -18.0,
                    **({'radio':'vera','lufs':-19.5} if who=='vera' else {})})
   paragraphs[-1]['chunks']=[c['id'] for c in chunks if pid in c['paragraphs']]
  chunks[-1]['section_end']=True
  chunks[-1]['gap']=4.0 if number==1 else 1.1
+for chunk in chunks:
+ if chunk['id']=='c2_11_v009':
+  chunk['synthesis_text']='He said. You know ONE?'
+  chunk['delivery_scene']='Danny asks Theo if he knows a different route through the mall. The question ends with the number one.'
 base=json.loads((HERE.parent/'vo/ch1/plan.json').read_text())
 voices={k:base['voices'][k] for k in ['danny','vera']}
 voices['theo']={'voice_name':'Puck','accent':'American (Gen)',
