@@ -20,7 +20,8 @@ A stick-figure zombie survival story for YouTube. It has long chapters (16:9) an
 | Chapter 1 thumbnail (16:9) | still | | ⬜ To make | |
 | Chapter 2: The Boy in the Ceiling | 16:9 | ~30:00 | 📝 Script done (5,233 words, written with GPT) | `images/mall/chapter2/manuscript.md` |
 | Chapter 3: The Pharmacy | 16:9 | ~31:00 | 📝 Script done (5,367 words) | `images/mall/chapter3/manuscript.md` |
-| Chapters 4–6 | 16:9 | ~30:00 each | ⬜ Planned | outline |
+| Chapter 4: Across the Highway | 16:9 | ~30:00 | 📝 Script done (5,100 words) | `images/mall/chapter4/manuscript.md` |
+| Chapters 5–6 | 16:9 | ~30:00 each | ⬜ Planned | outline |
 | Channel picture and banner | stills | | ✅ Done | `publish/channel/` |
 
 ## Long videos (chapters)
