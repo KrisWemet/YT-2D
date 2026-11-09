@@ -18,8 +18,9 @@ A stick-figure zombie survival story for YouTube. It has long chapters (16:9) an
 | Short 3: One-Forty | 9:16 | 0:48 | ✅ Rendered | `publish/night-guard-shorts-1-3.md` |
 | Shorts 4–14 from Chapter 1 | 9:16 | ~0:45–1:30 each | ⬜ To make | the outline's 14 segments |
 | Chapter 1 thumbnail (16:9) | still | | ⬜ To make | |
-| Chapter 2: The Boy in the Ceiling | 16:9 | ~15:00 | ⬜ To write | outline, Chapter 2 |
-| Chapters 3–6 | 16:9 | | ⬜ Planned | outline |
+| Chapter 2: The Boy in the Ceiling | 16:9 | ~30:00 | 📝 Script done (5,233 words, written with GPT) | `images/mall/chapter2/manuscript.md` |
+| Chapter 3: The Pharmacy | 16:9 | ~31:00 | 📝 Script done (5,367 words) | `images/mall/chapter3/manuscript.md` |
+| Chapters 4–6 | 16:9 | ~30:00 each | ⬜ Planned | outline |
 | Channel picture and banner | stills | | ✅ Done | `publish/channel/` |
 
 ## Long videos (chapters)
