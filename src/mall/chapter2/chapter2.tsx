@@ -1,49 +1,42 @@
 import React from 'react';
 import type {ShortData} from '../cues';
 import {ChapterDef,CShot,FPS} from '../MallChapter';
-import {Chapter2Scene,Mode} from './scenes';
+import {Chapter2Scene} from './scenes';
+import {PICTURE_EDIT} from './picture-edit';
 import {ROOF_RECUT_END, ROOF_RECUT_START, RoofCutaways} from './roof-cutaways';
-import type {P} from '../shots';
 import ch2 from './ch2.json';
 
 export const CHAPTER2_READY=ch2.timing==='recorded'&&ch2.voiceReady;
-type Chunk=(typeof ch2.segments)[number];
-const modeFor=(c:Chunk):Mode=>{
- const t=c.text.toLowerCase(),n=c.section;
- if(t.includes('let me back up'))return 'rewind';
- if(c.who==='vera')return 'vera';
- if(n===1){if(/faces|woman with|cleaner/.test(t))return 'crowd';if(/empty clip|and marcus|he comes/.test(t))return 'marcus';if(/theo|kid i nearly/.test(t))return 'rescue';return 'fall';}
- if(n===2){if(/phone|radio|button|volume|speaker/.test(t))return 'radio';if(/window|blinked|highway/.test(t))return 'window';return 'roof';}
- if(n===3){if(/padlock|key thirty/.test(t))return 'lock';if(/roof|nine|blinks|flashlight/.test(t))return 'window';if(/slept|sleep|sleeping/.test(t))return 'sleep';return 'food';}
- if(n===4){if(/pipe|shelf|tile|up once|above/.test(t))return 'rack';if(/trail|footprint|trainer|print|square of/.test(t))return 'prints';return 'chalk';}
- if(n===5){if(/tile lifted|fingers appeared|lowering|rack|shelf/.test(t))return 'theo';if(/shadow|dragged|hallway/.test(t))return 'lock';return 'talk';}
- if(n===6){if(/elevator|song|sing/.test(t))return 'theo';if(/ceiling|projection|cinema/.test(t))return 'cinema';if(/bottle|ten days|gallons|ones left/.test(t))return 'water';return 'talk';}
- if(n===7){if(/eight thousand|fountain|tank/.test(t))return 'tank';if(/route|ladder|pump.room|above the cinema/.test(t))return 'plan';if(/roof|blinked|insulin|highway/.test(t))return 'window';if(/container|carry|bottles|water/.test(t))return 'water';return 'talk';}
- if(n===8){if(/radio|battery/.test(t))return 'radio';if(/many|every night|annoying|keys/.test(t))return 'keys';if(/key seventeen|lock turn|climbing around/.test(t))return 'door';if(/walkway|heads|proper walkway|floor is/.test(t))return 'ceiling';if(/blanket|photograph|hoodie|cinema|bed/.test(t))return 'cinema';return 'ceiling';}
- if(n===9){if(/folded|dropped|leg punched|pieces fell|head turned|caught my wrist|foot|boot/.test(t))return 'fall';if(/marcus|rattled|next one|who it was/.test(t))return 'marcus';if(/hundred|fountain|shoulder to shoulder/.test(t))return 'crowd';return 'ceiling';}
- if(n===10){if(/boot finally|landed inside/.test(t))return 'boot';if(/trouser|blood|brace|shoe|water dripped/.test(t))return 'cut';if(/elbow|strap|knee slid|palms|breathing/.test(t))return 'rescue';return 'fall';}
- if(n===11){if(/drill|three of them|one.thirty|first night|cutting|chainsaw|keep drilling/.test(t))return 'drill';if(/tank|thousand|glass|hand against/.test(t))return 'tank';return 'pump';}
- if(n===12){if(/drill|same voice|right below|they saw|one of the men|machine|kept saying/.test(t))return 'drill';if(/roof|nine|lights from lily/.test(t))return 'window';if(/first.aid|cut|bucket|bandage/.test(t))return 'bandage';if(/boot|marcus|return trip|containers|blanket|cinema/.test(t))return 'ceiling';if(/back to summit|padlock|gate|lock/.test(t))return 'store';return 'pump';}
- if(n===13){if(/bandage|cut|leg|wrapper|scrape/.test(t))return 'bandage';if(/radio|button|vera called/.test(t))return 'radio';if(/flashlight|five to nine|see\?/.test(t))return 'roof';return 'tent';}
- if(n===14){if(/b3|keys|last red|tag|walt|last key|hanging from/.test(t))return 'keys';if(/department store roof|right|stranger|pointed|somebody else|woman copying/.test(t))return 'signal';if(/window|nine|one\. two|answered|highway/.test(t))return 'window';return 'roof';}
- return 'store';
-};
-
-const shots:CShot[]=[];
-for(let i=0;i<ch2.segments.length;i++){
- const c=ch2.segments[i];const mode=modeFor(c);const start=Math.max(0,c.s-.08);
- const draw = (p: P, variant: number) => c.section === 2 && p.frame >= ROOF_RECUT_START * FPS && p.frame < ROOF_RECUT_END * FPS
-  ? <RoofCutaways frame={p.frame} />
-  : <Chapter2Scene p={p} mode={mode} section={c.section} speaker={c.who} variant={variant}/>;
- shots.push({at:i===0?'0':`=${start}`,draw:p=>draw(p,i)});
- // A second angle keeps extended narration moving, anchored to the recorded chunk.
- if(c.e-c.s>12){
-  const mid=(c.s+c.e)/2;
-  shots.push({at:`=${mid}`,draw:p=>draw(p,i+1)});
+const tokens = (text: string) => text.toLowerCase().replace(/’/g, "'").match(/[a-z0-9]+(?:'[a-z]+)?/g) ?? [];
+const shots: CShot[] = [];
+for (const part of ch2.parts) {
+ const beats = PICTURE_EDIT[part.n as keyof typeof PICTURE_EDIT];
+ const words = ch2.cwords.flatMap(w => ch2.segments[w.seg].section === part.n
+  ? tokens(w.w).map(token => ({token, time: w.s, speaker: ch2.segments[w.seg].who})) : []);
+ let cursor = 0;
+ for (const [index, [phrase, mode]] of beats.entries()) {
+  let start = part.n === 1 ? 0 : part.s - .08;
+  let speaker: string | undefined;
+  const pulses: Record<string, number> = {};
+  if (phrase) {
+   const match = tokens(phrase);
+   const i = words.findIndex((_, n) => n >= cursor && match.every((token, k) => words[n + k]?.token === token));
+   if (i < 0) throw new Error(`Missing picture cue in section ${part.n}: ${phrase}`);
+   start = words[i].time - .04;
+   speaker = words[i].speaker === 'theo' ? 'theo' : undefined;
+   cursor = i + match.length;
+   if (mode === 'window-count' || mode === 'signal-count') {
+    const count = words.findIndex((word, n) => n >= cursor && word.token === 'one'
+     && words[n+1]?.token === 'two' && words[n+2]?.token === 'three');
+    if (count < 0) throw new Error(`Missing three-flash cue: ${phrase}`);
+    for (const [n, name] of ['one','two','three'].entries()) pulses[name] = words[count+n].time - start;
+   }
+  }
+  shots.push({at: `=${start}`, draw: p => part.n === 2 && p.frame >= ROOF_RECUT_START * FPS && p.frame < ROOF_RECUT_END * FPS
+   ? <RoofCutaways frame={p.frame} />
+   : <Chapter2Scene p={{...p, ev: pulses}} mode={mode} section={part.n} speaker={speaker} variant={index} />});
  }
- if(c.section===1&&(i===ch2.segments.length-1||ch2.segments[i+1].section!==1)){
-  shots.push({at:`=${c.e+.15}`,draw:p=><Chapter2Scene p={p} mode="title" section={1} variant={0}/>});
- }
+ if (part.n === 1) shots.push({at: `=${part.e + .15}`, draw: p => <Chapter2Scene p={p} mode="title" section={1} variant={0} />});
 }
 shots.push({at:`=${ch2.duration}`,draw:p=><Chapter2Scene p={p} mode="end" section={14} variant={0}/>});
 const at=(text:string,section?:number)=>{

@@ -1,15 +1,16 @@
 import React from 'react';
 import {AbsoluteFill, interpolate} from 'remotion';
-import {Screen, Txt, Padlock, Waves, RewindFx} from '../Overlays';
+import {Screen, Txt, Grille, Padlock, Waves, RewindFx} from '../Overlays';
 import {Scene, Guard, Zed, P, Beyond, HoldGate, Vignette} from '../shots';
 import {Stick, StickProps, LOOKS, Pose, POSES, jointsOf} from '../Stick';
-import {ROOF_WIN} from '../chapter1/scenes';
-import {KeyRing16, KeyInHand, RadioCard, SleepingBag} from '../chapter1/props';
+import {GateScene, OfficeScene, ROOF_WIN} from '../chapter1/scenes';
+import type {PictureMode} from './picture-edit';
+import {KeyRing16, KeyInHand, RadioCard, SleepingBag, B3Door16} from '../chapter1/props';
 import {threeBlinks} from '../vertical';
 import {World, FULL} from '../World';
 
 const INK='#0b0c0c', GOLD='#f0c53c';
-export type Mode='store'|'sleep'|'food'|'lock'|'chalk'|'prints'|'rack'|'theo'|'talk'|'water'|'plan'|'ceiling'|'fall'|'rescue'|'crowd'|'marcus'|'boot'|'cinema'|'door'|'pump'|'tank'|'drill'|'bandage'|'cut'|'tent'|'roof'|'window'|'signal'|'vera'|'radio'|'keys'|'title'|'rewind'|'end';
+export type Mode=PictureMode|'store'|'sleep'|'food'|'lock'|'chalk'|'prints'|'rack'|'theo'|'talk'|'water'|'plan'|'ceiling'|'fall'|'rescue'|'crowd'|'marcus'|'boot'|'cinema'|'door'|'pump'|'tank'|'drill'|'bandage'|'cut'|'tent'|'roof'|'window'|'signal'|'vera'|'radio'|'keys'|'title'|'rewind'|'end';
 export const THEO={skin:'#d3ac87',shirt:'#61776c',hair:'messy' as const,hairColor:'#392d25',hat:'hood' as const,hatColor:'#61776c',bulk:.82};
 const crawl:Pose={lean:80,head:-40,armF:[65,88],armN:[70,93],legF:[-85,-90],legN:[-75,-85],sit:true};
 const bandagePose:Pose={lean:60,head:-20,armF:[50,20],armN:[55,20],legF:[75,-70],legN:[95,-5],sit:true};
@@ -50,9 +51,9 @@ const footprint=(x:number,y:number,r:number,k:number)=><g key={k} transform={`tr
 
 const Store:React.FC<{p:P;mode:Mode;variant:number;speaker?:string;section:number}>=({p,mode,variant,speaker,section})=>{
  const detail=variant%3;const dropping=mode==='theo'&&section===5;const isTalk=['talk','theo','water','tent'].includes(mode);
- const focus=mode==='rack'?cam(2130,780,1.55):mode==='chalk'||mode==='prints'?cam(1690,1270,1.9):mode==='food'?cam(1170,1230,2.0):mode==='sleep'?cam(1020,1300,1.7):mode==='bandage'?cam(1720,1250,2.2):
+ const focus=mode==='rack'?cam(2130,780,1.55):mode==='chalk'||mode==='prints'?cam(1690,1270,1.9):['food','food-two','inventory'].includes(mode)?cam(1330,1200,1.72):mode==='sleep'||mode==='search-bag'?cam(1020,1300,1.7):mode==='bandage'?cam(1720,1250,2.2):
  isTalk?(detail===1?cam(speaker==='theo'?1820:1020,1100,1.9):cam(1460,1110,1.35)):cam(1408,960,1.15);
- const danPose=mode==='sleep'?POSES.sitHug:mode==='chalk'||mode==='prints'?POSES.crouch:mode==='rack'?POSES.lookUp:mode==='bandage'?bandagePose:isTalk?POSES.think:POSES.standRelax;
+ const danPose=mode==='sleep'?POSES.sitHug:mode==='search-bag'?POSES.crouch:mode==='chalk'||mode==='prints'?POSES.crouch:mode==='rack'?POSES.lookUp:mode==='bandage'?bandagePose:isTalk?POSES.think:POSES.standRelax;
  const shift=Math.sin(p.t*.8)*1.2;
  return <Scene bg="sportsinside" a={focus} b={{...focus,z:focus.z+.06,x:focus.x+(variant%2?12:-12)}} p={p} filter="brightness(.94)">
  <Beyond><Zed x={1420+Math.sin(p.t*.15)*30} y={930} h={270} dim={.55} ghost/></Beyond><HoldGate frac={1} opacity={.7}/>
@@ -61,10 +62,14 @@ const Store:React.FC<{p:P;mode:Mode;variant:number;speaker?:string;section:numbe
  {mode==='prints'&&<g>{[0,1,2,3,4,5].map(i=>footprint(1240+i*118,1400-i*12,65+(i%2?12:-12),i))}{[0,1,2].map(i=>footprint(1960+i*42,1240-i*230,-9,i+6))}</g>}
  {!dropping&&<Guard x={mode==='bandage'?1530:1010} y={mode==='sleep'?1430:mode==='bandage'?1370:1470+shift} h={mode==='sleep'?630:680} pose={danPose} propN={mode==='rack'?'flashlight':mode==='lock'?'keys':'none'} eyes={mode==='sleep'?'closed':mode==='rack'?'wide':'worried'} mouth={speaker==='danny'&&isTalk&&Math.floor(p.t*5)%3!==0?'open':'flat'} sweat={mode==='rack'}/>}
  {((isTalk&&mode!=='tent')||mode==='bandage')&&!dropping&&<g><ellipse cx={mode==='bandage'?1830:1900} cy={1460} rx={76} ry={24} fill={INK} opacity={.25}/><path d={`M${(mode==='bandage'?1830:1900)-65} 1280H${(mode==='bandage'?1830:1900)+65}L${(mode==='bandage'?1830:1900)+54} 1450H${(mode==='bandage'?1830:1900)-54}Z`} fill="#687d7d" stroke={INK} strokeWidth={7}/></g>}
- {mode==='sleep'&&<SleepingBag x={1180} y={1435} s={1.6}/>}
+ {(mode==='sleep'||mode==='search-bag')&&<SleepingBag x={1180} y={1435} s={1.6}/>}
  {dropping?<Theo x={2080} y={1020-lerp(240,0,clamp(p.t/2))} h={535} pose={POSES.sneak} face={-1}/>:isTalk||mode==='bandage'?<Theo x={mode==='bandage'?1830:1900} y={mode==='tent'?1470:1310} h={600} pose={mode==='bandage'?POSES.sitChair:mode==='tent'?POSES.standRelax:POSES.sitChair} face={-1} hurt={section>=10} bandaged={section>=13} clean={section>=13} mouth={speaker==='theo'&&Math.floor(p.t*5)%3!==0?'open':'flat'}/>:null}
  {['food','sleep','chalk','prints','talk'].includes(mode)&&<Box x={1250} y={1370} s={.9} open={mode==='food'&&detail===1}/>}
- {mode==='food'&&<><Bar x={1300} y={1250} s={1.3}/><Bar x={1130} y={1330}/>{[0,1,2,3].map(i=><Jug key={i} x={1600+i*83} y={1395} s={.55}/>)}</>}
+ {['food','food-two','inventory'].includes(mode)&&<>
+  <Bar x={1295} y={1350} s={1.16}/>{mode==='food-two'&&<Bar x={1130} y={1375}/>}
+  {mode==='inventory'&&[0,1,2].map(i=><g key={i}><rect x={1390+i*63} y={1280} width={47} height={69} rx={7} fill="#9aa5ab" stroke={INK} strokeWidth={5}/><path d={`M${1396+i*63} 1300h35v27h-35Z`} fill="#987951"/></g>)}
+  {mode==='inventory'&&[0,1,2].map(i=><Jug key={i} x={1620+i*83} y={1395} s={.55}/>)}
+ </>}
  {['water','tent'].includes(mode)&&<><Jug x={1420} y={1410} s={.9}/><Jug x={1580} y={1425} s={.9}/></>}
  {mode==='lock'&&<Padlock x={1430} y={950} s={1.1}/>}
  {mode==='tent'&&<g><path d="M1540 1445Q1680 1100 2025 1445Z" fill="#365f68" stroke={INK} strokeWidth={12}/><path d="M1740 1445L1785 1250L1840 1445Z" fill="#0e1b24" stroke={INK} strokeWidth={7}/><path d="M1540 1445H2025" stroke="#a4b19d" strokeWidth={8}/></g>}
@@ -75,19 +80,27 @@ const Store:React.FC<{p:P;mode:Mode;variant:number;speaker?:string;section:numbe
 // The painted cutaway fixes the ledge at y=426 in screen coordinates. Animate only
 // the figures, the tile break, and the loose boot, so all three share the same camera.
 const Ceiling:React.FC<{p:P;mode:Mode;variant:number;section:number}>=({p,mode,variant,section})=>{
- const fall=mode==='fall', rescue=mode==='rescue', cut=mode==='cut';
- const close=mode==='marcus'||mode==='crowd';
- const zoom=cut?1.8:close?1.45:variant%3===1?1.15:1;
- const pan=cut?[-1230,-270]:close?[-330,-405]:zoom>1?[-120,-40]:[0,0];
- const move=mode==='ceiling'?Math.min(70,p.t*4):0;
+ const strap=mode==='strap';
+ const fall=['fall','fall-detail','collapse','strap'].includes(mode), rescue=mode==='rescue', cut=mode==='cut';
+ const detail=mode==='fall-detail'||strap;
+ const memory=mode==='fountain-memory';
+ const marcusDetail=mode==='marcus-detail';
+ const marcusX=730+(marcusDetail?0:Math.sin(p.t*.25)*12);
+ const marcusPose=mode==='marcus'?POSES.rattle:fall||mode==='marcus-up'?POSES.lookUp:POSES.zLimp;
+ const chest=jointsOf(marcusPose,marcusX,1020,235).chestRadio;
+ const close=marcusDetail||['marcus','marcus-up','crowd','fountain-memory','boot-rest'].includes(mode);
+ const zoom=marcusDetail?3.9:cut?2.05:detail?1.85:mode==='crawl-close'||mode==='walkway'?1.4:close?1.45:variant%3===1?1.15:1;
+ const pan=marcusDetail?[960-chest[0]*zoom,605-chest[1]*zoom]:cut?[-1640,-350]:detail?[-480,-155]:mode==='crawl-close'||mode==='walkway'?[-315,-95]:close?[-330,-405]:zoom>1?[-120,-40]:[0,0];
+ const move=['ceiling','crawl-close','walkway','return'].includes(mode)?Math.min(115,p.t*10):0;
  const shake=fall?Math.sin(p.t*18)*1.5:0;
- const bootFall=mode==='boot'?clamp(p.t/1.7):0;
+ const bootFall=mode==='boot-rest'?1:mode==='boot'?clamp(p.t/1.15):0;
+ const collapse=mode==='collapse'?clamp(p.t/.48):1;
  return <AbsoluteFill style={{background:'#111921',overflow:'hidden'}}>
   <AbsoluteFill style={{transform:`translate(${pan[0]}px,${pan[1]}px) scale(${zoom})`,transformOrigin:'0 0'}}>
    <World bg="ch2-ceiling" cam={FULL} width={1920} height={1080}/>
    <Screen>
     {/* Smaller figures occupy the floor behind the fountain, with larger figures in front. */}
-    {Array.from({length:78},(_,i)=>{
+    {!memory&&Array.from({length:78},(_,i)=>{
      const row=Math.floor(i/17),span=650+row*260;
      const x=960-span/2+((i*139)%span),y=714+row*47;
      const size=.62+row*.08;
@@ -96,28 +109,30 @@ const Ceiling:React.FC<{p:P;mode:Mode;variant:number;section:number}>=({p,mode,v
       <path d="M0-53V-18M0-43L-23-27M0-43L22-24M0-18L-12 2M0-18L12 3" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round"/>
      </g>;
     })}
-    {Array.from({length:16},(_,i)=><Zed key={i} x={100+i*111+Math.sin(p.t*.3+i)*3} y={1018+(i%3)*18} h={178+(i%3)*18} k={i} face={i%2?1:-1} shadow={.1} dim={.88}/>)}
-    <Stick x={730+Math.sin(p.t*.25)*12} y={1020} h={235} look={{...LOOKS.marcusZ,radioOnChest:false}} pose={mode==='marcus'?POSES.rattle:fall?POSES.lookUp:POSES.zLimp} eyes="zombie" mouth="zombie" shadow={.15}/>
-    {(fall||rescue)&&<>
+    {!memory&&Array.from({length:16},(_,i)=><Zed key={i} x={100+i*111+Math.sin(p.t*.3+i)*3} y={1018+(i%3)*18} h={178+(i%3)*18} k={i} face={i%2?1:-1} shadow={.1} dim={.88}/>)}
+    {!memory&&<Stick x={marcusX} y={1020} h={235} look={{...LOOKS.marcusZ,radioOnChest:false}} pose={marcusPose} eyes="zombie" mouth="zombie" shadow={.15}/>}
+    {!memory&&<rect x={chest[0]-5} y={chest[1]-5} width={10} height={16} rx={2} fill="#6d747e" stroke={INK} strokeWidth={2.5}/>}
+    {(fall||rescue||mode==='return')&&collapse>.6&&<>
      <path d="M930 431L950 408L974 432L1013 402L1048 430L1080 415L1114 438V475H930Z" fill="#111821" stroke={INK} strokeWidth={6}/>
      <path d="M947 470L985 514L1020 476M1064 467L1102 499" fill="#9b9e93" stroke={INK} strokeWidth={5}/>
     </>}
-    <g transform={`translate(${shake},0)`}>
+    {!close&&<g transform={`translate(${shake},0)`}>
      {fall?<>
-      <Guard x={980} y={428} h={350} pose={hanging} eyes="wide" mouth="grit" sweat shadow={0}/>
+      {strap&&<path d="M650 353L405 168L386 170L619 362" fill="none" stroke="#c1a364" strokeWidth={8}/>}
+      <Guard x={980} y={390+38*collapse} h={350} pose={collapse>.6?hanging:crawl} eyes="wide" mouth="grit" sweat shadow={0}/>
       <Theo x={563} y={423} h={320} face={1} pose={pull}/>
      </>:rescue?<>
       <path d="M650 353L405 168L386 170L619 362" fill="none" stroke="#c1a364" strokeWidth={8}/>
       <Guard x={980} y={414} h={350} face={-1} pose={crawl} eyes="wide" mouth="grit" sweat shadow={0}/>
-      <Theo x={563} y={414} h={320} face={1} pose={pull} hurt/>
+      <Theo x={563} y={414} h={320} face={1} pose={pull}/>
      </>:<>
       <Guard x={660+move} y={411} h={350} pose={crawl} eyes="worried" shadow={0}/>
-      <Theo x={1270+move} y={411} h={320} pose={crawl} hurt={section>=10}/>
+      <Theo x={1270+move} y={411} h={320} pose={crawl} hurt={mode==='cut'||mode==='return'}/>
       <Jug x={1130+move} y={393} s={.43} full={section>=12}/>
      </>}
-    </g>
-    {fall&&Array.from({length:8},(_,i)=><path key={i} d="M-6-3L9-6L7 7Z" transform={`translate(${960+i*17},${500+((p.t*74+i*83)%380)}) rotate(${p.t*20+i*32})`} fill="#b7b5a2"/>)}
-    {mode==='boot'&&<g transform={`translate(1005,${505+bootFall*407}) rotate(${bootFall*110})`}><path d="M-25-40H24V12H66Q82 20 75 35H-29Z" fill="#34343a" stroke={INK} strokeWidth={8}/></g>}
+    </g>}
+    {fall&&collapse>.6&&Array.from({length:8},(_,i)=><path key={i} d="M-6-3L9-6L7 7Z" transform={`translate(${960+i*17},${500+((p.t*74+i*83)%380)}) rotate(${p.t*20+i*32})`} fill="#b7b5a2"/>)}
+    {(mode==='boot'||mode==='boot-rest')&&<g transform={`translate(1005,${505+bootFall*407}) rotate(${bootFall*110})`}><path d="M-25-40H24V12H66Q82 20 75 35H-29Z" fill="#34343a" stroke={INK} strokeWidth={8}/></g>}
    </Screen>
   </AbsoluteFill>
   <Vignette o={.16}/>
@@ -126,25 +141,63 @@ const Ceiling:React.FC<{p:P;mode:Mode;variant:number;section:number}>=({p,mode,v
 
 const Pump:React.FC<{p:P;mode:Mode;variant:number;speaker?:string;section:number}>=({p,mode,speaker,section})=>{
  const tankDetail=mode==='tank';
- const focus=tankDetail?cam(1404,752,1.57):cam(1408,865,1.02);
+ const ladder=mode==='ladder';
+ const filling=mode==='fill-jugs';
+ const focus=ladder?cam(420,720,1.95):mode==='gauge'?cam(2030,730,3.1):tankDetail?cam(1404,752,1.57):
+  filling||mode==='pump-jugs'?cam(1340,1220,1.75):mode==='pump-theo'?cam(2075,1110,1.6):cam(1408,865,1.02);
+ const climbPose:Pose={...POSES.lookUp,armN:[117,145],armF:[135,160],legN:[30,-28],legF:[-14,13]};
  return <Scene bg="ch2-pump" a={focus} b={{...focus,z:focus.z+.05}} p={p}>
   <text x={1404} y={693} fontFamily="DejaVu Sans,sans-serif" fontWeight={900} fontSize={47} textAnchor="middle" fill="#293130">8,000 GALLONS</text>
   <text x={1404} y={739} fontFamily="DejaVu Sans,sans-serif" fontWeight={700} fontSize={19} textAnchor="middle" fill="#3a4039">FOUNTAIN RESERVOIR</text>
-  {section!==7&&<>
-   <Guard x={810} y={1425} h={590} pose={tankDetail?POSES.holdUp:POSES.standRelax} eyes="worried" mouth={speaker==='danny'&&Math.floor(p.t*5)%3?'open':'flat'}/>
+  {ladder&&<>
+   <Guard x={310} y={650+Math.min(p.t*120,635)} h={500} pose={climbPose} back/>
+   <Theo x={325} y={355+Math.min(p.t*106,665)} h={415} pose={climbPose} back hurt/>
+  </>}
+  {!ladder&&section!==7&&mode!=='gauge'&&<>
+   <Guard x={filling?1085:810} y={1425} h={590} pose={filling?POSES.crouch:tankDetail?POSES.holdUp:POSES.standRelax} eyes="worried"/>
    <Theo x={2110} y={1430} h={510} face={-1} hurt mouth={speaker==='theo'&&Math.floor(p.t*5)%3?'open':'flat'}/>
-   <Jug x={1330} y={1400} s={.87}/><Jug x={1500} y={1420} s={.87}/>
+   <Jug x={1330} y={1400} s={.87} full={!filling||p.t>1.4}/><Jug x={1500} y={1420} s={.87}/>
+   {filling&&<path d="M1337 1274v58" stroke="#9ddbe4" strokeWidth={5+Math.sin(p.t*17)} strokeLinecap="round"/>}
   </>}
  </Scene>;
 };
 
+const PumpAction: React.FC<{p:P;mode:Mode}> = ({p,mode}) => {
+ const impact=mode==='pump-impact';
+ const catching=mode==='pump-catch';
+ const nearLadder=impact||catching;
+ const recoil=clamp(1-Math.abs(p.t-1.8)/.2);
+ const dannyX=nearLadder?520-48*clamp((p.t-.22)/1.15)+25*recoil:1110;
+ const theoX=nearLadder?788:1980;
+ const dannyPose:Pose=impact
+  ? p.t<.34?POSES.crouch:{...POSES.lookBack,lean:-5+recoil*20,head:15}
+  : catching?POSES.lookBack:{...POSES.holdUp,armF:[-14,-10]};
+ const theoPose=catching?POSES.crouch:POSES.standRelax;
+ const hands=jointsOf(dannyPose,dannyX,1375,575,-1);
+ const catchHand=jointsOf(theoPose,theoX,1375,480,-1).handN;
+ const focus=nearLadder?cam(665,1060,1.9):cam(1490,1115,1.44);
+ return <Scene bg="ch2-pump" a={focus} b={{...focus,z:focus.z+.04}} p={p}>
+  <Guard x={dannyX} y={1375} h={575} pose={dannyPose} face={-1} eyes="wide" sweat={impact&&recoil>0}/>
+  <Theo x={theoX} y={1375} h={480} pose={theoPose} face={-1} hurt/>
+  {nearLadder?<>
+   <Jug x={catching?catchHand[0]:642} y={catching?catchHand[1]+74-100*(1-clamp(p.t/.33)):1380} s={.82}/>
+   <Jug x={875} y={1380} s={.82}/>
+  </>:<>
+   <Jug x={hands.handN[0]} y={hands.handN[1]+74} s={.82}/>
+   <Jug x={hands.handF[0]} y={hands.handF[1]+74} s={.82}/>
+  </>}
+  {impact&&recoil>0&&<path d="M376 967l-28-15m33-4l-13-29m19 46l-35 10" stroke="#e4ce9d" strokeWidth={6} strokeLinecap="round" opacity={recoil}/>}
+ </Scene>;
+};
+
 const Cinema:React.FC<{p:P;mode:Mode;variant:number}>=({p,mode,variant})=>{
- const focus=mode==='door'?cam(1890,925,1.25):cam(1408,836,1.03);
+ const focus=mode==='cinema-bedding'?cam(590,1145,2.2):mode==='door'||mode==='door-open'?cam(1890,925,1.25):cam(1408,836,1.03);
  return <Scene bg="ch2-cinema" a={focus} b={{...focus,z:focus.z+.06}} p={p}>
   <text x={2235} y={521} fill="#30332d" textAnchor="middle" fontFamily="DejaVu Sans,sans-serif" fontSize={25} fontWeight={900}>CINEMA</text>
   <text x={2235} y={549} fill="#30332d" textAnchor="middle" fontFamily="DejaVu Sans,sans-serif" fontSize={22} fontWeight={800}>SERVICE</text>
   <Theo x={1205} y={1425} h={530} pose={POSES.standRelax}/>
-  <Guard x={1840} y={1395} h={625} pose={mode==='door'?POSES.lock:POSES.standRelax} propN={mode==='door'?'keys':'none'} eyes="worried"/>
+  {mode==='door-open'&&<path d="M1900 260L2020 293V1207L1900 1233Z" fill="#121c27" stroke="#55636b" strokeWidth={9}/>}
+  {mode!=='cinema-memory'&&<Guard x={1840} y={1395} h={625} pose={mode==='door'||mode==='door-open'?POSES.lock:POSES.standRelax} propN={mode==='door'?'keys':'none'} eyes="worried"/>}
  </Scene>;
 };
 
@@ -156,22 +209,29 @@ const Route:React.FC<{p:P}>=({p})=><AbsoluteFill style={{background:'#17212e'}}>
  </Screen></AbsoluteFill>;
 
 const Roof:React.FC<{p:P;mode:Mode;variant:number;section:number}>=({p,mode,section})=>{
- const phase=threeBlinks(p.t,.3);
- const windowShot=mode==='window';
- const focus=windowShot?cam(ROOF_WIN.x,402,3.0):cam(1430,955,1.025);
- const signal=mode==='signal'?phase:0;
+ const cueFlashes=(mode==='window-count'||mode==='signal-count')?[p.ev.one,p.ev.two,p.ev.three]:[];
+ const phase=cueFlashes.length ? Number(cueFlashes.some(t=>Number.isFinite(t)&&p.t>=t&&p.t<t+.25)) : threeBlinks(p.t,.3);
+ const windowShot=['window','window-count','dark-window'].includes(mode);
+ const windowPulse=mode==='dark-window'?0:phase;
+ const reply=mode==='roof-reply';
+ const radio=mode==='roof-radio';
+ const door=mode==='roof-door';
+ const signal=mode==='signal'||mode==='signal-count'?phase:0;
+ const focus=windowShot?cam(ROOF_WIN.x,402,3.0):door?cam(2460,739,2.15):radio?cam(1210,1120,2.25):cam(1430,955,1.025);
+ const {handN}=jointsOf(POSES.pointUp,1190,1530,595,1);
  return <Scene bg="ch2-roof-night" a={focus} b={{...focus,z:focus.z+.04}} p={p}>
   {windowShot?<>
-   <ellipse cx={ROOF_WIN.x} cy={ROOF_WIN.y} rx={22} ry={18} fill="#ffebad" opacity={phase*.23}/>
-   <rect x={ROOF_WIN.x-9} y={ROOF_WIN.y-10} width={18} height={20} fill="#fff3c3" opacity={phase}/>
+   <ellipse cx={ROOF_WIN.x} cy={ROOF_WIN.y} rx={22} ry={18} fill="#ffebad" opacity={windowPulse*.23}/>
+   <rect x={ROOF_WIN.x-9} y={ROOF_WIN.y-10} width={18} height={20} fill="#fff3c3" opacity={windowPulse}/>
   </>:<>
-   <Guard x={1190} y={1530} h={595} pose={mode==='radio'?POSES.radio:POSES.flashlight} propN={mode==='radio'?'radio':'flashlight'} eyes={mode==='signal'?'wide':'worried'} mouth="flat" dim={.83}/>
-   {section>=13&&<Theo x={865} y={1520} h={500} face={1} pose={POSES.standRelax} hurt bandaged clean dim={.83}/>}
+   {!door&&<Guard x={1190} y={1530} h={595} pose={reply?POSES.pointUp:radio?POSES.radio:POSES.standRelax} propN={radio?'radio':'flashlight'} back={reply} eyes="worried" dim={.83}/>}
+   {!door&&section>=13&&<Theo x={865} y={1520} h={500} face={1} pose={POSES.standRelax} hurt bandaged clean dim={.83}/>}
   </>}
-  {mode==='signal'&&<g>
-   {/* The copied signal comes from the low painted department store roof. */}
-   <path d={`M2450 715L${ROOF_WIN.x-8} ${ROOF_WIN.y-14}L${ROOF_WIN.x+15} ${ROOF_WIN.y+9}Z`} fill="#fff0ab" opacity={signal*.48}/>
+  {reply&&<path d={`M${handN[0]} ${handN[1]}L${ROOF_WIN.x-12} ${ROOF_WIN.y-10}L${ROOF_WIN.x+12} ${ROOF_WIN.y+11}Z`} fill="#fff0ab" opacity={phase*.6}/>}
+  {(mode==='signal'||mode==='signal-count'||door)&&<g>
+   <path d={`M2450 715L${ROOF_WIN.x-8} ${ROOF_WIN.y-14}L${ROOF_WIN.x+15} ${ROOF_WIN.y+9}Z`} fill="#fff0ab" opacity={signal*.56}/>
    <circle cx={2450} cy={715} r={13} fill="#fff8d8" opacity={signal}/>
+   {door&&section===2&&<ellipse cx={2450+Math.sin(p.t*2)*8} cy={715} rx={19} ry={7} fill="#e8d4a3" opacity={Math.max(0,.62-p.t*.14)}/>}
    <text x={2510} y={870} textAnchor="middle" fontFamily="DejaVu Sans,sans-serif" fontSize={29} fontWeight={800} fill="#8192a4">DEPARTMENT STORE</text>
   </g>}
  </Scene>;
@@ -194,16 +254,156 @@ const Drill:React.FC<{p:P;variant:number}>=({p})=>{
  </Scene>;
 };
 
+type DetailProps = {p: P; mode: Mode; section: number; speaker?: string};
+
+const GateBeat: React.FC<DetailProps> = ({p, mode}) => {
+ const isMarcus = mode==='hall-marcus';
+ const shift = Math.min(90,p.t*25);
+ return <GateScene p={p} a={cam(1440,735,2.6)} b={cam(1450,729,2.75)}
+  beyond={isMarcus
+   ? <Stick x={1385+shift} y={955} h={330} pose={p.t<1.2?POSES.rattle:POSES.zLimp} look={{...LOOKS.marcusZ,radioOnChest:false}} eyes="zombie" mouth="zombie" dim={.8}/>
+   : <Zed x={1380+shift} y={954} h={305} ghost dim={.53}/>}
+ />;
+};
+
+const Stockroom: React.FC<DetailProps> = ({p,mode,section}) => {
+ const radio=mode==='stock-radio';
+ const seated=mode==='stock-wait'||mode==='receipt';
+ const detail=['box-detail','box-bait','receipt'].includes(mode);
+ const focus=detail?cam(mode==='receipt'?1060:1450,1270,2.8):cam(1440,1050,1.33);
+ return <Scene bg="stockroom" a={focus} b={{...focus,z:focus.z+.09}} p={p} filter="brightness(.81)">
+  <Box x={1450} y={1325} s={.98} open={mode==='stock-box'&&section===3}/>
+  {mode==='box-bait'&&<Bar x={1430} y={1224} s={.82}/>}
+  {mode==='box-detail'&&<path d="M1518 1243l32-13v33h-31Z" fill="#69757b" stroke={INK} strokeWidth={4}/>}
+  {mode==='theo-sleep'?<>
+   <SleepingBag x={1290} y={1440} s={1.5}/>
+   <Theo x={1320} y={1370} h={500} pose={POSES.sitHug} eyes="closed" hurt bandaged/>
+   <Jug x={1630} y={1425} s={.85}/><Jug x={1770} y={1425} s={.85}/>
+  </>:!detail&&<Guard x={1030} y={1460} h={625} pose={radio?POSES.radio:seated?POSES.sitHug:POSES.crouch} propN={radio?'radio':'none'} eyes="worried"/>}
+  {mode==='receipt'&&<g transform="translate(1100 1260) rotate(-11)">
+   <path d="M-102-156H102V148l-21-11-20 13-22-13-21 12-21-12-21 12-20-12-20 12-20-12-18 12Z" fill="#ddd6c0" stroke={INK} strokeWidth={5}/>
+   {['SUPPLIES','BARS   ||||','CANS   |||','WATER  ||||'].map((line,i)=><text key={line} x={-79} y={-102+i*54} fontSize={24} fontFamily="monospace" fill="#273043">{line}</text>)}
+   <path d="M125 96l37-168" stroke="#dba84e" strokeWidth={12} strokeLinecap="round"/>
+  </g>}
+ </Scene>;
+};
+
+const RackAction: React.FC<DetailProps> = ({p,mode,section,speaker}) => {
+ const tile=['tile','tile-dust','tile-dark','rack-top'].includes(mode);
+ const print=mode==='rack-prints';
+ const chase=mode==='theo-run';
+ const drop=mode==='theo-drop';
+ const ascending=mode==='theo-up';
+ const practice=mode==='rack-practice';
+ const climbing=ascending||mode==='theo-climb'||mode==='rack-return';
+ const perch=mode==='theo-perch'||mode==='theo-grab';
+ const closed=mode==='rack-wait'||mode==='tile';
+ const theoHere=drop||chase||practice||climbing||perch||['theo-box','theo-holds-bar','theo-leaves-bar','theo-close','confront','blanket'].includes(mode);
+ const foodAction=['theo-box','theo-holds-bar','theo-leaves-bar'].includes(mode);
+ const floor=foodAction||chase||mode==='confront';
+ const danHere=!tile&&!print&&!drop;
+ const focus=tile?cam(2185,385,2.52):print?cam(2120,980,2.18):drop?cam(2095,650,1.42):climbing||perch||practice?cam(2060,885,1.43):
+  mode==='theo-close'?cam(1825,1100,2.1):floor?cam(1470,1110,1.4):cam(1990,1070,1.55);
+ const progress=clamp(p.t/2.05);
+ const theoX=chase?lerp(1785,1100,progress):practice||floor||mode==='theo-close'||mode==='blanket'?1800:2070;
+ const theoY=drop?lerp(630,860,progress):ascending?lerp(1410,1010,progress):climbing?lerp(845,1220,progress):perch?990:1445;
+ const theoPose=chase?POSES.run:drop||climbing||perch?POSES.pointUp:foodAction?POSES.crouch:POSES.standRelax;
+ const hand=jointsOf(theoPose,theoX,theoY,535,-1).handN;
+ return <Scene bg="sportsinside" a={focus} b={{...focus,z:focus.z+.06}} p={p} filter={mode==='tile-dark'?'brightness(.37)':'brightness(.9)'}>
+  <HoldGate frac={1} opacity={.7}/>
+  <Rack tile t={p.t} open={!closed}/>
+  {print&&[0,1,2].map(i=>footprint(1960+i*42,1240-i*230,-9,i))}
+  {mode==='tile-dust'&&Array.from({length:8},(_,i)=><ellipse key={i} cx={2150+(i*29)%110} cy={305+((p.t*95+i*31)%460)} rx={3} ry={5} fill="#c9c6b3" opacity={.62}/>)}
+  {danHere&&<Guard x={mode==='theo-grab'?1820:mode==='rack-wait'?1770:practice?1990:mode==='rack-return'?1820:1100}
+   y={practice?lerp(1430,1180,progress):mode==='theo-grab'?1250:1480} h={655} pose={mode==='rack-wait'?POSES.crouch:practice||mode==='theo-grab'?POSES.pointUp:POSES.lookUp} eyes="worried"/>}
+  {theoHere&&<Theo x={theoX} y={theoY} h={535} pose={theoPose} face={-1} hurt={section>=12} bandaged={section>=13}
+   mouth={speaker==='theo'&&Math.floor(p.t*5)%3?'open':'flat'}/>}
+  {foodAction&&<>
+   <Box x={1530} y={1380} s={.8}/>
+   <Bar x={mode==='theo-holds-bar'?hand[0]:1570} y={mode==='theo-holds-bar'?hand[1]:mode==='theo-leaves-bar'?lerp(hand[1],1300,clamp(p.t/.65)):1300} s={.8}/>
+  </>}
+  {mode==='blanket'&&<rect x={1820} y={1170} width={170} height={76} rx={30} fill="#777967" stroke={INK} strokeWidth={7}/>}
+ </Scene>;
+};
+
+const StoreInsert: React.FC<DetailProps> = ({p,mode,section}) => {
+ const boots=mode==='trainer'||mode==='print-detail';
+ const carrying=mode==='carry-test';
+ const pack=mode==='pack'||carrying;
+ const grip=jointsOf(POSES.holdUp,1070,1450,655).handN;
+ const focus=boots?cam(1490,1280,2.25):cam(1500,1140,1.6);
+ return <Scene bg="sportsinside" a={focus} b={{...focus,z:focus.z+.075}} p={p} filter="brightness(.88)">
+  {boots&&<g transform="translate(1490 1290) rotate(-12)">
+   {mode==='trainer'?<>
+    <path d="M-135 21L-133-30Q-91-48-70-26L-45 1l67 16q28 12 14 37H-133Z" fill="#434d53" stroke={INK} strokeWidth={8}/>
+    <path d="M-131 45H33v21H-130Z" fill="#898983" stroke={INK} strokeWidth={6}/>
+    {section<=6&&<path d="M-116-37L-78-35V65H-114Z" fill="#b6ad8d" opacity={.85}/>}
+   </>:<>{footprint(0,-10,-30,0)}{footprint(125,70,-10,1)}</>}
+  </g>}
+  {pack&&<>
+   <Guard x={1070} y={1450} h={655} pose={carrying?POSES.holdUp:POSES.crouch} propN={mode==='pack'?'flashlight':'none'} eyes="worried"/>
+   <Jug x={carrying?grip[0]:1450} y={carrying?grip[1]+90:1380} s={.95} full={carrying}/><Jug x={1620} y={1395} s={.95} full={carrying}/>
+   {mode==='pack'&&<path d="M1720 1390q150-130 190-40q20 60-165 60q-86 0-4-56" fill="none" stroke="#bb9a60" strokeWidth={12}/>}
+  </>}
+  {mode==='wrapped-key'&&<g transform="translate(1490 1190) rotate(-12)">
+   <path d="M-76-127H65v141l96 24q49 20 34 65q-17 38-86 31l-156-39q-40-16-32-61Z" fill="#6f6b64" stroke={INK} strokeWidth={9}/>
+   <path d="M-41-122v182l142 44" fill="none" stroke="#8a8376" strokeWidth={6}/>
+   <circle cx={7} cy={-111} r={39} fill="none" stroke="#8c9192" strokeWidth={10}/>
+  </g>}
+  {(mode==='sweatshirt'||mode==='wrap-detail')&&<g transform="translate(1500 1290)">
+   <rect x={-155} y={-90} width={310} height={150} rx={16} fill={mode==='sweatshirt'?'#628694':'#b9b3a1'} stroke={INK} strokeWidth={7}/>
+   <path d="M-140 18H143M-60-81q60 66 120 0" fill="none" stroke="#3c515c" strokeWidth={6}/>
+  </g>}
+ </Scene>;
+};
+
+const Fitting: React.FC<DetailProps> = ({p,mode}) => (
+ <Scene bg="deptstore" a={cam(1530,1030,1.25)} b={cam(1560,1020,1.34)} p={p} filter="brightness(.76) saturate(.75)">
+  <path d="M1110 390H2180V1290H1110Z" fill="#3b4250" stroke={INK} strokeWidth={14}/>
+  <path d="M1160 450H1560V1275H1160Z M1710 450H2125V1275H1710Z" fill="#495264" stroke={INK} strokeWidth={10}/>
+  <path d="M1715 440H2115v712q-65-25-132 3q-72-25-138 0q-66-25-130 0Z" fill="#575069" stroke={INK} strokeWidth={7}/>
+  <text x={1635} y={363} fontSize={40} textAnchor="middle" fontFamily="sans-serif" fill="#c6c3bc" fontWeight={700}>FITTING ROOMS</text>
+  {mode==='fitting'&&<>
+   <path d="M1200 1250H1525V1300H1200Z" fill="#796752" stroke={INK} strokeWidth={9}/>
+   <Stick x={1350} y={1238} h={500} pose={POSES.sitChair} look={{...LOOKS.woman,shirt:'#5d5968'}} eyes="closed" back ghost/>
+  </>}
+ </Scene>
+);
+
+const HallBeat: React.FC<DetailProps> = ({p,mode}) => (
+ <Scene bg="ch2-service-hall" a={cam(1730,885,1.2)} b={cam(1760,881,1.28)} p={p} filter="brightness(.79)">
+  {mode==='service-crowd'&&Array.from({length:8},(_,i)=><Zed key={i} x={2010-i*124-Math.min(p.t*26,115)} y={1115+i*47} h={265+i*19} k={i} face={-1} dim={.75}/>)}
+  {mode==='service-exit'&&[0,1,2].map(i=><Stick key={i} x={1530+i*145+Math.min(p.t*68,205)} y={1330-i*34} h={500-i*45} look={i===0?LOOKS.woman:LOOKS.teenB} pose={Math.floor(p.t*4)%2?POSES.walkA:POSES.walkB} ghost back/>)}
+ </Scene>
+);
+
 export const Chapter2Scene:React.FC<{p:P;mode:Mode;variant:number;section:number;speaker?:string}>=props=>{
  const {p,mode,variant,section}=props;
- if(['ceiling','fall','rescue','crowd','marcus','boot','cut'].includes(mode))return <Ceiling {...props}/>;
- if(['pump','tank'].includes(mode))return <Pump {...props}/>;
- if(['cinema','door'].includes(mode))return <Cinema {...props}/>;
+ if(['ceiling','fall','fall-detail','collapse','rescue','strap','crowd','marcus','marcus-detail','marcus-up','boot','boot-rest','cut','crawl-close','walkway','return','fountain-memory'].includes(mode))return <Ceiling {...props}/>;
+ if(['pump','tank','ladder','gauge','pump-theo','pump-jugs','fill-jugs'].includes(mode))return <Pump {...props}/>;
+ if(['pump-impact','pump-catch','pump-pickup'].includes(mode))return <PumpAction {...props}/>;
+ if(mode==='dept-gate')return <Scene bg="deptstore" a={cam(1450,940,1.37)} b={cam(1485,922,1.44)} p={p} filter="brightness(.65) saturate(.8)">
+  <Grille x0={790} y0={235} x1={2090} y1={1350} frac={1}/>
+  <Guard x={1005} y={1510} h={650} pose={POSES.lookUp} back/>
+ </Scene>;
+ if(['cinema','door','door-open','cinema-memory','cinema-bedding'].includes(mode))return <Cinema {...props}/>;
+ if(mode==='hall-marcus'||mode==='gate-shadow')return <GateBeat {...props}/>;
+ if(['stock-box','stock-wait','stock-radio','box-detail','box-bait','receipt','theo-sleep'].includes(mode))return <Stockroom {...props}/>;
+ if(['tile','tile-dust','tile-dark','rack-top','rack-prints','rack-wait','rack-practice','rack-return','theo-drop','theo-climb','theo-up','theo-box','theo-holds-bar','theo-leaves-bar','confront','theo-close','theo-run','theo-grab','theo-perch','blanket'].includes(mode))return <RackAction {...props}/>;
+ if(['trainer','print-detail','carry-test','pack','wrapped-key','wrap-detail','sweatshirt'].includes(mode))return <StoreInsert {...props}/>;
+ if(mode==='fitting'||mode==='fitting-empty')return <Fitting {...props}/>;
+ if(['pump-door','service-crowd','service-exit'].includes(mode))return <HallBeat {...props}/>;
+ if(mode==='office-memory')return <OfficeScene p={p} a={cam(1590,899,1.18)} b={cam(1630,881,1.27)} danny={{pose:POSES.radio,propN:'radio'}}/>;
+ if(mode==='medicine')return <Scene bg="apartment" a={cam(1320,1090,2.1)} b={cam(1345,1095,2.2)} p={p} filter="brightness(.65)"><g transform="translate(1320 1180)"><rect x={-118} y={-67} width={236} height={134} rx={12} fill="#555d69" stroke={INK} strokeWidth={8}/><rect x={-83} y={-13} width={165} height={25} rx={8} fill="#d8d8ce"/><rect x={36} y={-14} width={48} height={28} rx={7} fill="#769da5"/></g></Scene>;
+ if(mode==='drill-clock')return <AbsoluteFill><Drill {...props}/><Screen><Txt x={1510} y={198} size={60} fill={GOLD}>1:30 A.M.</Txt></Screen></AbsoluteFill>;
+ if(mode==='b3-door')return <B3Door16 t={p.t} dur={p.dur} frame={p.frame}/>;
+ if(mode==='key17')return <KeyInHand t={p.t} tag="17"/>;
+ if(mode==='keys-plain')return <KeyRing16 t={p.t} tag=""/>;
  if(mode==='plan')return <Route p={p}/>;
  if(mode==='drill')return <Drill {...props}/>;
  if(mode==='keys')return <KeyRing16 t={p.t} tagBig={section===14?.9:0} glowAt={section===14?.2:1e9}/>;
  if(mode==='radio'||mode==='vera')return <RadioCard t={p.t} frame={p.frame} state={mode==='vera'?'crackle':'off'} label={mode==='vera'?'VERA':'NO TRANSMISSION'}/>;
- if(['roof','window','signal'].includes(mode))return <Roof {...props}/>;
+ if(['roof','window','dark-window','window-count','signal','signal-count','roof-reply','roof-radio','roof-door','roof-lowered'].includes(mode))return <Roof {...props}/>;
  if(mode==='title'||mode==='end')return <AbsoluteFill style={{background:'#101924'}}>
  <World bg={mode==='end'?'parkview':'concourse'} cam={{...FULL,z:1.05+.025*Math.min(p.t,8)}} width={1920} height={1080} filter="brightness(.25) blur(5px)"/>
  <Screen><g opacity={clamp(p.t/.35)}><Txt x={960} y={280} size={86}>THE NIGHT GUARD</Txt><Txt x={960} y={410} size={52} fill="#cbd2dd">{mode==='end'?'NEXT · CHAPTER THREE':'CHAPTER TWO'}</Txt><Txt x={960} y={580} size={mode==='end'?148:100} fill={GOLD}>{mode==='end'?'THE PHARMACY':'THE BOY IN THE CEILING'}</Txt><Txt x={960} y={755} size={42} fill="#cbd2dd">{mode==='end'?"SUBSCRIBE TO FOLLOW DANNY’S STORY":'BOOK ONE · FORTY-TWO KEYS'}</Txt></g></Screen>
