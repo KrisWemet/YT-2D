@@ -2,12 +2,29 @@ import React from 'react';
 import type {ShortData} from '../cues';
 import {ChapterDef,CShot,FPS} from '../MallChapter';
 import {Chapter2Scene} from './scenes';
+import type {Speech} from './motion';
 import {PICTURE_EDIT} from './picture-edit';
 import {ROOF_RECUT_END, ROOF_RECUT_START, RoofCutaways} from './roof-cutaways';
 import ch2 from './ch2.json';
 
 export const CHAPTER2_READY=ch2.timing==='recorded'&&ch2.voiceReady;
 const tokens = (text: string) => text.toLowerCase().replace(/’/g, "'").match(/[a-z0-9]+(?:'[a-z]+)?/g) ?? [];
+const theoSpeech = ch2.cwords.filter(w => ch2.segments[w.seg].who === 'theo');
+const theoAt = (time: number): Speech | undefined => {
+ const word = theoSpeech.find(w => time >= w.s && time < w.e);
+ if (!word) return;
+ const elapsed = time - word.s;
+ const progress = elapsed / Math.max(.075, word.e - word.s);
+ return {open: Math.sin(Math.PI * progress) > .3 && Math.cos(elapsed * 18) > -.6,
+  accent: Math.sin(Math.PI * Math.min(1, (time - ch2.segments[word.seg].s) / .8))};
+};
+
+const gateCues: Record<string, string> = {
+ "Then I heard two pulls": "two pulls",
+ "Outside, Marcus": "rattled",
+ "I heard Marcus": "at another gate",
+ "Marcus came around": "two pulls",
+};
 const shots: CShot[] = [];
 for (const part of ch2.parts) {
  const beats = PICTURE_EDIT[part.n as keyof typeof PICTURE_EDIT];
@@ -25,6 +42,12 @@ for (const part of ch2.parts) {
    start = words[i].time - .04;
    speaker = words[i].speaker === 'theo' ? 'theo' : undefined;
    cursor = i + match.length;
+   const gateCue = gateCues[phrase];
+   if (gateCue) {
+    const matchGate = tokens(gateCue);
+    const rattle = words.findIndex((_, n) => n >= i && matchGate.every((token, k) => words[n + k]?.token === token));
+    if (rattle >= 0) pulses.rattle = words[rattle].time - start;
+   }
    if (mode === 'window-count' || mode === 'signal-count') {
     const count = words.findIndex((word, n) => n >= cursor && word.token === 'one'
      && words[n+1]?.token === 'two' && words[n+2]?.token === 'three');
@@ -34,7 +57,7 @@ for (const part of ch2.parts) {
   }
   shots.push({at: `=${start}`, draw: p => part.n === 2 && p.frame >= ROOF_RECUT_START * FPS && p.frame < ROOF_RECUT_END * FPS
    ? <RoofCutaways frame={p.frame} />
-   : <Chapter2Scene p={{...p, ev: pulses}} mode={mode} section={part.n} speaker={speaker} variant={index} />});
+   : <Chapter2Scene p={{...p, ev: pulses}} mode={mode} section={part.n} speaker={speaker} speech={theoAt(p.frame / FPS)} variant={index} />});
  }
  if (part.n === 1) shots.push({at: `=${part.e + .15}`, draw: p => <Chapter2Scene p={p} mode="title" section={1} variant={0} />});
 }
