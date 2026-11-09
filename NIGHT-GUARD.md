@@ -64,7 +64,7 @@ How they're made:
 | Vera, the woman on the radio | Gacrux, whispering | not shown yet |
 | Emergency broadcast | Charon | |
 
-Stick-figure redesign options for Marcus are in `src/mall/MarcusVariants.tsx` (work in progress).
+Stick-figure style options for Marcus and Danny: `publish/characters/marcus-variations.jpg` and `danny-variations.jpg` (code: `src/mall/MarcusVariants.tsx`, stills `MarcusVariants` and `DannyVariants`).
 
 ## Where things live
 

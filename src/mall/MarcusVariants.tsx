@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {useFont} from '../thumbs/Thumbs';
 import {Txt} from './Overlays';
-import {HEAD_R, Look, Pose, POSES, skeleton, Stick} from './Stick';
+import {HEAD_R, Look, LOOKS, Pose, POSES, skeleton, Stick} from './Stick';
 import {World} from './World';
 
 /*
@@ -48,7 +48,9 @@ const VEST = '#d2ec36';
 const VEST_Z = '#a9b648';
 const HAIR = '#161212';
 
-type FigProps = {x: number; y: number; h: number; face?: 1 | -1; pose: Pose; zombie?: boolean};
+type FigProps = {x: number; y: number; h: number; face?: 1 | -1; pose: Pose; zombie?: boolean; danny?: boolean};
+const SKIN_D = '#d6a17a';
+const stache = (x: number, y: number, w: number) => `M ${x - w} ${y} Q ${x - w / 2} ${y - w * 0.6} ${x} ${y - w * 0.25} Q ${x + w / 2} ${y - w * 0.6} ${x + w} ${y} Q ${x + w / 2} ${y + w * 0.2} ${x} ${y} Q ${x - w / 2} ${y + w * 0.2} ${x - w} ${y} Z`;
 
 // The radio, upside down: antenna pointing down, the screen light near the bottom.
 const Radio: React.FC<{at: V2; rot: number; k?: number; glow?: boolean}> = ({at, rot, k = 1, glow}) => (
@@ -60,7 +62,7 @@ const Radio: React.FC<{at: V2; rot: number; k?: number; glow?: boolean}> = ({at,
 );
 
 // ---------------- A: classic stick ----------------
-const ClassicFig: React.FC<FigProps> = ({x, y, h, face = 1, pose, zombie}) => {
+const ClassicFig: React.FC<FigProps> = ({x, y, h, face = 1, pose, zombie, danny}) => {
   const k = skeleton(pose);
   const s = h / 300;
   const W = 9;
@@ -78,16 +80,19 @@ const ClassicFig: React.FC<FigProps> = ({x, y, h, face = 1, pose, zombie}) => {
       {line('af', k.shoulder, k.elbowF, k.handF)}
       {line('t', k.neck, k.hip)}
       {/* the hi-vis vest, a simple shape on the body line */}
-      <polygon points={pts(add(vt, mul(perp, -15)), add(vt, mul(perp, 15)), add(vb, mul(perp, 13)), add(vb, mul(perp, -13)))} fill={zombie ? VEST_Z : VEST} stroke={INK} strokeWidth={3.2} strokeLinejoin="round" />
+      {!danny && <><polygon points={pts(add(vt, mul(perp, -15)), add(vt, mul(perp, 15)), add(vb, mul(perp, 13)), add(vb, mul(perp, -13)))} fill={zombie ? VEST_Z : VEST} stroke={INK} strokeWidth={3.2} strokeLinejoin="round" />
       <line x1={add(st, mul(perp, -14))[0]} y1={add(st, mul(perp, -14))[1]} x2={add(st, mul(perp, 14))[0]} y2={add(st, mul(perp, 14))[1]} stroke="#eef2f4" strokeWidth={4.5} />
-      <Radio at={add(lerp(k.neck, k.hip, 0.3), mul(perp, 6))} rot={k.lean} k={0.9} />
+      <Radio at={add(lerp(k.neck, k.hip, 0.3), mul(perp, 6))} rot={k.lean} k={0.9} /></>}
+      {danny && <path transform={`translate(${add(lerp(k.neck, k.hip, 0.25), mul(perp, 7))}) rotate(${k.lean})`} d="M 0 -7 L 6 -4 L 5 4 L 0 8 L -5 4 L -6 -4 Z" fill="#e0b94a" stroke={INK} strokeWidth={2.4} />}
       {line('ln', k.hip, k.kneeN, k.footN)}
       {line('an', k.shoulder, k.elbowN, k.handN)}
       <g transform={`translate(${hc[0]},${hc[1]}) rotate(${pose.head ?? 0})`}>
-        <circle r={hr} fill={zombie ? SKIN_Z : SKIN} stroke={INK} strokeWidth={6} />
-        {/* cap on backwards */}
+        <circle r={hr} fill={zombie ? SKIN_Z : danny ? SKIN_D : SKIN} stroke={INK} strokeWidth={6} />
+        {/* cap: backwards for Marcus, forward for Danny */}
         <path d={`M ${-hr - 1} ${-hr * 0.12} Q ${-hr * 0.95} ${-hr * 1.22} ${hr * 0.05} ${-hr * 1.18} Q ${hr * 0.95} ${-hr * 1.14} ${hr + 1} ${-hr * 0.2} Z`} fill={zombie ? '#202c4c' : CAP} stroke={INK} strokeWidth={4} strokeLinejoin="round" />
-        <path d={`M ${-hr * 0.5} ${-hr * 0.24} Q ${-hr * 1.25} ${-hr * 0.3} ${-hr * 1.78} ${-hr * 0.08} Q ${-hr * 1.5} ${-hr * 0.5} ${-hr * 0.6} ${-hr * 0.54} Z`} fill="#18243f" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
+        {danny && <path d={`M ${hr * 0.3} ${-hr * 0.3} Q ${hr * 1.2} ${-hr * 0.45} ${hr * 1.7} ${-hr * 0.12} Q ${hr * 1.15} ${-hr * 0.02} ${hr * 0.4} ${-hr * 0.1} Z`} fill="#18243f" stroke={INK} strokeWidth={4} strokeLinejoin="round" />}
+        {danny && <path d={stache(hr * 0.5, hr * 0.3, 9)} fill="#2e231d" />}
+        {!danny && <path d={`M ${-hr * 0.5} ${-hr * 0.24} Q ${-hr * 1.25} ${-hr * 0.3} ${-hr * 1.78} ${-hr * 0.08} Q ${-hr * 1.5} ${-hr * 0.5} ${-hr * 0.6} ${-hr * 0.54} Z`} fill="#18243f" stroke={INK} strokeWidth={4} strokeLinejoin="round" />}
         {zombie ? (
           <g>
             <circle cx={hr * 0.14} cy={-hr * 0.02} r={7} fill="#3d4535" opacity={0.7} />
@@ -109,16 +114,16 @@ const ClassicFig: React.FC<FigProps> = ({x, y, h, face = 1, pose, zombie}) => {
 };
 
 // ---------------- B: chunky cartoon ----------------
-const ToonFig: React.FC<FigProps & {id: string}> = ({x, y, h, face = 1, pose, zombie, id}) => {
+const ToonFig: React.FC<FigProps & {id: string}> = ({x, y, h, face = 1, pose, zombie, id, danny}) => {
   const k = skeleton(pose);
   const s = h / 300;
   const perp: V2 = [-k.dir[1], k.dir[0]];
-  const skin = zombie ? SKIN_Z : SKIN;
+  const skin = zombie ? SKIN_Z : danny ? SKIN_D : SKIN;
   const hr = HEAD_R * 1.62;
   const hc = add(k.neck, mul(unit(sub(k.headC, k.neck)), hr - 4));
   const tA = add(k.neck, mul(k.dir, -2));
   const tB = add(k.hip, mul(k.dir, 12));
-  const RT = 33;
+  const RT = danny ? 27 : 33;
   const limb = (key: string, p: V2[], w: number, c: string) => (
     <g key={key}>
       <polyline points={pts(...p)} fill="none" stroke={INK} strokeWidth={w + 9} strokeLinecap="round" strokeLinejoin="round" />
@@ -157,23 +162,32 @@ const ToonFig: React.FC<FigProps & {id: string}> = ({x, y, h, face = 1, pose, zo
       {shoe(k.footF, true)}
       {arm(k.elbowF, k.handF, true)}
       {/* body: the vest over the navy shirt */}
-      <path d={capsule(tA, tB, RT)} fill={zombie ? VEST_Z : VEST} stroke={INK} strokeWidth={5} />
+      <path d={capsule(tA, tB, RT)} fill={danny ? NAVY : zombie ? VEST_Z : VEST} stroke={INK} strokeWidth={5} />
       <g clipPath={`url(#${id})`}>
-        <polygon points={pts(...vee)} fill={NAVY} stroke={INK} strokeWidth={4} strokeLinejoin="round" />
-        {stripe(0.56)}
-        {stripe(0.8)}
+        {!danny && <polygon points={pts(...vee)} fill={NAVY} stroke={INK} strokeWidth={4} strokeLinejoin="round" />}
+        {!danny && stripe(0.56)}
+        {!danny && stripe(0.8)}
+        {danny && <path transform={`translate(${add(lerp(tA, tB, 0.28), mul(perp, 14))}) rotate(${k.lean}) scale(1.6)`} d="M 0 -7 L 6 -4 L 5 4 L 0 8 L -5 4 L -6 -4 Z" fill="#e0b94a" stroke={INK} strokeWidth={2.4} />}
         {zombie && [-18, 2, 20].map((o, i) => <polygon key={i} points={pts(add(add(tB, mul(perp, o - 8)), mul(k.dir, -RT - 2)), add(add(tB, mul(perp, o + 8)), mul(k.dir, -RT - 2)), add(add(tB, mul(perp, o)), mul(k.dir, -RT + 16)))} fill={NAVY_D} stroke={INK} strokeWidth={3} />)}
         <path d={`M ${add(tA, mul(perp, -RT))} L ${add(tB, mul(perp, -RT))} L ${add(tB, mul(perp, -RT * 0.25))} L ${add(tA, mul(perp, -RT * 0.25))} Z`} fill="#000" opacity={0.1} />
       </g>
-      <Radio at={add(lerp(tA, tB, 0.3), mul(perp, 14))} rot={k.lean} k={1.25} />
+      {!danny && <Radio at={add(lerp(tA, tB, 0.3), mul(perp, 14))} rot={k.lean} k={1.25} />}
       {limb('ln', [k.hip, k.kneeN, k.footN], 28, NAVY_D)}
       {shoe(k.footN, false)}
       <g transform={`translate(${hc[0]},${hc[1]}) rotate(${pose.head ?? 0})`}>
         <circle r={hr} fill={skin} stroke={INK} strokeWidth={6} />
         <path d={`M ${-hr * 0.3} ${-hr * 0.95} A ${hr} ${hr} 0 0 0 ${-hr * 0.3} ${hr * 0.95} A ${hr * 1.2} ${hr * 1.2} 0 0 1 ${-hr * 0.3} ${-hr * 0.95} Z`} fill="#000" opacity={0.08} />
+        {danny ? (
+          <g>
+            <path d={`M ${-hr * 1.03} ${-hr * 0.2} Q ${-hr} ${-hr * 1.3} ${hr * 0.05} ${-hr * 1.26} Q ${hr * 1.02} ${-hr * 1.22} ${hr * 1.03} ${-hr * 0.28} Z`} fill={CAP} stroke={INK} strokeWidth={5} strokeLinejoin="round" />
+            <path d={`M ${hr * 0.25} ${-hr * 0.34} Q ${hr * 1.2} ${-hr * 0.5} ${hr * 1.6} ${-hr * 0.18} Q ${hr * 1.1} ${-hr * 0.06} ${hr * 0.35} ${-hr * 0.14} Z`} fill="#18243f" stroke={INK} strokeWidth={5} strokeLinejoin="round" />
+            <path transform={`translate(${hr * 0.15},${-hr * 0.85}) scale(1.4)`} d="M 0 -6 L 5 -3.5 L 4 3.5 L 0 7 L -4 3.5 L -5 -3.5 Z" fill="#e0b94a" stroke={INK} strokeWidth={2} />
+          </g>
+        ) : (<>
         {/* beanie with a folded band */}
         <path d={`M ${-hr * 1.03} ${-hr * 0.16} Q ${-hr * 1.02} ${-hr * 1.36} ${hr * 0.05} ${-hr * 1.32} Q ${hr * 1.06} ${-hr * 1.27} ${hr * 1.03} ${-hr * 0.24} Z`} fill={zombie ? '#26324f' : '#2c3c6a'} stroke={INK} strokeWidth={5} strokeLinejoin="round" />
         <path d={`M ${-hr * 1.06} ${-hr * 0.12} Q 0 ${-hr * 0.34} ${hr * 1.06} ${-hr * 0.2} L ${hr * 1.04} ${-hr * 0.48} Q 0 ${-hr * 0.64} ${-hr * 1.04} ${-hr * 0.42} Z`} fill={zombie ? '#1c2640' : '#22305a'} stroke={INK} strokeWidth={5} strokeLinejoin="round" />
+        </>)}
         {zombie ? (
           <g>
             {[hr * 0.1, hr * 0.56].map((ex, i) => (
@@ -199,7 +213,7 @@ const ToonFig: React.FC<FigProps & {id: string}> = ({x, y, h, face = 1, pose, zo
             ))}
             <path d={`M ${hr * 0.2} ${hr * 0.38} Q ${hr * 0.52} ${hr * 0.72} ${hr * 0.84} ${hr * 0.32} Z`} fill="#4a2a2a" stroke={INK} strokeWidth={3.6} strokeLinejoin="round" />
             <path d={`M ${hr * 0.28} ${hr * 0.42} Q ${hr * 0.52} ${hr * 0.5} ${hr * 0.76} ${hr * 0.38}`} stroke="#fff" strokeWidth={4} fill="none" />
-            <ellipse cx={hr * 0.52} cy={hr * 0.74} rx={7} ry={4.5} fill={HAIR} />
+            {danny ? <path d={stache(hr * 0.52, hr * 0.33, 13)} fill="#2e231d" stroke={INK} strokeWidth={2} /> : <ellipse cx={hr * 0.52} cy={hr * 0.74} rx={7} ry={4.5} fill={HAIR} />}
           </g>
         )}
       </g>
@@ -234,7 +248,7 @@ const NoirShape: React.FC<{k: ReturnType<typeof skeleton>; color: string; zombie
     </g>
   );
 };
-const NoirFig: React.FC<FigProps> = ({x, y, h, face = 1, pose, zombie}) => {
+const NoirFig: React.FC<FigProps> = ({x, y, h, face = 1, pose, zombie, danny}) => {
   const k = skeleton(pose);
   const s = h / 300;
   const perp: V2 = [-k.dir[1], k.dir[0]];
@@ -253,16 +267,18 @@ const NoirFig: React.FC<FigProps> = ({x, y, h, face = 1, pose, zombie}) => {
     <g>
       <ellipse cx={x} cy={y + 3 * s} rx={46 * s} ry={8 * s} fill="#000" opacity={0.5} />
       {/* rim light: the same shape in pale blue, nudged toward the light behind */}
-      <g transform="translate(-5,-4)">
+      <g transform="translate(-9,-7)">
         <g transform={tr}>
           <NoirShape k={k} color="#a9c1e8" zombie={zombie} />
         </g>
       </g>
       <g transform={tr}>
         <NoirShape k={k} color="#0d1016" zombie={zombie} />
-        {stripe(0.56)}
-        {stripe(0.8)}
-        <Radio at={add(lerp(tA, tB, 0.3), mul(perp, 13))} rot={k.lean} k={1.1} glow />
+        {!danny && stripe(0.56)}
+        {!danny && stripe(0.8)}
+        {!danny && <Radio at={add(lerp(tA, tB, 0.3), mul(perp, 13))} rot={k.lean} k={1.1} glow />}
+        {danny && <path transform={`translate(${add(lerp(tA, tB, 0.25), mul(perp, 13))}) rotate(${k.lean}) scale(1.3)`} d="M 0 -6 L 5 -3.5 L 4 3.5 L 0 7 L -4 3.5 L -5 -3.5 Z" fill="#f0c53c" filter="url(#mvGlow)" />}
+        {danny && <circle cx={add(tB, mul(perp, 16))[0]} cy={add(tB, mul(perp, 16))[1]} r={5} fill="none" stroke="#f0d070" strokeWidth={2.5} filter="url(#mvGlow)" />}
         <g transform={`translate(${hc[0]},${hc[1]}) rotate(${(k.lean ?? 0) * 0.5})`}>
           {zombie ? (
             <>
@@ -298,14 +314,14 @@ const ALIVE = {x: 1060, y: 1345};
 const DEAD = {x: 1560, y: 1345};
 const FIG_H = 480;
 
-const Panel: React.FC<{i: number; title: string; lines: string[]; dark?: boolean; children: React.ReactNode}> = ({i, title, lines, dark, children}) => (
+const Panel: React.FC<{i: number; title: string; lines: string[]; dark?: boolean; labels?: [string, string]; children: React.ReactNode}> = ({i, title, lines, dark, labels = ['MARCUS', 'ZOMBIE MARCUS'], children}) => (
   <div style={{position: 'absolute', left: (i % 2) * PW, top: Math.floor(i / 2) * PH, width: PW, height: PH, overflow: 'hidden'}}>
-    <World bg="garage" cam={CAM} width={PW} height={PH} filter={dark ? 'brightness(0.24) saturate(0.55)' : 'brightness(0.8) saturate(0.8)'}>
+    <World bg="garage" cam={CAM} width={PW} height={PH} filter={dark ? 'brightness(0.42) saturate(0.55)' : 'brightness(0.8) saturate(0.8)'}>
       {dark && (
         <>
           <defs>
             <radialGradient id="mvLight" cx="0.5" cy="0.5" r="0.5">
-              <stop offset="0" stopColor="#c9dcff" stopOpacity={0.55} />
+              <stop offset="0" stopColor="#dfe9ff" stopOpacity={0.85} />
               <stop offset="1" stopColor="#c9dcff" stopOpacity={0} />
             </radialGradient>
           </defs>
@@ -329,10 +345,10 @@ const Panel: React.FC<{i: number; title: string; lines: string[]; dark?: boolean
         </text>
       ))}
       <text x={ALIVE.x - CAM.x + PW / 2} y={PH - 18} textAnchor="middle" fontFamily="DejaVu Sans, sans-serif" fontWeight={700} fontSize={22} fill="#cfd6e6" stroke="#07080b" strokeWidth={5} paintOrder="stroke">
-        MARCUS
+        {labels[0]}
       </text>
       <text x={DEAD.x - CAM.x + PW / 2} y={PH - 18} textAnchor="middle" fontFamily="DejaVu Sans, sans-serif" fontWeight={700} fontSize={22} fill="#cfd6e6" stroke="#07080b" strokeWidth={5} paintOrder="stroke">
-        ZOMBIE MARCUS
+        {labels[1]}
       </text>
     </svg>
   </div>
@@ -355,22 +371,60 @@ export const MarcusVariants: React.FC = () => {
         </defs>
       </svg>
       <Panel i={0} title="CLASSIC STICK" lines={['Ink lines and a round head. Simplest; reads at any size.', 'Marcus: cap on backwards, hi-vis vest, radio upside down.']}>
-        <ClassicFig x={ALIVE.x} y={ALIVE.y} h={FIG_H * 1.04} pose={POSES.wave} />
+        <ClassicFig x={ALIVE.x} y={ALIVE.y} h={FIG_H * 1.04} pose={POSES.standRelax} />
         <ClassicFig x={DEAD.x} y={DEAD.y} h={FIG_H * 1.04} face={-1} pose={POSES.zShamble} zombie />
       </Panel>
       <Panel i={1} title="CHUNKY CARTOON" lines={['Thick limbs, a big head, big eyes. The most expressive.', 'Marcus: big round build, beanie, hi-vis vest, goatee.']}>
-        <ToonFig id="mvToonA" x={ALIVE.x} y={ALIVE.y} h={FIG_H * 1.04} pose={POSES.wave} />
+        <ToonFig id="mvToonA" x={ALIVE.x} y={ALIVE.y} h={FIG_H * 1.04} pose={POSES.standRelax} />
         <ToonFig id="mvToonZ" x={DEAD.x} y={DEAD.y} h={FIG_H * 1.04} face={-1} pose={POSES.zShamble} zombie />
       </Panel>
       <Panel i={2} title="TODAY'S STYLE, NEW MARCUS" lines={['The figures you have now. Marcus gets a bigger build, a high-top,', 'glasses (nursing student), a goatee, the vest and the radio upside down.']}>
-        <Stick x={ALIVE.x} y={ALIVE.y} h={FIG_H * 1.06} look={MARCUS_V} pose={POSES.wave} eyes="dot" mouth="smile" />
+        <Stick x={ALIVE.x} y={ALIVE.y} h={FIG_H * 1.06} look={MARCUS_V} pose={POSES.standRelax} eyes="dot" mouth="smile" />
         <Stick x={DEAD.x} y={DEAD.y} h={FIG_H * 1.06} face={-1} look={MARCUS_VZ} pose={POSES.zShamble} eyes="zombie" mouth="zombie" wobble={7} />
       </Panel>
       <Panel i={3} title="SHADOW" dark lines={['Dark silhouettes, a rim of light, glowing details. The moodiest;', 'faces stay hidden. Marcus: big frame, cap, glowing vest stripes.']}>
-        <NoirFig x={ALIVE.x} y={ALIVE.y} h={FIG_H * 1.04} pose={POSES.wave} />
+        <NoirFig x={ALIVE.x} y={ALIVE.y} h={FIG_H * 1.04} pose={POSES.standRelax} />
         <NoirFig x={DEAD.x} y={DEAD.y} h={FIG_H * 1.04} face={-1} pose={POSES.zShamble} zombie />
       </Panel>
     </AbsoluteFill>
   );
 };
 
+
+// ---------------- the same four styles for Danny ----------------
+const DLAB: [string, string] = ['DANNY', 'DANNY, SCARED'];
+export const DannyVariants: React.FC = () => {
+  useFont();
+  return (
+    <AbsoluteFill style={{background: '#07080b'}}>
+      <svg width={0} height={0} style={{position: 'absolute'}}>
+        <defs>
+          <filter id="mvGlow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation={3.5} result="b" />
+            <feMerge>
+              <feMergeNode in="b" />
+              <feMergeNode in="b" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+      </svg>
+      <Panel i={0} title="CLASSIC STICK" labels={DLAB} lines={['Ink lines and a round head. Simplest; reads at any size.', 'Danny: guard cap forward, moustache, gold badge.']}>
+        <ClassicFig danny x={ALIVE.x} y={ALIVE.y} h={FIG_H} pose={POSES.standRelax} />
+        <ClassicFig danny x={DEAD.x} y={DEAD.y} h={FIG_H} face={-1} pose={POSES.scared} />
+      </Panel>
+      <Panel i={1} title="CHUNKY CARTOON" labels={DLAB} lines={['Thick limbs, a big head, big eyes. The most expressive.', 'Danny: guard cap with badge, big moustache, slimmer than Marcus.']}>
+        <ToonFig danny id="dvToonA" x={ALIVE.x} y={ALIVE.y} h={FIG_H} pose={POSES.standRelax} />
+        <ToonFig danny id="dvToonB" x={DEAD.x} y={DEAD.y} h={FIG_H} face={-1} pose={POSES.scared} />
+      </Panel>
+      <Panel i={2} title="TODAY'S STYLE" labels={DLAB} lines={['Danny as he looks in Chapter 1 and the Shorts:', 'navy uniform, guard cap, moustache, badge and keys.']}>
+        <Stick x={ALIVE.x} y={ALIVE.y} h={FIG_H} look={LOOKS.guard} pose={POSES.flashlight} propN="flashlight" beam={260} eyes="dot" mouth="flat" />
+        <Stick x={DEAD.x} y={DEAD.y} h={FIG_H} face={-1} look={LOOKS.guard} pose={POSES.scared} eyes="wide" mouth="o" sweat wobble={5} />
+      </Panel>
+      <Panel i={3} title="SHADOW" dark labels={DLAB} lines={['Dark silhouettes, a rim of light, glowing details. The moodiest;', 'faces stay hidden. Danny: cap, glinting badge and keys.']}>
+        <NoirFig danny x={ALIVE.x} y={ALIVE.y} h={FIG_H} pose={POSES.standRelax} />
+        <NoirFig danny x={DEAD.x} y={DEAD.y} h={FIG_H} face={-1} pose={POSES.scared} />
+      </Panel>
+    </AbsoluteFill>
+  );
+};
