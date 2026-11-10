@@ -16,7 +16,8 @@ A stick-figure zombie survival story for YouTube. It has long chapters (16:9) an
 | Short 1: The Gate | 9:16 | 0:24 | ✅ Rendered, thumbnail made | `publish/night-guard-youtube-setup.md` |
 | Short 2: Forty-Two Keys | 9:16 | 1:01 | ✅ Rendered | `publish/night-guard-shorts-1-3.md` |
 | Short 3: One-Forty | 9:16 | 0:48 | ✅ Rendered | `publish/night-guard-shorts-1-3.md` |
-| Shorts 4–14 from Chapter 1 | 9:16 | ~0:45–1:30 each | ⬜ To make | the outline's 14 segments |
+| Shorts 1.4–1.6 | 9:16 | 0:58–1:32 | ✅ Posted Nov 9–10 (by you) | |
+| Shorts 7–14, cut from Chapter 1 | 9:16 | 0:36–1:13 | ✅ Rendered, post one a day from Nov 11 | `publish/night-guard-shorts-7-14.md` |
 | Chapter 1 thumbnail (16:9) | still | | ⬜ To make | |
 | Chapter 2: The Boy in the Ceiling | 16:9 | ~30:00 | 📝 Script done (5,233 words, written with GPT) | `images/mall/chapter2/manuscript.md` |
 | Chapter 3: The Pharmacy | 16:9 | ~31:00 | 📝 Script done (5,367 words) | `images/mall/chapter3/manuscript.md` |

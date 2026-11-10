@@ -49,6 +49,9 @@ The chapter times come from the narration's word timings, so they're exact. YouT
 - **Captions:** Subtitles → Add language → English → Upload file → "With timing" → choose `night-guard-chapter-1.srt`.
 - **End screen:** the last 9 seconds are the "Next: Chapter Two" card, with the text in the middle. Put a Subscribe element and a "Best for viewer" video on either side of it.
 - **Playlist:** add it to "The Night Guard" playlist, after Shorts 1–3. The Shorts are cut from this chapter, so they lead viewers here. Each Short's pinned comment can link to this video once it's up.
+- **Pinned comment:** "Would you have opened the gate for Marcus? Be honest. 👇 Chapter 2, The Boy in the Ceiling, is coming next."
+- **Link the Shorts to it:** on every Night Guard Short, go to Studio, choose the Short, then Related video, and pick this chapter. The Shorts then carry a tappable link to the full chapter. See `night-guard-shorts-7-14.md`.
+- **Upload it before Part 7 (Nov 11).** So far the Shorts have nowhere to send viewers.
 - **Thumbnail:** there's no custom one for the long video yet. Until there is one, pick the auto frame with zombie Marcus at the gate.
 
 ## How it was made
