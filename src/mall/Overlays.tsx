@@ -147,9 +147,12 @@ export const ChapterTag: React.FC<{n: number; title: string; t: number}> = ({n, 
 // Radio speaker badge with a moving waveform.
 export const RadioBadge: React.FC<{name: string; t: number; color?: string}> = ({name, t, color = '#8fd18a'}) => {
   const bars = 12;
+  // Long names (EMERGENCY ALERT) push the waveform right and widen the pill, so the bars never sit on the letters.
+  const barsX = Math.max(122, -210 + name.length * 52 * 0.6 + 34);
+  const right = Math.max(340, barsX + (bars - 1) * 16 + 9 + 50);
   return (
-    <g transform={`translate(${W / 2}, ${H - 120})`}>
-      <rect x={-340} y={-62} width={680} height={124} rx={62} fill="#101216" opacity={0.86} stroke={INK} strokeWidth={6} />
+    <g transform={`translate(${W / 2 - (right - 340) / 2}, ${H - 120})`}>
+      <rect x={-340} y={-62} width={340 + right} height={124} rx={62} fill="#101216" opacity={0.86} stroke={INK} strokeWidth={6} />
       <g transform="translate(-272, 0)">
         <line x1={10} y1={-26} x2={10} y2={-50} stroke="#cfd3da" strokeWidth={6} strokeLinecap="round" />
         <rect x={-18} y={-30} width={40} height={62} rx={7} fill="#2a2b30" stroke="#cfd3da" strokeWidth={4} />
@@ -160,7 +163,7 @@ export const RadioBadge: React.FC<{name: string; t: number; color?: string}> = (
       </Txt>
       {new Array(bars).fill(0).map((_, i) => {
         const h = 8 + Math.abs(Math.sin(t * 13 + i * 1.7) * Math.sin(t * 5.3 + i)) * 44;
-        return <rect key={i} x={122 + i * 16} y={-h / 2} width={9} height={h} rx={4} fill={color} />;
+        return <rect key={i} x={barsX + i * 16} y={-h / 2} width={9} height={h} rx={4} fill={color} />;
       })}
     </g>
   );

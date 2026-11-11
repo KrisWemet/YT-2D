@@ -1,6 +1,6 @@
 # The Night Guard: Chapter 1 upload details
 
-**Video:** `out/chapter1/night-guard-chapter-1.mp4`. It's 1920×1080 at 30 fps and runs 14:42 (14:33 of story, then a 9-second end card). The sound is mixed to −15 LUFS.
+**Video:** `out/chapter1-codex/night-guard-chapter-1.mp4`, in the Codex stick-figure look (re-rendered Nov 11). The first render, in the old look, is `out/chapter1/night-guard-chapter-1.mp4`. It's 1920×1080 at 30 fps and runs 14:42 (14:33 of story, then a 9-second end card). The sound is mixed to −15 LUFS.
 
 **Captions:** `publish/night-guard-chapter-1.srt` (363 captions, at most two lines of 42 characters). The words come from the script, not from automatic speech recognition, so names, numbers and capitals are right. Radio voices are labelled, for example [WOMAN ON THE RADIO].
 
@@ -72,8 +72,8 @@ python3 caption_words.py ../../src/mall/chapter1/ch1.json
 python3 chapter1/check_cues.py ../../src/mall/chapter1/ch1.json
 python3 make_srt.py ../../src/mall/chapter1/ch1.json ../../publish/night-guard-chapter-1.srt
 cd ../..
-npx remotion render src/index.ts MallChapter1 out/chapter1/night-guard-ch1-render.mp4 --concurrency=4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
-bash images/mall/finish.sh out/chapter1/night-guard-ch1-render.mp4 out/chapter1/night-guard-chapter-1.mp4
+npx remotion render src/index.ts MallChapter1 out/chapter1-codex/night-guard-ch1-render.mp4 --concurrency=4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
+bash images/mall/finish.sh out/chapter1-codex/night-guard-ch1-render.mp4 out/chapter1-codex/night-guard-chapter-1.mp4
 ```
 
-The full render takes about an hour on 4 cores.
+The full render takes about 70 minutes on 4 cores.

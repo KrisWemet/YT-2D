@@ -1,6 +1,6 @@
 # The Night Guard: Shorts 7–14 and the Chapter 1 hookup
 
-Parts 1–6 are already on the channel. Parts 7–14 finish Chapter 1. They're cut straight from the finished chapter (`out/chapter1/night-guard-chapter-1.mp4`), so they look and sound exactly like it. The renderer is `src/mall/ChapterShorts.tsx` (`Ch1Part07` … `Ch1Part14`).
+Parts 1–6 are already on the channel. Parts 7–14 finish Chapter 1. They're rendered from the same shots, voice and sound as the chapter (`out/chapter1-codex/night-guard-chapter-1.mp4`), so they look and sound like it. The renderer is `src/mall/ChapterShorts.tsx` (`Ch1Part07` … `Ch1Part14`).
 
 **Files:** `out/shorts/ch1-full/night-guard-part-07.mp4` … `-14.mp4`. They're full-screen 9:16 (1080×1920), 30 fps, −15 LUFS, with burned-in captions. Scenes fill the frame through a tall camera window, using Codex's framing; wide maps and cards sit in a band. They use the Codex stick-figure look. Older sets: `ch1-codex/` (letterboxed, new look) and `ch1/` (letterboxed, old look).
 
@@ -63,8 +63,8 @@ That's when the vidIQ credits renew. Pull audience retention (where viewers stop
 ## Re-render
 
 ```bash
-npx remotion render src/index.ts Ch1Part07 out/shorts/ch1/raw-part-07.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
-bash images/mall/finish.sh out/shorts/ch1/raw-part-07.mp4 out/shorts/ch1/night-guard-part-07.mp4
+npx remotion render src/index.ts Ch1Part07 out/shorts/ch1-full/raw-part-07.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
+bash images/mall/finish.sh out/shorts/ch1-full/raw-part-07.mp4 out/shorts/ch1-full/night-guard-part-07.mp4
 ```
 
 Each part is set up in `CH1_CUTS` in `src/mall/ChapterShorts.tsx`. `lines` lists the chapter lines to keep, and any gap becomes a jump cut. `hook` and `question` set the big on-screen text. The line numbers are the `segments` in `src/mall/chapter1/ch1.json`.

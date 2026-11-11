@@ -12,7 +12,7 @@ A stick-figure zombie survival story for YouTube. It has long chapters (16:9) an
 
 | Item | Format | Length | Status | Upload kit |
 |---|---|---|---|---|
-| Chapter 1: The King of the Mall | 16:9, 1080p | 14:42 | ✅ Rendered | `publish/night-guard-chapter-1.md` + `.srt` |
+| Chapter 1: The King of the Mall | 16:9, 1080p | 14:42 | ✅ Rendered in the Codex look (Nov 11) | `publish/night-guard-chapter-1.md` + `.srt` |
 | Short 1: The Gate | 9:16 | 0:24 | ✅ Rendered, thumbnail made | `publish/night-guard-youtube-setup.md` |
 | Short 2: Forty-Two Keys | 9:16 | 1:01 | ✅ Rendered | `publish/night-guard-shorts-1-3.md` |
 | Short 3: One-Forty | 9:16 | 0:48 | ✅ Rendered | `publish/night-guard-shorts-1-3.md` |
@@ -34,7 +34,7 @@ Each chapter runs about 15 minutes and is built in this order: **script, then vo
 2. **Voice:** `cd images/mall && python3 voice_gemini.py vo/chN/plan.json vo/chN`. Pick takes with `pick_takes.py`, then build `vo.wav`.
 3. **Timings:** `align.py`, then `caption_words.py`, write the word timings to `src/mall/chapterN/chN.json`.
 4. **Pictures:** write the shot lists in `src/mall/chapterN/shots0*.tsx`, each shot cued by a phrase in the narration. Check them with `check_cues.py`.
-5. **Render:** `npx remotion render src/index.ts MallChapter1 out/chapter1/night-guard-ch1-render.mp4 --concurrency=4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k`, then `bash images/mall/finish.sh <render> <final>` to bring the sound to −15 LUFS.
+5. **Render:** `npx remotion render src/index.ts MallChapter1 out/chapter1-codex/night-guard-ch1-render.mp4 --concurrency=4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k`, then `bash images/mall/finish.sh <render> <final>` to bring the sound to −15 LUFS.
 6. **Captions:** `python3 images/mall/make_srt.py src/mall/chapterN/chN.json publish/night-guard-chapter-N.srt`.
 
 The Chapter 1 steps are in full in `publish/night-guard-chapter-1.md`.
@@ -74,7 +74,7 @@ How they're made:
 
 | What | Where |
 |---|---|
-| Rendered videos (not in git, download them) | `out/chapter1/`, `out/shorts/` |
+| Rendered videos (not in git, download them) | `out/chapter1-codex/` (Chapter 1), `out/shorts/ch1-full/` (Parts 7–14); older looks in `out/chapter1/`, `out/shorts/ch1/`, `out/shorts/ch1-codex/` |
 | Upload kits: titles, descriptions, captions | `publish/night-guard-*.md`, `publish/night-guard-chapter-1.srt` |
 | Channel art and thumbnails | `publish/channel/`, `thumbnails/` |
 | Backgrounds and sounds | `public/mall/bg/`, `public/mall/sfx/` (prompts in `images/mall/prompts.json`, `sfx_gen.py`) |
@@ -91,7 +91,8 @@ The balance was 412.74 on Nov 6, 2026.
 
 ## Next up
 
-1. Make a 16:9 thumbnail for Chapter 1.
-2. Cut Shorts 4–14 from Chapter 1's segments.
-3. Choose a stick-figure style for Marcus, and maybe Danny, before Chapter 2.
-4. Write Chapter 2, *The Boy in the Ceiling*, from the outline.
+1. Upload Chapter 1 (new look), then post Parts 7–14 one a day from Nov 11 (`publish/night-guard-shorts-7-14.md`).
+2. Make a 16:9 thumbnail for Chapter 1.
+3. Voice and build Chapter 2. It needs about 520 Kie credits, and 412.74 are left.
+4. Write Chapter 6, *Key Forty-Two*.
+5. Nov 22: re-check vidIQ retention for Parts 7 and 12, with vidIQ connected to the right account.

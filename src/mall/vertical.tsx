@@ -139,9 +139,13 @@ export const VNameTag: React.FC<{name: string; sub: string; t: number; at?: numb
 };
 
 // Who is talking on the radio, above the captions.
-export const VRadioBadge: React.FC<{name: string; t: number; color?: string; y?: number}> = ({name, t, color = RADIO_GREEN, y = 1120}) => (
-  <g transform={`translate(${VW / 2}, ${y})`}>
-    <rect x={-300} y={-52} width={600} height={104} rx={52} fill="#101216" opacity={0.88} stroke={INK} strokeWidth={6} />
+export const VRadioBadge: React.FC<{name: string; t: number; color?: string; y?: number}> = ({name, t, color = RADIO_GREEN, y = 1120}) => {
+  // Long names (EMERGENCY ALERT) push the waveform right and widen the pill, so the bars never sit on the letters.
+  const barsX = Math.max(92, -186 + name.length * 46 * 0.6 + 30);
+  const right = Math.max(300, barsX + 9 * 16 + 9 + 44);
+  return (
+  <g transform={`translate(${VW / 2 - (right - 300) / 2}, ${y})`}>
+    <rect x={-300} y={-52} width={300 + right} height={104} rx={52} fill="#101216" opacity={0.88} stroke={INK} strokeWidth={6} />
     <g transform="translate(-238, 0)">
       <line x1={8} y1={-22} x2={8} y2={-42} stroke="#cfd3da" strokeWidth={5} strokeLinecap="round" />
       <rect x={-15} y={-25} width={34} height={52} rx={6} fill="#2a2b30" stroke="#cfd3da" strokeWidth={4} />
@@ -152,10 +156,11 @@ export const VRadioBadge: React.FC<{name: string; t: number; color?: string; y?:
     </Txt>
     {new Array(10).fill(0).map((_, i) => {
       const h = 7 + Math.abs(Math.sin(t * 13 + i * 1.7) * Math.sin(t * 5.3 + i)) * 38;
-      return <rect key={i} x={92 + i * 16} y={-h / 2} width={9} height={h} rx={4} fill={color} />;
+      return <rect key={i} x={barsX + i * 16} y={-h / 2} width={9} height={h} rx={4} fill={color} />;
     })}
   </g>
-);
+  );
+};
 
 export const VNoSignal: React.FC<{t: number; at: number; y?: number}> = ({t, at, y = 1120}) => {
   if (t < at) return null;
