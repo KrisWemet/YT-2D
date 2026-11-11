@@ -2,7 +2,7 @@
 
 Parts 1–6 are already on the channel. Parts 7–14 finish Chapter 1. They're cut straight from the finished chapter (`out/chapter1/night-guard-chapter-1.mp4`), so they look and sound exactly like it. The renderer is `src/mall/ChapterShorts.tsx` (`Ch1Part07` … `Ch1Part14`).
 
-**Files:** `out/shorts/ch1-codex/night-guard-part-07.mp4` … `-14.mp4`, in the Codex stick-figure look chosen on Nov 11. The earlier v2 set in `out/shorts/ch1/` uses the old look. They're 1080×1920, 30 fps, −15 LUFS, with burned-in captions.
+**Files:** `out/shorts/ch1-full/night-guard-part-07.mp4` … `-14.mp4`. They're full-screen 9:16 (1080×1920), 30 fps, −15 LUFS, with burned-in captions. Scenes fill the frame through a tall camera window, using Codex's framing; wide maps and cards sit in a band. They use the Codex stick-figure look. Older sets: `ch1-codex/` (letterboxed, new look) and `ch1/` (letterboxed, old look).
 
 ## What changed after the first vidIQ read (Nov 10)
 

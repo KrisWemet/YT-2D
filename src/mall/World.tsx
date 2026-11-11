@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {ShortLayout} from './ShortLayout';
 import {Img, staticFile} from 'remotion';
 
 // Background sizes in pixels (Seedream 5 Flash 2K, 16:9).
@@ -56,6 +57,12 @@ export const World: React.FC<{
   children?: React.ReactNode;
   over?: React.ReactNode; // drawn above the characters, still in picture space
 }> = ({bg, cam, width, height, filter, bgFilter, shake = [0, 0], children, over}) => {
+  const vertical = useContext(ShortLayout);
+  if (vertical) {
+    width = 1080;
+    height = 1920;
+    cam = {...cam, x: vertical.focusX ?? cam.x, z: Math.max(1, cam.z * 0.6)};
+  }
   const c = camWindow(cam, width, height);
   const vx = c.x - c.w / 2 + shake[0];
   const vy = c.y - c.h / 2 + shake[1];
