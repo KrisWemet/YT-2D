@@ -1,0 +1,51 @@
+{
+ "taskId": "ba5392d1bbeb6f85530c0bc985d2d203",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a crowd of zombies groaning and moaning low in a large echoing indoor hall, many voices, menacing, slow, steady, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/80f50243-655a-4a9c-95ab-539c0910003b.mp3\",\"createTime\":1793838407330,\"duration\":13.6,\"id\":\"80f50243-655a-4a9c-95ab-539c0910003b\",\"image_url\":\"https://cdn2.suno.ai/image_80f50243-655a-4a9c-95ab-539c0910003b.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/80f50243-655a-4a9c-95ab-539c0910003b.mp3\",\"tags\":\"Sound effect only, no music, no voice: a crowd of zombies groaning and moaning low in a large echoing indoor hall, many voices, menacing, slow, steady, seamless loop\",\"title\":\"Sound effect only, no music, no voice: a crowd of zombies groaning and moanin...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/31eb1c89-eada-4c06-9450-3d34860b5af2.mp3\",\"createTime\":1793838407330,\"duration\":12.8,\"id\":\"31eb1c89-eada-4c06-9450-3d34860b5af2\",\"image_url\":\"https://cdn2.suno.ai/image_31eb1c89-eada-4c06-9450-3d34860b5af2.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/31eb1c89-eada-4c06-9450-3d34860b5af2.mp3\",\"tags\":\"Sound effect only, no music, no voice: a crowd of zombies groaning and moaning low in a large echoing indoor hall, many voices, menacing, slow, steady, seamless loop\",\"title\":\"Sound effect only, no music, no voice: a crowd of zombies groaning and moanin...\"}],\"msg\":\"success\",\"task_id\":\"ba5392d1bbeb6f85530c0bc985d2d203\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 23,
+ "completeTime": 1793838407330,
+ "createTime": 1793838383511,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a crowd of zombies groaning and moaning low in a large echoing indoor hall, many voices, menacing, slow, steady, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 13.6,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/80f50243-655a-4a9c-95ab-539c0910003b.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838407330,
+    "image_url": "https://cdn2.suno.ai/image_80f50243-655a-4a9c-95ab-539c0910003b.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/80f50243-655a-4a9c-95ab-539c0910003b.mp3",
+    "id": "80f50243-655a-4a9c-95ab-539c0910003b",
+    "title": "Sound effect only, no music, no voice: a crowd of zombies groaning and moanin...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a crowd of zombies groaning and moaning low in a large echoing indoor hall, many voices, menacing, slow, steady, seamless loop"
+   },
+   {
+    "duration": 12.8,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/31eb1c89-eada-4c06-9450-3d34860b5af2.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838407330,
+    "image_url": "https://cdn2.suno.ai/image_31eb1c89-eada-4c06-9450-3d34860b5af2.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/31eb1c89-eada-4c06-9450-3d34860b5af2.mp3",
+    "id": "31eb1c89-eada-4c06-9450-3d34860b5af2",
+    "title": "Sound effect only, no music, no voice: a crowd of zombies groaning and moanin...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a crowd of zombies groaning and moaning low in a large echoing indoor hall, many voices, menacing, slow, steady, seamless loop"
+   }
+  ],
+  "task_id": "ba5392d1bbeb6f85530c0bc985d2d203"
+ },
+ "_elapsed": 26.7
+}

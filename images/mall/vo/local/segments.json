@@ -1,0 +1,182 @@
+{
+ "duration": 155.86,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "My job is walking in circles.",
+   "s": 0.35,
+   "e": 2.346
+  },
+  {
+   "kind": "narr",
+   "text": "Eleven at night to seven in the morning, I walk the same loop around Maplecrest Mall. I rattle the same steel gates. I tell the same two teenagers to get off the escalator. Nothing ever happens here. That's kind of the point.",
+   "s": 2.796,
+   "e": 17.305
+  },
+  {
+   "kind": "narr",
+   "text": "I carry three things. A flashlight. A radio that talks to Marcus, the other night guard, down in the parking garage. And a ring of forty-two keys. One for every store in the building.",
+   "s": 17.755,
+   "e": 30.14
+  },
+  {
+   "kind": "narr",
+   "text": "At one forty in the morning, Marcus calls me.",
+   "s": 30.59,
+   "e": 33.268
+  },
+  {
+   "kind": "radio",
+   "id": "marcus1",
+   "text": "Hey, there's a guy walking up the ramp. He's walking... weird.",
+   "s": 33.818,
+   "e": 36.679
+  },
+  {
+   "kind": "narr",
+   "text": "Then I hear him say...",
+   "s": 37.279,
+   "e": 38.56
+  },
+  {
+   "kind": "radio",
+   "id": "marcus2",
+   "text": "Sir? ... You okay?",
+   "s": 39.11,
+   "e": 40.053
+  },
+  {
+   "kind": "narr",
+   "text": "Then nothing.",
+   "s": 40.653,
+   "e": 41.485
+  },
+  {
+   "kind": "narr",
+   "text": "I check the cameras. Garage, level two. Marcus is on the ground. The guy is on top of him. And behind them, more people are coming up the ramp. Six. Ten. I stop counting.",
+   "s": 42.335,
+   "e": 54.169
+  },
+  {
+   "kind": "narr",
+   "text": "They're heading for the food court doors.",
+   "s": 54.619,
+   "e": 56.614
+  },
+  {
+   "kind": "narr",
+   "text": "Here's the thing nobody tells you about malls. They're made of glass. Glass doors. Glass walls. Glass ceilings. A mall is built for one thing: letting people in.",
+   "s": 57.064,
+   "e": 67.605
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight, I need the opposite.",
+   "s": 68.055,
+   "e": 69.723
+  },
+  {
+   "kind": "narr",
+   "text": "But a mall has something your house doesn't. Every store has a steel security gate. Pull it down, lock it, and that store becomes a vault.",
+   "s": 70.173,
+   "e": 79.205
+  },
+  {
+   "kind": "narr",
+   "text": "So I don't need to save the whole mall. I just need to pick one store.",
+   "s": 79.655,
+   "e": 83.682
+  },
+  {
+   "kind": "narr",
+   "text": "I run my loop. The same loop I've walked a thousand times. But this time, I'm shopping.",
+   "s": 84.132,
+   "e": 89.763
+  },
+  {
+   "kind": "narr",
+   "text": "The pharmacy has medicine. But the whole front is glass.",
+   "s": 90.213,
+   "e": 93.733
+  },
+  {
+   "kind": "narr",
+   "text": "The food court has a freezer full of food. But that's exactly where they're coming in.",
+   "s": 94.183,
+   "e": 99.122
+  },
+  {
+   "kind": "narr",
+   "text": "The department store has beds and a second floor. But it's huge. Too many doors to watch.",
+   "s": 99.572,
+   "e": 105.492
+  },
+  {
+   "kind": "narr",
+   "text": "And the sporting goods store has tents, water filters, and aluminum bats. And only one way in.",
+   "s": 105.942,
+   "e": 112.061
+  },
+  {
+   "kind": "narr",
+   "text": "Behind me, I hear the food court doors shatter.",
+   "s": 112.511,
+   "e": 115.283
+  },
+  {
+   "kind": "narr",
+   "text": "I slide under the gate, yank it down, and lock it. Then I sit in the dark between the tents and the treadmills, and I try not to breathe.",
+   "s": 115.733,
+   "e": 124.3
+  },
+  {
+   "kind": "narr",
+   "text": "Footsteps. Dozens of them. Shuffling past the gate.",
+   "s": 124.75,
+   "e": 127.935
+  },
+  {
+   "kind": "narr",
+   "text": "One of them stops. It presses its face against the steel and stares right at me.",
+   "s": 128.385,
+   "e": 133.152
+  },
+  {
+   "kind": "narr",
+   "text": "It's Marcus. He's still wearing his radio.",
+   "s": 133.602,
+   "e": 136.303
+  },
+  {
+   "kind": "narr",
+   "text": "Then mine crackles.",
+   "s": 136.753,
+   "e": 138.045
+  },
+  {
+   "kind": "radio",
+   "id": "woman",
+   "text": "Is anyone still in the mall? ... I'm in the department store. Second floor. ... Please.",
+   "s": 138.595,
+   "e": 143.357
+  },
+  {
+   "kind": "narr",
+   "text": "Her voice comes out of my radio. And out of Marcus's radio, one second later.",
+   "s": 143.957,
+   "e": 149.332
+  },
+  {
+   "kind": "narr",
+   "text": "Every head in the hallway turns toward my gate.",
+   "s": 149.782,
+   "e": 152.208
+  },
+  {
+   "kind": "narr",
+   "text": "That was hour one.",
+   "s": 152.658,
+   "e": 153.81
+  }
+ ]
+}

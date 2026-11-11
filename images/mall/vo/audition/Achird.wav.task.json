@@ -1,0 +1,22 @@
+{
+ "taskId": "6c382780522dc7665e5ec733fbace574",
+ "model": "google/gemini-3-1-flash-tts",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"sample_context\\\":\\\"A first-person survival story told as a YouTube narration.\\\",\\\"speakers\\\":[{\\\"audio_profile\\\":\\\"Danny Ruiz, 38, a night security guard and single dad. Warm, a little gravelly, with a dry sense of humor. He is telling the story of the worst night of his life, quietly, like it still shakes him.\\\",\\\"speaker_id\\\":\\\"Speaker 1\\\",\\\"pace\\\":\\\"Natural\\\",\\\"voice_name\\\":\\\"Achird\\\",\\\"style\\\":\\\"Empathetic\\\",\\\"accent\\\":\\\"American (Gen)\\\"}],\\\"temperature\\\":1,\\\"model\\\":\\\"gemini-3.1-flash-tts-preview\\\",\\\"dialogue_turns\\\":[{\\\"speaker_id\\\":\\\"Speaker 1\\\",\\\"text\\\":\\\"[whispers] The dead man pressing his face against my gate used to be my best friend. [tense] In about ten seconds, the radio clipped to his chest is going to crackle... and tell every one of them exactly where I'm hiding. [pause] [wry] My name is Danny Ruiz. I'm the night security guard at Maplecrest Mall. And yes, I've heard every mall cop joke there is.\\\"}],\\\"dialogue_mode\\\":\\\"single\\\",\\\"scene\\\":\\\"Late at night. Danny sits alone in the dark and tells what happened in the first hour of a zombie outbreak at the shopping mall where he works. Intimate and close to the microphone, no music.\\\"}\",\"model\":\"google/gemini-3-1-flash-tts\"}",
+ "resultJson": "{\"resultUrls\":[\"https://file.aiquickdraw.com/as/6c382780522dc7665e5ec733fbace574_1793844058788.wav\"]}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 9,
+ "completeTime": 1793844059510,
+ "createTime": 1793844049686,
+ "creditsConsumed": 1.53,
+ "operationType": "google/gemini-3-1-flash-tts",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"sample_context\\\":\\\"A first-person survival story told as a YouTube narration.\\\",\\\"speakers\\\":[{\\\"audio_profile\\\":\\\"Danny Ruiz, 38, a night security guard and single dad. Warm, a little gravelly, with a dry sense of humor. He is telling the story of the worst night of his life, quietly, like it still shakes him.\\\",\\\"speaker_id\\\":\\\"Speaker 1\\\",\\\"pace\\\":\\\"Natural\\\",\\\"voice_name\\\":\\\"Achird\\\",\\\"style\\\":\\\"Empathetic\\\",\\\"accent\\\":\\\"American (Gen)\\\"}],\\\"temperature\\\":1,\\\"model\\\":\\\"gemini-3.1-flash-tts-preview\\\",\\\"dialogue_turns\\\":[{\\\"speaker_id\\\":\\\"Speaker 1\\\",\\\"text\\\":\\\"[whispers] The dead man pressing his face against my gate used to be my best friend. [tense] In about ten seconds, the radio clipped to his chest is going to crackle... and tell every one of them exactly where I'm hiding. [pause] [wry] My name is Danny Ruiz. I'm the night security guard at Maplecrest Mall. And yes, I've heard every mall cop joke there is.\\\"}],\\\"dialogue_mode\\\":\\\"single\\\",\\\"scene\\\":\\\"Late at night. Danny sits alone in the dark and tells what happened in the first hour of a zombie outbreak at the shopping mall where he works. Intimate and close to the microphone, no music.\\\"}\",\"model\":\"google/gemini-3-1-flash-tts\"}",
+ "response": {
+  "resultUrls": [
+   "https://file.aiquickdraw.com/as/6c382780522dc7665e5ec733fbace574_1793844058788.wav"
+  ]
+ },
+ "_elapsed": 10.4
+}

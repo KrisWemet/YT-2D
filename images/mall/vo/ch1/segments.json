@@ -1,0 +1,1377 @@
+{
+ "duration": 873.15,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform.",
+   "s": 0.3,
+   "e": 5.947,
+   "chunk": "w1"
+  },
+  {
+   "kind": "narr",
+   "text": "Behind him, the hallway is full of them.",
+   "s": 6.197,
+   "e": 8.907,
+   "chunk": "s1_b2"
+  },
+  {
+   "kind": "narr",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding.",
+   "s": 9.157,
+   "e": 15.137,
+   "chunk": "w2"
+  },
+  {
+   "kind": "narr",
+   "text": "An hour ago, I was basically the king of this mall.",
+   "s": 15.487,
+   "e": 20.416,
+   "chunk": "q1n1",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Let me back up.",
+   "s": 20.666,
+   "e": 21.576,
+   "chunk": "q1n1",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "I have a key to every store in this mall.",
+   "s": 25.576,
+   "e": 28.85,
+   "chunk": "k1"
+  },
+  {
+   "kind": "narr",
+   "text": "The man who gave them to me said never to use the last one.",
+   "s": 29.05,
+   "e": 32.843,
+   "chunk": "k2"
+  },
+  {
+   "kind": "narr",
+   "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is.",
+   "s": 33.193,
+   "e": 39.595,
+   "chunk": "n2"
+  },
+  {
+   "kind": "narr",
+   "text": "I work nights so I can be at the bus stop at three-fifteen when my daughter Lily gets off.",
+   "s": 39.795,
+   "e": 45.486,
+   "chunk": "k4"
+  },
+  {
+   "kind": "narr",
+   "text": "My shift is nine to five. Mostly I walk, I check doors, and I eat the pretzels the food court guy was going to throw out anyway.",
+   "s": 45.736,
+   "e": 53.428,
+   "chunk": "c2r"
+  },
+  {
+   "kind": "narr",
+   "text": "She's seven, and she thinks I'm the king of the mall. She drew me a picture once, me in a crown, holding up my keys. It's taped to the monitor in the security office.",
+   "s": 53.678,
+   "e": 62.828,
+   "chunk": "c2a"
+  },
+  {
+   "kind": "narr",
+   "text": "We live with my mom, on the tenth floor of the Parkview Apartments, right across the highway.",
+   "s": 63.078,
+   "e": 67.927,
+   "chunk": "k5"
+  },
+  {
+   "kind": "narr",
+   "text": "Every night at nine, when I walk in to work, Lily blinks her lamp at the mall three times.",
+   "s": 68.177,
+   "e": 74.624,
+   "chunk": "k6"
+  },
+  {
+   "kind": "narr",
+   "text": "It means I love you. I blink my flashlight back.",
+   "s": 74.824,
+   "e": 77.284,
+   "chunk": "k7"
+  },
+  {
+   "kind": "narr",
+   "text": "I taught her one more signal, S-O-S, for emergencies. She thinks it's a game.",
+   "s": 77.634,
+   "e": 81.893,
+   "chunk": "k8"
+  },
+  {
+   "kind": "narr",
+   "text": "I really hope she never has to use it.",
+   "s": 82.143,
+   "e": 84.264,
+   "chunk": "c2b"
+  },
+  {
+   "kind": "narr",
+   "text": "Forty-two keys. Old Walt had this job before me, and when he handed them over, he tapped the last one.",
+   "s": 84.664,
+   "e": 91.018,
+   "chunk": "k9"
+  },
+  {
+   "kind": "narr",
+   "text": "\"That one, you never use,\" he said. \"Don't ask.\"",
+   "s": 91.218,
+   "e": 95.822,
+   "chunk": "k10"
+  },
+  {
+   "kind": "narr",
+   "text": "Its tag says B3. There is no B3 on the mall map.",
+   "s": 96.122,
+   "e": 100.498,
+   "chunk": "k11"
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight, I'd only need one of them.",
+   "s": 100.848,
+   "e": 102.736,
+   "chunk": "q2"
+  },
+  {
+   "kind": "narr",
+   "text": "In thirty days, I'd find out what the last one opens.",
+   "s": 103.086,
+   "e": 106.016,
+   "chunk": "k13"
+  },
+  {
+   "kind": "narr",
+   "text": "Every night at one a.m., my best friend tells me a terrible joke on the radio.",
+   "s": 107.416,
+   "e": 111.705,
+   "chunk": "m1"
+  },
+  {
+   "kind": "narr",
+   "text": "Tonight, he whispered.",
+   "s": 111.905,
+   "e": 113.415,
+   "chunk": "m2"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus guards the parking garage. He's twenty-two, he's studying to be a nurse, and he still owes me twenty bucks.",
+   "s": 113.765,
+   "e": 119.92,
+   "chunk": "m3"
+  },
+  {
+   "kind": "narr",
+   "text": "He lost a bet on a football game back in September, and he's been dodging me ever since.",
+   "s": 120.17,
+   "e": 124.678,
+   "chunk": "c3a"
+  },
+  {
+   "kind": "narr",
+   "text": "At one on the dot, the radio clicks.",
+   "s": 124.978,
+   "e": 128.301,
+   "chunk": "m4"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny. Why don't zombies ever eat clowns?",
+   "s": 128.601,
+   "e": 132.311,
+   "chunk": "j12",
+   "line": 1,
+   "id": "marcus0"
+  },
+  {
+   "kind": "radio",
+   "text": "Because they taste funny.",
+   "s": 132.861,
+   "e": 134.231,
+   "chunk": "j12",
+   "line": 2,
+   "id": "marcus0"
+  },
+  {
+   "kind": "narr",
+   "text": "He laughs at his own jokes. Every single time.",
+   "s": 134.531,
+   "e": 137.922,
+   "chunk": "m7"
+  },
+  {
+   "kind": "narr",
+   "text": "At one-forty, the radio clicks again.",
+   "s": 138.272,
+   "e": 141.073,
+   "chunk": "m8"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny. There's a guy on the ramp. He's walking... wrong.",
+   "s": 141.373,
+   "e": 145.678,
+   "chunk": "r1",
+   "id": "marcus1"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus doesn't whisper. Ever.",
+   "s": 145.978,
+   "e": 148.266,
+   "chunk": "m10"
+  },
+  {
+   "kind": "radio",
+   "text": "Sir? Sir, are you okay? You're bleeding...",
+   "s": 148.566,
+   "e": 151.666,
+   "chunk": "j3",
+   "id": "marcus2"
+  },
+  {
+   "kind": "narr",
+   "text": "Then the radio did something I'd never heard it do.",
+   "s": 152.066,
+   "e": 155.094,
+   "chunk": "m12"
+  },
+  {
+   "kind": "narr",
+   "text": "It went completely silent.",
+   "s": 155.394,
+   "e": 156.843,
+   "chunk": "m13"
+  },
+  {
+   "kind": "narr",
+   "text": "I said his name into the radio. Then I said it again. Nothing.",
+   "s": 158.243,
+   "e": 161.765,
+   "chunk": "c4z"
+  },
+  {
+   "kind": "narr",
+   "text": "The security office has a wall of screens, one for every camera in the building.",
+   "s": 162.065,
+   "e": 166.604,
+   "chunk": "c4a"
+  },
+  {
+   "kind": "narr",
+   "text": "In six years, the most exciting thing I've seen on them is a raccoon in the food court. Twice. Same raccoon.",
+   "s": 166.804,
+   "e": 173.481,
+   "chunk": "c4b"
+  },
+  {
+   "kind": "narr",
+   "text": "I pulled up camera six. The garage, level two.",
+   "s": 173.781,
+   "e": 176.931,
+   "chunk": "c4c"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus was on the ground, and the man from the ramp was on top of him.",
+   "s": 177.131,
+   "e": 182.089,
+   "chunk": "c4d"
+  },
+  {
+   "kind": "narr",
+   "text": "Behind them, more were coming up the ramp from the highway. Six. Ten. Thirty.",
+   "s": 182.339,
+   "e": 188.708,
+   "chunk": "c4e"
+  },
+  {
+   "kind": "narr",
+   "text": "They weren't running. They just walked, all at the same slow speed, like a crowd leaving a stadium.",
+   "s": 188.958,
+   "e": 194.892,
+   "chunk": "c4f"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny... don't come down. Lock up.",
+   "s": 195.092,
+   "e": 199.361,
+   "chunk": "c4g",
+   "id": "marcus"
+  },
+  {
+   "kind": "narr",
+   "text": "I'd like to tell you I ran down there. I didn't. I stood in that office with my hand on the door, and I watched.",
+   "s": 199.711,
+   "e": 205.372,
+   "chunk": "c4h"
+  },
+  {
+   "kind": "narr",
+   "text": "Then I picked up the phone and called nine-one-one. It rang and rang, and then a recording said all circuits were busy.",
+   "s": 205.622,
+   "e": 213.119,
+   "chunk": "c4i"
+  },
+  {
+   "kind": "narr",
+   "text": "My mom's phone went straight to voicemail. So did the next nine calls.",
+   "s": 213.369,
+   "e": 218.358,
+   "chunk": "c4j"
+  },
+  {
+   "kind": "narr",
+   "text": "And then every one of them on that screen turned the same way. Not toward the street. Toward the mall.",
+   "s": 218.658,
+   "e": 225.249,
+   "chunk": "c4k"
+  },
+  {
+   "kind": "narr",
+   "text": "One camera after another, I watched them come inside. The loading dock. The service hall. The doors by the restrooms.",
+   "s": 225.499,
+   "e": 233.097,
+   "chunk": "c4l"
+  },
+  {
+   "kind": "narr",
+   "text": "The only screen that stayed black was camera fourteen, the hallway behind the food court. It had been out since Tuesday. I'd put in a ticket.",
+   "s": 233.297,
+   "e": 240.402,
+   "chunk": "c4m"
+  },
+  {
+   "kind": "narr",
+   "text": "They were all heading for the food court. And the food court is made of glass.",
+   "s": 240.702,
+   "e": 245.428,
+   "chunk": "c4n"
+  },
+  {
+   "kind": "narr",
+   "text": "I did the math. At the speed they were walking, I had about four minutes.",
+   "s": 246.828,
+   "e": 250.913,
+   "chunk": "c5a"
+  },
+  {
+   "kind": "narr",
+   "text": "Four minutes to pick the one store I'd survive in. Which one would you pick?",
+   "s": 251.113,
+   "e": 254.875,
+   "chunk": "c5b"
+  },
+  {
+   "kind": "narr",
+   "text": "Here's the thing about malls. They're built to let people in. That's the whole point of them.",
+   "s": 255.175,
+   "e": 259.644,
+   "chunk": "c5c"
+  },
+  {
+   "kind": "narr",
+   "text": "But every store has a steel gate. And I have every key.",
+   "s": 259.844,
+   "e": 263.528,
+   "chunk": "c5d"
+  },
+  {
+   "kind": "narr",
+   "text": "The pharmacy has medicine. It's also all glass.",
+   "s": 263.828,
+   "e": 266.698,
+   "chunk": "c5e",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "The food court has food, and that's exactly where they're going.",
+   "s": 266.998,
+   "e": 270.548,
+   "chunk": "c5e",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "The department store has beds, and nine different entrances.",
+   "s": 270.848,
+   "e": 274.385,
+   "chunk": "c5e",
+   "line": 3
+  },
+  {
+   "kind": "narr",
+   "text": "And Summit Outdoors has tents, water filters, baseball bats, and one way in.",
+   "s": 274.685,
+   "e": 279.925,
+   "chunk": "c5e",
+   "line": 4
+  },
+  {
+   "kind": "narr",
+   "text": "Every night guard has a zombie plan. Mine was Summit Outdoors. I just never thought I'd actually use it.",
+   "s": 280.225,
+   "e": 285.279,
+   "chunk": "c5e2"
+  },
+  {
+   "kind": "narr",
+   "text": "Mall cops aren't exactly famous for running. I ran.",
+   "s": 285.529,
+   "e": 288.448,
+   "chunk": "c5f"
+  },
+  {
+   "kind": "narr",
+   "text": "Down the escalator, past the fountain, past the pretzel place, with the keys already in my hand.",
+   "s": 288.648,
+   "e": 293.985,
+   "chunk": "c5g"
+  },
+  {
+   "kind": "narr",
+   "text": "I was ten feet from the gate when I heard it.",
+   "s": 294.235,
+   "e": 296.934,
+   "chunk": "c5h"
+  },
+  {
+   "kind": "narr",
+   "text": "Behind me, the food court doors exploded.",
+   "s": 297.134,
+   "e": 299.947,
+   "chunk": "c5i"
+  },
+  {
+   "kind": "narr",
+   "text": "Key thirty-one. Under the gate, pull it down, lock it.",
+   "s": 301.347,
+   "e": 304.784,
+   "chunk": "c6a"
+  },
+  {
+   "kind": "narr",
+   "text": "I've done that a thousand times. I have never done it that fast.",
+   "s": 304.984,
+   "e": 310.103,
+   "chunk": "c6b"
+  },
+  {
+   "kind": "narr",
+   "text": "Then I sat down in the dark, between the tents, with my hand over my mouth.",
+   "s": 310.403,
+   "e": 316.08,
+   "chunk": "c6c"
+  },
+  {
+   "kind": "narr",
+   "text": "Through the gate, I could hear them filling up the hallway. Shuffling. Bumping into things. Dozens of feet that never quite left the floor.",
+   "s": 316.33,
+   "e": 324.186,
+   "chunk": "c6d"
+  },
+  {
+   "kind": "narr",
+   "text": "I did the breathing thing Lily learned in second grade. In for four. Out for four.",
+   "s": 324.436,
+   "e": 329.56,
+   "chunk": "c6e"
+  },
+  {
+   "kind": "narr",
+   "text": "Once, something leaned on my gate, and the whole thing groaned. Then it moved on.",
+   "s": 329.86,
+   "e": 335.13,
+   "chunk": "c6f"
+  },
+  {
+   "kind": "narr",
+   "text": "Lily's drawing was still up in the security office. I remember thinking, the king of the mall is hiding in a tent.",
+   "s": 335.43,
+   "e": 342.83,
+   "chunk": "c6g"
+  },
+  {
+   "kind": "narr",
+   "text": "Twenty minutes went by. Then thirty.",
+   "s": 343.13,
+   "e": 345.279,
+   "chunk": "c6h"
+  },
+  {
+   "kind": "narr",
+   "text": "I started to think maybe that was it. They'd wander off, and in the morning it'd be on the news, and I'd be a funny story.",
+   "s": 345.579,
+   "e": 352.487,
+   "chunk": "c6h2"
+  },
+  {
+   "kind": "narr",
+   "text": "And then somebody knocked.",
+   "s": 352.787,
+   "e": 353.904,
+   "chunk": "c6i",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "One knock. Two quick ones. One more.",
+   "s": 354.254,
+   "e": 356.734,
+   "chunk": "c6i",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "Our knock. The one Marcus and I use on the office door.",
+   "s": 357.034,
+   "e": 359.584,
+   "chunk": "c6i",
+   "line": 3
+  },
+  {
+   "kind": "narr",
+   "text": "Danny. It's me.",
+   "s": 359.934,
+   "e": 361.158,
+   "chunk": "c6k"
+  },
+  {
+   "kind": "narr",
+   "text": "He knew which store I'd pick. Of course he did.",
+   "s": 361.508,
+   "e": 363.802,
+   "chunk": "c6l"
+  },
+  {
+   "kind": "narr",
+   "text": "I turned on my flashlight for one second.",
+   "s": 364.052,
+   "e": 367.191,
+   "chunk": "c6m"
+  },
+  {
+   "kind": "narr",
+   "text": "His face was gray. And his whole sleeve was dark and wet.",
+   "s": 367.441,
+   "e": 372.399,
+   "chunk": "c6n"
+  },
+  {
+   "kind": "narr",
+   "text": "I had the key in my hand.",
+   "s": 372.699,
+   "e": 374.813,
+   "chunk": "c6o"
+  },
+  {
+   "kind": "narr",
+   "text": "Come on, man. Open it. Please.",
+   "s": 376.213,
+   "e": 379.421,
+   "chunk": "c7a"
+  },
+  {
+   "kind": "narr",
+   "text": "There was a bite on his arm. I could see it in the light.",
+   "s": 379.771,
+   "e": 383.311,
+   "chunk": "c7b"
+  },
+  {
+   "kind": "narr",
+   "text": "And past him, at the end of the hall, there were dozens of them. Standing still. Listening.",
+   "s": 383.561,
+   "e": 388.419,
+   "chunk": "c7c"
+  },
+  {
+   "kind": "narr",
+   "text": "If I opened that gate, they'd all come in with him.",
+   "s": 388.669,
+   "e": 391.101,
+   "chunk": "c7d"
+  },
+  {
+   "kind": "narr",
+   "text": "My hand was shaking so hard the keys were rattling. I had to press them against my chest to make them stop.",
+   "s": 391.351,
+   "e": 396.956,
+   "chunk": "c7e"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus watched my face. And he got it before I did.",
+   "s": 397.256,
+   "e": 400.518,
+   "chunk": "c7f"
+  },
+  {
+   "kind": "narr",
+   "text": "Hey. It's okay. I wouldn't open it either.",
+   "s": 400.868,
+   "e": 403.82,
+   "chunk": "c7g"
+  },
+  {
+   "kind": "narr",
+   "text": "He sat down with his back against the bars, and I sat down on my side, and we whispered for forty minutes.",
+   "s": 404.22,
+   "e": 411.106,
+   "chunk": "c7h"
+  },
+  {
+   "kind": "narr",
+   "text": "About stupid stuff. The Bills. His mom's lasagna. The time he got locked in a fitting room at the department store and I had to come get him out.",
+   "s": 411.356,
+   "e": 419.563,
+   "chunk": "c7i"
+  },
+  {
+   "kind": "narr",
+   "text": "I'm not gonna lie, man. I'm kind of scared.",
+   "s": 419.863,
+   "e": 422.697,
+   "chunk": "c7j"
+  },
+  {
+   "kind": "narr",
+   "text": "So was I. I told him I was right here, and I wasn't going anywhere. Which was true. That was the whole problem.",
+   "s": 423.047,
+   "e": 429.609,
+   "chunk": "c7k"
+  },
+  {
+   "kind": "narr",
+   "text": "Tell Lily the king's still in his castle.",
+   "s": 429.909,
+   "e": 432.357,
+   "chunk": "c7l"
+  },
+  {
+   "kind": "narr",
+   "text": "Then, because he's Marcus, he told me one more terrible joke.",
+   "s": 432.707,
+   "e": 436.585,
+   "chunk": "c7m"
+  },
+  {
+   "kind": "narr",
+   "text": "What's a zombie's favorite kind of bean?",
+   "s": 436.835,
+   "e": 439.775,
+   "chunk": "c7n",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "A human bean.",
+   "s": 440.375,
+   "e": 441.855,
+   "chunk": "c7n",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "It wasn't funny. I laughed so hard I had to put my face in a sleeping bag.",
+   "s": 442.205,
+   "e": 446.494,
+   "chunk": "c7o"
+  },
+  {
+   "kind": "narr",
+   "text": "And Danny? I still owe you twenty bucks.",
+   "s": 446.844,
+   "e": 449.401,
+   "chunk": "c7p"
+  },
+  {
+   "kind": "narr",
+   "text": "At two thirty-one, Marcus stopped breathing.",
+   "s": 449.901,
+   "e": 452.514,
+   "chunk": "c7q",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "At two thirty-nine, he stood up.",
+   "s": 453.214,
+   "e": 455.575,
+   "chunk": "c7q",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "He didn't look at me. He just stood there with his face against the bars.",
+   "s": 457.175,
+   "e": 461.125,
+   "chunk": "c8a"
+  },
+  {
+   "kind": "narr",
+   "text": "Two forty-five in the morning. That's where you came in.",
+   "s": 461.425,
+   "e": 465.098,
+   "chunk": "c8b"
+  },
+  {
+   "kind": "narr",
+   "text": "Then my radio crackled.",
+   "s": 465.448,
+   "e": 467.267,
+   "chunk": "c8c"
+  },
+  {
+   "kind": "radio",
+   "text": "Is anyone still in the mall? I'm on the second floor of the department store. Please. I'm not alone up here.",
+   "s": 467.567,
+   "e": 474.215,
+   "chunk": "c8d",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "A woman. Whispering. Somewhere upstairs in my mall.",
+   "s": 474.515,
+   "e": 477.768,
+   "chunk": "c8d2"
+  },
+  {
+   "kind": "narr",
+   "text": "Her voice came out of my radio. And then, one second later, out of the radio on Marcus's chest.",
+   "s": 478.068,
+   "e": 483.741,
+   "chunk": "c8e"
+  },
+  {
+   "kind": "narr",
+   "text": "Every head in that hallway turned.",
+   "s": 483.991,
+   "e": 485.806,
+   "chunk": "c8f",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Forty of them. One gate.",
+   "s": 486.106,
+   "e": 487.552,
+   "chunk": "c8f",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "They didn't run at it. They leaned on it, all at once, the way a crowd leans on the doors on Black Friday.",
+   "s": 487.852,
+   "e": 495.575,
+   "chunk": "c8h"
+  },
+  {
+   "kind": "narr",
+   "text": "And the steel started to bend.",
+   "s": 495.825,
+   "e": 497.298,
+   "chunk": "c8i",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "And she was about to call again.",
+   "s": 497.648,
+   "e": 499.074,
+   "chunk": "c8i",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "I switched my radio off. But his was still on.",
+   "s": 500.474,
+   "e": 503.323,
+   "chunk": "c9a"
+  },
+  {
+   "kind": "narr",
+   "text": "There was only one way to shut it up. I had to reach through the bars and take it off his chest.",
+   "s": 503.573,
+   "e": 508.673,
+   "chunk": "c9b"
+  },
+  {
+   "kind": "narr",
+   "text": "His teeth were about an inch from my wrist. The whole time, he was looking right at me.",
+   "s": 508.923,
+   "e": 513.44,
+   "chunk": "c9c"
+  },
+  {
+   "kind": "narr",
+   "text": "And the clip stuck. He always wore it upside down. I must have told him a hundred times.",
+   "s": 513.69,
+   "e": 519.524,
+   "chunk": "c9d"
+  },
+  {
+   "kind": "narr",
+   "text": "I twisted it, and it came loose, and I fell back on the floor with it.",
+   "s": 519.824,
+   "e": 524.28,
+   "chunk": "c9e"
+  },
+  {
+   "kind": "narr",
+   "text": "I stuffed it as deep into a sleeping bag as it would go, and I lay there, not breathing.",
+   "s": 524.53,
+   "e": 530.203,
+   "chunk": "c9f"
+  },
+  {
+   "kind": "narr",
+   "text": "Without the noise, they forgot about me. It took maybe ten minutes. One by one, they drifted back down the hall.",
+   "s": 530.503,
+   "e": 536.903,
+   "chunk": "c9g",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "All except Marcus.",
+   "s": 537.253,
+   "e": 538.068,
+   "chunk": "c9g",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "Then, from inside the sleeping bag, she said my name.",
+   "s": 538.468,
+   "e": 542.01,
+   "chunk": "c9i"
+  },
+  {
+   "kind": "narr",
+   "text": "When I grabbed that radio, I must have squeezed the talk button.",
+   "s": 543.41,
+   "e": 546.907,
+   "chunk": "c10a"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny, right? The night guard. I can hear you breathing.",
+   "s": 547.207,
+   "e": 550.958,
+   "chunk": "c10b",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "She didn't sound scared anymore. She sounded like someone ordering a coffee.",
+   "s": 551.258,
+   "e": 556.243,
+   "chunk": "c10c"
+  },
+  {
+   "kind": "radio",
+   "text": "Don't worry. I'm not one of them.",
+   "s": 556.543,
+   "e": 558.498,
+   "chunk": "c10d",
+   "line": 1,
+   "id": "vera"
+  },
+  {
+   "kind": "radio",
+   "text": "You've got all the keys, don't you?",
+   "s": 558.998,
+   "e": 560.725,
+   "chunk": "c10d",
+   "line": 2,
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "I didn't say a word.",
+   "s": 561.075,
+   "e": 562.698,
+   "chunk": "c10e"
+  },
+  {
+   "kind": "radio",
+   "text": "That's okay. Get some sleep, Danny. We'll talk tomorrow.",
+   "s": 563.048,
+   "e": 566.057,
+   "chunk": "c10f",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "Then the little light on the radio went out.",
+   "s": 566.457,
+   "e": 569.112,
+   "chunk": "c10f2"
+  },
+  {
+   "kind": "narr",
+   "text": "I didn't sleep. I lay there and listened to Marcus lean on the gate every few minutes, like he was checking that it was still locked.",
+   "s": 569.412,
+   "e": 576.168,
+   "chunk": "c10g"
+  },
+  {
+   "kind": "narr",
+   "text": "Here's what bothered me.",
+   "s": 576.468,
+   "e": 577.478,
+   "chunk": "c10h",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "The mall closes at nine. At midnight, I walked every hallway and checked every door, like I do every night. The department store was locked. I locked it.",
+   "s": 577.778,
+   "e": 586.098,
+   "chunk": "c10h",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "Nobody was in here.",
+   "s": 586.398,
+   "e": 587.357,
+   "chunk": "c10h",
+   "line": 3
+  },
+  {
+   "kind": "narr",
+   "text": "So who was she? And what was she doing in my mall at two in the morning?",
+   "s": 587.707,
+   "e": 591.598,
+   "chunk": "c10i"
+  },
+  {
+   "kind": "narr",
+   "text": "I don't remember falling asleep. I remember waking up.",
+   "s": 592.998,
+   "e": 596.092,
+   "chunk": "c11a"
+  },
+  {
+   "kind": "narr",
+   "text": "Gray light was coming down through the skylights, and the mall was quiet. Really quiet.",
+   "s": 596.342,
+   "e": 601.687,
+   "chunk": "c11b"
+  },
+  {
+   "kind": "narr",
+   "text": "I waited an hour before I moved at all. Then I crawled to the gate, an inch at a time, to look.",
+   "s": 601.887,
+   "e": 607.73,
+   "chunk": "c11c"
+  },
+  {
+   "kind": "narr",
+   "text": "Out in the hallway, the dead were just standing there. Like they were waiting for the stores to open.",
+   "s": 607.98,
+   "e": 612.983,
+   "chunk": "c11d"
+  },
+  {
+   "kind": "narr",
+   "text": "In the daylight, it all looked fake. Like a movie set somebody forgot to take down.",
+   "s": 613.283,
+   "e": 617.797,
+   "chunk": "c11d2"
+  },
+  {
+   "kind": "narr",
+   "text": "Then, way off down the hall, I heard a gate rattle.",
+   "s": 618.097,
+   "e": 621.596,
+   "chunk": "c11e",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Then another one. Closer.",
+   "s": 621.946,
+   "e": 623.514,
+   "chunk": "c11e",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "It was Marcus. He was walking the loop, shaking every gate he passed, the way he did every single night.",
+   "s": 623.814,
+   "e": 630.015,
+   "chunk": "c11g"
+  },
+  {
+   "kind": "narr",
+   "text": "He shook mine too. He didn't even look in.",
+   "s": 630.265,
+   "e": 632.396,
+   "chunk": "c11h"
+  },
+  {
+   "kind": "narr",
+   "text": "Down by the escalator, the night cleaner from the food court was still pushing her cart into the same wall. Over and over.",
+   "s": 632.696,
+   "e": 639.602,
+   "chunk": "c11i"
+  },
+  {
+   "kind": "narr",
+   "text": "That's when I figured out the first rule. They follow sound. And when it's quiet, they go back to whatever they used to do.",
+   "s": 639.852,
+   "e": 647.808,
+   "chunk": "c11j"
+  },
+  {
+   "kind": "narr",
+   "text": "I had breakfast. A protein bar that tasted like a yoga mat.",
+   "s": 648.108,
+   "e": 652.372,
+   "chunk": "c11k"
+  },
+  {
+   "kind": "narr",
+   "text": "Summit Outdoors by daylight: tents, kayaks, a whole wall of camping food, and a cardboard bear that scared me twice.",
+   "s": 652.672,
+   "e": 661.251,
+   "chunk": "c11k2"
+  },
+  {
+   "kind": "narr",
+   "text": "Then my phone buzzed. One message, sent at two-fourteen a.m.",
+   "s": 661.551,
+   "e": 665.823,
+   "chunk": "c11l"
+  },
+  {
+   "kind": "narr",
+   "text": "It was from my mom.",
+   "s": 667.223,
+   "e": 668.353,
+   "chunk": "c12a",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Lily is with me. Door locked. Do not come. And she typed the word not in all capitals.",
+   "s": 668.653,
+   "e": 676.564,
+   "chunk": "c12a",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "My mom is seventy, and she's the toughest person I've ever met.",
+   "s": 676.864,
+   "e": 680.377,
+   "chunk": "c12c"
+  },
+  {
+   "kind": "narr",
+   "text": "I texted back. Stay put. I love you. Tell Lily the king's still in his castle.",
+   "s": 680.677,
+   "e": 686.805,
+   "chunk": "c12d"
+  },
+  {
+   "kind": "narr",
+   "text": "It said delivered. Then the bars on my phone went to zero, and they never came back.",
+   "s": 687.105,
+   "e": 691.901,
+   "chunk": "c12e"
+  },
+  {
+   "kind": "narr",
+   "text": "There's a camping radio in the store, the kind with a hand crank. I found the emergency channel.",
+   "s": 692.201,
+   "e": 698.033,
+   "chunk": "c12f"
+  },
+  {
+   "kind": "radio",
+   "text": "This is an emergency broadcast. Shelter in place. Rescue teams will reach every area within thirty days.",
+   "s": 698.283,
+   "e": 705.604,
+   "chunk": "c12g",
+   "id": "broadcast"
+  },
+  {
+   "kind": "narr",
+   "text": "It played the same thirty seconds, over and over, all day.",
+   "s": 706.004,
+   "e": 709.504,
+   "chunk": "c12g2"
+  },
+  {
+   "kind": "narr",
+   "text": "Thirty days. Okay. I can do thirty days. I've done diets longer than that.",
+   "s": 709.804,
+   "e": 714.852,
+   "chunk": "c12h"
+  },
+  {
+   "kind": "narr",
+   "text": "So I counted what I had.",
+   "s": 715.152,
+   "e": 716.962,
+   "chunk": "c12i",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Seventy-two bottles of water. Forty protein bars. A shelf of freeze-dried meals, a camp stove, water filters, and more baseball bats than anybody needs.",
+   "s": 717.262,
+   "e": 726.888,
+   "chunk": "c12i",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "If I'm careful, that's water for about twelve days.",
+   "s": 727.188,
+   "e": 731.23,
+   "chunk": "c12k"
+  },
+  {
+   "kind": "narr",
+   "text": "Then I remembered something, and my stomach dropped.",
+   "s": 731.53,
+   "e": 734.625,
+   "chunk": "c12l"
+  },
+  {
+   "kind": "narr",
+   "text": "My mom is diabetic. Her insulin lasts about ten days.",
+   "s": 734.875,
+   "e": 739.147,
+   "chunk": "c12m"
+  },
+  {
+   "kind": "narr",
+   "text": "Rescue was thirty days away. My mom's insulin would run out in ten.",
+   "s": 739.497,
+   "e": 744.178,
+   "chunk": "c12n"
+  },
+  {
+   "kind": "narr",
+   "text": "There's a ladder in the stockroom that goes up to a hatch on the roof.",
+   "s": 745.578,
+   "e": 749.791,
+   "chunk": "c13a"
+  },
+  {
+   "kind": "narr",
+   "text": "Six years I've worked here, and I'd never once been up there.",
+   "s": 749.991,
+   "e": 753.972,
+   "chunk": "c13b"
+  },
+  {
+   "kind": "narr",
+   "text": "From the roof, you can see the whole highway.",
+   "s": 754.272,
+   "e": 756.985,
+   "chunk": "c13c"
+  },
+  {
+   "kind": "narr",
+   "text": "The sun was out. That felt kind of rude.",
+   "s": 757.185,
+   "e": 760.253,
+   "chunk": "c13c2"
+  },
+  {
+   "kind": "narr",
+   "text": "Eight lanes of cars, all stopped, doors hanging open. And the dead, walking between them like they'd forgotten where they parked.",
+   "s": 760.503,
+   "e": 768.412,
+   "chunk": "c13d"
+  },
+  {
+   "kind": "narr",
+   "text": "Smoke over downtown. A helicopter that flew right over me and didn't stop.",
+   "s": 768.662,
+   "e": 773.583,
+   "chunk": "c13e"
+  },
+  {
+   "kind": "narr",
+   "text": "I waved at it like an idiot. Both arms.",
+   "s": 773.833,
+   "e": 776.557,
+   "chunk": "c13e2"
+  },
+  {
+   "kind": "narr",
+   "text": "On the roof of the hotel next door, somebody had painted help on a bedsheet. Nobody came for them either.",
+   "s": 776.857,
+   "e": 782.892,
+   "chunk": "c13f"
+  },
+  {
+   "kind": "narr",
+   "text": "And on the other side of all of it, a mile and a half away, Parkview. Tenth floor, fourth window from the left.",
+   "s": 783.192,
+   "e": 792.495,
+   "chunk": "c13g"
+  },
+  {
+   "kind": "narr",
+   "text": "I could see my daughter's window from the roof of this mall. It might as well have been the moon.",
+   "s": 792.745,
+   "e": 796.91,
+   "chunk": "c13h"
+  },
+  {
+   "kind": "narr",
+   "text": "I know what you're thinking. Just go.",
+   "s": 797.26,
+   "e": 799.45,
+   "chunk": "c13i"
+  },
+  {
+   "kind": "narr",
+   "text": "My car is in the garage, with them. There are eight lanes of the dead between me and that building.",
+   "s": 799.7,
+   "e": 806.387,
+   "chunk": "c13j"
+  },
+  {
+   "kind": "narr",
+   "text": "And if I somehow made it, I'd be leading every one of them straight to her door.",
+   "s": 806.587,
+   "e": 810.611,
+   "chunk": "c13k"
+  },
+  {
+   "kind": "narr",
+   "text": "So I stayed up there, and I watched her window all afternoon. I counted every window on that building twice.",
+   "s": 810.911,
+   "e": 817.558,
+   "chunk": "c13l"
+  },
+  {
+   "kind": "narr",
+   "text": "At eight fifty-nine, the whole city went dark. Including her window.",
+   "s": 817.858,
+   "e": 822.115,
+   "chunk": "c13m"
+  },
+  {
+   "kind": "narr",
+   "text": "No streetlights. No windows. I could barely see the shape of her building against the sky.",
+   "s": 823.515,
+   "e": 828.587,
+   "chunk": "c14a"
+  },
+  {
+   "kind": "narr",
+   "text": "At nine, I turned on my flashlight and pointed it at her building, just in case.",
+   "s": 828.887,
+   "e": 833.768,
+   "chunk": "c14a2"
+  },
+  {
+   "kind": "narr",
+   "text": "Nine o'clock. Nothing.",
+   "s": 834.118,
+   "e": 836.132,
+   "chunk": "c14b",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Nine-oh-one. Nothing.",
+   "s": 836.732,
+   "e": 838.647,
+   "chunk": "c14b",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "I stood there with my flashlight, telling myself the power's out, she can't, it's fine.",
+   "s": 839.047,
+   "e": 844.381,
+   "chunk": "c14d"
+  },
+  {
+   "kind": "narr",
+   "text": "Then, one. Two. Three.",
+   "s": 844.681,
+   "e": 847.661,
+   "chunk": "c14e",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Not her lamp. A flashlight. In the tenth-floor window.",
+   "s": 848.061,
+   "e": 851.561,
+   "chunk": "c14e",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "She's alive. She figured it out. She's seven years old, and she figured it out.",
+   "s": 851.911,
+   "e": 856.28,
+   "chunk": "c14g"
+  },
+  {
+   "kind": "narr",
+   "text": "I blinked back three times. Then I sat down on the roof, and I couldn't stop shaking.",
+   "s": 856.58,
+   "e": 861.547,
+   "chunk": "c14h"
+  },
+  {
+   "kind": "narr",
+   "text": "Then the radio in my pocket clicked on. Marcus's radio. I'd carried it around all day.",
+   "s": 861.897,
+   "e": 866.539,
+   "chunk": "c14i"
+  },
+  {
+   "kind": "radio",
+   "text": "That's sweet, Danny.",
+   "s": 866.839,
+   "e": 868.758,
+   "chunk": "c14j",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "She'd been watching.",
+   "s": 869.258,
+   "e": 870.297,
+   "chunk": "c14k"
+  },
+  {
+   "kind": "radio",
+   "text": "Who's in the window?",
+   "s": 870.797,
+   "e": 871.95,
+   "chunk": "c14l",
+   "id": "vera"
+  }
+ ]
+}

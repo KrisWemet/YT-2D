@@ -1,0 +1,1703 @@
+[
+ {
+  "id": "w1",
+  "chunk": "w1",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform.",
+  "pic": "Through the bars: dead Marcus pressed against the sporting goods gate."
+ },
+ {
+  "id": "s1_b2",
+  "chunk": "s1_b2",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "Behind him, the hallway is full of them.",
+  "pic": "The hallway behind him, full of them."
+ },
+ {
+  "id": "w2",
+  "chunk": "w2",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding.",
+  "pic": "Close on the radio clipped to his chest, circled. Danny on the floor, hand over his mouth."
+ },
+ {
+  "id": "q1n1.1",
+  "chunk": "q1n1",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "An hour ago, I was basically the king of this mall.",
+  "pic": "Danny in Lily's paper crown holding up his keys. Rewind. Then the title card: CHAPTER ONE, THE KING OF THE MALL."
+ },
+ {
+  "id": "q1n1.2",
+  "chunk": "q1n1",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "Let me back up.",
+  "pic": "Danny in Lily's paper crown holding up his keys. Rewind. Then the title card: CHAPTER ONE, THE KING OF THE MALL."
+ },
+ {
+  "id": "k1",
+  "chunk": "k1",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "I have a key to every store in this mall.",
+  "pic": "Danny holds up the key ring in the concourse."
+ },
+ {
+  "id": "k2",
+  "chunk": "k2",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "The man who gave them to me said never to use the last one.",
+  "pic": "Close on the ring: one key with a red tag."
+ },
+ {
+  "id": "n2",
+  "chunk": "n2",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is.",
+  "pic": "Danny in the concourse. Name tag: DANNY RUIZ, NIGHT GUARD."
+ },
+ {
+  "id": "k4",
+  "chunk": "k4",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "I work nights so I can be at the bus stop at three-fifteen when my daughter Lily gets off.",
+  "pic": "The bus stop, the 3:15 clock, Lily running off the bus."
+ },
+ {
+  "id": "c2r",
+  "chunk": "c2r",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "My shift is nine to five. Mostly I walk, I check doors, and I eat the pretzels the food court guy was going to throw out anyway.",
+  "pic": "Danny on his rounds with a pretzel, checking a door."
+ },
+ {
+  "id": "c2a",
+  "chunk": "c2a",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "She's seven, and she thinks I'm the king of the mall. She drew me a picture once, me in a crown, holding up my keys. It's taped to the monitor in the security office.",
+  "pic": "Lily's crayon drawing, MY DAD IS THE KING OF THE MALL, taped to a monitor."
+ },
+ {
+  "id": "k5",
+  "chunk": "k5",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "We live with my mom, on the tenth floor of the Parkview Apartments, right across the highway.",
+  "pic": "Night: Parkview tower across the highway. Tenth floor, fourth window, circled."
+ },
+ {
+  "id": "k6",
+  "chunk": "k6",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "Every night at nine, when I walk in to work, Lily blinks her lamp at the mall three times.",
+  "pic": "The window blinks: one, two, three. 9:00 PM."
+ },
+ {
+  "id": "k7",
+  "chunk": "k7",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "It means I love you. I blink my flashlight back.",
+  "pic": "Danny in the parking lot answers with three flashes."
+ },
+ {
+  "id": "k8",
+  "chunk": "k8",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "I taught her one more signal, S-O-S, for emergencies. She thinks it's a game.",
+  "pic": "The window blinks SOS."
+ },
+ {
+  "id": "c2b",
+  "chunk": "c2b",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "I really hope she never has to use it.",
+  "pic": "Danny looks up at the lit window."
+ },
+ {
+  "id": "k9",
+  "chunk": "k9",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "Forty-two keys. Old Walt had this job before me, and when he handed them over, he tapped the last one.",
+  "pic": "The security office: old Walt hands Danny the ring."
+ },
+ {
+  "id": "k10",
+  "chunk": "k10",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "\"That one, you never use,\" he said. \"Don't ask.\"",
+  "pic": "Close on Walt, serious."
+ },
+ {
+  "id": "k11",
+  "chunk": "k11",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "Its tag says B3. There is no B3 on the mall map.",
+  "pic": "The tag reads B3. The mall map, with no B3 anywhere."
+ },
+ {
+  "id": "q2",
+  "chunk": "q2",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "Tonight, I'd only need one of them.",
+  "pic": "The padlock on the sporting goods gate."
+ },
+ {
+  "id": "k13",
+  "chunk": "k13",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "In thirty days, I'd find out what the last one opens.",
+  "pic": "A steel door in the dark, stencilled B3."
+ },
+ {
+  "id": "m1",
+  "chunk": "m1",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Every night at one a.m., my best friend tells me a terrible joke on the radio.",
+  "pic": "Danny in the security office, radio in hand. 1:00 AM."
+ },
+ {
+  "id": "m2",
+  "chunk": "m2",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Tonight, he whispered.",
+  "pic": "Close on the radio."
+ },
+ {
+  "id": "m3",
+  "chunk": "m3",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Marcus guards the parking garage. He's twenty-two, he's studying to be a nurse, and he still owes me twenty bucks.",
+  "pic": "Marcus in the garage with his nursing book. MARCUS, 22, NURSING STUDENT, OWES ME $20."
+ },
+ {
+  "id": "c3a",
+  "chunk": "c3a",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "He lost a bet on a football game back in September, and he's been dodging me ever since.",
+  "pic": "Marcus grinning, turning out empty pockets."
+ },
+ {
+  "id": "m4",
+  "chunk": "m4",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "At one on the dot, the radio clicks.",
+  "pic": "The radio on the desk crackles."
+ },
+ {
+  "id": "j12.1",
+  "chunk": "j12",
+  "seg": 3,
+  "who": "marcus",
+  "radio": true,
+  "text": "Danny. Why don't zombies ever eat clowns?",
+  "pic": "Marcus grinning into his radio, then laughing at his own joke."
+ },
+ {
+  "id": "j12.2",
+  "chunk": "j12",
+  "seg": 3,
+  "who": "marcus",
+  "radio": true,
+  "text": "Because they taste funny.",
+  "pic": "Marcus grinning into his radio, then laughing at his own joke."
+ },
+ {
+  "id": "m7",
+  "chunk": "m7",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "He laughs at his own jokes. Every single time.",
+  "pic": "Danny, half a smile."
+ },
+ {
+  "id": "m8",
+  "chunk": "m8",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "At one-forty, the radio clicks again.",
+  "pic": "1:40 AM."
+ },
+ {
+  "id": "r1",
+  "chunk": "r1",
+  "seg": 3,
+  "who": "marcus",
+  "radio": true,
+  "text": "Danny. There's a guy on the ramp. He's walking... wrong.",
+  "pic": "Marcus crouched by a car. A man limping up the ramp."
+ },
+ {
+  "id": "m10",
+  "chunk": "m10",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Marcus doesn't whisper. Ever.",
+  "pic": "Close on Danny's face."
+ },
+ {
+  "id": "j3",
+  "chunk": "j3",
+  "seg": 3,
+  "who": "marcus",
+  "radio": true,
+  "text": "Sir? Sir, are you okay? You're bleeding...",
+  "pic": "Marcus stepping toward the man."
+ },
+ {
+  "id": "m12",
+  "chunk": "m12",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Then the radio did something I'd never heard it do.",
+  "pic": "Danny stares at the radio."
+ },
+ {
+  "id": "m13",
+  "chunk": "m13",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "It went completely silent.",
+  "pic": "The waves stop. NO SIGNAL."
+ },
+ {
+  "id": "c4z",
+  "chunk": "c4z",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "I said his name into the radio. Then I said it again. Nothing.",
+  "pic": "Danny with the radio to his mouth."
+ },
+ {
+  "id": "c4a",
+  "chunk": "c4a",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "The security office has a wall of screens, one for every camera in the building.",
+  "pic": "The office: the wall of monitors glowing."
+ },
+ {
+  "id": "c4b",
+  "chunk": "c4b",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "In six years, the most exciting thing I've seen on them is a raccoon in the food court. Twice. Same raccoon.",
+  "pic": "A security-camera shot of the food court with a raccoon on a table. Then the same raccoon again."
+ },
+ {
+  "id": "c4c",
+  "chunk": "c4c",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "I pulled up camera six. The garage, level two.",
+  "pic": "Security camera: garage, level two. CAM 6."
+ },
+ {
+  "id": "c4d",
+  "chunk": "c4d",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "Marcus was on the ground, and the man from the ramp was on top of him.",
+  "pic": "Security camera: Marcus down, the man over him."
+ },
+ {
+  "id": "c4e",
+  "chunk": "c4e",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "Behind them, more were coming up the ramp from the highway. Six. Ten. Thirty.",
+  "pic": "Security camera: the ramp filling up. Counter: 6, 10, 30."
+ },
+ {
+  "id": "c4f",
+  "chunk": "c4f",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "They weren't running. They just walked, all at the same slow speed, like a crowd leaving a stadium.",
+  "pic": "The crowd on the ramp, all walking the same way."
+ },
+ {
+  "id": "c4g",
+  "chunk": "c4g",
+  "seg": 4,
+  "who": "marcus",
+  "radio": true,
+  "text": "Danny... don't come down. Lock up.",
+  "pic": "Security camera: Marcus on the ground, his hand on his radio."
+ },
+ {
+  "id": "c4h",
+  "chunk": "c4h",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "I'd like to tell you I ran down there. I didn't. I stood in that office with my hand on the door, and I watched.",
+  "pic": "Danny frozen at the office door, hand on the handle, the screens glowing behind him."
+ },
+ {
+  "id": "c4i",
+  "chunk": "c4i",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "Then I picked up the phone and called nine-one-one. It rang and rang, and then a recording said all circuits were busy.",
+  "pic": "Danny with the desk phone. ALL CIRCUITS ARE BUSY."
+ },
+ {
+  "id": "c4j",
+  "chunk": "c4j",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "My mom's phone went straight to voicemail. So did the next nine calls.",
+  "pic": "Danny's phone: MOM, calling. Voicemail. A call log, ten times."
+ },
+ {
+  "id": "c4k",
+  "chunk": "c4k",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "And then every one of them on that screen turned the same way. Not toward the street. Toward the mall.",
+  "pic": "Security camera: the whole crowd turns toward the mall."
+ },
+ {
+  "id": "c4l",
+  "chunk": "c4l",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "One camera after another, I watched them come inside. The loading dock. The service hall. The doors by the restrooms.",
+  "pic": "The monitor wall, screen after screen showing them coming in."
+ },
+ {
+  "id": "c4m",
+  "chunk": "c4m",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "The only screen that stayed black was camera fourteen, the hallway behind the food court. It had been out since Tuesday. I'd put in a ticket.",
+  "pic": "One black monitor: CAM 14, NO SIGNAL. A sticky note: TICKET PUT IN TUESDAY."
+ },
+ {
+  "id": "c4n",
+  "chunk": "c4n",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "They were all heading for the food court. And the food court is made of glass.",
+  "pic": "The food court's glass wall, and the crowd massing outside it."
+ },
+ {
+  "id": "c5a",
+  "chunk": "c5a",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "I did the math. At the speed they were walking, I had about four minutes.",
+  "pic": "A countdown: 4:00."
+ },
+ {
+  "id": "c5b",
+  "chunk": "c5b",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Four minutes to pick the one store I'd survive in. Which one would you pick?",
+  "pic": "The mall map with four stores marked, and a question mark."
+ },
+ {
+  "id": "c5c",
+  "chunk": "c5c",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Here's the thing about malls. They're built to let people in. That's the whole point of them.",
+  "pic": "The wide concourse, entrances everywhere."
+ },
+ {
+  "id": "c5d",
+  "chunk": "c5d",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "But every store has a steel gate. And I have every key.",
+  "pic": "Store gates; the key ring."
+ },
+ {
+  "id": "c5e.1",
+  "chunk": "c5e",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "The pharmacy has medicine. It's also all glass.",
+  "pic": "The pharmacy: all glass front. A red X."
+ },
+ {
+  "id": "c5e.2",
+  "chunk": "c5e",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "The food court has food, and that's exactly where they're going.",
+  "pic": "The food court, the crowd heading for it. A red X."
+ },
+ {
+  "id": "c5e.3",
+  "chunk": "c5e",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "The department store has beds, and nine different entrances.",
+  "pic": "The department store, nine arrows. A red X."
+ },
+ {
+  "id": "c5e.4",
+  "chunk": "c5e",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "And Summit Outdoors has tents, water filters, baseball bats, and one way in.",
+  "pic": "Summit Outdoors: tents, bats, one gate. A green check."
+ },
+ {
+  "id": "c5e2",
+  "chunk": "c5e2",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Every night guard has a zombie plan. Mine was Summit Outdoors. I just never thought I'd actually use it.",
+  "pic": "Danny's old doodle of the plan on a napkin: SUMMIT OUTDOORS, circled."
+ },
+ {
+  "id": "c5f",
+  "chunk": "c5f",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Mall cops aren't exactly famous for running. I ran.",
+  "pic": "Danny running down the concourse."
+ },
+ {
+  "id": "c5g",
+  "chunk": "c5g",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Down the escalator, past the fountain, past the pretzel place, with the keys already in my hand.",
+  "pic": "Running past the escalator and the fountain, speed lines."
+ },
+ {
+  "id": "c5h",
+  "chunk": "c5h",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "I was ten feet from the gate when I heard it.",
+  "pic": "Danny at the Summit Outdoors front, freezing."
+ },
+ {
+  "id": "c5i",
+  "chunk": "c5i",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Behind me, the food court doors exploded.",
+  "pic": "The food court glass bursts inward."
+ },
+ {
+  "id": "c6a",
+  "chunk": "c6a",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "Key thirty-one. Under the gate, pull it down, lock it.",
+  "pic": "The gate coming down; the padlock; tag 31."
+ },
+ {
+  "id": "c6b",
+  "chunk": "c6b",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "I've done that a thousand times. I have never done it that fast.",
+  "pic": "Danny's hands on the lock."
+ },
+ {
+  "id": "c6c",
+  "chunk": "c6c",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "Then I sat down in the dark, between the tents, with my hand over my mouth.",
+  "pic": "Danny sitting between the tents, hand over his mouth."
+ },
+ {
+  "id": "c6d",
+  "chunk": "c6d",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "Through the gate, I could hear them filling up the hallway. Shuffling. Bumping into things. Dozens of feet that never quite left the floor.",
+  "pic": "Shapes passing beyond the gate."
+ },
+ {
+  "id": "c6e",
+  "chunk": "c6e",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "I did the breathing thing Lily learned in second grade. In for four. Out for four.",
+  "pic": "Danny breathing slowly; a little memory of Lily showing him."
+ },
+ {
+  "id": "c6f",
+  "chunk": "c6f",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "Once, something leaned on my gate, and the whole thing groaned. Then it moved on.",
+  "pic": "The gate bulges inward, then settles."
+ },
+ {
+  "id": "c6g",
+  "chunk": "c6g",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "Lily's drawing was still up in the security office. I remember thinking, the king of the mall is hiding in a tent.",
+  "pic": "The crayon drawing; then Danny peeking out of a tent."
+ },
+ {
+  "id": "c6h",
+  "chunk": "c6h",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "Twenty minutes went by. Then thirty.",
+  "pic": "Clock: 2:08. Then 2:18."
+ },
+ {
+  "id": "c6h2",
+  "chunk": "c6h2",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "I started to think maybe that was it. They'd wander off, and in the morning it'd be on the news, and I'd be a funny story.",
+  "pic": "Danny's head back against a tent pole, almost smiling."
+ },
+ {
+  "id": "c6i.1",
+  "chunk": "c6i",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "And then somebody knocked.",
+  "pic": "The dark gate."
+ },
+ {
+  "id": "c6i.2",
+  "chunk": "c6i",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "One knock. Two quick ones. One more.",
+  "pic": "Knuckles on the gate."
+ },
+ {
+  "id": "c6i.3",
+  "chunk": "c6i",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "Our knock. The one Marcus and I use on the office door.",
+  "pic": "Danny's eyes, wide."
+ },
+ {
+  "id": "c6k",
+  "chunk": "c6k",
+  "seg": 6,
+  "who": "marcus_gate",
+  "radio": false,
+  "text": "Danny. It's me.",
+  "pic": "A shape at the gate."
+ },
+ {
+  "id": "c6l",
+  "chunk": "c6l",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "He knew which store I'd pick. Of course he did.",
+  "pic": "Danny, closing his eyes."
+ },
+ {
+  "id": "c6m",
+  "chunk": "c6m",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "I turned on my flashlight for one second.",
+  "pic": "Click: the flashlight beam."
+ },
+ {
+  "id": "c6n",
+  "chunk": "c6n",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "His face was gray. And his whole sleeve was dark and wet.",
+  "pic": "Marcus behind the bars, gray, his sleeve dark."
+ },
+ {
+  "id": "c6o",
+  "chunk": "c6o",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "I had the key in my hand.",
+  "pic": "Close on the key in Danny's hand."
+ },
+ {
+  "id": "c7a",
+  "chunk": "c7a",
+  "seg": 7,
+  "who": "marcus_gate",
+  "radio": false,
+  "text": "Come on, man. Open it. Please.",
+  "pic": "Marcus at the gate, hand on the bars."
+ },
+ {
+  "id": "c7b",
+  "chunk": "c7b",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "There was a bite on his arm. I could see it in the light.",
+  "pic": "His arm, a dark mark on it."
+ },
+ {
+  "id": "c7c",
+  "chunk": "c7c",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "And past him, at the end of the hall, there were dozens of them. Standing still. Listening.",
+  "pic": "The far end of the hallway: a crowd standing still."
+ },
+ {
+  "id": "c7d",
+  "chunk": "c7d",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "If I opened that gate, they'd all come in with him.",
+  "pic": "The lock, the key, the crowd beyond."
+ },
+ {
+  "id": "c7e",
+  "chunk": "c7e",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "My hand was shaking so hard the keys were rattling. I had to press them against my chest to make them stop.",
+  "pic": "Shaking keys, pressed to his chest."
+ },
+ {
+  "id": "c7f",
+  "chunk": "c7f",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "Marcus watched my face. And he got it before I did.",
+  "pic": "Marcus's face, understanding."
+ },
+ {
+  "id": "c7g",
+  "chunk": "c7g",
+  "seg": 7,
+  "who": "marcus_gate",
+  "radio": false,
+  "text": "Hey. It's okay. I wouldn't open it either.",
+  "pic": "Marcus, a tired smile."
+ },
+ {
+  "id": "c7h",
+  "chunk": "c7h",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "He sat down with his back against the bars, and I sat down on my side, and we whispered for forty minutes.",
+  "pic": "The two of them back to back, the gate between them."
+ },
+ {
+  "id": "c7i",
+  "chunk": "c7i",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "About stupid stuff. The Bills. His mom's lasagna. The time he got locked in a fitting room at the department store and I had to come get him out.",
+  "pic": "Warm memory pictures: a football game, a lasagna, Marcus in a fitting room."
+ },
+ {
+  "id": "c7j",
+  "chunk": "c7j",
+  "seg": 7,
+  "who": "marcus_gate",
+  "radio": false,
+  "text": "I'm not gonna lie, man. I'm kind of scared.",
+  "pic": "Marcus, head back against the bars."
+ },
+ {
+  "id": "c7k",
+  "chunk": "c7k",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "So was I. I told him I was right here, and I wasn't going anywhere. Which was true. That was the whole problem.",
+  "pic": "Danny's hand flat against the gate."
+ },
+ {
+  "id": "c7l",
+  "chunk": "c7l",
+  "seg": 7,
+  "who": "marcus_gate",
+  "radio": false,
+  "text": "Tell Lily the king's still in his castle.",
+  "pic": "Marcus, eyes closed."
+ },
+ {
+  "id": "c7m",
+  "chunk": "c7m",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "Then, because he's Marcus, he told me one more terrible joke.",
+  "pic": "Marcus grins."
+ },
+ {
+  "id": "c7n.1",
+  "chunk": "c7n",
+  "seg": 7,
+  "who": "marcus_gate",
+  "radio": false,
+  "text": "What's a zombie's favorite kind of bean?",
+  "pic": "Marcus, grinning."
+ },
+ {
+  "id": "c7n.2",
+  "chunk": "c7n",
+  "seg": 7,
+  "who": "marcus_gate",
+  "radio": false,
+  "text": "A human bean.",
+  "pic": "Marcus laughing weakly."
+ },
+ {
+  "id": "c7o",
+  "chunk": "c7o",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "It wasn't funny. I laughed so hard I had to put my face in a sleeping bag.",
+  "pic": "Danny with his face in a sleeping bag, shoulders shaking."
+ },
+ {
+  "id": "c7p",
+  "chunk": "c7p",
+  "seg": 7,
+  "who": "marcus_gate",
+  "radio": false,
+  "text": "And Danny? I still owe you twenty bucks.",
+  "pic": "Marcus's hand on the bars."
+ },
+ {
+  "id": "c7q.1",
+  "chunk": "c7q",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "At two thirty-one, Marcus stopped breathing.",
+  "pic": "Clock: 2:31 AM. Marcus still."
+ },
+ {
+  "id": "c7q.2",
+  "chunk": "c7q",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "At two thirty-nine, he stood up.",
+  "pic": "Clock: 2:39 AM. Marcus rising."
+ },
+ {
+  "id": "c8a",
+  "chunk": "c8a",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "He didn't look at me. He just stood there with his face against the bars.",
+  "pic": "Dead Marcus at the gate."
+ },
+ {
+  "id": "c8b",
+  "chunk": "c8b",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Two forty-five in the morning. That's where you came in.",
+  "pic": "The cold-open picture again. 2:45 AM."
+ },
+ {
+  "id": "c8c",
+  "chunk": "c8c",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Then my radio crackled.",
+  "pic": "Danny's radio on the floor, its light on."
+ },
+ {
+  "id": "c8d",
+  "chunk": "c8d",
+  "seg": 8,
+  "who": "vera",
+  "radio": true,
+  "text": "Is anyone still in the mall? I'm on the second floor of the department store. Please. I'm not alone up here.",
+  "pic": "A radio wave icon. The department store, dark, second floor."
+ },
+ {
+  "id": "c8d2",
+  "chunk": "c8d2",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "A woman. Whispering. Somewhere upstairs in my mall.",
+  "pic": "The dark department store upstairs."
+ },
+ {
+  "id": "c8e",
+  "chunk": "c8e",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Her voice came out of my radio. And then, one second later, out of the radio on Marcus's chest.",
+  "pic": "Both radios, one after the other."
+ },
+ {
+  "id": "c8f.1",
+  "chunk": "c8f",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Every head in that hallway turned.",
+  "pic": "Every head turns."
+ },
+ {
+  "id": "c8f.2",
+  "chunk": "c8f",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Forty of them. One gate.",
+  "pic": "The crowd and the one gate."
+ },
+ {
+  "id": "c8h",
+  "chunk": "c8h",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "They didn't run at it. They leaned on it, all at once, the way a crowd leans on the doors on Black Friday.",
+  "pic": "The crowd pressing on the gate; a flash of Black Friday shoppers at the doors."
+ },
+ {
+  "id": "c8i.1",
+  "chunk": "c8i",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "And the steel started to bend.",
+  "pic": "The gate bending."
+ },
+ {
+  "id": "c8i.2",
+  "chunk": "c8i",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "And she was about to call again.",
+  "pic": "The radio on Marcus's chest, its light on."
+ },
+ {
+  "id": "c9a",
+  "chunk": "c9a",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "I switched my radio off. But his was still on.",
+  "pic": "Click. Danny's radio dark. Marcus's still lit."
+ },
+ {
+  "id": "c9b",
+  "chunk": "c9b",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "There was only one way to shut it up. I had to reach through the bars and take it off his chest.",
+  "pic": "Danny's hand reaching through the bars."
+ },
+ {
+  "id": "c9c",
+  "chunk": "c9c",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "His teeth were about an inch from my wrist. The whole time, he was looking right at me.",
+  "pic": "Close: the hand, the radio, Marcus's face."
+ },
+ {
+  "id": "c9d",
+  "chunk": "c9d",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "And the clip stuck. He always wore it upside down. I must have told him a hundred times.",
+  "pic": "The clip, upside down."
+ },
+ {
+  "id": "c9e",
+  "chunk": "c9e",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "I twisted it, and it came loose, and I fell back on the floor with it.",
+  "pic": "Danny falling back with the radio."
+ },
+ {
+  "id": "c9f",
+  "chunk": "c9f",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "I stuffed it as deep into a sleeping bag as it would go, and I lay there, not breathing.",
+  "pic": "The radio pushed into a sleeping bag."
+ },
+ {
+  "id": "c9g.1",
+  "chunk": "c9g",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Without the noise, they forgot about me. It took maybe ten minutes. One by one, they drifted back down the hall.",
+  "pic": "The crowd drifting away."
+ },
+ {
+  "id": "c9g.2",
+  "chunk": "c9g",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "All except Marcus.",
+  "pic": "Marcus alone at the gate."
+ },
+ {
+  "id": "c9i",
+  "chunk": "c9i",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Then, from inside the sleeping bag, she said my name.",
+  "pic": "The sleeping bag. A faint glow inside."
+ },
+ {
+  "id": "c10a",
+  "chunk": "c10a",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "When I grabbed that radio, I must have squeezed the talk button.",
+  "pic": "The radio's talk button."
+ },
+ {
+  "id": "c10b",
+  "chunk": "c10b",
+  "seg": 10,
+  "who": "vera",
+  "radio": true,
+  "text": "Danny, right? The night guard. I can hear you breathing.",
+  "pic": "Radio waves."
+ },
+ {
+  "id": "c10c",
+  "chunk": "c10c",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "She didn't sound scared anymore. She sounded like someone ordering a coffee.",
+  "pic": "Danny staring at the radio."
+ },
+ {
+  "id": "c10d.1",
+  "chunk": "c10d",
+  "seg": 10,
+  "who": "vera",
+  "radio": true,
+  "text": "Don't worry. I'm not one of them.",
+  "pic": "Radio waves."
+ },
+ {
+  "id": "c10d.2",
+  "chunk": "c10d",
+  "seg": 10,
+  "who": "vera",
+  "radio": true,
+  "text": "You've got all the keys, don't you?",
+  "pic": "The key ring on Danny's belt."
+ },
+ {
+  "id": "c10e",
+  "chunk": "c10e",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "I didn't say a word.",
+  "pic": "Danny's hand over the radio."
+ },
+ {
+  "id": "c10f",
+  "chunk": "c10f",
+  "seg": 10,
+  "who": "vera",
+  "radio": true,
+  "text": "That's okay. Get some sleep, Danny. We'll talk tomorrow.",
+  "pic": "Radio waves."
+ },
+ {
+  "id": "c10f2",
+  "chunk": "c10f2",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Then the little light on the radio went out.",
+  "pic": "The radio's light goes out."
+ },
+ {
+  "id": "c10g",
+  "chunk": "c10g",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "I didn't sleep. I lay there and listened to Marcus lean on the gate every few minutes, like he was checking that it was still locked.",
+  "pic": "Danny awake between the tents; Marcus leaning on the gate."
+ },
+ {
+  "id": "c10h.1",
+  "chunk": "c10h",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Here's what bothered me.",
+  "pic": "The mall map."
+ },
+ {
+  "id": "c10h.2",
+  "chunk": "c10h",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "The mall closes at nine. At midnight, I walked every hallway and checked every door, like I do every night. The department store was locked. I locked it.",
+  "pic": "Danny on his midnight rounds, rattling the department store gate."
+ },
+ {
+  "id": "c10h.3",
+  "chunk": "c10h",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Nobody was in here.",
+  "pic": "The empty mall at midnight."
+ },
+ {
+  "id": "c10i",
+  "chunk": "c10i",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "So who was she? And what was she doing in my mall at two in the morning?",
+  "pic": "The department store, dark, a light moving on the second floor."
+ },
+ {
+  "id": "c11a",
+  "chunk": "c11a",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "I don't remember falling asleep. I remember waking up.",
+  "pic": "Danny waking between the tents."
+ },
+ {
+  "id": "c11b",
+  "chunk": "c11b",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Gray light was coming down through the skylights, and the mall was quiet. Really quiet.",
+  "pic": "Morning light in the concourse."
+ },
+ {
+  "id": "c11c",
+  "chunk": "c11c",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "I waited an hour before I moved at all. Then I crawled to the gate, an inch at a time, to look.",
+  "pic": "Danny crawling to the gate."
+ },
+ {
+  "id": "c11d",
+  "chunk": "c11d",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Out in the hallway, the dead were just standing there. Like they were waiting for the stores to open.",
+  "pic": "The dead standing still in the morning concourse."
+ },
+ {
+  "id": "c11d2",
+  "chunk": "c11d2",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "In the daylight, it all looked fake. Like a movie set somebody forgot to take down.",
+  "pic": "The morning concourse, wide and still."
+ },
+ {
+  "id": "c11e.1",
+  "chunk": "c11e",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Then, way off down the hall, I heard a gate rattle.",
+  "pic": "Far down the hall."
+ },
+ {
+  "id": "c11e.2",
+  "chunk": "c11e",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Then another one. Closer.",
+  "pic": "Closer."
+ },
+ {
+  "id": "c11g",
+  "chunk": "c11g",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "It was Marcus. He was walking the loop, shaking every gate he passed, the way he did every single night.",
+  "pic": "Dead Marcus walking the loop, rattling gates."
+ },
+ {
+  "id": "c11h",
+  "chunk": "c11h",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "He shook mine too. He didn't even look in.",
+  "pic": "Marcus rattles Danny's gate and walks on."
+ },
+ {
+  "id": "c11i",
+  "chunk": "c11i",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Down by the escalator, the night cleaner from the food court was still pushing her cart into the same wall. Over and over.",
+  "pic": "A dead cleaner pushing her cart into a wall."
+ },
+ {
+  "id": "c11j",
+  "chunk": "c11j",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "That's when I figured out the first rule. They follow sound. And when it's quiet, they go back to whatever they used to do.",
+  "pic": "RULE 1: THEY FOLLOW SOUND."
+ },
+ {
+  "id": "c11k",
+  "chunk": "c11k",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "I had breakfast. A protein bar that tasted like a yoga mat.",
+  "pic": "Danny chewing a protein bar."
+ },
+ {
+  "id": "c11k2",
+  "chunk": "c11k2",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Summit Outdoors by daylight: tents, kayaks, a whole wall of camping food, and a cardboard bear that scared me twice.",
+  "pic": "The store by daylight; a cardboard bear cutout."
+ },
+ {
+  "id": "c11l",
+  "chunk": "c11l",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Then my phone buzzed. One message, sent at two-fourteen a.m.",
+  "pic": "Danny's phone lights up: 1 NEW MESSAGE, 2:14 AM."
+ },
+ {
+  "id": "c12a.1",
+  "chunk": "c12a",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "It was from my mom.",
+  "pic": "The phone: MOM."
+ },
+ {
+  "id": "c12a.2",
+  "chunk": "c12a",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "Lily is with me. Door locked. Do not come. And she typed the word not in all capitals.",
+  "pic": "The text: LILY IS WITH ME. DOOR LOCKED. DO NOT COME."
+ },
+ {
+  "id": "c12c",
+  "chunk": "c12c",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "My mom is seventy, and she's the toughest person I've ever met.",
+  "pic": "Lita, Danny's mom, arms folded."
+ },
+ {
+  "id": "c12d",
+  "chunk": "c12d",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "I texted back. Stay put. I love you. Tell Lily the king's still in his castle.",
+  "pic": "Danny typing the reply."
+ },
+ {
+  "id": "c12e",
+  "chunk": "c12e",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "It said delivered. Then the bars on my phone went to zero, and they never came back.",
+  "pic": "DELIVERED. The signal bars drop to nothing."
+ },
+ {
+  "id": "c12f",
+  "chunk": "c12f",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "There's a camping radio in the store, the kind with a hand crank. I found the emergency channel.",
+  "pic": "Danny cranking a camping radio."
+ },
+ {
+  "id": "c12g",
+  "chunk": "c12g",
+  "seg": 12,
+  "who": "broadcast",
+  "radio": true,
+  "text": "This is an emergency broadcast. Shelter in place. Rescue teams will reach every area within thirty days.",
+  "pic": "EMERGENCY BROADCAST: SHELTER IN PLACE. RESCUE WITHIN 30 DAYS."
+ },
+ {
+  "id": "c12g2",
+  "chunk": "c12g2",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "It played the same thirty seconds, over and over, all day.",
+  "pic": "The camping radio, its dial glowing."
+ },
+ {
+  "id": "c12h",
+  "chunk": "c12h",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "Thirty days. Okay. I can do thirty days. I've done diets longer than that.",
+  "pic": "DAY 1 OF 30."
+ },
+ {
+  "id": "c12i.1",
+  "chunk": "c12i",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "So I counted what I had.",
+  "pic": "The store's shelves."
+ },
+ {
+  "id": "c12i.2",
+  "chunk": "c12i",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "Seventy-two bottles of water. Forty protein bars. A shelf of freeze-dried meals, a camp stove, water filters, and more baseball bats than anybody needs.",
+  "pic": "Supplies counted up on screen."
+ },
+ {
+  "id": "c12k",
+  "chunk": "c12k",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "If I'm careful, that's water for about twelve days.",
+  "pic": "WATER: 12 DAYS."
+ },
+ {
+  "id": "c12l",
+  "chunk": "c12l",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "Then I remembered something, and my stomach dropped.",
+  "pic": "Danny goes still."
+ },
+ {
+  "id": "c12m",
+  "chunk": "c12m",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "My mom is diabetic. Her insulin lasts about ten days.",
+  "pic": "An insulin pen. INSULIN: 10 DAYS."
+ },
+ {
+  "id": "c12n",
+  "chunk": "c12n",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "Rescue was thirty days away. My mom's insulin would run out in ten.",
+  "pic": "Two countdowns: 30 and 10."
+ },
+ {
+  "id": "c13a",
+  "chunk": "c13a",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "There's a ladder in the stockroom that goes up to a hatch on the roof.",
+  "pic": "The stockroom ladder and the hatch."
+ },
+ {
+  "id": "c13b",
+  "chunk": "c13b",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "Six years I've worked here, and I'd never once been up there.",
+  "pic": "Danny climbing out onto the roof."
+ },
+ {
+  "id": "c13c",
+  "chunk": "c13c",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "From the roof, you can see the whole highway.",
+  "pic": "The highway from the roof."
+ },
+ {
+  "id": "c13c2",
+  "chunk": "c13c2",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "The sun was out. That felt kind of rude.",
+  "pic": "Blue sky over the highway."
+ },
+ {
+  "id": "c13d",
+  "chunk": "c13d",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "Eight lanes of cars, all stopped, doors hanging open. And the dead, walking between them like they'd forgotten where they parked.",
+  "pic": "Stopped cars, open doors, the dead walking between them."
+ },
+ {
+  "id": "c13e",
+  "chunk": "c13e",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "Smoke over downtown. A helicopter that flew right over me and didn't stop.",
+  "pic": "Smoke on the skyline; a helicopter passing over."
+ },
+ {
+  "id": "c13e2",
+  "chunk": "c13e2",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "I waved at it like an idiot. Both arms.",
+  "pic": "Danny waving both arms at the sky."
+ },
+ {
+  "id": "c13f",
+  "chunk": "c13f",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "On the roof of the hotel next door, somebody had painted help on a bedsheet. Nobody came for them either.",
+  "pic": "A bedsheet on a roof: HELP."
+ },
+ {
+  "id": "c13g",
+  "chunk": "c13g",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "And on the other side of all of it, a mile and a half away, Parkview. Tenth floor, fourth window from the left.",
+  "pic": "Parkview tower in the distance; the window circled."
+ },
+ {
+  "id": "c13h",
+  "chunk": "c13h",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "I could see my daughter's window from the roof of this mall. It might as well have been the moon.",
+  "pic": "Danny small on the roof; the tower far away."
+ },
+ {
+  "id": "c13i",
+  "chunk": "c13i",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "I know what you're thinking. Just go.",
+  "pic": "Danny looking at the highway."
+ },
+ {
+  "id": "c13j",
+  "chunk": "c13j",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "My car is in the garage, with them. There are eight lanes of the dead between me and that building.",
+  "pic": "The garage; the highway full of the dead."
+ },
+ {
+  "id": "c13k",
+  "chunk": "c13k",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "And if I somehow made it, I'd be leading every one of them straight to her door.",
+  "pic": "A line of the dead following one figure to the tower's door."
+ },
+ {
+  "id": "c13l",
+  "chunk": "c13l",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "So I stayed up there, and I watched her window all afternoon. I counted every window on that building twice.",
+  "pic": "The sun moving down; Danny watching."
+ },
+ {
+  "id": "c13m",
+  "chunk": "c13m",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "At eight fifty-nine, the whole city went dark. Including her window.",
+  "pic": "8:59 PM. The city goes black."
+ },
+ {
+  "id": "c14a",
+  "chunk": "c14a",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "No streetlights. No windows. I could barely see the shape of her building against the sky.",
+  "pic": "The black city; the tower's outline against the sky."
+ },
+ {
+  "id": "c14a2",
+  "chunk": "c14a2",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "At nine, I turned on my flashlight and pointed it at her building, just in case.",
+  "pic": "Danny on the dark roof, flashlight pointed at the tower."
+ },
+ {
+  "id": "c14b.1",
+  "chunk": "c14b",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Nine o'clock. Nothing.",
+  "pic": "9:00 PM. Nothing."
+ },
+ {
+  "id": "c14b.2",
+  "chunk": "c14b",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Nine-oh-one. Nothing.",
+  "pic": "9:01 PM. Nothing."
+ },
+ {
+  "id": "c14d",
+  "chunk": "c14d",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "I stood there with my flashlight, telling myself the power's out, she can't, it's fine.",
+  "pic": "Danny on the roof with his flashlight."
+ },
+ {
+  "id": "c14e.1",
+  "chunk": "c14e",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Then, one. Two. Three.",
+  "pic": "A light in the window: one, two, three."
+ },
+ {
+  "id": "c14e.2",
+  "chunk": "c14e",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Not her lamp. A flashlight. In the tenth-floor window.",
+  "pic": "The tenth-floor window."
+ },
+ {
+  "id": "c14g",
+  "chunk": "c14g",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "She's alive. She figured it out. She's seven years old, and she figured it out.",
+  "pic": "Danny's face."
+ },
+ {
+  "id": "c14h",
+  "chunk": "c14h",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "I blinked back three times. Then I sat down on the roof, and I couldn't stop shaking.",
+  "pic": "Danny blinks back three times, then sits down."
+ },
+ {
+  "id": "c14i",
+  "chunk": "c14i",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Then the radio in my pocket clicked on. Marcus's radio. I'd carried it around all day.",
+  "pic": "Marcus's radio in Danny's pocket, its light on."
+ },
+ {
+  "id": "c14j",
+  "chunk": "c14j",
+  "seg": 14,
+  "who": "vera",
+  "radio": true,
+  "text": "That's sweet, Danny.",
+  "pic": "Radio waves."
+ },
+ {
+  "id": "c14k",
+  "chunk": "c14k",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "She'd been watching.",
+  "pic": "Danny, very still."
+ },
+ {
+  "id": "c14l",
+  "chunk": "c14l",
+  "seg": 14,
+  "who": "vera",
+  "radio": true,
+  "text": "Who's in the window?",
+  "pic": "The tower window, tiny, far away."
+ }
+]

@@ -1,0 +1,51 @@
+{
+ "taskId": "ec878521148754ad1f0884b0e4334e33",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a quiet suburban street on a sunny afternoon: birds chirping, leaves rustling, a school bus idling nearby, distant children laughing, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/30283eaf-0848-404a-a8f6-c7096fc43840.mp3\",\"createTime\":1793844689100,\"duration\":13.12,\"id\":\"30283eaf-0848-404a-a8f6-c7096fc43840\",\"image_url\":\"https://cdn2.suno.ai/image_30283eaf-0848-404a-a8f6-c7096fc43840.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/30283eaf-0848-404a-a8f6-c7096fc43840.mp3\",\"tags\":\"Sound effect only, no music, no voice: a quiet suburban street on a sunny afternoon: birds chirping, leaves rustling, a school bus idling nearby, distant children laughing, seamless loop\",\"title\":\"Sound effect only, no music, no voice: a quiet suburban street on a sunny aft...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/6b9cadae-deb4-4d6f-b3d4-3d398b405b17.mp3\",\"createTime\":1793844689100,\"duration\":13.6,\"id\":\"6b9cadae-deb4-4d6f-b3d4-3d398b405b17\",\"image_url\":\"https://cdn2.suno.ai/image_6b9cadae-deb4-4d6f-b3d4-3d398b405b17.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/6b9cadae-deb4-4d6f-b3d4-3d398b405b17.mp3\",\"tags\":\"Sound effect only, no music, no voice: a quiet suburban street on a sunny afternoon: birds chirping, leaves rustling, a school bus idling nearby, distant children laughing, seamless loop\",\"title\":\"Sound effect only, no music, no voice: a quiet suburban street on a sunny aft...\"}],\"msg\":\"success\",\"task_id\":\"ec878521148754ad1f0884b0e4334e33\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 19,
+ "completeTime": 1793844689100,
+ "createTime": 1793844670019,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"sound_loop\\\":true,\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a quiet suburban street on a sunny afternoon: birds chirping, leaves rustling, a school bus idling nearby, distant children laughing, seamless loop\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 13.12,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/30283eaf-0848-404a-a8f6-c7096fc43840.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793844689100,
+    "image_url": "https://cdn2.suno.ai/image_30283eaf-0848-404a-a8f6-c7096fc43840.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/30283eaf-0848-404a-a8f6-c7096fc43840.mp3",
+    "id": "30283eaf-0848-404a-a8f6-c7096fc43840",
+    "title": "Sound effect only, no music, no voice: a quiet suburban street on a sunny aft...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a quiet suburban street on a sunny afternoon: birds chirping, leaves rustling, a school bus idling nearby, distant children laughing, seamless loop"
+   },
+   {
+    "duration": 13.6,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/6b9cadae-deb4-4d6f-b3d4-3d398b405b17.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793844689100,
+    "image_url": "https://cdn2.suno.ai/image_6b9cadae-deb4-4d6f-b3d4-3d398b405b17.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/6b9cadae-deb4-4d6f-b3d4-3d398b405b17.mp3",
+    "id": "6b9cadae-deb4-4d6f-b3d4-3d398b405b17",
+    "title": "Sound effect only, no music, no voice: a quiet suburban street on a sunny aft...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a quiet suburban street on a sunny afternoon: birds chirping, leaves rustling, a school bus idling nearby, distant children laughing, seamless loop"
+   }
+  ],
+  "task_id": "ec878521148754ad1f0884b0e4334e33"
+ },
+ "_elapsed": 20.9
+}

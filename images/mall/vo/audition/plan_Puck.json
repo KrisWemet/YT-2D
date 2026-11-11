@@ -1,0 +1,29 @@
+{
+ "voices": {
+  "marcus": {
+   "voice_name": "Puck",
+   "audio_profile": "Marcus, 22, a cheerful young night security guard and nursing student who suddenly sees something terrifying.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "Heard over a cheap walkie-talkie in an empty building at night.",
+ "sample_context": "A radio call during a zombie outbreak.",
+ "chunks": [
+  {
+   "id": "m1",
+   "who": "marcus",
+   "style": "Whisper",
+   "text": "[whispering, scared] Danny. There's a guy coming up the ramp. He's walking... wrong.",
+   "radio": "marcus1",
+   "gap": 0.6
+  },
+  {
+   "id": "m2",
+   "who": "marcus",
+   "style": "Empathetic",
+   "text": "[nervous, calling out] Sir? Sir, are you okay? You're bleeding...",
+   "radio": "marcus2",
+   "gap": 0.5
+  }
+ ]
+}

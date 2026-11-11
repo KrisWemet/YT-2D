@@ -1,0 +1,51 @@
+{
+ "taskId": "0f2f9b396ece18025b2663bb7c856adc",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a gentle nostalgic music box melody, soft and a little sad, short, about four seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/e7208a04-f84a-486e-b471-4353473bbe39.mp3\",\"createTime\":1793844690706,\"duration\":8.4,\"id\":\"e7208a04-f84a-486e-b471-4353473bbe39\",\"image_url\":\"https://cdn2.suno.ai/image_e7208a04-f84a-486e-b471-4353473bbe39.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/e7208a04-f84a-486e-b471-4353473bbe39.mp3\",\"tags\":\"Sound effect only, no music, no voice: a gentle nostalgic music box melody, soft and a little sad, short, about four seconds\",\"title\":\"Sound effect only, no music, no voice: a gentle nostalgic music box melody, s...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/10a7395c-719a-4c51-b935-b95471d91db8.mp3\",\"createTime\":1793844690706,\"duration\":7.6,\"id\":\"10a7395c-719a-4c51-b935-b95471d91db8\",\"image_url\":\"https://cdn2.suno.ai/image_10a7395c-719a-4c51-b935-b95471d91db8.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/10a7395c-719a-4c51-b935-b95471d91db8.mp3\",\"tags\":\"Sound effect only, no music, no voice: a gentle nostalgic music box melody, soft and a little sad, short, about four seconds\",\"title\":\"Sound effect only, no music, no voice: a gentle nostalgic music box melody, s...\"}],\"msg\":\"success\",\"task_id\":\"0f2f9b396ece18025b2663bb7c856adc\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 20,
+ "completeTime": 1793844690706,
+ "createTime": 1793844669990,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a gentle nostalgic music box melody, soft and a little sad, short, about four seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 8.4,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/e7208a04-f84a-486e-b471-4353473bbe39.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793844690706,
+    "image_url": "https://cdn2.suno.ai/image_e7208a04-f84a-486e-b471-4353473bbe39.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/e7208a04-f84a-486e-b471-4353473bbe39.mp3",
+    "id": "e7208a04-f84a-486e-b471-4353473bbe39",
+    "title": "Sound effect only, no music, no voice: a gentle nostalgic music box melody, s...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a gentle nostalgic music box melody, soft and a little sad, short, about four seconds"
+   },
+   {
+    "duration": 7.6,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/10a7395c-719a-4c51-b935-b95471d91db8.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793844690706,
+    "image_url": "https://cdn2.suno.ai/image_10a7395c-719a-4c51-b935-b95471d91db8.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/10a7395c-719a-4c51-b935-b95471d91db8.mp3",
+    "id": "10a7395c-719a-4c51-b935-b95471d91db8",
+    "title": "Sound effect only, no music, no voice: a gentle nostalgic music box melody, s...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a gentle nostalgic music box melody, soft and a little sad, short, about four seconds"
+   }
+  ],
+  "task_id": "0f2f9b396ece18025b2663bb7c856adc"
+ },
+ "_elapsed": 20.8
+}

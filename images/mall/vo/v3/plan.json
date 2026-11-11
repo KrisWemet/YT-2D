@@ -1,0 +1,101 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny Ruiz, 38, a night security guard and dad. Warm, a little gravelly, with a dry sense of humor. He tells his story like a gripping YouTube storyteller: quick, confident, conversational and energetic, never melodramatic.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, a night security guard and nursing student, suddenly seeing something scary in the parking garage and talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "Danny tells a camera, at a brisk pace, how a zombie outbreak started at the mall where he works. Clear, close to the microphone, no music.",
+ "sample_context": "A first-person survival story told as a fast-paced YouTube narration.",
+ "tempo": 1.1,
+ "max_pause": 0.3,
+ "chunks": [
+  {
+   "id": "d01",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[low, matter-of-fact] There's a zombie pressed against my gate. And it's wearing my best friend's uniform.",
+   "gap": 0.28
+  },
+  {
+   "id": "d02",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[quick, tense] The radio on his chest is about to tell every one of them where I'm hiding.",
+   "gap": 0.28
+  },
+  {
+   "id": "d03",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "[wry] An hour ago, I was the king of this mall. Let me back up.",
+   "gap": 0.9
+  },
+  {
+   "id": "d04",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "[upbeat, dry] I'm Danny. Night security at Maplecrest Mall. Yes, I've heard every mall cop joke.",
+   "gap": 0.28
+  },
+  {
+   "id": "d05",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "[warm] I work nights for one reason: at three-fifteen every afternoon, I'm at the bus stop when my daughter Lily gets off the bus.",
+   "gap": 0.28
+  },
+  {
+   "id": "d06",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "[proud, smiling] She's seven, and she thinks I'm the king of the mall. Because I carry forty-two keys. One for every store. [lower] Tonight, I'd need exactly one.",
+   "gap": 0.35
+  },
+  {
+   "id": "d07",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "[brisk] The job is simple. Walk the loop. Rattle the gates. And at one a.m., take a call from Marcus down in the parking garage.",
+   "gap": 0.28
+  },
+  {
+   "id": "d08",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "text": "[amused] Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes on Earth.",
+   "gap": 0.28
+  },
+  {
+   "id": "d09",
+   "who": "danny",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[serious] Tonight he calls at one-forty. No joke. He's whispering.",
+   "gap": 0.35
+  },
+  {
+   "id": "r1",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[low, tense] Danny. There's a guy on the ramp. He's walking... wrong.",
+   "radio": "marcus1",
+   "gap": 0.4
+  }
+ ]
+}

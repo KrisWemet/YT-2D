@@ -1,0 +1,908 @@
+{
+ "w1": {
+  "picked": "vo/v8/takes/w1-L3.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/w1-L3.wav",
+    "distance": 3.33,
+    "voiced": 83,
+    "f0": 81,
+    "bright": 262,
+    "wps": 2.74,
+    "spread": 2.5
+   },
+   {
+    "take": "vo/v8/takes/w1-2.wav",
+    "distance": 3.59,
+    "voiced": 72,
+    "f0": 83,
+    "bright": 369,
+    "wps": 2.62,
+    "spread": 3.2
+   },
+   {
+    "take": "vo/v8/takes/w1-L1.wav",
+    "distance": 4.6,
+    "voiced": 79,
+    "f0": 95,
+    "bright": 340,
+    "wps": 2.84,
+    "spread": 4.7
+   },
+   {
+    "take": "vo/v8/takes/w1-4.wav",
+    "distance": 4.82,
+    "voiced": 89,
+    "f0": 89,
+    "bright": 261,
+    "wps": 2.76,
+    "spread": 5.7
+   },
+   {
+    "take": "vo/v8/takes/w1-L2.wav",
+    "distance": 4.98,
+    "voiced": 84,
+    "f0": 99,
+    "bright": 253,
+    "wps": 3.31,
+    "spread": 4.1
+   },
+   {
+    "take": "vo/v8/takes/w1-1.wav",
+    "distance": 5.27,
+    "voiced": 75,
+    "f0": 92,
+    "bright": 370,
+    "wps": 2.64,
+    "spread": 6.1
+   },
+   {
+    "take": "vo/v8/takes/w1-3.wav",
+    "distance": 10.91,
+    "voiced": 82,
+    "f0": 112,
+    "bright": 398,
+    "wps": 2.69,
+    "spread": 10.2
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/w1.wav",
+    "distance": null,
+    "voiced": 38,
+    "f0": 119,
+    "bright": 870,
+    "wps": 2.51,
+    "spread": 2.2
+   }
+  ]
+ },
+ "w2": {
+  "picked": "vo/v8/takes/w2-1.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/w2-1.wav",
+    "distance": 4.06,
+    "voiced": 82,
+    "f0": 84,
+    "bright": 266,
+    "wps": 2.6,
+    "spread": 4.7
+   },
+   {
+    "take": "vo/v8/takes/w2-L1.wav",
+    "distance": 4.37,
+    "voiced": 76,
+    "f0": 93,
+    "bright": 286,
+    "wps": 3.48,
+    "spread": 4.7
+   },
+   {
+    "take": "vo/v8/takes/w2-2.wav",
+    "distance": 5.03,
+    "voiced": 82,
+    "f0": 89,
+    "bright": 255,
+    "wps": 3.02,
+    "spread": 6.7
+   },
+   {
+    "take": "vo/v8/takes/w2-3.wav",
+    "distance": 5.43,
+    "voiced": 90,
+    "f0": 105,
+    "bright": 199,
+    "wps": 3.32,
+    "spread": 3.3
+   },
+   {
+    "take": "vo/v8/takes/w2-L3.wav",
+    "distance": 6.01,
+    "voiced": 67,
+    "f0": 99,
+    "bright": 393,
+    "wps": 2.85,
+    "spread": 5.7
+   },
+   {
+    "take": "vo/v8/takes/w2-4.wav",
+    "distance": 10.07,
+    "voiced": 71,
+    "f0": 110,
+    "bright": 470,
+    "wps": 3.21,
+    "spread": 8.9
+   },
+   {
+    "take": "vo/v8/takes/w2-L2.wav",
+    "distance": null,
+    "voiced": 54,
+    "f0": 86,
+    "bright": 670,
+    "wps": 3.25,
+    "spread": 5.3
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/w2.wav",
+    "distance": null,
+    "voiced": 3,
+    "f0": 0,
+    "bright": 1824,
+    "wps": 3.15,
+    "spread": 0.0
+   }
+  ]
+ },
+ "q1": {
+  "picked": "vo/v8/takes/q1-1.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/q1-1.wav",
+    "distance": 2.91,
+    "voiced": 77,
+    "f0": 84,
+    "bright": 280,
+    "wps": 2.34,
+    "spread": 2.3
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/q1.wav",
+    "distance": 3.42,
+    "voiced": 74,
+    "f0": 81,
+    "bright": 319,
+    "wps": 2.3,
+    "spread": 2.3
+   },
+   {
+    "take": "vo/v8/takes/q1-3.wav",
+    "distance": 3.79,
+    "voiced": 71,
+    "f0": 89,
+    "bright": 392,
+    "wps": 2.55,
+    "spread": 4.2
+   },
+   {
+    "take": "vo/v8/takes/q1-4.wav",
+    "distance": 3.88,
+    "voiced": 72,
+    "f0": 81,
+    "bright": 336,
+    "wps": 3.77,
+    "spread": 2.6
+   },
+   {
+    "take": "vo/v8/takes/q1-2.wav",
+    "distance": 9.46,
+    "voiced": 79,
+    "f0": 115,
+    "bright": 329,
+    "wps": 3.17,
+    "spread": 7.9
+   }
+  ]
+ },
+ "n1": {
+  "picked": "vo/v8/takes/n1-5.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/n1-5.wav",
+    "distance": 5.23,
+    "voiced": 56,
+    "f0": 115,
+    "bright": 428,
+    "wps": 3.39,
+    "spread": 0.0
+   },
+   {
+    "take": "vo/v8/takes/n1-10.wav",
+    "distance": 6.29,
+    "voiced": 76,
+    "f0": 106,
+    "bright": 341,
+    "wps": 3.2,
+    "spread": 4.1
+   },
+   {
+    "take": "vo/v8/takes/n1-8.wav",
+    "distance": 6.91,
+    "voiced": 78,
+    "f0": 109,
+    "bright": 291,
+    "wps": 3.45,
+    "spread": 4.7
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/n1.wav",
+    "distance": 7.75,
+    "voiced": 85,
+    "f0": 103,
+    "bright": 295,
+    "wps": 5.97,
+    "spread": 2.9
+   },
+   {
+    "take": "vo/v8/takes/n1-3.wav",
+    "distance": 8.42,
+    "voiced": 82,
+    "f0": 72,
+    "bright": 162,
+    "wps": 4.44,
+    "spread": 6.1
+   },
+   {
+    "take": "vo/v8/takes/n1-4.wav",
+    "distance": 11.07,
+    "voiced": 90,
+    "f0": 117,
+    "bright": 243,
+    "wps": 2.41,
+    "spread": 9.5
+   },
+   {
+    "take": "vo/v8/takes/n1-9.wav",
+    "distance": null,
+    "voiced": 18,
+    "f0": 85,
+    "bright": 1028,
+    "wps": 2.27,
+    "spread": 1.5
+   },
+   {
+    "take": "vo/v8/takes/n1-2.wav",
+    "distance": null,
+    "voiced": 49,
+    "f0": 79,
+    "bright": 380,
+    "wps": 1.61,
+    "spread": 3.2
+   },
+   {
+    "take": "vo/v8/takes/n1-1.wav",
+    "distance": null,
+    "voiced": 23,
+    "f0": 106,
+    "bright": 231,
+    "wps": 2.96,
+    "spread": 4.1
+   },
+   {
+    "take": "vo/v8/takes/n1-7.wav",
+    "distance": null,
+    "voiced": 25,
+    "f0": 108,
+    "bright": 514,
+    "wps": 2.2,
+    "spread": 4.6
+   },
+   {
+    "take": "vo/v8/takes/n1-6.wav",
+    "distance": null,
+    "voiced": 21,
+    "f0": 70,
+    "bright": 773,
+    "wps": 2.42,
+    "spread": 1.7
+   }
+  ]
+ },
+ "n2": {
+  "picked": "vo/v8/takes/n2-L2.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/n2-L2.wav",
+    "distance": 3.31,
+    "voiced": 68,
+    "f0": 88,
+    "bright": 348,
+    "wps": 2.77,
+    "spread": 4.1
+   },
+   {
+    "take": "vo/v8/takes/n2-L3.wav",
+    "distance": 3.85,
+    "voiced": 86,
+    "f0": 82,
+    "bright": 244,
+    "wps": 2.71,
+    "spread": 4.1
+   },
+   {
+    "take": "vo/v8/takes/n2-2.wav",
+    "distance": 3.84,
+    "voiced": 73,
+    "f0": 82,
+    "bright": 300,
+    "wps": 2.75,
+    "spread": 3.9
+   },
+   {
+    "take": "vo/v8/takes/n2-1.wav",
+    "distance": 4.58,
+    "voiced": 61,
+    "f0": 77,
+    "bright": 391,
+    "wps": 2.13,
+    "spread": 3.0
+   },
+   {
+    "take": "vo/v8/takes/n2-3.wav",
+    "distance": 5.09,
+    "voiced": 58,
+    "f0": 88,
+    "bright": 417,
+    "wps": 2.54,
+    "spread": 6.1
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/n2.wav",
+    "distance": 5.26,
+    "voiced": 65,
+    "f0": 80,
+    "bright": 348,
+    "wps": 2.55,
+    "spread": 5.3
+   },
+   {
+    "take": "vo/v8/takes/n2-L1.wav",
+    "distance": null,
+    "voiced": 36,
+    "f0": 82,
+    "bright": 642,
+    "wps": 2.95,
+    "spread": 5.8
+   }
+  ]
+ },
+ "n3": {
+  "picked": "vo/v5/a-algenib/takes/n3.wav",
+  "takes": [
+   {
+    "take": "vo/v5/a-algenib/takes/n3.wav",
+    "distance": 3.7,
+    "voiced": 90,
+    "f0": 88,
+    "bright": 208,
+    "wps": 2.92,
+    "spread": 4.8
+   },
+   {
+    "take": "vo/v8/takes/n3-L3.wav",
+    "distance": 3.97,
+    "voiced": 76,
+    "f0": 89,
+    "bright": 322,
+    "wps": 2.95,
+    "spread": 5.2
+   },
+   {
+    "take": "vo/v8/takes/n3-1.wav",
+    "distance": 5.81,
+    "voiced": 86,
+    "f0": 95,
+    "bright": 243,
+    "wps": 2.73,
+    "spread": 7.0
+   },
+   {
+    "take": "vo/v8/takes/n3-L1.wav",
+    "distance": 6.0,
+    "voiced": 87,
+    "f0": 93,
+    "bright": 249,
+    "wps": 2.52,
+    "spread": 7.6
+   },
+   {
+    "take": "vo/v8/takes/n3-L2.wav",
+    "distance": 6.34,
+    "voiced": 84,
+    "f0": 89,
+    "bright": 257,
+    "wps": 3.2,
+    "spread": 9.2
+   },
+   {
+    "take": "vo/v8/takes/n3-3.wav",
+    "distance": 6.42,
+    "voiced": 88,
+    "f0": 104,
+    "bright": 273,
+    "wps": 3.4,
+    "spread": 5.4
+   },
+   {
+    "take": "vo/v8/takes/n3-2.wav",
+    "distance": 8.53,
+    "voiced": 91,
+    "f0": 105,
+    "bright": 222,
+    "wps": 2.95,
+    "spread": 8.7
+   }
+  ]
+ },
+ "n4": {
+  "picked": "vo/v8/takes/n4-L3.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/n4-L3.wav",
+    "distance": 3.61,
+    "voiced": 72,
+    "f0": 80,
+    "bright": 300,
+    "wps": 3.27,
+    "spread": 2.3
+   },
+   {
+    "take": "vo/v8/takes/n4-L1.wav",
+    "distance": 3.95,
+    "voiced": 67,
+    "f0": 86,
+    "bright": 367,
+    "wps": 3.05,
+    "spread": 3.7
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/n4.wav",
+    "distance": 4.23,
+    "voiced": 79,
+    "f0": 91,
+    "bright": 273,
+    "wps": 3.05,
+    "spread": 4.2
+   },
+   {
+    "take": "vo/v8/takes/n4-3.wav",
+    "distance": 4.99,
+    "voiced": 92,
+    "f0": 96,
+    "bright": 207,
+    "wps": 2.88,
+    "spread": 4.8
+   },
+   {
+    "take": "vo/v8/takes/n4-L2.wav",
+    "distance": 5.28,
+    "voiced": 75,
+    "f0": 80,
+    "bright": 249,
+    "wps": 2.81,
+    "spread": 5.7
+   },
+   {
+    "take": "vo/v8/takes/n4-1.wav",
+    "distance": 5.58,
+    "voiced": 62,
+    "f0": 82,
+    "bright": 333,
+    "wps": 3.17,
+    "spread": 6.0
+   },
+   {
+    "take": "vo/v8/takes/n4-2.wav",
+    "distance": 5.97,
+    "voiced": 74,
+    "f0": 87,
+    "bright": 298,
+    "wps": 3.41,
+    "spread": 6.8
+   }
+  ]
+ },
+ "q2": {
+  "picked": "vo/v8/takes/q2-L1.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/q2-L1.wav",
+    "distance": 3.11,
+    "voiced": 77,
+    "f0": 84,
+    "bright": 298,
+    "wps": 3.37,
+    "spread": 2.9
+   },
+   {
+    "take": "vo/v8/takes/q2-3.wav",
+    "distance": 3.43,
+    "voiced": 81,
+    "f0": 85,
+    "bright": 208,
+    "wps": 3.07,
+    "spread": 2.0
+   },
+   {
+    "take": "vo/v8/takes/q2-L3.wav",
+    "distance": 3.56,
+    "voiced": 80,
+    "f0": 80,
+    "bright": 331,
+    "wps": 2.8,
+    "spread": 2.9
+   },
+   {
+    "take": "vo/v8/takes/q2-2.wav",
+    "distance": 3.55,
+    "voiced": 62,
+    "f0": 96,
+    "bright": 417,
+    "wps": 3.41,
+    "spread": 1.9
+   },
+   {
+    "take": "vo/v8/takes/q2-1.wav",
+    "distance": 4.15,
+    "voiced": 91,
+    "f0": 89,
+    "bright": 216,
+    "wps": 3.15,
+    "spread": 4.9
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/q2.wav",
+    "distance": 5.74,
+    "voiced": 89,
+    "f0": 87,
+    "bright": 205,
+    "wps": 3.1,
+    "spread": 7.0
+   },
+   {
+    "take": "vo/v8/takes/q2-L2.wav",
+    "distance": 6.1,
+    "voiced": 65,
+    "f0": 71,
+    "bright": 445,
+    "wps": 2.14,
+    "spread": 3.1
+   }
+  ]
+ },
+ "n5": {
+  "picked": "vo/v8/takes/n5-3.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/n5-3.wav",
+    "distance": 2.57,
+    "voiced": 65,
+    "f0": 87,
+    "bright": 359,
+    "wps": 3.08,
+    "spread": 2.3
+   },
+   {
+    "take": "vo/v8/takes/n5-L2.wav",
+    "distance": 4.12,
+    "voiced": 79,
+    "f0": 87,
+    "bright": 261,
+    "wps": 3.08,
+    "spread": 5.6
+   },
+   {
+    "take": "vo/v8/takes/n5-2.wav",
+    "distance": 4.15,
+    "voiced": 65,
+    "f0": 88,
+    "bright": 432,
+    "wps": 3.0,
+    "spread": 4.5
+   },
+   {
+    "take": "vo/v8/takes/n5-L1.wav",
+    "distance": 4.41,
+    "voiced": 81,
+    "f0": 89,
+    "bright": 300,
+    "wps": 2.69,
+    "spread": 6.1
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/n5.wav",
+    "distance": 4.51,
+    "voiced": 63,
+    "f0": 93,
+    "bright": 397,
+    "wps": 2.91,
+    "spread": 5.0
+   },
+   {
+    "take": "vo/v8/takes/n5-1.wav",
+    "distance": 4.64,
+    "voiced": 66,
+    "f0": 89,
+    "bright": 324,
+    "wps": 2.75,
+    "spread": 6.2
+   },
+   {
+    "take": "vo/v8/takes/n5-L3.wav",
+    "distance": 7.81,
+    "voiced": 82,
+    "f0": 103,
+    "bright": 261,
+    "wps": 2.81,
+    "spread": 8.2
+   }
+  ]
+ },
+ "n6": {
+  "picked": "vo/v8/takes/n6-4.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/n6-4.wav",
+    "distance": 4.3,
+    "voiced": 69,
+    "f0": 91,
+    "bright": 331,
+    "wps": 2.28,
+    "spread": 3.9
+   },
+   {
+    "take": "vo/v8/takes/n6-1.wav",
+    "distance": 5.55,
+    "voiced": 61,
+    "f0": 96,
+    "bright": 385,
+    "wps": 2.5,
+    "spread": 5.5
+   },
+   {
+    "take": "vo/v8/takes/n6-7.wav",
+    "distance": 5.91,
+    "voiced": 61,
+    "f0": 81,
+    "bright": 420,
+    "wps": 2.06,
+    "spread": 5.1
+   },
+   {
+    "take": "vo/v8/takes/n6-L2.wav",
+    "distance": 6.34,
+    "voiced": 59,
+    "f0": 86,
+    "bright": 392,
+    "wps": 2.39,
+    "spread": 7.6
+   },
+   {
+    "take": "vo/v8/takes/n6-3.wav",
+    "distance": 6.89,
+    "voiced": 60,
+    "f0": 81,
+    "bright": 342,
+    "wps": 2.45,
+    "spread": 8.3
+   },
+   {
+    "take": "vo/v8/takes/n6-L1.wav",
+    "distance": 7.16,
+    "voiced": 73,
+    "f0": 95,
+    "bright": 294,
+    "wps": 2.68,
+    "spread": 8.4
+   },
+   {
+    "take": "vo/v8/takes/n6-6.wav",
+    "distance": 7.15,
+    "voiced": 67,
+    "f0": 97,
+    "bright": 333,
+    "wps": 2.57,
+    "spread": 8.6
+   },
+   {
+    "take": "vo/v8/takes/n6-8.wav",
+    "distance": 7.48,
+    "voiced": 74,
+    "f0": 110,
+    "bright": 366,
+    "wps": 3.03,
+    "spread": 5.6
+   },
+   {
+    "take": "vo/v8/takes/n6-5.wav",
+    "distance": 7.67,
+    "voiced": 57,
+    "f0": 84,
+    "bright": 507,
+    "wps": 3.17,
+    "spread": 8.2
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/n6.wav",
+    "distance": 7.87,
+    "voiced": 69,
+    "f0": 116,
+    "bright": 403,
+    "wps": 2.83,
+    "spread": 4.4
+   },
+   {
+    "take": "vo/v8/takes/n6-L3.wav",
+    "distance": null,
+    "voiced": 51,
+    "f0": 82,
+    "bright": 665,
+    "wps": 2.65,
+    "spread": 4.6
+   },
+   {
+    "take": "vo/v8/takes/n6-2.wav",
+    "distance": null,
+    "voiced": 43,
+    "f0": 81,
+    "bright": 468,
+    "wps": 2.42,
+    "spread": 7.7
+   }
+  ]
+ },
+ "q3": {
+  "picked": "vo/v8/takes/q3-L1.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/q3-L1.wav",
+    "distance": 3.22,
+    "voiced": 79,
+    "f0": 86,
+    "bright": 283,
+    "wps": 2.28,
+    "spread": 3.2
+   },
+   {
+    "take": "vo/v8/takes/q3-3.wav",
+    "distance": 3.99,
+    "voiced": 79,
+    "f0": 79,
+    "bright": 268,
+    "wps": 2.7,
+    "spread": 3.0
+   },
+   {
+    "take": "vo/v8/takes/q3-L2.wav",
+    "distance": 4.38,
+    "voiced": 57,
+    "f0": 89,
+    "bright": 410,
+    "wps": 2.47,
+    "spread": 4.8
+   },
+   {
+    "take": "vo/v8/takes/q3-1.wav",
+    "distance": 4.75,
+    "voiced": 60,
+    "f0": 85,
+    "bright": 458,
+    "wps": 2.53,
+    "spread": 4.5
+   },
+   {
+    "take": "vo/v8/takes/q3-2.wav",
+    "distance": 5.06,
+    "voiced": 77,
+    "f0": 96,
+    "bright": 434,
+    "wps": 2.48,
+    "spread": 4.1
+   },
+   {
+    "take": "vo/v8/takes/q3-L3.wav",
+    "distance": 6.89,
+    "voiced": 77,
+    "f0": 102,
+    "bright": 314,
+    "wps": 1.63,
+    "spread": 5.8
+   },
+   {
+    "take": "vo/v8/takes/q3-4.wav",
+    "distance": 8.49,
+    "voiced": 85,
+    "f0": 119,
+    "bright": 236,
+    "wps": 2.84,
+    "spread": 5.2
+   },
+   {
+    "take": "vo/v5/a-algenib/takes/q3.wav",
+    "distance": null,
+    "voiced": 47,
+    "f0": 83,
+    "bright": 629,
+    "wps": 2.54,
+    "spread": 4.4
+   }
+  ]
+ },
+ "q1n1": {
+  "picked": "vo/v8/takes/q1n1-3.wav",
+  "takes": [
+   {
+    "take": "vo/v8/takes/q1n1-3.wav",
+    "distance": 4.0,
+    "voiced": 87,
+    "f0": 86,
+    "bright": 201,
+    "wps": 2.02,
+    "spread": 3.4
+   },
+   {
+    "take": "vo/v8/takes/q1n1-2.wav",
+    "distance": 3.95,
+    "voiced": 73,
+    "f0": 96,
+    "bright": 343,
+    "wps": 2.63,
+    "spread": 3.6
+   },
+   {
+    "take": "vo/v8/takes/q1n1-1.wav",
+    "distance": 4.65,
+    "voiced": 60,
+    "f0": 91,
+    "bright": 389,
+    "wps": 3.33,
+    "spread": 5.4
+   },
+   {
+    "take": "vo/v8/takes/q1n1-4.wav",
+    "distance": 5.58,
+    "voiced": 71,
+    "f0": 91,
+    "bright": 365,
+    "wps": 2.41,
+    "spread": 6.6
+   },
+   {
+    "take": "vo/v8/takes/q1n1-L3.wav",
+    "distance": 7.95,
+    "voiced": 59,
+    "f0": 107,
+    "bright": 418,
+    "wps": 3.44,
+    "spread": 6.8
+   },
+   {
+    "take": "vo/v8/takes/q1n1-L1.wav",
+    "distance": 11.31,
+    "voiced": 79,
+    "f0": 115,
+    "bright": 290,
+    "wps": 3.57,
+    "spread": 10.6
+   },
+   {
+    "take": "vo/v8/takes/q1n1-L2.wav",
+    "distance": 11.34,
+    "voiced": 73,
+    "f0": 120,
+    "bright": 300,
+    "wps": 2.69,
+    "spread": 9.6
+   }
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "c8d": {
+  "picked": "vo/ch1/takes/c8d-2.wav",
+  "takes": [
+   {
+    "take": "vo/ch1/takes/c8d-2.wav",
+    "distance": 21.92,
+    "voiced": 92,
+    "f0": 106,
+    "bright": 277,
+    "wps": 3.31,
+    "spread": 3.0
+   },
+   {
+    "take": "vo/ch1/takes/c8d-3.wav",
+    "distance": 21.93,
+    "voiced": 94,
+    "f0": 167,
+    "bright": 239,
+    "wps": 3.07,
+    "spread": 8.3
+   }
+  ]
+ }
+}

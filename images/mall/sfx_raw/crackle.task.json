@@ -1,0 +1,51 @@
+{
+ "taskId": "6733c4ee280111c33fcd69bdf280479c",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: walkie-talkie radio static crackling and hissing, unstable, a few pops and squelches, about three seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/1b922128-f160-45bb-83f0-71760f79d667.mp3\",\"createTime\":1793838405053,\"duration\":2.36,\"id\":\"1b922128-f160-45bb-83f0-71760f79d667\",\"image_url\":\"https://cdn2.suno.ai/image_1b922128-f160-45bb-83f0-71760f79d667.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/1b922128-f160-45bb-83f0-71760f79d667.mp3\",\"tags\":\"Sound effect only, no music, no voice: walkie-talkie radio static crackling and hissing, unstable, a few pops and squelches, about three seconds\",\"title\":\"Sound effect only, no music, no voice: walkie-talkie radio static crackling a...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/c6d410fe-ab01-4d61-ac64-8b335556bd06.mp3\",\"createTime\":1793838405053,\"duration\":2.76,\"id\":\"c6d410fe-ab01-4d61-ac64-8b335556bd06\",\"image_url\":\"https://cdn2.suno.ai/image_c6d410fe-ab01-4d61-ac64-8b335556bd06.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/c6d410fe-ab01-4d61-ac64-8b335556bd06.mp3\",\"tags\":\"Sound effect only, no music, no voice: walkie-talkie radio static crackling and hissing, unstable, a few pops and squelches, about three seconds\",\"title\":\"Sound effect only, no music, no voice: walkie-talkie radio static crackling a...\"}],\"msg\":\"success\",\"task_id\":\"6733c4ee280111c33fcd69bdf280479c\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 21,
+ "completeTime": 1793838405053,
+ "createTime": 1793838383557,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: walkie-talkie radio static crackling and hissing, unstable, a few pops and squelches, about three seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 2.36,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/1b922128-f160-45bb-83f0-71760f79d667.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838405053,
+    "image_url": "https://cdn2.suno.ai/image_1b922128-f160-45bb-83f0-71760f79d667.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/1b922128-f160-45bb-83f0-71760f79d667.mp3",
+    "id": "1b922128-f160-45bb-83f0-71760f79d667",
+    "title": "Sound effect only, no music, no voice: walkie-talkie radio static crackling a...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: walkie-talkie radio static crackling and hissing, unstable, a few pops and squelches, about three seconds"
+   },
+   {
+    "duration": 2.76,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/c6d410fe-ab01-4d61-ac64-8b335556bd06.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838405053,
+    "image_url": "https://cdn2.suno.ai/image_c6d410fe-ab01-4d61-ac64-8b335556bd06.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/c6d410fe-ab01-4d61-ac64-8b335556bd06.mp3",
+    "id": "c6d410fe-ab01-4d61-ac64-8b335556bd06",
+    "title": "Sound effect only, no music, no voice: walkie-talkie radio static crackling a...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: walkie-talkie radio static crackling and hissing, unstable, a few pops and squelches, about three seconds"
+   }
+  ],
+  "task_id": "6733c4ee280111c33fcd69bdf280479c"
+ },
+ "_elapsed": 26.7
+}

@@ -1,0 +1,98 @@
+{
+ "j1": {
+  "picked": "vo/shorts/takes/j1-3.wav",
+  "takes": [
+   {
+    "take": "vo/shorts/takes/j1-3.wav",
+    "distance": 20.56,
+    "voiced": 58,
+    "f0": 115,
+    "bright": 545,
+    "wps": 1.33,
+    "spread": 11.1
+   },
+   {
+    "take": "vo/shorts/takes/j1-1.wav",
+    "distance": 21.15,
+    "voiced": 76,
+    "f0": 127,
+    "bright": 386,
+    "wps": 1.48,
+    "spread": 8.9
+   },
+   {
+    "take": "vo/shorts/takes/j1-2.wav",
+    "distance": 25.83,
+    "voiced": 74,
+    "f0": 125,
+    "bright": 388,
+    "wps": 1.76,
+    "spread": 8.3
+   }
+  ]
+ },
+ "j3": {
+  "picked": "vo/shorts/takes/j3-2.wav",
+  "takes": [
+   {
+    "take": "vo/shorts/takes/j3-2.wav",
+    "distance": 19.23,
+    "voiced": 67,
+    "f0": 143,
+    "bright": 398,
+    "wps": 2.05,
+    "spread": 8.5
+   },
+   {
+    "take": "vo/shorts/takes/j3-3.wav",
+    "distance": 24.62,
+    "voiced": 76,
+    "f0": 137,
+    "bright": 320,
+    "wps": 1.82,
+    "spread": 9.2
+   },
+   {
+    "take": "vo/shorts/takes/j3-1.wav",
+    "distance": 25.12,
+    "voiced": 58,
+    "f0": 141,
+    "bright": 434,
+    "wps": 2.25,
+    "spread": 8.4
+   }
+  ]
+ },
+ "j12": {
+  "picked": "vo/shorts/takes/j12-2.wav",
+  "takes": [
+   {
+    "take": "vo/shorts/takes/j12-2.wav",
+    "distance": 20.28,
+    "voiced": 56,
+    "f0": 131,
+    "bright": 445,
+    "wps": 1.44,
+    "spread": 10.1
+   },
+   {
+    "take": "vo/shorts/takes/j12-3.wav",
+    "distance": 21.57,
+    "voiced": 68,
+    "f0": 145,
+    "bright": 456,
+    "wps": 1.36,
+    "spread": 8.2
+   },
+   {
+    "take": "vo/shorts/takes/j12-1.wav",
+    "distance": 23.01,
+    "voiced": 66,
+    "f0": 139,
+    "bright": 420,
+    "wps": 1.31,
+    "spread": 9.4
+   }
+  ]
+ }
+}

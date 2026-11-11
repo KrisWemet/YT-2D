@@ -1,0 +1,13 @@
+{
+ "duration": 10.323,
+ "segments": [
+  {
+   "kind": "radio",
+   "text": "Is anyone still in the mall? I'm on the second floor of the department store... Please. I'm not alone up here.",
+   "s": 0.3,
+   "e": 8.623,
+   "chunk": "w1",
+   "id": "woman"
+  }
+ ]
+}

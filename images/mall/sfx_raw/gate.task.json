@@ -1,0 +1,51 @@
+{
+ "taskId": "778f0d40efe86a5ec4eac2d5429a8c41",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a heavy steel roll-down security shutter being yanked down fast, loud metallic rattling slats rolling, ending in a hard metal slam on the floor, one event\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/b2bbcfb8-9295-4be4-b016-a761d12b34f3.mp3\",\"createTime\":1793838402027,\"duration\":4.8,\"id\":\"b2bbcfb8-9295-4be4-b016-a761d12b34f3\",\"image_url\":\"https://cdn2.suno.ai/image_b2bbcfb8-9295-4be4-b016-a761d12b34f3.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/b2bbcfb8-9295-4be4-b016-a761d12b34f3.mp3\",\"tags\":\"Sound effect only, no music, no voice: a heavy steel roll-down security shutter being yanked down fast, loud metallic rattling slats rolling, ending in a hard metal slam on the floor, one event\",\"title\":\"Sound effect only, no music, no voice: a heavy steel roll-down security shutt...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/05c6462f-b528-4501-8f65-bab46026e8ec.mp3\",\"createTime\":1793838402027,\"duration\":6.76,\"id\":\"05c6462f-b528-4501-8f65-bab46026e8ec\",\"image_url\":\"https://cdn2.suno.ai/image_05c6462f-b528-4501-8f65-bab46026e8ec.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/05c6462f-b528-4501-8f65-bab46026e8ec.mp3\",\"tags\":\"Sound effect only, no music, no voice: a heavy steel roll-down security shutter being yanked down fast, loud metallic rattling slats rolling, ending in a hard metal slam on the floor, one event\",\"title\":\"Sound effect only, no music, no voice: a heavy steel roll-down security shutt...\"}],\"msg\":\"success\",\"task_id\":\"778f0d40efe86a5ec4eac2d5429a8c41\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 18,
+ "completeTime": 1793838402027,
+ "createTime": 1793838383509,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a heavy steel roll-down security shutter being yanked down fast, loud metallic rattling slats rolling, ending in a hard metal slam on the floor, one event\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 4.8,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/b2bbcfb8-9295-4be4-b016-a761d12b34f3.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402027,
+    "image_url": "https://cdn2.suno.ai/image_b2bbcfb8-9295-4be4-b016-a761d12b34f3.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/b2bbcfb8-9295-4be4-b016-a761d12b34f3.mp3",
+    "id": "b2bbcfb8-9295-4be4-b016-a761d12b34f3",
+    "title": "Sound effect only, no music, no voice: a heavy steel roll-down security shutt...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a heavy steel roll-down security shutter being yanked down fast, loud metallic rattling slats rolling, ending in a hard metal slam on the floor, one event"
+   },
+   {
+    "duration": 6.76,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/05c6462f-b528-4501-8f65-bab46026e8ec.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838402027,
+    "image_url": "https://cdn2.suno.ai/image_05c6462f-b528-4501-8f65-bab46026e8ec.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/05c6462f-b528-4501-8f65-bab46026e8ec.mp3",
+    "id": "05c6462f-b528-4501-8f65-bab46026e8ec",
+    "title": "Sound effect only, no music, no voice: a heavy steel roll-down security shutt...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a heavy steel roll-down security shutter being yanked down fast, loud metallic rattling slats rolling, ending in a hard metal slam on the floor, one event"
+   }
+  ],
+  "task_id": "778f0d40efe86a5ec4eac2d5429a8c41"
+ },
+ "_elapsed": 21.3
+}

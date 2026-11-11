@@ -1,0 +1,143 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with very little inflection, keeping his pitch fairly level and even, like a real person, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man quietly tells what happened during the first hour of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+ "takes_dir": "../takes",
+ "level": "fixed",
+ "tempo": 1.08,
+ "max_pause": 0.22,
+ "chunks": [
+  {
+   "id": "m1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night at one a.m., my best friend tells me a terrible joke on the radio.",
+   "lufs": -18,
+   "gap": 0.2
+  },
+  {
+   "id": "m2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight, he whispered.",
+   "lufs": -21,
+   "gap": 0.4
+  },
+  {
+   "id": "m3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus guards the parking garage. He's twenty-two, he's studying to be a nurse, and he still owes me twenty bucks.",
+   "lufs": -18,
+   "gap": 0.25
+  },
+  {
+   "id": "m4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At one on the dot, the radio clicks.",
+   "lufs": -18,
+   "gap": 0.3
+  },
+  {
+   "id": "j12",
+   "who": "marcus",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "radio": "marcus0",
+   "lufs": -19,
+   "gap": 0.3,
+   "rejoin": true,
+   "text": "Danny. Why don't zombies ever eat clowns? Because they taste funny.",
+   "lines": [
+    {
+     "text": "Danny. Why don't zombies ever eat clowns?",
+     "gap": 0.55
+    },
+    {
+     "text": "Because they taste funny."
+    }
+   ]
+  },
+  {
+   "id": "m7",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He laughs at his own jokes. Every single time.",
+   "lufs": -18,
+   "gap": 0.35
+  },
+  {
+   "id": "m8",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At one-forty, the radio clicks again.",
+   "lufs": -21,
+   "gap": 0.3
+  },
+  {
+   "id": "r1",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "radio": "marcus1",
+   "lufs": -19,
+   "gap": 0.3,
+   "text": "[low, tense] Danny. There's a guy on the ramp. He's walking... wrong."
+  },
+  {
+   "id": "m10",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus doesn't whisper. Ever.",
+   "lufs": -21,
+   "gap": 0.3
+  },
+  {
+   "id": "j3",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "radio": "marcus2",
+   "lufs": -21,
+   "gap": 0.4,
+   "text": "Sir? Sir, are you okay? You're bleeding..."
+  },
+  {
+   "id": "m12",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then the radio did something I'd never heard it do.",
+   "lufs": -21,
+   "gap": 0.3
+  },
+  {
+   "id": "m13",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It went completely silent.",
+   "lufs": -23,
+   "gap": 0.3
+  }
+ ]
+}

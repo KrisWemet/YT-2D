@@ -1,0 +1,48 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Charon",
+   "audio_profile": "Danny Ruiz, 38, a night security guard and single dad. Warm, a little gravelly, with a dry sense of humor. He is telling the story of the worst night of his life, quietly, like it still shakes him.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "Late at night. Danny sits alone in the dark and tells what happened in the first hour of a zombie outbreak at the shopping mall where he works. Intimate and close to the microphone, no music.",
+ "sample_context": "A first-person survival story told as a YouTube narration.",
+ "chunks": [
+  {
+   "id": "a1",
+   "who": "danny",
+   "style": "Whisper",
+   "text": "[whispers] The dead man pressing his face against my gate used to be my best friend.",
+   "gap": 0.6
+  },
+  {
+   "id": "a2",
+   "who": "danny",
+   "style": "Whisper",
+   "text": "[whispers] In about ten seconds, the radio clipped to his chest is going to crackle... and tell every one of them exactly where I'm hiding.",
+   "gap": 0.9
+  },
+  {
+   "id": "a3",
+   "who": "danny",
+   "style": "Deadpan",
+   "text": "My name is Danny Ruiz. I'm the night security guard at Maplecrest Mall. [dry] And yes, I've heard every mall cop joke there is.",
+   "gap": 0.6
+  },
+  {
+   "id": "a4",
+   "who": "danny",
+   "style": "Vocal Smile",
+   "text": "I took the night shift for one reason. [warmly] It means I'm home every afternoon when my daughter Lily gets off the school bus.",
+   "gap": 0.7
+  },
+  {
+   "id": "a5",
+   "who": "danny",
+   "style": "Empathetic",
+   "text": "[serious, slow] Tonight, he didn't tell a joke.",
+   "gap": 0.5
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "voices": {
+  "woman": {
+   "voice_name": "Despina",
+   "audio_profile": "A young woman hiding in a dark department store, terrified, whispering into a walkie-talkie so nothing hears her.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "Heard over a cheap walkie-talkie in an empty building at night.",
+ "sample_context": "A radio call during a zombie outbreak.",
+ "chunks": [
+  {
+   "id": "w1",
+   "who": "woman",
+   "style": "Whisper",
+   "text": "[whispering, frightened] Is anyone still in the mall? I'm on the second floor of the department store... Please. I'm not alone up here.",
+   "radio": "woman",
+   "gap": 0.5
+  }
+ ]
+}

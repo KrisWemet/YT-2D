@@ -1,0 +1,51 @@
+{
+ "taskId": "97f64db5cf9478037cce327b7ed2615a",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short burst of harsh radio static with a click at the start and a beep at the end, about one second\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/f13a8f4f-9ef7-41fa-8434-bfbc3894103d.mp3\",\"createTime\":1793838403072,\"duration\":2.0,\"id\":\"f13a8f4f-9ef7-41fa-8434-bfbc3894103d\",\"image_url\":\"https://cdn2.suno.ai/image_f13a8f4f-9ef7-41fa-8434-bfbc3894103d.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/f13a8f4f-9ef7-41fa-8434-bfbc3894103d.mp3\",\"tags\":\"Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short burst of harsh radio static with a click at the start and a beep at the end, about one second\",\"title\":\"Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/b872abad-b54d-4e2e-99bc-d63cbed7a8d4.mp3\",\"createTime\":1793838403072,\"duration\":2.0,\"id\":\"b872abad-b54d-4e2e-99bc-d63cbed7a8d4\",\"image_url\":\"https://cdn2.suno.ai/image_b872abad-b54d-4e2e-99bc-d63cbed7a8d4.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/b872abad-b54d-4e2e-99bc-d63cbed7a8d4.mp3\",\"tags\":\"Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short burst of harsh radio static with a click at the start and a beep at the end, about one second\",\"title\":\"Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short...\"}],\"msg\":\"success\",\"task_id\":\"97f64db5cf9478037cce327b7ed2615a\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 20,
+ "completeTime": 1793838403072,
+ "createTime": 1793838383444,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "successFlag": 1,
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short burst of harsh radio static with a click at the start and a beep at the end, about one second\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 2.0,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/f13a8f4f-9ef7-41fa-8434-bfbc3894103d.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838403072,
+    "image_url": "https://cdn2.suno.ai/image_f13a8f4f-9ef7-41fa-8434-bfbc3894103d.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/f13a8f4f-9ef7-41fa-8434-bfbc3894103d.mp3",
+    "id": "f13a8f4f-9ef7-41fa-8434-bfbc3894103d",
+    "title": "Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short burst of harsh radio static with a click at the start and a beep at the end, about one second"
+   },
+   {
+    "duration": 2.0,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/b872abad-b54d-4e2e-99bc-d63cbed7a8d4.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793838403072,
+    "image_url": "https://cdn2.suno.ai/image_b872abad-b54d-4e2e-99bc-d63cbed7a8d4.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/b872abad-b54d-4e2e-99bc-d63cbed7a8d4.mp3",
+    "id": "b872abad-b54d-4e2e-99bc-d63cbed7a8d4",
+    "title": "Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a walkie-talkie radio squelch: a short burst of harsh radio static with a click at the start and a beep at the end, about one second"
+   }
+  ],
+  "task_id": "97f64db5cf9478037cce327b7ed2615a"
+ },
+ "_elapsed": 21.1
+}

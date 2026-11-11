@@ -65,6 +65,59 @@ The pigeon is a puppet. Its head, neck and body are cut from one AI picture, and
 
 **Sources:** the figures come from [NOAA's hurricane research FAQ](https://www.aoml.noaa.gov/hrd/tcfaq/C5c.html). It was offline when we checked, so they were confirmed through two reports that quote it: [National Geographic](https://www.nationalgeographic.com/science/article/hurricanes-weather-history-nuclear-weapons) and [CNN via WTOP](https://wtop.com/weather-news/2019/08/why-not-bomb-a-hurricane-noaa-gets-asked-about-it-all-the-time/).
 
+## Long-form pilot: The Night Guard Had Every Key
+
+![Four frames from the mall pilot v2: dead Marcus behind the gate with a red ring round his radio and a countdown; Lily's crayon drawing "MY DAD IS THE KING OF THE MALL"; Danny with his flashlight and a shopping list while a countdown runs; zombie faces pressed against the gate](docs/mall-storyboard.jpg)
+
+This is a test of a second format: a long stick-figure survival story told in still pictures, like the "30 days locked inside…" videos. A new picture lands every 2–3 seconds, cut on the exact word, under a first-person voice-over. The pilot is the 4½-minute opening of a longer episode, in 16:9 at 1080p.
+
+**The story (v2):** "The dead man pressing his face against my gate used to be my best friend." The cold open starts at the worst moment, then rewinds an hour. Danny Ruiz is the night guard at Maplecrest Mall (a made-up mall). He works nights so he's home when his daughter Lily gets off the school bus, and she calls him the king of the mall because he has 42 keys, one for every store. At 1 a.m. his friend Marcus, a 22-year-old nursing student, usually radios with a terrible joke. Tonight Marcus whispers about a man walking wrong up the garage ramp, then goes silent. The glass food court won't hold, and Danny has four minutes to pick one store to lock himself in. He picks the sporting goods store, then Marcus's radio and his own give him away. It ends on "hour 1 of 720" and a woman on the radio who "would turn out to be the most dangerous person in it."
+
+**What changed after the first test** (feedback: more hooks, a better voice, a lead people connect with):
+- **Script:** the cold open, a re-hook every 20–30 seconds, a visible four-minute countdown, and a lead with a life (a daughter, a friend worth losing, a dry sense of humor). The first script is kept as `images/mall/script-v1.md`.
+- **Voice:** directed Gemini voices (`voice_gemini.py`) replace the flat local voice. See below.
+- **New pictures:** a sunny bus-stop background, Lily, Danny at home, a paper crown, Lily's crayon drawing, the series title and end cards, a name tag, Black Friday shoppers against the same lot full of zombies, and a sepia memory insert.
+
+**v3: a one-minute test** (feedback on v2: "a little too dramatic", "quicker tempo", "Marcus sounds like a girl", "make the stick figures a little more realistic"):
+- **Copy and pace:** the first minute is rewritten as brisk, conversational storytelling with dry humor (`images/mall/script-v3-minute1.md`). Danny's voice profile is now "quick, confident, never melodramatic", with tight pauses and a 10% lift. It runs at 177 words a minute while speaking, against about 127 in v2.
+- **Marcus's voice:** Gemini's Puck measured 185–220 Hz, which is in the typical female range. Marcus is now Orus, at about 114 Hz (Danny is about 86 Hz). Eight male voices were measured; the takes are in `images/mall/vo/v3aud/`.
+- **More realistic figures:** `Stick.tsx` keeps the same rig and poses but draws more human bodies: a smaller head, wider shoulders, skin tones, a face with ears, a nose and eyebrows, short or long sleeves, filled trousers, hands and shoes, shaded clothes, and zombies with torn clothes and dark eye sockets.
+- **Only the first minute:** `MallPilot` renders the first-minute test (29 shots, about a cut every 2.2 seconds) so the direction can be checked before paying for a full episode. The full v2 cut is at commit `976aed9`, and its voice plan and takes stay in `images/mall/vo/v2/`.
+
+**v4–v10: getting Danny's voice right.** Voice-only rounds, story first, then the voice, then scenes. The approved voice is v10 "calm, quicker still" (`images/mall/vo/v10/b`), and `MallPilot` now plays it.
+- **Settings:** the 5a direction (Algenib, Deadpan), with no whisper. Quiet moments are the same voice turned down.
+- **Takes:** each line is the calmest take that still matches 5a's voice (`pick_takes.py`). Each line gets a fixed gain.
+- **Pace:** tight pauses and an 8% speed-up, about 171 words a minute.
+- **Recipe:** `images/mall/voice-recipe.md` lists the exact settings for every future chapter. The notes for each round are in `images/mall/script-v4-minute1.md` to `script-v10-minute1.md`.
+- **Series plan:** `images/mall/series-outline.md` plans the story as a series of 40-minute chapters that split into Shorts.
+
+![Four frames from the v3 first-minute test: the zombie in Marcus's uniform pressed against the gate; Danny in Lily's paper crown holding up his keys; Danny kneeling as Lily runs off the school bus; Marcus crouched with his radio while a man limps up the garage ramp](docs/mall-v3-storyboard.jpg)
+
+**How it differs from the Shorts:**
+- **Backgrounds:** 10 scenes from Seedream 5 Flash on Kie.ai (2K, 3.24 credits each, all used on the first try). The prompts are in `images/mall/prompts.json`.
+- **Characters drawn in code:** there are no AI pictures of characters. The stick figures (with front and back views, a child version, crown, backpack and book), zombies, props, the mall map, labels, cards, the security-camera look and the stores' steel gates are all drawn in code (`src/mall/`). So Danny looks identical in every shot, and a new shot costs nothing.
+- **Shots cued by words:** `src/mall/shots.tsx` lists the shots (86 in v2, 29 in the v3 test), and each starts on a phrase from the narration ("cut just before *Glass doors*"). `timing.ts` turns the phrases into times using the word timings, so a new voice-over re-times every cut by itself.
+- **Voice:** ElevenLabs on Kie.ai timed out on every request for hours (all refunded), so v2 uses Gemini 3.1 Flash TTS on Kie.ai. Each line is one short take with a voice, a style (Whisper, Deadpan, Vocal Smile…), a pace, a written character profile and inline tags such as `[whispers]`. Gemini sometimes cuts a take short, drops words or adds some, so every take is transcribed and compared with the script, and a take that doesn't match is recorded again; `--check` re-checks saved takes. Long pauses inside takes are shortened and the pace is lifted 6%. The voices are Algenib (Danny), Puck (Marcus) and Achernar (the woman); auditions of the alternatives are in `images/mall/vo/audition/`.
+- **Sound:** 18 effects and ambience loops from Suno sounds on Kie.ai (2.5 credits per request, two takes each) plus a synthesized clock tick, mixed in `src/mall/Sfx.tsx`.
+
+**Cost:** about 130 Kie.ai credits ($0.65) for both versions together. That's 35 credits for backgrounds, 45 for sounds, about 29 for the v2 narration and 22 for voice auditions. A 40-minute episode would use the same pipeline. It needs about 6,000 words, roughly 1,000 shots and maybe 40 more backgrounds, so pictures, sound and Gemini narration would cost a few dollars. Most of the work is writing the script and the shot list.
+
+The upload details are in `publish/mall-pilot-upload.md` and the thumbnail is `thumbnails/mall-pilot-thumbnail.jpg`.
+
+**The Night Guard channel.** The series gets its own YouTube channel. `publish/night-guard-youtube-setup.md` has the channel text and the copy-paste fields for Short 1, and `publish/night-guard-shorts-1-3.md` covers Shorts 1–3. The channel picture and banner in `publish/channel/` are Remotion stills (`src/mall/ChannelArt.tsx`) drawn with the series' own figures and the concourse background. In the banner, zombies press against the store gates from inside: `images/mall/gate_mask.py` picks the gates' bars out of the painting, so the bars can be drawn again in front of the zombies.
+
+Short 1's thumbnail, `thumbnails/night-guard-short-1-thumbnail.jpg`, is the Remotion still `NightGuardShort1Thumb` (`src/mall/ShortThumbs.tsx`). It shows dead Marcus gripping the gate bars in his uniform, under the words "MY BEST FRIEND?!". Some places crop a Short's thumbnail to a wide band through the middle, so the face and the words sit in the middle 1080×720. Only some channels can upload a custom thumbnail for a Short, so `images/mall/append_thumb.sh` also adds the thumbnail as the video's last quarter-second, where the YouTube app's frame picker can find it.
+
+![The Night Guard channel banner: Danny with his flashlight in the dark mall concourse next to the title, zombies pressed against the store gates on both sides, Marcus in his uniform among them](publish/channel/night-guard-banner.jpg)
+
+**Chapter 1: The King of the Mall (14:42).** This is the first full chapter. It covers the whole first night and the first day, in 16:9 at 1080p (`MallChapter1`).
+- **Story:** about 2,500 words in 14 sections, from the cold open at the gate to Lily's three blinks from the tenth floor. The script is `images/mall/chapter1/script.md`. `make_plans.py` writes the script and the voice plan, and reuses lines that were already recorded for the Shorts.
+- **Voice:** the approved v10 recipe, with 169 chunks and the calmest matching take of each (`images/mall/vo/ch1/`).
+- **Pictures:** 265 shots, a new picture about every 3.3 seconds, each cued by a phrase in the narration (`src/mall/chapter1/`). `MallChapter.tsx` is the 16:9 renderer. It adds a "where and when" tag at each section (for example "1:48 A.M. · SUMMIT OUTDOORS"), a name badge while a radio voice talks, and the sound effects and beds. `check_cues.py` checks every cue against the word timings.
+- **New assets:** three backgrounds (the roof, the stockroom and Lily's apartment) and eight sounds. New cards include the mall map, the radio, the phone, the emergency alert, lists, two clocks, a news ticker and polaroids.
+- **Captions and upload:** `publish/night-guard-chapter-1.srt` comes from the script's own words (`images/mall/make_srt.py`). The title, description, chapter times and settings are in `publish/night-guard-chapter-1.md`.
+- **Cost:** about 278 Kie.ai credits (about $1.40): about 248 for the voice, 10 for the backgrounds and 20 for the sounds. Gemini's takes ran about 1.6 times longer than estimated, which doubled the voice cost.
+
 ## The house style
 
 - **Format:** vertical 9:16, 20–25 seconds. The voice sets the length.
@@ -104,10 +157,12 @@ src/
   hurricane/      hurricane Short: one continuous 2.5D shot, sound mix, beat times
   thumbs/         thumbnails, rendered as Remotion stills
   channel/        channel banner and picture, rendered as Remotion stills
-public/           everything the videos load: cut-out sprites, voice-overs, sound effects, thumbnail font
+  mall/           long-form mall pilot: stick-figure rig, overlays, mall map, the 70-shot list, word cues, sound mix, thumbnail
+public/           everything the videos load: cut-out sprites, backgrounds, voice-overs, sound effects, thumbnail font
 images/
   pigeon/         prompts, beat sheet, word timings, raw and keyed pictures, QA sheets, pipeline scripts
   hurricane/      the same for the hurricane Short
+  mall/           the pilot's script, background prompts, Kie.ai helpers (backgrounds, voice, sounds), local voice and word-timing scripts
 scripts/          QA tools (stills, contact sheets, pop scan, verify) and the README storyboard maker
 thumbnails/       final thumbnails, ready to upload (1080×1920 JPG)
 publish/          what goes on YouTube: upload details, channel banner and picture, channel text
@@ -133,6 +188,43 @@ npx remotion still src/index.ts HurricaneThumb out/hurricane-thumbnail.png
 npx remotion still src/index.ts ChannelBanner publish/channel-banner.png
 npx remotion still src/index.ts ChannelPicture publish/channel-picture.png
 ```
+
+Render the mall pilot (1080p, 30 fps) and its thumbnail:
+
+```bash
+npx remotion render src/index.ts MallPilot out/mall-pilot-v2-1080p.mp4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
+bash images/mall/finish.sh out/mall-pilot-v2-1080p.mp4 out/mall-pilot-v2.mp4   # about -15 LUFS with one gain + limiter, smaller re-encode
+npx remotion still src/index.ts MallThumb out/mall-thumb.png
+```
+
+Render Chapter 1 (about an hour on 4 cores; the steps to rebuild its voice and captions are in `publish/night-guard-chapter-1.md`):
+
+```bash
+npx remotion render src/index.ts MallChapter1 out/chapter1/night-guard-ch1-render.mp4 --concurrency=4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
+bash images/mall/finish.sh out/chapter1/night-guard-ch1-render.mp4 out/chapter1/night-guard-chapter-1.mp4
+```
+
+Render The Night Guard channel art and Short 1's thumbnail (remake the gate mask first only if the concourse background changes):
+
+```bash
+python3 images/mall/gate_mask.py
+npx remotion still src/index.ts NightGuardBanner publish/channel/night-guard-banner.jpg --image-format=jpeg --jpeg-quality=93
+npx remotion still src/index.ts NightGuardPicture publish/channel/night-guard-picture.png
+npx remotion still src/index.ts NightGuardShort1Thumb thumbnails/night-guard-short-1-thumbnail.jpg --image-format=jpeg --jpeg-quality=93
+bash images/mall/append_thumb.sh out/shorts/night-guard-short-1.mp4 thumbnails/night-guard-short-1-thumbnail.jpg out/shorts/night-guard-short-1-with-thumbnail.mp4
+```
+
+To re-voice the pilot, change the voices or lines in `images/mall/vo/v2/plan.json`, delete the takes you want recorded again from `vo/v2/takes/`, rebuild the voice track and word timings, then render again. Every cut follows the new timings by itself:
+
+```bash
+cd images/mall
+python3 voice_gemini.py vo/v2/plan.json vo/v2            # records missing takes, checks each against the script, builds vo.wav
+python3 voice_gemini.py vo/v2/plan.json vo/v2 --check    # re-check every saved take without recording
+python3 align.py vo/v2/vo.wav vo/v2/segments.json ../../src/mall/words.json
+bash vo_export.sh vo/v2/vo.wav ../../public/mall/vo/vo.mp3      # fixed gain + limiter: keeps whispers quiet
+```
+
+The first test's free local voice is still available: `voice_local.py` (Kokoro, model files from the kokoro-onnx releases on GitHub) writes the same `vo.wav` and `segments.json`.
 
 Check a render:
 
@@ -165,6 +257,9 @@ These scripts live in `images/pigeon/scripts/`, with the hurricane's own `prep.p
 | Animation and rendering | [Remotion](https://www.remotion.dev/) 4.0.539 with React and TypeScript |
 | Pictures | GPT Image 2.5 Flare through [Kie.ai](https://kie.ai/), 2K, on a flat key-colour background |
 | Voice | ElevenLabs premade voice "Chris", generated through [vidIQ](https://vidiq.com/) |
+| Mall pilot backgrounds | Seedream 5 Flash through Kie.ai, 2K, 16:9 |
+| Mall pilot voice | Gemini 3.1 Flash TTS through Kie.ai (v2); [Kokoro](https://github.com/hexgrad/kokoro) via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx), open source and local, for the first test |
+| Mall pilot sound effects | Suno sounds (V6) through Kie.ai, plus a synthesized clock tick |
 | Word timings | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) |
 | Sound effects | Mostly synthesized with numpy. The pigeon's street and treadmill ambience was generated with Suno through Kie.ai. |
 | Titles | vidIQ title ideas and scores |

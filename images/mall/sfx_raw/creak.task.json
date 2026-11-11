@@ -1,0 +1,51 @@
+{
+ "taskId": "dac33ff0bb961c6e4158578ea2415c82",
+ "model": "ai-music-api/sounds",
+ "state": "success",
+ "param": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a heavy steel security gate straining and bending under the weight of a crowd pushing on it, deep metallic groaning and creaking, rattling bars, about four seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "resultJson": "{\"code\":200,\"data\":[{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/cbd4059f-0d6f-49b6-9085-94a57c1ef18f.mp3\",\"createTime\":1793925904929,\"duration\":4.0,\"id\":\"cbd4059f-0d6f-49b6-9085-94a57c1ef18f\",\"image_url\":\"https://cdn2.suno.ai/image_cbd4059f-0d6f-49b6-9085-94a57c1ef18f.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/cbd4059f-0d6f-49b6-9085-94a57c1ef18f.mp3\",\"tags\":\"Sound effect only, no music, no voice: a heavy steel security gate straining and bending under the weight of a crowd pushing on it, deep metallic groaning and creaking, rattling bars, about four seconds\",\"title\":\"Sound effect only, no music, no voice: a heavy steel security gate straining ...\"},{\"audio_url\":\"https://tempfile.aiquickdraw.com/r/72b7ae6b-5c3b-413f-b736-488712e7ee58.mp3\",\"createTime\":1793925904929,\"duration\":4.28,\"id\":\"72b7ae6b-5c3b-413f-b736-488712e7ee58\",\"image_url\":\"https://cdn2.suno.ai/image_72b7ae6b-5c3b-413f-b736-488712e7ee58.jpeg\",\"model_name\":\"chirp-hawk\",\"prompt\":\"\",\"stream_audio_url\":\"https://audiostream.kie.ai/stream/72b7ae6b-5c3b-413f-b736-488712e7ee58.mp3\",\"tags\":\"Sound effect only, no music, no voice: a heavy steel security gate straining and bending under the weight of a crowd pushing on it, deep metallic groaning and creaking, rattling bars, about four seconds\",\"title\":\"Sound effect only, no music, no voice: a heavy steel security gate straining ...\"}],\"msg\":\"success\",\"task_id\":\"dac33ff0bb961c6e4158578ea2415c82\"}",
+ "failCode": null,
+ "failMsg": null,
+ "costTime": 18,
+ "completeTime": 1793925904929,
+ "createTime": 1793925885724,
+ "creditsConsumed": 2.5,
+ "operationType": "ai-music-api/sounds",
+ "status": "SUCCESS",
+ "type": "chirp-hawk",
+ "parentMusicId": "",
+ "paramJson": "{\"input\":\"{\\\"model\\\":\\\"V6\\\",\\\"prompt\\\":\\\"Sound effect only, no music, no voice: a heavy steel security gate straining and bending under the weight of a crowd pushing on it, deep metallic groaning and creaking, rattling bars, about four seconds\\\"}\",\"model\":\"ai-music-api/sounds\"}",
+ "successFlag": 1,
+ "response": {
+  "msg": "success",
+  "code": 200,
+  "data": [
+   {
+    "duration": 4.0,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/cbd4059f-0d6f-49b6-9085-94a57c1ef18f.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925904929,
+    "image_url": "https://cdn2.suno.ai/image_cbd4059f-0d6f-49b6-9085-94a57c1ef18f.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/cbd4059f-0d6f-49b6-9085-94a57c1ef18f.mp3",
+    "id": "cbd4059f-0d6f-49b6-9085-94a57c1ef18f",
+    "title": "Sound effect only, no music, no voice: a heavy steel security gate straining ...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a heavy steel security gate straining and bending under the weight of a crowd pushing on it, deep metallic groaning and creaking, rattling bars, about four seconds"
+   },
+   {
+    "duration": 4.28,
+    "stream_audio_url": "https://audiostream.kie.ai/stream/72b7ae6b-5c3b-413f-b736-488712e7ee58.mp3",
+    "model_name": "chirp-hawk",
+    "createTime": 1793925904929,
+    "image_url": "https://cdn2.suno.ai/image_72b7ae6b-5c3b-413f-b736-488712e7ee58.jpeg",
+    "audio_url": "https://tempfile.aiquickdraw.com/r/72b7ae6b-5c3b-413f-b736-488712e7ee58.mp3",
+    "id": "72b7ae6b-5c3b-413f-b736-488712e7ee58",
+    "title": "Sound effect only, no music, no voice: a heavy steel security gate straining ...",
+    "prompt": "",
+    "tags": "Sound effect only, no music, no voice: a heavy steel security gate straining and bending under the weight of a crowd pushing on it, deep metallic groaning and creaking, rattling bars, about four seconds"
+   }
+  ],
+  "task_id": "dac33ff0bb961c6e4158578ea2415c82"
+ },
+ "_elapsed": 21.4
+}

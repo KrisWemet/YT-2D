@@ -1,0 +1,132 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with little inflection, like a real person, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "marcus": {
+   "voice_name": "Orus",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man quietly tells what happened during the first hour of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+ "tempo": 1.04,
+ "max_pause": 0.28,
+ "level": "fixed",
+ "chunks": [
+  {
+   "id": "w1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform.",
+   "lufs": -26,
+   "gap": 0.3
+  },
+  {
+   "id": "w2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The radio on his chest is about to tell every one of them exactly where I'm hiding.",
+   "lufs": -26,
+   "gap": 0.4
+  },
+  {
+   "id": "q1n1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lufs": -18.5,
+   "gap": 0.5,
+   "lines": [
+    {
+     "text": "An hour ago, I was basically the king of this mall.",
+     "db": -3.5,
+     "gap": 0.3
+    },
+    {
+     "text": "Let me back up."
+    }
+   ],
+   "rejoin": true
+  },
+  {
+   "id": "n2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is.",
+   "lufs": -18,
+   "gap": 0.25
+  },
+  {
+   "id": "n3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I work nights for one reason. At three-fifteen every afternoon, I'm standing at the bus stop when my daughter Lily gets off.",
+   "lufs": -18,
+   "gap": 0.25
+  },
+  {
+   "id": "n4",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "She's seven, and she thinks I'm the king of the mall, because I carry forty-two keys, one for every store.",
+   "lufs": -18,
+   "gap": 0.25
+  },
+  {
+   "id": "q2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight, I'd only need one of them.",
+   "lufs": -21.5,
+   "gap": 0.4
+  },
+  {
+   "id": "n5",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The job's pretty simple. I walk the loop, I rattle the gates, and around one a.m., Marcus calls me from down in the parking garage.",
+   "lufs": -18,
+   "gap": 0.25
+  },
+  {
+   "id": "n6",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus is twenty-two, he's studying to be a nurse, and he tells the worst jokes you've ever heard.",
+   "lufs": -18,
+   "gap": 0.3
+  },
+  {
+   "id": "q3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Tonight he calls at one-forty, and there's no joke. He's whispering.",
+   "lufs": -21,
+   "gap": 0.35
+  },
+  {
+   "id": "r1",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[low, tense] Danny. There's a guy on the ramp. He's walking... wrong.",
+   "radio": "marcus1",
+   "lufs": -19,
+   "gap": 0.4
+  }
+ ],
+ "takes_dir": "../../v9/takes"
+}

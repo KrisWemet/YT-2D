@@ -1,0 +1,21 @@
+{
+ "voices": {
+  "marcus": {
+   "voice_name": "Rasalgethi",
+   "audio_profile": "Marcus, 22, a big, easygoing young man with a deep voice, a night security guard and nursing student, suddenly seeing something scary in the parking garage and talking low into his walkie-talkie.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "Heard over a walkie-talkie in an empty parking garage at night.",
+ "sample_context": "A radio call in a zombie story.",
+ "chunks": [
+  {
+   "id": "m",
+   "who": "marcus",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "text": "[low, tense] Danny. There's a guy on the ramp. He's walking... wrong.",
+   "gap": 0.3
+  }
+ ]
+}
