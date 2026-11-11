@@ -68,7 +68,7 @@ How they're made:
 | Vera, the woman on the radio | Gacrux, whispering | not shown yet |
 | Emergency broadcast | Charon | |
 
-Stick-figure style options for Marcus and Danny: `publish/characters/marcus-variations.jpg` and `danny-variations.jpg` (code: `src/mall/MarcusVariants.tsx`, stills `MarcusVariants` and `DannyVariants`).
+**Look (chosen Nov 11):** Codex's stick-figure style, with thin ink arms and legs and the same heads and uniforms (`src/mall/Stick.tsx`, before/after in `docs/night-guard-stick-figures.jpg`). Every new scene uses it. Earlier style options are in `publish/characters/`.
 
 ## Where things live
 
