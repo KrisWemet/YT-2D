@@ -22,12 +22,12 @@ import ch1 from './chapter1/ch1.json';
 export const FPS = 30;
 const VW = 1080;
 const VH = 1920;
-const GOLD = '#f0c53c';
-const INK = '#1d1a1a';
+export const GOLD = '#f0c53c';
+export const INK = '#1d1a1a';
 
 type Seg = {s: number; e: number; text: string; kind: string};
-const SEGS = (ch1 as {segments: Seg[]}).segments;
-const WORDS = (ch1 as {cwords: CWord[]}).cwords;
+export const SEGS = (ch1 as {segments: Seg[]}).segments;
+export const WORDS = (ch1 as {cwords: CWord[]}).cwords;
 
 export type CutDef = {
   id: string;
@@ -66,7 +66,7 @@ export const cutFrames = (def: CutDef) => Math.round((piecesOf(def).reduce((n, [
 // The chapter's shots, drawn one at a time. Scenes fill the 9:16 frame through a tall camera window
 // (ShortLayout, the framing Codex built for the first 14 cuts); wide maps, cards and wide
 // multi-person shots stay whole in a band across the middle.
-const CH = resolveChapter({...CHAPTER1_DEF, tags: []});
+export const CH = resolveChapter({...CHAPTER1_DEF, tags: []});
 const PORTRAIT_TYPES = new Set(['Scene', 'GateScene', 'OfficeScene', 'RoofScene', 'TowerNight', 'RadioOnChest', 'CctvScene', 'BackToBack']);
 const WIDE_CUES = new Set(
   [
@@ -83,7 +83,7 @@ const elementOf = (node: React.ReactNode): React.ReactElement<Record<string, unk
   return node as React.ReactElement<Record<string, unknown>>;
 };
 
-const ShotAt: React.FC<{tc: number}> = ({tc}) => {
+export const ShotAt: React.FC<{tc: number}> = ({tc}) => {
   let i = CH.shots.findIndex((sh) => tc >= sh.start && tc < sh.end);
   if (i < 0) i = CH.shots.length - 1;
   const sh = CH.shots[i];
@@ -106,7 +106,7 @@ const ShotAt: React.FC<{tc: number}> = ({tc}) => {
   );
 };
 
-const BigLines: React.FC<{lines: string[]; o: number; y: number; color?: string}> = ({lines, o, y, color = '#ffffff'}) => {
+export const BigLines: React.FC<{lines: string[]; o: number; y: number; color?: string}> = ({lines, o, y, color = '#ffffff'}) => {
   const size = Math.min(88, 980 / Math.max(...lines.map((l) => l.length * 0.56)));
   return (
     <g opacity={o}>

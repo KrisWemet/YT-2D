@@ -15,6 +15,7 @@ import {NightGuardBanner, NightGuardPicture} from './mall/ChannelArt';
 import {NightGuardShort1Thumb} from './mall/ShortThumbs';
 import {DannyVariants, MarcusVariants} from './mall/MarcusVariants';
 import {CH1_CUTS, cutFrames, makeCutShort, FPS as CUT_FPS} from './mall/ChapterShorts';
+import {CH1_REMIXES, makeRemixShort, remixFrames} from './mall/RemixShorts';
 import {MallTest} from './mall/Test';
 import {MallPilot} from './mall/Pilot';
 import {MallThumb} from './mall/Thumb';
@@ -25,6 +26,7 @@ const MallShort2 = makeShort(SHORT2_DEF);
 const MallShort3 = makeShort(SHORT3_DEF);
 const MallChapter1 = makeChapter(CHAPTER1_DEF);
 const CUT_COMPONENTS: Record<string, React.FC> = Object.fromEntries(CH1_CUTS.map((c) => [c.id, makeCutShort(c)]));
+const REMIX_COMPONENTS: Record<string, React.FC> = Object.fromEntries(CH1_REMIXES.map((c) => [c.id, makeRemixShort(c)]));
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -48,6 +50,9 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="MallShort3" component={MallShort3} durationInFrames={shortFrames(SHORT3_DEF)} fps={SFPS} width={1080} height={1920} />
     {CH1_CUTS.map((c) => (
       <Composition key={c.id} id={c.id} component={CUT_COMPONENTS[c.id]} durationInFrames={cutFrames(c)} fps={CUT_FPS} width={1080} height={1920} />
+    ))}
+    {CH1_REMIXES.map((c) => (
+      <Composition key={c.id} id={c.id} component={REMIX_COMPONENTS[c.id]} durationInFrames={remixFrames(c)} fps={CUT_FPS} width={1080} height={1920} />
     ))}
     <Composition id="MallChapter1" component={MallChapter1} durationInFrames={chapterFrames(CHAPTER1_DEF)} fps={CFPS} width={1920} height={1080} />
   </>
