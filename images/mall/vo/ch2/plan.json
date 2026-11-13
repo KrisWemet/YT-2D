@@ -6,8 +6,8 @@
    "accent": "American (Gen)"
   },
   "theo": {
-   "voice_name": "Zubenelgenubi",
-   "audio_profile": "Theo, a fifteen-year-old boy whose voice has only just broken. He has lived alone in a mall's ceiling for four months. Guarded, quick and a little defiant, he talks low and short, like someone used to staying hidden. A real teenager, not an actor.",
+   "voice_name": "Achird",
+   "audio_profile": "Theo, fifteen. A skinny teenage boy with a light, young voice that has only just started to break. He has lived alone in a mall's ceiling for four months: guarded, quick and a little defiant, and he talks in short sentences. A real teenager, not an actor.",
    "accent": "American (Gen)"
   },
   "vera": {
@@ -111,7 +111,8 @@
    "pace": "Natural",
    "lufs": -22.5,
    "gap": 0.35,
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "pitch": 1.5,
    "text": "Danny. Stop moving."
   },
   {
@@ -279,7 +280,7 @@
    "gap": 0.3,
    "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
    "radio": "vera",
-   "text": "What?"
+   "text": "Sorry, what?"
   },
   {
    "id": "c2m",
@@ -860,7 +861,8 @@
    "pace": "Natural",
    "lufs": -22.5,
    "gap": 0.3,
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "pitch": 1.5,
    "text": "Don't do that again."
   },
   {
@@ -880,6 +882,7 @@
    "lufs": -22.5,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "You're loud."
   },
   {
@@ -899,7 +902,8 @@
    "lufs": -22.5,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Fifteen."
+   "pitch": 1.5,
+   "text": "I'm fifteen."
   },
   {
    "id": "c5t",
@@ -927,6 +931,7 @@
    "lufs": -21.0,
    "gap": 1.4,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Nobody. That's why I stay up there."
   },
   {
@@ -964,6 +969,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Above the cinema. There's a space next to the projection room."
   },
   {
@@ -983,6 +989,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "People throw out a lot of food."
   },
   {
@@ -1002,6 +1009,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "I go around them."
   },
   {
@@ -1021,6 +1029,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "You check the same doors twice when you're on the phone. And you sing in the freight elevator."
   },
   {
@@ -1040,6 +1049,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Same song every time. You only know half the words."
   },
   {
@@ -1122,6 +1132,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "How much water have you got?"
   },
   {
@@ -1150,6 +1161,7 @@
    "lufs": -21.0,
    "gap": 1.4,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "I know where there's eight thousand gallons."
   },
   {
@@ -1169,6 +1181,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "The fountain."
   },
   {
@@ -1197,6 +1210,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "There's a tank underneath. In the pump room. It says eight thousand gallons right on the side."
   },
   {
@@ -1216,6 +1230,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "I don't use the door. I come from above."
   },
   {
@@ -1235,6 +1250,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Twenty minutes. If you're quiet."
   },
   {
@@ -1244,7 +1260,7 @@
    "pace": "Natural",
    "lufs": -18.0,
    "gap": 0.3,
-   "text": "When?"
+   "text": "When do we go?"
   },
   {
    "id": "c7k",
@@ -1254,6 +1270,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Tomorrow night. Eight o'clock."
   },
   {
@@ -1282,6 +1299,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "In the day, some people watch the court from upstairs. At night they sleep."
   },
   {
@@ -1301,6 +1319,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Just people."
   },
   {
@@ -1367,7 +1386,8 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Don't."
+   "pitch": 1.5,
+   "text": "Don't do it."
   },
   {
    "id": "c7x",
@@ -1386,6 +1406,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "I don't like her voice."
   },
   {
@@ -1414,6 +1435,7 @@
    "lufs": -21.0,
    "gap": 1.4,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Yes, I have."
   },
   {
@@ -1451,6 +1473,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "You always carry that many?"
   },
   {
@@ -1470,6 +1493,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Must be annoying."
   },
   {
@@ -1498,6 +1522,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "The big steel beams hold you. The tiles don't. Those thin wires hold the ceiling up. They won't hold you, either."
   },
   {
@@ -1581,7 +1606,8 @@
    "pace": "Natural",
    "lufs": -22.5,
    "gap": 1.4,
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "pitch": 1.5,
    "text": "Don't put your foot where you think the floor is."
   },
   {
@@ -1627,7 +1653,8 @@
    "pace": "Natural",
    "lufs": -22.5,
    "gap": 0.3,
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "pitch": 1.5,
    "text": "Next hand. Now your knee."
   },
   {
@@ -1841,7 +1868,8 @@
    "pace": "Natural",
    "lufs": -22.5,
    "gap": 0.3,
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "pitch": 1.5,
    "text": "Look at me."
   },
   {
@@ -1860,7 +1888,8 @@
    "pace": "Natural",
    "lufs": -22.5,
    "gap": 0.3,
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "pitch": 1.5,
    "text": "Let go of me. I need my other hand."
   },
   {
@@ -1888,7 +1917,8 @@
    "pace": "Natural",
    "lufs": -22.5,
    "gap": 0.3,
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "pitch": 1.5,
    "text": "Elbow up. You have to help."
   },
   {
@@ -2054,6 +2084,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Caught it."
   },
   {
@@ -2073,6 +2104,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Then why'd you ask?"
   },
   {
@@ -2110,6 +2142,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "This is where they were."
   },
   {
@@ -2119,7 +2152,7 @@
    "pace": "Natural",
    "lufs": -20.0,
    "gap": 0.3,
-   "text": "Who?"
+   "text": "Who was here?"
   },
   {
    "id": "c11o",
@@ -2129,6 +2162,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "The drill people. Three of them. A woman and two men. Right out there, behind the pretzel place. The first night."
   },
   {
@@ -2148,6 +2182,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "One-thirty. I could see the clock."
   },
   {
@@ -2187,6 +2222,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "They were cutting through the wall. Loud as a chainsaw. I could hear it all the way over the cinema."
   },
   {
@@ -2206,6 +2242,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Then people started coming in. Through the service hall. They just kept coming. One of the men saw them and ran back. He said they had to stop."
   },
   {
@@ -2225,6 +2262,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "She kept saying, one more minute."
   },
   {
@@ -2271,6 +2309,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Same voice. I heard her in your store last night, through the ceiling. It's her."
   },
   {
@@ -2290,7 +2329,8 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "No."
+   "pitch": 1.5,
+   "text": "There wasn't."
   },
   {
    "id": "c12n",
@@ -2309,6 +2349,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Three people and a drill, Danny. No kid."
   },
   {
@@ -2346,7 +2387,8 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Danny."
+   "pitch": 1.5,
+   "text": "Hey. Danny."
   },
   {
    "id": "c12t",
@@ -2448,7 +2490,8 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Back."
+   "pitch": 1.5,
+   "text": "Going back."
   },
   {
    "id": "c13f",
@@ -2467,6 +2510,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "It's fine."
   },
   {
@@ -2495,6 +2539,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "What do you want for it?"
   },
   {
@@ -2684,6 +2729,7 @@
    "lufs": -21.0,
    "gap": 1.4,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "Can I come?"
   },
   {
@@ -2861,7 +2907,8 @@
    "pace": "Natural",
    "lufs": -22.5,
    "gap": 0.3,
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "pitch": 1.5,
    "text": "Who is that?"
   },
   {
@@ -2890,6 +2937,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "What's B3?"
   },
   {
@@ -2899,7 +2947,7 @@
    "pace": "Natural",
    "lufs": -20.0,
    "gap": 0.3,
-   "text": "Why?"
+   "text": "Why do you ask?"
   },
   {
    "id": "c14s",
@@ -2909,6 +2957,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "That's what she kept saying, that night. Down to B3. Get to the door."
   },
   {
@@ -2928,6 +2977,7 @@
    "lufs": -21.0,
    "gap": 0.3,
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "pitch": 1.5,
    "text": "They weren't trying to rob a store. They were trying to get underneath it."
   },
   {

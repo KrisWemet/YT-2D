@@ -43,7 +43,9 @@ Approved on the first minute as v10 "calm, quicker still" (`vo/v10/b`). It took 
 
 ## Cost
 
-The engine costs about 0.08 Kie credits per second of audio. For a 40-minute chapter (about 2,400 s of narration):
+The engine costs about 0.08 Kie credits per second of audio. Raw takes run much longer than word counts suggest, because of breaths, slower reads and pauses that are trimmed later. Chapter 2 is 20:34 finished and needed 1,719 s of raw takes for one pass, about 138 credits. Budget about 7 credits per finished minute for one take per line, plus 10% for retakes.
+
+For a 40-minute chapter (about 2,400 s of narration):
 
 | Plan | Credits | Cost |
 |---|---|---|

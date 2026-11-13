@@ -6,8 +6,8 @@
    "accent": "American (Gen)"
   },
   "theo": {
-   "voice_name": "Zubenelgenubi",
-   "audio_profile": "Theo, a fifteen-year-old boy whose voice has only just broken. He has lived alone in a mall's ceiling for four months. Guarded, quick and a little defiant, he talks low and short, like someone used to staying hidden. A real teenager, not an actor.",
+   "voice_name": "Achird",
+   "audio_profile": "Theo, fifteen. A skinny teenage boy with a light, young voice that has only just started to break. He has lived alone in a mall's ceiling for four months: guarded, quick and a little defiant, and he talks in short sentences. A real teenager, not an actor.",
    "accent": "American (Gen)"
   },
   "vera": {
@@ -27,7 +27,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Danny. Stop moving."
   },
   {
@@ -35,7 +35,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Danny. Stop moving."
   },
   {
@@ -92,7 +92,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
-   "text": "What?"
+   "text": "Sorry, what?"
   },
   {
    "id": "c2l-2",
@@ -100,7 +100,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
-   "text": "What?"
+   "text": "Sorry, what?"
   },
   {
    "id": "c2n-1",
@@ -187,7 +187,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Don't do that again."
   },
   {
@@ -195,7 +195,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Don't do that again."
   },
   {
@@ -220,7 +220,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Fifteen."
+   "text": "I'm fifteen."
   },
   {
    "id": "c5s-2",
@@ -228,7 +228,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Fifteen."
+   "text": "I'm fifteen."
   },
   {
    "id": "c5v-1",
@@ -492,7 +492,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Don't."
+   "text": "Don't do it."
   },
   {
    "id": "c7w-2",
@@ -500,7 +500,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Don't."
+   "text": "Don't do it."
   },
   {
    "id": "c7y-1",
@@ -587,7 +587,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Don't put your foot where you think the floor is."
   },
   {
@@ -595,7 +595,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Don't put your foot where you think the floor is."
   },
   {
@@ -603,7 +603,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Next hand. Now your knee."
   },
   {
@@ -611,7 +611,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Next hand. Now your knee."
   },
   {
@@ -619,7 +619,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Look at me."
   },
   {
@@ -627,7 +627,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Look at me."
   },
   {
@@ -635,7 +635,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Let go of me. I need my other hand."
   },
   {
@@ -643,7 +643,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Let go of me. I need my other hand."
   },
   {
@@ -651,7 +651,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Elbow up. You have to help."
   },
   {
@@ -659,7 +659,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Elbow up. You have to help."
   },
   {
@@ -812,7 +812,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "No."
+   "text": "There wasn't."
   },
   {
    "id": "c12m-2",
@@ -820,7 +820,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "No."
+   "text": "There wasn't."
   },
   {
    "id": "c12o-1",
@@ -844,7 +844,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Danny."
+   "text": "Hey. Danny."
   },
   {
    "id": "c12s-2",
@@ -852,7 +852,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Danny."
+   "text": "Hey. Danny."
   },
   {
    "id": "c13e-1",
@@ -860,7 +860,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Back."
+   "text": "Going back."
   },
   {
    "id": "c13e-2",
@@ -868,7 +868,7 @@
    "style": "Deadpan",
    "pace": "Natural",
    "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-   "text": "Back."
+   "text": "Going back."
   },
   {
    "id": "c13g-1",
@@ -987,7 +987,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Who is that?"
   },
   {
@@ -995,7 +995,7 @@
    "who": "theo",
    "style": "Deadpan",
    "pace": "Natural",
-   "scene": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
    "text": "Who is that?"
   },
   {

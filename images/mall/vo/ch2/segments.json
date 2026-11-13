@@ -1,0 +1,2270 @@
+{
+ "duration": 1234.053,
+ "segments": [
+  {
+   "kind": "narr",
+   "text": "Right now my leg is hanging through the ceiling over a hundred dead people, and my best friend is walking right under it.",
+   "s": 0.3,
+   "e": 6.773,
+   "chunk": "c1a"
+  },
+  {
+   "kind": "narr",
+   "text": "The edge of the hole is cutting into my thigh. My boot is caught on something sharp. Every time I move, a little more white dust falls past my foot.",
+   "s": 7.073,
+   "e": 15.49,
+   "chunk": "c1b"
+  },
+  {
+   "kind": "narr",
+   "text": "A piece the size of my thumbnail lands on the fountain rim.",
+   "s": 15.74,
+   "e": 19.3,
+   "chunk": "c1c",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Tick.",
+   "s": 19.8,
+   "e": 20.21,
+   "chunk": "c1c",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "In a mall this quiet, that's a dinner bell.",
+   "s": 20.81,
+   "e": 23.335,
+   "chunk": "c1c",
+   "line": 3
+  },
+  {
+   "kind": "narr",
+   "text": "Under my leg, faces start turning up. A woman with one earring. A man still holding a shopping bag. The cleaner who used to put out a yellow cone even when the floor was dry.",
+   "s": 23.635,
+   "e": 33.767,
+   "chunk": "c1d"
+  },
+  {
+   "kind": "narr",
+   "text": "And Marcus.",
+   "s": 34.067,
+   "e": 34.978,
+   "chunk": "c1e",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice. Same as every night.",
+   "s": 35.378,
+   "e": 42.335,
+   "chunk": "c1e",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "Lying on a beam above me is a fifteen-year-old I almost threw out of my store. He's got both hands around my wrist, and he's pulling so hard his whole face shakes.",
+   "s": 42.635,
+   "e": 53.151,
+   "chunk": "c1f"
+  },
+  {
+   "kind": "narr",
+   "text": "Danny. Stop moving.",
+   "s": 53.451,
+   "e": 54.908,
+   "chunk": "c1g"
+  },
+  {
+   "kind": "narr",
+   "text": "I stop.",
+   "s": 55.258,
+   "e": 56.008,
+   "chunk": "c1h",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Another piece breaks off anyway.",
+   "s": 56.408,
+   "e": 57.956,
+   "chunk": "c1h",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "And in eleven minutes, my seven-year-old is going to blink her goodnight at an empty roof.",
+   "s": 58.356,
+   "e": 62.906,
+   "chunk": "c1i",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Let me back up.",
+   "s": 63.406,
+   "e": 64.08,
+   "chunk": "c1i",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "The woman on the radio asked who was in my daughter's window, and I didn't say a word.",
+   "s": 67.08,
+   "e": 71.551,
+   "chunk": "c2a"
+  },
+  {
+   "kind": "narr",
+   "text": "For six years, answering that radio was my job. Somebody called, I answered, and they knew help was coming.",
+   "s": 71.801,
+   "e": 78.483,
+   "chunk": "c2b"
+  },
+  {
+   "kind": "narr",
+   "text": "Now I stood on the roof with my thumb an inch from the button and made myself leave it alone.",
+   "s": 78.683,
+   "e": 84.017,
+   "chunk": "c2c"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny? You still there?",
+   "s": 84.317,
+   "e": 85.754,
+   "chunk": "c2d",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "Across the roofs, a light moved behind the department store's roof door. Then it was gone.",
+   "s": 86.054,
+   "e": 92.306,
+   "chunk": "c2e"
+  },
+  {
+   "kind": "narr",
+   "text": "I pressed the button.",
+   "s": 92.606,
+   "e": 93.923,
+   "chunk": "c2f",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "How did you get inside my mall?",
+   "s": 94.223,
+   "e": 96.103,
+   "chunk": "c2f",
+   "line": 2
+  },
+  {
+   "kind": "radio",
+   "text": "That's a pretty rude first question.",
+   "s": 96.403,
+   "e": 99.419,
+   "chunk": "c2g",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "You asked me one.",
+   "s": 99.719,
+   "e": 100.692,
+   "chunk": "c2h"
+  },
+  {
+   "kind": "radio",
+   "text": "Fair. I'm Vera. I was trying on a coat on the second floor, sat down in the fitting room, and fell asleep. When I woke up, they'd locked the place.",
+   "s": 100.992,
+   "e": 109.063,
+   "chunk": "c2i",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "The store closes at nine. At midnight, I'd walked the hallway behind those fitting rooms. Nobody was there.",
+   "s": 109.363,
+   "e": 116.269,
+   "chunk": "c2j"
+  },
+  {
+   "kind": "narr",
+   "text": "What coat?",
+   "s": 116.569,
+   "e": 117.86,
+   "chunk": "c2k"
+  },
+  {
+   "kind": "radio",
+   "text": "Sorry, what?",
+   "s": 118.16,
+   "e": 119.268,
+   "chunk": "c2l",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "The coat you were trying on.",
+   "s": 119.568,
+   "e": 120.897,
+   "chunk": "c2m"
+  },
+  {
+   "kind": "radio",
+   "text": "Danny, there are people eating people downstairs. I think we're past the return policy.",
+   "s": 121.197,
+   "e": 127.827,
+   "chunk": "c2n",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "Then her voice went soft.",
+   "s": 128.127,
+   "e": 129.719,
+   "chunk": "c2o"
+  },
+  {
+   "kind": "radio",
+   "text": "There's a little girl up here with me. She's hungry. Have you got anything to eat?",
+   "s": 130.019,
+   "e": 134.995,
+   "chunk": "c2p",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "I looked across the highway at my daughter's dark window.",
+   "s": 135.295,
+   "e": 138.328,
+   "chunk": "c2q"
+  },
+  {
+   "kind": "narr",
+   "text": "How old?",
+   "s": 138.628,
+   "e": 139.966,
+   "chunk": "c2r"
+  },
+  {
+   "kind": "radio",
+   "text": "Six. Maybe seven. She won't tell me much.",
+   "s": 140.266,
+   "e": 143.335,
+   "chunk": "c2s",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "Seven.",
+   "s": 143.635,
+   "e": 144.525,
+   "chunk": "c2t",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Vera never asked about the window again that night.",
+   "s": 145.125,
+   "e": 147.475,
+   "chunk": "c2t",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "She'd found another question I couldn't walk away from.",
+   "s": 147.775,
+   "e": 149.963,
+   "chunk": "c2t",
+   "line": 3
+  },
+  {
+   "kind": "narr",
+   "text": "Somebody stole my water while I slept inside a locked store.",
+   "s": 151.363,
+   "e": 155.404,
+   "chunk": "c3a"
+  },
+  {
+   "kind": "narr",
+   "text": "I'd counted it the night before. Seventy-two bottles. If I was careful, twelve days.",
+   "s": 155.654,
+   "e": 160.921,
+   "chunk": "c3b"
+  },
+  {
+   "kind": "narr",
+   "text": "In the morning there were seventy-one. And one of my two protein bars was gone, which meant somebody had eaten breakfast in my store, and it wasn't me.",
+   "s": 161.171,
+   "e": 169.006,
+   "chunk": "c3c"
+  },
+  {
+   "kind": "narr",
+   "text": "The gate was locked. Key thirty-one was still on my belt.",
+   "s": 169.306,
+   "e": 173.416,
+   "chunk": "c3d"
+  },
+  {
+   "kind": "narr",
+   "text": "The dead don't pick padlocks. They don't eat protein bars, either.",
+   "s": 173.716,
+   "e": 178.016,
+   "chunk": "c3e",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Something else was in here with me.",
+   "s": 178.366,
+   "e": 180.182,
+   "chunk": "c3e",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "I searched every tent. Every shelf. Behind the kayaks, and behind the cardboard bear, which got me for the third time.",
+   "s": 180.532,
+   "e": 187.442,
+   "chunk": "c3f",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Nothing.",
+   "s": 187.842,
+   "e": 188.312,
+   "chunk": "c3f",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "That night, I put the food and water in a plastic box and slept with it next to my head.",
+   "s": 188.712,
+   "e": 195.099,
+   "chunk": "c3g"
+  },
+  {
+   "kind": "narr",
+   "text": "Vera called while I was lying there.",
+   "s": 195.349,
+   "e": 198.521,
+   "chunk": "c3h"
+  },
+  {
+   "kind": "radio",
+   "text": "How's my favorite night guard?",
+   "s": 198.821,
+   "e": 201.145,
+   "chunk": "c3i",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "I haven't agreed to anything.",
+   "s": 201.445,
+   "e": 202.994,
+   "chunk": "c3j"
+  },
+  {
+   "kind": "radio",
+   "text": "She asked for her mom today. I didn't know what to tell her.",
+   "s": 203.294,
+   "e": 207.082,
+   "chunk": "c3k",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "I didn't either. I let the radio go quiet.",
+   "s": 207.382,
+   "e": 210.431,
+   "chunk": "c3l"
+  },
+  {
+   "kind": "narr",
+   "text": "I don't remember falling asleep. I remember waking up, because the lid of the box was back on, and one of the latches hadn't quite clicked shut.",
+   "s": 210.781,
+   "e": 218.005,
+   "chunk": "c3m"
+  },
+  {
+   "kind": "narr",
+   "text": "Two more bars were gone. Two more bottles.",
+   "s": 218.305,
+   "e": 220.605,
+   "chunk": "c3n",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Whoever was doing this had stood close enough to watch me sleep.",
+   "s": 220.955,
+   "e": 224.093,
+   "chunk": "c3n",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "I put climbing chalk on the floor, and the footprints went up the wall.",
+   "s": 225.493,
+   "e": 229.298,
+   "chunk": "c4a"
+  },
+  {
+   "kind": "narr",
+   "text": "That was my entire investigation. Six years in mall security, and my big plan was waiting for somebody to step in powder.",
+   "s": 229.548,
+   "e": 238.312,
+   "chunk": "c4b"
+  },
+  {
+   "kind": "narr",
+   "text": "I spread it around the food box, under the stockroom door, and between the tents. Then I lay down with my boots on and pretended to sleep.",
+   "s": 238.562,
+   "e": 247.584,
+   "chunk": "c4c"
+  },
+  {
+   "kind": "narr",
+   "text": "Sometime before dawn, I heard plastic bend.",
+   "s": 247.884,
+   "e": 250.814,
+   "chunk": "c4d",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "By the time I got my flashlight on, the store was still again.",
+   "s": 251.214,
+   "e": 254.374,
+   "chunk": "c4d",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "Small sneakers. A split in the right sole that left a little square of clean floor in every print.",
+   "s": 254.674,
+   "e": 261.158,
+   "chunk": "c4e"
+  },
+  {
+   "kind": "narr",
+   "text": "The trail came from behind the climbing wall display. It went to the food box. Then it went back.",
+   "s": 261.408,
+   "e": 268.514,
+   "chunk": "c4f"
+  },
+  {
+   "kind": "narr",
+   "text": "Behind the display there's a tall metal rack bolted to the wall. A chalk print on the bottom shelf. Another one halfway up the wall. A handprint on a dusty pipe.",
+   "s": 268.764,
+   "e": 279.033,
+   "chunk": "c4g"
+  },
+  {
+   "kind": "narr",
+   "text": "I followed the pipe up with my light.",
+   "s": 279.283,
+   "e": 281.317,
+   "chunk": "c4h"
+  },
+  {
+   "kind": "narr",
+   "text": "One ceiling tile was cleaner around the edges than all the others.",
+   "s": 281.567,
+   "e": 285.192,
+   "chunk": "c4i"
+  },
+  {
+   "kind": "narr",
+   "text": "Every door locked. Every window whole. I'd checked that gate so many times my hand hurt.",
+   "s": 285.492,
+   "e": 290.704,
+   "chunk": "c4j"
+  },
+  {
+   "kind": "narr",
+   "text": "I hadn't looked up once.",
+   "s": 290.954,
+   "e": 292.396,
+   "chunk": "c4k"
+  },
+  {
+   "kind": "narr",
+   "text": "And if a thief could get into my store through the ceiling, so could the woman on the radio.",
+   "s": 292.746,
+   "e": 296.864,
+   "chunk": "c4l"
+  },
+  {
+   "kind": "narr",
+   "text": "A little white flake drifted down out of the seam above me.",
+   "s": 297.164,
+   "e": 300.567,
+   "chunk": "c4m"
+  },
+  {
+   "kind": "narr",
+   "text": "I turned off the flashlight.",
+   "s": 300.867,
+   "e": 302.489,
+   "chunk": "c4n"
+  },
+  {
+   "kind": "narr",
+   "text": "Whoever was up there had seen the light.",
+   "s": 302.839,
+   "e": 305.066,
+   "chunk": "c4o",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "And they were still there.",
+   "s": 305.466,
+   "e": 306.731,
+   "chunk": "c4o",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "I caught the thief, and his shoes were held together with duct tape.",
+   "s": 308.131,
+   "e": 312.472,
+   "chunk": "c5a"
+  },
+  {
+   "kind": "narr",
+   "text": "I waited behind the display until my knee went stiff. Out in the hall, Marcus rattled my gate and moved on.",
+   "s": 312.722,
+   "e": 319.025,
+   "chunk": "c5b"
+  },
+  {
+   "kind": "narr",
+   "text": "Then the tile lifted.",
+   "s": 319.325,
+   "e": 320.371,
+   "chunk": "c5c",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Two fingers. Then a head. Then a very skinny boy, lowering himself onto the top shelf like he'd done it a hundred times. He even stepped around the one bar that squeaks. I didn't know it squeaked. It's my store.",
+   "s": 320.771,
+   "e": 331.594,
+   "chunk": "c5c",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "He went straight to the food box. I waited until he bent over it.",
+   "s": 331.894,
+   "e": 335.527,
+   "chunk": "c5d"
+  },
+  {
+   "kind": "narr",
+   "text": "Then I stood up.",
+   "s": 335.827,
+   "e": 337.515,
+   "chunk": "c5e"
+  },
+  {
+   "kind": "narr",
+   "text": "He had a protein bar in his hand. His sweatshirt hung past his fingers. He was about as dusty as the pipe, and he looked hungry enough to eat the wrapper.",
+   "s": 337.865,
+   "e": 345.989,
+   "chunk": "c5f"
+  },
+  {
+   "kind": "narr",
+   "text": "I'd practiced this moment for an hour. In my head, the thief was a grown man.",
+   "s": 346.239,
+   "e": 351.097,
+   "chunk": "c5g"
+  },
+  {
+   "kind": "narr",
+   "text": "Put it down.",
+   "s": 351.397,
+   "e": 352.044,
+   "chunk": "c5h"
+  },
+  {
+   "kind": "narr",
+   "text": "He put it down.",
+   "s": 352.344,
+   "e": 353.228,
+   "chunk": "c5i",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Then he ran straight at me.",
+   "s": 353.578,
+   "e": 354.858,
+   "chunk": "c5i",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "He got past me and two shelves up the rack before I caught the back of his sweatshirt. He twisted so hard the stitching tore. The whole rack banged against the wall.",
+   "s": 355.158,
+   "e": 364.733,
+   "chunk": "c5j"
+  },
+  {
+   "kind": "narr",
+   "text": "Out in the hall, something stopped walking.",
+   "s": 365.033,
+   "e": 367.563,
+   "chunk": "c5k",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "We both froze.",
+   "s": 367.963,
+   "e": 368.891,
+   "chunk": "c5k",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "A shadow slid across the gate. It leaned on the bars, and the gate creaked.",
+   "s": 369.291,
+   "e": 373.794,
+   "chunk": "c5l"
+  },
+  {
+   "kind": "narr",
+   "text": "Then it moved on.",
+   "s": 374.094,
+   "e": 375.925,
+   "chunk": "c5m"
+  },
+  {
+   "kind": "narr",
+   "text": "The boy let out a breath and glared at me like this was my fault.",
+   "s": 376.275,
+   "e": 380.894,
+   "chunk": "c5n"
+  },
+  {
+   "kind": "narr",
+   "text": "Don't do that again.",
+   "s": 381.194,
+   "e": 382.208,
+   "chunk": "c5o"
+  },
+  {
+   "kind": "narr",
+   "text": "You're stealing my food.",
+   "s": 382.508,
+   "e": 384.035,
+   "chunk": "c5p"
+  },
+  {
+   "kind": "narr",
+   "text": "You're loud.",
+   "s": 384.335,
+   "e": 385.07,
+   "chunk": "c5q"
+  },
+  {
+   "kind": "narr",
+   "text": "How old are you?",
+   "s": 385.37,
+   "e": 386.256,
+   "chunk": "c5r"
+  },
+  {
+   "kind": "narr",
+   "text": "I'm fifteen.",
+   "s": 386.556,
+   "e": 387.518,
+   "chunk": "c5s"
+  },
+  {
+   "kind": "narr",
+   "text": "Who else is up there?",
+   "s": 387.818,
+   "e": 388.987,
+   "chunk": "c5t"
+  },
+  {
+   "kind": "narr",
+   "text": "His hand tightened on the pipe.",
+   "s": 389.287,
+   "e": 391.596,
+   "chunk": "c5u"
+  },
+  {
+   "kind": "narr",
+   "text": "Nobody. That's why I stay up there.",
+   "s": 391.896,
+   "e": 393.955,
+   "chunk": "c5v"
+  },
+  {
+   "kind": "narr",
+   "text": "A fifteen-year-old had been living in my mall for four months, and I'd never noticed.",
+   "s": 395.355,
+   "e": 399.813,
+   "chunk": "c6a"
+  },
+  {
+   "kind": "narr",
+   "text": "His name was Theo. He sat on an upside-down bucket, close enough to the rack to run.",
+   "s": 400.063,
+   "e": 404.713,
+   "chunk": "c6b"
+  },
+  {
+   "kind": "narr",
+   "text": "Where do you sleep?",
+   "s": 404.963,
+   "e": 406.09,
+   "chunk": "c6c"
+  },
+  {
+   "kind": "narr",
+   "text": "Above the cinema. There's a space next to the projection room.",
+   "s": 406.39,
+   "e": 410.543,
+   "chunk": "c6d"
+  },
+  {
+   "kind": "narr",
+   "text": "For four months? How do you eat?",
+   "s": 410.843,
+   "e": 413.292,
+   "chunk": "c6e"
+  },
+  {
+   "kind": "narr",
+   "text": "People throw out a lot of food.",
+   "s": 413.592,
+   "e": 415.371,
+   "chunk": "c6f"
+  },
+  {
+   "kind": "narr",
+   "text": "And the doors?",
+   "s": 415.671,
+   "e": 416.637,
+   "chunk": "c6g"
+  },
+  {
+   "kind": "narr",
+   "text": "I go around them.",
+   "s": 416.937,
+   "e": 417.901,
+   "chunk": "c6h"
+  },
+  {
+   "kind": "narr",
+   "text": "I looked at the keys on my belt. Forty-two keys, and a kid had beaten every one of them with a ceiling tile.",
+   "s": 418.201,
+   "e": 425.342,
+   "chunk": "c6i"
+  },
+  {
+   "kind": "narr",
+   "text": "You check the same doors twice when you're on the phone. And you sing in the freight elevator.",
+   "s": 425.642,
+   "e": 430.179,
+   "chunk": "c6j"
+  },
+  {
+   "kind": "narr",
+   "text": "I stared at him.",
+   "s": 430.479,
+   "e": 431.546,
+   "chunk": "c6k"
+  },
+  {
+   "kind": "narr",
+   "text": "Same song every time. You only know half the words.",
+   "s": 431.846,
+   "e": 434.853,
+   "chunk": "c6l"
+  },
+  {
+   "kind": "narr",
+   "text": "My face went hot. Even now. Even with all of that outside.",
+   "s": 435.153,
+   "e": 439.71,
+   "chunk": "c6m"
+  },
+  {
+   "kind": "narr",
+   "text": "You can't stay here.",
+   "s": 440.01,
+   "e": 441.035,
+   "chunk": "c6n"
+  },
+  {
+   "kind": "narr",
+   "text": "It came out before I'd thought about it. But I knew where it came from.",
+   "s": 441.385,
+   "e": 445.383,
+   "chunk": "c6o"
+  },
+  {
+   "kind": "narr",
+   "text": "The first night, a guy I loved sat outside that gate and trusted me to know what to do. I didn't. Now this kid was sitting six feet from the same gate, waiting for me to be in charge.",
+   "s": 445.633,
+   "e": 456.339,
+   "chunk": "c6p"
+  },
+  {
+   "kind": "narr",
+   "text": "I wanted somebody better for him. A firefighter. A parent. Anybody.",
+   "s": 456.639,
+   "e": 462.036,
+   "chunk": "c6q"
+  },
+  {
+   "kind": "narr",
+   "text": "He was looking at the only adult available.",
+   "s": 462.286,
+   "e": 464.51,
+   "chunk": "c6r"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo stood up. He didn't argue. He didn't take anything, because he'd brought nothing.",
+   "s": 464.81,
+   "e": 470.783,
+   "chunk": "c6s"
+  },
+  {
+   "kind": "narr",
+   "text": "He was halfway up the rack when he stopped.",
+   "s": 471.033,
+   "e": 473.714,
+   "chunk": "c6t"
+  },
+  {
+   "kind": "narr",
+   "text": "How much water have you got?",
+   "s": 474.014,
+   "e": 475.358,
+   "chunk": "c6u"
+  },
+  {
+   "kind": "narr",
+   "text": "About ten days. For one person.",
+   "s": 475.658,
+   "e": 477.804,
+   "chunk": "c6v"
+  },
+  {
+   "kind": "narr",
+   "text": "He looked toward the front of the mall.",
+   "s": 478.104,
+   "e": 479.713,
+   "chunk": "c6w"
+  },
+  {
+   "kind": "narr",
+   "text": "I know where there's eight thousand gallons.",
+   "s": 480.013,
+   "e": 482.336,
+   "chunk": "c6x"
+  },
+  {
+   "kind": "narr",
+   "text": "The water I needed was sitting under a hundred dead people.",
+   "s": 483.736,
+   "e": 487.098,
+   "chunk": "c7a"
+  },
+  {
+   "kind": "narr",
+   "text": "The fountain.",
+   "s": 487.348,
+   "e": 487.937,
+   "chunk": "c7b"
+  },
+  {
+   "kind": "narr",
+   "text": "In six years I'd fished coins out of that fountain, two phones, and once an engagement ring a guy dropped before he got to the question.",
+   "s": 488.237,
+   "e": 496.437,
+   "chunk": "c7c"
+  },
+  {
+   "kind": "narr",
+   "text": "I'd never wondered where the water came from.",
+   "s": 496.687,
+   "e": 499.139,
+   "chunk": "c7d"
+  },
+  {
+   "kind": "narr",
+   "text": "There's a tank underneath. In the pump room. It says eight thousand gallons right on the side.",
+   "s": 499.439,
+   "e": 504.488,
+   "chunk": "c7e"
+  },
+  {
+   "kind": "narr",
+   "text": "The pump room door is in the center court, right beside the pretzel place. On the cameras, that doorway was buried in bodies.",
+   "s": 504.788,
+   "e": 512.662,
+   "chunk": "c7f"
+  },
+  {
+   "kind": "narr",
+   "text": "I don't use the door. I come from above.",
+   "s": 512.962,
+   "e": 516.141,
+   "chunk": "c7g"
+  },
+  {
+   "kind": "narr",
+   "text": "He drew the route in the chalk with his finger. Up through my ceiling. Over the cinema. Along a service walkway above the center court. Down a ladder inside the big column by the fountain.",
+   "s": 516.441,
+   "e": 527.247,
+   "chunk": "c7h"
+  },
+  {
+   "kind": "narr",
+   "text": "Twenty minutes. If you're quiet.",
+   "s": 527.497,
+   "e": 529.334,
+   "chunk": "c7i"
+  },
+  {
+   "kind": "narr",
+   "text": "When do we go?",
+   "s": 529.634,
+   "e": 530.575,
+   "chunk": "c7j"
+  },
+  {
+   "kind": "narr",
+   "text": "Tomorrow night. Eight o'clock.",
+   "s": 530.875,
+   "e": 532.431,
+   "chunk": "c7k"
+  },
+  {
+   "kind": "narr",
+   "text": "Why at night?",
+   "s": 532.731,
+   "e": 533.662,
+   "chunk": "c7l"
+  },
+  {
+   "kind": "narr",
+   "text": "He looked at the floor.",
+   "s": 533.962,
+   "e": 535.203,
+   "chunk": "c7m"
+  },
+  {
+   "kind": "narr",
+   "text": "In the day, some people watch the court from upstairs. At night they sleep.",
+   "s": 535.503,
+   "e": 539.388,
+   "chunk": "c7n"
+  },
+  {
+   "kind": "narr",
+   "text": "What people?",
+   "s": 539.688,
+   "e": 541.051,
+   "chunk": "c7o"
+  },
+  {
+   "kind": "narr",
+   "text": "Just people.",
+   "s": 541.351,
+   "e": 542.088,
+   "chunk": "c7p"
+  },
+  {
+   "kind": "narr",
+   "text": "Eight o'clock. Twenty minutes there, fill up, twenty minutes back. On the roof by ten to nine. Easy.",
+   "s": 542.388,
+   "e": 549.157,
+   "chunk": "c7q"
+  },
+  {
+   "kind": "narr",
+   "text": "That night, Vera called again.",
+   "s": 549.507,
+   "e": 552.039,
+   "chunk": "c7r"
+  },
+  {
+   "kind": "radio",
+   "text": "She's stopped asking for food, Danny.",
+   "s": 552.339,
+   "e": 554.236,
+   "chunk": "c7s",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "I held the radio so tight the plastic creaked. I'm a dad. She knew exactly where to push.",
+   "s": 554.536,
+   "e": 560.324,
+   "chunk": "c7t"
+  },
+  {
+   "kind": "narr",
+   "text": "I started putting two protein bars and a bottle of water in a bag. I'd leave it at the department store gate.",
+   "s": 560.624,
+   "e": 566.964,
+   "chunk": "c7u"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo watched me from the rack.",
+   "s": 567.214,
+   "e": 568.987,
+   "chunk": "c7v"
+  },
+  {
+   "kind": "narr",
+   "text": "Don't do it.",
+   "s": 569.287,
+   "e": 569.986,
+   "chunk": "c7w"
+  },
+  {
+   "kind": "narr",
+   "text": "There's a little kid up there.",
+   "s": 570.286,
+   "e": 571.826,
+   "chunk": "c7x"
+  },
+  {
+   "kind": "narr",
+   "text": "I don't like her voice.",
+   "s": 572.126,
+   "e": 573.478,
+   "chunk": "c7y"
+  },
+  {
+   "kind": "narr",
+   "text": "You've never heard her.",
+   "s": 573.778,
+   "e": 574.99,
+   "chunk": "c7z"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo didn't look away.",
+   "s": 575.29,
+   "e": 576.923,
+   "chunk": "c7za"
+  },
+  {
+   "kind": "narr",
+   "text": "Yes, I have.",
+   "s": 577.273,
+   "e": 578.684,
+   "chunk": "c7zb"
+  },
+  {
+   "kind": "narr",
+   "text": "To get water, I had to crawl through the ceiling right over their heads.",
+   "s": 580.084,
+   "e": 583.879,
+   "chunk": "c8a"
+  },
+  {
+   "kind": "narr",
+   "text": "I never took that bag to Vera's gate. I never unpacked it, either.",
+   "s": 584.129,
+   "e": 587.52,
+   "chunk": "c8b"
+  },
+  {
+   "kind": "narr",
+   "text": "At eight, we went up. I took the battery out of Marcus's radio. One squawk over that court and we'd both be dinner. Then I wrapped my keys in a sock so they couldn't jingle.",
+   "s": 587.82,
+   "e": 597.954,
+   "chunk": "c8c"
+  },
+  {
+   "kind": "narr",
+   "text": "You always carry that many?",
+   "s": 598.254,
+   "e": 599.469,
+   "chunk": "c8d"
+  },
+  {
+   "kind": "narr",
+   "text": "Every night.",
+   "s": 599.769,
+   "e": 600.393,
+   "chunk": "c8e"
+  },
+  {
+   "kind": "narr",
+   "text": "Must be annoying.",
+   "s": 600.693,
+   "e": 601.682,
+   "chunk": "c8f"
+  },
+  {
+   "kind": "narr",
+   "text": "It was. I'd have given anything to be annoyed by them on a normal Tuesday.",
+   "s": 601.982,
+   "e": 606.562,
+   "chunk": "c8g"
+  },
+  {
+   "kind": "narr",
+   "text": "Above my store, the air was hot and full of dust. Theo pointed with his flashlight.",
+   "s": 606.862,
+   "e": 613.341,
+   "chunk": "c8h"
+  },
+  {
+   "kind": "narr",
+   "text": "The big steel beams hold you. The tiles don't. Those thin wires hold the ceiling up. They won't hold you, either.",
+   "s": 613.641,
+   "e": 620.07,
+   "chunk": "c8i"
+  },
+  {
+   "kind": "narr",
+   "text": "I went on my hands and knees, beam to beam. Every time I breathed too hard, the tiles shifted under me.",
+   "s": 620.37,
+   "e": 626.909,
+   "chunk": "c8j"
+  },
+  {
+   "kind": "narr",
+   "text": "Over the cinema, he stopped beside a blanket. Three empty water bottles. A folded hoodie. A photo, face down. He slid it under the blanket before I could see it.",
+   "s": 627.209,
+   "e": 636.123,
+   "chunk": "c8k"
+  },
+  {
+   "kind": "narr",
+   "text": "Next to his bed was a little metal door. CINEMA SERVICE.",
+   "s": 636.423,
+   "e": 640.34,
+   "chunk": "c8l"
+  },
+  {
+   "kind": "narr",
+   "text": "Key seventeen fit.",
+   "s": 640.64,
+   "e": 642.58,
+   "chunk": "c8m",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Theo watched the lock turn like I'd done a magic trick.",
+   "s": 642.93,
+   "e": 645.727,
+   "chunk": "c8m",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "On the other side, a narrow walkway ran out over the center court. Through the gaps, I could see the tops of their heads.",
+   "s": 646.027,
+   "e": 653.058,
+   "chunk": "c8n"
+  },
+  {
+   "kind": "narr",
+   "text": "Halfway across, the walkway just ended. After that, there were only two beams.",
+   "s": 653.358,
+   "e": 658.533,
+   "chunk": "c8o"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo looked back at me.",
+   "s": 658.833,
+   "e": 660.023,
+   "chunk": "c8p"
+  },
+  {
+   "kind": "narr",
+   "text": "Don't put your foot where you think the floor is.",
+   "s": 660.323,
+   "e": 662.606,
+   "chunk": "c8q"
+  },
+  {
+   "kind": "narr",
+   "text": "My best friend walked his rounds while I crawled over his head.",
+   "s": 664.006,
+   "e": 667.371,
+   "chunk": "c9a"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo crossed the first gap like it was a sidewalk. I watched where his hands went and tried to put mine in the same places.",
+   "s": 667.621,
+   "e": 674.366,
+   "chunk": "c9b"
+  },
+  {
+   "kind": "narr",
+   "text": "There's a big difference between watching a skinny fifteen-year-old do something and asking a thirty-eight-year-old's knees to do it.",
+   "s": 674.616,
+   "e": 682.235,
+   "chunk": "c9c"
+  },
+  {
+   "kind": "narr",
+   "text": "Sweat ran down my nose. I caught it on my sleeve before it could drip.",
+   "s": 682.535,
+   "e": 686.596,
+   "chunk": "c9d"
+  },
+  {
+   "kind": "narr",
+   "text": "Next hand. Now your knee.",
+   "s": 686.896,
+   "e": 688.472,
+   "chunk": "c9e"
+  },
+  {
+   "kind": "narr",
+   "text": "Below us, the fountain was dark, with coins on the bottom. The dead stood around it shoulder to shoulder, all facing the food court.",
+   "s": 688.772,
+   "e": 698.075,
+   "chunk": "c9f"
+  },
+  {
+   "kind": "narr",
+   "text": "I stopped counting at a hundred.",
+   "s": 698.375,
+   "e": 701.069,
+   "chunk": "c9g"
+  },
+  {
+   "kind": "narr",
+   "text": "My watch said eight forty-seven. We were behind.",
+   "s": 701.369,
+   "e": 704.517,
+   "chunk": "c9h"
+  },
+  {
+   "kind": "narr",
+   "text": "Then a gate rattled at the far end of the hall.",
+   "s": 704.817,
+   "e": 707.704,
+   "chunk": "c9i"
+  },
+  {
+   "kind": "narr",
+   "text": "I knew who it was before I saw him.",
+   "s": 708.004,
+   "e": 709.987,
+   "chunk": "c9j"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus came around the corner and stopped at the first store. Two pulls on the gate. A pause. Then the next one.",
+   "s": 710.287,
+   "e": 716.733,
+   "chunk": "c9k"
+  },
+  {
+   "kind": "narr",
+   "text": "I caught myself waiting for him to look up.",
+   "s": 717.033,
+   "e": 719.214,
+   "chunk": "c9l"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo touched my shoulder. He needed room.",
+   "s": 719.514,
+   "e": 721.864,
+   "chunk": "c9m"
+  },
+  {
+   "kind": "narr",
+   "text": "I moved my knee.",
+   "s": 722.164,
+   "e": 723.09,
+   "chunk": "c9n",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "The metal under it folded like a soda can.",
+   "s": 723.44,
+   "e": 725.688,
+   "chunk": "c9n",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "My stomach hit the beam. My right leg punched straight through a tile. Something sharp caught my boot and held on.",
+   "s": 725.988,
+   "e": 732.586,
+   "chunk": "c9o"
+  },
+  {
+   "kind": "narr",
+   "text": "Day four. Eight forty-nine p.m.",
+   "s": 732.886,
+   "e": 734.986,
+   "chunk": "c9p",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "That's where you came in.",
+   "s": 735.436,
+   "e": 736.363,
+   "chunk": "c9p",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "Below me, Marcus stopped walking.",
+   "s": 736.963,
+   "e": 739.13,
+   "chunk": "c9q",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "And he looked up.",
+   "s": 739.63,
+   "e": 740.44,
+   "chunk": "c9q",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "The kid I'd told to leave was the only thing keeping me out of that crowd.",
+   "s": 741.84,
+   "e": 746.26,
+   "chunk": "c10a"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo lay flat on the beam and grabbed my other wrist. His fingers slipped on my sleeve.",
+   "s": 746.51,
+   "e": 751.971,
+   "chunk": "c10b"
+  },
+  {
+   "kind": "narr",
+   "text": "A long piece of tile broke off and hit somebody's shoulder. Under me, they started pushing in toward the hole. Slowly. One body leaning into the next.",
+   "s": 752.271,
+   "e": 761.824,
+   "chunk": "c10c"
+  },
+  {
+   "kind": "narr",
+   "text": "Marcus stood in the middle of them, looking up at my foot.",
+   "s": 762.124,
+   "e": 765.222,
+   "chunk": "c10d"
+  },
+  {
+   "kind": "narr",
+   "text": "I could see the worn spot on his cap, where he used to pick at it while he told me a joke I'd already heard.",
+   "s": 765.522,
+   "e": 770.876,
+   "chunk": "c10e"
+  },
+  {
+   "kind": "narr",
+   "text": "I almost said his name.",
+   "s": 771.176,
+   "e": 772.411,
+   "chunk": "c10f"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo smacked my arm.",
+   "s": 772.711,
+   "e": 774.864,
+   "chunk": "c10g"
+  },
+  {
+   "kind": "narr",
+   "text": "Look at me.",
+   "s": 775.164,
+   "e": 775.727,
+   "chunk": "c10h"
+  },
+  {
+   "kind": "narr",
+   "text": "He'd pulled the climbing strap off my belt and looped it around the steel beam with one hand.",
+   "s": 776.027,
+   "e": 781.609,
+   "chunk": "c10i"
+  },
+  {
+   "kind": "narr",
+   "text": "Let go of me. I need my other hand.",
+   "s": 781.909,
+   "e": 783.75,
+   "chunk": "c10j"
+  },
+  {
+   "kind": "narr",
+   "text": "I'd been squeezing his sleeve so hard it was twisted around his arm. I made my fingers open.",
+   "s": 784.05,
+   "e": 789.707,
+   "chunk": "c10k"
+  },
+  {
+   "kind": "narr",
+   "text": "He leaned back on the strap, braced his sneaker against a pipe, and pulled.",
+   "s": 790.007,
+   "e": 796.191,
+   "chunk": "c10l"
+  },
+  {
+   "kind": "narr",
+   "text": "Elbow up. You have to help.",
+   "s": 796.491,
+   "e": 798.476,
+   "chunk": "c10m"
+  },
+  {
+   "kind": "narr",
+   "text": "I got an elbow onto the steel. Pushed until my shoulder felt like it was coming apart.",
+   "s": 798.776,
+   "e": 805.069,
+   "chunk": "c10n"
+  },
+  {
+   "kind": "narr",
+   "text": "My boot stayed where it was.",
+   "s": 805.369,
+   "e": 807.007,
+   "chunk": "c10o",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "My foot came out of it.",
+   "s": 807.407,
+   "e": 808.56,
+   "chunk": "c10o",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "For a second I thought that meant I was falling.",
+   "s": 808.96,
+   "e": 811.303,
+   "chunk": "c10p"
+  },
+  {
+   "kind": "narr",
+   "text": "Then my knee slid over the edge, and Theo dragged me onto the beam beside him.",
+   "s": 811.603,
+   "e": 816.519,
+   "chunk": "c10q"
+  },
+  {
+   "kind": "narr",
+   "text": "Below us, my boot let go. It landed in the empty fountain with a bang that went on forever, and every head in that court turned toward it.",
+   "s": 816.819,
+   "e": 827.299,
+   "chunk": "c10r"
+  },
+  {
+   "kind": "narr",
+   "text": "We lay there breathing into our sleeves. Theo's pant leg was torn at the calf. There was blood on the brace he'd crawled across to reach me.",
+   "s": 827.649,
+   "e": 836.734,
+   "chunk": "c10s"
+  },
+  {
+   "kind": "narr",
+   "text": "My watch said eight fifty-eight.",
+   "s": 837.034,
+   "e": 839.635,
+   "chunk": "c10t"
+  },
+  {
+   "kind": "narr",
+   "text": "Going back meant crossing the broken part in the half dark, in one boot, in a hurry. The water was twenty feet below us.",
+   "s": 839.935,
+   "e": 847.658,
+   "chunk": "c10u"
+  },
+  {
+   "kind": "narr",
+   "text": "Lily needed me alive more than she needed me on time.",
+   "s": 847.958,
+   "e": 851.618,
+   "chunk": "c10v"
+  },
+  {
+   "kind": "narr",
+   "text": "Keep going, I whispered.",
+   "s": 851.968,
+   "e": 854.105,
+   "chunk": "c10w"
+  },
+  {
+   "kind": "narr",
+   "text": "At nine o'clock, while my daughter blinked at an empty roof, I was standing in front of eight thousand gallons of water.",
+   "s": 855.505,
+   "e": 863.665,
+   "chunk": "c11a"
+  },
+  {
+   "kind": "narr",
+   "text": "The ladder ran down inside the column. At the bottom, a hatch opened into the pump room under the fountain.",
+   "s": 863.965,
+   "e": 869.541,
+   "chunk": "c11b"
+  },
+  {
+   "kind": "narr",
+   "text": "The tank filled most of the room. Eight thousand gallons, right on the side. Behind a little glass window, water.",
+   "s": 869.791,
+   "e": 878.498,
+   "chunk": "c11c"
+  },
+  {
+   "kind": "narr",
+   "text": "I put my hand flat on the tank and left it there. For the first time in four days, I wasn't counting bottles.",
+   "s": 878.798,
+   "e": 887.943,
+   "chunk": "c11d"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo came down the last rungs slowly, favoring his leg.",
+   "s": 888.243,
+   "e": 892.733,
+   "chunk": "c11e"
+  },
+  {
+   "kind": "narr",
+   "text": "You hurt?",
+   "s": 893.033,
+   "e": 893.664,
+   "chunk": "c11f"
+  },
+  {
+   "kind": "narr",
+   "text": "Caught it.",
+   "s": 893.964,
+   "e": 894.392,
+   "chunk": "c11g"
+  },
+  {
+   "kind": "narr",
+   "text": "I saw.",
+   "s": 894.692,
+   "e": 895.436,
+   "chunk": "c11h"
+  },
+  {
+   "kind": "narr",
+   "text": "Then why'd you ask?",
+   "s": 895.736,
+   "e": 897.291,
+   "chunk": "c11i"
+  },
+  {
+   "kind": "narr",
+   "text": "I almost smiled.",
+   "s": 897.591,
+   "e": 899.677,
+   "chunk": "c11j"
+  },
+  {
+   "kind": "narr",
+   "text": "We filled the containers. Outside the pump room door, a shoe scraped along the floor, and dust shook out of the frame.",
+   "s": 899.977,
+   "e": 906.434,
+   "chunk": "c11k"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo stared at that door.",
+   "s": 906.734,
+   "e": 908.832,
+   "chunk": "c11l"
+  },
+  {
+   "kind": "narr",
+   "text": "This is where they were.",
+   "s": 909.132,
+   "e": 910.239,
+   "chunk": "c11m"
+  },
+  {
+   "kind": "narr",
+   "text": "Who was here?",
+   "s": 910.539,
+   "e": 911.388,
+   "chunk": "c11n"
+  },
+  {
+   "kind": "narr",
+   "text": "The drill people. Three of them. A woman and two men. Right out there, behind the pretzel place. The first night.",
+   "s": 911.688,
+   "e": 918.094,
+   "chunk": "c11o"
+  },
+  {
+   "kind": "narr",
+   "text": "What time?",
+   "s": 918.394,
+   "e": 919.162,
+   "chunk": "c11p"
+  },
+  {
+   "kind": "narr",
+   "text": "One-thirty. I could see the clock.",
+   "s": 919.462,
+   "e": 921.343,
+   "chunk": "c11q"
+  },
+  {
+   "kind": "narr",
+   "text": "One-thirty.",
+   "s": 921.643,
+   "e": 922.232,
+   "chunk": "c11r",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Ten minutes before Marcus called me about a man walking wrong up the ramp.",
+   "s": 922.832,
+   "e": 927.102,
+   "chunk": "c11r",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "The dead didn't come to my mall by accident. Somebody called them.",
+   "s": 928.502,
+   "e": 932.742,
+   "chunk": "c12a"
+  },
+  {
+   "kind": "narr",
+   "text": "They were cutting through the wall. Loud as a chainsaw. I could hear it all the way over the cinema.",
+   "s": 933.042,
+   "e": 938.401,
+   "chunk": "c12b"
+  },
+  {
+   "kind": "narr",
+   "text": "He wiped his nose on his sleeve.",
+   "s": 938.701,
+   "e": 940.691,
+   "chunk": "c12c"
+  },
+  {
+   "kind": "narr",
+   "text": "Then people started coming in. Through the service hall. They just kept coming. One of the men saw them and ran back. He said they had to stop.",
+   "s": 940.991,
+   "e": 949.442,
+   "chunk": "c12d"
+  },
+  {
+   "kind": "narr",
+   "text": "And the woman?",
+   "s": 949.742,
+   "e": 950.442,
+   "chunk": "c12e"
+  },
+  {
+   "kind": "narr",
+   "text": "She kept saying, one more minute.",
+   "s": 950.742,
+   "e": 952.75,
+   "chunk": "c12f"
+  },
+  {
+   "kind": "narr",
+   "text": "The food court glass. The crowd on my cameras, all turning the same way at once. I'd thought they were wandering in through any door they found.",
+   "s": 953.05,
+   "e": 960.949,
+   "chunk": "c12g"
+  },
+  {
+   "kind": "narr",
+   "text": "They weren't wandering. They were following a drill.",
+   "s": 961.249,
+   "e": 964.183,
+   "chunk": "c12h"
+  },
+  {
+   "kind": "narr",
+   "text": "And Marcus was standing in their way.",
+   "s": 964.483,
+   "e": 966.773,
+   "chunk": "c12i"
+  },
+  {
+   "kind": "narr",
+   "text": "The woman on my radio.",
+   "s": 967.123,
+   "e": 968.701,
+   "chunk": "c12j"
+  },
+  {
+   "kind": "narr",
+   "text": "Same voice. I heard her in your store last night, through the ceiling. It's her.",
+   "s": 969.001,
+   "e": 973.445,
+   "chunk": "c12k"
+  },
+  {
+   "kind": "narr",
+   "text": "Was there a little girl with them?",
+   "s": 973.745,
+   "e": 975.385,
+   "chunk": "c12l"
+  },
+  {
+   "kind": "narr",
+   "text": "There wasn't.",
+   "s": 975.685,
+   "e": 976.304,
+   "chunk": "c12m"
+  },
+  {
+   "kind": "narr",
+   "text": "You're sure?",
+   "s": 976.604,
+   "e": 977.657,
+   "chunk": "c12n"
+  },
+  {
+   "kind": "narr",
+   "text": "Three people and a drill, Danny. No kid.",
+   "s": 977.957,
+   "e": 980.637,
+   "chunk": "c12o"
+  },
+  {
+   "kind": "narr",
+   "text": "I thought about the bag sitting next to my tent. Two bars and a bottle, for a little girl who didn't exist.",
+   "s": 980.937,
+   "e": 987.58,
+   "chunk": "c12p"
+  },
+  {
+   "kind": "narr",
+   "text": "I wanted to go straight to the department store, stand at her gate, and make her say it.",
+   "s": 987.88,
+   "e": 992.545,
+   "chunk": "c12q"
+  },
+  {
+   "kind": "narr",
+   "text": "My keys were still in the sock. I squeezed them until the teeth bit through.",
+   "s": 992.845,
+   "e": 997.302,
+   "chunk": "c12r"
+  },
+  {
+   "kind": "narr",
+   "text": "Hey. Danny.",
+   "s": 997.602,
+   "e": 998.558,
+   "chunk": "c12s"
+  },
+  {
+   "kind": "narr",
+   "text": "His leg. The blood drying on his sneaker. He'd brought me here. Now he was waiting for me to get him home.",
+   "s": 998.858,
+   "e": 1004.849,
+   "chunk": "c12t"
+  },
+  {
+   "kind": "narr",
+   "text": "I picked up the water.",
+   "s": 1005.149,
+   "e": 1006.634,
+   "chunk": "c12u"
+  },
+  {
+   "kind": "narr",
+   "text": "The way back took half an hour, the long way around the broken part, with my boot lying in the fountain under us the whole time.",
+   "s": 1006.934,
+   "e": 1014.052,
+   "chunk": "c12v"
+  },
+  {
+   "kind": "narr",
+   "text": "At nine forty-one, I climbed out onto the roof.",
+   "s": 1014.352,
+   "e": 1017.75,
+   "chunk": "c12w"
+  },
+  {
+   "kind": "narr",
+   "text": "Lily's window was dark.",
+   "s": 1018.1,
+   "e": 1019.528,
+   "chunk": "c12x",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "For the first time ever, I'd missed nine o'clock.",
+   "s": 1020.228,
+   "e": 1022.301,
+   "chunk": "c12x",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "I told the boy who saved my life to pick a tent, and he asked what it would cost.",
+   "s": 1023.901,
+   "e": 1029.197,
+   "chunk": "c13a"
+  },
+  {
+   "kind": "narr",
+   "text": "I'd cleaned the cut on his leg with bottled water and put a bandage on it. He let me, without looking at me once.",
+   "s": 1029.447,
+   "e": 1035.9,
+   "chunk": "c13b"
+  },
+  {
+   "kind": "narr",
+   "text": "In the morning he was standing by the rack with his blanket rolled under his arm.",
+   "s": 1036.2,
+   "e": 1040.485,
+   "chunk": "c13c"
+  },
+  {
+   "kind": "narr",
+   "text": "Where are you going?",
+   "s": 1040.785,
+   "e": 1041.828,
+   "chunk": "c13d"
+  },
+  {
+   "kind": "narr",
+   "text": "Going back.",
+   "s": 1042.128,
+   "e": 1042.832,
+   "chunk": "c13e"
+  },
+  {
+   "kind": "narr",
+   "text": "Your leg's hurt.",
+   "s": 1043.132,
+   "e": 1044.167,
+   "chunk": "c13f"
+  },
+  {
+   "kind": "narr",
+   "text": "It's fine.",
+   "s": 1044.467,
+   "e": 1045.236,
+   "chunk": "c13g"
+  },
+  {
+   "kind": "narr",
+   "text": "Pick a tent. Any of them. Except that one. That one's mine.",
+   "s": 1045.536,
+   "e": 1048.907,
+   "chunk": "c13h"
+  },
+  {
+   "kind": "narr",
+   "text": "He didn't move.",
+   "s": 1049.207,
+   "e": 1050.062,
+   "chunk": "c13i"
+  },
+  {
+   "kind": "narr",
+   "text": "What do you want for it?",
+   "s": 1050.362,
+   "e": 1051.803,
+   "chunk": "c13j"
+  },
+  {
+   "kind": "narr",
+   "text": "That made me put down the box I was holding. Somebody had taught this kid that nothing was free.",
+   "s": 1052.103,
+   "e": 1057.895,
+   "chunk": "c13k"
+  },
+  {
+   "kind": "narr",
+   "text": "Help with the water. Keep it quiet. Tell me if you hear anybody up there.",
+   "s": 1058.195,
+   "e": 1062.766,
+   "chunk": "c13l"
+  },
+  {
+   "kind": "narr",
+   "text": "He waited for the rest.",
+   "s": 1063.066,
+   "e": 1064.532,
+   "chunk": "c13m"
+  },
+  {
+   "kind": "narr",
+   "text": "That's it.",
+   "s": 1064.832,
+   "e": 1065.487,
+   "chunk": "c13n"
+  },
+  {
+   "kind": "narr",
+   "text": "I found him a clean sweatshirt. He folded it so carefully before he put it down that I had to look at something else.",
+   "s": 1065.837,
+   "e": 1074.161,
+   "chunk": "c13o"
+  },
+  {
+   "kind": "narr",
+   "text": "Vera called at dusk.",
+   "s": 1074.511,
+   "e": 1076.009,
+   "chunk": "c13p"
+  },
+  {
+   "kind": "radio",
+   "text": "You weren't on the roof last night, Danny.",
+   "s": 1076.309,
+   "e": 1078.543,
+   "chunk": "c13q",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "I went cold.",
+   "s": 1078.843,
+   "e": 1081.288,
+   "chunk": "c13r"
+  },
+  {
+   "kind": "radio",
+   "text": "I was worried. I hope everything's all right.",
+   "s": 1081.588,
+   "e": 1084.193,
+   "chunk": "c13s",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "So she watched every night. She'd watched me not show up.",
+   "s": 1084.493,
+   "e": 1088.509,
+   "chunk": "c13t"
+  },
+  {
+   "kind": "narr",
+   "text": "I pressed the button.",
+   "s": 1088.809,
+   "e": 1090.023,
+   "chunk": "c13u"
+  },
+  {
+   "kind": "narr",
+   "text": "What's the little girl's name?",
+   "s": 1090.323,
+   "e": 1092.104,
+   "chunk": "c13v"
+  },
+  {
+   "kind": "narr",
+   "text": "A pause. Just a little too long.",
+   "s": 1092.404,
+   "e": 1094.892,
+   "chunk": "c13w"
+  },
+  {
+   "kind": "radio",
+   "text": "She hasn't told me yet. She's shy.",
+   "s": 1095.292,
+   "e": 1097.702,
+   "chunk": "c13x",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "And the coat you were trying on. What color?",
+   "s": 1098.002,
+   "e": 1101.179,
+   "chunk": "c13y"
+  },
+  {
+   "kind": "radio",
+   "text": "Oatmeal. One day you'll have to explain this interest in my shopping.",
+   "s": 1101.479,
+   "e": 1106.634,
+   "chunk": "c13z",
+   "id": "vera"
+  },
+  {
+   "kind": "narr",
+   "text": "I let go of the button and left her talking to nobody.",
+   "s": 1106.934,
+   "e": 1109.633,
+   "chunk": "c13za"
+  },
+  {
+   "kind": "narr",
+   "text": "At five to nine, I took the flashlight off the shelf. I didn't know if anyone would be in that window tonight.",
+   "s": 1109.983,
+   "e": 1115.4,
+   "chunk": "c13zb"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo pulled on the clean sweatshirt.",
+   "s": 1115.7,
+   "e": 1117.892,
+   "chunk": "c13zc"
+  },
+  {
+   "kind": "narr",
+   "text": "Can I come?",
+   "s": 1118.192,
+   "e": 1119.108,
+   "chunk": "c13zd"
+  },
+  {
+   "kind": "narr",
+   "text": "A stranger just blinked my daughter's goodnight signal at her window.",
+   "s": 1120.508,
+   "e": 1123.951,
+   "chunk": "c14a"
+  },
+  {
+   "kind": "narr",
+   "text": "Theo stayed back in the shadow of the hatch, keeping his weight off his bandaged leg.",
+   "s": 1124.251,
+   "e": 1128.742,
+   "chunk": "c14b"
+  },
+  {
+   "kind": "narr",
+   "text": "Across the highway, I found the tenth floor and counted four windows from the left. I always count. Even when I know exactly where to look.",
+   "s": 1128.992,
+   "e": 1137.086,
+   "chunk": "c14c"
+  },
+  {
+   "kind": "narr",
+   "text": "Nine o'clock.",
+   "s": 1137.386,
+   "e": 1137.943,
+   "chunk": "c14d",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Nothing.",
+   "s": 1138.643,
+   "e": 1139.172,
+   "chunk": "c14d",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "Then a flashlight came on.",
+   "s": 1140.172,
+   "e": 1141.802,
+   "chunk": "c14e",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "One. Two. Three.",
+   "s": 1142.202,
+   "e": 1144.742,
+   "chunk": "c14e",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "She was there. I'd missed her last night, and she came back to the window anyway. She's seven years old.",
+   "s": 1145.242,
+   "e": 1150.968,
+   "chunk": "c14f"
+  },
+  {
+   "kind": "narr",
+   "text": "I answered with mine. My hands were steadier than they'd been in days. I had water downstairs, and somebody beside me who could hear a tile crack and pull me out.",
+   "s": 1151.268,
+   "e": 1160.854,
+   "chunk": "c14g"
+  },
+  {
+   "kind": "narr",
+   "text": "I was so happy I almost missed the light to my right.",
+   "s": 1161.154,
+   "e": 1164.128,
+   "chunk": "c14h"
+  },
+  {
+   "kind": "narr",
+   "text": "It came from the department store roof.",
+   "s": 1164.428,
+   "e": 1166.529,
+   "chunk": "c14i"
+  },
+  {
+   "kind": "narr",
+   "text": "One.",
+   "s": 1166.879,
+   "e": 1167.405,
+   "chunk": "c14j",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "Two.",
+   "s": 1167.905,
+   "e": 1168.455,
+   "chunk": "c14j",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "Three.",
+   "s": 1168.955,
+   "e": 1169.431,
+   "chunk": "c14j",
+   "line": 3
+  },
+  {
+   "kind": "narr",
+   "text": "Pointed across the highway.",
+   "s": 1170.031,
+   "e": 1171.295,
+   "chunk": "c14k",
+   "line": 1
+  },
+  {
+   "kind": "narr",
+   "text": "At her window.",
+   "s": 1171.695,
+   "e": 1172.392,
+   "chunk": "c14k",
+   "line": 2
+  },
+  {
+   "kind": "narr",
+   "text": "I lowered my flashlight. I wanted to blink again, to tell Lily which light was mine. But we only had two signals. Three blinks for I love you, and SOS. I'd never taught her what to do if somebody else answered.",
+   "s": 1172.992,
+   "e": 1184.183,
+   "chunk": "c14l"
+  },
+  {
+   "kind": "narr",
+   "text": "The department store roof went dark.",
+   "s": 1184.483,
+   "e": 1187.386,
+   "chunk": "c14m"
+  },
+  {
+   "kind": "narr",
+   "text": "Who is that?",
+   "s": 1187.736,
+   "e": 1188.486,
+   "chunk": "c14n"
+  },
+  {
+   "kind": "narr",
+   "text": "The woman.",
+   "s": 1188.786,
+   "e": 1190.757,
+   "chunk": "c14o"
+  },
+  {
+   "kind": "narr",
+   "text": "He was looking at my keys. The sock had slipped off when I grabbed the flashlight, and the last key hung against my hand. The one with the red tag.",
+   "s": 1191.107,
+   "e": 1199.096,
+   "chunk": "c14p"
+  },
+  {
+   "kind": "narr",
+   "text": "What's B3?",
+   "s": 1199.396,
+   "e": 1200.526,
+   "chunk": "c14q"
+  },
+  {
+   "kind": "narr",
+   "text": "Why do you ask?",
+   "s": 1200.826,
+   "e": 1201.811,
+   "chunk": "c14r"
+  },
+  {
+   "kind": "narr",
+   "text": "That's what she kept saying, that night. Down to B3. Get to the door.",
+   "s": 1202.111,
+   "e": 1206.493,
+   "chunk": "c14s"
+  },
+  {
+   "kind": "narr",
+   "text": "I closed my fist around the tag.",
+   "s": 1206.793,
+   "e": 1208.689,
+   "chunk": "c14t"
+  },
+  {
+   "kind": "narr",
+   "text": "They weren't trying to rob a store. They were trying to get underneath it.",
+   "s": 1208.989,
+   "e": 1212.723,
+   "chunk": "c14u"
+  },
+  {
+   "kind": "narr",
+   "text": "I thought of old Walt tapping the last key. That one, you never use. Don't ask.",
+   "s": 1213.023,
+   "e": 1218.47,
+   "chunk": "c14v"
+  },
+  {
+   "kind": "narr",
+   "text": "Across the highway was my daughter. Across the roof was a woman copying her signal.",
+   "s": 1218.77,
+   "e": 1224.124,
+   "chunk": "c14w"
+  },
+  {
+   "kind": "narr",
+   "text": "And the one thing that woman wanted was hanging from my belt.",
+   "s": 1224.424,
+   "e": 1228.16,
+   "chunk": "c14x"
+  },
+  {
+   "kind": "narr",
+   "text": "What did she think was behind that door?",
+   "s": 1228.51,
+   "e": 1230.853,
+   "chunk": "c14y"
+  }
+ ]
+}

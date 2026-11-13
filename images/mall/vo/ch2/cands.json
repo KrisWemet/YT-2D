@@ -6,8 +6,8 @@
    "accent": "American (Gen)"
   },
   "theo": {
-   "voice_name": "Zubenelgenubi",
-   "audio_profile": "Theo, a fifteen-year-old boy whose voice has only just broken. He has lived alone in a mall's ceiling for four months. Guarded, quick and a little defiant, he talks low and short, like someone used to staying hidden. A real teenager, not an actor.",
+   "voice_name": "Achird",
+   "audio_profile": "Theo, fifteen. A skinny teenage boy with a light, young voice that has only just started to break. He has lived alone in a mall's ceiling for four months: guarded, quick and a little defiant, and he talks in short sentences. A real teenager, not an actor.",
    "accent": "American (Gen)"
   },
   "vera": {
@@ -1955,21 +1955,21 @@
    "who": "danny",
    "style": "Deadpan",
    "pace": "Natural",
-   "text": "When?"
+   "text": "When do we go?"
   },
   {
    "id": "c7j-2",
    "who": "danny",
    "style": "Deadpan",
    "pace": "Natural",
-   "text": "When?"
+   "text": "When do we go?"
   },
   {
    "id": "c7j-3",
    "who": "danny",
    "style": "Deadpan",
    "pace": "Natural",
-   "text": "When?"
+   "text": "When do we go?"
   },
   {
    "id": "c7l-1",
@@ -3274,21 +3274,21 @@
    "who": "danny",
    "style": "Deadpan",
    "pace": "Natural",
-   "text": "Who?"
+   "text": "Who was here?"
   },
   {
    "id": "c11n-2",
    "who": "danny",
    "style": "Deadpan",
    "pace": "Natural",
-   "text": "Who?"
+   "text": "Who was here?"
   },
   {
    "id": "c11n-3",
    "who": "danny",
    "style": "Deadpan",
    "pace": "Natural",
-   "text": "Who?"
+   "text": "Who was here?"
   },
   {
    "id": "c11p-1",
@@ -4439,21 +4439,21 @@
    "who": "danny",
    "style": "Deadpan",
    "pace": "Natural",
-   "text": "Why?"
+   "text": "Why do you ask?"
   },
   {
    "id": "c14r-2",
    "who": "danny",
    "style": "Deadpan",
    "pace": "Natural",
-   "text": "Why?"
+   "text": "Why do you ask?"
   },
   {
    "id": "c14r-3",
    "who": "danny",
    "style": "Deadpan",
    "pace": "Natural",
-   "text": "Why?"
+   "text": "Why do you ask?"
   },
   {
    "id": "c14t-1",

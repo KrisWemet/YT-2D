@@ -2,7 +2,7 @@
 
 The voiced script, made by `make_plans.py` from `manuscript.md`. A dialogue tag is dropped where a different voice already makes the speaker obvious. Lines in **bold caps** are other voices; everything else is Danny. Levels follow `../voice-recipe.md`.
 
-3559 words.
+3574 words.
 
 ## 1. Right Under Me
 
@@ -43,7 +43,7 @@ The voiced script, made by `make_plans.py` from `manuscript.md`. A dialogue tag 
 | c2i | vera | **VERA (RADIO):** Fair. I'm Vera. I was trying on a coat on the second floor, sat down in the fitting room, and fell asleep. When I woke up, they'd locked the place. | The department store's second floor, dark. A fitting room. |
 | c2j | danny | The store closes at nine. At midnight, I'd walked the hallway behind those fitting rooms. Nobody was there. | Memory: Danny's midnight round behind the fitting rooms, empty. |
 | c2k | danny | What coat? | Danny. |
-| c2l | vera | **VERA (RADIO):** What? | Radio waves. UNKNOWN. |
+| c2l | vera | **VERA (RADIO):** Sorry, what? | Radio waves. UNKNOWN. |
 | c2m | danny | The coat you were trying on. | Danny. |
 | c2n | vera | **VERA (RADIO):** Danny, there are people eating people downstairs. I think we're past the return policy. | Radio waves. UNKNOWN. |
 | c2o | danny | Then her voice went soft. | Close on the radio. |
@@ -130,7 +130,7 @@ The voiced script, made by `make_plans.py` from `manuscript.md`. A dialogue tag 
 | c5p | danny | You're stealing my food. | Danny. |
 | c5q | theo | **THEO:** You're loud. | Theo. |
 | c5r | danny | How old are you? | Danny. |
-| c5s | theo | **THEO:** Fifteen. | Theo. |
+| c5s | theo | **THEO:** I'm fifteen. | Theo. |
 | c5t | danny | Who else is up there? | Danny. |
 | c5u | danny | His hand tightened on the pipe. | Theo's hand on the pipe. |
 | c5v | theo | **THEO:** Nobody. That's why I stay up there. | Theo on the rack, looking down. |
@@ -181,7 +181,7 @@ The voiced script, made by `make_plans.py` from `manuscript.md`. A dialogue tag 
 | c7g | theo | **THEO:** I don't use the door. I come from above. |  |
 | c7h | danny | He drew the route in the chalk with his finger. Up through my ceiling. Over the cinema. Along a service walkway above the center court. Down a ladder inside the big column by the fountain. | A route drawn in chalk on the floor. |
 | c7i | theo | **THEO:** Twenty minutes. If you're quiet. |  |
-| c7j | danny | When? | Danny. |
+| c7j | danny | When do we go? | Danny. |
 | c7k | theo | **THEO:** Tomorrow night. Eight o'clock. |  |
 | c7l | danny | Why at night? | Danny. |
 | c7m | danny | He looked at the floor. | Theo looking down. |
@@ -194,7 +194,7 @@ The voiced script, made by `make_plans.py` from `manuscript.md`. A dialogue tag 
 | c7t | danny | I held the radio so tight the plastic creaked. I'm a dad. She knew exactly where to push. | Danny's knuckles white on the radio. |
 | c7u | danny | I started putting two protein bars and a bottle of water in a bag. I'd leave it at the department store gate. | Danny packing a bag. |
 | c7v | danny | Theo watched me from the rack. | Theo watching. |
-| c7w | theo | **THEO:** Don't. |  |
+| c7w | theo | **THEO:** Don't do it. |  |
 | c7x | danny | There's a little kid up there. | Danny. |
 | c7y | theo | **THEO:** I don't like her voice. |  |
 | c7z | danny | You've never heard her. | Danny. |
@@ -303,7 +303,7 @@ The voiced script, made by `make_plans.py` from `manuscript.md`. A dialogue tag 
 | c11k | danny | We filled the containers. Outside the pump room door, a shoe scraped along the floor, and dust shook out of the frame. | Filling containers; dust shaking out of the door frame. |
 | c11l | danny | Theo stared at that door. | Theo staring at the door. |
 | c11m | theo | **THEO:** This is where they were. |  |
-| c11n | danny | Who? | Danny. |
+| c11n | danny | Who was here? | Danny. |
 | c11o | theo | **THEO:** The drill people. Three of them. A woman and two men. Right out there, behind the pretzel place. The first night. |  |
 | c11p | danny | What time? | Danny. |
 | c11q | theo | **THEO:** One-thirty. I could see the clock. |  |
@@ -328,13 +328,13 @@ The voiced script, made by `make_plans.py` from `manuscript.md`. A dialogue tag 
 | c12j | danny | The woman on my radio. | Danny. |
 | c12k | theo | **THEO:** Same voice. I heard her in your store last night, through the ceiling. It's her. |  |
 | c12l | danny | Was there a little girl with them? | Danny. |
-| c12m | theo | **THEO:** No. |  |
+| c12m | theo | **THEO:** There wasn't. |  |
 | c12n | danny | You're sure? | Danny. |
 | c12o | theo | **THEO:** Three people and a drill, Danny. No kid. |  |
 | c12p | danny | I thought about the bag sitting next to my tent. Two bars and a bottle, for a little girl who didn't exist. | The packed bag beside the tent. |
 | c12q | danny | I wanted to go straight to the department store, stand at her gate, and make her say it. | The department store gate. |
 | c12r | danny | My keys were still in the sock. I squeezed them until the teeth bit through. | Danny's fist around the sock. |
-| c12s | theo | **THEO:** Danny. |  |
+| c12s | theo | **THEO:** Hey. Danny. |  |
 | c12t | danny | His leg. The blood drying on his sneaker. He'd brought me here. Now he was waiting for me to get him home. | Theo's leg, the blood on his sneaker. |
 | c12u | danny | I picked up the water. | Danny picks up the containers. |
 | c12v | danny | The way back took half an hour, the long way around the broken part, with my boot lying in the fountain under us the whole time. | Crawling back; the boot in the fountain below. |
@@ -352,7 +352,7 @@ The voiced script, made by `make_plans.py` from `manuscript.md`. A dialogue tag 
 | c13b | danny | I'd cleaned the cut on his leg with bottled water and put a bandage on it. He let me, without looking at me once. | A bandage on Theo's calf. |
 | c13c | danny | In the morning he was standing by the rack with his blanket rolled under his arm. | Theo with his blanket rolled under his arm. |
 | c13d | danny | Where are you going? | Danny. |
-| c13e | theo | **THEO:** Back. |  |
+| c13e | theo | **THEO:** Going back. |  |
 | c13f | danny | Your leg's hurt. | Danny. |
 | c13g | theo | **THEO:** It's fine. |  |
 | c13h | danny | Pick a tent. Any of them. Except that one. That one's mine. | Danny pointing at the tents. |
@@ -407,7 +407,7 @@ The voiced script, made by `make_plans.py` from `manuscript.md`. A dialogue tag 
 | c14o | danny | The woman. | Danny. |
 | c14p | danny | He was looking at my keys. The sock had slipped off when I grabbed the flashlight, and the last key hung against my hand. The one with the red tag. | The key with the red tag, B3. |
 | c14q | theo | **THEO:** What's B3? |  |
-| c14r | danny | Why? | Danny. |
+| c14r | danny | Why do you ask? | Danny. |
 | c14s | theo | **THEO:** That's what she kept saying, that night. Down to B3. Get to the door. |  |
 | c14t | danny | I closed my fist around the tag. | Danny's fist around the tag. |
 | c14u | theo | **THEO:** They weren't trying to rob a store. They were trying to get underneath it. |  |

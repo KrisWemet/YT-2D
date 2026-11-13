@@ -239,7 +239,7 @@
   "seg": 2,
   "who": "vera",
   "radio": true,
-  "text": "What?",
+  "text": "Sorry, what?",
   "pic": "Radio waves. UNKNOWN."
  },
  {
@@ -833,7 +833,7 @@
   "seg": 5,
   "who": "theo",
   "radio": false,
-  "text": "Fifteen.",
+  "text": "I'm fifteen.",
   "pic": "Theo."
  },
  {
@@ -1166,7 +1166,7 @@
   "seg": 7,
   "who": "danny",
   "radio": false,
-  "text": "When?",
+  "text": "When do we go?",
   "pic": "Danny."
  },
  {
@@ -1283,7 +1283,7 @@
   "seg": 7,
   "who": "theo",
   "radio": false,
-  "text": "Don't.",
+  "text": "Don't do it.",
   "pic": ""
  },
  {
@@ -2012,7 +2012,7 @@
   "seg": 11,
   "who": "danny",
   "radio": false,
-  "text": "Who?",
+  "text": "Who was here?",
   "pic": "Danny."
  },
  {
@@ -2174,7 +2174,7 @@
   "seg": 12,
   "who": "theo",
   "radio": false,
-  "text": "No.",
+  "text": "There wasn't.",
   "pic": ""
  },
  {
@@ -2228,7 +2228,7 @@
   "seg": 12,
   "who": "theo",
   "radio": false,
-  "text": "Danny.",
+  "text": "Hey. Danny.",
   "pic": ""
  },
  {
@@ -2327,7 +2327,7 @@
   "seg": 13,
   "who": "theo",
   "radio": false,
-  "text": "Back.",
+  "text": "Going back.",
   "pic": ""
  },
  {
@@ -2759,7 +2759,7 @@
   "seg": 14,
   "who": "danny",
   "radio": false,
-  "text": "Why?",
+  "text": "Why do you ask?",
   "pic": "Danny."
  },
  {

@@ -65,7 +65,7 @@ The store closes at nine. At midnight, I'd walked the hallway behind those fitti
 
 "What coat?" I said.
 
-"What?"
+"Sorry, what?"
 
 "The coat you were trying on."
 
@@ -209,7 +209,7 @@ The boy let out a breath and glared at me like this was my fault.
 
 "How old are you?"
 
-"Fifteen."
+"I'm fifteen."
 
 "Who else is up there?"
 
@@ -291,7 +291,7 @@ He drew the route in the chalk with his finger. Up through my ceiling. Over the 
 
 "Twenty minutes," he said. "If you're quiet."
 
-"When?"
+"When do we go?"
 
 "Tomorrow night. Eight o'clock."
 
@@ -317,7 +317,7 @@ I started putting two protein bars and a bottle of water in a bag. I'd leave it 
 
 Theo watched me from the rack.
 
-"Don't," he said.
+"Don't do it," he said.
 
 "There's a little kid up there."
 
@@ -491,7 +491,7 @@ Theo stared at that door.
 
 "This is where they were," he said.
 
-"Who?"
+"Who was here?"
 
 "The drill people. Three of them. A woman and two men. Right out there, behind the pretzel place. The first night."
 
@@ -531,7 +531,7 @@ And Marcus was standing in their way.
 
 "Was there a little girl with them?"
 
-"No."
+"There wasn't."
 
 "You're sure?"
 
@@ -543,7 +543,7 @@ I wanted to go straight to the department store, stand at her gate, and make her
 
 My keys were still in the sock. I squeezed them until the teeth bit through.
 
-"Danny," Theo said.
+"Hey. Danny," Theo said.
 
 His leg. The blood drying on his sneaker. He'd brought me here. Now he was waiting for me to get him home.
 
@@ -569,7 +569,7 @@ In the morning he was standing by the rack with his blanket rolled under his arm
 
 "Where are you going?"
 
-"Back."
+"Going back."
 
 "Your leg's hurt."
 
@@ -669,7 +669,7 @@ He was looking at my keys. The sock had slipped off when I grabbed the flashligh
 
 "What's B3?" he asked.
 
-"Why?"
+"Why do you ask?"
 
 "That's what she kept saying, that night. Down to B3. Get to the door."
 

@@ -1,0 +1,92 @@
+{
+ "voices": {
+  "zubenelgenubi": {
+   "voice_name": "Zubenelgenubi",
+   "audio_profile": "Theo, a fifteen-year-old boy whose voice has only just broken. He has lived alone in a mall's ceiling for four months. Guarded, quick and a little defiant, he talks low and short, like someone used to staying hidden. A real teenager, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "achird": {
+   "voice_name": "Achird",
+   "audio_profile": "Theo, a fifteen-year-old boy whose voice has only just broken. He has lived alone in a mall's ceiling for four months. Guarded, quick and a little defiant, he talks low and short, like someone used to staying hidden. A real teenager, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "puck": {
+   "voice_name": "Puck",
+   "audio_profile": "Theo, a fifteen-year-old boy whose voice has only just broken. He has lived alone in a mall's ceiling for four months. Guarded, quick and a little defiant, he talks low and short, like someone used to staying hidden. A real teenager, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "sadachbia": {
+   "voice_name": "Sadachbia",
+   "audio_profile": "Theo, a fifteen-year-old boy whose voice has only just broken. He has lived alone in a mall's ceiling for four months. Guarded, quick and a little defiant, he talks low and short, like someone used to staying hidden. A real teenager, not an actor.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+ "sample_context": "A runaway teenager talks with the night guard who caught him.",
+ "chunks": [
+  {
+   "id": "zubenelgenubi-a",
+   "who": "zubenelgenubi",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Same song every time. You only know half the words.",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard."
+  },
+  {
+   "id": "zubenelgenubi-b",
+   "who": "zubenelgenubi",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Don't put your foot where you think the floor is.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down."
+  },
+  {
+   "id": "achird-a",
+   "who": "achird",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Same song every time. You only know half the words.",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard."
+  },
+  {
+   "id": "achird-b",
+   "who": "achird",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Don't put your foot where you think the floor is.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down."
+  },
+  {
+   "id": "puck-a",
+   "who": "puck",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Same song every time. You only know half the words.",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard."
+  },
+  {
+   "id": "puck-b",
+   "who": "puck",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Don't put your foot where you think the floor is.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down."
+  },
+  {
+   "id": "sadachbia-a",
+   "who": "sadachbia",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Same song every time. You only know half the words.",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard."
+  },
+  {
+   "id": "sadachbia-b",
+   "who": "sadachbia",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Don't put your foot where you think the floor is.",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down."
+  }
+ ]
+}

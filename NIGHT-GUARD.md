@@ -20,7 +20,7 @@ A stick-figure zombie survival story for YouTube. It has long chapters (16:9) an
 | Shorts 7–14, cut from Chapter 1 | 9:16 | 0:36–1:13 | ✅ Rendered, post one a day from Nov 11 | `publish/night-guard-shorts-7-14.md` |
 | Remix Shorts 1–6, cut from Chapter 1 out of order | 9:16 | 2:19–2:46 | ✅ Rendered (Nov 12), post one a day from Nov 19 | `publish/night-guard-ch1-remix-shorts.md` |
 | Chapter 1 thumbnail (16:9) | still | | ⬜ To make | |
-| Chapter 2: The Boy in the Ceiling | 16:9 | ~21:00 | 📝 Script rewritten for pace (Nov 13): 3,585 words, was 5,233. The first draft is kept as `manuscript-v1.md` | `images/mall/chapter2/manuscript.md` |
+| Chapter 2: The Boy in the Ceiling | 16:9 | 20:34 | 🎙️ Voiced (Nov 13), one checked take per line: `public/mall/ch2/vo.mp3`. Pictures still to build. Script rewritten for pace the same day (was 5,233 words, ~31 min); the first draft is kept as `manuscript-v1.md` | `images/mall/chapter2/manuscript.md`, `make_plans.py` |
 | Chapter 3: The Pharmacy | 16:9 | ~31:00 | 📝 Script done (5,367 words) | `images/mall/chapter3/manuscript.md` |
 | Chapter 4: Across the Highway | 16:9 | ~30:00 | 📝 Script done (5,100 words) | `images/mall/chapter4/manuscript.md` |
 | Chapter 5: The Fall of the King | 16:9 | ~30:00 | 📝 Script done (4,808 words) | `images/mall/chapter5/manuscript.md` |
@@ -33,6 +33,8 @@ Each chapter runs about 15 minutes and is built in this order: **script, then vo
 
 1. **Script:** `images/mall/chapterN/make_plans.py` writes `script.md` and the voice plan. Edit that file, not its outputs.
 2. **Voice:** `cd images/mall && python3 voice_gemini.py vo/chN/plan.json vo/chN`. Pick takes with `pick_takes.py`, then build `vo.wav`.
+   - **In a Claude cloud session:** use the "YT-2D" environment. It holds the Kie key and allows Kie's file hosts and Hugging Face.
+   - **Command:** prefix the command with `HF_HUB_DISABLE_XET=1 KIE_API_KEY=proxy-injected`. The proxy adds the real key, and the first setting lets the transcriber download.
 3. **Timings:** `align.py`, then `caption_words.py`, write the word timings to `src/mall/chapterN/chN.json`.
 4. **Pictures:** write the shot lists in `src/mall/chapterN/shots0*.tsx`, each shot cued by a phrase in the narration. Check them with `check_cues.py`.
 5. **Render:** `npx remotion render src/index.ts MallChapter1 out/chapter1-codex/night-guard-ch1-render.mp4 --concurrency=4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k`, then `bash images/mall/finish.sh <render> <final>` to bring the sound to −15 LUFS.
@@ -69,6 +71,7 @@ How they're made:
 | Marcus, 22, garage guard and nursing student | Orus | navy uniform, beard, radio on his chest (worn upside down) |
 | Lily, 7, Danny's daughter | — | pink shirt, pigtails |
 | Vera, the woman on the radio | Gacrux, whispering | not shown yet |
+| Theo, 15, the runaway living in the ceiling (from Chapter 2) | Achird, "light, young voice" profile, raised 1.5 semitones in the mix (picked in `images/mall/vo/ch2/theo-audition/`) | not drawn yet |
 | Emergency broadcast | Charon | |
 
 **Look (chosen Nov 11):** Codex's stick-figure style, with thin ink arms and legs and the same heads and uniforms (`src/mall/Stick.tsx`, before/after in `docs/night-guard-stick-figures.jpg`). Every new scene uses it. Earlier style options are in `publish/characters/`.
@@ -88,16 +91,17 @@ How they're made:
 - **Chapter 1:** about 278 credits (~$1.40), mostly for the voice.
 - **Shorts 1–3:** about 51 credits.
 - **Remix Shorts 1–6:** none. They reuse the chapter's pictures, voice and sound.
+- **Chapter 2 voice:** about 154 credits for one checked take per line, including retakes and two short Theo auditions.
 - **Each new background:** 3.24 credits.
 - **Each new sound:** 2.5 credits for two variants.
 
-The balance was 412.74 on Nov 6, 2026.
+The balance was 412.74 on Nov 6, 2026, and 14.66 after the Chapter 2 voice on Nov 13. Top up before building Chapter 2's pictures and sounds.
 
 ## Next up
 
 1. Upload Chapter 1 (new look), then post Parts 7–14 one a day from Nov 11 (`publish/night-guard-shorts-7-14.md`).
 2. Post Remix Shorts 1–6 one a day from Nov 19 (`publish/night-guard-ch1-remix-shorts.md`).
 3. Make a 16:9 thumbnail for Chapter 1.
-4. Voice and build Chapter 2. The tighter script needs about 360 Kie credits (the first draft needed about 520). The last recorded balance was 412.74, on Nov 6.
+4. Build Chapter 2's pictures over the new voice (`public/mall/ch2/vo.mp3`): word timings with `align.py`, then the shot lists. The voice is done; new backgrounds and sounds need a Kie top-up.
 5. Write Chapter 6, *Key Forty-Two*.
 6. Nov 22: re-check vidIQ retention for Parts 7 and 12, with vidIQ connected to the right account, and compare the first remixes with them.

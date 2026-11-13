@@ -26,7 +26,8 @@ S, T, D = -18.0, -20.0, -22.5  # story, tense, danger close
 THEO = -21.0  # Theo in the same room, keeping his voice down
 RADIO = -19.5  # Vera on the walkie-talkie
 
-THEO_VOICE = "Zubenelgenubi"  # provisional: audition a few voices on Theo's lines before recording the chapter
+THEO_VOICE = "Achird"  # chosen in vo/ch2/theo-audition: the youngest of four voices (about 113 Hz with this profile)
+THEO_PITCH = 1.5  # semitones up in the mix (rubberband), so he sits about 5 semitones above Danny
 
 DANNY_PROFILE = ("Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells "
                  "what happened plainly and honestly, in a natural voice with very little inflection, keeping his pitch fairly "
@@ -34,9 +35,9 @@ DANNY_PROFILE = ("Danny, a regular guy in his late thirties. He is genuinely a l
 VOICES = {
     "danny": {"voice_name": "Algenib", "audio_profile": DANNY_PROFILE, "accent": "American (Gen)"},
     "theo": {"voice_name": THEO_VOICE,
-             "audio_profile": ("Theo, a fifteen-year-old boy whose voice has only just broken. He has lived alone in a mall's "
-                               "ceiling for four months. Guarded, quick and a little defiant, he talks low and short, like "
-                               "someone used to staying hidden. A real teenager, not an actor."),
+             "audio_profile": ("Theo, fifteen. A skinny teenage boy with a light, young voice that has only just started to "
+                               "break. He has lived alone in a mall's ceiling for four months: guarded, quick and a little "
+                               "defiant, and he talks in short sentences. A real teenager, not an actor."),
              "accent": "American (Gen)"},
     "vera": {"voice_name": "Gacrux",
              "audio_profile": ("Vera, a woman in her forties. Calm, warm and funny, and she never raises her voice. She sounds "
@@ -45,7 +46,7 @@ VOICES = {
 }
 SCENES = {
     "theo": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
-    "theo_close": "Up in the ceiling over a crowd of the dead, a teenager whispers urgent instructions to the man beside him.",
+    "theo_close": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
     "vera": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
     "vera_sad": "A woman talks over a security walkie-talkie at night, gently, about a hungry child she says is with her.",
 }
@@ -60,7 +61,7 @@ def n(cid, text, lufs=S, gap=0.2, pic="", takes=2):
 
 def theo(cid, text, lufs=THEO, gap=0.3, pic="", scene="theo", takes=2):
     return {"id": cid, "who": "theo", "text": text, "lufs": lufs, "gap": gap, "pic": pic, "style": "Deadpan", "radio": None,
-            "scene": SCENES[scene], "takes": takes}
+            "scene": SCENES[scene], "takes": takes, "pitch": THEO_PITCH}
 
 
 def vera(cid, text, gap=0.3, pic="Radio waves. UNKNOWN.", style="Deadpan", scene="vera", takes=2):
@@ -127,7 +128,7 @@ SEGMENTS = [
         n("c2j", "The store closes at nine. At midnight, I'd walked the hallway behind those fitting rooms. Nobody was there.", T, 0.3,
           "Memory: Danny's midnight round behind the fitting rooms, empty."),
         n("c2k", "What coat?", S, 0.3, "Danny.", takes=3),
-        vera("c2l", "What?"),
+        vera("c2l", "Sorry, what?"),
         n("c2m", "The coat you were trying on.", S, 0.3, "Danny.", takes=3),
         vera("c2n", "Danny, there are people eating people downstairs. I think we're past the return policy.", style="Vocal Smile"),
         n("c2o", "Then her voice went soft.", T, 0.3, "Close on the radio.", takes=3),
@@ -235,7 +236,7 @@ SEGMENTS = [
         n("c5p", "You're stealing my food.", T, 0.3, "Danny.", takes=3),
         theo("c5q", "You're loud.", D, 0.3, "Theo."),
         n("c5r", "How old are you?", T, 0.3, "Danny.", takes=3),
-        theo("c5s", "Fifteen.", D, 0.3, "Theo."),
+        theo("c5s", "I'm fifteen.", D, 0.3, "Theo."),
         n("c5t", "Who else is up there?", T, 0.3, "Danny.", takes=3),
         n("c5u", "His hand tightened on the pipe.", T, 0.3, "Theo's hand on the pipe.", takes=3),
         theo("c5v", "Nobody. That's why I stay up there.", THEO, 1.4, "Theo on the rack, looking down."),
@@ -285,7 +286,7 @@ SEGMENTS = [
         n("c7h", "He drew the route in the chalk with his finger. Up through my ceiling. Over the cinema. Along a service walkway above "
                  "the center court. Down a ladder inside the big column by the fountain.", S, 0.25, "A route drawn in chalk on the floor."),
         theo("c7i", "Twenty minutes. If you're quiet."),
-        n("c7j", "When?", S, 0.3, "Danny.", takes=3),
+        n("c7j", "When do we go?", S, 0.3, "Danny.", takes=3),
         theo("c7k", "Tomorrow night. Eight o'clock."),
         n("c7l", "Why at night?", S, 0.3, "Danny.", takes=3),
         n("c7m", "He looked at the floor.", S, 0.3, "Theo looking down.", takes=3),
@@ -301,7 +302,7 @@ SEGMENTS = [
         n("c7u", "I started putting two protein bars and a bottle of water in a bag. I'd leave it at the department store gate.", S, 0.25,
           "Danny packing a bag."),
         n("c7v", "Theo watched me from the rack.", S, 0.3, "Theo watching.", takes=3),
-        theo("c7w", "Don't."),
+        theo("c7w", "Don't do it."),
         n("c7x", "There's a little kid up there.", T, 0.3, "Danny."),
         theo("c7y", "I don't like her voice."),
         n("c7z", "You've never heard her.", T, 0.3, "Danny.", takes=3),
@@ -423,7 +424,7 @@ SEGMENTS = [
           T, 0.3, "Filling containers; dust shaking out of the door frame."),
         n("c11l", "Theo stared at that door.", T, 0.3, "Theo staring at the door.", takes=3),
         theo("c11m", "This is where they were."),
-        n("c11n", "Who?", T, 0.3, "Danny.", takes=3),
+        n("c11n", "Who was here?", T, 0.3, "Danny.", takes=3),
         theo("c11o", "The drill people. Three of them. A woman and two men. Right out there, behind the pretzel place. The first night."),
         n("c11p", "What time?", T, 0.3, "Danny.", takes=3),
         theo("c11q", "One-thirty. I could see the clock."),
@@ -447,7 +448,7 @@ SEGMENTS = [
         n("c12j", "The woman on my radio.", T, 0.3, "Danny.", takes=3),
         theo("c12k", "Same voice. I heard her in your store last night, through the ceiling. It's her."),
         n("c12l", "Was there a little girl with them?", T, 0.3, "Danny."),
-        theo("c12m", "No."),
+        theo("c12m", "There wasn't."),
         n("c12n", "You're sure?", T, 0.3, "Danny.", takes=3),
         theo("c12o", "Three people and a drill, Danny. No kid."),
         n("c12p", "I thought about the bag sitting next to my tent. Two bars and a bottle, for a little girl who didn't exist.", T, 0.3,
@@ -455,7 +456,7 @@ SEGMENTS = [
         n("c12q", "I wanted to go straight to the department store, stand at her gate, and make her say it.", T, 0.3,
           "The department store gate."),
         n("c12r", "My keys were still in the sock. I squeezed them until the teeth bit through.", T, 0.3, "Danny's fist around the sock."),
-        theo("c12s", "Danny."),
+        theo("c12s", "Hey. Danny."),
         n("c12t", "His leg. The blood drying on his sneaker. He'd brought me here. Now he was waiting for me to get him home.", S, 0.3,
           "Theo's leg, the blood on his sneaker."),
         n("c12u", "I picked up the water.", S, 0.3, "Danny picks up the containers.", takes=3),
@@ -474,7 +475,7 @@ SEGMENTS = [
         n("c13c", "In the morning he was standing by the rack with his blanket rolled under his arm.", S, 0.3,
           "Theo with his blanket rolled under his arm."),
         n("c13d", "Where are you going?", S, 0.3, "Danny.", takes=3),
-        theo("c13e", "Back."),
+        theo("c13e", "Going back."),
         n("c13f", "Your leg's hurt.", S, 0.3, "Danny.", takes=3),
         theo("c13g", "It's fine."),
         n("c13h", "Pick a tent. Any of them. Except that one. That one's mine.", S, 0.3, "Danny pointing at the tents."),
@@ -543,7 +544,7 @@ SEGMENTS = [
         n("c14p", "He was looking at my keys. The sock had slipped off when I grabbed the flashlight, and the last key hung against my hand. "
                   "The one with the red tag.", T, 0.3, "The key with the red tag, B3."),
         theo("c14q", "What's B3?"),
-        n("c14r", "Why?", T, 0.3, "Danny.", takes=3),
+        n("c14r", "Why do you ask?", T, 0.3, "Danny.", takes=3),
         theo("c14s", "That's what she kept saying, that night. Down to B3. Get to the door."),
         n("c14t", "I closed my fist around the tag.", T, 0.3, "Danny's fist around the tag.", takes=3),
         theo("c14u", "They weren't trying to rob a store. They were trying to get underneath it."),
@@ -574,6 +575,8 @@ def main():
                 c["radio"] = ln["radio"]
             if ln.get("max_pause"):
                 c["max_pause"] = ln["max_pause"]
+            if ln.get("pitch"):
+                c["pitch"] = ln["pitch"]
             if "lines" in ln:
                 c["lines"] = [{"text": x["text"], "gap": x["gap"]} for x in ln["lines"]]
                 c["rejoin"] = True
@@ -583,7 +586,7 @@ def main():
                 c["text"] = ln["text"]
                 pics = [ln["pic"]]
             for k in range(1, ln["takes"] + 1):
-                cand = {key: v for key, v in c.items() if key not in ("lufs", "gap", "rejoin", "radio", "max_pause")}
+                cand = {key: v for key, v in c.items() if key not in ("lufs", "gap", "rejoin", "radio", "max_pause", "pitch")}
                 cand["id"] = f"{c['id']}-{k}"
                 (cands if c["who"] == "danny" else cast).append(cand)
             plan_chunks.append(c)
