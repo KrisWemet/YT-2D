@@ -20,7 +20,7 @@ A stick-figure zombie survival story for YouTube. It has long chapters (16:9) an
 | Shorts 7–14, cut from Chapter 1 | 9:16 | 0:36–1:13 | ✅ Rendered, post one a day from Nov 11 | `publish/night-guard-shorts-7-14.md` |
 | Remix Shorts 1–6, cut from Chapter 1 out of order | 9:16 | 2:19–2:46 | ✅ Rendered (Nov 12), post one a day from Nov 19 | `publish/night-guard-ch1-remix-shorts.md` |
 | Chapter 1 thumbnail (16:9) | still | | ⬜ To make | |
-| Chapter 2: The Boy in the Ceiling | 16:9 | ~30:00 | 📝 Script done (5,233 words, written with GPT) | `images/mall/chapter2/manuscript.md` |
+| Chapter 2: The Boy in the Ceiling | 16:9 | ~21:00 | 📝 Script rewritten for pace (Nov 13): 3,585 words, was 5,233. The first draft is kept as `manuscript-v1.md` | `images/mall/chapter2/manuscript.md` |
 | Chapter 3: The Pharmacy | 16:9 | ~31:00 | 📝 Script done (5,367 words) | `images/mall/chapter3/manuscript.md` |
 | Chapter 4: Across the Highway | 16:9 | ~30:00 | 📝 Script done (5,100 words) | `images/mall/chapter4/manuscript.md` |
 | Chapter 5: The Fall of the King | 16:9 | ~30:00 | 📝 Script done (4,808 words) | `images/mall/chapter5/manuscript.md` |
@@ -98,6 +98,6 @@ The balance was 412.74 on Nov 6, 2026.
 1. Upload Chapter 1 (new look), then post Parts 7–14 one a day from Nov 11 (`publish/night-guard-shorts-7-14.md`).
 2. Post Remix Shorts 1–6 one a day from Nov 19 (`publish/night-guard-ch1-remix-shorts.md`).
 3. Make a 16:9 thumbnail for Chapter 1.
-4. Voice and build Chapter 2. It needs about 520 Kie credits, and 412.74 are left.
+4. Voice and build Chapter 2. The tighter script needs about 360 Kie credits (the first draft needed about 520). The last recorded balance was 412.74, on Nov 6.
 5. Write Chapter 6, *Key Forty-Two*.
 6. Nov 22: re-check vidIQ retention for Parts 7 and 12, with vidIQ connected to the right account, and compare the first remixes with them.
