@@ -1,0 +1,1050 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with very little inflection, keeping his pitch fairly level and even, like a real person, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "theo": {
+   "voice_name": "Achird",
+   "audio_profile": "Theo, fifteen. A skinny teenage boy with a light, young voice that has only just started to break. He has lived alone in a mall's ceiling for four months: guarded, quick and a little defiant, and he talks in short sentences. A real teenager, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "vera": {
+   "voice_name": "Gacrux",
+   "audio_profile": "Vera, a woman in her forties. Calm, warm and funny, and she never raises her voice. She sounds friendly and in control, which is what makes her frightening.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man quietly tells what happened during the first days of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+ "level": "fixed",
+ "tempo": 1.08,
+ "max_pause": 0.22,
+ "chunks": [
+  {
+   "id": "c1g-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Danny. Stop moving."
+  },
+  {
+   "id": "c1g-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Danny. Stop moving."
+  },
+  {
+   "id": "c2d-1",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Danny? You still there?"
+  },
+  {
+   "id": "c2d-2",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Danny? You still there?"
+  },
+  {
+   "id": "c2g-1",
+   "who": "vera",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "[amused] That's a pretty rude first question."
+  },
+  {
+   "id": "c2g-2",
+   "who": "vera",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "[amused] That's a pretty rude first question."
+  },
+  {
+   "id": "c2i-1",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Fair. I'm Vera. I was trying on a coat on the second floor, sat down in the fitting room, and fell asleep. When I woke up, they'd locked the place."
+  },
+  {
+   "id": "c2i-2",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Fair. I'm Vera. I was trying on a coat on the second floor, sat down in the fitting room, and fell asleep. When I woke up, they'd locked the place."
+  },
+  {
+   "id": "c2l-1",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Sorry, what?"
+  },
+  {
+   "id": "c2l-2",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Sorry, what?"
+  },
+  {
+   "id": "c2n-1",
+   "who": "vera",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Danny, there are people eating people downstairs. I think we're past the return policy."
+  },
+  {
+   "id": "c2n-2",
+   "who": "vera",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Danny, there are people eating people downstairs. I think we're past the return policy."
+  },
+  {
+   "id": "c2p-1",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, gently, about a hungry child she says is with her.",
+   "text": "There's a little girl up here with me. She's hungry. Have you got anything to eat?"
+  },
+  {
+   "id": "c2p-2",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, gently, about a hungry child she says is with her.",
+   "text": "There's a little girl up here with me. She's hungry. Have you got anything to eat?"
+  },
+  {
+   "id": "c2s-1",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, gently, about a hungry child she says is with her.",
+   "text": "Six. Maybe seven. She won't tell me much."
+  },
+  {
+   "id": "c2s-2",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, gently, about a hungry child she says is with her.",
+   "text": "Six. Maybe seven. She won't tell me much."
+  },
+  {
+   "id": "c3i-1",
+   "who": "vera",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "How's my favorite night guard?"
+  },
+  {
+   "id": "c3i-2",
+   "who": "vera",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "How's my favorite night guard?"
+  },
+  {
+   "id": "c3k-1",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, gently, about a hungry child she says is with her.",
+   "text": "She asked for her mom today. I didn't know what to tell her."
+  },
+  {
+   "id": "c3k-2",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, gently, about a hungry child she says is with her.",
+   "text": "She asked for her mom today. I didn't know what to tell her."
+  },
+  {
+   "id": "c5o-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Don't do that again."
+  },
+  {
+   "id": "c5o-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Don't do that again."
+  },
+  {
+   "id": "c5q-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "You're loud."
+  },
+  {
+   "id": "c5q-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "You're loud."
+  },
+  {
+   "id": "c5s-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I'm fifteen."
+  },
+  {
+   "id": "c5s-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I'm fifteen."
+  },
+  {
+   "id": "c5v-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Nobody. That's why I stay up there."
+  },
+  {
+   "id": "c5v-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Nobody. That's why I stay up there."
+  },
+  {
+   "id": "c6d-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Above the cinema. There's a space next to the projection room."
+  },
+  {
+   "id": "c6d-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Above the cinema. There's a space next to the projection room."
+  },
+  {
+   "id": "c6f-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "People throw out a lot of food."
+  },
+  {
+   "id": "c6f-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "People throw out a lot of food."
+  },
+  {
+   "id": "c6h-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I go around them."
+  },
+  {
+   "id": "c6h-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I go around them."
+  },
+  {
+   "id": "c6j-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "You check the same doors twice when you're on the phone. And you sing in the freight elevator."
+  },
+  {
+   "id": "c6j-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "You check the same doors twice when you're on the phone. And you sing in the freight elevator."
+  },
+  {
+   "id": "c6l-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Same song every time. You only know half the words."
+  },
+  {
+   "id": "c6l-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Same song every time. You only know half the words."
+  },
+  {
+   "id": "c6u-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "How much water have you got?"
+  },
+  {
+   "id": "c6u-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "How much water have you got?"
+  },
+  {
+   "id": "c6x-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I know where there's eight thousand gallons."
+  },
+  {
+   "id": "c6x-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I know where there's eight thousand gallons."
+  },
+  {
+   "id": "c7b-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "The fountain."
+  },
+  {
+   "id": "c7b-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "The fountain."
+  },
+  {
+   "id": "c7e-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "There's a tank underneath. In the pump room. It says eight thousand gallons right on the side."
+  },
+  {
+   "id": "c7e-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "There's a tank underneath. In the pump room. It says eight thousand gallons right on the side."
+  },
+  {
+   "id": "c7g-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I don't use the door. I come from above."
+  },
+  {
+   "id": "c7g-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I don't use the door. I come from above."
+  },
+  {
+   "id": "c7i-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Twenty minutes. If you're quiet."
+  },
+  {
+   "id": "c7i-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Twenty minutes. If you're quiet."
+  },
+  {
+   "id": "c7k-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Tomorrow night. Eight o'clock."
+  },
+  {
+   "id": "c7k-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Tomorrow night. Eight o'clock."
+  },
+  {
+   "id": "c7n-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "In the day, some people watch the court from upstairs. At night they sleep."
+  },
+  {
+   "id": "c7n-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "In the day, some people watch the court from upstairs. At night they sleep."
+  },
+  {
+   "id": "c7p-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Just people."
+  },
+  {
+   "id": "c7p-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Just people."
+  },
+  {
+   "id": "c7s-1",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, gently, about a hungry child she says is with her.",
+   "text": "She's stopped asking for food, Danny."
+  },
+  {
+   "id": "c7s-2",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, gently, about a hungry child she says is with her.",
+   "text": "She's stopped asking for food, Danny."
+  },
+  {
+   "id": "c7w-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Don't do it."
+  },
+  {
+   "id": "c7w-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Don't do it."
+  },
+  {
+   "id": "c7y-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I don't like her voice."
+  },
+  {
+   "id": "c7y-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "I don't like her voice."
+  },
+  {
+   "id": "c7zb-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Yes, I have."
+  },
+  {
+   "id": "c7zb-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Yes, I have."
+  },
+  {
+   "id": "c8d-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "You always carry that many?"
+  },
+  {
+   "id": "c8d-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "You always carry that many?"
+  },
+  {
+   "id": "c8f-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Must be annoying."
+  },
+  {
+   "id": "c8f-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Must be annoying."
+  },
+  {
+   "id": "c8i-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "The big steel beams hold you. The tiles don't. Those thin wires hold the ceiling up. They won't hold you, either."
+  },
+  {
+   "id": "c8i-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "The big steel beams hold you. The tiles don't. Those thin wires hold the ceiling up. They won't hold you, either."
+  },
+  {
+   "id": "c8q-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Don't put your foot where you think the floor is."
+  },
+  {
+   "id": "c8q-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Don't put your foot where you think the floor is."
+  },
+  {
+   "id": "c9e-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Next hand. Now your knee."
+  },
+  {
+   "id": "c9e-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Next hand. Now your knee."
+  },
+  {
+   "id": "c10h-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Look at me."
+  },
+  {
+   "id": "c10h-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Look at me."
+  },
+  {
+   "id": "c10j-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Let go of me. I need my other hand."
+  },
+  {
+   "id": "c10j-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Let go of me. I need my other hand."
+  },
+  {
+   "id": "c10m-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Elbow up. You have to help."
+  },
+  {
+   "id": "c10m-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Elbow up. You have to help."
+  },
+  {
+   "id": "c11g-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Caught it."
+  },
+  {
+   "id": "c11g-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Caught it."
+  },
+  {
+   "id": "c11i-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Then why'd you ask?"
+  },
+  {
+   "id": "c11i-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Then why'd you ask?"
+  },
+  {
+   "id": "c11m-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "This is where they were."
+  },
+  {
+   "id": "c11m-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "This is where they were."
+  },
+  {
+   "id": "c11o-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "The drill people. Three of them. A woman and two men. Right out there, behind the pretzel place. The first night."
+  },
+  {
+   "id": "c11o-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "The drill people. Three of them. A woman and two men. Right out there, behind the pretzel place. The first night."
+  },
+  {
+   "id": "c11q-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "One-thirty. I could see the clock."
+  },
+  {
+   "id": "c11q-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "One-thirty. I could see the clock."
+  },
+  {
+   "id": "c12b-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "They were cutting through the wall. Loud as a chainsaw. I could hear it all the way over the cinema."
+  },
+  {
+   "id": "c12b-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "They were cutting through the wall. Loud as a chainsaw. I could hear it all the way over the cinema."
+  },
+  {
+   "id": "c12d-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Then people started coming in. Through the service hall. They just kept coming. One of the men saw them and ran back. He said they had to stop."
+  },
+  {
+   "id": "c12d-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Then people started coming in. Through the service hall. They just kept coming. One of the men saw them and ran back. He said they had to stop."
+  },
+  {
+   "id": "c12f-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "She kept saying, one more minute."
+  },
+  {
+   "id": "c12f-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "She kept saying, one more minute."
+  },
+  {
+   "id": "c12k-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Same voice. I heard her in your store last night, through the ceiling. It's her."
+  },
+  {
+   "id": "c12k-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Same voice. I heard her in your store last night, through the ceiling. It's her."
+  },
+  {
+   "id": "c12m-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "There wasn't."
+  },
+  {
+   "id": "c12m-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "There wasn't."
+  },
+  {
+   "id": "c12o-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Three people and a drill, Danny. No kid."
+  },
+  {
+   "id": "c12o-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Three people and a drill, Danny. No kid."
+  },
+  {
+   "id": "c12s-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Hey. Danny."
+  },
+  {
+   "id": "c12s-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Hey. Danny."
+  },
+  {
+   "id": "c13e-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Going back."
+  },
+  {
+   "id": "c13e-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Going back."
+  },
+  {
+   "id": "c13g-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "It's fine."
+  },
+  {
+   "id": "c13g-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "It's fine."
+  },
+  {
+   "id": "c13j-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "What do you want for it?"
+  },
+  {
+   "id": "c13j-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "What do you want for it?"
+  },
+  {
+   "id": "c13q-1",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "You weren't on the roof last night, Danny."
+  },
+  {
+   "id": "c13q-2",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "You weren't on the roof last night, Danny."
+  },
+  {
+   "id": "c13s-1",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "I was worried. I hope everything's all right."
+  },
+  {
+   "id": "c13s-2",
+   "who": "vera",
+   "style": "Empathetic",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "I was worried. I hope everything's all right."
+  },
+  {
+   "id": "c13x-1",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "She hasn't told me yet. She's shy."
+  },
+  {
+   "id": "c13x-2",
+   "who": "vera",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "She hasn't told me yet. She's shy."
+  },
+  {
+   "id": "c13z-1",
+   "who": "vera",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Oatmeal. One day you'll have to explain this interest in my shopping."
+  },
+  {
+   "id": "c13z-2",
+   "who": "vera",
+   "style": "Vocal Smile",
+   "pace": "Natural",
+   "scene": "A woman talks over a security walkie-talkie at night, unhurried and amused, to a man hiding in a locked store.",
+   "text": "Oatmeal. One day you'll have to explain this interest in my shopping."
+  },
+  {
+   "id": "c13zd-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Can I come?"
+  },
+  {
+   "id": "c13zd-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "Can I come?"
+  },
+  {
+   "id": "c14n-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Who is that?"
+  },
+  {
+   "id": "c14n-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "Up in the ceiling over a crowd of the dead, a teenager gives the man beside him short, urgent instructions, keeping his voice down.",
+   "text": "Who is that?"
+  },
+  {
+   "id": "c14q-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "What's B3?"
+  },
+  {
+   "id": "c14q-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "What's B3?"
+  },
+  {
+   "id": "c14s-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "That's what she kept saying, that night. Down to B3. Get to the door."
+  },
+  {
+   "id": "c14s-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "That's what she kept saying, that night. Down to B3. Get to the door."
+  },
+  {
+   "id": "c14u-1",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "They weren't trying to rob a store. They were trying to get underneath it."
+  },
+  {
+   "id": "c14u-2",
+   "who": "theo",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "scene": "In a dark, locked store in a mall full of the dead, a runaway teenager talks quietly with the night guard.",
+   "text": "They weren't trying to rob a store. They were trying to get underneath it."
+  }
+ ]
+}

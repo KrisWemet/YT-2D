@@ -3,305 +3,219 @@
 
 *Days 2–5 · Maplecrest Mall*
 
-*Complete narration manuscript · 5,233 spoken words · Approximately 30 minutes at Chapter One’s narration pace. Section titles and day/location notes are not spoken.*
+*Narration manuscript, second draft. Section titles and the day/time notes in italics are on-screen tags, not spoken. American English. The first draft is kept as `manuscript-v1.md`; what changed and why is at the end.*
 
 ### 1. Right Under Me
 
-*Day 4 · Above the center court*
+*Day 4 · 8:49 P.M. · Above the center court*
 
 Right now my leg is hanging through the ceiling over a hundred dead people, and my best friend is walking right under it.
 
-The edge of the hole is cutting into my thigh. My right boot is caught on something sharp. Every time I try to move, a little more white dust falls past my foot.
+The edge of the hole is cutting into my thigh. My boot is caught on something sharp. Every time I move, a little more white dust falls past my foot.
 
 A piece the size of my thumbnail lands on the fountain rim.
 
-The little tick carries through the whole court. Under my leg, somebody starts moving.
+Tick.
 
-There are faces turned up toward me. A woman with one earring. A man still holding a shopping bag. The cleaner who used to leave a yellow cone outside the bathrooms, even when the floor was dry.
+In a mall this quiet, that's a dinner bell.
+
+Under my leg, faces start turning up. A woman with one earring. A man still holding a shopping bag. The cleaner who used to put out a yellow cone even when the floor was dry.
 
 And Marcus.
 
-He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice.
+He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice. Same as every night.
 
-Same as always.
+Lying on a beam above me is a fifteen-year-old I almost threw out of my store. He's got both hands around my wrist, and he's pulling so hard his whole face shakes.
 
-The empty clip on his chest catches the emergency light. His radio is in my pocket. I took the battery out before we climbed up here.
-
-At least I got one thing right.
-
-Above me, Theo is lying flat on a metal beam. He's got both hands around my wrist. His trainers are braced against a pipe, and he's pulling hard enough that his whole face shakes.
-
-He looks at my boot.
-
-Then he looks at the ceiling around it.
-
-“Danny,” he says. “Stop moving.”
+"Danny," he whispers. "Stop moving."
 
 I stop.
 
-Another corner breaks off anyway.
+Another piece breaks off anyway.
 
-The only person who can pull me out is a kid I nearly threw out of my store.
+And in eleven minutes, my seven-year-old is going to blink her goodnight at an empty roof.
 
 Let me back up.
 
 ### 2. The Woman in the Fitting Room
 
-*Night 1 · The roof*
+*Night 1 · 9:02 P.M. · The roof*
 
-The woman on the radio asked who was in my daughter's window, and I gave her nothing.
+The woman on the radio asked who was in my daughter's window, and I didn't say a word.
 
-I took my thumb off the button.
+For six years, answering that radio was my job. Somebody called, I answered, and they knew help was coming.
 
-For six years, answering that radio had been my job. A call came in, I said my name, and whoever was on the other end knew somebody was coming.
+Now I stood on the roof with my thumb an inch from the button and made myself leave it alone.
 
-Now I had to remind myself that I could leave it alone.
+"Danny? You still there?"
 
-My phone was in my other hand. No service. My mom's last message was still there, telling me the door was locked. I read it again while the woman waited. I wanted somebody to talk to badly enough that I was afraid of what I might say.
-
-Across the highway, the tenth-floor window stayed dark. Lily had already blinked three times. I'd answered. Our goodnight was over.
-
-The woman waited long enough that I could hear her breathing through the little speaker.
-
-“Danny?”
-
-I turned the volume down and held the radio against my ear.
-
-“You still there?”
-
-I could see a faint light moving behind the department store's rooftop door. When I looked again, it was gone.
+Across the roofs, a light moved behind the department store's roof door. Then it was gone.
 
 I pressed the button.
 
-“How did you get inside?”
+"How did you get inside my mall?"
 
-A little laugh.
+A little laugh. "That's a pretty rude first question."
 
-“That's a fairly rude first question.”
+"You asked me one."
 
-“You asked me one.”
+"Fair. I'm Vera. I was trying on a coat on the second floor, sat down in the fitting room, and fell asleep. When I woke up, they'd locked the place."
 
-“Fair enough. Vera. There. Now you have a name.”
+The store closes at nine. At midnight, I'd walked the hallway behind those fitting rooms. Nobody was there.
 
-I waited.
+"What coat?" I said.
 
-“I was trying on a coat. Department store. Second floor. Sat down in the fitting room and fell asleep. By the time I woke up, they'd locked the place.”
+"Sorry, what?"
 
-The store had closed at nine. At midnight, I'd checked the staff corridor behind those fitting rooms. I'd heard nothing.
+"The coat you were trying on."
 
-“What coat?” I asked.
+"Danny, there are people eating people downstairs. I think we're past the return policy."
 
-“What?”
+Then her voice went soft.
 
-“The one you were trying on.”
+"There's a little girl up here with me. She's hungry. Have you got anything to eat?"
 
-“Danny, there are people eating people downstairs. I think we've moved beyond the returns policy.”
+I looked across the highway at my daughter's dark window.
 
-She sounded almost amused.
+"How old?"
 
-Then her voice changed a little.
+"Six. Maybe seven. She won't tell me much."
 
-“There's a girl up here with me. She's hungry. Have you got anything we could eat?”
-
-I looked at Lily's window again. Kept my thumb away from the button while I did it.
-
-“How old?”
-
-“Little. Six, perhaps. Seven. It's hard to get much out of her.”
-
-I stood on that roof until my hand went numb around the radio.
+Seven.
 
 Vera never asked about the window again that night.
 
 She'd found another question I couldn't walk away from.
 
-### 3. Breakfast for Somebody Else
+### 3. Somebody in My Store
 
 *Day 2 · Summit Outdoors*
 
-Somebody ate my breakfast while I slept inside a locked store.
+Somebody stole my water while I slept inside a locked store.
 
-I'd put two protein bars beside the tent. One for when I woke up, one for later, because apparently I needed a system for deciding when to eat cardboard.
+I'd counted it the night before. Seventy-two bottles. If I was careful, twelve days.
 
-There was one left.
+In the morning there were seventy-one. And one of my two protein bars was gone, which meant somebody had eaten breakfast in my store, and it wasn't me.
 
-I checked the sleeping bag. Turned it inside out. Looked under the tent and inside both boots.
+The gate was locked. Key thirty-one was still on my belt.
 
-At the gate, the padlock was closed. Key thirty-one was still on my belt.
+The dead don't pick padlocks. They don't eat protein bars, either.
 
-I counted the water twice.
+Something else was in here with me.
 
-A bottle was missing too.
+I searched every tent. Every shelf. Behind the kayaks, and behind the cardboard bear, which got me for the third time.
 
-I could explain losing a protein bar. I'd spent the night listening to my dead friend walk past, and my brain was doing its best to forget the whole thing.
+Nothing.
 
-A bottle was harder.
+That night, I put the food and water in a plastic box and slept with it next to my head.
 
-I lined everything up along the back wall. Bars in one row, cans in another, water underneath. Wrote the numbers on a receipt with the little pencil I used for my shift log.
+Vera called while I was lying there.
 
-I hadn't written anything in that log since the first night.
+"How's my favorite night guard?"
 
-For a while I sat there trying to remember the last normal entry. A door propped open. A car parked across two spaces. Something I'd been annoyed about.
+"I haven't agreed to anything."
 
-Then I heard two pulls on a gate outside, and I remembered I was supposed to be counting water.
+"She asked for her mom today. I didn't know what to tell her."
 
-I carried the remaining bars into the stockroom and put them in a plastic storage box. Then I sat beside it until my neck hurt.
+I didn't either. I let the radio go quiet.
 
-Nothing happened.
+I don't remember falling asleep. I remember waking up, because the lid of the box was back on, and one of the latches hadn't quite clicked shut.
 
-At nine, I went to the roof. Three blinks from Lily. Three back from me. I kept my body between the flashlight and the department store.
-
-Vera called as soon as I came downstairs.
-
-“Any luck with supper?”
-
-“I haven't agreed to anything.”
-
-“You sound tired.”
-
-“I am tired.”
-
-“Get some rest. We can talk tomorrow.”
-
-I stared at the storage box for another hour.
-
-When I finally slept, I put it beside my head.
-
-When I woke again, the lid was back on. One of the catches hadn't quite clicked shut.
-
-Two more bars were gone.
+Two more bars were gone. Two more bottles.
 
 Whoever was doing this had stood close enough to watch me sleep.
 
 ### 4. The Footprints
 
-*Day 3 · Before dawn*
+*Day 3 · 4:50 A.M.*
 
 I put climbing chalk on the floor, and the footprints went up the wall.
 
-The chalk came in a little white bag from the climbing display. I spread it around the food box, under the stockroom door, and across the narrow space between the tents.
+That was my entire investigation. Six years in mall security, and my big plan was waiting for somebody to step in powder.
 
-Then I went back to bed with my boots on.
+I spread it around the food box, under the stockroom door, and between the tents. Then I lay down with my boots on and pretended to sleep.
 
-That was my entire investigation. Six years in security, and I was waiting for somebody to step in powder.
+Sometime before dawn, I heard plastic bend.
 
-I left a fresh bar on top of the box. The rest went inside it.
+By the time I got my flashlight on, the store was still again.
 
-I felt ridiculous setting bait with a breakfast I couldn't afford to lose. But the gate was the only way in that I understood. Whoever had found another way could bring somebody else through it.
+Small sneakers. A split in the right sole that left a little square of clean floor in every print.
 
-I lay facing the gap between the tents. If anybody came through there, this time I'd see them.
+The trail came from behind the climbing wall display. It went to the food box. Then it went back.
 
-Sometime before morning, I heard plastic bend.
+Behind the display there's a tall metal rack bolted to the wall. A chalk print on the bottom shelf. Another one halfway up the wall. A handprint on a dusty pipe.
 
-By the time I'd got out of the sleeping bag, the store was still again.
-
-I left the overhead lights off and used my flashlight close to the floor.
-
-Small trainers. A worn patch under the right heel. The print had a little square of clear floor in the middle where the sole was split.
-
-The trail came from behind the climbing wall display.
-
-It went to the food box.
-
-Then it went back.
-
-I moved the display a few inches. Behind it was a tall storage rack bolted to the wall. A shoeprint showed on the bottom shelf. Another was pressed against the painted wall halfway up.
-
-Higher still, somebody had wiped a hand across a dusty pipe.
-
-I followed the pipe with the light.
+I followed the pipe up with my light.
 
 One ceiling tile was cleaner around the edges than all the others.
 
-I stood there with my mouth open.
-
-Every door was locked. Every window was intact. I'd checked the gates so often that morning my hand hurt.
+Every door locked. Every window whole. I'd checked that gate so many times my hand hurt.
 
 I hadn't looked up once.
 
-A little white flake dropped out of the seam above me.
+And if a thief could get into my store through the ceiling, so could the woman on the radio.
 
-I switched the flashlight off.
+A little white flake drifted down out of the seam above me.
+
+I turned off the flashlight.
 
 Whoever was up there had seen the light.
 
 And they were still there.
 
-### 5. A Pair of Trainers
+### 5. A Pair of Sneakers
 
-*Day 3 · Summit Outdoors*
+*Day 3 · 6:10 A.M.*
 
-I caught the person stealing my food, and he was wearing shoes held together with tape.
+I caught the thief, and his shoes were held together with duct tape.
 
-I waited behind the display until my bad knee went stiff. It was barely six in the morning. Outside, Marcus rattled the gate and moved on.
+I waited behind the display until my knee went stiff. Out in the hall, Marcus rattled my gate and moved on.
 
-The tile lifted.
+Then the tile lifted.
 
-Two fingers appeared, then a head, then a very skinny boy lowering himself onto the top shelf.
+Two fingers. Then a head. Then a very skinny boy, lowering himself onto the top shelf like he'd done it a hundred times. He even stepped around the one bar that squeaks. I didn't know it squeaked. It's my store.
 
-He moved carefully. He knew which bit of the rack squeaked. He stepped around it before his foot even touched down.
+He went straight to the food box. I waited until he bent over it.
 
-When he reached the floor, he went straight to the box. I waited until he bent over it. Then I stood up.
+Then I stood up.
 
-We looked at each other.
+He had a protein bar in his hand. His sweatshirt hung past his fingers. He was about as dusty as the pipe, and he looked hungry enough to eat the wrapper.
 
-He had a protein bar already in his hand.
+I'd practiced this moment for an hour. In my head, the thief was a grown man.
 
-The sweatshirt hung past his fingers. There was a pale clean line around one wrist where he'd pushed a sleeve up. Everything else about him looked as dusty as the pipe.
-
-I'd practised this conversation in my head while I waited. It had involved a grown man explaining himself.
-
-I hadn't practised what to do if the thief looked hungry enough to eat the wrapper.
-
-“Put it down,” I said.
+"Put it down," I said.
 
 He put it down.
 
 Then he ran straight at me.
 
-I moved aside because, for a second, that's what my body thought you did when a kid ran at you. He got past, took two steps up the rack, and nearly reached the pipe.
+He got past me and two shelves up the rack before I caught the back of his sweatshirt. He twisted so hard the stitching tore. The whole rack banged against the wall.
 
-I caught the back of his sweatshirt.
+Out in the hall, something stopped walking.
 
-He twisted so hard the stitching tore.
+We both froze.
 
-“Let go.”
+A shadow slid across the gate. It leaned on the bars, and the gate creaked.
 
-“Stop kicking.”
+Then it moved on.
 
-“Let go.”
+The boy let out a breath and glared at me like this was my fault.
 
-I did.
+"Don't do that again," he whispered.
 
-He stayed on the second shelf, one hand on the pipe, watching my hands.
+"You're stealing my food."
 
-The loose shelf knocked against the wall.
+"You're loud."
 
-Somewhere outside, a shoe dragged across the floor.
+"How old are you?"
 
-We both stopped breathing.
+"I'm fifteen."
 
-A shadow passed the gate. Paused. Moved on.
+"Who else is up there?"
 
-The boy looked toward the hallway, then back at me.
+His hand tightened on the pipe.
 
-“Don't do that again,” he whispered.
-
-I wanted to tell him I was the adult and this was my store and he was stealing my food.
-
-Instead I asked how old he was.
-
-“Fifteen.”
-
-“Your name?”
-
-“Theo.”
-
-“Who else is up there?”
-
-He tightened his grip on the pipe.
-
-“Nobody. That's why I stay up there.”
+"Nobody. That's why I stay up there."
 
 ### 6. Four Months
 
@@ -309,339 +223,223 @@ He tightened his grip on the pipe.
 
 A fifteen-year-old had been living in my mall for four months, and I'd never noticed.
 
-I let him sit on an overturned camping bucket. He kept the rack within reach.
+His name was Theo. He sat on an upside-down bucket, close enough to the rack to run.
 
-“Where do you sleep?”
+"Where do you sleep?"
 
-“Above the cinema.”
+"Above the cinema. There's a space next to the projection room."
 
-“In the ceiling?”
+"For four months? How do you eat?"
 
-“There's a space beside the projection room.”
+"People throw out a lot of food."
 
-“For four months?”
+"And the doors?"
 
-He shrugged. A tiny movement. Like he was trying to make four months smaller.
+"I go around them."
 
-“How did you eat?”
+I looked at the keys on my belt. Forty-two keys, and a kid had beaten every one of them with a ceiling tile.
 
-“People throw stuff out.”
-
-“And the doors?”
-
-“I go round them.”
-
-I looked up at the tile again.
-
-He pointed toward my belt.
-
-“You like checking those.”
-
-“The keys?”
-
-“The doors. You do the same ones twice when you're on the phone.”
-
-I thought about all the nights I'd walked this building, tugged handles, signed the log, and told myself everybody was safe.
-
-Theo peeled a strip of tape away from his trainer. Pressed it back down.
-
-“You sing in the freight elevator,” he said.
-
-I looked at him.
-
-“Usually the same song. You only know some of it.”
-
-My face got hot. Even then. Even with everything outside, that still worked.
-
-“You can't stay here,” I said.
-
-The words came out before I'd decided what I meant by them.
-
-There were two sentences in my head. One was about food. The other was about the man who'd sat outside my gate and trusted me to know what to do.
-
-I could hardly look at that gate in daylight. Now this kid was sitting six feet from it, waiting for me to be in charge.
-
-I wanted somebody qualified. A firefighter. His dad. Any adult who'd know how to keep him alive.
-
-He was looking at the only one available.
-
-Theo stood immediately.
-
-He didn't argue. Picked up nothing, because he'd brought nothing.
-
-I heard Marcus at another gate down the hall.
-
-Theo heard him too.
-
-“Wait,” I said.
-
-He waited beside the rack.
-
-I reached for a bottle, then stopped with my hand on it.
-
-Theo watched me count the ones left.
-
-“How long have you got?” he asked.
-
-“About ten days. Maybe. I was working it out for one person.”
-
-He looked toward the front of the mall.
-
-“I know where there's eight thousand gallons.”
-
-### 7. The Fountain
-
-*Day 3 · The deal*
-
-The water I needed was under a hundred dead people.
-
-“The fountain,” Theo said.
+"You check the same doors twice when you're on the phone," he said. "And you sing in the freight elevator."
 
 I stared at him.
 
-In six years I'd taken coins out of that fountain, fished out a phone, and once helped a man retrieve an engagement ring he'd dropped before he got to the important question.
+"Same song every time. You only know half the words."
 
-I'd never thought about where the water came from.
+My face went hot. Even now. Even with all of that outside.
 
-“Big tank underneath,” Theo said. “There's a room with all the pumps. Number's written on the side.”
+"You can't stay here," I said.
 
-“Eight thousand?”
+It came out before I'd thought about it. But I knew where it came from.
 
-He nodded.
+The first night, a guy I loved sat outside that gate and trusted me to know what to do. I didn't. Now this kid was sitting six feet from the same gate, waiting for me to be in charge.
 
-I knew the pump-room door. It opened into the center court, beside the pretzel place. On the cameras, that doorway was buried behind bodies.
+I wanted somebody better for him. A firefighter. A parent. Anybody.
 
-“The way downstairs is full.”
+He was looking at the only adult available.
 
-“I come from above.”
+Theo stood up. He didn't argue. He didn't take anything, because he'd brought nothing.
 
-He drew a route in the chalk with one finger. Above the cinema. Across a service walkway. Down inside the big column beside the fountain, on a maintenance ladder.
+He was halfway up the rack when he stopped.
 
-The route ended behind the locked pump-room door.
+"How much water have you got?"
 
-I could feel the weight of the keys on my hip.
+"About ten days. For one person."
 
-“Why haven't you gone already?”
+He looked toward the front of the mall.
 
-“Nothing to carry it in.”
+"I know where there's eight thousand gallons."
 
-The store around us was full of camping water containers.
+### 7. The Fountain
 
-“How much can you carry back?” I asked.
+*Day 3 · Summit Outdoors*
 
-He held his hands a little apart.
+The water I needed was sitting under a hundred dead people.
 
-“Small ones. You have to get them through.”
+"The fountain," Theo said.
 
-I picked up a container big enough to be useful, imagined carrying it one-handed over the court, and put it back.
+In six years I'd fished coins out of that fountain, two phones, and once an engagement ring a guy dropped before he got to the question.
 
-We settled on two smaller ones. I tried holding them full, then lifting them onto a shelf. My arms shook by the third try.
+I'd never wondered where the water came from.
 
-Theo watched without saying anything. I wished he'd made a joke. It would've been easier than watching him decide whether I could do it.
+"There's a tank underneath," Theo said. "In the pump room. It says eight thousand gallons right on the side."
 
-He looked at them. Looked at me.
+The pump room door is in the center court, right beside the pretzel place. On the cameras, that doorway was buried in bodies.
 
-We understood each other then.
+"I don't use the door. I come from above."
 
-I'd been counting bottles and locking gates. He'd been counting routes through walls.
+He drew the route in the chalk with his finger. Up through my ceiling. Over the cinema. Along a service walkway above the center court. Down a ladder inside the big column by the fountain.
 
-That night Vera called again. She said the little girl had stopped asking for food.
+"Twenty minutes," he said. "If you're quiet."
 
-I held the radio so tightly the plastic creaked.
+"When do we go?"
 
-“Get some sleep, Danny,” she said. “You'll think better tomorrow.”
+"Tomorrow night. Eight o'clock."
 
-I sat beside Theo's bucket after the light went out.
+"Why at night?"
 
-“Show me the way,” I said. “We bring water back. You get food. We work the rest out after.”
+He looked at the floor.
 
-He looked at the tent, then at the rack.
+"In the day, some people watch the court from upstairs. At night they sleep."
 
-I'd come down from the roof a few minutes earlier. Lily had blinked. I'd blinked back. For another night, that was everything we knew about each other.
+"What people?"
 
-My mom had gone into the apartment with about ten days of insulin. Every time I counted my water, I found myself counting her days too.
+"Just people."
 
-Getting more water wouldn't get me across the highway. But I couldn't do anything for either of them if I spent the next week getting too weak to climb the roof ladder.
+Eight o'clock. Twenty minutes there, fill up, twenty minutes back. On the roof by ten to nine. Easy.
 
-“You coming too?”
+That night, Vera called again.
 
-“Yes.”
+"She's stopped asking for food, Danny."
 
-He glanced at my boots.
+I held the radio so tight the plastic creaked. I'm a dad. She knew exactly where to push.
 
-That was when I started worrying about what his route could hold.
+I started putting two protein bars and a bottle of water in a bag. I'd leave it at the department store gate.
+
+Theo watched me from the rack.
+
+"Don't do it," he said.
+
+"There's a little kid up there."
+
+"I don't like her voice."
+
+"You've never heard her."
+
+Theo didn't look away.
+
+"Yes, I have."
 
 ### 8. Key Seventeen
 
-*Day 4 · Above the cinema*
+*Day 4 · 8:00 P.M.*
 
-The first new door I opened was beside a kid's bed.
+To get water, I had to crawl through the ceiling right over their heads.
 
-We left before the mall got bright. I took empty camping containers, a flashlight, and a strap from the climbing display.
+I never took that bag to Vera's gate. I never unpacked it, either.
 
-I took the battery out of Marcus's radio. Wrapped the keyring in a sock so the metal would stay quiet.
+At eight, we went up. I took the battery out of Marcus's radio. One squawk over that court and we'd both be dinner. Then I wrapped my keys in a sock so they couldn't jingle.
 
-Theo made me try the rack without the containers first. On the second shelf I reached for something that looked solid. He caught my hand before I put any weight on it.
+"You always carry that many?" Theo asked.
 
-“That's for holding the ceiling up,” he said. “It won't hold you.”
+"Every night."
 
-He moved my hand to a thick support above it.
+"Must be annoying."
 
-I nodded as if I'd understood that all along. Then I climbed down and started again.
+It was. I'd have given anything to be annoyed by them on a normal Tuesday.
 
-Theo watched all of it.
+Above my store, the air was hot and full of dust. Theo pointed with his flashlight. "The big steel beams hold you. The tiles don't. Those thin wires hold the ceiling up. They won't hold you, either."
 
-“You always carry that many?”
+I went on my hands and knees, beam to beam. Every time I breathed too hard, the tiles shifted under me.
 
-“Every night.”
+Over the cinema, he stopped beside a blanket. Three empty water bottles. A folded hoodie. A photo, face down. He slid it under the blanket before I could see it.
 
-“Must've been annoying.”
-
-It had been. I would've given almost anything to be annoyed by that sound again on an ordinary Tuesday.
-
-Above the store, the air was warm and smelled like dust from a heater somebody had just switched on. Theo showed me where the metal supports ran.
-
-I followed them on my hands and knees. Kept my weight on the heavy steel. The ceiling tiles shifted below us when I breathed too hard.
-
-Over the cinema, he stopped beside a stained blanket.
-
-There were three empty water bottles, a folded hoodie, and a photograph turned face down. He slid that underneath the blanket before I could see it.
-
-A door beside the little platform had CINEMA SERVICE stencilled across it.
+Next to his bed was a little metal door. CINEMA SERVICE.
 
 Key seventeen fit.
 
-Theo watched the lock turn as though I'd done a trick.
+Theo watched the lock turn like I'd done a magic trick.
 
-“You've been climbing around this?”
+On the other side, a narrow walkway ran out over the center court. Through the gaps, I could see the tops of their heads.
 
-“For a while.”
+Halfway across, the walkway just ended. After that, there were only two beams.
 
-I opened it just wide enough for us to get through.
+Theo looked back at me.
 
-On the other side was the service walkway over the center court. Through gaps beneath the rail, I could see the tops of heads.
-
-Theo stepped out first.
-
-Halfway across, the proper walkway ended. Beyond it, the route followed a pair of supports above the suspended ceiling.
-
-I stopped.
-
-Theo looked back.
-
-“Don't put your foot where you think the floor is.”
+"Don't put your foot where you think the floor is."
 
 ### 9. The Rattle Below
 
-*Day 4 · Above the center court*
+*Day 4 · 8:46 P.M. · Above the center court*
 
 My best friend walked his rounds while I crawled over his head.
 
-Theo crossed the first gap easily. I watched where his hands went, then tried to put mine in the same places.
+Theo crossed the first gap like it was a sidewalk. I watched where his hands went and tried to put mine in the same places.
 
-There was a difference between watching a skinny fifteen-year-old do something and asking my knees to do it afterward.
+There's a big difference between watching a skinny fifteen-year-old do something and asking a thirty-eight-year-old's knees to do it.
 
-Sweat ran down my nose. I caught it on my sleeve before it could fall.
+Sweat ran down my nose. I caught it on my sleeve before it could drip.
 
-One of the emergency lights flickered underneath us. For a second the shadows moved and I tightened both hands on the steel.
+"Next hand," Theo whispered. "Now your knee."
 
-Theo stopped with me. He didn't tell me to hurry.
-
-“Next hand,” he whispered.
-
-I moved it.
-
-“Now your knee.”
-
-I moved that too.
-
-After a while I could do two movements without being told. I was grateful he didn't mention it.
-
-Below us, the fountain was dark. Coins lay on the bottom. The people around it were standing shoulder to shoulder in places, their faces turned toward the food-court doors.
+Below us, the fountain was dark, with coins on the bottom. The dead stood around it shoulder to shoulder, all facing the food court.
 
 I stopped counting at a hundred.
 
-Theo reached back for a container. I passed it forward. He put it on a solid section, then came back for the other one.
+My watch said 8:47. We were behind.
 
-Slow. Everything had to be slow.
-
-A gate rattled at the far end of the hall.
+Then a gate rattled at the far end of the hall.
 
 I knew who it was before I saw him.
 
 Marcus came around the corner and stopped at the first store. Two pulls on the gate. A pause. Then the next one.
 
-I found myself waiting for him to look up.
+I caught myself waiting for him to look up.
 
-Theo touched my shoulder.
+Theo touched my shoulder. He needed room.
 
-I moved my knee to give him room.
+I moved my knee.
 
-The bit of metal under it folded.
+The metal under it folded like a soda can.
 
-I dropped far enough that my stomach hit the edge of the support. My right leg punched through a tile. Something caught the leather of my boot and held it there.
+My stomach hit the beam. My right leg punched straight through a tile. Something sharp caught my boot and held on.
 
-Pieces fell into the court.
+Day four. 8:49 P.M.
 
-The first one struck the fountain's rim.
+That's where you came in.
 
-A head turned.
+Below me, Marcus stopped walking.
 
-Then another.
-
-Theo caught my wrist. I tried to pull my knee back, and a sharp edge dug into my thigh.
-
-Below, Marcus stopped walking.
-
-He lifted his face toward my foot.
-
-My boot began to slide off.
+And he looked up.
 
 ### 10. Hold On
 
-*Day 4 · The broken ceiling*
+*Day 4 · 8:50 P.M.*
 
 The kid I'd told to leave was the only thing keeping me out of that crowd.
 
-Theo lay flat and reached for my other wrist. His fingers slipped on my sleeve.
+Theo lay flat on the beam and grabbed my other wrist. His fingers slipped on my sleeve.
 
-“Give me your hand.”
+A long piece of tile broke off and hit somebody's shoulder. Under me, they started pushing in toward the hole. Slowly. One body leaning into the next.
 
-I tried.
+Marcus stood in the middle of them, looking up at my foot.
 
-A long piece of the tile broke away and hit someone's shoulder. People began pushing under the hole. Slowly, one body leaning into the next.
+I could see the worn spot on his cap, where he used to pick at it while he told me a joke I'd already heard.
 
-Marcus stood among them, looking up.
+I almost said his name.
 
-I could see the worn patch on his cap. I'd stood beside him in the office while he picked at it with his thumbnail and told me a joke I'd already heard.
+Theo smacked my arm. "Look at me."
 
-I nearly said his name.
+He'd pulled the climbing strap off my belt and looped it around the steel beam with one hand.
 
-Theo hit my arm.
+"Let go of me," he whispered. "I need my other hand."
 
-“Look at me.”
+I'd been squeezing his sleeve so hard it was twisted around his arm. I made my fingers open.
 
-I looked up.
+He leaned back on the strap, braced his sneaker against a pipe, and pulled.
 
-He was reaching for the strap I'd brought. Getting it around the heavy support with one hand while the other held my sleeve.
+"Elbow up. You have to help."
 
-“You have to let go,” he whispered.
-
-I shook my head.
-
-“One hand. I need the strap.”
-
-His sleeve was bunched in my fist. I'd been holding him so hard the cloth had twisted around his arm.
-
-I made myself open my fingers.
-
-He fed the strap around the support and leaned his weight into it. I heard fabric pull tight. His shoe slipped against the brace, and he caught himself with a sharp little breath.
-
-Then his hand was back in front of my face.
-
-“Elbow up,” he said. “You have to help.”
-
-I got an elbow onto the steel. Pushed until my shoulder felt as though it was coming apart. Theo leaned back against the strap and pulled.
+I got an elbow onto the steel. Pushed until my shoulder felt like it was coming apart.
 
 My boot stayed where it was.
 
@@ -649,293 +447,203 @@ My foot came out of it.
 
 For a second I thought that meant I was falling.
 
-Then my knee slid over the edge, and Theo dragged me onto the solid platform with him.
+Then my knee slid over the edge, and Theo dragged me onto the beam beside him.
 
-We lay there together, breathing into our sleeves.
+Below us, my boot let go. It landed in the empty fountain with a bang that went on forever, and every head in that court turned toward it.
 
-Below us, the boot finally came loose.
+We lay there breathing into our sleeves. Theo's pant leg was torn at the calf. There was blood on the brace he'd crawled across to reach me.
 
-It landed inside the empty fountain with a noise that seemed to go on forever.
+My watch said 8:58.
 
-Theo pressed both palms against the metal and waited.
+Going back meant crossing the broken part in the half dark, in one boot, in a hurry. The water was twenty feet below us.
 
-Eventually the pushing slowed. A few faces turned away.
+Lily needed me alive more than she needed me on time.
 
-I looked at him.
-
-His trouser leg was torn at the calf. There was blood on the sharp brace he'd crawled across to reach me.
-
-He pulled the fabric down over it.
-
-“You can walk without that shoe,” he whispered.
-
-Somewhere ahead and below us, water dripped.
+"Keep going," I whispered.
 
 ### 11. Eight Thousand Gallons
 
-*Day 4 · The pump room*
+*Day 4 · 9:00 P.M. · The pump room*
 
-We found enough water to keep the whole mall alive, and Theo told me what had brought the dead there.
+At nine o'clock, while my daughter blinked at an empty roof, I was standing in front of eight thousand gallons of water.
 
-The maintenance ladder ran down inside the service column. At the bottom, a narrow hatch opened into the pump room beneath the fountain.
+The ladder ran down inside the column. At the bottom, a hatch opened into the pump room under the fountain.
 
-I put my good foot on each rung first. Theo stayed close enough to hear every breath I was trying to keep quiet.
+The tank filled most of the room. EIGHT THOUSAND GALLONS, right on the side. Behind a little glass window, water.
 
-The tank took up most of the room.
+I put my hand flat on the tank and left it there. For the first time in four days, I wasn't counting bottles.
 
-EIGHT THOUSAND GALLONS was printed on a plate beside its inspection window.
+Theo came down the last rungs slowly, favoring his leg.
 
-There was water behind the glass.
+"You hurt?"
 
-I put my hand against the tank and left it there for a while.
+"Caught it."
 
-We still had to get it back and treat it with the gear in the store. But I could stop staring at the last few bottles every time I swallowed.
+"I saw."
 
-Theo eased himself onto the bottom rung. He was favouring his leg.
+"Then why'd you ask?"
 
-“You hurt?”
+I almost smiled.
 
-“Caught it.”
-
-“I saw.”
-
-“Then why'd you ask?”
-
-I nearly smiled.
-
-We filled what we could carry.
-
-The handles pulled at my fingers when I lifted the containers. We'd be drinking what we carried back for days. After that, we'd have to come again. The thought of that crossing again made me put one down.
-
-Theo noticed.
-
-“We can find a better bit to cross,” he said.
-
-“You know one?”
-
-“I can look.”
-
-I held the handle again. He'd spent four months figuring this place out because he had to. I was going to have to start doing the same.
-
-Outside the pump-room door, a shoe scraped along the floor. Dust shook out of the frame.
+We filled the containers. Outside the pump room door, a shoe scraped along the floor, and dust shook out of the frame.
 
 Theo stared at that door.
 
-“This is where they were,” he said.
+"This is where they were," he said.
 
-“Who?”
+"Who was here?"
 
-“The drill people.”
+"The drill people. Three of them. A woman and two men. Right out there, behind the pretzel place. The first night."
 
-I set the container down.
+"What time?"
 
-“Three of them. A woman and two men. Behind the pretzel place. First night.”
+"One-thirty. I could see the clock."
 
-“What time?”
+One-thirty.
 
-“One-thirty. I could see the clock through the opening.”
-
-One-thirty. Ten minutes before Marcus called about the man on the ramp.
-
-“They were cutting through the wall,” Theo said. “Loud as a chainsaw. I could hear it all the way at the cinema.”
-
-He rubbed his sleeve over his nose.
-
-“People started coming in. Through the service hall. They just kept coming.”
-
-“What did the woman do?”
-
-“Told them to keep drilling.”
+Ten minutes before Marcus called me about a man walking wrong up the ramp.
 
 ### 12. Somebody Called Them
 
-*Day 4 · The way back*
+*Day 4 · The pump room*
 
-The dead had followed a drill into my mall, and my best friend had been in their way.
+The dead didn't come to my mall by accident. Somebody called them.
 
-I sat on the bottom rung beside Theo.
+"They were cutting through the wall," Theo said. "Loud as a chainsaw. I could hear it all the way over the cinema."
 
-Through the door, I could hear somebody's hand dragging over the wall.
+He wiped his nose on his sleeve.
 
-“The woman on my radio?” I asked.
+"Then people started coming in. Through the service hall. They just kept coming. One of the men saw them and ran back. He said they had to stop."
 
-“Same voice. I heard her in your store last night.”
+"And the woman?"
 
-“You're sure?”
+"She kept saying, one more minute."
 
-“She was right below me when they were drilling, Danny.”
+The food court glass. The crowd on my cameras, all turning the same way at once. I'd thought they were wandering in through any door they found.
 
-I looked at the door.
+They weren't wandering. They were following a drill.
 
-“They saw them?”
+And Marcus was standing in their way.
 
-Theo nodded.
+"The woman on my radio," I said.
 
-“One of the men went to look. Came back running. The woman kept saying another minute.”
+"Same voice. I heard her in your store last night, through the ceiling. It's her."
 
-“And then?”
+"Was there a little girl with them?"
 
-“They took the machine and went through the staff door. I stayed where I was until it got quiet.”
+"There wasn't."
 
-The food court. The broken glass. The service halls filling up.
+"You're sure?"
 
-I'd watched all those cameras and thought the crowd was wandering through any door it found.
+"Three people and a drill, Danny. No kid."
 
-I'd been watching where they went. Theo had heard what they were following.
+I thought about the bag sitting next to my tent. Two bars and a bottle, for a little girl who didn't exist.
 
-“Was there a kid with them?”
+I wanted to go straight to the department store, stand at her gate, and make her say it.
 
-Theo shook his head.
+My keys were still in the sock. I squeezed them until the teeth bit through.
 
-“A little girl?”
+"Hey. Danny," Theo said.
 
-“No.”
-
-I heard Vera's voice again. Soft through the speaker. The little girl had stopped asking for food.
-
-I stood up too fast and hit my shoulder on the ladder.
-
-Theo caught the container before it struck the floor.
-
-For a moment I wanted to go straight to the department store. Stand outside her gate and make her tell me why she'd kept that drill going.
-
-My keys were still wrapped in the sock.
-
-I closed my hand around them until the teeth pressed through the fabric.
-
-“Danny,” Theo said.
-
-I looked at his leg. At the blood drying on the edge of his trainer.
-
-He had followed me down here. Now he was waiting for me to get him back.
+His leg. The blood drying on his sneaker. He'd brought me here. Now he was waiting for me to get him home.
 
 I picked up the water.
 
-On the return trip, we moved around the broken section. It took nearly an hour. I could see my boot in the fountain below.
+The way back took half an hour, the long way around the broken part, with my boot lying in the fountain under us the whole time.
 
-I could see Marcus too.
+At 9:41, I climbed out onto the roof.
 
-At the cinema, Theo stopped to pick up his blanket. He tucked the photograph inside it. I pretended to be busy with the containers.
+Lily's window was dark.
 
-I got back to Summit Outdoors in one boot and a filthy sock. Theo went down first and cleared a place for the containers. Then he steadied the rack while I climbed.
-
-I reached the floor and put my hand on the padlock.
-
-Closed. Exactly where I'd left it.
-
-I let go and turned toward Theo. He was sitting on the bucket, trying to bend his trouser leg far enough to see the cut.
-
-I'd checked that lock so many times. Theo had just brought me home without going anywhere near it.
-
-I got the first-aid box.
-
-At nine, I climbed to the roof alone. Three lights from Lily. Three back. I held the roof hatch open a little on the way down, so I could see whether Theo was still there.
-
-He was asleep beside the water.
+For the first time ever, I'd missed nine o'clock.
 
 ### 13. Pick a Tent
 
 *Day 5 · Summit Outdoors*
 
-I told the boy who'd saved me to pick a tent, and he asked what it would cost.
+I told the boy who saved my life to pick a tent, and he asked what it would cost.
 
-We'd got back the afternoon before. I'd used bottled water to clean the scrape on his leg and found a bandage in the first-aid display.
+I'd cleaned the cut on his leg with bottled water and put a bandage on it. He let me, without looking at me once.
 
-He'd let me do it without looking at me once.
+In the morning he was standing by the rack with his blanket rolled under his arm.
 
-I'd asked him to tell me if it got worse. He'd said he would, much too quickly.
+"Where are you going?"
 
-Later, I'd found him putting the empty wrapper from his bandage inside another wrapper, folding both down until they took up almost no room. He'd done the same with his food.
+"Going back."
 
-I knew that habit. I'd seen it in the places above the cinema. A whole life packed small enough that you could move it before somebody told you to.
+"Your leg's hurt."
 
-That morning he was beside the rack with his blanket rolled under one arm.
+"It's fine."
 
-“Where are you going?”
+"Pick a tent," I said. "Any of them. Except that one. That one's mine."
 
-“Back.”
+He didn't move.
 
-“Your leg's hurting.”
+"What do you want for it?"
 
-“It's fine.”
+That made me put down the box I was holding. Somebody had taught this kid that nothing was free.
 
-He shifted his weight onto the other foot.
+"Help with the water. Keep it quiet. Tell me if you hear anybody up there."
 
-I looked at the ceiling tile. His way out was three shelves up, above the pipe he'd used while I slept.
+He waited for the rest.
 
-“Pick a tent,” I said.
+"That's it."
 
-He watched me.
+I found him a clean sweatshirt. He folded it so carefully before he put it down that I had to look at something else.
 
-“Any of them. Except that one. I'm in that one.”
+Vera called at dusk.
 
-“For how long?”
+"You weren't on the roof last night, Danny."
 
-“We'll work it out.”
+I went cold.
 
-“What do you want?”
+"I was worried," she said. "I hope everything's all right."
 
-That question made me put down the box I was holding.
-
-“Help with the water. Keep things quiet. Tell me if you hear people up there.”
-
-He waited.
-
-“That's it,” I said.
-
-I got him a clean sweatshirt from a shelf. He folded it so carefully before he put it down that I had to find something else to look at.
-
-Vera called near dusk.
-
-“Danny. Any room at the inn?”
-
-I held the radio close to my ear.
-
-“Still there?” she asked.
+So she watched every night. She'd watched me not show up.
 
 I pressed the button.
 
-“You said you were trying on a coat.”
+"What's the little girl's name?"
 
-“Yes.”
+A pause. Just a little too long.
 
-“Before the mall closed.”
+"She hasn't told me yet. She's shy."
 
-“Eventually you're going to have to explain this interest in my shopping.”
+"And the coat you were trying on. What color?"
 
-Theo was watching me from the open tent.
+"Oatmeal," she said. "One day you'll have to explain this interest in my shopping."
 
-I let go of the button. Left her waiting this time.
+I let go of the button and left her talking to nobody.
 
-At five to nine, I took the flashlight from the shelf.
+At five to nine, I took the flashlight off the shelf. I didn't know if anyone would be in that window tonight.
 
 Theo pulled on the clean sweatshirt.
 
-“Can I see?” he asked.
+"Can I come?"
 
 ### 14. Somebody Answered
 
-*Day 5 · Nine o'clock*
+*Day 5 · 9:00 P.M. · The roof*
 
-A stranger blinked my daughter's goodnight signal from the department store roof.
+A stranger just blinked my daughter's goodnight signal at her window.
 
-Before that happened, I let Theo come up with me.
+Theo stayed back in the shadow of the hatch, keeping his weight off his bandaged leg.
 
-He stood a little behind the hatch, keeping his weight off the bandaged leg. Across the highway, Parkview was barely visible against the sky.
+Across the highway, I found the tenth floor and counted four windows from the left. I always count. Even when I know exactly where to look.
 
-I found the tenth floor. Counted to the fourth window from the left.
+Nine o'clock.
 
-I always counted. Even when I already knew where to look.
+Nothing.
 
-At nine, the flashlight came on.
+Then a flashlight came on.
 
 One. Two. Three.
 
-I answered with my own.
+She was there. I'd missed her last night, and she came back to the window anyway. She's seven years old.
 
-My hands were steadier than they'd been the night before. I had water downstairs. There was another person waiting beside me, alive, who could hear something fall and help me pick it up.
+I answered with mine. My hands were steadier than they'd been in days. I had water downstairs, and somebody beside me who could hear a tile crack and pull me out.
 
-It took so little to make me feel better that I almost missed the light to my right.
+I was so happy I almost missed the light to my right.
 
 It came from the department store roof.
 
@@ -947,50 +655,65 @@ Three.
 
 Pointed across the highway.
 
-Toward her window.
+At her window.
 
-I lowered my flashlight.
+I lowered my flashlight. I wanted to blink again, to tell Lily which light was mine. But we only had two signals. Three blinks for I love you, and SOS. I'd never taught her what to do if somebody else answered.
 
-I wanted to blink again. Correct it somehow. Tell Lily which light was mine.
+The department store roof went dark.
 
-But we had three flashes, and we had the emergency signal. That was all. I'd never taught her what to do when somebody else answered.
+"Who is that?" Theo whispered.
 
-My thumb rested on the switch while the department store roof went dark.
+"The woman."
 
-I kept it there until I was sure I wouldn't press it.
+He was looking at my keys. The sock had slipped off when I grabbed the flashlight, and the last key hung against my hand. The one with the red tag.
 
-Theo looked from that roof to me.
+"What's B3?" he asked.
 
-“Who is that?” he asked.
+"Why do you ask?"
 
-I put the light in my pocket before I answered.
+"That's what she kept saying, that night. Down to B3. Get to the door."
 
-“The woman.”
+I closed my fist around the tag.
 
-The radio stayed off.
+"They weren't trying to rob a store," he said. "They were trying to get underneath it."
 
-In front of us, Lily's window went dark. Our goodnight was over. Somebody else had joined it.
-
-I stood there until Theo touched my sleeve.
-
-He was looking at the keys. The sock had come loose when I'd put the flashlight away. The last red tag hung against my hand.
-
-“What's B3?” he asked.
-
-I looked down.
-
-“Why?”
-
-“That woman. She kept saying it. Down to B3. Get to the door.”
-
-I closed my fingers around the tag.
-
-“They weren't trying to get into a shop,” he said. “They were trying to get underneath it.”
-
-I thought of Walt tapping the last key. Don't ask.
+I thought of old Walt tapping the last key. That one, you never use. Don't ask.
 
 Across the highway was my daughter. Across the roof was a woman copying her signal.
 
-And the thing that woman wanted was hanging from my belt.
+And the one thing that woman wanted was hanging from my belt.
 
 What did she think was behind that door?
+
+---
+
+## What changed from the first draft (not spoken)
+
+The first draft ran about 31 minutes (5,233 words), twice Chapter One. Apart from a shadow passing the gate, nothing threatened Danny between the cold open and the crawl at about minute 17. This draft runs about 21 minutes (3,585 words), and the crawl starts at about minute 10. It keeps every story beat that Chapters 3–5 rely on: the boot in the fountain, Theo's cut leg and bandage, Vera's coat, the drill and "one more minute", the ceiling route past the cinema, and B3.
+
+- **A clock from the start:**
+  - The thief now takes water, not just snacks: seventy-two bottles, then seventy-one, then sixty-nine.
+  - The crawl happens at eight at night, so it becomes a race to be back on the roof for Lily's nine o'clock.
+  - The cold open says so: "in eleven minutes".
+- **Danny misses nine o'clock.** He chooses the water over being on time ("Lily needed me alive more than she needed me on time") and reaches the roof at 9:41 to a dark window. That carries the dread through Sections 12–14. The routine blinks of the first draft (five times) are cut.
+- **Vera escalates every call:**
+  - The hungry girl, then she asks for her mom, then she has stopped asking for food.
+  - Danny packs food for her.
+  - Day 5: "You weren't on the roof last night." She watches every night.
+  - Danny catches her out: she doesn't know the girl's name. Her answer about the coat, "Oatmeal", sets up her coat in Chapter 3.
+- **A mystery thread for Theo:** some people watch the court in the daytime, and "Yes, I have" heard her voice. Both pay off in the pump room.
+- **Danger on screen:**
+  - The thief arrives as a horror beat ("close enough to watch me sleep").
+  - Danny realizes that if a thief can come through the ceiling, so can Vera.
+  - The scuffle draws one of the dead to the gate.
+- **Cut lines that held a picture without moving the story:** "I looked at him", "He waited", the receipt, the shift-log memory, the container-lifting test.
+- **Danny's humor is back:** the dinner bell, the cardboard bear getting him a third time, "It's my store", the soda-can metal.
+- **Chapter One's "That's where you came in"** returns when the story reaches the cold open.
+- **American English:** sneakers, favoring, practiced.
+
+## Notes for the shot list (not spoken)
+
+- **Water counter:** show it as it drops in Sections 3 and 6, "WATER: 12 DAYS" falling toward "10".
+- **Watch close-ups:** the times are the crawl's clock. 8:47, 8:49 (the cold-open picture again), 8:58, 9:00 in the pump room and 9:41 on the roof.
+- **Section 12's last shot:** the roof at 9:41, Lily's window dark. Hold it.
+- **Section 14:** hold "Nothing." on the dark window for a full beat before her flashlight comes on.

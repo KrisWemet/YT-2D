@@ -1,0 +1,4536 @@
+{
+ "voices": {
+  "danny": {
+   "voice_name": "Algenib",
+   "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with very little inflection, keeping his pitch fairly level and even, like a real person, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "theo": {
+   "voice_name": "Achird",
+   "audio_profile": "Theo, fifteen. A skinny teenage boy with a light, young voice that has only just started to break. He has lived alone in a mall's ceiling for four months: guarded, quick and a little defiant, and he talks in short sentences. A real teenager, not an actor.",
+   "accent": "American (Gen)"
+  },
+  "vera": {
+   "voice_name": "Gacrux",
+   "audio_profile": "Vera, a woman in her forties. Calm, warm and funny, and she never raises her voice. She sounds friendly and in control, which is what makes her frightening.",
+   "accent": "American (Gen)"
+  }
+ },
+ "scene": "A man quietly tells what happened during the first days of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+ "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+ "level": "fixed",
+ "tempo": 1.08,
+ "max_pause": 0.22,
+ "chunks": [
+  {
+   "id": "c1a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Right now my leg is hanging through the ceiling over a hundred dead people, and my best friend is walking right under it."
+  },
+  {
+   "id": "c1a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Right now my leg is hanging through the ceiling over a hundred dead people, and my best friend is walking right under it."
+  },
+  {
+   "id": "c1b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The edge of the hole is cutting into my thigh. My boot is caught on something sharp. Every time I move, a little more white dust falls past my foot."
+  },
+  {
+   "id": "c1b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The edge of the hole is cutting into my thigh. My boot is caught on something sharp. Every time I move, a little more white dust falls past my foot."
+  },
+  {
+   "id": "c1c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "A piece the size of my thumbnail lands on the fountain rim.",
+     "gap": 0.5
+    },
+    {
+     "text": "Tick.",
+     "gap": 0.6
+    },
+    {
+     "text": "In a mall this quiet, that's a dinner bell.",
+     "gap": 0.3
+    }
+   ],
+   "text": "A piece the size of my thumbnail lands on the fountain rim. Tick. In a mall this quiet, that's a dinner bell."
+  },
+  {
+   "id": "c1c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "A piece the size of my thumbnail lands on the fountain rim.",
+     "gap": 0.5
+    },
+    {
+     "text": "Tick.",
+     "gap": 0.6
+    },
+    {
+     "text": "In a mall this quiet, that's a dinner bell.",
+     "gap": 0.3
+    }
+   ],
+   "text": "A piece the size of my thumbnail lands on the fountain rim. Tick. In a mall this quiet, that's a dinner bell."
+  },
+  {
+   "id": "c1c-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "A piece the size of my thumbnail lands on the fountain rim.",
+     "gap": 0.5
+    },
+    {
+     "text": "Tick.",
+     "gap": 0.6
+    },
+    {
+     "text": "In a mall this quiet, that's a dinner bell.",
+     "gap": 0.3
+    }
+   ],
+   "text": "A piece the size of my thumbnail lands on the fountain rim. Tick. In a mall this quiet, that's a dinner bell."
+  },
+  {
+   "id": "c1d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Under my leg, faces start turning up. A woman with one earring. A man still holding a shopping bag. The cleaner who used to put out a yellow cone even when the floor was dry."
+  },
+  {
+   "id": "c1d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Under my leg, faces start turning up. A woman with one earring. A man still holding a shopping bag. The cleaner who used to put out a yellow cone even when the floor was dry."
+  },
+  {
+   "id": "c1e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "And Marcus.",
+     "gap": 0.4
+    },
+    {
+     "text": "He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice. Same as every night.",
+     "gap": 0.3
+    }
+   ],
+   "text": "And Marcus. He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice. Same as every night."
+  },
+  {
+   "id": "c1e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "And Marcus.",
+     "gap": 0.4
+    },
+    {
+     "text": "He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice. Same as every night.",
+     "gap": 0.3
+    }
+   ],
+   "text": "And Marcus. He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice. Same as every night."
+  },
+  {
+   "id": "c1e-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "And Marcus.",
+     "gap": 0.4
+    },
+    {
+     "text": "He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice. Same as every night.",
+     "gap": 0.3
+    }
+   ],
+   "text": "And Marcus. He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice. Same as every night."
+  },
+  {
+   "id": "c1f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Lying on a beam above me is a fifteen-year-old I almost threw out of my store. He's got both hands around my wrist, and he's pulling so hard his whole face shakes."
+  },
+  {
+   "id": "c1f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Lying on a beam above me is a fifteen-year-old I almost threw out of my store. He's got both hands around my wrist, and he's pulling so hard his whole face shakes."
+  },
+  {
+   "id": "c1h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I stop.",
+     "gap": 0.4
+    },
+    {
+     "text": "Another piece breaks off anyway.",
+     "gap": 0.4
+    }
+   ],
+   "text": "I stop. Another piece breaks off anyway."
+  },
+  {
+   "id": "c1h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I stop.",
+     "gap": 0.4
+    },
+    {
+     "text": "Another piece breaks off anyway.",
+     "gap": 0.4
+    }
+   ],
+   "text": "I stop. Another piece breaks off anyway."
+  },
+  {
+   "id": "c1h-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I stop.",
+     "gap": 0.4
+    },
+    {
+     "text": "Another piece breaks off anyway.",
+     "gap": 0.4
+    }
+   ],
+   "text": "I stop. Another piece breaks off anyway."
+  },
+  {
+   "id": "c1i-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "And in eleven minutes, my seven-year-old is going to blink her goodnight at an empty roof.",
+     "gap": 0.5
+    },
+    {
+     "text": "Let me back up.",
+     "gap": 3.0
+    }
+   ],
+   "text": "And in eleven minutes, my seven-year-old is going to blink her goodnight at an empty roof. Let me back up."
+  },
+  {
+   "id": "c1i-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "And in eleven minutes, my seven-year-old is going to blink her goodnight at an empty roof.",
+     "gap": 0.5
+    },
+    {
+     "text": "Let me back up.",
+     "gap": 3.0
+    }
+   ],
+   "text": "And in eleven minutes, my seven-year-old is going to blink her goodnight at an empty roof. Let me back up."
+  },
+  {
+   "id": "c1i-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "And in eleven minutes, my seven-year-old is going to blink her goodnight at an empty roof.",
+     "gap": 0.5
+    },
+    {
+     "text": "Let me back up.",
+     "gap": 3.0
+    }
+   ],
+   "text": "And in eleven minutes, my seven-year-old is going to blink her goodnight at an empty roof. Let me back up."
+  },
+  {
+   "id": "c2a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The woman on the radio asked who was in my daughter's window, and I didn't say a word."
+  },
+  {
+   "id": "c2a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The woman on the radio asked who was in my daughter's window, and I didn't say a word."
+  },
+  {
+   "id": "c2b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "For six years, answering that radio was my job. Somebody called, I answered, and they knew help was coming."
+  },
+  {
+   "id": "c2b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "For six years, answering that radio was my job. Somebody called, I answered, and they knew help was coming."
+  },
+  {
+   "id": "c2c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Now I stood on the roof with my thumb an inch from the button and made myself leave it alone."
+  },
+  {
+   "id": "c2c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Now I stood on the roof with my thumb an inch from the button and made myself leave it alone."
+  },
+  {
+   "id": "c2e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Across the roofs, a light moved behind the department store's roof door. Then it was gone."
+  },
+  {
+   "id": "c2e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Across the roofs, a light moved behind the department store's roof door. Then it was gone."
+  },
+  {
+   "id": "c2f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I pressed the button.",
+     "gap": 0.3
+    },
+    {
+     "text": "How did you get inside my mall?",
+     "gap": 0.3
+    }
+   ],
+   "text": "I pressed the button. How did you get inside my mall?"
+  },
+  {
+   "id": "c2f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I pressed the button.",
+     "gap": 0.3
+    },
+    {
+     "text": "How did you get inside my mall?",
+     "gap": 0.3
+    }
+   ],
+   "text": "I pressed the button. How did you get inside my mall?"
+  },
+  {
+   "id": "c2f-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I pressed the button.",
+     "gap": 0.3
+    },
+    {
+     "text": "How did you get inside my mall?",
+     "gap": 0.3
+    }
+   ],
+   "text": "I pressed the button. How did you get inside my mall?"
+  },
+  {
+   "id": "c2h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You asked me one."
+  },
+  {
+   "id": "c2h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You asked me one."
+  },
+  {
+   "id": "c2h-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You asked me one."
+  },
+  {
+   "id": "c2j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The store closes at nine. At midnight, I'd walked the hallway behind those fitting rooms. Nobody was there."
+  },
+  {
+   "id": "c2j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The store closes at nine. At midnight, I'd walked the hallway behind those fitting rooms. Nobody was there."
+  },
+  {
+   "id": "c2k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What coat?"
+  },
+  {
+   "id": "c2k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What coat?"
+  },
+  {
+   "id": "c2k-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What coat?"
+  },
+  {
+   "id": "c2m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The coat you were trying on."
+  },
+  {
+   "id": "c2m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The coat you were trying on."
+  },
+  {
+   "id": "c2m-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The coat you were trying on."
+  },
+  {
+   "id": "c2o-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then her voice went soft."
+  },
+  {
+   "id": "c2o-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then her voice went soft."
+  },
+  {
+   "id": "c2o-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then her voice went soft."
+  },
+  {
+   "id": "c2q-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I looked across the highway at my daughter's dark window."
+  },
+  {
+   "id": "c2q-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I looked across the highway at my daughter's dark window."
+  },
+  {
+   "id": "c2r-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "How old?"
+  },
+  {
+   "id": "c2r-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "How old?"
+  },
+  {
+   "id": "c2r-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "How old?"
+  },
+  {
+   "id": "c2t-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Seven.",
+     "gap": 0.6
+    },
+    {
+     "text": "Vera never asked about the window again that night.",
+     "gap": 0.3
+    },
+    {
+     "text": "She'd found another question I couldn't walk away from.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Seven. Vera never asked about the window again that night. She'd found another question I couldn't walk away from."
+  },
+  {
+   "id": "c2t-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Seven.",
+     "gap": 0.6
+    },
+    {
+     "text": "Vera never asked about the window again that night.",
+     "gap": 0.3
+    },
+    {
+     "text": "She'd found another question I couldn't walk away from.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Seven. Vera never asked about the window again that night. She'd found another question I couldn't walk away from."
+  },
+  {
+   "id": "c2t-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Seven.",
+     "gap": 0.6
+    },
+    {
+     "text": "Vera never asked about the window again that night.",
+     "gap": 0.3
+    },
+    {
+     "text": "She'd found another question I couldn't walk away from.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Seven. Vera never asked about the window again that night. She'd found another question I couldn't walk away from."
+  },
+  {
+   "id": "c3a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Somebody stole my water while I slept inside a locked store."
+  },
+  {
+   "id": "c3a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Somebody stole my water while I slept inside a locked store."
+  },
+  {
+   "id": "c3b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd counted it the night before. Seventy-two bottles. If I was careful, twelve days."
+  },
+  {
+   "id": "c3b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd counted it the night before. Seventy-two bottles. If I was careful, twelve days."
+  },
+  {
+   "id": "c3c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "In the morning there were seventy-one. And one of my two protein bars was gone, which meant somebody had eaten breakfast in my store, and it wasn't me."
+  },
+  {
+   "id": "c3c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "In the morning there were seventy-one. And one of my two protein bars was gone, which meant somebody had eaten breakfast in my store, and it wasn't me."
+  },
+  {
+   "id": "c3d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The gate was locked. Key thirty-one was still on my belt."
+  },
+  {
+   "id": "c3d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The gate was locked. Key thirty-one was still on my belt."
+  },
+  {
+   "id": "c3e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "The dead don't pick padlocks. They don't eat protein bars, either.",
+     "gap": 0.35
+    },
+    {
+     "text": "Something else was in here with me.",
+     "gap": 0.35
+    }
+   ],
+   "text": "The dead don't pick padlocks. They don't eat protein bars, either. Something else was in here with me."
+  },
+  {
+   "id": "c3e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "The dead don't pick padlocks. They don't eat protein bars, either.",
+     "gap": 0.35
+    },
+    {
+     "text": "Something else was in here with me.",
+     "gap": 0.35
+    }
+   ],
+   "text": "The dead don't pick padlocks. They don't eat protein bars, either. Something else was in here with me."
+  },
+  {
+   "id": "c3e-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "The dead don't pick padlocks. They don't eat protein bars, either.",
+     "gap": 0.35
+    },
+    {
+     "text": "Something else was in here with me.",
+     "gap": 0.35
+    }
+   ],
+   "text": "The dead don't pick padlocks. They don't eat protein bars, either. Something else was in here with me."
+  },
+  {
+   "id": "c3f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I searched every tent. Every shelf. Behind the kayaks, and behind the cardboard bear, which got me for the third time.",
+     "gap": 0.4
+    },
+    {
+     "text": "Nothing.",
+     "gap": 0.4
+    }
+   ],
+   "text": "I searched every tent. Every shelf. Behind the kayaks, and behind the cardboard bear, which got me for the third time. Nothing."
+  },
+  {
+   "id": "c3f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I searched every tent. Every shelf. Behind the kayaks, and behind the cardboard bear, which got me for the third time.",
+     "gap": 0.4
+    },
+    {
+     "text": "Nothing.",
+     "gap": 0.4
+    }
+   ],
+   "text": "I searched every tent. Every shelf. Behind the kayaks, and behind the cardboard bear, which got me for the third time. Nothing."
+  },
+  {
+   "id": "c3f-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I searched every tent. Every shelf. Behind the kayaks, and behind the cardboard bear, which got me for the third time.",
+     "gap": 0.4
+    },
+    {
+     "text": "Nothing.",
+     "gap": 0.4
+    }
+   ],
+   "text": "I searched every tent. Every shelf. Behind the kayaks, and behind the cardboard bear, which got me for the third time. Nothing."
+  },
+  {
+   "id": "c3g-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That night, I put the food and water in a plastic box and slept with it next to my head."
+  },
+  {
+   "id": "c3g-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That night, I put the food and water in a plastic box and slept with it next to my head."
+  },
+  {
+   "id": "c3h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Vera called while I was lying there."
+  },
+  {
+   "id": "c3h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Vera called while I was lying there."
+  },
+  {
+   "id": "c3h-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Vera called while I was lying there."
+  },
+  {
+   "id": "c3j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I haven't agreed to anything."
+  },
+  {
+   "id": "c3j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I haven't agreed to anything."
+  },
+  {
+   "id": "c3j-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I haven't agreed to anything."
+  },
+  {
+   "id": "c3l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I didn't either. I let the radio go quiet."
+  },
+  {
+   "id": "c3l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I didn't either. I let the radio go quiet."
+  },
+  {
+   "id": "c3m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I don't remember falling asleep. I remember waking up, because the lid of the box was back on, and one of the latches hadn't quite clicked shut."
+  },
+  {
+   "id": "c3m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I don't remember falling asleep. I remember waking up, because the lid of the box was back on, and one of the latches hadn't quite clicked shut."
+  },
+  {
+   "id": "c3n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Two more bars were gone. Two more bottles.",
+     "gap": 0.35
+    },
+    {
+     "text": "Whoever was doing this had stood close enough to watch me sleep.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Two more bars were gone. Two more bottles. Whoever was doing this had stood close enough to watch me sleep."
+  },
+  {
+   "id": "c3n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Two more bars were gone. Two more bottles.",
+     "gap": 0.35
+    },
+    {
+     "text": "Whoever was doing this had stood close enough to watch me sleep.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Two more bars were gone. Two more bottles. Whoever was doing this had stood close enough to watch me sleep."
+  },
+  {
+   "id": "c3n-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Two more bars were gone. Two more bottles.",
+     "gap": 0.35
+    },
+    {
+     "text": "Whoever was doing this had stood close enough to watch me sleep.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Two more bars were gone. Two more bottles. Whoever was doing this had stood close enough to watch me sleep."
+  },
+  {
+   "id": "c4a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I put climbing chalk on the floor, and the footprints went up the wall."
+  },
+  {
+   "id": "c4a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I put climbing chalk on the floor, and the footprints went up the wall."
+  },
+  {
+   "id": "c4b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That was my entire investigation. Six years in mall security, and my big plan was waiting for somebody to step in powder."
+  },
+  {
+   "id": "c4b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That was my entire investigation. Six years in mall security, and my big plan was waiting for somebody to step in powder."
+  },
+  {
+   "id": "c4c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I spread it around the food box, under the stockroom door, and between the tents. Then I lay down with my boots on and pretended to sleep."
+  },
+  {
+   "id": "c4c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I spread it around the food box, under the stockroom door, and between the tents. Then I lay down with my boots on and pretended to sleep."
+  },
+  {
+   "id": "c4d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Sometime before dawn, I heard plastic bend.",
+     "gap": 0.4
+    },
+    {
+     "text": "By the time I got my flashlight on, the store was still again.",
+     "gap": 0.3
+    }
+   ],
+   "text": "Sometime before dawn, I heard plastic bend. By the time I got my flashlight on, the store was still again."
+  },
+  {
+   "id": "c4d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Sometime before dawn, I heard plastic bend.",
+     "gap": 0.4
+    },
+    {
+     "text": "By the time I got my flashlight on, the store was still again.",
+     "gap": 0.3
+    }
+   ],
+   "text": "Sometime before dawn, I heard plastic bend. By the time I got my flashlight on, the store was still again."
+  },
+  {
+   "id": "c4d-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Sometime before dawn, I heard plastic bend.",
+     "gap": 0.4
+    },
+    {
+     "text": "By the time I got my flashlight on, the store was still again.",
+     "gap": 0.3
+    }
+   ],
+   "text": "Sometime before dawn, I heard plastic bend. By the time I got my flashlight on, the store was still again."
+  },
+  {
+   "id": "c4e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Small sneakers. A split in the right sole that left a little square of clean floor in every print."
+  },
+  {
+   "id": "c4e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Small sneakers. A split in the right sole that left a little square of clean floor in every print."
+  },
+  {
+   "id": "c4f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The trail came from behind the climbing wall display. It went to the food box. Then it went back."
+  },
+  {
+   "id": "c4f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The trail came from behind the climbing wall display. It went to the food box. Then it went back."
+  },
+  {
+   "id": "c4g-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Behind the display there's a tall metal rack bolted to the wall. A chalk print on the bottom shelf. Another one halfway up the wall. A handprint on a dusty pipe."
+  },
+  {
+   "id": "c4g-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Behind the display there's a tall metal rack bolted to the wall. A chalk print on the bottom shelf. Another one halfway up the wall. A handprint on a dusty pipe."
+  },
+  {
+   "id": "c4h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I followed the pipe up with my light."
+  },
+  {
+   "id": "c4h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I followed the pipe up with my light."
+  },
+  {
+   "id": "c4i-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "One ceiling tile was cleaner around the edges than all the others."
+  },
+  {
+   "id": "c4i-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "One ceiling tile was cleaner around the edges than all the others."
+  },
+  {
+   "id": "c4j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every door locked. Every window whole. I'd checked that gate so many times my hand hurt."
+  },
+  {
+   "id": "c4j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every door locked. Every window whole. I'd checked that gate so many times my hand hurt."
+  },
+  {
+   "id": "c4k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I hadn't looked up once."
+  },
+  {
+   "id": "c4k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I hadn't looked up once."
+  },
+  {
+   "id": "c4k-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I hadn't looked up once."
+  },
+  {
+   "id": "c4l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And if a thief could get into my store through the ceiling, so could the woman on the radio."
+  },
+  {
+   "id": "c4l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And if a thief could get into my store through the ceiling, so could the woman on the radio."
+  },
+  {
+   "id": "c4m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A little white flake drifted down out of the seam above me."
+  },
+  {
+   "id": "c4m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A little white flake drifted down out of the seam above me."
+  },
+  {
+   "id": "c4n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I turned off the flashlight."
+  },
+  {
+   "id": "c4n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I turned off the flashlight."
+  },
+  {
+   "id": "c4n-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I turned off the flashlight."
+  },
+  {
+   "id": "c4o-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Whoever was up there had seen the light.",
+     "gap": 0.4
+    },
+    {
+     "text": "And they were still there.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Whoever was up there had seen the light. And they were still there."
+  },
+  {
+   "id": "c4o-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Whoever was up there had seen the light.",
+     "gap": 0.4
+    },
+    {
+     "text": "And they were still there.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Whoever was up there had seen the light. And they were still there."
+  },
+  {
+   "id": "c4o-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Whoever was up there had seen the light.",
+     "gap": 0.4
+    },
+    {
+     "text": "And they were still there.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Whoever was up there had seen the light. And they were still there."
+  },
+  {
+   "id": "c5a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I caught the thief, and his shoes were held together with duct tape."
+  },
+  {
+   "id": "c5a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I caught the thief, and his shoes were held together with duct tape."
+  },
+  {
+   "id": "c5b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I waited behind the display until my knee went stiff. Out in the hall, Marcus rattled my gate and moved on."
+  },
+  {
+   "id": "c5b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I waited behind the display until my knee went stiff. Out in the hall, Marcus rattled my gate and moved on."
+  },
+  {
+   "id": "c5c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Then the tile lifted.",
+     "gap": 0.4
+    },
+    {
+     "text": "Two fingers. Then a head. Then a very skinny boy, lowering himself onto the top shelf like he'd done it a hundred times. He even stepped around the one bar that squeaks. I didn't know it squeaked. It's my store.",
+     "gap": 0.3
+    }
+   ],
+   "text": "Then the tile lifted. Two fingers. Then a head. Then a very skinny boy, lowering himself onto the top shelf like he'd done it a hundred times. He even stepped around the one bar that squeaks. I didn't know it squeaked. It's my store."
+  },
+  {
+   "id": "c5c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Then the tile lifted.",
+     "gap": 0.4
+    },
+    {
+     "text": "Two fingers. Then a head. Then a very skinny boy, lowering himself onto the top shelf like he'd done it a hundred times. He even stepped around the one bar that squeaks. I didn't know it squeaked. It's my store.",
+     "gap": 0.3
+    }
+   ],
+   "text": "Then the tile lifted. Two fingers. Then a head. Then a very skinny boy, lowering himself onto the top shelf like he'd done it a hundred times. He even stepped around the one bar that squeaks. I didn't know it squeaked. It's my store."
+  },
+  {
+   "id": "c5c-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Then the tile lifted.",
+     "gap": 0.4
+    },
+    {
+     "text": "Two fingers. Then a head. Then a very skinny boy, lowering himself onto the top shelf like he'd done it a hundred times. He even stepped around the one bar that squeaks. I didn't know it squeaked. It's my store.",
+     "gap": 0.3
+    }
+   ],
+   "text": "Then the tile lifted. Two fingers. Then a head. Then a very skinny boy, lowering himself onto the top shelf like he'd done it a hundred times. He even stepped around the one bar that squeaks. I didn't know it squeaked. It's my store."
+  },
+  {
+   "id": "c5d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He went straight to the food box. I waited until he bent over it."
+  },
+  {
+   "id": "c5d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He went straight to the food box. I waited until he bent over it."
+  },
+  {
+   "id": "c5e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then I stood up."
+  },
+  {
+   "id": "c5e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then I stood up."
+  },
+  {
+   "id": "c5e-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then I stood up."
+  },
+  {
+   "id": "c5f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He had a protein bar in his hand. His sweatshirt hung past his fingers. He was about as dusty as the pipe, and he looked hungry enough to eat the wrapper."
+  },
+  {
+   "id": "c5f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He had a protein bar in his hand. His sweatshirt hung past his fingers. He was about as dusty as the pipe, and he looked hungry enough to eat the wrapper."
+  },
+  {
+   "id": "c5g-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd practiced this moment for an hour. In my head, the thief was a grown man."
+  },
+  {
+   "id": "c5g-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd practiced this moment for an hour. In my head, the thief was a grown man."
+  },
+  {
+   "id": "c5h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Put it down."
+  },
+  {
+   "id": "c5h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Put it down."
+  },
+  {
+   "id": "c5h-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Put it down."
+  },
+  {
+   "id": "c5i-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "He put it down.",
+     "gap": 0.35
+    },
+    {
+     "text": "Then he ran straight at me.",
+     "gap": 0.3
+    }
+   ],
+   "text": "He put it down. Then he ran straight at me."
+  },
+  {
+   "id": "c5i-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "He put it down.",
+     "gap": 0.35
+    },
+    {
+     "text": "Then he ran straight at me.",
+     "gap": 0.3
+    }
+   ],
+   "text": "He put it down. Then he ran straight at me."
+  },
+  {
+   "id": "c5i-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "He put it down.",
+     "gap": 0.35
+    },
+    {
+     "text": "Then he ran straight at me.",
+     "gap": 0.3
+    }
+   ],
+   "text": "He put it down. Then he ran straight at me."
+  },
+  {
+   "id": "c5j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He got past me and two shelves up the rack before I caught the back of his sweatshirt. He twisted so hard the stitching tore. The whole rack banged against the wall."
+  },
+  {
+   "id": "c5j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He got past me and two shelves up the rack before I caught the back of his sweatshirt. He twisted so hard the stitching tore. The whole rack banged against the wall."
+  },
+  {
+   "id": "c5k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Out in the hall, something stopped walking.",
+     "gap": 0.4
+    },
+    {
+     "text": "We both froze.",
+     "gap": 0.4
+    }
+   ],
+   "text": "Out in the hall, something stopped walking. We both froze."
+  },
+  {
+   "id": "c5k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Out in the hall, something stopped walking.",
+     "gap": 0.4
+    },
+    {
+     "text": "We both froze.",
+     "gap": 0.4
+    }
+   ],
+   "text": "Out in the hall, something stopped walking. We both froze."
+  },
+  {
+   "id": "c5k-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Out in the hall, something stopped walking.",
+     "gap": 0.4
+    },
+    {
+     "text": "We both froze.",
+     "gap": 0.4
+    }
+   ],
+   "text": "Out in the hall, something stopped walking. We both froze."
+  },
+  {
+   "id": "c5l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A shadow slid across the gate. It leaned on the bars, and the gate creaked."
+  },
+  {
+   "id": "c5l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A shadow slid across the gate. It leaned on the bars, and the gate creaked."
+  },
+  {
+   "id": "c5m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then it moved on."
+  },
+  {
+   "id": "c5m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then it moved on."
+  },
+  {
+   "id": "c5m-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then it moved on."
+  },
+  {
+   "id": "c5n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The boy let out a breath and glared at me like this was my fault."
+  },
+  {
+   "id": "c5n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The boy let out a breath and glared at me like this was my fault."
+  },
+  {
+   "id": "c5p-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You're stealing my food."
+  },
+  {
+   "id": "c5p-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You're stealing my food."
+  },
+  {
+   "id": "c5p-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You're stealing my food."
+  },
+  {
+   "id": "c5r-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "How old are you?"
+  },
+  {
+   "id": "c5r-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "How old are you?"
+  },
+  {
+   "id": "c5r-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "How old are you?"
+  },
+  {
+   "id": "c5t-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Who else is up there?"
+  },
+  {
+   "id": "c5t-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Who else is up there?"
+  },
+  {
+   "id": "c5t-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Who else is up there?"
+  },
+  {
+   "id": "c5u-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "His hand tightened on the pipe."
+  },
+  {
+   "id": "c5u-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "His hand tightened on the pipe."
+  },
+  {
+   "id": "c5u-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "His hand tightened on the pipe."
+  },
+  {
+   "id": "c6a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A fifteen-year-old had been living in my mall for four months, and I'd never noticed."
+  },
+  {
+   "id": "c6a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A fifteen-year-old had been living in my mall for four months, and I'd never noticed."
+  },
+  {
+   "id": "c6b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "His name was Theo. He sat on an upside-down bucket, close enough to the rack to run."
+  },
+  {
+   "id": "c6b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "His name was Theo. He sat on an upside-down bucket, close enough to the rack to run."
+  },
+  {
+   "id": "c6c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Where do you sleep?"
+  },
+  {
+   "id": "c6c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Where do you sleep?"
+  },
+  {
+   "id": "c6c-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Where do you sleep?"
+  },
+  {
+   "id": "c6e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "For four months? How do you eat?"
+  },
+  {
+   "id": "c6e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "For four months? How do you eat?"
+  },
+  {
+   "id": "c6g-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the doors?"
+  },
+  {
+   "id": "c6g-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the doors?"
+  },
+  {
+   "id": "c6g-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the doors?"
+  },
+  {
+   "id": "c6i-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I looked at the keys on my belt. Forty-two keys, and a kid had beaten every one of them with a ceiling tile."
+  },
+  {
+   "id": "c6i-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I looked at the keys on my belt. Forty-two keys, and a kid had beaten every one of them with a ceiling tile."
+  },
+  {
+   "id": "c6k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I stared at him."
+  },
+  {
+   "id": "c6k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I stared at him."
+  },
+  {
+   "id": "c6k-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I stared at him."
+  },
+  {
+   "id": "c6m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My face went hot. Even now. Even with all of that outside."
+  },
+  {
+   "id": "c6m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My face went hot. Even now. Even with all of that outside."
+  },
+  {
+   "id": "c6n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You can't stay here."
+  },
+  {
+   "id": "c6n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You can't stay here."
+  },
+  {
+   "id": "c6n-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You can't stay here."
+  },
+  {
+   "id": "c6o-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It came out before I'd thought about it. But I knew where it came from."
+  },
+  {
+   "id": "c6o-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It came out before I'd thought about it. But I knew where it came from."
+  },
+  {
+   "id": "c6p-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The first night, a guy I loved sat outside that gate and trusted me to know what to do. I didn't. Now this kid was sitting six feet from the same gate, waiting for me to be in charge."
+  },
+  {
+   "id": "c6p-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The first night, a guy I loved sat outside that gate and trusted me to know what to do. I didn't. Now this kid was sitting six feet from the same gate, waiting for me to be in charge."
+  },
+  {
+   "id": "c6q-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I wanted somebody better for him. A firefighter. A parent. Anybody."
+  },
+  {
+   "id": "c6q-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I wanted somebody better for him. A firefighter. A parent. Anybody."
+  },
+  {
+   "id": "c6r-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He was looking at the only adult available."
+  },
+  {
+   "id": "c6r-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He was looking at the only adult available."
+  },
+  {
+   "id": "c6r-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He was looking at the only adult available."
+  },
+  {
+   "id": "c6s-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo stood up. He didn't argue. He didn't take anything, because he'd brought nothing."
+  },
+  {
+   "id": "c6s-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo stood up. He didn't argue. He didn't take anything, because he'd brought nothing."
+  },
+  {
+   "id": "c6t-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He was halfway up the rack when he stopped."
+  },
+  {
+   "id": "c6t-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He was halfway up the rack when he stopped."
+  },
+  {
+   "id": "c6v-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "About ten days. For one person."
+  },
+  {
+   "id": "c6v-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "About ten days. For one person."
+  },
+  {
+   "id": "c6w-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He looked toward the front of the mall."
+  },
+  {
+   "id": "c6w-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He looked toward the front of the mall."
+  },
+  {
+   "id": "c6w-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He looked toward the front of the mall."
+  },
+  {
+   "id": "c7a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The water I needed was sitting under a hundred dead people."
+  },
+  {
+   "id": "c7a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The water I needed was sitting under a hundred dead people."
+  },
+  {
+   "id": "c7c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "In six years I'd fished coins out of that fountain, two phones, and once an engagement ring a guy dropped before he got to the question."
+  },
+  {
+   "id": "c7c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "In six years I'd fished coins out of that fountain, two phones, and once an engagement ring a guy dropped before he got to the question."
+  },
+  {
+   "id": "c7d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd never wondered where the water came from."
+  },
+  {
+   "id": "c7d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd never wondered where the water came from."
+  },
+  {
+   "id": "c7f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The pump room door is in the center court, right beside the pretzel place. On the cameras, that doorway was buried in bodies."
+  },
+  {
+   "id": "c7f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The pump room door is in the center court, right beside the pretzel place. On the cameras, that doorway was buried in bodies."
+  },
+  {
+   "id": "c7h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He drew the route in the chalk with his finger. Up through my ceiling. Over the cinema. Along a service walkway above the center court. Down a ladder inside the big column by the fountain."
+  },
+  {
+   "id": "c7h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He drew the route in the chalk with his finger. Up through my ceiling. Over the cinema. Along a service walkway above the center court. Down a ladder inside the big column by the fountain."
+  },
+  {
+   "id": "c7j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "When do we go?"
+  },
+  {
+   "id": "c7j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "When do we go?"
+  },
+  {
+   "id": "c7j-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "When do we go?"
+  },
+  {
+   "id": "c7l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Why at night?"
+  },
+  {
+   "id": "c7l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Why at night?"
+  },
+  {
+   "id": "c7l-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Why at night?"
+  },
+  {
+   "id": "c7m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He looked at the floor."
+  },
+  {
+   "id": "c7m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He looked at the floor."
+  },
+  {
+   "id": "c7m-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He looked at the floor."
+  },
+  {
+   "id": "c7o-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What people?"
+  },
+  {
+   "id": "c7o-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What people?"
+  },
+  {
+   "id": "c7o-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What people?"
+  },
+  {
+   "id": "c7q-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Eight o'clock. Twenty minutes there, fill up, twenty minutes back. On the roof by ten to nine. Easy."
+  },
+  {
+   "id": "c7q-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Eight o'clock. Twenty minutes there, fill up, twenty minutes back. On the roof by ten to nine. Easy."
+  },
+  {
+   "id": "c7r-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That night, Vera called again."
+  },
+  {
+   "id": "c7r-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That night, Vera called again."
+  },
+  {
+   "id": "c7r-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That night, Vera called again."
+  },
+  {
+   "id": "c7t-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I held the radio so tight the plastic creaked. I'm a dad. She knew exactly where to push."
+  },
+  {
+   "id": "c7t-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I held the radio so tight the plastic creaked. I'm a dad. She knew exactly where to push."
+  },
+  {
+   "id": "c7u-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I started putting two protein bars and a bottle of water in a bag. I'd leave it at the department store gate."
+  },
+  {
+   "id": "c7u-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I started putting two protein bars and a bottle of water in a bag. I'd leave it at the department store gate."
+  },
+  {
+   "id": "c7v-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo watched me from the rack."
+  },
+  {
+   "id": "c7v-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo watched me from the rack."
+  },
+  {
+   "id": "c7v-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo watched me from the rack."
+  },
+  {
+   "id": "c7x-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "There's a little kid up there."
+  },
+  {
+   "id": "c7x-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "There's a little kid up there."
+  },
+  {
+   "id": "c7z-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You've never heard her."
+  },
+  {
+   "id": "c7z-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You've never heard her."
+  },
+  {
+   "id": "c7z-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You've never heard her."
+  },
+  {
+   "id": "c7za-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo didn't look away."
+  },
+  {
+   "id": "c7za-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo didn't look away."
+  },
+  {
+   "id": "c7za-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo didn't look away."
+  },
+  {
+   "id": "c8a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "To get water, I had to crawl through the ceiling right over their heads."
+  },
+  {
+   "id": "c8a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "To get water, I had to crawl through the ceiling right over their heads."
+  },
+  {
+   "id": "c8b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I never took that bag to Vera's gate. I never unpacked it, either."
+  },
+  {
+   "id": "c8b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I never took that bag to Vera's gate. I never unpacked it, either."
+  },
+  {
+   "id": "c8c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At eight, we went up. I took the battery out of Marcus's radio. One squawk over that court and we'd both be dinner. Then I wrapped my keys in a sock so they couldn't jingle."
+  },
+  {
+   "id": "c8c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At eight, we went up. I took the battery out of Marcus's radio. One squawk over that court and we'd both be dinner. Then I wrapped my keys in a sock so they couldn't jingle."
+  },
+  {
+   "id": "c8e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night."
+  },
+  {
+   "id": "c8e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night."
+  },
+  {
+   "id": "c8e-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Every night."
+  },
+  {
+   "id": "c8g-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It was. I'd have given anything to be annoyed by them on a normal Tuesday."
+  },
+  {
+   "id": "c8g-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It was. I'd have given anything to be annoyed by them on a normal Tuesday."
+  },
+  {
+   "id": "c8h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Above my store, the air was hot and full of dust. Theo pointed with his flashlight."
+  },
+  {
+   "id": "c8h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Above my store, the air was hot and full of dust. Theo pointed with his flashlight."
+  },
+  {
+   "id": "c8j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I went on my hands and knees, beam to beam. Every time I breathed too hard, the tiles shifted under me."
+  },
+  {
+   "id": "c8j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I went on my hands and knees, beam to beam. Every time I breathed too hard, the tiles shifted under me."
+  },
+  {
+   "id": "c8k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Over the cinema, he stopped beside a blanket. Three empty water bottles. A folded hoodie. A photo, face down. He slid it under the blanket before I could see it."
+  },
+  {
+   "id": "c8k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Over the cinema, he stopped beside a blanket. Three empty water bottles. A folded hoodie. A photo, face down. He slid it under the blanket before I could see it."
+  },
+  {
+   "id": "c8l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Next to his bed was a little metal door. CINEMA SERVICE."
+  },
+  {
+   "id": "c8l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Next to his bed was a little metal door. CINEMA SERVICE."
+  },
+  {
+   "id": "c8m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Key seventeen fit.",
+     "gap": 0.35
+    },
+    {
+     "text": "Theo watched the lock turn like I'd done a magic trick.",
+     "gap": 0.3
+    }
+   ],
+   "text": "Key seventeen fit. Theo watched the lock turn like I'd done a magic trick."
+  },
+  {
+   "id": "c8m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Key seventeen fit.",
+     "gap": 0.35
+    },
+    {
+     "text": "Theo watched the lock turn like I'd done a magic trick.",
+     "gap": 0.3
+    }
+   ],
+   "text": "Key seventeen fit. Theo watched the lock turn like I'd done a magic trick."
+  },
+  {
+   "id": "c8m-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Key seventeen fit.",
+     "gap": 0.35
+    },
+    {
+     "text": "Theo watched the lock turn like I'd done a magic trick.",
+     "gap": 0.3
+    }
+   ],
+   "text": "Key seventeen fit. Theo watched the lock turn like I'd done a magic trick."
+  },
+  {
+   "id": "c8n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "On the other side, a narrow walkway ran out over the center court. Through the gaps, I could see the tops of their heads."
+  },
+  {
+   "id": "c8n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "On the other side, a narrow walkway ran out over the center court. Through the gaps, I could see the tops of their heads."
+  },
+  {
+   "id": "c8o-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Halfway across, the walkway just ended. After that, there were only two beams."
+  },
+  {
+   "id": "c8o-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Halfway across, the walkway just ended. After that, there were only two beams."
+  },
+  {
+   "id": "c8p-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo looked back at me."
+  },
+  {
+   "id": "c8p-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo looked back at me."
+  },
+  {
+   "id": "c8p-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo looked back at me."
+  },
+  {
+   "id": "c9a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My best friend walked his rounds while I crawled over his head."
+  },
+  {
+   "id": "c9a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My best friend walked his rounds while I crawled over his head."
+  },
+  {
+   "id": "c9b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo crossed the first gap like it was a sidewalk. I watched where his hands went and tried to put mine in the same places."
+  },
+  {
+   "id": "c9b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo crossed the first gap like it was a sidewalk. I watched where his hands went and tried to put mine in the same places."
+  },
+  {
+   "id": "c9c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "There's a big difference between watching a skinny fifteen-year-old do something and asking a thirty-eight-year-old's knees to do it."
+  },
+  {
+   "id": "c9c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "There's a big difference between watching a skinny fifteen-year-old do something and asking a thirty-eight-year-old's knees to do it."
+  },
+  {
+   "id": "c9d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Sweat ran down my nose. I caught it on my sleeve before it could drip."
+  },
+  {
+   "id": "c9d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Sweat ran down my nose. I caught it on my sleeve before it could drip."
+  },
+  {
+   "id": "c9f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Below us, the fountain was dark, with coins on the bottom. The dead stood around it shoulder to shoulder, all facing the food court."
+  },
+  {
+   "id": "c9f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Below us, the fountain was dark, with coins on the bottom. The dead stood around it shoulder to shoulder, all facing the food court."
+  },
+  {
+   "id": "c9g-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I stopped counting at a hundred."
+  },
+  {
+   "id": "c9g-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I stopped counting at a hundred."
+  },
+  {
+   "id": "c9g-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I stopped counting at a hundred."
+  },
+  {
+   "id": "c9h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My watch said eight forty-seven. We were behind."
+  },
+  {
+   "id": "c9h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My watch said eight forty-seven. We were behind."
+  },
+  {
+   "id": "c9i-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then a gate rattled at the far end of the hall."
+  },
+  {
+   "id": "c9i-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then a gate rattled at the far end of the hall."
+  },
+  {
+   "id": "c9j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I knew who it was before I saw him."
+  },
+  {
+   "id": "c9j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I knew who it was before I saw him."
+  },
+  {
+   "id": "c9j-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I knew who it was before I saw him."
+  },
+  {
+   "id": "c9k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus came around the corner and stopped at the first store. Two pulls on the gate. A pause. Then the next one."
+  },
+  {
+   "id": "c9k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus came around the corner and stopped at the first store. Two pulls on the gate. A pause. Then the next one."
+  },
+  {
+   "id": "c9l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I caught myself waiting for him to look up."
+  },
+  {
+   "id": "c9l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I caught myself waiting for him to look up."
+  },
+  {
+   "id": "c9m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo touched my shoulder. He needed room."
+  },
+  {
+   "id": "c9m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo touched my shoulder. He needed room."
+  },
+  {
+   "id": "c9n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I moved my knee.",
+     "gap": 0.35
+    },
+    {
+     "text": "The metal under it folded like a soda can.",
+     "gap": 0.3
+    }
+   ],
+   "text": "I moved my knee. The metal under it folded like a soda can."
+  },
+  {
+   "id": "c9n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I moved my knee.",
+     "gap": 0.35
+    },
+    {
+     "text": "The metal under it folded like a soda can.",
+     "gap": 0.3
+    }
+   ],
+   "text": "I moved my knee. The metal under it folded like a soda can."
+  },
+  {
+   "id": "c9n-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "I moved my knee.",
+     "gap": 0.35
+    },
+    {
+     "text": "The metal under it folded like a soda can.",
+     "gap": 0.3
+    }
+   ],
+   "text": "I moved my knee. The metal under it folded like a soda can."
+  },
+  {
+   "id": "c9o-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My stomach hit the beam. My right leg punched straight through a tile. Something sharp caught my boot and held on."
+  },
+  {
+   "id": "c9o-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My stomach hit the beam. My right leg punched straight through a tile. Something sharp caught my boot and held on."
+  },
+  {
+   "id": "c9p-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Day four. Eight forty-nine p.m.",
+     "gap": 0.45
+    },
+    {
+     "text": "That's where you came in.",
+     "gap": 0.6
+    }
+   ],
+   "text": "Day four. Eight forty-nine p.m. That's where you came in."
+  },
+  {
+   "id": "c9p-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Day four. Eight forty-nine p.m.",
+     "gap": 0.45
+    },
+    {
+     "text": "That's where you came in.",
+     "gap": 0.6
+    }
+   ],
+   "text": "Day four. Eight forty-nine p.m. That's where you came in."
+  },
+  {
+   "id": "c9p-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Day four. Eight forty-nine p.m.",
+     "gap": 0.45
+    },
+    {
+     "text": "That's where you came in.",
+     "gap": 0.6
+    }
+   ],
+   "text": "Day four. Eight forty-nine p.m. That's where you came in."
+  },
+  {
+   "id": "c9q-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Below me, Marcus stopped walking.",
+     "gap": 0.5
+    },
+    {
+     "text": "And he looked up.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Below me, Marcus stopped walking. And he looked up."
+  },
+  {
+   "id": "c9q-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Below me, Marcus stopped walking.",
+     "gap": 0.5
+    },
+    {
+     "text": "And he looked up.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Below me, Marcus stopped walking. And he looked up."
+  },
+  {
+   "id": "c9q-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Below me, Marcus stopped walking.",
+     "gap": 0.5
+    },
+    {
+     "text": "And he looked up.",
+     "gap": 1.4
+    }
+   ],
+   "text": "Below me, Marcus stopped walking. And he looked up."
+  },
+  {
+   "id": "c10a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The kid I'd told to leave was the only thing keeping me out of that crowd."
+  },
+  {
+   "id": "c10a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The kid I'd told to leave was the only thing keeping me out of that crowd."
+  },
+  {
+   "id": "c10b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo lay flat on the beam and grabbed my other wrist. His fingers slipped on my sleeve."
+  },
+  {
+   "id": "c10b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo lay flat on the beam and grabbed my other wrist. His fingers slipped on my sleeve."
+  },
+  {
+   "id": "c10c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A long piece of tile broke off and hit somebody's shoulder. Under me, they started pushing in toward the hole. Slowly. One body leaning into the next."
+  },
+  {
+   "id": "c10c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A long piece of tile broke off and hit somebody's shoulder. Under me, they started pushing in toward the hole. Slowly. One body leaning into the next."
+  },
+  {
+   "id": "c10d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus stood in the middle of them, looking up at my foot."
+  },
+  {
+   "id": "c10d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Marcus stood in the middle of them, looking up at my foot."
+  },
+  {
+   "id": "c10e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I could see the worn spot on his cap, where he used to pick at it while he told me a joke I'd already heard."
+  },
+  {
+   "id": "c10e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I could see the worn spot on his cap, where he used to pick at it while he told me a joke I'd already heard."
+  },
+  {
+   "id": "c10f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I almost said his name."
+  },
+  {
+   "id": "c10f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I almost said his name."
+  },
+  {
+   "id": "c10f-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I almost said his name."
+  },
+  {
+   "id": "c10g-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo smacked my arm."
+  },
+  {
+   "id": "c10g-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo smacked my arm."
+  },
+  {
+   "id": "c10g-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo smacked my arm."
+  },
+  {
+   "id": "c10i-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He'd pulled the climbing strap off my belt and looped it around the steel beam with one hand."
+  },
+  {
+   "id": "c10i-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He'd pulled the climbing strap off my belt and looped it around the steel beam with one hand."
+  },
+  {
+   "id": "c10k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd been squeezing his sleeve so hard it was twisted around his arm. I made my fingers open."
+  },
+  {
+   "id": "c10k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd been squeezing his sleeve so hard it was twisted around his arm. I made my fingers open."
+  },
+  {
+   "id": "c10l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He leaned back on the strap, braced his sneaker against a pipe, and pulled."
+  },
+  {
+   "id": "c10l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He leaned back on the strap, braced his sneaker against a pipe, and pulled."
+  },
+  {
+   "id": "c10n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I got an elbow onto the steel. Pushed until my shoulder felt like it was coming apart."
+  },
+  {
+   "id": "c10n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I got an elbow onto the steel. Pushed until my shoulder felt like it was coming apart."
+  },
+  {
+   "id": "c10o-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "My boot stayed where it was.",
+     "gap": 0.4
+    },
+    {
+     "text": "My foot came out of it.",
+     "gap": 0.4
+    }
+   ],
+   "text": "My boot stayed where it was. My foot came out of it."
+  },
+  {
+   "id": "c10o-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "My boot stayed where it was.",
+     "gap": 0.4
+    },
+    {
+     "text": "My foot came out of it.",
+     "gap": 0.4
+    }
+   ],
+   "text": "My boot stayed where it was. My foot came out of it."
+  },
+  {
+   "id": "c10o-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "My boot stayed where it was.",
+     "gap": 0.4
+    },
+    {
+     "text": "My foot came out of it.",
+     "gap": 0.4
+    }
+   ],
+   "text": "My boot stayed where it was. My foot came out of it."
+  },
+  {
+   "id": "c10p-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "For a second I thought that meant I was falling."
+  },
+  {
+   "id": "c10p-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "For a second I thought that meant I was falling."
+  },
+  {
+   "id": "c10q-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then my knee slid over the edge, and Theo dragged me onto the beam beside him."
+  },
+  {
+   "id": "c10q-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Then my knee slid over the edge, and Theo dragged me onto the beam beside him."
+  },
+  {
+   "id": "c10r-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Below us, my boot let go. It landed in the empty fountain with a bang that went on forever, and every head in that court turned toward it."
+  },
+  {
+   "id": "c10r-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Below us, my boot let go. It landed in the empty fountain with a bang that went on forever, and every head in that court turned toward it."
+  },
+  {
+   "id": "c10s-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "We lay there breathing into our sleeves. Theo's pant leg was torn at the calf. There was blood on the brace he'd crawled across to reach me."
+  },
+  {
+   "id": "c10s-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "We lay there breathing into our sleeves. Theo's pant leg was torn at the calf. There was blood on the brace he'd crawled across to reach me."
+  },
+  {
+   "id": "c10t-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My watch said eight fifty-eight."
+  },
+  {
+   "id": "c10t-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My watch said eight fifty-eight."
+  },
+  {
+   "id": "c10t-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My watch said eight fifty-eight."
+  },
+  {
+   "id": "c10u-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Going back meant crossing the broken part in the half dark, in one boot, in a hurry. The water was twenty feet below us."
+  },
+  {
+   "id": "c10u-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Going back meant crossing the broken part in the half dark, in one boot, in a hurry. The water was twenty feet below us."
+  },
+  {
+   "id": "c10v-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Lily needed me alive more than she needed me on time."
+  },
+  {
+   "id": "c10v-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Lily needed me alive more than she needed me on time."
+  },
+  {
+   "id": "c10w-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Keep going, I whispered."
+  },
+  {
+   "id": "c10w-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Keep going, I whispered."
+  },
+  {
+   "id": "c10w-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Keep going, I whispered."
+  },
+  {
+   "id": "c11a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At nine o'clock, while my daughter blinked at an empty roof, I was standing in front of eight thousand gallons of water."
+  },
+  {
+   "id": "c11a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At nine o'clock, while my daughter blinked at an empty roof, I was standing in front of eight thousand gallons of water."
+  },
+  {
+   "id": "c11b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The ladder ran down inside the column. At the bottom, a hatch opened into the pump room under the fountain."
+  },
+  {
+   "id": "c11b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The ladder ran down inside the column. At the bottom, a hatch opened into the pump room under the fountain."
+  },
+  {
+   "id": "c11c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The tank filled most of the room. Eight thousand gallons, right on the side. Behind a little glass window, water."
+  },
+  {
+   "id": "c11c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The tank filled most of the room. Eight thousand gallons, right on the side. Behind a little glass window, water."
+  },
+  {
+   "id": "c11d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I put my hand flat on the tank and left it there. For the first time in four days, I wasn't counting bottles."
+  },
+  {
+   "id": "c11d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I put my hand flat on the tank and left it there. For the first time in four days, I wasn't counting bottles."
+  },
+  {
+   "id": "c11e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo came down the last rungs slowly, favoring his leg."
+  },
+  {
+   "id": "c11e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo came down the last rungs slowly, favoring his leg."
+  },
+  {
+   "id": "c11f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You hurt?"
+  },
+  {
+   "id": "c11f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You hurt?"
+  },
+  {
+   "id": "c11f-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You hurt?"
+  },
+  {
+   "id": "c11h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I saw."
+  },
+  {
+   "id": "c11h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I saw."
+  },
+  {
+   "id": "c11h-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I saw."
+  },
+  {
+   "id": "c11j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I almost smiled."
+  },
+  {
+   "id": "c11j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I almost smiled."
+  },
+  {
+   "id": "c11j-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I almost smiled."
+  },
+  {
+   "id": "c11k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "We filled the containers. Outside the pump room door, a shoe scraped along the floor, and dust shook out of the frame."
+  },
+  {
+   "id": "c11k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "We filled the containers. Outside the pump room door, a shoe scraped along the floor, and dust shook out of the frame."
+  },
+  {
+   "id": "c11l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo stared at that door."
+  },
+  {
+   "id": "c11l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo stared at that door."
+  },
+  {
+   "id": "c11l-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo stared at that door."
+  },
+  {
+   "id": "c11n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Who was here?"
+  },
+  {
+   "id": "c11n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Who was here?"
+  },
+  {
+   "id": "c11n-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Who was here?"
+  },
+  {
+   "id": "c11p-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What time?"
+  },
+  {
+   "id": "c11p-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What time?"
+  },
+  {
+   "id": "c11p-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What time?"
+  },
+  {
+   "id": "c11r-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "One-thirty.",
+     "gap": 0.6
+    },
+    {
+     "text": "Ten minutes before Marcus called me about a man walking wrong up the ramp.",
+     "gap": 1.4
+    }
+   ],
+   "text": "One-thirty. Ten minutes before Marcus called me about a man walking wrong up the ramp."
+  },
+  {
+   "id": "c11r-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "One-thirty.",
+     "gap": 0.6
+    },
+    {
+     "text": "Ten minutes before Marcus called me about a man walking wrong up the ramp.",
+     "gap": 1.4
+    }
+   ],
+   "text": "One-thirty. Ten minutes before Marcus called me about a man walking wrong up the ramp."
+  },
+  {
+   "id": "c11r-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "One-thirty.",
+     "gap": 0.6
+    },
+    {
+     "text": "Ten minutes before Marcus called me about a man walking wrong up the ramp.",
+     "gap": 1.4
+    }
+   ],
+   "text": "One-thirty. Ten minutes before Marcus called me about a man walking wrong up the ramp."
+  },
+  {
+   "id": "c12a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The dead didn't come to my mall by accident. Somebody called them."
+  },
+  {
+   "id": "c12a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The dead didn't come to my mall by accident. Somebody called them."
+  },
+  {
+   "id": "c12c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He wiped his nose on his sleeve."
+  },
+  {
+   "id": "c12c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He wiped his nose on his sleeve."
+  },
+  {
+   "id": "c12c-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He wiped his nose on his sleeve."
+  },
+  {
+   "id": "c12e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the woman?"
+  },
+  {
+   "id": "c12e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the woman?"
+  },
+  {
+   "id": "c12e-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the woman?"
+  },
+  {
+   "id": "c12g-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The food court glass. The crowd on my cameras, all turning the same way at once. I'd thought they were wandering in through any door they found."
+  },
+  {
+   "id": "c12g-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The food court glass. The crowd on my cameras, all turning the same way at once. I'd thought they were wandering in through any door they found."
+  },
+  {
+   "id": "c12h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "They weren't wandering. They were following a drill."
+  },
+  {
+   "id": "c12h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "They weren't wandering. They were following a drill."
+  },
+  {
+   "id": "c12i-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And Marcus was standing in their way."
+  },
+  {
+   "id": "c12i-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And Marcus was standing in their way."
+  },
+  {
+   "id": "c12i-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And Marcus was standing in their way."
+  },
+  {
+   "id": "c12j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The woman on my radio."
+  },
+  {
+   "id": "c12j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The woman on my radio."
+  },
+  {
+   "id": "c12j-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The woman on my radio."
+  },
+  {
+   "id": "c12l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Was there a little girl with them?"
+  },
+  {
+   "id": "c12l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Was there a little girl with them?"
+  },
+  {
+   "id": "c12n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You're sure?"
+  },
+  {
+   "id": "c12n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You're sure?"
+  },
+  {
+   "id": "c12n-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "You're sure?"
+  },
+  {
+   "id": "c12p-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I thought about the bag sitting next to my tent. Two bars and a bottle, for a little girl who didn't exist."
+  },
+  {
+   "id": "c12p-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I thought about the bag sitting next to my tent. Two bars and a bottle, for a little girl who didn't exist."
+  },
+  {
+   "id": "c12q-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I wanted to go straight to the department store, stand at her gate, and make her say it."
+  },
+  {
+   "id": "c12q-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I wanted to go straight to the department store, stand at her gate, and make her say it."
+  },
+  {
+   "id": "c12r-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My keys were still in the sock. I squeezed them until the teeth bit through."
+  },
+  {
+   "id": "c12r-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "My keys were still in the sock. I squeezed them until the teeth bit through."
+  },
+  {
+   "id": "c12t-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "His leg. The blood drying on his sneaker. He'd brought me here. Now he was waiting for me to get him home."
+  },
+  {
+   "id": "c12t-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "His leg. The blood drying on his sneaker. He'd brought me here. Now he was waiting for me to get him home."
+  },
+  {
+   "id": "c12u-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I picked up the water."
+  },
+  {
+   "id": "c12u-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I picked up the water."
+  },
+  {
+   "id": "c12u-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I picked up the water."
+  },
+  {
+   "id": "c12v-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The way back took half an hour, the long way around the broken part, with my boot lying in the fountain under us the whole time."
+  },
+  {
+   "id": "c12v-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The way back took half an hour, the long way around the broken part, with my boot lying in the fountain under us the whole time."
+  },
+  {
+   "id": "c12w-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At nine forty-one, I climbed out onto the roof."
+  },
+  {
+   "id": "c12w-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At nine forty-one, I climbed out onto the roof."
+  },
+  {
+   "id": "c12x-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Lily's window was dark.",
+     "gap": 0.7
+    },
+    {
+     "text": "For the first time ever, I'd missed nine o'clock.",
+     "gap": 1.6
+    }
+   ],
+   "text": "Lily's window was dark. For the first time ever, I'd missed nine o'clock."
+  },
+  {
+   "id": "c12x-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Lily's window was dark.",
+     "gap": 0.7
+    },
+    {
+     "text": "For the first time ever, I'd missed nine o'clock.",
+     "gap": 1.6
+    }
+   ],
+   "text": "Lily's window was dark. For the first time ever, I'd missed nine o'clock."
+  },
+  {
+   "id": "c12x-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Lily's window was dark.",
+     "gap": 0.7
+    },
+    {
+     "text": "For the first time ever, I'd missed nine o'clock.",
+     "gap": 1.6
+    }
+   ],
+   "text": "Lily's window was dark. For the first time ever, I'd missed nine o'clock."
+  },
+  {
+   "id": "c13a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I told the boy who saved my life to pick a tent, and he asked what it would cost."
+  },
+  {
+   "id": "c13a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I told the boy who saved my life to pick a tent, and he asked what it would cost."
+  },
+  {
+   "id": "c13b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd cleaned the cut on his leg with bottled water and put a bandage on it. He let me, without looking at me once."
+  },
+  {
+   "id": "c13b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I'd cleaned the cut on his leg with bottled water and put a bandage on it. He let me, without looking at me once."
+  },
+  {
+   "id": "c13c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "In the morning he was standing by the rack with his blanket rolled under his arm."
+  },
+  {
+   "id": "c13c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "In the morning he was standing by the rack with his blanket rolled under his arm."
+  },
+  {
+   "id": "c13d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Where are you going?"
+  },
+  {
+   "id": "c13d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Where are you going?"
+  },
+  {
+   "id": "c13d-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Where are you going?"
+  },
+  {
+   "id": "c13f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Your leg's hurt."
+  },
+  {
+   "id": "c13f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Your leg's hurt."
+  },
+  {
+   "id": "c13f-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Your leg's hurt."
+  },
+  {
+   "id": "c13h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Pick a tent. Any of them. Except that one. That one's mine."
+  },
+  {
+   "id": "c13h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Pick a tent. Any of them. Except that one. That one's mine."
+  },
+  {
+   "id": "c13i-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He didn't move."
+  },
+  {
+   "id": "c13i-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He didn't move."
+  },
+  {
+   "id": "c13i-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He didn't move."
+  },
+  {
+   "id": "c13k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That made me put down the box I was holding. Somebody had taught this kid that nothing was free."
+  },
+  {
+   "id": "c13k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That made me put down the box I was holding. Somebody had taught this kid that nothing was free."
+  },
+  {
+   "id": "c13l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Help with the water. Keep it quiet. Tell me if you hear anybody up there."
+  },
+  {
+   "id": "c13l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Help with the water. Keep it quiet. Tell me if you hear anybody up there."
+  },
+  {
+   "id": "c13m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He waited for the rest."
+  },
+  {
+   "id": "c13m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He waited for the rest."
+  },
+  {
+   "id": "c13m-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He waited for the rest."
+  },
+  {
+   "id": "c13n-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That's it."
+  },
+  {
+   "id": "c13n-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That's it."
+  },
+  {
+   "id": "c13n-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "That's it."
+  },
+  {
+   "id": "c13o-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I found him a clean sweatshirt. He folded it so carefully before he put it down that I had to look at something else."
+  },
+  {
+   "id": "c13o-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I found him a clean sweatshirt. He folded it so carefully before he put it down that I had to look at something else."
+  },
+  {
+   "id": "c13p-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Vera called at dusk."
+  },
+  {
+   "id": "c13p-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Vera called at dusk."
+  },
+  {
+   "id": "c13p-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Vera called at dusk."
+  },
+  {
+   "id": "c13r-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I went cold."
+  },
+  {
+   "id": "c13r-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I went cold."
+  },
+  {
+   "id": "c13r-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I went cold."
+  },
+  {
+   "id": "c13t-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "So she watched every night. She'd watched me not show up."
+  },
+  {
+   "id": "c13t-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "So she watched every night. She'd watched me not show up."
+  },
+  {
+   "id": "c13u-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I pressed the button."
+  },
+  {
+   "id": "c13u-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I pressed the button."
+  },
+  {
+   "id": "c13u-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I pressed the button."
+  },
+  {
+   "id": "c13v-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What's the little girl's name?"
+  },
+  {
+   "id": "c13v-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What's the little girl's name?"
+  },
+  {
+   "id": "c13w-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A pause. Just a little too long."
+  },
+  {
+   "id": "c13w-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A pause. Just a little too long."
+  },
+  {
+   "id": "c13y-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the coat you were trying on. What color?"
+  },
+  {
+   "id": "c13y-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the coat you were trying on. What color?"
+  },
+  {
+   "id": "c13za-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I let go of the button and left her talking to nobody."
+  },
+  {
+   "id": "c13za-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I let go of the button and left her talking to nobody."
+  },
+  {
+   "id": "c13zb-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At five to nine, I took the flashlight off the shelf. I didn't know if anyone would be in that window tonight."
+  },
+  {
+   "id": "c13zb-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "At five to nine, I took the flashlight off the shelf. I didn't know if anyone would be in that window tonight."
+  },
+  {
+   "id": "c13zc-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo pulled on the clean sweatshirt."
+  },
+  {
+   "id": "c13zc-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo pulled on the clean sweatshirt."
+  },
+  {
+   "id": "c14a-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A stranger just blinked my daughter's goodnight signal at her window."
+  },
+  {
+   "id": "c14a-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "A stranger just blinked my daughter's goodnight signal at her window."
+  },
+  {
+   "id": "c14b-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo stayed back in the shadow of the hatch, keeping his weight off his bandaged leg."
+  },
+  {
+   "id": "c14b-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Theo stayed back in the shadow of the hatch, keeping his weight off his bandaged leg."
+  },
+  {
+   "id": "c14c-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Across the highway, I found the tenth floor and counted four windows from the left. I always count. Even when I know exactly where to look."
+  },
+  {
+   "id": "c14c-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Across the highway, I found the tenth floor and counted four windows from the left. I always count. Even when I know exactly where to look."
+  },
+  {
+   "id": "c14d-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Nine o'clock.",
+     "gap": 0.7
+    },
+    {
+     "text": "Nothing.",
+     "gap": 1.0
+    }
+   ],
+   "text": "Nine o'clock. Nothing."
+  },
+  {
+   "id": "c14d-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Nine o'clock.",
+     "gap": 0.7
+    },
+    {
+     "text": "Nothing.",
+     "gap": 1.0
+    }
+   ],
+   "text": "Nine o'clock. Nothing."
+  },
+  {
+   "id": "c14d-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Nine o'clock.",
+     "gap": 0.7
+    },
+    {
+     "text": "Nothing.",
+     "gap": 1.0
+    }
+   ],
+   "text": "Nine o'clock. Nothing."
+  },
+  {
+   "id": "c14e-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Then a flashlight came on.",
+     "gap": 0.4
+    },
+    {
+     "text": "One. Two. Three.",
+     "gap": 0.5
+    }
+   ],
+   "text": "Then a flashlight came on. One. Two. Three."
+  },
+  {
+   "id": "c14e-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Then a flashlight came on.",
+     "gap": 0.4
+    },
+    {
+     "text": "One. Two. Three.",
+     "gap": 0.5
+    }
+   ],
+   "text": "Then a flashlight came on. One. Two. Three."
+  },
+  {
+   "id": "c14e-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Then a flashlight came on.",
+     "gap": 0.4
+    },
+    {
+     "text": "One. Two. Three.",
+     "gap": 0.5
+    }
+   ],
+   "text": "Then a flashlight came on. One. Two. Three."
+  },
+  {
+   "id": "c14f-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "She was there. I'd missed her last night, and she came back to the window anyway. She's seven years old."
+  },
+  {
+   "id": "c14f-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "She was there. I'd missed her last night, and she came back to the window anyway. She's seven years old."
+  },
+  {
+   "id": "c14g-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I answered with mine. My hands were steadier than they'd been in days. I had water downstairs, and somebody beside me who could hear a tile crack and pull me out."
+  },
+  {
+   "id": "c14g-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I answered with mine. My hands were steadier than they'd been in days. I had water downstairs, and somebody beside me who could hear a tile crack and pull me out."
+  },
+  {
+   "id": "c14h-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I was so happy I almost missed the light to my right."
+  },
+  {
+   "id": "c14h-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I was so happy I almost missed the light to my right."
+  },
+  {
+   "id": "c14i-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It came from the department store roof."
+  },
+  {
+   "id": "c14i-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It came from the department store roof."
+  },
+  {
+   "id": "c14i-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "It came from the department store roof."
+  },
+  {
+   "id": "c14j-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "One.",
+     "gap": 0.5
+    },
+    {
+     "text": "Two.",
+     "gap": 0.5
+    },
+    {
+     "text": "Three.",
+     "gap": 0.6
+    }
+   ],
+   "text": "One. Two. Three."
+  },
+  {
+   "id": "c14j-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "One.",
+     "gap": 0.5
+    },
+    {
+     "text": "Two.",
+     "gap": 0.5
+    },
+    {
+     "text": "Three.",
+     "gap": 0.6
+    }
+   ],
+   "text": "One. Two. Three."
+  },
+  {
+   "id": "c14j-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "One.",
+     "gap": 0.5
+    },
+    {
+     "text": "Two.",
+     "gap": 0.5
+    },
+    {
+     "text": "Three.",
+     "gap": 0.6
+    }
+   ],
+   "text": "One. Two. Three."
+  },
+  {
+   "id": "c14k-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Pointed across the highway.",
+     "gap": 0.4
+    },
+    {
+     "text": "At her window.",
+     "gap": 0.6
+    }
+   ],
+   "text": "Pointed across the highway. At her window."
+  },
+  {
+   "id": "c14k-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Pointed across the highway.",
+     "gap": 0.4
+    },
+    {
+     "text": "At her window.",
+     "gap": 0.6
+    }
+   ],
+   "text": "Pointed across the highway. At her window."
+  },
+  {
+   "id": "c14k-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "lines": [
+    {
+     "text": "Pointed across the highway.",
+     "gap": 0.4
+    },
+    {
+     "text": "At her window.",
+     "gap": 0.6
+    }
+   ],
+   "text": "Pointed across the highway. At her window."
+  },
+  {
+   "id": "c14l-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I lowered my flashlight. I wanted to blink again, to tell Lily which light was mine. But we only had two signals. Three blinks for I love you, and SOS. I'd never taught her what to do if somebody else answered."
+  },
+  {
+   "id": "c14l-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I lowered my flashlight. I wanted to blink again, to tell Lily which light was mine. But we only had two signals. Three blinks for I love you, and SOS. I'd never taught her what to do if somebody else answered."
+  },
+  {
+   "id": "c14m-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The department store roof went dark."
+  },
+  {
+   "id": "c14m-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The department store roof went dark."
+  },
+  {
+   "id": "c14m-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The department store roof went dark."
+  },
+  {
+   "id": "c14o-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The woman."
+  },
+  {
+   "id": "c14o-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The woman."
+  },
+  {
+   "id": "c14o-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "The woman."
+  },
+  {
+   "id": "c14p-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He was looking at my keys. The sock had slipped off when I grabbed the flashlight, and the last key hung against my hand. The one with the red tag."
+  },
+  {
+   "id": "c14p-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "He was looking at my keys. The sock had slipped off when I grabbed the flashlight, and the last key hung against my hand. The one with the red tag."
+  },
+  {
+   "id": "c14r-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Why do you ask?"
+  },
+  {
+   "id": "c14r-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Why do you ask?"
+  },
+  {
+   "id": "c14r-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Why do you ask?"
+  },
+  {
+   "id": "c14t-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I closed my fist around the tag."
+  },
+  {
+   "id": "c14t-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I closed my fist around the tag."
+  },
+  {
+   "id": "c14t-3",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I closed my fist around the tag."
+  },
+  {
+   "id": "c14v-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I thought of old Walt tapping the last key. That one, you never use. Don't ask."
+  },
+  {
+   "id": "c14v-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "I thought of old Walt tapping the last key. That one, you never use. Don't ask."
+  },
+  {
+   "id": "c14w-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Across the highway was my daughter. Across the roof was a woman copying her signal."
+  },
+  {
+   "id": "c14w-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "Across the highway was my daughter. Across the roof was a woman copying her signal."
+  },
+  {
+   "id": "c14x-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the one thing that woman wanted was hanging from my belt."
+  },
+  {
+   "id": "c14x-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "And the one thing that woman wanted was hanging from my belt."
+  },
+  {
+   "id": "c14y-1",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What did she think was behind that door?"
+  },
+  {
+   "id": "c14y-2",
+   "who": "danny",
+   "style": "Deadpan",
+   "pace": "Natural",
+   "text": "What did she think was behind that door?"
+  }
+ ]
+}

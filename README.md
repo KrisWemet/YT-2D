@@ -118,6 +118,15 @@ Short 1's thumbnail, `thumbnails/night-guard-short-1-thumbnail.jpg`, is the Remo
 - **Captions and upload:** `publish/night-guard-chapter-1.srt` comes from the script's own words (`images/mall/make_srt.py`). The title, description, chapter times and settings are in `publish/night-guard-chapter-1.md`.
 - **Cost:** about 278 Kie.ai credits (about $1.40): about 248 for the voice, 10 for the backgrounds and 20 for the sounds. Gemini's takes ran about 1.6 times longer than estimated, which doubled the voice cost.
 
+![Five frames from Remix 1: the hook over the gate at 2:31 a.m.; the rewind to 1 a.m.; Danny hearing their knock; the jump to the next morning; the closing question](docs/night-guard-remix-storyboard.jpg)
+
+**Remix Shorts 1–6 (2:19–2:46 each).** These are six vertical Shorts cut from Chapter 1 out of story order, for viewers who haven't seen any of the series (`Ch1Remix1` to `Ch1Remix6`, `src/mall/RemixShorts.tsx`).
+- **Structure:** each one opens on a moment from deep in the night, rewinds on tape to how it started, and jumps ahead to a cliffhanger. For example, Remix 1 opens on "At two thirty-one, Marcus stopped breathing. At two thirty-nine, he stood up." It then rewinds to his 1 a.m. joke on the radio and ends the next morning, with dead Marcus shaking Danny's gate on his old rounds.
+- **Beats:** a remix is a list of beats. Each beat is a set of chapter lines with the story clock shown at the top. A beat that jumps in time starts with a one-second ◀◀ or ▶▶ transition and a label such as "THE NEXT MORNING".
+- **Picture:** each piece shows only the shots cued for its own lines. A line's sound starts a breath before its first word, but its shot is cued on the word, so without this the first frames would show a line that was cut.
+- **Cost:** nothing new to generate. The remixes reuse the chapter's shots, voice and sound.
+- **Upload:** titles, descriptions, pinned comments and a posting order with no two neighbours sharing a scene are in `publish/night-guard-ch1-remix-shorts.md`.
+
 ## The house style
 
 - **Format:** vertical 9:16, 20–25 seconds. The voice sets the length.
@@ -204,6 +213,15 @@ npx remotion render src/index.ts MallChapter1 out/chapter1/night-guard-ch1-rende
 bash images/mall/finish.sh out/chapter1/night-guard-ch1-render.mp4 out/chapter1/night-guard-chapter-1.mp4
 ```
 
+Render the six remix Shorts (about 10 minutes each on 4 cores):
+
+```bash
+for n in 1 2 3 4 5 6; do
+  npx remotion render src/index.ts Ch1Remix$n out/shorts/ch1-remix/raw-remix-$n.mp4 --concurrency=4 --crf=18 --pixel-format=yuv420p --audio-bitrate=256k
+  bash images/mall/finish.sh out/shorts/ch1-remix/raw-remix-$n.mp4 out/shorts/ch1-remix/night-guard-remix-$n.mp4
+done
+```
+
 Render The Night Guard channel art and Short 1's thumbnail (remake the gate mask first only if the concourse background changes):
 
 ```bash
@@ -233,6 +251,7 @@ node scripts/stills.mjs out/qa 0.5 HurricaneShort 0 4.8 9.5 18.3   # PNG stills 
 python3 scripts/sheet.py out/qa out/qa-sheet.jpg 4                   # contact sheet of those stills
 python3 scripts/popscan.py out/hurricane-nuke-4K.mp4                 # flags sudden jumps between frames
 bash scripts/verify.sh out/hurricane-nuke-4K.mp4                     # size, frame rate, frame count, length, loudness
+python3 scripts/flashscan.py out/shorts/ch1-remix/night-guard-remix-1.mp4  # flashes per second (photosensitivity) and black frames
 python3 scripts/storyboard.py out/hurricane-nuke-4K.mp4 docs/hurricane-storyboard.jpg \
   "1.3|just nuke a hurricane?" "5.15|stronger than the bomb" "9.5|every twenty minutes" "18.3|add radiation"
 ```
