@@ -1,0 +1,2828 @@
+[
+ {
+  "id": "c1a",
+  "chunk": "c1a",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "Right now my leg is hanging through the ceiling over a hundred dead people, and my best friend is walking right under it.",
+  "pic": "From below: Danny's leg hanging through a broken ceiling tile over the crowd in the center court."
+ },
+ {
+  "id": "c1b",
+  "chunk": "c1b",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "The edge of the hole is cutting into my thigh. My boot is caught on something sharp. Every time I move, a little more white dust falls past my foot.",
+  "pic": "Close: the boot snagged on bent metal; white dust falling."
+ },
+ {
+  "id": "c1c.1",
+  "chunk": "c1c",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "A piece the size of my thumbnail lands on the fountain rim.",
+  "pic": "A chip of tile falls toward the fountain."
+ },
+ {
+  "id": "c1c.2",
+  "chunk": "c1c",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "Tick.",
+  "pic": "It hits the fountain rim. TICK."
+ },
+ {
+  "id": "c1c.3",
+  "chunk": "c1c",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "In a mall this quiet, that's a dinner bell.",
+  "pic": "Heads begin to turn."
+ },
+ {
+  "id": "c1d",
+  "chunk": "c1d",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "Under my leg, faces start turning up. A woman with one earring. A man still holding a shopping bag. The cleaner who used to put out a yellow cone even when the floor was dry.",
+  "pic": "Faces turned up: a woman with one earring, a man with a shopping bag, a cleaner."
+ },
+ {
+  "id": "c1e.1",
+  "chunk": "c1e",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "And Marcus.",
+  "pic": "Marcus in his guard uniform among them."
+ },
+ {
+  "id": "c1e.2",
+  "chunk": "c1e",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "He comes around the fountain in his guard uniform, stops at a gate, and shakes it twice. Same as every night.",
+  "pic": "Marcus rattles a store gate."
+ },
+ {
+  "id": "c1f",
+  "chunk": "c1f",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "Lying on a beam above me is a fifteen-year-old I almost threw out of my store. He's got both hands around my wrist, and he's pulling so hard his whole face shakes.",
+  "pic": "Theo flat on a steel beam, both hands around Danny's wrist."
+ },
+ {
+  "id": "c1g",
+  "chunk": "c1g",
+  "seg": 1,
+  "who": "theo",
+  "radio": false,
+  "text": "Danny. Stop moving.",
+  "pic": "Theo, close, whispering."
+ },
+ {
+  "id": "c1h.1",
+  "chunk": "c1h",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "I stop.",
+  "pic": "Danny freezes."
+ },
+ {
+  "id": "c1h.2",
+  "chunk": "c1h",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "Another piece breaks off anyway.",
+  "pic": "Another chunk of tile falls."
+ },
+ {
+  "id": "c1i.1",
+  "chunk": "c1i",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "And in eleven minutes, my seven-year-old is going to blink her goodnight at an empty roof.",
+  "pic": "Danny's watch: 8:49. Then the mall roof, empty under the night sky."
+ },
+ {
+  "id": "c1i.2",
+  "chunk": "c1i",
+  "seg": 1,
+  "who": "danny",
+  "radio": false,
+  "text": "Let me back up.",
+  "pic": "Rewind. Then the title card: CHAPTER TWO, THE BOY IN THE CEILING."
+ },
+ {
+  "id": "c2a",
+  "chunk": "c2a",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "The woman on the radio asked who was in my daughter's window, and I didn't say a word.",
+  "pic": "Danny on the roof, Marcus's radio in his hand, the tower across the highway."
+ },
+ {
+  "id": "c2b",
+  "chunk": "c2b",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "For six years, answering that radio was my job. Somebody called, I answered, and they knew help was coming.",
+  "pic": "Memory: Danny at the security desk, answering the radio."
+ },
+ {
+  "id": "c2c",
+  "chunk": "c2c",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "Now I stood on the roof with my thumb an inch from the button and made myself leave it alone.",
+  "pic": "Close: Danny's thumb hovering over the talk button."
+ },
+ {
+  "id": "c2d",
+  "chunk": "c2d",
+  "seg": 2,
+  "who": "vera",
+  "radio": true,
+  "text": "Danny? You still there?",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c2e",
+  "chunk": "c2e",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "Across the roofs, a light moved behind the department store's roof door. Then it was gone.",
+  "pic": "The department store roof: a light behind the roof door, then dark."
+ },
+ {
+  "id": "c2f.1",
+  "chunk": "c2f",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "I pressed the button.",
+  "pic": "Danny presses the button."
+ },
+ {
+  "id": "c2f.2",
+  "chunk": "c2f",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "How did you get inside my mall?",
+  "pic": "Danny, into the radio."
+ },
+ {
+  "id": "c2g",
+  "chunk": "c2g",
+  "seg": 2,
+  "who": "vera",
+  "radio": true,
+  "text": "That's a pretty rude first question.",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c2h",
+  "chunk": "c2h",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "You asked me one.",
+  "pic": "Danny, flat."
+ },
+ {
+  "id": "c2i",
+  "chunk": "c2i",
+  "seg": 2,
+  "who": "vera",
+  "radio": true,
+  "text": "Fair. I'm Vera. I was trying on a coat on the second floor, sat down in the fitting room, and fell asleep. When I woke up, they'd locked the place.",
+  "pic": "The department store's second floor, dark. A fitting room."
+ },
+ {
+  "id": "c2j",
+  "chunk": "c2j",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "The store closes at nine. At midnight, I'd walked the hallway behind those fitting rooms. Nobody was there.",
+  "pic": "Memory: Danny's midnight round behind the fitting rooms, empty."
+ },
+ {
+  "id": "c2k",
+  "chunk": "c2k",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "What coat?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c2l",
+  "chunk": "c2l",
+  "seg": 2,
+  "who": "vera",
+  "radio": true,
+  "text": "What?",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c2m",
+  "chunk": "c2m",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "The coat you were trying on.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c2n",
+  "chunk": "c2n",
+  "seg": 2,
+  "who": "vera",
+  "radio": true,
+  "text": "Danny, there are people eating people downstairs. I think we're past the return policy.",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c2o",
+  "chunk": "c2o",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "Then her voice went soft.",
+  "pic": "Close on the radio."
+ },
+ {
+  "id": "c2p",
+  "chunk": "c2p",
+  "seg": 2,
+  "who": "vera",
+  "radio": true,
+  "text": "There's a little girl up here with me. She's hungry. Have you got anything to eat?",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c2q",
+  "chunk": "c2q",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "I looked across the highway at my daughter's dark window.",
+  "pic": "Lily's window, dark, far away."
+ },
+ {
+  "id": "c2r",
+  "chunk": "c2r",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "How old?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c2s",
+  "chunk": "c2s",
+  "seg": 2,
+  "who": "vera",
+  "radio": true,
+  "text": "Six. Maybe seven. She won't tell me much.",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c2t.1",
+  "chunk": "c2t",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "Seven.",
+  "pic": "Close on Lily's dark window."
+ },
+ {
+  "id": "c2t.2",
+  "chunk": "c2t",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "Vera never asked about the window again that night.",
+  "pic": "Danny lowers the radio."
+ },
+ {
+  "id": "c2t.3",
+  "chunk": "c2t",
+  "seg": 2,
+  "who": "danny",
+  "radio": false,
+  "text": "She'd found another question I couldn't walk away from.",
+  "pic": "Danny alone on the roof, radio in hand."
+ },
+ {
+  "id": "c3a",
+  "chunk": "c3a",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Somebody stole my water while I slept inside a locked store.",
+  "pic": "Summit Outdoors at dawn, the gate locked."
+ },
+ {
+  "id": "c3b",
+  "chunk": "c3b",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "I'd counted it the night before. Seventy-two bottles. If I was careful, twelve days.",
+  "pic": "WATER: 12 DAYS."
+ },
+ {
+  "id": "c3c",
+  "chunk": "c3c",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "In the morning there were seventy-one. And one of my two protein bars was gone, which meant somebody had eaten breakfast in my store, and it wasn't me.",
+  "pic": "71 BOTTLES. One protein bar left."
+ },
+ {
+  "id": "c3d",
+  "chunk": "c3d",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "The gate was locked. Key thirty-one was still on my belt.",
+  "pic": "The padlock; tag 31 on Danny's belt."
+ },
+ {
+  "id": "c3e.1",
+  "chunk": "c3e",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "The dead don't pick padlocks. They don't eat protein bars, either.",
+  "pic": "Danny looks at the gate."
+ },
+ {
+  "id": "c3e.2",
+  "chunk": "c3e",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Something else was in here with me.",
+  "pic": "Danny turns to the dark store."
+ },
+ {
+  "id": "c3f.1",
+  "chunk": "c3f",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "I searched every tent. Every shelf. Behind the kayaks, and behind the cardboard bear, which got me for the third time.",
+  "pic": "Danny searching; the cardboard bear makes him jump."
+ },
+ {
+  "id": "c3f.2",
+  "chunk": "c3f",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Nothing.",
+  "pic": "The empty store."
+ },
+ {
+  "id": "c3g",
+  "chunk": "c3g",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "That night, I put the food and water in a plastic box and slept with it next to my head.",
+  "pic": "Danny lying down with the plastic box beside his head."
+ },
+ {
+  "id": "c3h",
+  "chunk": "c3h",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Vera called while I was lying there.",
+  "pic": "The radio's light comes on."
+ },
+ {
+  "id": "c3i",
+  "chunk": "c3i",
+  "seg": 3,
+  "who": "vera",
+  "radio": true,
+  "text": "How's my favorite night guard?",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c3j",
+  "chunk": "c3j",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "I haven't agreed to anything.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c3k",
+  "chunk": "c3k",
+  "seg": 3,
+  "who": "vera",
+  "radio": true,
+  "text": "She asked for her mom today. I didn't know what to tell her.",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c3l",
+  "chunk": "c3l",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "I didn't either. I let the radio go quiet.",
+  "pic": "The radio's light goes out."
+ },
+ {
+  "id": "c3m",
+  "chunk": "c3m",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "I don't remember falling asleep. I remember waking up, because the lid of the box was back on, and one of the latches hadn't quite clicked shut.",
+  "pic": "Close: the box lid back on, one latch open."
+ },
+ {
+  "id": "c3n.1",
+  "chunk": "c3n",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Two more bars were gone. Two more bottles.",
+  "pic": "69 BOTTLES."
+ },
+ {
+  "id": "c3n.2",
+  "chunk": "c3n",
+  "seg": 3,
+  "who": "danny",
+  "radio": false,
+  "text": "Whoever was doing this had stood close enough to watch me sleep.",
+  "pic": "Danny asleep beside the box; a shadow standing over him."
+ },
+ {
+  "id": "c4a",
+  "chunk": "c4a",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "I put climbing chalk on the floor, and the footprints went up the wall.",
+  "pic": "Chalk footprints climbing a wall."
+ },
+ {
+  "id": "c4b",
+  "chunk": "c4b",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "That was my entire investigation. Six years in mall security, and my big plan was waiting for somebody to step in powder.",
+  "pic": "Danny with a bag of climbing chalk."
+ },
+ {
+  "id": "c4c",
+  "chunk": "c4c",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "I spread it around the food box, under the stockroom door, and between the tents. Then I lay down with my boots on and pretended to sleep.",
+  "pic": "White chalk around the box; Danny lying still, eyes open."
+ },
+ {
+  "id": "c4d.1",
+  "chunk": "c4d",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "Sometime before dawn, I heard plastic bend.",
+  "pic": "Darkness. A plastic box flexing."
+ },
+ {
+  "id": "c4d.2",
+  "chunk": "c4d",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "By the time I got my flashlight on, the store was still again.",
+  "pic": "Flashlight on: nobody there."
+ },
+ {
+  "id": "c4e",
+  "chunk": "c4e",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "Small sneakers. A split in the right sole that left a little square of clean floor in every print.",
+  "pic": "Close: a small chalk footprint with a square gap in the sole."
+ },
+ {
+  "id": "c4f",
+  "chunk": "c4f",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "The trail came from behind the climbing wall display. It went to the food box. Then it went back.",
+  "pic": "The trail of prints, there and back."
+ },
+ {
+  "id": "c4g",
+  "chunk": "c4g",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "Behind the display there's a tall metal rack bolted to the wall. A chalk print on the bottom shelf. Another one halfway up the wall. A handprint on a dusty pipe.",
+  "pic": "The rack, prints climbing it, a handprint on a pipe."
+ },
+ {
+  "id": "c4h",
+  "chunk": "c4h",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "I followed the pipe up with my light.",
+  "pic": "The flashlight beam climbs the pipe."
+ },
+ {
+  "id": "c4i",
+  "chunk": "c4i",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "One ceiling tile was cleaner around the edges than all the others.",
+  "pic": "One clean ceiling tile."
+ },
+ {
+  "id": "c4j",
+  "chunk": "c4j",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "Every door locked. Every window whole. I'd checked that gate so many times my hand hurt.",
+  "pic": "The gate, the padlock."
+ },
+ {
+  "id": "c4k",
+  "chunk": "c4k",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "I hadn't looked up once.",
+  "pic": "Danny looking up."
+ },
+ {
+  "id": "c4l",
+  "chunk": "c4l",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "And if a thief could get into my store through the ceiling, so could the woman on the radio.",
+  "pic": "The department store, dark, upstairs."
+ },
+ {
+  "id": "c4m",
+  "chunk": "c4m",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "A little white flake drifted down out of the seam above me.",
+  "pic": "A flake drifting down through the beam."
+ },
+ {
+  "id": "c4n",
+  "chunk": "c4n",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "I turned off the flashlight.",
+  "pic": "Click. Dark."
+ },
+ {
+  "id": "c4o.1",
+  "chunk": "c4o",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "Whoever was up there had seen the light.",
+  "pic": "The dark ceiling."
+ },
+ {
+  "id": "c4o.2",
+  "chunk": "c4o",
+  "seg": 4,
+  "who": "danny",
+  "radio": false,
+  "text": "And they were still there.",
+  "pic": "The clean tile, in the dark."
+ },
+ {
+  "id": "c5a",
+  "chunk": "c5a",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "I caught the thief, and his shoes were held together with duct tape.",
+  "pic": "Sneakers wrapped in duct tape."
+ },
+ {
+  "id": "c5b",
+  "chunk": "c5b",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "I waited behind the display until my knee went stiff. Out in the hall, Marcus rattled my gate and moved on.",
+  "pic": "Danny crouched behind the display; Marcus's shadow at the gate."
+ },
+ {
+  "id": "c5c.1",
+  "chunk": "c5c",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Then the tile lifted.",
+  "pic": "The ceiling tile lifts."
+ },
+ {
+  "id": "c5c.2",
+  "chunk": "c5c",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Two fingers. Then a head. Then a very skinny boy, lowering himself onto the top shelf like he'd done it a hundred times. He even stepped around the one bar that squeaks. I didn't know it squeaked. It's my store.",
+  "pic": "A skinny boy climbing down the rack."
+ },
+ {
+  "id": "c5d",
+  "chunk": "c5d",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "He went straight to the food box. I waited until he bent over it.",
+  "pic": "The boy at the food box."
+ },
+ {
+  "id": "c5e",
+  "chunk": "c5e",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Then I stood up.",
+  "pic": "Danny stands up behind him."
+ },
+ {
+  "id": "c5f",
+  "chunk": "c5f",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "He had a protein bar in his hand. His sweatshirt hung past his fingers. He was about as dusty as the pipe, and he looked hungry enough to eat the wrapper.",
+  "pic": "Theo frozen, protein bar in hand, sleeves past his fingers."
+ },
+ {
+  "id": "c5g",
+  "chunk": "c5g",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "I'd practiced this moment for an hour. In my head, the thief was a grown man.",
+  "pic": "Danny, a little lost."
+ },
+ {
+  "id": "c5h",
+  "chunk": "c5h",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Put it down.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c5i.1",
+  "chunk": "c5i",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "He put it down.",
+  "pic": "Theo puts it down."
+ },
+ {
+  "id": "c5i.2",
+  "chunk": "c5i",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Then he ran straight at me.",
+  "pic": "Theo charges."
+ },
+ {
+  "id": "c5j",
+  "chunk": "c5j",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "He got past me and two shelves up the rack before I caught the back of his sweatshirt. He twisted so hard the stitching tore. The whole rack banged against the wall.",
+  "pic": "Danny grabbing Theo's sweatshirt on the rack."
+ },
+ {
+  "id": "c5k.1",
+  "chunk": "c5k",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Out in the hall, something stopped walking.",
+  "pic": "The gate, a shape beyond it."
+ },
+ {
+  "id": "c5k.2",
+  "chunk": "c5k",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "We both froze.",
+  "pic": "Danny and Theo, frozen."
+ },
+ {
+  "id": "c5l",
+  "chunk": "c5l",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "A shadow slid across the gate. It leaned on the bars, and the gate creaked.",
+  "pic": "A shadow leaning on the gate."
+ },
+ {
+  "id": "c5m",
+  "chunk": "c5m",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Then it moved on.",
+  "pic": "The shadow moves on."
+ },
+ {
+  "id": "c5n",
+  "chunk": "c5n",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "The boy let out a breath and glared at me like this was my fault.",
+  "pic": "Theo glaring."
+ },
+ {
+  "id": "c5o",
+  "chunk": "c5o",
+  "seg": 5,
+  "who": "theo",
+  "radio": false,
+  "text": "Don't do that again.",
+  "pic": "Theo, whispering."
+ },
+ {
+  "id": "c5p",
+  "chunk": "c5p",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "You're stealing my food.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c5q",
+  "chunk": "c5q",
+  "seg": 5,
+  "who": "theo",
+  "radio": false,
+  "text": "You're loud.",
+  "pic": "Theo."
+ },
+ {
+  "id": "c5r",
+  "chunk": "c5r",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "How old are you?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c5s",
+  "chunk": "c5s",
+  "seg": 5,
+  "who": "theo",
+  "radio": false,
+  "text": "Fifteen.",
+  "pic": "Theo."
+ },
+ {
+  "id": "c5t",
+  "chunk": "c5t",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "Who else is up there?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c5u",
+  "chunk": "c5u",
+  "seg": 5,
+  "who": "danny",
+  "radio": false,
+  "text": "His hand tightened on the pipe.",
+  "pic": "Theo's hand on the pipe."
+ },
+ {
+  "id": "c5v",
+  "chunk": "c5v",
+  "seg": 5,
+  "who": "theo",
+  "radio": false,
+  "text": "Nobody. That's why I stay up there.",
+  "pic": "Theo on the rack, looking down."
+ },
+ {
+  "id": "c6a",
+  "chunk": "c6a",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "A fifteen-year-old had been living in my mall for four months, and I'd never noticed.",
+  "pic": "Theo on an upside-down bucket."
+ },
+ {
+  "id": "c6b",
+  "chunk": "c6b",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "His name was Theo. He sat on an upside-down bucket, close enough to the rack to run.",
+  "pic": "Name tag: THEO, 15, LIVES IN THE CEILING."
+ },
+ {
+  "id": "c6c",
+  "chunk": "c6c",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "Where do you sleep?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c6d",
+  "chunk": "c6d",
+  "seg": 6,
+  "who": "theo",
+  "radio": false,
+  "text": "Above the cinema. There's a space next to the projection room.",
+  "pic": ""
+ },
+ {
+  "id": "c6e",
+  "chunk": "c6e",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "For four months? How do you eat?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c6f",
+  "chunk": "c6f",
+  "seg": 6,
+  "who": "theo",
+  "radio": false,
+  "text": "People throw out a lot of food.",
+  "pic": ""
+ },
+ {
+  "id": "c6g",
+  "chunk": "c6g",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "And the doors?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c6h",
+  "chunk": "c6h",
+  "seg": 6,
+  "who": "theo",
+  "radio": false,
+  "text": "I go around them.",
+  "pic": ""
+ },
+ {
+  "id": "c6i",
+  "chunk": "c6i",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "I looked at the keys on my belt. Forty-two keys, and a kid had beaten every one of them with a ceiling tile.",
+  "pic": "The key ring; a ceiling tile."
+ },
+ {
+  "id": "c6j",
+  "chunk": "c6j",
+  "seg": 6,
+  "who": "theo",
+  "radio": false,
+  "text": "You check the same doors twice when you're on the phone. And you sing in the freight elevator.",
+  "pic": ""
+ },
+ {
+  "id": "c6k",
+  "chunk": "c6k",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "I stared at him.",
+  "pic": "Danny staring."
+ },
+ {
+  "id": "c6l",
+  "chunk": "c6l",
+  "seg": 6,
+  "who": "theo",
+  "radio": false,
+  "text": "Same song every time. You only know half the words.",
+  "pic": ""
+ },
+ {
+  "id": "c6m",
+  "chunk": "c6m",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "My face went hot. Even now. Even with all of that outside.",
+  "pic": "Danny, red-faced."
+ },
+ {
+  "id": "c6n",
+  "chunk": "c6n",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "You can't stay here.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c6o",
+  "chunk": "c6o",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "It came out before I'd thought about it. But I knew where it came from.",
+  "pic": "The gate."
+ },
+ {
+  "id": "c6p",
+  "chunk": "c6p",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "The first night, a guy I loved sat outside that gate and trusted me to know what to do. I didn't. Now this kid was sitting six feet from the same gate, waiting for me to be in charge.",
+  "pic": "Memory: Marcus behind the bars. Then Theo on the bucket, six feet from the gate."
+ },
+ {
+  "id": "c6q",
+  "chunk": "c6q",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "I wanted somebody better for him. A firefighter. A parent. Anybody.",
+  "pic": "Danny looking away."
+ },
+ {
+  "id": "c6r",
+  "chunk": "c6r",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "He was looking at the only adult available.",
+  "pic": "Theo looking at Danny."
+ },
+ {
+  "id": "c6s",
+  "chunk": "c6s",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo stood up. He didn't argue. He didn't take anything, because he'd brought nothing.",
+  "pic": "Theo standing, empty-handed."
+ },
+ {
+  "id": "c6t",
+  "chunk": "c6t",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "He was halfway up the rack when he stopped.",
+  "pic": "Theo stops halfway up the rack."
+ },
+ {
+  "id": "c6u",
+  "chunk": "c6u",
+  "seg": 6,
+  "who": "theo",
+  "radio": false,
+  "text": "How much water have you got?",
+  "pic": ""
+ },
+ {
+  "id": "c6v",
+  "chunk": "c6v",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "About ten days. For one person.",
+  "pic": "WATER: 10 DAYS."
+ },
+ {
+  "id": "c6w",
+  "chunk": "c6w",
+  "seg": 6,
+  "who": "danny",
+  "radio": false,
+  "text": "He looked toward the front of the mall.",
+  "pic": "Theo looking out."
+ },
+ {
+  "id": "c6x",
+  "chunk": "c6x",
+  "seg": 6,
+  "who": "theo",
+  "radio": false,
+  "text": "I know where there's eight thousand gallons.",
+  "pic": "Theo, looking down from the rack."
+ },
+ {
+  "id": "c7a",
+  "chunk": "c7a",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "The water I needed was sitting under a hundred dead people.",
+  "pic": "The fountain, ringed by the dead."
+ },
+ {
+  "id": "c7b",
+  "chunk": "c7b",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "The fountain.",
+  "pic": ""
+ },
+ {
+  "id": "c7c",
+  "chunk": "c7c",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "In six years I'd fished coins out of that fountain, two phones, and once an engagement ring a guy dropped before he got to the question.",
+  "pic": "Memory: Danny fishing a ring out of the fountain."
+ },
+ {
+  "id": "c7d",
+  "chunk": "c7d",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "I'd never wondered where the water came from.",
+  "pic": "The fountain."
+ },
+ {
+  "id": "c7e",
+  "chunk": "c7e",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "There's a tank underneath. In the pump room. It says eight thousand gallons right on the side.",
+  "pic": ""
+ },
+ {
+  "id": "c7f",
+  "chunk": "c7f",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "The pump room door is in the center court, right beside the pretzel place. On the cameras, that doorway was buried in bodies.",
+  "pic": "Security camera: the pump room door behind a crowd."
+ },
+ {
+  "id": "c7g",
+  "chunk": "c7g",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "I don't use the door. I come from above.",
+  "pic": ""
+ },
+ {
+  "id": "c7h",
+  "chunk": "c7h",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "He drew the route in the chalk with his finger. Up through my ceiling. Over the cinema. Along a service walkway above the center court. Down a ladder inside the big column by the fountain.",
+  "pic": "A route drawn in chalk on the floor."
+ },
+ {
+  "id": "c7i",
+  "chunk": "c7i",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "Twenty minutes. If you're quiet.",
+  "pic": ""
+ },
+ {
+  "id": "c7j",
+  "chunk": "c7j",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "When?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c7k",
+  "chunk": "c7k",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "Tomorrow night. Eight o'clock.",
+  "pic": ""
+ },
+ {
+  "id": "c7l",
+  "chunk": "c7l",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "Why at night?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c7m",
+  "chunk": "c7m",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "He looked at the floor.",
+  "pic": "Theo looking down."
+ },
+ {
+  "id": "c7n",
+  "chunk": "c7n",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "In the day, some people watch the court from upstairs. At night they sleep.",
+  "pic": ""
+ },
+ {
+  "id": "c7o",
+  "chunk": "c7o",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "What people?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c7p",
+  "chunk": "c7p",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "Just people.",
+  "pic": ""
+ },
+ {
+  "id": "c7q",
+  "chunk": "c7q",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "Eight o'clock. Twenty minutes there, fill up, twenty minutes back. On the roof by ten to nine. Easy.",
+  "pic": "A plan on the floor: 8:00 to 8:50. Easy."
+ },
+ {
+  "id": "c7r",
+  "chunk": "c7r",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "That night, Vera called again.",
+  "pic": "The radio's light comes on."
+ },
+ {
+  "id": "c7s",
+  "chunk": "c7s",
+  "seg": 7,
+  "who": "vera",
+  "radio": true,
+  "text": "She's stopped asking for food, Danny.",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c7t",
+  "chunk": "c7t",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "I held the radio so tight the plastic creaked. I'm a dad. She knew exactly where to push.",
+  "pic": "Danny's knuckles white on the radio."
+ },
+ {
+  "id": "c7u",
+  "chunk": "c7u",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "I started putting two protein bars and a bottle of water in a bag. I'd leave it at the department store gate.",
+  "pic": "Danny packing a bag."
+ },
+ {
+  "id": "c7v",
+  "chunk": "c7v",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo watched me from the rack.",
+  "pic": "Theo watching."
+ },
+ {
+  "id": "c7w",
+  "chunk": "c7w",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "Don't.",
+  "pic": ""
+ },
+ {
+  "id": "c7x",
+  "chunk": "c7x",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "There's a little kid up there.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c7y",
+  "chunk": "c7y",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "I don't like her voice.",
+  "pic": ""
+ },
+ {
+  "id": "c7z",
+  "chunk": "c7z",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "You've never heard her.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c7za",
+  "chunk": "c7za",
+  "seg": 7,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo didn't look away.",
+  "pic": "Theo, steady."
+ },
+ {
+  "id": "c7zb",
+  "chunk": "c7zb",
+  "seg": 7,
+  "who": "theo",
+  "radio": false,
+  "text": "Yes, I have.",
+  "pic": "Theo."
+ },
+ {
+  "id": "c8a",
+  "chunk": "c8a",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "To get water, I had to crawl through the ceiling right over their heads.",
+  "pic": "Danny climbing the rack."
+ },
+ {
+  "id": "c8b",
+  "chunk": "c8b",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "I never took that bag to Vera's gate. I never unpacked it, either.",
+  "pic": "The packed bag beside the tent."
+ },
+ {
+  "id": "c8c",
+  "chunk": "c8c",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "At eight, we went up. I took the battery out of Marcus's radio. One squawk over that court and we'd both be dinner. Then I wrapped my keys in a sock so they couldn't jingle.",
+  "pic": "The battery out of the radio; keys going into a sock."
+ },
+ {
+  "id": "c8d",
+  "chunk": "c8d",
+  "seg": 8,
+  "who": "theo",
+  "radio": false,
+  "text": "You always carry that many?",
+  "pic": ""
+ },
+ {
+  "id": "c8e",
+  "chunk": "c8e",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Every night.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c8f",
+  "chunk": "c8f",
+  "seg": 8,
+  "who": "theo",
+  "radio": false,
+  "text": "Must be annoying.",
+  "pic": ""
+ },
+ {
+  "id": "c8g",
+  "chunk": "c8g",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "It was. I'd have given anything to be annoyed by them on a normal Tuesday.",
+  "pic": "The sock full of keys."
+ },
+ {
+  "id": "c8h",
+  "chunk": "c8h",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Above my store, the air was hot and full of dust. Theo pointed with his flashlight.",
+  "pic": "Inside the ceiling: beams, dust, Theo's flashlight."
+ },
+ {
+  "id": "c8i",
+  "chunk": "c8i",
+  "seg": 8,
+  "who": "theo",
+  "radio": false,
+  "text": "The big steel beams hold you. The tiles don't. Those thin wires hold the ceiling up. They won't hold you, either.",
+  "pic": ""
+ },
+ {
+  "id": "c8j",
+  "chunk": "c8j",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "I went on my hands and knees, beam to beam. Every time I breathed too hard, the tiles shifted under me.",
+  "pic": "Danny crawling beam to beam."
+ },
+ {
+  "id": "c8k",
+  "chunk": "c8k",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Over the cinema, he stopped beside a blanket. Three empty water bottles. A folded hoodie. A photo, face down. He slid it under the blanket before I could see it.",
+  "pic": "Theo's nest: a blanket, bottles, a hoodie, a photo face down."
+ },
+ {
+  "id": "c8l",
+  "chunk": "c8l",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Next to his bed was a little metal door. CINEMA SERVICE.",
+  "pic": "A small door: CINEMA SERVICE."
+ },
+ {
+  "id": "c8m.1",
+  "chunk": "c8m",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Key seventeen fit.",
+  "pic": "Key 17 in the lock."
+ },
+ {
+  "id": "c8m.2",
+  "chunk": "c8m",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo watched the lock turn like I'd done a magic trick.",
+  "pic": "Theo watching, amazed."
+ },
+ {
+  "id": "c8n",
+  "chunk": "c8n",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "On the other side, a narrow walkway ran out over the center court. Through the gaps, I could see the tops of their heads.",
+  "pic": "The walkway over the court; heads far below."
+ },
+ {
+  "id": "c8o",
+  "chunk": "c8o",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Halfway across, the walkway just ended. After that, there were only two beams.",
+  "pic": "The walkway ends. Two beams."
+ },
+ {
+  "id": "c8p",
+  "chunk": "c8p",
+  "seg": 8,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo looked back at me.",
+  "pic": "Theo looking back."
+ },
+ {
+  "id": "c8q",
+  "chunk": "c8q",
+  "seg": 8,
+  "who": "theo",
+  "radio": false,
+  "text": "Don't put your foot where you think the floor is.",
+  "pic": "Theo, on the beam."
+ },
+ {
+  "id": "c9a",
+  "chunk": "c9a",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "My best friend walked his rounds while I crawled over his head.",
+  "pic": "Marcus below, Danny above."
+ },
+ {
+  "id": "c9b",
+  "chunk": "c9b",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo crossed the first gap like it was a sidewalk. I watched where his hands went and tried to put mine in the same places.",
+  "pic": "Theo crossing easily."
+ },
+ {
+  "id": "c9c",
+  "chunk": "c9c",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "There's a big difference between watching a skinny fifteen-year-old do something and asking a thirty-eight-year-old's knees to do it.",
+  "pic": "Danny's knees on the beam."
+ },
+ {
+  "id": "c9d",
+  "chunk": "c9d",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Sweat ran down my nose. I caught it on my sleeve before it could drip.",
+  "pic": "A bead of sweat."
+ },
+ {
+  "id": "c9e",
+  "chunk": "c9e",
+  "seg": 9,
+  "who": "theo",
+  "radio": false,
+  "text": "Next hand. Now your knee.",
+  "pic": "Theo whispering."
+ },
+ {
+  "id": "c9f",
+  "chunk": "c9f",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Below us, the fountain was dark, with coins on the bottom. The dead stood around it shoulder to shoulder, all facing the food court.",
+  "pic": "From above: the dark fountain and the crowd around it."
+ },
+ {
+  "id": "c9g",
+  "chunk": "c9g",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "I stopped counting at a hundred.",
+  "pic": "Counter: 100."
+ },
+ {
+  "id": "c9h",
+  "chunk": "c9h",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "My watch said eight forty-seven. We were behind.",
+  "pic": "Danny's watch: 8:47."
+ },
+ {
+  "id": "c9i",
+  "chunk": "c9i",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Then a gate rattled at the far end of the hall.",
+  "pic": "Far down the hall."
+ },
+ {
+  "id": "c9j",
+  "chunk": "c9j",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "I knew who it was before I saw him.",
+  "pic": "Danny, still."
+ },
+ {
+  "id": "c9k",
+  "chunk": "c9k",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Marcus came around the corner and stopped at the first store. Two pulls on the gate. A pause. Then the next one.",
+  "pic": "Marcus rattling gates."
+ },
+ {
+  "id": "c9l",
+  "chunk": "c9l",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "I caught myself waiting for him to look up.",
+  "pic": "Danny watching Marcus."
+ },
+ {
+  "id": "c9m",
+  "chunk": "c9m",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo touched my shoulder. He needed room.",
+  "pic": "Theo's hand on Danny's shoulder."
+ },
+ {
+  "id": "c9n.1",
+  "chunk": "c9n",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "I moved my knee.",
+  "pic": "Danny shifts his knee."
+ },
+ {
+  "id": "c9n.2",
+  "chunk": "c9n",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "The metal under it folded like a soda can.",
+  "pic": "The metal folds."
+ },
+ {
+  "id": "c9o",
+  "chunk": "c9o",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "My stomach hit the beam. My right leg punched straight through a tile. Something sharp caught my boot and held on.",
+  "pic": "Danny's leg through the tile."
+ },
+ {
+  "id": "c9p.1",
+  "chunk": "c9p",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Day four. Eight forty-nine p.m.",
+  "pic": "The cold-open picture again. 8:49 PM."
+ },
+ {
+  "id": "c9p.2",
+  "chunk": "c9p",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "That's where you came in.",
+  "pic": "The cold-open picture again."
+ },
+ {
+  "id": "c9q.1",
+  "chunk": "c9q",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "Below me, Marcus stopped walking.",
+  "pic": "Marcus stops."
+ },
+ {
+  "id": "c9q.2",
+  "chunk": "c9q",
+  "seg": 9,
+  "who": "danny",
+  "radio": false,
+  "text": "And he looked up.",
+  "pic": "Marcus looking up at Danny's foot."
+ },
+ {
+  "id": "c10a",
+  "chunk": "c10a",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "The kid I'd told to leave was the only thing keeping me out of that crowd.",
+  "pic": "Theo holding Danny's wrist."
+ },
+ {
+  "id": "c10b",
+  "chunk": "c10b",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo lay flat on the beam and grabbed my other wrist. His fingers slipped on my sleeve.",
+  "pic": "Theo's fingers slipping."
+ },
+ {
+  "id": "c10c",
+  "chunk": "c10c",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "A long piece of tile broke off and hit somebody's shoulder. Under me, they started pushing in toward the hole. Slowly. One body leaning into the next.",
+  "pic": "The crowd pushing in under the hole."
+ },
+ {
+  "id": "c10d",
+  "chunk": "c10d",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Marcus stood in the middle of them, looking up at my foot.",
+  "pic": "Marcus among them, looking up."
+ },
+ {
+  "id": "c10e",
+  "chunk": "c10e",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "I could see the worn spot on his cap, where he used to pick at it while he told me a joke I'd already heard.",
+  "pic": "Close: the worn spot on Marcus's cap."
+ },
+ {
+  "id": "c10f",
+  "chunk": "c10f",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "I almost said his name.",
+  "pic": "Danny, close."
+ },
+ {
+  "id": "c10g",
+  "chunk": "c10g",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo smacked my arm.",
+  "pic": "Theo smacks Danny's arm."
+ },
+ {
+  "id": "c10h",
+  "chunk": "c10h",
+  "seg": 10,
+  "who": "theo",
+  "radio": false,
+  "text": "Look at me.",
+  "pic": "Theo."
+ },
+ {
+  "id": "c10i",
+  "chunk": "c10i",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "He'd pulled the climbing strap off my belt and looped it around the steel beam with one hand.",
+  "pic": "The strap around the beam."
+ },
+ {
+  "id": "c10j",
+  "chunk": "c10j",
+  "seg": 10,
+  "who": "theo",
+  "radio": false,
+  "text": "Let go of me. I need my other hand.",
+  "pic": "Theo."
+ },
+ {
+  "id": "c10k",
+  "chunk": "c10k",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "I'd been squeezing his sleeve so hard it was twisted around his arm. I made my fingers open.",
+  "pic": "Danny's fist opening."
+ },
+ {
+  "id": "c10l",
+  "chunk": "c10l",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "He leaned back on the strap, braced his sneaker against a pipe, and pulled.",
+  "pic": "Theo pulling on the strap."
+ },
+ {
+  "id": "c10m",
+  "chunk": "c10m",
+  "seg": 10,
+  "who": "theo",
+  "radio": false,
+  "text": "Elbow up. You have to help.",
+  "pic": "Theo, straining."
+ },
+ {
+  "id": "c10n",
+  "chunk": "c10n",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "I got an elbow onto the steel. Pushed until my shoulder felt like it was coming apart.",
+  "pic": "Danny's elbow on the beam."
+ },
+ {
+  "id": "c10o.1",
+  "chunk": "c10o",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "My boot stayed where it was.",
+  "pic": "The boot, stuck."
+ },
+ {
+  "id": "c10o.2",
+  "chunk": "c10o",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "My foot came out of it.",
+  "pic": "Danny's foot slides out of the boot."
+ },
+ {
+  "id": "c10p",
+  "chunk": "c10p",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "For a second I thought that meant I was falling.",
+  "pic": "Danny's face."
+ },
+ {
+  "id": "c10q",
+  "chunk": "c10q",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Then my knee slid over the edge, and Theo dragged me onto the beam beside him.",
+  "pic": "Theo hauling Danny up."
+ },
+ {
+  "id": "c10r",
+  "chunk": "c10r",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Below us, my boot let go. It landed in the empty fountain with a bang that went on forever, and every head in that court turned toward it.",
+  "pic": "The boot falls into the fountain. Every head turns."
+ },
+ {
+  "id": "c10s",
+  "chunk": "c10s",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "We lay there breathing into our sleeves. Theo's pant leg was torn at the calf. There was blood on the brace he'd crawled across to reach me.",
+  "pic": "Theo's torn pant leg, blood on the brace."
+ },
+ {
+  "id": "c10t",
+  "chunk": "c10t",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "My watch said eight fifty-eight.",
+  "pic": "Danny's watch: 8:58."
+ },
+ {
+  "id": "c10u",
+  "chunk": "c10u",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Going back meant crossing the broken part in the half dark, in one boot, in a hurry. The water was twenty feet below us.",
+  "pic": "Behind them, the broken section. Below, the column."
+ },
+ {
+  "id": "c10v",
+  "chunk": "c10v",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Lily needed me alive more than she needed me on time.",
+  "pic": "Danny, deciding."
+ },
+ {
+  "id": "c10w",
+  "chunk": "c10w",
+  "seg": 10,
+  "who": "danny",
+  "radio": false,
+  "text": "Keep going, I whispered.",
+  "pic": "Danny and Theo moving on."
+ },
+ {
+  "id": "c11a",
+  "chunk": "c11a",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "At nine o'clock, while my daughter blinked at an empty roof, I was standing in front of eight thousand gallons of water.",
+  "pic": "Split: Lily's window blinking at an empty roof; Danny before the tank."
+ },
+ {
+  "id": "c11b",
+  "chunk": "c11b",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "The ladder ran down inside the column. At the bottom, a hatch opened into the pump room under the fountain.",
+  "pic": "The ladder down the column; the hatch."
+ },
+ {
+  "id": "c11c",
+  "chunk": "c11c",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "The tank filled most of the room. Eight thousand gallons, right on the side. Behind a little glass window, water.",
+  "pic": "The tank: 8,000 GALLONS. Water behind the glass."
+ },
+ {
+  "id": "c11d",
+  "chunk": "c11d",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "I put my hand flat on the tank and left it there. For the first time in four days, I wasn't counting bottles.",
+  "pic": "Danny's hand on the tank."
+ },
+ {
+  "id": "c11e",
+  "chunk": "c11e",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo came down the last rungs slowly, favoring his leg.",
+  "pic": "Theo on the ladder, favoring his leg."
+ },
+ {
+  "id": "c11f",
+  "chunk": "c11f",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "You hurt?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c11g",
+  "chunk": "c11g",
+  "seg": 11,
+  "who": "theo",
+  "radio": false,
+  "text": "Caught it.",
+  "pic": ""
+ },
+ {
+  "id": "c11h",
+  "chunk": "c11h",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "I saw.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c11i",
+  "chunk": "c11i",
+  "seg": 11,
+  "who": "theo",
+  "radio": false,
+  "text": "Then why'd you ask?",
+  "pic": ""
+ },
+ {
+  "id": "c11j",
+  "chunk": "c11j",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "I almost smiled.",
+  "pic": "Danny, almost smiling."
+ },
+ {
+  "id": "c11k",
+  "chunk": "c11k",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "We filled the containers. Outside the pump room door, a shoe scraped along the floor, and dust shook out of the frame.",
+  "pic": "Filling containers; dust shaking out of the door frame."
+ },
+ {
+  "id": "c11l",
+  "chunk": "c11l",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo stared at that door.",
+  "pic": "Theo staring at the door."
+ },
+ {
+  "id": "c11m",
+  "chunk": "c11m",
+  "seg": 11,
+  "who": "theo",
+  "radio": false,
+  "text": "This is where they were.",
+  "pic": ""
+ },
+ {
+  "id": "c11n",
+  "chunk": "c11n",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Who?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c11o",
+  "chunk": "c11o",
+  "seg": 11,
+  "who": "theo",
+  "radio": false,
+  "text": "The drill people. Three of them. A woman and two men. Right out there, behind the pretzel place. The first night.",
+  "pic": ""
+ },
+ {
+  "id": "c11p",
+  "chunk": "c11p",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "What time?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c11q",
+  "chunk": "c11q",
+  "seg": 11,
+  "who": "theo",
+  "radio": false,
+  "text": "One-thirty. I could see the clock.",
+  "pic": ""
+ },
+ {
+  "id": "c11r.1",
+  "chunk": "c11r",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "One-thirty.",
+  "pic": "Clock: 1:30 AM."
+ },
+ {
+  "id": "c11r.2",
+  "chunk": "c11r",
+  "seg": 11,
+  "who": "danny",
+  "radio": false,
+  "text": "Ten minutes before Marcus called me about a man walking wrong up the ramp.",
+  "pic": "Memory: Marcus on the radio, 1:40 AM."
+ },
+ {
+  "id": "c12a",
+  "chunk": "c12a",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "The dead didn't come to my mall by accident. Somebody called them.",
+  "pic": "The crowd in the court."
+ },
+ {
+  "id": "c12b",
+  "chunk": "c12b",
+  "seg": 12,
+  "who": "theo",
+  "radio": false,
+  "text": "They were cutting through the wall. Loud as a chainsaw. I could hear it all the way over the cinema.",
+  "pic": ""
+ },
+ {
+  "id": "c12c",
+  "chunk": "c12c",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "He wiped his nose on his sleeve.",
+  "pic": "Theo wiping his nose."
+ },
+ {
+  "id": "c12d",
+  "chunk": "c12d",
+  "seg": 12,
+  "who": "theo",
+  "radio": false,
+  "text": "Then people started coming in. Through the service hall. They just kept coming. One of the men saw them and ran back. He said they had to stop.",
+  "pic": ""
+ },
+ {
+  "id": "c12e",
+  "chunk": "c12e",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "And the woman?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c12f",
+  "chunk": "c12f",
+  "seg": 12,
+  "who": "theo",
+  "radio": false,
+  "text": "She kept saying, one more minute.",
+  "pic": ""
+ },
+ {
+  "id": "c12g",
+  "chunk": "c12g",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "The food court glass. The crowd on my cameras, all turning the same way at once. I'd thought they were wandering in through any door they found.",
+  "pic": "Memory: the food court glass; the crowd turning on the cameras."
+ },
+ {
+  "id": "c12h",
+  "chunk": "c12h",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "They weren't wandering. They were following a drill.",
+  "pic": "A drill cutting through a wall."
+ },
+ {
+  "id": "c12i",
+  "chunk": "c12i",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "And Marcus was standing in their way.",
+  "pic": "Marcus on the ramp."
+ },
+ {
+  "id": "c12j",
+  "chunk": "c12j",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "The woman on my radio.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c12k",
+  "chunk": "c12k",
+  "seg": 12,
+  "who": "theo",
+  "radio": false,
+  "text": "Same voice. I heard her in your store last night, through the ceiling. It's her.",
+  "pic": ""
+ },
+ {
+  "id": "c12l",
+  "chunk": "c12l",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "Was there a little girl with them?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c12m",
+  "chunk": "c12m",
+  "seg": 12,
+  "who": "theo",
+  "radio": false,
+  "text": "No.",
+  "pic": ""
+ },
+ {
+  "id": "c12n",
+  "chunk": "c12n",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "You're sure?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c12o",
+  "chunk": "c12o",
+  "seg": 12,
+  "who": "theo",
+  "radio": false,
+  "text": "Three people and a drill, Danny. No kid.",
+  "pic": ""
+ },
+ {
+  "id": "c12p",
+  "chunk": "c12p",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "I thought about the bag sitting next to my tent. Two bars and a bottle, for a little girl who didn't exist.",
+  "pic": "The packed bag beside the tent."
+ },
+ {
+  "id": "c12q",
+  "chunk": "c12q",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "I wanted to go straight to the department store, stand at her gate, and make her say it.",
+  "pic": "The department store gate."
+ },
+ {
+  "id": "c12r",
+  "chunk": "c12r",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "My keys were still in the sock. I squeezed them until the teeth bit through.",
+  "pic": "Danny's fist around the sock."
+ },
+ {
+  "id": "c12s",
+  "chunk": "c12s",
+  "seg": 12,
+  "who": "theo",
+  "radio": false,
+  "text": "Danny.",
+  "pic": ""
+ },
+ {
+  "id": "c12t",
+  "chunk": "c12t",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "His leg. The blood drying on his sneaker. He'd brought me here. Now he was waiting for me to get him home.",
+  "pic": "Theo's leg, the blood on his sneaker."
+ },
+ {
+  "id": "c12u",
+  "chunk": "c12u",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "I picked up the water.",
+  "pic": "Danny picks up the containers."
+ },
+ {
+  "id": "c12v",
+  "chunk": "c12v",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "The way back took half an hour, the long way around the broken part, with my boot lying in the fountain under us the whole time.",
+  "pic": "Crawling back; the boot in the fountain below."
+ },
+ {
+  "id": "c12w",
+  "chunk": "c12w",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "At nine forty-one, I climbed out onto the roof.",
+  "pic": "The roof hatch. 9:41 PM."
+ },
+ {
+  "id": "c12x.1",
+  "chunk": "c12x",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "Lily's window was dark.",
+  "pic": "Lily's window, dark. Hold."
+ },
+ {
+  "id": "c12x.2",
+  "chunk": "c12x",
+  "seg": 12,
+  "who": "danny",
+  "radio": false,
+  "text": "For the first time ever, I'd missed nine o'clock.",
+  "pic": "Danny alone on the roof."
+ },
+ {
+  "id": "c13a",
+  "chunk": "c13a",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "I told the boy who saved my life to pick a tent, and he asked what it would cost.",
+  "pic": "Theo by the rack."
+ },
+ {
+  "id": "c13b",
+  "chunk": "c13b",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "I'd cleaned the cut on his leg with bottled water and put a bandage on it. He let me, without looking at me once.",
+  "pic": "A bandage on Theo's calf."
+ },
+ {
+  "id": "c13c",
+  "chunk": "c13c",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "In the morning he was standing by the rack with his blanket rolled under his arm.",
+  "pic": "Theo with his blanket rolled under his arm."
+ },
+ {
+  "id": "c13d",
+  "chunk": "c13d",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "Where are you going?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c13e",
+  "chunk": "c13e",
+  "seg": 13,
+  "who": "theo",
+  "radio": false,
+  "text": "Back.",
+  "pic": ""
+ },
+ {
+  "id": "c13f",
+  "chunk": "c13f",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "Your leg's hurt.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c13g",
+  "chunk": "c13g",
+  "seg": 13,
+  "who": "theo",
+  "radio": false,
+  "text": "It's fine.",
+  "pic": ""
+ },
+ {
+  "id": "c13h",
+  "chunk": "c13h",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "Pick a tent. Any of them. Except that one. That one's mine.",
+  "pic": "Danny pointing at the tents."
+ },
+ {
+  "id": "c13i",
+  "chunk": "c13i",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "He didn't move.",
+  "pic": "Theo, still."
+ },
+ {
+  "id": "c13j",
+  "chunk": "c13j",
+  "seg": 13,
+  "who": "theo",
+  "radio": false,
+  "text": "What do you want for it?",
+  "pic": ""
+ },
+ {
+  "id": "c13k",
+  "chunk": "c13k",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "That made me put down the box I was holding. Somebody had taught this kid that nothing was free.",
+  "pic": "Danny putting down a box."
+ },
+ {
+  "id": "c13l",
+  "chunk": "c13l",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "Help with the water. Keep it quiet. Tell me if you hear anybody up there.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c13m",
+  "chunk": "c13m",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "He waited for the rest.",
+  "pic": "Theo waiting."
+ },
+ {
+  "id": "c13n",
+  "chunk": "c13n",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "That's it.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c13o",
+  "chunk": "c13o",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "I found him a clean sweatshirt. He folded it so carefully before he put it down that I had to look at something else.",
+  "pic": "Theo folding a sweatshirt."
+ },
+ {
+  "id": "c13p",
+  "chunk": "c13p",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "Vera called at dusk.",
+  "pic": "The radio's light comes on."
+ },
+ {
+  "id": "c13q",
+  "chunk": "c13q",
+  "seg": 13,
+  "who": "vera",
+  "radio": true,
+  "text": "You weren't on the roof last night, Danny.",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c13r",
+  "chunk": "c13r",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "I went cold.",
+  "pic": "Danny, still."
+ },
+ {
+  "id": "c13s",
+  "chunk": "c13s",
+  "seg": 13,
+  "who": "vera",
+  "radio": true,
+  "text": "I was worried. I hope everything's all right.",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c13t",
+  "chunk": "c13t",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "So she watched every night. She'd watched me not show up.",
+  "pic": "The department store roof at night."
+ },
+ {
+  "id": "c13u",
+  "chunk": "c13u",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "I pressed the button.",
+  "pic": "Danny presses the button."
+ },
+ {
+  "id": "c13v",
+  "chunk": "c13v",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "What's the little girl's name?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c13w",
+  "chunk": "c13w",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "A pause. Just a little too long.",
+  "pic": "Radio static."
+ },
+ {
+  "id": "c13x",
+  "chunk": "c13x",
+  "seg": 13,
+  "who": "vera",
+  "radio": true,
+  "text": "She hasn't told me yet. She's shy.",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c13y",
+  "chunk": "c13y",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "And the coat you were trying on. What color?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c13z",
+  "chunk": "c13z",
+  "seg": 13,
+  "who": "vera",
+  "radio": true,
+  "text": "Oatmeal. One day you'll have to explain this interest in my shopping.",
+  "pic": "Radio waves. UNKNOWN."
+ },
+ {
+  "id": "c13za",
+  "chunk": "c13za",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "I let go of the button and left her talking to nobody.",
+  "pic": "Danny lowers the radio."
+ },
+ {
+  "id": "c13zb",
+  "chunk": "c13zb",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "At five to nine, I took the flashlight off the shelf. I didn't know if anyone would be in that window tonight.",
+  "pic": "Danny takes the flashlight. 8:55 PM."
+ },
+ {
+  "id": "c13zc",
+  "chunk": "c13zc",
+  "seg": 13,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo pulled on the clean sweatshirt.",
+  "pic": "Theo pulling on the sweatshirt."
+ },
+ {
+  "id": "c13zd",
+  "chunk": "c13zd",
+  "seg": 13,
+  "who": "theo",
+  "radio": false,
+  "text": "Can I come?",
+  "pic": "Theo."
+ },
+ {
+  "id": "c14a",
+  "chunk": "c14a",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "A stranger just blinked my daughter's goodnight signal at her window.",
+  "pic": "The department store roof, a light pointed at the tower."
+ },
+ {
+  "id": "c14b",
+  "chunk": "c14b",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Theo stayed back in the shadow of the hatch, keeping his weight off his bandaged leg.",
+  "pic": "Theo in the shadow of the roof hatch."
+ },
+ {
+  "id": "c14c",
+  "chunk": "c14c",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Across the highway, I found the tenth floor and counted four windows from the left. I always count. Even when I know exactly where to look.",
+  "pic": "The tower across the highway; the tenth floor, fourth window."
+ },
+ {
+  "id": "c14d.1",
+  "chunk": "c14d",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Nine o'clock.",
+  "pic": "9:00 PM. The window, dark."
+ },
+ {
+  "id": "c14d.2",
+  "chunk": "c14d",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Nothing.",
+  "pic": "The dark window. Hold."
+ },
+ {
+  "id": "c14e.1",
+  "chunk": "c14e",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Then a flashlight came on.",
+  "pic": "A light in the window."
+ },
+ {
+  "id": "c14e.2",
+  "chunk": "c14e",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "One. Two. Three.",
+  "pic": "One, two, three."
+ },
+ {
+  "id": "c14f",
+  "chunk": "c14f",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "She was there. I'd missed her last night, and she came back to the window anyway. She's seven years old.",
+  "pic": "Danny's face."
+ },
+ {
+  "id": "c14g",
+  "chunk": "c14g",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "I answered with mine. My hands were steadier than they'd been in days. I had water downstairs, and somebody beside me who could hear a tile crack and pull me out.",
+  "pic": "Danny blinks back; Theo behind him."
+ },
+ {
+  "id": "c14h",
+  "chunk": "c14h",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "I was so happy I almost missed the light to my right.",
+  "pic": "A light to the right."
+ },
+ {
+  "id": "c14i",
+  "chunk": "c14i",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "It came from the department store roof.",
+  "pic": "The department store roof."
+ },
+ {
+  "id": "c14j.1",
+  "chunk": "c14j",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "One.",
+  "pic": "One."
+ },
+ {
+  "id": "c14j.2",
+  "chunk": "c14j",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Two.",
+  "pic": "Two."
+ },
+ {
+  "id": "c14j.3",
+  "chunk": "c14j",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Three.",
+  "pic": "Three."
+ },
+ {
+  "id": "c14k.1",
+  "chunk": "c14k",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Pointed across the highway.",
+  "pic": "The beam pointing across the highway."
+ },
+ {
+  "id": "c14k.2",
+  "chunk": "c14k",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "At her window.",
+  "pic": "Lily's window."
+ },
+ {
+  "id": "c14l",
+  "chunk": "c14l",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "I lowered my flashlight. I wanted to blink again, to tell Lily which light was mine. But we only had two signals. Three blinks for I love you, and SOS. I'd never taught her what to do if somebody else answered.",
+  "pic": "Danny lowering the flashlight."
+ },
+ {
+  "id": "c14m",
+  "chunk": "c14m",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "The department store roof went dark.",
+  "pic": "The department store roof goes dark."
+ },
+ {
+  "id": "c14n",
+  "chunk": "c14n",
+  "seg": 14,
+  "who": "theo",
+  "radio": false,
+  "text": "Who is that?",
+  "pic": "Theo."
+ },
+ {
+  "id": "c14o",
+  "chunk": "c14o",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "The woman.",
+  "pic": "Danny."
+ },
+ {
+  "id": "c14p",
+  "chunk": "c14p",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "He was looking at my keys. The sock had slipped off when I grabbed the flashlight, and the last key hung against my hand. The one with the red tag.",
+  "pic": "The key with the red tag, B3."
+ },
+ {
+  "id": "c14q",
+  "chunk": "c14q",
+  "seg": 14,
+  "who": "theo",
+  "radio": false,
+  "text": "What's B3?",
+  "pic": ""
+ },
+ {
+  "id": "c14r",
+  "chunk": "c14r",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Why?",
+  "pic": "Danny."
+ },
+ {
+  "id": "c14s",
+  "chunk": "c14s",
+  "seg": 14,
+  "who": "theo",
+  "radio": false,
+  "text": "That's what she kept saying, that night. Down to B3. Get to the door.",
+  "pic": ""
+ },
+ {
+  "id": "c14t",
+  "chunk": "c14t",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "I closed my fist around the tag.",
+  "pic": "Danny's fist around the tag."
+ },
+ {
+  "id": "c14u",
+  "chunk": "c14u",
+  "seg": 14,
+  "who": "theo",
+  "radio": false,
+  "text": "They weren't trying to rob a store. They were trying to get underneath it.",
+  "pic": ""
+ },
+ {
+  "id": "c14v",
+  "chunk": "c14v",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "I thought of old Walt tapping the last key. That one, you never use. Don't ask.",
+  "pic": "Memory: Walt tapping the key."
+ },
+ {
+  "id": "c14w",
+  "chunk": "c14w",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "Across the highway was my daughter. Across the roof was a woman copying her signal.",
+  "pic": "Wide: the tower on one side, the department store roof on the other."
+ },
+ {
+  "id": "c14x",
+  "chunk": "c14x",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "And the one thing that woman wanted was hanging from my belt.",
+  "pic": "The B3 key on Danny's belt."
+ },
+ {
+  "id": "c14y",
+  "chunk": "c14y",
+  "seg": 14,
+  "who": "danny",
+  "radio": false,
+  "text": "What did she think was behind that door?",
+  "pic": "A steel door in the dark, stenciled B3."
+ }
+]
