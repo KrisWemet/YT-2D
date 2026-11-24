@@ -1,6 +1,6 @@
 # The Night Guard: project file
 
-A stick-figure zombie survival story for YouTube. It has long chapters (16:9) and Shorts (9:16) cut from them. Still pictures change every 2–3 seconds, cut on the spoken word, under Danny's first-person narration.
+A stick-figure zombie survival story for YouTube. It has long chapters (16:9) and Shorts (9:16) cut from them. Target a visual change every 5–10 seconds of script, cut to the recorded narration. Refresh longer passages with a matching close-up, reaction or cutaway under Danny's first-person narration.
 
 > A night guard with a key to every store gets locked inside his mall the night the dead rise. His seven-year-old daughter is a mile and a half away across the highway and blinks a flashlight at him every night. The woman on the radio wants the one key he was told never to use.
 

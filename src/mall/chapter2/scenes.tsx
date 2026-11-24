@@ -8,6 +8,7 @@ import {FPS} from '../MallChapter';
 import {blendPose, blink, climbPose, ease, idlePose, runPose, shamblePose} from './motion';
 import type {Speech} from './motion';
 import type {PictureMode} from './picture-edit';
+import type {ShotView} from './additional-views';
 import {KeyRing16, KeyInHand, RadioCard, SleepingBag, B3Door16} from '../chapter1/props';
 import {threeBlinks} from '../vertical';
 import {World, FULL} from '../World';
@@ -72,10 +73,18 @@ const Rack:React.FC<{tile?:boolean;t:number;open?:boolean}>=({tile=false,t,open=
  </g>;
 const footprint=(x:number,y:number,r:number,k:number)=><g key={k} transform={`translate(${x},${y}) rotate(${r})`} opacity={.85} fill="#dbe4d5"><ellipse cx={0} cy={0} rx={19} ry={35}/><ellipse cx={0} cy={43} rx={16} ry={20}/><path d="M-9 40H7V48H-9Z" fill="#33424b"/></g>;
 
-const Store:React.FC<{p:P;mode:Mode;variant:number;speaker?:string;speech?:Speech;section:number}>=({p,mode,variant,speaker,speech,section})=>{
+const Store:React.FC<DetailProps & {variant:number}>=({p,mode,variant,speaker,speech,section,view='base'})=>{
  const detail=variant%3;const dropping=mode==='theo'&&section===5;const isTalk=['talk','theo','water','tent'].includes(mode);
- const focus=mode==='rack'?cam(2130,780,1.55):mode==='chalk'||mode==='prints'?cam(1690,1270,1.9):['food','food-two','inventory'].includes(mode)?cam(1330,1200,1.72):mode==='sleep'||mode==='search-bag'?cam(1020,1300,1.7):mode==='bandage'?cam(1720,1250,2.2):
+ const baseFocus=mode==='rack'?cam(2130,780,1.55):mode==='chalk'||mode==='prints'?cam(1690,1270,1.9):['food','food-two','inventory'].includes(mode)?cam(1330,1200,1.72):mode==='sleep'||mode==='search-bag'?cam(1020,1300,1.7):mode==='bandage'?cam(1720,1250,2.2):
  isTalk?(detail===1?cam(speaker==='theo'?1820:1020,1100,1.9):cam(1460,1110,1.35)):cam(1408,960,1.15);
+ const subjectY=mode==='tent'?1140:1100;
+ const detailFocus=mode==='bandage'?cam(1810,1260,3.3):
+  ['food','food-two','inventory','water'].includes(mode)?cam(1490,1340,2.4):
+  mode==='chalk'||mode==='prints'?cam(1770,1320,2.7):mode==='rack'?cam(2120,470,2.3):
+  mode==='lock'?cam(1430,950,2.9):mode==='sleep'||mode==='search-bag'?cam(1210,1400,2.4):
+  cam(1850,subjectY,2.35);
+ const focus=view==='base'?baseFocus:view==='wide'?cam(1460,1110,1.32):view==='danny'?cam(1030,1160,2.12):
+  view==='theo'?cam(1870,subjectY,2.12):detailFocus;
  const danPose=mode==='sleep'?POSES.sitHug:mode==='search-bag'?POSES.crouch:mode==='chalk'||mode==='prints'?POSES.crouch:mode==='rack'?POSES.lookUp:mode==='bandage'?bandagePose:isTalk?POSES.think:POSES.standRelax;
  const time=clock(p);
  const answer=speech?.accent ?? 0;
@@ -106,7 +115,7 @@ const Store:React.FC<{p:P;mode:Mode;variant:number;speaker?:string;speech?:Speec
 
 // The painted cutaway fixes the ledge at y=426 in screen coordinates. Animate only
 // the figures, the tile break, and the loose boot, so all three share the same camera.
-const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,speech})=>{
+const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,speech,view='base'})=>{
  const time=clock(p);
  const catching=mode==='wrist-catch';
  const strap=mode==='strap';
@@ -125,8 +134,15 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
   blendPose(shamblePose(time),POSES.rattle,gatePull);
  const chest=jointsOf(marcusPose,marcusX,1020,235).chestRadio;
  const close=marcusDetail||['marcus','marcus-up','crowd','fountain-memory','boot-rest'].includes(mode);
- const zoom=marcusDetail?3.9:cut?2.05:detail?1.85:mode==='crawl-close'||mode==='walkway'?1.4:close?1.45:variant%3===1?1.15:1;
- const pan=marcusDetail?[960-chest[0]*zoom,605-chest[1]*zoom]:cut?[-1640,-350]:detail?[-480,-155]:mode==='crawl-close'||mode==='walkway'?[-315,-95]:close?[-330,-405]:zoom>1?[-120,-40]:[0,0];
+ const baseZoom=marcusDetail?3.9:cut?2.05:detail?1.85:mode==='crawl-close'||mode==='walkway'?1.4:close?1.45:variant%3===1?1.15:1;
+ const basePan=marcusDetail?[960-chest[0]*baseZoom,605-chest[1]*baseZoom]:cut?[-1640,-350]:detail?[-480,-155]:mode==='crawl-close'||mode==='walkway'?[-315,-95]:close?[-330,-405]:baseZoom>1?[-120,-40]:[0,0];
+ const crowdView=['crowd','fountain-memory','marcus','marcus-up','boot-rest'].includes(mode);
+ const crawlingView=['ceiling','crawl-close','walkway','return'].includes(mode);
+ const viewFocus=crowdView?cam(mode==='boot-rest'?1010:700,mode==='boot-rest'?910:875,2.45):
+  view==='theo'?cam(crawlingView?1320:675,370,2.65):view==='danny'?cam(crawlingView?800:973,410,2.55):cam(799,410,3.1);
+ const zoom=view==='base'?baseZoom:view==='wide'?1.08:viewFocus.z;
+ const pan=view==='base'?basePan:view==='wide'?[-75,-20]:
+  [960-viewFocus.x*zoom,540-viewFocus.y*zoom];
  const moving=['ceiling','crawl-close','walkway','return'].includes(mode);
  const move=moving?Math.min(115,p.t*10):0;
  const shake=fall?Math.sin(p.t*18)*1.5:0;
@@ -192,12 +208,16 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  </AbsoluteFill>;
 };
 
-const Pump:React.FC<DetailProps>=({p,mode,speech,section})=>{
+const Pump:React.FC<DetailProps>=({p,mode,speech,section,view='base'})=>{
  const tankDetail=mode==='tank';
  const ladder=mode==='ladder';
  const filling=mode==='fill-jugs';
- const focus=ladder?cam(430,610+350*ease(p.t/4.8),1.68):mode==='gauge'?cam(2030,730,3.1):tankDetail?cam(1404,752,1.57):
+ const baseFocus=ladder?cam(430,610+350*ease(p.t/4.8),1.68):mode==='gauge'?cam(2030,730,3.1):tankDetail?cam(1404,752,1.57):
   filling||mode==='pump-jugs'?cam(1340,1220,1.75):mode==='pump-theo'?cam(2075,1110,1.6):cam(1408,865,1.02);
+ const focus=view==='base'?baseFocus:view==='wide'?cam(1408,930,1.02):
+  view==='danny'?cam(830,1110,2.1):view==='theo'?cam(2090,1120,2.1):
+  mode==='pump-theo'?cam(2110,1335,3.2):mode==='tank'||mode==='gauge'?cam(2030,730,3.1):
+  mode==='ladder'?cam(340,300+Math.min(p.t*120,635),2.1):cam(1410,1390,2.95);
  const time=clock(p);
  const ladderTime=Math.min(p.t,4.8);
  const ladderBase={...POSES.lookUp,head:-9};
@@ -264,7 +284,7 @@ const Route:React.FC<{p:P}>=({p})=><AbsoluteFill style={{background:'#17212e'}}>
  <path d="M610 700H1130" stroke="#ae594a" strokeWidth={13}/><Txt x={870} y={790} size={40} fill="#e5ba9b">THE COURT BELOW</Txt>
  </Screen></AbsoluteFill>;
 
-const Roof:React.FC<DetailProps>=({p,mode,section,speech})=>{
+const Roof:React.FC<DetailProps>=({p,mode,section,speech,view='base'})=>{
  const cueFlashes=(mode==='window-count'||mode==='signal-count')?[p.ev.one,p.ev.two,p.ev.three]:[];
  const phase=cueFlashes.length ? Number(cueFlashes.some(t=>Number.isFinite(t)&&p.t>=t&&p.t<t+.25)) : threeBlinks(p.t,.3);
  const windowShot=['window','window-count','dark-window'].includes(mode);
@@ -273,7 +293,10 @@ const Roof:React.FC<DetailProps>=({p,mode,section,speech})=>{
  const radio=mode==='roof-radio';
  const door=mode==='roof-door';
  const signal=mode==='signal'||mode==='signal-count'?phase:0;
- const focus=windowShot?cam(ROOF_WIN.x,402,3.0):door?cam(2460,739,2.15):radio?cam(1210,1120,2.25):cam(1430,955,1.025);
+ const baseFocus=windowShot?cam(ROOF_WIN.x,402,3.0):door?cam(2460,739,2.15):radio?cam(1210,1120,2.25):cam(1430,955,1.025);
+ const focus=windowShot?(view==='base'?baseFocus:view==='wide'?cam(ROOF_WIN.x,440,1.85):cam(ROOF_WIN.x,ROOF_WIN.y+27,4.1)):
+  view==='base'?baseFocus:view==='wide'?cam(1410,1010,1.02):
+  view==='theo'?cam(870,1190,2.15):view==='detail'?cam(1210,1110,2.5):cam(1200,1200,2.15);
  const time=clock(p);
  const base=radio?POSES.radio:mode==='roof-lowered'?{...POSES.standRelax,head:16}:POSES.lookUp;
  const torchPose=idlePose(reply?blendPose(POSES.lookUp,POSES.pointUp,ease(p.t/.25)):base,time);
@@ -313,7 +336,7 @@ const Drill:React.FC<{p:P;variant:number}>=({p})=>{
  </Scene>;
 };
 
-type DetailProps = {p: P; mode: Mode; section: number; speaker?: string; speech?: Speech};
+type DetailProps = {p: P; mode: Mode; section: number; speaker?: string; speech?: Speech; view?:ShotView};
 
 const gateTug = (p: P) => {
  const t = p.t - p.ev.rattle;
@@ -340,11 +363,14 @@ const GateBeat: React.FC<DetailProps> = ({p, mode}) => {
  />;
 };
 
-const Stockroom: React.FC<DetailProps> = ({p,mode,section}) => {
+const Stockroom: React.FC<DetailProps> = ({p,mode,section,view='base'}) => {
  const radio=mode==='stock-radio';
  const seated=mode==='stock-wait'||mode==='receipt';
  const detail=['box-detail','box-bait','receipt'].includes(mode);
- const focus=detail?cam(mode==='receipt'?1060:1450,1270,2.8):cam(1440,1050,1.33);
+ const baseFocus=detail?cam(mode==='receipt'?1060:1450,1270,2.8):cam(1440,1050,1.33);
+ const focus=view==='base'?baseFocus:view==='wide'?cam(1440,1100,1.25):
+  view==='danny'||radio?cam(1030,1120,2.13):mode==='receipt'?cam(1110,1260,3.4):
+  mode==='theo-sleep'?cam(1310,1280,2.3):cam(1450,1280,2.8);
  return <Scene bg="stockroom" a={focus} b={{...focus,z:focus.z+.09}} p={p} filter="brightness(.81)">
   <Box x={1450} y={1325} s={.98} open={mode==='stock-box'&&section===3}/>
   {mode==='box-bait'&&<Bar x={1430} y={1224} s={.82}/>}
@@ -362,7 +388,7 @@ const Stockroom: React.FC<DetailProps> = ({p,mode,section}) => {
  </Scene>;
 };
 
-const RackAction: React.FC<DetailProps> = ({p,mode,section,speech}) => {
+const RackAction: React.FC<DetailProps> = ({p,mode,section,speech,view='base'}) => {
  const tile=['tile','tile-dust','tile-dark','rack-top'].includes(mode);
  const print=mode==='rack-prints';
  const chase=mode==='theo-run';
@@ -377,7 +403,7 @@ const RackAction: React.FC<DetailProps> = ({p,mode,section,speech}) => {
  const foodAction=['theo-box','theo-holds-bar','theo-leaves-bar'].includes(mode);
  const floor=foodAction||chase||mode==='confront';
  const danHere=!tile&&!print&&!drop;
- const focus=tile?cam(2185,385,2.52):print?cam(2120,980,2.18):drop?cam(2095,650,1.42):climbing||perch||practice?cam(2060,885,1.43):
+ const baseFocus=tile?cam(2185,385,2.52):print?cam(2120,980,2.18):drop?cam(2095,650,1.42):climbing||perch||practice?cam(2060,885,1.43):
   mode==='theo-close'?cam(1825,1100,2.1):floor?cam(1470,1110,1.4):cam(1990,1070,1.55);
  const time=clock(p);
  const travel=Math.max(.6,Math.min(p.dur-.15,chase?1.9:ascending?2.1:3.2));
@@ -394,9 +420,15 @@ const RackAction: React.FC<DetailProps> = ({p,mode,section,speech}) => {
  const theoPose=chase?blendPose(runPose(strideTime),POSES.lookBack,settle):
   climbing||drop?blendPose(shelfPose,drop?perchPose:ascending?POSES.pointUp:POSES.standRelax,settle)
   :perch?perchPose:idlePose(foodAction?foodPose:POSES.standRelax,time);
+ const hand=jointsOf(theoPose,theoX,theoY,535,-1).handN;
+ const focus=view==='base'?baseFocus:view==='wide'?cam(1820,1050,1.2):
+  view==='danny'?cam(practice?1980:1100,practice?880:1180,practice?1.9:2.05):
+  view==='theo'?cam(theoX,theoY-250,2.1):
+  tile?cam(2185,240,3.25):print?cam(2075,1100,2.8):
+  perch?cam(theoX,theoY-240,2.2):foodAction?cam(hand[0],hand[1],2.4):mode==='theo-close'?cam(theoX-20,theoY-335,3.1):
+  cam(2110,practice?1060:920,2.25);
  const reaching=blendPose(POSES.lookUp,POSES.pointUp,ease(p.t/.5));
  const dannyPose=mode==='rack-wait'?POSES.crouch:practice?climbPose(POSES.lookUp,strideTime,.7):grabbing?reaching:POSES.lookUp;
- const hand=jointsOf(theoPose,theoX,theoY,535,-1).handN;
  return <Scene bg="sportsinside" a={focus} b={{...focus,z:focus.z+.06}} p={p} filter={mode==='tile-dark'?'brightness(.37)':'brightness(.9)'}>
   <HoldGate frac={1} opacity={.7}/>
   <Rack tile t={p.t} open={!closed}/>
@@ -413,12 +445,13 @@ const RackAction: React.FC<DetailProps> = ({p,mode,section,speech}) => {
  </Scene>;
 };
 
-const StoreInsert: React.FC<DetailProps> = ({p,mode,section}) => {
+const StoreInsert: React.FC<DetailProps> = ({p,mode,section,view='base'}) => {
  const boots=mode==='trainer'||mode==='print-detail';
  const carrying=mode==='carry-test';
  const pack=mode==='pack'||carrying;
  const grip=jointsOf(POSES.holdUp,1070,1450,655).handN;
- const focus=boots?cam(1490,1280,2.25):cam(1500,1140,1.6);
+ const focus=view==='base'?(boots?cam(1490,1280,2.25):cam(1500,1140,1.6)):
+  view==='wide'?cam(1450,1160,1.4):view==='danny'?cam(1070,1150,2.05):carrying?cam(1360,1170,2.15):cam(1490,1270,boots?3.3:2.75);
  return <Scene bg="sportsinside" a={focus} b={{...focus,z:focus.z+.075}} p={p} filter="brightness(.88)">
   {boots&&<g transform="translate(1490 1290) rotate(-12)">
    {mode==='trainer'?<>
@@ -464,8 +497,11 @@ const HallBeat: React.FC<DetailProps> = ({p,mode}) => (
  </Scene>
 );
 
+const InsertView:React.FC<{view:ShotView;origin?:string;children:React.ReactNode}>=({view,origin='50% 54%',children})=>
+ <AbsoluteFill style={{overflow:'hidden'}}><AbsoluteFill style={{transform:`scale(${view==='detail'?1.38:1})`,transformOrigin:origin}}>{children}</AbsoluteFill></AbsoluteFill>;
+
 export const Chapter2Scene:React.FC<DetailProps & {variant:number}>=props=>{
- const {p,mode,variant,section}=props;
+ const {p,mode,variant,section,view='base'}=props;
  if(['ceiling','fall','fall-detail','wrist-catch','collapse','rescue','rescue-recover','strap','crowd','marcus','marcus-detail','marcus-up','boot','boot-rest','cut','crawl-close','walkway','return','fountain-memory'].includes(mode))return <Ceiling {...props}/>;
  if(['pump','tank','ladder','gauge','pump-theo','pump-jugs','fill-jugs'].includes(mode))return <Pump {...props}/>;
  if(['pump-impact','pump-catch','pump-pickup'].includes(mode))return <PumpAction {...props}/>;
@@ -485,11 +521,11 @@ export const Chapter2Scene:React.FC<DetailProps & {variant:number}>=props=>{
  if(mode==='drill-clock')return <AbsoluteFill><Drill {...props}/><Screen><Txt x={1510} y={198} size={60} fill={GOLD}>1:30 A.M.</Txt></Screen></AbsoluteFill>;
  if(mode==='b3-door')return <B3Door16 t={p.t} dur={p.dur} frame={p.frame}/>;
  if(mode==='key17')return <KeyInHand t={p.t} tag="17"/>;
- if(mode==='keys-plain')return <KeyRing16 t={p.t} tag=""/>;
- if(mode==='plan')return <Route p={p}/>;
+ if(mode==='keys-plain')return <InsertView view={view}><KeyRing16 t={p.t} tag=""/></InsertView>;
+ if(mode==='plan')return <InsertView view={view} origin="70% 50%"><Route p={p}/></InsertView>;
  if(mode==='drill')return <Drill {...props}/>;
- if(mode==='keys')return <KeyRing16 t={p.t} tagBig={section===14?.9:0} glowAt={section===14?.2:1e9}/>;
- if(mode==='radio'||mode==='vera')return <RadioCard t={p.t} frame={p.frame} state={mode==='vera'?'crackle':'off'} label={mode==='vera'?'VERA':'NO TRANSMISSION'}/>;
+ if(mode==='keys')return <InsertView view={view} origin="67% 64%"><KeyRing16 t={p.t} tagBig={section===14?.9:0} glowAt={section===14?.2:1e9}/></InsertView>;
+ if(mode==='radio'||mode==='vera')return <InsertView view={view}><RadioCard t={p.t} frame={p.frame} state={mode==='vera'?'crackle':'off'} label={mode==='vera'?'VERA':'NO TRANSMISSION'}/></InsertView>;
  if(['roof','window','dark-window','window-count','signal','signal-count','roof-reply','roof-radio','roof-door','roof-lowered'].includes(mode))return <Roof {...props}/>;
  if(mode==='title'||mode==='end')return <AbsoluteFill style={{background:'#101924'}}>
  <World bg={mode==='end'?'parkview':'concourse'} cam={{...FULL,z:1.05+.025*Math.min(p.t,8)}} width={1920} height={1080} filter="brightness(.25) blur(5px)"/>
