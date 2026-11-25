@@ -34,3 +34,10 @@ The full MP4 and original PNG plates are delivered locally. The working artwork,
 - Stills were checked at each former flash point and each continuity fix: crawl cuts, collapse, rescue, wound close-up, ladder approach, boot and Marcus, food offer, fitting-room dissolve, memory dissolves, section dips and tags, return trip.
 - Background placement A/B on consecutive 1080p frames: frame-to-frame change 0.33–1.89 with layout placement against a steady 0.6–0.8 with the transform, with the same framing and sharpness within 2%.
 - A 410 MB sharing copy (x264 slow, tune animation, CRF 21.5, audio copied) measures SSIM 0.988–0.994 against the master on sampled scenes.
+
+## V10 still-screen checks
+
+- Full export through the chunked `render.cjs`: 49,072 frames, 27:15.733, 1920 × 1080 at 30 fps, H.264 High, stereo AAC at 48 kHz, 223 MB; the entire movie decoded without errors. Audio measures -15.7 LUFS, 4.5 LU loudness range, -3.1 dBFS peak.
+- All 4,736 recorded words are kept. The longest pause between spoken words is 2.90 s (the return-trip still); the title beat leaves 2.86 s. The 10-second end card follows the last line.
+- Every chunk was scanned frame by frame: across 372 still-to-still changes, no frame changes inside a still apart from planned flashes, dips, dissolves, section tags and the radio badge appearing. The shortest still is 5 frames (a single torch flash on its count word).
+- Stills were reviewed across the film, including the new fitting rooms, B3 corridor and chalk route, the radio, key and phone inserts over their paintings, the zombie crowds at full size, the window and copied-signal flashes, and the return-trip still.
