@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import {RetentionContinuity} from './retention-context';
+import {CEILING_MIRROR_X, ladderState} from './continuity';
 import {AbsoluteFill} from 'remotion';
 import {Screen, Txt, Grille, Padlock, Waves, RewindFx} from '../Overlays';
 import {Scene, Guard, Zed, P, Beyond, HoldGate, Vignette} from '../shots';
@@ -118,6 +119,7 @@ const Store:React.FC<DetailProps & {variant:number}>=({p,mode,variant,speaker,sp
 // The painted cutaway fixes the ledge at y=426 in screen coordinates. Animate only
 // the figures, the tile break, and the loose boot, so all three share the same camera.
 const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,speech,view='base'})=>{
+ const retention=useContext(RetentionContinuity);
  const time=clock(p);
  const catching=mode==='wrist-catch';
  const strap=mode==='strap';
@@ -145,6 +147,8 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const zoom=view==='base'?baseZoom:view==='wide'?1.08:viewFocus.z;
  const pan=view==='base'?basePan:view==='wide'?[-75,-20]:
   [960-viewFocus.x*zoom,540-viewFocus.y*zoom];
+ const preserveSide=retention&&(fall||rescue);
+ const panX=preserveSide?1920-CEILING_MIRROR_X*zoom-pan[0]:pan[0];
  const moving=['ceiling','crawl-close','walkway','return'].includes(mode);
  const move=moving?Math.min(115,p.t*10):0;
  const shake=fall?Math.sin(p.t*18)*1.5:0;
@@ -171,7 +175,7 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
   armF:[65-12*step,88-9*step],armN:[70+12*step,93+9*step],
   legF:[-85-8*step,-90+11*step],legN:[-75+8*step,-85-11*step]});
  return <AbsoluteFill style={{background:'#111921',overflow:'hidden'}}>
-  <AbsoluteFill style={{transform:`translate(${pan[0]}px,${pan[1]}px) scale(${zoom})`,transformOrigin:'0 0'}}>
+  <AbsoluteFill style={{transform:`translate(${panX}px,${pan[1]}px) scale(${zoom})`,transformOrigin:'0 0'}}>
    <World bg="ch2-ceiling" cam={FULL} width={1920} height={1080}/>
    <Screen>
     {/* Smaller figures occupy the floor behind the fountain, with larger figures in front. */}
@@ -187,6 +191,7 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
     {!memory&&Array.from({length:16},(_,i)=><Zed key={i} x={100+i*111+Math.sin(p.t*.3+i)*3} y={1018+(i%3)*18} h={178+(i%3)*18} k={i} face={i%2?1:-1} shadow={.1} dim={.88}/>)}
     {!memory&&<Stick x={marcusX} y={1020} h={235} look={{...LOOKS.marcusZ,radioOnChest:false}} pose={marcusPose} eyes="zombie" mouth="zombie" shadow={.15}/>}
     {!memory&&<rect x={chest[0]-5} y={chest[1]-5} width={10} height={16} rx={2} fill="#6d747e" stroke={INK} strokeWidth={2.5}/>}
+    <g transform={preserveSide?`translate(${CEILING_MIRROR_X},0) scale(-1,1)`:undefined}>
     {(fall||rescue||mode==='return')&&collapse>.6&&<>
      <path d="M930 431L950 408L974 432L1013 402L1048 430L1080 415L1114 438V475H930Z" fill="#111821" stroke={INK} strokeWidth={6}/>
      <path d="M947 470L985 514L1020 476M1064 467L1102 499" fill="#9b9e93" stroke={INK} strokeWidth={5}/>
@@ -198,12 +203,13 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
       <Theo x={theoX} y={theoY} h={320} face={1} pose={theoPose} time={time} speech={speech}/>
      </>:<>
       <Guard x={660+move} y={411} h={350} pose={crawlingPose(crawlingStep)} eyes={blink('worried',time)} shadow={0}/>
-      <Theo x={1270+move} y={411} h={320} pose={crawlingPose(-crawlingStep)} time={time} speech={speech} hurt={mode==='cut'||mode==='return'}/>
+      <Theo x={1270+move} y={411} h={320} pose={crawlingPose(-crawlingStep)} time={time} speech={speech} hurt={section>=10}/>
       <Jug x={1130+move} y={393} s={.43} full={section>=12}/>
      </>}
     </g>}
     {fall&&collapse>.6&&Array.from({length:8},(_,i)=><path key={i} d="M-6-3L9-6L7 7Z" transform={`translate(${960+i*17},${500+((p.t*74+i*83)%380)}) rotate(${p.t*20+i*32})`} fill="#b7b5a2"/>)}
     {(mode==='boot'||mode==='boot-rest')&&<g transform={`translate(1005,${505+bootFall*407}) rotate(${bootFall*110})`}><path d="M-25-40H24V12H66Q82 20 75 35H-29Z" fill="#34343a" stroke={INK} strokeWidth={8}/></g>}
+    </g>
    </Screen>
   </AbsoluteFill>
   <Vignette o={.16}/>
@@ -211,25 +217,32 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
 };
 
 const Pump:React.FC<DetailProps>=({p,mode,speech,section,view='base'})=>{
+ const retention=useContext(RetentionContinuity);
+ const descent=ladderState(clock(p));
+ const descentTime=retention?descent.t:p.t;
  const tankDetail=mode==='tank';
  const ladder=mode==='ladder';
  const filling=mode==='fill-jugs';
- const baseFocus=ladder?cam(430,610+350*ease(p.t/4.8),1.68):mode==='gauge'?cam(2030,730,3.1):tankDetail?cam(1404,752,1.57):
+ const baseFocus=ladder?cam(430,610+350*(retention?ease(descentTime/9.4):ease(p.t/4.8)),1.68):mode==='gauge'?cam(2030,730,3.1):tankDetail?cam(1404,752,1.57):
   filling||mode==='pump-jugs'?cam(1340,1220,1.75):mode==='pump-theo'?cam(2075,1110,1.6):cam(1408,865,1.02);
  const focus=view==='base'?baseFocus:view==='wide'?cam(1408,930,1.02):
   view==='danny'?cam(830,1110,2.1):view==='theo'?cam(2090,1120,2.1):
   mode==='pump-theo'?cam(2110,1335,3.2):mode==='tank'||mode==='gauge'?cam(2030,730,3.1):
-  mode==='ladder'?cam(340,300+Math.min(p.t*120,635),2.1):cam(1410,1390,2.95);
+  mode==='ladder'?cam(340,300+(retention?Math.min(descentTime*80,800):Math.min(p.t*120,635)),2.1):cam(1410,1390,2.95);
  const time=clock(p);
- const ladderTime=Math.min(p.t,4.8);
+ const ladderTime=retention?descent.t:Math.min(p.t,4.8);
  const ladderBase={...POSES.lookUp,head:-9};
  const speakingPose=idlePose(blendPose(POSES.standRelax,POSES.point,(speech?.accent??0)*.32),time+1.2);
  return <Scene bg="ch2-pump" a={focus} b={{...focus,z:focus.z+.05}} p={p}>
   <text x={1404} y={693} fontFamily="DejaVu Sans,sans-serif" fontWeight={900} fontSize={47} textAnchor="middle" fill="#293130">8,000 GALLONS</text>
   <text x={1404} y={739} fontFamily="DejaVu Sans,sans-serif" fontWeight={700} fontSize={19} textAnchor="middle" fill="#3a4039">FOUNTAIN RESERVOIR</text>
   {ladder&&<>
-   <Guard x={310} y={650+Math.min(p.t*120,635)} h={500} pose={climbPose(ladderBase,ladderTime,1.22)} back/>
-   <Theo x={325} y={355+Math.min(p.t*106,665)} h={415} pose={climbPose(ladderBase,ladderTime+.24,1.13)} back hurt/>
+   <Guard x={retention?descent.dannyX:310} y={retention?descent.dannyY:650+Math.min(p.t*120,635)} h={500}
+    pose={blendPose(climbPose(ladderBase,ladderTime,1.22),POSES.standRelax,retention?descent.dannyStep:0)}
+    back={!retention||descent.dannyStep<.5}/>
+   <Theo x={retention?descent.theoX:325} y={retention?descent.theoY:355+Math.min(p.t*106,665)} h={415}
+    pose={blendPose(climbPose(ladderBase,ladderTime+.24,1.13),POSES.standRelax,retention?descent.theoStep:0)}
+    back={!retention||descent.theoStep<.5} face={retention&&descent.theoStep>=.5?-1:1} hurt/>
   </>}
   {!ladder&&section!==7&&mode!=='gauge'&&<>
    <Danny time={time} x={filling?1085:810} y={1425} h={590} pose={filling?POSES.crouch:tankDetail?POSES.holdUp:POSES.standRelax} eyes="worried"/>

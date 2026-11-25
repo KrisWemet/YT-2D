@@ -16,7 +16,7 @@ const browserExecutable=process.env.REMOTION_BROWSER_EXECUTABLE;
   if(composition.durationInFrames!==edit.frames)throw Error('Composition length differs from the edit.');
   let old=-1;await renderMedia({...common,composition,outputLocation:path.join(work,'picture.mp4'),muted:true,codec:'h264',crf:19,pixelFormat:'yuv420p',imageFormat:'jpeg',jpegQuality:94,concurrency:6,x264Preset:'fast',onProgress:p=>{const n=Math.floor(p.progress*100);if(n!==old){old=n;console.log(n+'%');}}});
  }finally{await browser.close({silent:true});}
- const file=path.join(work,'night-guard-chapter-2-v7.mp4');
+ const file=path.join(work,'night-guard-chapter-2-v8.mp4');
  const args=['-nostdin','-v','error','-y','-i',path.join(work,'picture.mp4'),'-i',path.join(repo,'public/mall/ch2/retention.mp3'),'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','256k','-ar','48000','-ac','2','-t',String(edit.frames/30),'-movflags','+faststart',file];
  if(spawnSync('ffmpeg',args,{stdio:'inherit'}).status)throw Error('Mux failed');
  if(spawnSync('ffmpeg',['-nostdin','-v','error','-xerror','-i',file,'-f','null','-'],{stdio:'inherit'}).status)throw Error('Decode check failed');

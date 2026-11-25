@@ -80,7 +80,7 @@ chapters=[]
 for part in d['parts']:
  ww=[w for w in words if d['segments'][w['seg']]['section']==part['n']]
  if ww:chapters.append(dict(n=part['n'],title=part['title'],time=0 if part['n']==1 else max(0,ww[0]['s']-.1)))
-manifest=dict(version=7,fps=FPS,frames=cursor,seconds=cursor/FPS,recap=False,audioReady=False,clips=clips,
+manifest=dict(version=8,fps=FPS,frames=cursor,seconds=cursor/FPS,recap=False,audioReady=False,clips=clips,
  cutaways=[dict(sourceStart=F(a),sourceEnd=F(b),view=v) for a,b,v in cutaways],chapters=chapters,
  editorialCuts=[dict(start=a,end=b,reason=r) for a,b,r in removals],words=words)
 (DATA/'retention-edit.json').write_text(json.dumps(manifest,indent=1)+'\n')
@@ -100,11 +100,11 @@ for a,b,t in [(2,4,'[metal strains]'),(8.4,10.4,'[water spills]'),(12,14,'[breat
  subs.append((insertclip['start']/FPS+a,insertclip['start']/FPS+b,t))
 subs.sort()
 srt='\n'.join(f'{i+1}\n{ts(a)} --> {ts(b)}\n{t}\n' for i,(a,b,t) in enumerate(subs))
-(out/'night-guard-chapter-2-v7.srt').write_text(srt)
-(REPO/'publish/night-guard-chapter-2-v7.srt').write_text(srt)
+(out/'night-guard-chapter-2-v8.srt').write_text(srt)
+(REPO/'publish/night-guard-chapter-2-v8.srt').write_text(srt)
 markers='\n'.join(f"{int(c['time'])//60}:{int(c['time'])%60:02} {c['title']}" for c in chapters)+'\n'
-(out/'night-guard-chapter-2-v7-chapters.txt').write_text(markers)
-(REPO/'publish/night-guard-chapter-2-v7-chapters.txt').write_text(markers)
+(out/'night-guard-chapter-2-v8-chapters.txt').write_text(markers)
+(REPO/'publish/night-guard-chapter-2-v8-chapters.txt').write_text(markers)
 script=['# The Night Guard — Chapter Two, retention cut','', 'No recap. Original recorded performances are retained. The return-trip choice is told visually.','']
 last=None
 for c in clips:
@@ -119,5 +119,5 @@ for c in clips:
   group.append(w)
  if group:script+=[f"**{group[0]['who'].title()}:** "+' '.join(x['w'] for x in group),'']
 (REPO/'images/mall/chapter2/retention-script.md').write_text('\n'.join(script))
-(out/'night-guard-chapter-2-v7-script.md').write_text('\n'.join(script))
+(out/'night-guard-chapter-2-v8-script.md').write_text('\n'.join(script))
 print(json.dumps(dict(frames=cursor,seconds=cursor/FPS,words=len(words),edits=len(removals),clips=len(clips),newActionAt=insertclip['start']/FPS),indent=2))

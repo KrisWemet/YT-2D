@@ -3,6 +3,8 @@ import {AbsoluteFill, Audio, staticFile, useCurrentFrame} from 'remotion';
 import {makeChapter} from '../MallChapter';
 import {CHAPTER2_DEF, CHAPTER2_READY} from './chapter2';
 import {RetentionContinuity} from './retention-context';
+import {Chapter2Scene} from './scenes';
+import {LADDER_APPROACH, LADDER_START, LADDER_DETAIL, LADDER_END} from './continuity';
 import {CeilingAngle, FoodChoice, FrozenChoice, GripAngle, ReturnChoice, SecondLight, WallPrints} from './retention-scenes';
 import edit from './retention-edit.json';
 import ch2 from './ch2.json';
@@ -21,6 +23,12 @@ export const Chapter2Retention:React.FC=()=>{
  const angle=clip.kind==='source'?edit.cutaways.find(c=>sourceFrame>=c.sourceStart&&sourceFrame<c.sourceEnd):undefined;
  let picture:React.ReactNode=<SourcePicture sourceFrame={sourceFrame}/>;
  if(clip.kind==='return-choice')picture=<ReturnChoice frame={local}/>;
+ else if(time>=LADDER_APPROACH&&time<LADDER_END){
+  const descending=time>=LADDER_START-.2;
+  picture=<Chapter2Scene mode={descending?'ladder':'walkway'} section={descending?11:10} variant={0}
+   view={descending?(time<LADDER_DETAIL?'base':'detail'):'wide'}
+   p={{frame:sourceFrame,t:Math.max(0,time-(descending?LADDER_START:LADDER_APPROACH)),dur:descending?LADDER_END-LADDER_START:5,ev:{}}}/>;
+ }
  else if(time>=637.762&&time<657.6)picture=<FoodChoice time={time}/>;
  else if(angle){
   const kind=angle.view;
