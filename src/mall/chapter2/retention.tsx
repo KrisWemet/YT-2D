@@ -1,20 +1,27 @@
 import React from 'react';
 import {AbsoluteFill, Audio, getInputProps, staticFile, useCurrentFrame} from 'remotion';
 import {makeChapter, makeChapterOverlay, resolveChapter} from '../MallChapter';
-import {SubpixelCamera} from '../World';
+import {MaxZoom, SubpixelCamera} from '../World';
+import {STILL} from './motion';
 import {CHAPTER2_DEF, CHAPTER2_PICTURE, CHAPTER2_READY} from './chapter2';
 import {RetentionContinuity} from './retention-context';
 import {Chapter2Scene} from './scenes';
 import {LADDER_APPROACH, LADDER_START, LADDER_DETAIL, LADDER_END} from './continuity';
 import {CeilingAngle, FoodChoice, FrozenChoice, GripAngle, ReturnChoice, SecondLight, WallPrints} from './retention-scenes';
-import {ROOF_RECUT_END, ROOF_RECUT_START, RoofCutaways} from './roof-cutaways';
+import {ROOF_CUTS, ROOF_RECUT_END, ROOF_RECUT_START, RoofCutaways} from './roof-cutaways';
 import edit from './retention-edit.json';
 import ch2 from './ch2.json';
 
 const FPS=30;
 // Painted backgrounds glide on the same sub-pixel camera as the figures (render with
 // {"subpixel": false} to compare against the earlier whole-pixel placement).
-const SUBPIXEL=((typeof window==='undefined'?{}:getInputProps()) as {subpixel?:boolean}).subpixel!==false;
+const PROPS=(typeof window==='undefined'?{}:getInputProps()) as {subpixel?:boolean;stills?:boolean};
+const SUBPIXEL=PROPS.subpixel!==false;
+// v10 is told in still screens: one held picture per shot, nothing moving inside it. Render with
+// {"stills": false} for the animated cut on the same timeline.
+const STILLS=PROPS.stills!==false;
+// Held paintings are never enlarged much past their own resolution.
+const STILL_MAX_ZOOM=2;
 const SourcePicture=makeChapter(CHAPTER2_DEF,{audio:false,overlays:false});
 const Overlay=makeChapterOverlay(CHAPTER2_DEF);
 const sourceShots=resolveChapter(CHAPTER2_DEF).shots;
@@ -103,7 +110,7 @@ const Push:React.FC<{zoom:number;origin:string;children:React.ReactNode}>=({zoom
 
 const draw=(unit:string,clock:number):React.ReactNode=>{
  const time=clock/FPS;
- if(unit==='return')return <ReturnChoice frame={clock}/>;
+ if(unit==='return')return <ReturnChoice frame={clock} wide={STILLS}/>;
  if(unit==='food')return <FoodChoice time={time}/>;
  if(unit==='roof')return <RoofCutaways frame={clock}/>;
  if(unit==='walkway'||unit.startsWith('ladder')){
@@ -116,6 +123,8 @@ const draw=(unit:string,clock:number):React.ReactNode=>{
   const angle=edit.cutaways[+unit.slice(8)],kind=angle.view;
   const k=(clock-angle.sourceStart)/(angle.sourceEnd-angle.sourceStart);
   const [to,origin]=PUSH[kind]??[1,'50% 50%'];
+  // Held still, the footprints read best on the painted store wall rather than the plain wall card.
+  if(STILLS&&kind==='prints-wall')return <Chapter2Scene mode="rack-prints" section={4} variant={0} view="base" p={{frame:clock,t:2,dur:4,ev:{}}}/>;
   const view=kind==='ceiling-up'||kind==='ceiling-down'?<CeilingAngle up={kind==='ceiling-up'} time={time} boot={time>1200} leg={time<8||time>1073}/>:
    kind==='prints-wall'?<WallPrints time={time}/>:kind==='grip'?<GripAngle time={time}/>:
    kind==='second-light'?<SecondLight time={time} pulses={pulses}/>:<FrozenChoice time={time}/>;
@@ -172,20 +181,75 @@ const dissolves=plan.slice(1).map((next,k)=>({at:next.start,prev:plan[k],next,
 export const RETENTION_DISSOLVES=dissolves.map(c=>c.at);
 const runPicture=(run:Run,frame:number)=>draw(run.unit,run.clock+frame-run.anchor);
 
+// Still screens: each run is held as one picture, chosen a little past its middle so actions read
+// as under way. Runs are split where the picture itself changes: the roof sequence's own cuts,
+// the three stages of the food offer, and every light flash (Lily's torch, the window, the copied
+// signal), which becomes its own short still on its cue word.
+type Still={start:number;end:number;run:Run;key:number};
+const flashesOf=(run:Run):[number,number][]=>{
+ const u=run.unit,out:[number,number][]=[];
+ if(u.startsWith('shot:')){
+  const pic=CHAPTER2_PICTURE[+u.slice(5)];
+  if(pic.mode==='window-count'||pic.mode==='signal-count'){
+   for(const k of ['one','two','three']){const at=pic.pulses[k];if(Number.isFinite(at))out.push([pic.actionStart+at,pic.actionStart+at+.25]);}
+  }else if(['window','roof-reply','signal'].includes(pic.mode)){
+   for(let i=0;i<3;i++)out.push([pic.actionStart+.3+i*.55,pic.actionStart+.62+i*.55]);
+  }
+ }else if(u==='roof'){
+  for(let i=0;i<3;i++){out.push([122.7+.16+i*.55,122.7+.48+i*.55]);out.push([125.4+.15+i*.55,125.4+.47+i*.55]);}
+ }else if(u.startsWith('cutaway:')&&edit.cutaways[+u.slice(8)].view==='second-light'){
+  for(const at of pulses)out.push([at,at+.24]);
+ }
+ return out.map(([a,b])=>[Math.round(a*FPS),Math.round(b*FPS)]);
+};
+const stillsOf=(run:Run):Still[]=>{
+ const c0=run.clock+run.start-run.anchor,c1=run.clock+run.end-run.anchor;
+ const frameOf=(c:number)=>run.anchor+c-run.clock;
+ const flashes=flashesOf(run),edges=new Set<number>();
+ for(const [a,b] of flashes)for(const c of [a,b])if(c>c0&&c<c1)edges.add(c);
+ const internal=run.unit==='roof'?ROOF_CUTS:run.unit==='food'?[FOOD_START+5.2,FOOD_START+11.3]:[];
+ for(const t of internal){const c=Math.round(t*FPS);if(c>c0&&c<c1)edges.add(c);}
+ const marks=[c0,...[...edges].sort((a,b)=>a-b),c1];
+ return marks.slice(0,-1).map((a,i)=>{
+  const b=marks[i+1];
+  const key=run.unit==='return'?Math.round(9.4*FPS)
+   :run.unit==='food'?Math.round((FOOD_START+(a/FPS-FOOD_START<5.2?3.5:a/FPS-FOOD_START<11.3?10.4:15.5))*FPS)
+   :flashes.length?Math.round((a+b)/2):Math.round(a+.6*(b-a));
+  return {start:frameOf(a),end:frameOf(b),run,key};
+ });
+};
+// Rounding flash edges to frames can leave a sliver; fold anything under three frames into the
+// still before it, so no picture ever flickers.
+const stills=plan.flatMap(stillsOf).reduce<Still[]>((out,x)=>{
+ const last=out[out.length-1];
+ if(last&&x.end-x.start<3&&last.run===x.run){last.end=x.end;return out;}
+ if(last&&last.end-last.start<3&&last.run===x.run){x.start=last.start;out[out.length-1]=x;return out;}
+ out.push(x);return out;
+},[]);
+const stillAt=(frame:number)=>{
+ let lo=0,hi=stills.length-1;
+ while(lo<hi){const mid=(lo+hi+1)>>1;if(stills[mid].start<=frame)lo=mid;else hi=mid-1;}
+ return stills[lo];
+};
+export const RETENTION_STILLS=stills.map(x=>({start:x.start,end:x.end,unit:x.run.unit,key:x.key}));
+const stillPicture=(x:Still)=>draw(x.run.unit,x.key);
+const pictureAt=(run:Run,frame:number)=>STILLS?stillPicture(stillAt(frame)):runPicture(run,frame);
+
 export const Chapter2Retention:React.FC=()=>{
  const frame=useCurrentFrame();
  const blend=dissolves.find(c=>frame>=c.at-c.len/2&&frame<c.at+c.len/2);
+ STILL.on=STILLS;
  const picture=blend?<>
-  {runPicture(blend.prev,frame)}
-  <AbsoluteFill style={{opacity:smooth((frame-blend.at+blend.len/2+.5)/blend.len)}}>{runPicture(blend.next,frame)}</AbsoluteFill>
- </>:runPicture(runAt(frame),frame);
+  {STILLS?stillPicture(stillAt(blend.at-1)):runPicture(blend.prev,frame)}
+  <AbsoluteFill style={{opacity:smooth((frame-blend.at+blend.len/2+.5)/blend.len)}}>{STILLS?stillPicture(stillAt(blend.at)):runPicture(blend.next,frame)}</AbsoluteFill>
+ </>:pictureAt(runAt(frame),frame);
  const sf=sourceFrameAt(frame);
  const tag=[...tagStarts].reverse().find(t=>frame>=t.frame);
  const elapsed=tag?(frame-tag.frame)/FPS:Infinity;
  const light=brightness(frame);
- return <RetentionContinuity.Provider value={true}><SubpixelCamera.Provider value={SUBPIXEL}><AbsoluteFill style={{background:'#050a10'}}>
+ return <RetentionContinuity.Provider value={true}><SubpixelCamera.Provider value={SUBPIXEL}><MaxZoom.Provider value={STILLS?STILL_MAX_ZOOM:0}><AbsoluteFill style={{background:'#050a10'}}>
   <AbsoluteFill style={{opacity:light}}>{picture}</AbsoluteFill>
-  {sf!==null&&frame>=storyStart&&<Overlay t={sf/FPS} fadeBadge tag={tag&&elapsed<4?{text:tag.text,t:sf/FPS-elapsed}:null}/>}
+  {sf!==null&&frame>=storyStart&&<Overlay t={sf/FPS} fadeBadge still={STILLS} tag={tag&&elapsed<4?{text:tag.text,t:sf/FPS-elapsed}:null}/>}
   {edit.audioReady&&<Audio src={staticFile('mall/ch2/retention.mp3')}/>}
- </AbsoluteFill></SubpixelCamera.Provider></RetentionContinuity.Provider>;
+ </AbsoluteFill></MaxZoom.Provider></SubpixelCamera.Provider></RetentionContinuity.Provider>;
 };

@@ -11,9 +11,11 @@ import {STILL, blendPose, blink, climbPose, ease, idlePose, mirrorPose, runPose,
 import type {Speech} from './motion';
 import type {PictureMode} from './picture-edit';
 import type {ShotView} from './additional-views';
-import {KeyRing16, KeyInHand, RadioCard, SleepingBag, B3Door16} from '../chapter1/props';
+import {KeyRing16, KeyInHand, RadioCard, SleepingBag, B3Door16, CardBackdrop} from '../chapter1/props';
+import {FONT} from '../../thumbs/Thumbs';
 import {threeBlinks} from '../vertical';
-import {World, FULL} from '../World';
+import {World, FULL, MaxZoom} from '../World';
+import type {BgName, Cam} from '../World';
 
 const INK='#0b0c0c', GOLD='#f0c53c';
 export type Mode=PictureMode|'store'|'sleep'|'food'|'lock'|'chalk'|'prints'|'rack'|'theo'|'talk'|'water'|'plan'|'ceiling'|'fall'|'rescue'|'crowd'|'marcus'|'boot'|'cinema'|'door'|'pump'|'tank'|'drill'|'bandage'|'cut'|'tent'|'roof'|'window'|'signal'|'vera'|'radio'|'keys'|'title'|'rewind'|'end';
@@ -120,10 +122,29 @@ const Store:React.FC<DetailProps & {variant:number}>=({p,mode,variant,speaker,sp
  </Scene>;
 };
 
+// The crowd around the fountain, small enough for dozens at once but unmistakably dead: grey-green
+// skin, sunken eyes, slack jaws, ragged clothes, hunched forward with both arms out.
+const ZSKIN=['#94a17d','#8a9873','#a3aa8b','#7f906f','#9ca58a'],ZCLOTH=['#4b5563','#5d4a46','#4e5b48','#625849','#3f4a5c','#6a5a5f'];
+export const MiniZombie:React.FC<{x:number;y:number;s:number;k:number;face:1|-1}>=({x,y,s,k,face})=>{
+ const skin=ZSKIN[k%5],cloth=ZCLOTH[k%6],reach=-4+(k*7)%9;
+ return <g transform={`translate(${x},${y}) scale(${s*face},${s})`}>
+  <path d={`M-3-27L-9 0M5-27L${8+k%3*2} -1`} stroke={INK} strokeWidth={8} strokeLinecap="round"/>
+  <path d={`M2-58L31 ${-56+reach}M-2-52L27 ${-47+reach}`} stroke={INK} strokeWidth={9} strokeLinecap="round"/>
+  <path d={`M2-58L31 ${-56+reach}M-2-52L27 ${-47+reach}`} stroke={skin} strokeWidth={4.5} strokeLinecap="round"/>
+  <path d="M-12-61Q-1-71 11-61L13-31L9-26L5-31L1-25L-3-30L-8-25L-13-31Z" fill={cloth} stroke={INK} strokeWidth={3.5} strokeLinejoin="round"/>
+  <path d="M-6-52l5 4M3-44l4-3" stroke="#00000055" strokeWidth={2}/>
+  <circle cx={9} cy={-73} r={12.5} fill={skin} stroke={INK} strokeWidth={3.5}/>
+  <circle cx={8} cy={-76} r={3.4} fill="#2b1f22"/><circle cx={16} cy={-75} r={3} fill="#2b1f22"/>
+  <circle cx={8.6} cy={-76.4} r={1} fill="#e8e2b8"/><circle cx={16.4} cy={-75.3} r={.9} fill="#e8e2b8"/>
+  <path d="M10-67q4 3 8 0" fill="#3a1d1f" stroke={INK} strokeWidth={1.6}/>
+ </g>;
+};
+
 // The painted cutaway fixes the ledge at y=426 in screen coordinates. Animate only
 // the figures, the tile break, and the loose boot, so all three share the same camera.
 const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,speech,view='base'})=>{
  const retention=useContext(RetentionContinuity);
+ const maxZoom=useContext(MaxZoom);
  const time=clock(p);
  const catching=mode==='wrist-catch';
  const strap=mode==='strap';
@@ -212,8 +233,14 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const crawlingPose=(step: number): Pose=>({...crawl,head:-39+4*step,
   armF:[65-12*step,88-9*step],armN:[70+12*step,93+9*step],
   legF:[-85-8*step,-90+11*step],legN:[-75+8*step,-85-11*step]});
+ // Still screens: the painting is 1920 wide here, so cap the zoom and keep the same centre.
+ const shown=(()=>{
+  if(!maxZoom||camera.z<=maxZoom)return camera;
+  const z=maxZoom,cx=Math.min(1920-960/z,Math.max(960/z,(960-camera.x)/camera.z)),cy=Math.min(1080-540/z,Math.max(540/z,(540-camera.y)/camera.z));
+  return {x:960-cx*z,y:540-cy*z,z};
+ })();
  return <AbsoluteFill style={{background:'#111921',overflow:'hidden'}}>
-  <AbsoluteFill style={{transform:`translate(${camera.x}px,${camera.y}px) scale(${camera.z})`,transformOrigin:'0 0'}}>
+  <AbsoluteFill style={{transform:`translate(${shown.x}px,${shown.y}px) scale(${shown.z})`,transformOrigin:'0 0'}}>
    <World bg="ch2-ceiling" cam={FULL} width={1920} height={1080}/>
    <Screen>
     {/* Smaller figures occupy the floor behind the fountain, with larger figures in front. */}
@@ -221,6 +248,7 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
      const row=Math.floor(i/17),span=650+row*260;
      const x=960-span/2+((i*139)%span),y=714+row*47;
      const size=.62+row*.08;
+     if(retention)return <MiniZombie key={i} x={x} y={y} s={size*1.05} k={i} face={i%3===0?-1:1}/>;
      return <g key={i} transform={`translate(${x},${y}) scale(${size})`} opacity={.78}>
       <circle cy={-68} r={13} fill={i%3?'#68735d':'#8a9574'} stroke={INK} strokeWidth={4}/>
       <path d="M0-53V-18M0-43L-23-27M0-43L22-24M0-18L-12 2M0-18L12 3" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round"/>
@@ -534,6 +562,12 @@ const StoreInsert: React.FC<DetailProps> = ({p,mode,section,view='base'}) => {
 const Fitting: React.FC<DetailProps> = ({p,mode}) => {
  const retention=useContext(RetentionContinuity);
  const k=clamp((clock(p)-FITTING_SPAN[0])/(FITTING_SPAN[1]-FITTING_SPAN[0]));
+ // The revised edit has its own painting of the fitting rooms: Vera asleep on the open cubicle's
+ // bench in her story, the same bench empty when Danny remembers checking.
+ if(retention)return <Scene bg="ch2-fitting-rooms" a={cam(lerp(1760,1830,k),lerp(880,900,k),lerp(1.12,1.22,k))} p={p}>
+  {mode==='fitting'&&<Stick x={2300} y={1098} h={760} pose={{...POSES.sitChair,lean:10,head:24}} look={{...LOOKS.woman,shirt:'#5d5968'}}
+   face={-1} eyes="closed" mouth="flat" dim={.78} shadow={0}/>}
+ </Scene>;
  const story=retention?cam(lerp(1530,1585,k),lerp(1030,1012,k),lerp(1.25,1.44,k)):undefined;
  return <Scene bg="deptstore" a={story??cam(1530,1030,1.25)} b={story?undefined:cam(1560,1020,1.34)} p={p} filter="brightness(.76) saturate(.75)">
   <path d="M1110 390H2180V1290H1110Z" fill="#3b4250" stroke={INK} strokeWidth={14}/>
@@ -560,11 +594,47 @@ const HallBeat: React.FC<DetailProps> = ({p,mode}) => {
  </Scene>;
 };
 
+// Close-up inserts (radio, keys) held over a darkened painting of where the scene takes place,
+// instead of a plain backdrop.
+const OverPlate:React.FC<{bg:BgName;at?:Cam;dim?:number;children:React.ReactNode}>=({bg,at=FULL,dim=.5,children})=>
+ <AbsoluteFill style={{background:'#05080c'}}>
+  <World bg={bg} cam={at} width={1920} height={1080} filter={`brightness(${dim}) saturate(.85)`}/>
+  <Vignette o={.5}/>
+  <CardBackdrop.Provider value={false}>{children}</CardBackdrop.Provider>
+ </AbsoluteFill>;
+
+// The door Vera wanted: a painted basement corridor, the level stencilled on the plate above it.
+const B3Corridor:React.FC<{p:P}>=({p})=><Scene bg="ch2-b3-corridor" a={cam(1408,770,1.32)} b={cam(1408,760,1.4)} p={p}>
+ <text x={1416} y={530} textAnchor="middle" fontFamily={FONT} fontSize={84} fill="#7d2621" letterSpacing="0.06em">B3</text>
+</Scene>;
+
+// Theo's route, drawn with one finger in the spilled climbing chalk on the store floor.
+const ChalkRoute:React.FC<{p:P}>=({p})=>{
+ const line={fill:'none',stroke:'#eef0ea',strokeWidth:14,strokeLinecap:'round' as const,strokeLinejoin:'round' as const};
+ const word=(x:number,y:number,text:string,size:number,rot:number)=>
+  <text x={x} y={y} transform={`rotate(${rot} ${x} ${y})`} textAnchor="middle" fontFamily={FONT} fontSize={size} fill="#eef0ea" letterSpacing="0.05em">{text}</text>;
+ return <Scene bg="ch2-chalk-floor" a={cam(1500,960,1.1)} b={cam(1520,950,1.15)} p={p}>
+  <defs><filter id="chalky" x="-5%" y="-5%" width="110%" height="110%">
+   <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves={2} seed={4}/><feDisplacementMap in="SourceGraphic" scale={7}/>
+  </filter></defs>
+  <g filter="url(#chalky)" opacity={.84}>
+   <path d="M560 1040H1000V1330H560Z" {...line}/>{word(780,1205,'STORE',58,-3)}
+   <path d="M1300 560H1740V740H1300Z" {...line}/>{word(1520,668,'CINEMA',58,2)}
+   <path d="M2080 1040H2560V1330H2080Z" {...line}/>{word(2320,1200,'PUMP ROOM',54,-2)}
+   <ellipse cx={1530} cy={1190} rx={150} ry={92} {...line} strokeWidth={10}/>{word(1530,1340,'COURT',46,1)}
+   <path d="M780 1035V650H1295M1745 650H2320V1000" {...line} strokeDasharray="34 26"/>
+   <path d="M2276 960L2320 1030L2364 960" {...line}/>
+   {[[1450,1160],[1560,1150],[1610,1215],[1480,1225]].map(([x,y],i)=><path key={i} d={`M${x-14} ${y-14}l28 28m0-28l-28 28`} {...line} strokeWidth={8}/>)}
+  </g>
+ </Scene>;
+};
+
 const InsertView:React.FC<{view:ShotView;origin?:string;children:React.ReactNode}>=({view,origin='50% 54%',children})=>
  <AbsoluteFill style={{overflow:'hidden'}}><AbsoluteFill style={{transform:`scale(${view==='detail'?1.38:1})`,transformOrigin:origin}}>{children}</AbsoluteFill></AbsoluteFill>;
 
 export const Chapter2Scene:React.FC<DetailProps & {variant:number}>=props=>{
  const {p,mode,variant,section,view='base'}=props;
+ const retention=useContext(RetentionContinuity);
  if(['ceiling','fall','fall-detail','wrist-catch','collapse','rescue','rescue-recover','strap','crowd','marcus','marcus-detail','marcus-up','boot','boot-rest','cut','crawl-close','walkway','return','fountain-memory'].includes(mode))return <Ceiling {...props}/>;
  if(['pump','tank','ladder','gauge','pump-theo','pump-jugs','fill-jugs'].includes(mode))return <Pump {...props}/>;
  if(['pump-impact','pump-catch','pump-pickup'].includes(mode))return <PumpAction {...props}/>;
@@ -582,16 +652,18 @@ export const Chapter2Scene:React.FC<DetailProps & {variant:number}>=props=>{
  if(mode==='office-memory')return <OfficeScene p={p} a={cam(1590,899,1.18)} b={cam(1630,881,1.27)} danny={{pose:POSES.radio,propN:'radio'}}/>;
  if(mode==='medicine')return <Scene bg="apartment" a={cam(1320,1090,2.1)} b={cam(1345,1095,2.2)} p={p} filter="brightness(.65)"><g transform="translate(1320 1180)"><rect x={-118} y={-67} width={236} height={134} rx={12} fill="#555d69" stroke={INK} strokeWidth={8}/><rect x={-83} y={-13} width={165} height={25} rx={8} fill="#d8d8ce"/><rect x={36} y={-14} width={48} height={28} rx={7} fill="#769da5"/></g></Scene>;
  if(mode==='drill-clock')return <AbsoluteFill><Drill {...props}/><Screen><Txt x={1510} y={198} size={60} fill={GOLD}>1:30 A.M.</Txt></Screen></AbsoluteFill>;
- if(mode==='b3-door')return <B3Door16 t={p.t} dur={p.dur} frame={p.frame}/>;
- if(mode==='key17')return <KeyInHand t={p.t} tag="17"/>;
- if(mode==='keys-plain')return <InsertView view={view}><KeyRing16 t={p.t} tag=""/></InsertView>;
- if(mode==='plan')return <InsertView view={view} origin="70% 50%"><Route p={p}/></InsertView>;
+ if(mode==='b3-door')return retention?<B3Corridor p={p}/>:<B3Door16 t={p.t} dur={p.dur} frame={p.frame}/>;
+ if(mode==='key17')return retention?<OverPlate bg="ch2-cinema"><KeyInHand t={p.t} tag="17"/></OverPlate>:<KeyInHand t={p.t} tag="17"/>;
+ if(mode==='keys-plain'){const keys=<InsertView view={view}><KeyRing16 t={p.t} tag=""/></InsertView>;return retention?<OverPlate bg="sportsinside">{keys}</OverPlate>:keys;}
+ if(mode==='plan')return <InsertView view={view} origin="70% 50%">{retention?<ChalkRoute p={p}/>:<Route p={p}/>}</InsertView>;
  if(mode==='drill')return <Drill {...props}/>;
- if(mode==='keys')return <InsertView view={view} origin="67% 64%"><KeyRing16 t={p.t} tagBig={section===14?.9:0} glowAt={section===14?.2:1e9}/></InsertView>;
- if(mode==='radio'||mode==='vera')return <InsertView view={view}><RadioCard t={p.t} frame={p.frame} state={mode==='vera'?'crackle':'off'} label={mode==='vera'?'VERA':'NO TRANSMISSION'}/></InsertView>;
+ if(mode==='keys'){const keys=<InsertView view={view} origin="67% 64%"><KeyRing16 t={p.t} tagBig={section===14?.9:0} glowAt={section===14?.2:1e9}/></InsertView>;
+  return retention?<OverPlate bg={section===14?'ch2-roof-night':'sportsinside'}>{keys}</OverPlate>:keys;}
+ if(mode==='radio'||mode==='vera'){const radio=<InsertView view={view}><RadioCard t={p.t} frame={p.frame} state={mode==='vera'?(retention?'on':'crackle'):'off'} label={mode==='vera'?'VERA':'NO TRANSMISSION'}/></InsertView>;
+  return retention?<OverPlate bg={section===2?'ch2-roof-night':'sportsinside'}>{radio}</OverPlate>:radio;}
  if(['roof','window','dark-window','window-count','signal','signal-count','roof-reply','roof-radio','roof-door','roof-lowered'].includes(mode))return <Roof {...props}/>;
  if(mode==='title'||mode==='end')return <AbsoluteFill style={{background:'#101924'}}>
- <World bg={mode==='end'?'parkview':'concourse'} cam={{...FULL,z:1.05+.025*Math.min(p.t,8)}} width={1920} height={1080} filter="brightness(.25) blur(5px)"/>
+ <World bg={mode==='end'?'parkview':'concourse'} cam={{...FULL,z:1.05+.025*Math.min(p.t,8)}} width={1920} height={1080} filter={retention?'brightness(.34) saturate(.9)':'brightness(.25) blur(5px)'}/>
  <Screen><g opacity={clamp(p.t/.35)}><Txt x={960} y={280} size={86}>THE NIGHT GUARD</Txt><Txt x={960} y={410} size={52} fill="#cbd2dd">{mode==='end'?'NEXT · CHAPTER THREE':'CHAPTER TWO'}</Txt><Txt x={960} y={580} size={mode==='end'?148:100} fill={GOLD}>{mode==='end'?'THE PHARMACY':'THE BOY IN THE CEILING'}</Txt><Txt x={960} y={755} size={42} fill="#cbd2dd">{mode==='end'?"SUBSCRIBE TO FOLLOW DANNY’S STORY":'BOOK ONE · FORTY-TWO KEYS'}</Txt></g></Screen>
  </AbsoluteFill>;
  if(mode==='rewind')return <AbsoluteFill><Ceiling {...props} mode="fall"/><RewindFx t={p.t} frame={p.frame}/></AbsoluteFill>;

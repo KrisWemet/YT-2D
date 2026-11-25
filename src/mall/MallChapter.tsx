@@ -121,10 +121,10 @@ export const shotTimes = (def: ChapterDef) => resolveChapter(def).shots.map((s) 
 
 // The "where and when" tag and the radio badge, drawn over any picture. `t` is the chapter's own
 // clock; `tag` overrides which segment tag shows (an edit can place tags on its own timeline).
-type OverlayProps = {t: number; tag?: {text: string; t: number} | null; fadeBadge?: boolean};
+type OverlayProps = {t: number; tag?: {text: string; t: number} | null; fadeBadge?: boolean; still?: boolean};
 export const makeChapterOverlay = (def: ChapterDef): React.FC<OverlayProps> => {
   const r = resolveChapter(def);
-  const Overlay: React.FC<OverlayProps> = ({t, tag: forced, fadeBadge = false}) => {
+  const Overlay: React.FC<OverlayProps> = ({t, tag: forced, fadeBadge = false, still = false}) => {
     if (t >= def.data.duration) return null;
     const tag = forced === undefined ? [...r.tags].reverse().find((g) => t >= g.t) : forced;
     const radio = r.cues.segments.find((g) => g.kind === 'radio' && t >= g.s - 0.05 && t <= g.e + 0.2);
@@ -137,7 +137,7 @@ export const makeChapterOverlay = (def: ChapterDef): React.FC<OverlayProps> => {
         {tag && <SegTag text={tag.text} t={t - tag.t} />}
         {name && (
           <g opacity={badge}>
-            <RadioBadge name={name} t={t} color={name === 'MARCUS' ? '#8fd18a' : name === 'EMERGENCY ALERT' ? '#f0c53c' : '#e58fb4'} />
+            <RadioBadge name={name} t={still && radio ? radio.s + 0.37 : t} color={name === 'MARCUS' ? '#8fd18a' : name === 'EMERGENCY ALERT' ? '#f0c53c' : '#e58fb4'} />
           </g>
         )}
       </Screen>

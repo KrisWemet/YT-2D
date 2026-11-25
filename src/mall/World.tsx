@@ -5,6 +5,9 @@ import {Img, staticFile} from 'remotion';
 // Opt-in sub-pixel placement of the painted backgrounds (see World). Off by default, so earlier
 // renders keep their exact pixels.
 export const SubpixelCamera = createContext(false);
+// Still screens hold each painting on screen, where upscaling shows. An edit can cap the camera
+// zoom so a painting is never enlarged much past its own resolution. 0 = no cap.
+export const MaxZoom = createContext(0);
 
 // Background sizes in pixels (Seedream 5 Flash 2K, 16:9).
 export const BG_W = 2816;
@@ -29,7 +32,10 @@ export type BgName =
   | 'ch2-cinema'
   | 'ch2-pump'
   | 'ch2-service-hall'
-  | 'ch2-roof-night';
+  | 'ch2-roof-night'
+  | 'ch2-b3-corridor'
+  | 'ch2-fitting-rooms'
+  | 'ch2-chalk-floor';
 
 // Camera: centre point (image px) and zoom (1 = whole image fills the frame).
 export type Cam = {x: number; y: number; z: number};
@@ -68,6 +74,8 @@ export const World: React.FC<{
 }> = ({bg, cam, width, height, filter, bgFilter, shake = [0, 0], children, over}) => {
   const vertical = useContext(ShortLayout);
   const smooth = useContext(SubpixelCamera);
+  const maxZoom = useContext(MaxZoom);
+  if (maxZoom && cam.z > maxZoom) cam = {...cam, z: maxZoom};
   if (vertical) {
     width = 1080;
     height = 1920;

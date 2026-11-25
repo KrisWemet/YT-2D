@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {AbsoluteFill} from 'remotion';
+import {RetentionContinuity} from './retention-context';
+import {World} from '../World';
 import {FPS} from '../MallChapter';
 import {OfficeScene, ROOF_WIN} from '../chapter1/scenes';
-import {PhoneCard} from '../chapter1/props';
-import {Guard, Scene} from '../shots';
+import {CardBackdrop, PhoneCard} from '../chapter1/props';
+import {Guard, Scene, Vignette} from '../shots';
 import {LOOKS, POSES, Stick} from '../Stick';
 import {threeBlinks} from '../vertical';
 import type {P} from '../shots';
@@ -41,6 +44,19 @@ const DannyOnRoof: React.FC<{p: P; angle: keyof typeof roofShots}> = ({p, angle}
   );
 };
 
+// Mom's message, held over the night roof in the revised edit rather than a plain backdrop.
+const PhoneOnRoof: React.FC<{p: P}> = ({p}) => {
+  const phone = <PhoneCard t={p.t + .23} mode="text" barsAt={-.9} />;
+  if (!useContext(RetentionContinuity)) return phone;
+  return (
+    <AbsoluteFill style={{background: '#05080c'}}>
+      <World bg="ch2-roof-night" cam={{x: 1250, y: 980, z: 1.25}} width={1920} height={1080} filter="brightness(.45) saturate(.85)" />
+      <Vignette o={.55} />
+      <CardBackdrop.Provider value={false}>{phone}</CardBackdrop.Provider>
+    </AbsoluteFill>
+  );
+};
+
 // The cuts follow the recorded narration. The last beat returns to Danny
 // listening before the existing radio insert resumes at 2:13.
 const cutaways: {at: number; draw: (p: P) => React.ReactNode}[] = [
@@ -53,7 +69,7 @@ const cutaways: {at: number; draw: (p: P) => React.ReactNode}[] = [
     />
   )},
   {at: 102.36, draw: p => <DannyOnRoof p={p} angle="hesitation" />},
-  {at: 105.35, draw: p => <PhoneCard t={p.t + .23} mode="text" barsAt={-.9} />},
+  {at: 105.35, draw: p => <PhoneOnRoof p={p} />},
   {at: 111.9, draw: p => <DannyOnRoof p={p} angle="message" />},
   {at: 118.2, draw: p => (
     <Scene bg="ch2-roof-night" a={{x: ROOF_WIN.x, y: 460, z: 1.6}} b={{x: ROOF_WIN.x, y: 401, z: 2.65}} p={p} />
@@ -69,6 +85,9 @@ const cutaways: {at: number; draw: (p: P) => React.ReactNode}[] = [
   {at: 125.4, draw: p => <DannyOnRoof p={p} angle="reply" />},
   {at: 127.6, draw: p => <DannyOnRoof p={p} angle="listen" />},
 ];
+
+// Source times of the sequence's internal cuts (still screens hold one picture per cut).
+export const ROOF_CUTS = cutaways.map(shot => shot.at);
 
 export const RoofCutaways: React.FC<{frame: number}> = ({frame}) => {
   const now = frame / FPS;

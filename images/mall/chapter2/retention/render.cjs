@@ -6,7 +6,7 @@ const repo=path.resolve(__dirname,'../../../..'),work=path.join(repo,'out/chapte
 const {bundle}=local('@remotion/bundler'),{openBrowser,selectComposition,renderMedia}=local('@remotion/renderer');
 const edit=JSON.parse(fs.readFileSync(path.join(repo,'src/mall/chapter2/retention-edit.json')));
 const browserExecutable=process.env.REMOTION_BROWSER_EXECUTABLE;
-const VERSION='v9',CHUNKS=Math.max(1,Number(process.env.CHUNKS||4)),CONCURRENCY=Math.max(1,Number(process.env.CONCURRENCY||6));
+const VERSION='v10',CHUNKS=Math.max(1,Number(process.env.CHUNKS||4)),CONCURRENCY=Math.max(1,Number(process.env.CONCURRENCY||6));
 const frames=file=>{
  const r=spawnSync('ffprobe',['-v','error','-count_packets','-select_streams','v:0','-show_entries','stream=nb_read_packets','-of','default=noprint_wrappers=1:nokey=1',file],{encoding:'utf8'});
  return r.status?-1:parseInt(r.stdout,10);
