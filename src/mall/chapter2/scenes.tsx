@@ -128,8 +128,12 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const catching=mode==='wrist-catch';
  const strap=mode==='strap';
  const fall=catching||['fall','fall-detail','collapse','strap'].includes(mode);
- const recovery=mode==='rescue-recover';
+ // In the revised edit the wound close-up keeps the recovered rescue staging it follows.
+ const recovery=mode==='rescue-recover'||(retention&&mode==='cut');
  const rescue=mode==='rescue'||recovery, cut=mode==='cut';
+ // Across the court sequence the struggle, shake and falling debris run on the source clock,
+ // so consecutive fall shots join without a jolt; the flash-forward keeps per-shot bursts.
+ const fallClock=retention&&time>900?time:p.t;
  const detail=mode==='fall-detail'||strap||catching;
  const memory=mode==='fountain-memory';
  const marcusDetail=mode==='marcus-detail';
@@ -160,12 +164,12 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const panX=preserveSide?1920-CEILING_MIRROR_X*zoom-pan[0]:pan[0];
  const moving=['ceiling','crawl-close','walkway','return'].includes(mode);
  const move=moving?Math.min(115,p.t*10):0;
- const shake=fall?Math.sin(p.t*18)*1.5:0;
+ const shake=fall?Math.sin(fallClock*18)*1.5:0;
  const bootFall=mode==='boot-rest'?1:mode==='boot'?clamp(p.t/1.15):0;
  const collapse=mode==='collapse'?ease(p.t/.48):1;
  const hauled=recovery?1:rescue?ease((p.t-.14)/1.5):0;
  const reach=catching?ease(p.t/.45):1;
- const strain=fall?Math.sin(p.t*7)*Math.exp(-p.t*.32):0;
+ const strain=fall?Math.sin(fallClock*7)*(fallClock===time?.5+.3*Math.sin(time*.61):Math.exp(-p.t*.32)):0;
  const hangingPose: Pose={...hanging,head:45+strain*7,legN:[8+strain*10,strain*12]};
  // In the mirrored staging the collapse starts from the crawl's on-screen shape (head toward
  // Theo, on the crawl's line) and the rescue starts from the hanging shape the fall left him in.
@@ -182,13 +186,23 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const theoPose=idlePose(recovery?{...pull,head:-49,armF:[20,38],armN:[39,32]}:pulling,time,1.3);
  const theoX=563-97*hauled+17*reach;
  const theoY=fall?423:414;
+ // "I looked at him. His trouser leg was torn at the calf." A slow push from Theo toward the cut,
+ // kept inside the painting.
+ const camera=(()=>{
+  if(!(retention&&cut))return {x:panX,y:pan[1],z:zoom};
+  const k=320/300,sk=skeleton(theoPose),push=clamp(p.t/Math.max(p.dur,.01));
+  const calf=[CEILING_MIRROR_X-(theoX+lerp(sk.kneeN[0],sk.footN[0],.67)*k),theoY+lerp(sk.kneeN[1],sk.footN[1],.67)*k];
+  const z=1.95+.32*push;
+  const cx=Math.min(1920-960/z,lerp(CEILING_MIRROR_X-theoX,calf[0],.25+.6*push)),cy=Math.min(1080-540/z,Math.max(540/z,lerp(395,calf[1],.5)));
+  return {x:960-cx*z,y:540-cy*z,z};
+ })();
  const braceHand=jointsOf(theoPose,theoX,theoY,320).handF;
  const crawlingStep=moving?Math.sin(p.t*4.2)*Math.max(0,1-p.t/12):.15*Math.sin(time*1.7);
  const crawlingPose=(step: number): Pose=>({...crawl,head:-39+4*step,
   armF:[65-12*step,88-9*step],armN:[70+12*step,93+9*step],
   legF:[-85-8*step,-90+11*step],legN:[-75+8*step,-85-11*step]});
  return <AbsoluteFill style={{background:'#111921',overflow:'hidden'}}>
-  <AbsoluteFill style={{transform:`translate(${panX}px,${pan[1]}px) scale(${zoom})`,transformOrigin:'0 0'}}>
+  <AbsoluteFill style={{transform:`translate(${camera.x}px,${camera.y}px) scale(${camera.z})`,transformOrigin:'0 0'}}>
    <World bg="ch2-ceiling" cam={FULL} width={1920} height={1080}/>
    <Screen>
     {/* Smaller figures occupy the floor behind the fountain, with larger figures in front. */}
@@ -213,14 +227,14 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
      {fall||rescue?<>
       {braced&&<path d={`M405 168L386 170L${braceHand[0]} ${braceHand[1]}`} fill="none" stroke="#c1a364" strokeWidth={8}/>}
       <Guard x={dannyX} y={dannyY} h={350} face={rescue?-1:1} pose={dannyPose} eyes={blink('wide',time)} mouth="grit" sweat shadow={0}/>
-      <Theo x={theoX} y={theoY} h={320} face={1} pose={theoPose} time={time} speech={speech}/>
+      <Theo x={theoX} y={theoY} h={320} face={1} pose={theoPose} time={time} speech={speech} hurt={retention&&recovery}/>
      </>:<>
       <Guard x={path?path.dannyX:660+move} y={411} h={350} pose={crawlingPose(path?path.dannyStep:crawlingStep)} eyes={blink('worried',time)} shadow={0}/>
       <Theo x={path?path.theoX:1270+move} y={411} h={320} pose={crawlingPose(path?path.theoStep:-crawlingStep)} time={time} speech={speech} hurt={section>=10}/>
       <Jug x={path?path.dannyX+.77*(path.theoX-path.dannyX):1130+move} y={393} s={.43} full={section>=12}/>
      </>}
     </g>}
-    {fall&&collapse>.6&&Array.from({length:8},(_,i)=><path key={i} d="M-6-3L9-6L7 7Z" transform={`translate(${960+i*17},${500+((p.t*74+i*83)%380)}) rotate(${p.t*20+i*32})`} fill="#b7b5a2"/>)}
+    {fall&&collapse>.6&&Array.from({length:8},(_,i)=><path key={i} d="M-6-3L9-6L7 7Z" transform={`translate(${960+i*17},${500+((fallClock*74+i*83)%380)}) rotate(${fallClock*20+i*32})`} fill="#b7b5a2"/>)}
     {(mode==='boot'||mode==='boot-rest')&&<g transform={`translate(1005,${505+bootFall*407}) rotate(${bootFall*110})`}><path d="M-25-40H24V12H66Q82 20 75 35H-29Z" fill="#34343a" stroke={INK} strokeWidth={8}/></g>}
     </g>
    </Screen>
