@@ -154,6 +154,9 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const pan=view==='base'?basePan:view==='wide'?[-75,-20]:
   [960-viewFocus.x*zoom,540-viewFocus.y*zoom];
  const preserveSide=retention&&(fall||rescue);
+ // Setting off for the ladder, they crawl away from the hole the fall left (drawn where the
+ // mirrored rescue staging put it).
+ const afterRescue=retention&&mode==='walkway'&&time>1071.05;
  const panX=preserveSide?1920-CEILING_MIRROR_X*zoom-pan[0]:pan[0];
  const moving=['ceiling','crawl-close','walkway','return'].includes(mode);
  const move=moving?Math.min(115,p.t*10):0;
@@ -202,10 +205,10 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
     {!memory&&<Stick x={marcusX} y={1020} h={235} look={{...LOOKS.marcusZ,radioOnChest:false}} pose={marcusPose} eyes="zombie" mouth="zombie" shadow={.15}/>}
     {!memory&&<rect x={chest[0]-5} y={chest[1]-5} width={10} height={16} rx={2} fill="#6d747e" stroke={INK} strokeWidth={2.5}/>}
     <g transform={preserveSide?`translate(${CEILING_MIRROR_X},0) scale(-1,1)`:undefined}>
-    {(fall||rescue||mode==='return')&&collapse>.6&&<>
+    {((fall||rescue||mode==='return')&&collapse>.6||afterRescue)&&<g transform={afterRescue?`translate(${CEILING_MIRROR_X},0) scale(-1,1)`:undefined}>
      <path d="M930 431L950 408L974 432L1013 402L1048 430L1080 415L1114 438V475H930Z" fill="#111821" stroke={INK} strokeWidth={6}/>
      <path d="M947 470L985 514L1020 476M1064 467L1102 499" fill="#9b9e93" stroke={INK} strokeWidth={5}/>
-    </>}
+    </g>}
     {!close&&<g transform={`translate(${shake},0)`}>
      {fall||rescue?<>
       {braced&&<path d={`M405 168L386 170L${braceHand[0]} ${braceHand[1]}`} fill="none" stroke="#c1a364" strokeWidth={8}/>}
