@@ -185,7 +185,7 @@ export const Chapter2Retention:React.FC=()=>{
  const light=brightness(frame);
  return <RetentionContinuity.Provider value={true}><SubpixelCamera.Provider value={SUBPIXEL}><AbsoluteFill style={{background:'#050a10'}}>
   <AbsoluteFill style={{opacity:light}}>{picture}</AbsoluteFill>
-  {sf!==null&&frame>=storyStart&&<Overlay t={sf/FPS} tag={tag&&elapsed<4?{text:tag.text,t:sf/FPS-elapsed}:null}/>}
+  {sf!==null&&frame>=storyStart&&<Overlay t={sf/FPS} fadeBadge tag={tag&&elapsed<4?{text:tag.text,t:sf/FPS-elapsed}:null}/>}
   {edit.audioReady&&<Audio src={staticFile('mall/ch2/retention.mp3')}/>}
  </AbsoluteFill></SubpixelCamera.Provider></RetentionContinuity.Provider>;
 };

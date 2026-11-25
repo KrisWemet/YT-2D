@@ -49,6 +49,11 @@ const COURT_DANNY = [span(969.6, 977.6, 11), span(978, 984.4, 11), span(1000, 10
 const COURT_THEO = [span(969.6, 977.6, 11), span(978, 984.4, 11), span(996.4, 998.8, 30), span(1029.6, 1044, 11),
   {from: 1068.1, to: 1068.9, dist: -58}];
 const COURT = {start: 969.26, end: 1071.05, danny: 498, theo: 990};
+// After the rescue they set off toward the ladder from where the haul left them (screen x of the
+// recovered rescue staging: Danny 1900-883, Theo 1900-483), slowly, Danny in one boot.
+const APPROACH = {start: LADDER_APPROACH, end: LADDER_START - .2, danny: 1017, theo: 1417};
+const APPROACH_DANNY = [span(LADDER_APPROACH + .9, LADDER_START - .2, 7)];
+const APPROACH_THEO = [span(LADDER_APPROACH + .5, LADDER_START - .2, 7)];
 
 export const crawlState = (sourceTime: number) => {
   const sway = (k: number) => .12 * Math.sin(sourceTime * 1.7 + k);
@@ -62,13 +67,18 @@ export const crawlState = (sourceTime: number) => {
     return {dannyX: COURT.danny + d.x, theoX: COURT.theo + th.x,
       dannyStep: d.active ? d.step : sway(0), theoStep: th.active ? -th.step : sway(2.1)};
   }
+  if (sourceTime >= APPROACH.start && sourceTime < APPROACH.end) {
+    const d = glide(APPROACH_DANNY, sourceTime, 1.7), th = glide(APPROACH_THEO, sourceTime, 1.5);
+    return {dannyX: APPROACH.danny + d.x, theoX: APPROACH.theo + th.x,
+      dannyStep: d.active ? d.step : sway(0), theoStep: th.active ? -th.step : sway(2.1)};
+  }
   return undefined;
 };
 // The camera trails a crawler smoothly rather than stepping with every reach.
 export const crawlFocus = (sourceTime: number, who: 'danny' | 'theo') => {
   let sum = 0;
   for (let k = 0; k < 9; k++) {
-    const s = crawlState(Math.max(sourceTime - k * .5, sourceTime < COURT.start ? STORE.start : COURT.start));
+    const s = crawlState(Math.max(sourceTime - k * .5, sourceTime < COURT.start ? STORE.start : sourceTime < APPROACH.start ? COURT.start : APPROACH.start));
     sum += s ? (who === 'danny' ? s.dannyX : s.theoX) : 0;
   }
   return sum / 9;
