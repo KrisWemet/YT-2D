@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {RetentionContinuity} from './retention-context';
-import {CEILING_MIRROR_X, FITTING_SPAN, crawlFocus, crawlState, ladderState} from './continuity';
+import {CEILING_MIRROR_X, FITTING_SPAN, STRAP_CUE, crawlFocus, crawlState, ladderState} from './continuity';
 import {AbsoluteFill} from 'remotion';
 import {Screen, Txt, Grille, Padlock, Waves, RewindFx} from '../Overlays';
 import {Scene, Guard, Zed, P, Beyond, HoldGate, Vignette} from '../shots';
@@ -182,8 +182,11 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const dannyX=980-97*hauled;
  const dannyY=fall?(preserve?lerp(411,428,collapse):390+38*collapse)+strain*3:lerp(429,414,hauled);
  const braced=strap||mode==='rescue';
+ // "He was reaching for the strap": in the revised edit his arm goes up to the support and the
+ // strap is drawn out from his hand over the first moments of the strap beats (source clock).
+ const brace=retention&&strap?ease((time-STRAP_CUE)/.8):braced?1:0;
  const pulling=blendPose({...pull,armN:[39,70]},{
-  ...pull,armF:braced?[130,172]:pull.armF,armN:[70+hauled*7,100+hauled*8],
+  ...pull,armF:braced?[lerp(pull.armF[0],130,brace),lerp(pull.armF[1],172,brace)]:pull.armF,armN:[70+hauled*7,100+hauled*8],
  },reach);
  const theoPose=idlePose(recovery?{...pull,head:-49,armF:[20,38],armN:[39,32]}:pulling,time,1.3);
  const theoX=563-97*hauled+17*reach;
@@ -233,7 +236,8 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
     </g>}
     {!close&&<g transform={`translate(${shake},0)`}>
      {fall||rescue?<>
-      {braced&&<path d={`M405 168L386 170L${braceHand[0]} ${braceHand[1]}`} fill="none" stroke="#c1a364" strokeWidth={8}/>}
+      {braced&&brace>0&&(()=>{const len=Math.hypot(386-braceHand[0],170-braceHand[1])+19.2;
+       return <path d={`M${braceHand[0]} ${braceHand[1]}L386 170L405 168`} fill="none" stroke="#c1a364" strokeWidth={8} strokeDasharray={`${len} ${len}`} strokeDashoffset={len*(1-brace)}/>;})()}
       <Guard x={dannyX} y={dannyY} h={350} face={rescue?-1:1} pose={dannyPose} eyes={blink('wide',time)} mouth="grit" sweat shadow={0}/>
       <Theo x={theoX} y={theoY} h={320} face={1} pose={theoPose} time={time} speech={speech} hurt={retention&&recovery}/>
      </>:<>

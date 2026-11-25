@@ -15,6 +15,7 @@ export const CEILING_MIRROR_X=1900;
 // Vera's fitting-room story and Danny's empty corridor share one slow push, so the room can
 // dissolve from occupied to empty without the camera resetting.
 export const FITTING_SPAN=[cue('I was trying on a coat',2),cue('What coat',2)] as const;
+export const STRAP_CUE=cue('He was reaching for the strap',10);
 const clamp=(x:number)=>Math.max(0,Math.min(1,x));
 const ease=(x:number)=>{const k=clamp(x);return k*k*(3-2*k)};
 
