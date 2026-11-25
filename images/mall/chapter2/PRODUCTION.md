@@ -1,6 +1,19 @@
 # Chapter Two production
 
-The current finished composition is `MallChapter2`: the approved retention revision with the ceiling-side and ladder continuity corrections, without a recap. It runs 49,732 frames at 30 fps (27:37.733). Earlier source timing and performances remain available as `MallChapter2VisualPreview`. The revised preview is `MallChapter2RetentionPreview`.
+The current finished composition is `MallChapter2`: the approved retention revision with the ceiling-side and ladder continuity corrections, without a recap, plus the v9 picture polish described below. It runs 49,732 frames at 30 fps (27:37.733). Earlier source timing and performances remain available as `MallChapter2VisualPreview`. The revised preview is `MallChapter2RetentionPreview`.
+
+## V9 picture polish
+
+Picture only: the narration, sound, runtime, captions and chapter markers are exactly those of v8.
+
+- **No flash frames.** The retention cuts left about twenty one- to ten-frame slivers of neighbouring shots at edit points. `retention.tsx` now builds a picture plan once and gives any run shorter than 15 frames to the picture beside it, so cuts land on the audio edit or on the narration word that cued them. Every picture lasts at least half a second.
+- **Sub-pixel camera.** Painted backgrounds were placed with layout pixels, so slow camera drifts stepped unevenly under the smoothly moving figures. Inside the revised edit (`SubpixelCamera`), the painting is placed with a transform and glides with the figures. Render with input props `{"subpixel": false}` to compare.
+- **Section tags on every chapter.** The trimmed openings had removed most "where and when" tags. Each section's tag now opens on its first retained frame; the cold open stays untitled.
+- **Transitions.** Short fades through black where the story moves to another night, day or place (title to Night One, Day 2, Day 3, the six-a.m. wait, Day 4, Day 5, nine o'clock, the end card) and a fade from and to black at the very start and end. Memories and imagined scenes dissolve in and out over 8 frames; the woman in Vera's story fades out of the fitting room over 24 frames under one continuous camera.
+- **Continuity.** The crawls above the store and the court run on the source clock (`crawlState` in `continuity.ts`), with movement following the narration, so cuts never send the actors back to a starting mark; the close views follow the crawlers. The court crossing ends on the collapse marks, Danny enters the collapse in the crawl's on-screen shape, and the rescue starts from the hanging shape the fall left him in.
+- **Motion.** The food-offer camera moves the painting and the figures together with eased pushes instead of two single-frame zoom jumps; the inserted plates (ceiling angles, prints, grip, second light, frozen thumb) push slowly toward their subjects; the poured jug fills; the drill crew keeps walking and the service-hall crowd keeps shambling instead of stopping dead or walking on the spot.
+
+`check_continuity.cjs` now also verifies the crawl (no backward slide, no jumps, ends on the collapse marks) and the picture plan (no gaps, nothing under 15 frames).
 
 ## Current editorial sources
 
@@ -23,7 +36,7 @@ With Node dependencies installed, preview with `npm run studio`. To export with 
 node images/mall/chapter2/retention/render.cjs
 ```
 
-Set `REMOTION_BROWSER_EXECUTABLE` if an installed Chrome or headless shell should be used. The export goes into `out/chapter2-retention/`. It is checked for expected frames, dimensions, frame rate, stereo audio, and complete decoding.
+Set `REMOTION_BROWSER_EXECUTABLE` if an installed Chrome or headless shell should be used. The export goes into `out/chapter2-retention/` as `night-guard-chapter-2-v9.mp4`. The picture renders in `CHUNKS` parts (default 4) that are kept between runs, so an interrupted export resumes; `CONCURRENCY` sets parallel browser tabs (default 6). It is checked for expected frames, dimensions, frame rate, stereo audio, and complete decoding.
 
 To change the cut or rebuild the audio, use Python with numpy and soundfile, plus ffmpeg:
 

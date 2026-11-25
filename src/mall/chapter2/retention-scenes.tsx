@@ -4,7 +4,7 @@ import {Screen} from '../Overlays';
 import {Guard, Zed, Vignette} from '../shots';
 import {jointsOf, POSES, Pose} from '../Stick';
 import {Theo, Jug} from './scenes';
-import {blendPose, ease, idlePose} from './motion';
+import {blendPose, blink, ease, idlePose} from './motion';
 
 const INK='#0b0c0c';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
@@ -87,15 +87,19 @@ export const FrozenChoice:React.FC<{time:number}>=({time})=><AbsoluteFill style=
 
 export const FoodChoice:React.FC<{time:number}>=({time})=>{
  const t=time-637.762,turn=ease((t-9)/1.1),offer=ease((t-1)/1.4)*(1-ease((t-5)/1.5));
- const dp=blendPose(POSES.think,POSES.holdUp,offer*.75);
+ const dp=idlePose(blendPose(POSES.think,POSES.holdUp,offer*.75),time);
  const hp=jointsOf(dp,700,1060,660).handN;
- const zoom=t<6?1:t<12?1.15:1.05,pan=t<6?0:t<12?-170:-40;
- return <AbsoluteFill style={{background:'#14212e'}}><Plate name="sportsinside"/><Screen><g transform={`translate(${pan},0) scale(${zoom})`}>
- <Guard x={700} y={1060} h={660} pose={dp} eyes="worried" look2={.7}/>
- <Theo x={1330} y={1040} h={570} pose={{...POSES.sitChair,head:12*turn,lean:7*turn}} look2={-turn} face={-1} eyes="worried"/>
+ // One camera for the painting and the figures: a slow push toward Theo while the offer hangs,
+ // then an easing back as Danny's thoughts move on. No framing changes in a single frame.
+ const push=ease((t-5.2)/1.6),settle=ease((t-11.3)/2.2);
+ const zoom=1+.15*push-.1*settle,pan=-170*push+130*settle;
+ return <AbsoluteFill style={{background:'#14212e'}}><AbsoluteFill style={{transform:`translateX(${pan}px) scale(${zoom})`,transformOrigin:'0 0'}}>
+ <Plate name="sportsinside"/><Screen><g>
+ <Guard x={700} y={1060} h={660} pose={dp} eyes={blink('worried',time)} look2={.7}/>
+ <Theo x={1330} y={1040} h={570} pose={{...POSES.sitChair,head:12*turn,lean:7*turn}} time={time} look2={-turn} face={-1} eyes="worried"/>
  <path d="M1250 960h160v108h-160Z" fill="#637475" stroke={INK} strokeWidth={8}/>
  <g transform={`translate(${hp[0]},${hp[1]+12}) rotate(-12)`}><rect x={-42} y={-15} width={84} height={30} rx={3} fill="#b8a16f" stroke={INK} strokeWidth={5}/><path d="M-20-12h43v24h-43Z" fill="#4e685e"/></g>
- </g></Screen><Vignette o={.16}/></AbsoluteFill>;
+ </g></Screen></AbsoluteFill><Vignette o={.16}/></AbsoluteFill>;
 };
 
 export const ReturnChoice:React.FC<{frame:number}>=({frame})=>{
@@ -112,8 +116,11 @@ export const ReturnChoice:React.FC<{frame:number}>=({frame})=>{
  const other=jointsOf(tp,tx,ty,350).handN;
  const release=ease((t-8)/.7),retrieve=ease((t-19)/2.5);
  const jx=lerp(lerp(1270,1370,release),550,retrieve),jy=lerp(lerp(414,680,release),410,retrieve);
- const shot=t<3?0:t<5?1:t<8?2:t<11?3:t<14?4:t<19?5:6;
- const camera=shot===1?[1.7,-680,-150]:shot===2?[1.8,-660,-175]:shot===3?[1.7,-1240,-200]:shot===4?[1.1,-80,-30]:shot===5?[1.5,-350,-140]:[1.15,-85,-25];
+ const shot=t<3?0:t<8?1:t<11?3:t<14?4:t<19?5:6;
+ // The buckle and the catch share one slowly tightening close shot (two near-identical framings
+ // cut together read as a jump), then the edit moves on to the jug, the wide view and the haul.
+ const tighten=ease((t-3)/5);
+ const camera=shot===1?[1.7+.1*tighten,-680+20*tighten,-150-25*tighten]:shot===3?[1.7,-1240,-200]:shot===4?[1.1,-80,-30]:shot===5?[1.5,-350,-140]:[1.15,-85,-25];
  return <AbsoluteFill style={{background:'#0c1722'}}><AbsoluteFill style={{transform:`translate(${camera[1]}px,${camera[2]}px) scale(${camera[0]})`,transformOrigin:'0 0'}}>
  <Plate name="ch2-ceiling"/><Screen>
   {Array.from({length:16},(_,i)=><Zed key={i} x={170+i*104} y={995+(i%3)*20} h={165+i%3*12} dim={.65} eyes="zombie"/>)}

@@ -1,13 +1,13 @@
 import React, {useContext} from 'react';
 import {RetentionContinuity} from './retention-context';
-import {CEILING_MIRROR_X, ladderState} from './continuity';
+import {CEILING_MIRROR_X, FITTING_SPAN, crawlFocus, crawlState, ladderState} from './continuity';
 import {AbsoluteFill} from 'remotion';
 import {Screen, Txt, Grille, Padlock, Waves, RewindFx} from '../Overlays';
 import {Scene, Guard, Zed, P, Beyond, HoldGate, Vignette} from '../shots';
 import {Stick, StickProps, LOOKS, Pose, POSES, jointsOf, skeleton} from '../Stick';
 import {GateScene, OfficeScene, ROOF_WIN} from '../chapter1/scenes';
 import {FPS} from '../MallChapter';
-import {blendPose, blink, climbPose, ease, idlePose, runPose, shamblePose} from './motion';
+import {blendPose, blink, climbPose, ease, idlePose, mirrorPose, runPose, shamblePose} from './motion';
 import type {Speech} from './motion';
 import type {PictureMode} from './picture-edit';
 import type {ShotView} from './additional-views';
@@ -51,12 +51,16 @@ const Danny: React.FC<React.ComponentProps<typeof Guard> & {time: number}> = ({
 }) => <Guard {...props} pose={idlePose(pose,time)} eyes={blink(eyes,time)}
  look2={look2 ?? .22 * Math.sin(time * 1.37)}/>;
 
-export const Jug:React.FC<{x:number;y:number;s?:number;full?:boolean}>=({x,y,s=1,full=true})=><g transform={`translate(${x},${y}) scale(${s})`}>
+// `level` (0..1) draws a partly filled container, for water rising while it is poured.
+export const Jug:React.FC<{x:number;y:number;s?:number;full?:boolean;level?:number}>=({x,y,s=1,full=true,level})=>{
+ const k=level??(full?1:0),top=35-55*k;
+ return <g transform={`translate(${x},${y}) scale(${s})`}>
  <path d="M-18-72V-93Q0-108 18-93V-72" fill="none" stroke={INK} strokeWidth={12}/>
- <path d="M-46-72Q-52-73-52-57V36Q-52 48-36 48H35Q51 48 51 35V-57Q51-72 34-72Z" fill={full?'#9ab7bd':'#b3c7c5'} stroke={INK} strokeWidth={6}/>
- {full&&<path d="M-44-20Q-15-30 6-21T44-20V35H-44Z" fill="#557f8e" opacity={.9}/>}
+ <path d="M-46-72Q-52-73-52-57V36Q-52 48-36 48H35Q51 48 51 35V-57Q51-72 34-72Z" fill={k>0?'#9ab7bd':'#b3c7c5'} stroke={INK} strokeWidth={6}/>
+ {k>0&&<path d={`M-44 ${top}Q-15 ${top-10*Math.min(1,k*4)} 6 ${top-1}T44 ${top}V35H-44Z`} fill="#557f8e" opacity={.9}/>}
  <rect x={25} y={-80} width={25} height={11} rx={4} fill="#697c78" stroke={INK} strokeWidth={4}/>
  <path d="M-31-56V25" stroke="#dfebdc" strokeWidth={5} opacity={.5}/></g>;
+};
 const Bar:React.FC<{x:number;y:number;s?:number}>=({x,y,s=1})=><g transform={`translate(${x},${y}) rotate(-6) scale(${s})`}>
  <path d="M-64-23L-52-19H51L64-23V25L52 20H-52L-64 25Z" fill="#c3a064" stroke={INK} strokeWidth={5}/>
  <rect x={-38} y={-17} width={76} height={34} rx={3} fill="#4d665d"/><path d="M-25-7H25M-25 3H12" stroke="#e6d7aa" strokeWidth={4}/></g>;
@@ -95,7 +99,7 @@ const Store:React.FC<DetailProps & {variant:number}>=({p,mode,variant,speaker,sp
  const theoPose=idlePose(blendPose(theoBase,{...theoBase,armN:[52,117],head:-4},answer*.66),time+1.4);
  const listening=blendPose(danPose,{...danPose,head:(danPose.head??0)+9,lean:(danPose.lean??0)+4},answer*.7);
  return <Scene bg="sportsinside" a={focus} b={{...focus,z:focus.z+.06,x:focus.x+(variant%2?12:-12)}} p={p} filter="brightness(.94)">
- <Beyond><Zed x={1420+Math.sin(p.t*.15)*30} y={930} h={270} dim={.55} ghost/></Beyond><HoldGate frac={1} opacity={.7}/>
+ <Beyond><Zed x={1420+Math.sin((retention?time:p.t)*.15)*30} y={930} h={270} dim={.55} ghost/></Beyond><HoldGate frac={1} opacity={.7}/>
  {(['chalk','prints','rack'].includes(mode)||dropping)&&<Rack tile t={p.t} open={mode==='theo'||mode==='rack'}/>} 
  {['chalk','prints'].includes(mode)&&<g>{Array.from({length:38},(_,i)=><ellipse key={i} cx={1100+(i*137)%950} cy={1220+(i*59)%225} rx={20+i%5*7} ry={4+i%3} fill="#ced6c9" opacity={.13}/>)}</g>}
  {mode==='prints'&&<g>{[0,1,2,3,4,5].map(i=>footprint(1240+i*118,1400-i*12,65+(i%2?12:-12),i))}{[0,1,2].map(i=>footprint(1960+i*42,1240-i*230,-9,i+6))}</g>}
@@ -142,7 +146,9 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const basePan=marcusDetail?[960-chest[0]*baseZoom,605-chest[1]*baseZoom]:cut?[-1640,-350]:detail?[-480,-155]:mode==='crawl-close'||mode==='walkway'?[-315,-95]:close?[-330,-405]:baseZoom>1?[-120,-40]:[0,0];
  const crowdView=['crowd','fountain-memory','marcus','marcus-up','boot-rest'].includes(mode);
  const crawlingView=['ceiling','crawl-close','walkway','return'].includes(mode);
+ const path=retention&&crawlingView?crawlState(time):undefined;
  const viewFocus=crowdView?cam(mode==='boot-rest'?1010:700,mode==='boot-rest'?910:875,2.45):
+  path?(view==='theo'?cam(crawlFocus(time,'theo')+40,370,2.65):cam(crawlFocus(time,'danny')+(view==='danny'?100:110),410,view==='danny'?2.55:3.1)):
   view==='theo'?cam(crawlingView?1320:675,370,2.65):view==='danny'?cam(crawlingView?800:973,410,2.55):cam(799,410,3.1);
  const zoom=view==='base'?baseZoom:view==='wide'?1.08:viewFocus.z;
  const pan=view==='base'?basePan:view==='wide'?[-75,-20]:
@@ -158,10 +164,14 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const reach=catching?ease(p.t/.45):1;
  const strain=fall?Math.sin(p.t*7)*Math.exp(-p.t*.32):0;
  const hangingPose: Pose={...hanging,head:45+strain*7,legN:[8+strain*10,strain*12]};
- const dannyPose=fall?blendPose(crawl,hangingPose,collapse)
+ // In the mirrored staging the collapse starts from the crawl's on-screen shape (head toward
+ // Theo, on the crawl's line) and the rescue starts from the hanging shape the fall left him in.
+ const preserve=retention&&(fall||rescue);
+ const dannyPose=fall?blendPose(preserve?mirrorPose(crawl):crawl,hangingPose,collapse)
+  :preserve&&mode==='rescue'?blendPose(blendPose(mirrorPose(hanging),{...crawl,armN:[77,104]},ease((p.t-.05)/1.1)),crawl,hauled)
   :blendPose({...crawl,armN:[77,104]},crawl,hauled);
  const dannyX=980-97*hauled;
- const dannyY=fall?390+38*collapse+strain*3:lerp(429,414,hauled);
+ const dannyY=fall?(preserve?lerp(411,428,collapse):390+38*collapse)+strain*3:lerp(429,414,hauled);
  const braced=strap||mode==='rescue';
  const pulling=blendPose({...pull,armN:[39,70]},{
   ...pull,armF:braced?[130,172]:pull.armF,armN:[70+hauled*7,100+hauled*8],
@@ -202,9 +212,9 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
       <Guard x={dannyX} y={dannyY} h={350} face={rescue?-1:1} pose={dannyPose} eyes={blink('wide',time)} mouth="grit" sweat shadow={0}/>
       <Theo x={theoX} y={theoY} h={320} face={1} pose={theoPose} time={time} speech={speech}/>
      </>:<>
-      <Guard x={660+move} y={411} h={350} pose={crawlingPose(crawlingStep)} eyes={blink('worried',time)} shadow={0}/>
-      <Theo x={1270+move} y={411} h={320} pose={crawlingPose(-crawlingStep)} time={time} speech={speech} hurt={section>=10}/>
-      <Jug x={1130+move} y={393} s={.43} full={section>=12}/>
+      <Guard x={path?path.dannyX:660+move} y={411} h={350} pose={crawlingPose(path?path.dannyStep:crawlingStep)} eyes={blink('worried',time)} shadow={0}/>
+      <Theo x={path?path.theoX:1270+move} y={411} h={320} pose={crawlingPose(path?path.theoStep:-crawlingStep)} time={time} speech={speech} hurt={section>=10}/>
+      <Jug x={path?path.dannyX+.77*(path.theoX-path.dannyX):1130+move} y={393} s={.43} full={section>=12}/>
      </>}
     </g>}
     {fall&&collapse>.6&&Array.from({length:8},(_,i)=><path key={i} d="M-6-3L9-6L7 7Z" transform={`translate(${960+i*17},${500+((p.t*74+i*83)%380)}) rotate(${p.t*20+i*32})`} fill="#b7b5a2"/>)}
@@ -247,8 +257,8 @@ const Pump:React.FC<DetailProps>=({p,mode,speech,section,view='base'})=>{
   {!ladder&&section!==7&&mode!=='gauge'&&<>
    <Danny time={time} x={filling?1085:810} y={1425} h={590} pose={filling?POSES.crouch:tankDetail?POSES.holdUp:POSES.standRelax} eyes="worried"/>
    <Theo x={2110} y={1430} h={510} face={-1} hurt pose={speakingPose} time={time} speech={speech}/>
-   <Jug x={1330} y={1400} s={.87} full={!filling||p.t>1.4}/><Jug x={1500} y={1420} s={.87}/>
-   {filling&&<path d="M1337 1274v58" stroke="#9ddbe4" strokeWidth={5+Math.sin(p.t*17)} strokeLinecap="round"/>}
+   <Jug x={1330} y={1400} s={.87} {...(retention&&filling?{level:clamp((p.t-.25)/1.55)}:{full:!filling||p.t>1.4})}/><Jug x={1500} y={1420} s={.87}/>
+   {filling&&(!retention||p.t<1.85)&&<path d="M1337 1274v58" stroke="#9ddbe4" strokeWidth={(5+Math.sin(p.t*17))*(retention?Math.min(1,(1.85-p.t)/.2):1)} strokeLinecap="round"/>}
   </>}
  </Scene>;
 };
@@ -492,8 +502,11 @@ const StoreInsert: React.FC<DetailProps> = ({p,mode,section,view='base'}) => {
  </Scene>;
 };
 
-const Fitting: React.FC<DetailProps> = ({p,mode}) => (
- <Scene bg="deptstore" a={cam(1530,1030,1.25)} b={cam(1560,1020,1.34)} p={p} filter="brightness(.76) saturate(.75)">
+const Fitting: React.FC<DetailProps> = ({p,mode}) => {
+ const retention=useContext(RetentionContinuity);
+ const k=clamp((clock(p)-FITTING_SPAN[0])/(FITTING_SPAN[1]-FITTING_SPAN[0]));
+ const story=retention?cam(lerp(1530,1585,k),lerp(1030,1012,k),lerp(1.25,1.44,k)):undefined;
+ return <Scene bg="deptstore" a={story??cam(1530,1030,1.25)} b={story?undefined:cam(1560,1020,1.34)} p={p} filter="brightness(.76) saturate(.75)">
   <path d="M1110 390H2180V1290H1110Z" fill="#3b4250" stroke={INK} strokeWidth={14}/>
   <path d="M1160 450H1560V1275H1160Z M1710 450H2125V1275H1710Z" fill="#495264" stroke={INK} strokeWidth={10}/>
   <path d="M1715 440H2115v712q-65-25-132 3q-72-25-138 0q-66-25-130 0Z" fill="#575069" stroke={INK} strokeWidth={7}/>
@@ -502,15 +515,21 @@ const Fitting: React.FC<DetailProps> = ({p,mode}) => (
    <path d="M1200 1250H1525V1300H1200Z" fill="#796752" stroke={INK} strokeWidth={9}/>
    <Stick x={1350} y={1238} h={500} pose={POSES.sitChair} look={{...LOOKS.woman,shirt:'#5d5968'}} eyes="closed" back ghost/>
   </>}
- </Scene>
-);
+ </Scene>;
+};
 
-const HallBeat: React.FC<DetailProps> = ({p,mode}) => (
- <Scene bg="ch2-service-hall" a={cam(1730,885,1.2)} b={cam(1760,881,1.28)} p={p} filter="brightness(.79)">
-  {mode==='service-crowd'&&Array.from({length:8},(_,i)=><Zed key={i} x={2010-i*124-Math.min(p.t*26,115)} y={1115+i*47} h={265+i*19} k={i} face={-1} dim={.75}/>)}
-  {mode==='service-exit'&&[0,1,2].map(i=><Stick key={i} x={1530+i*145+Math.min(p.t*68,205)} y={1330-i*34} h={500-i*45} look={i===0?LOOKS.woman:LOOKS.teenB} pose={blendPose(POSES.walkA,POSES.walkB,.5+.5*Math.sin(p.t*9+i))} ghost back/>)}
- </Scene>
-);
+const HallBeat: React.FC<DetailProps> = ({p,mode}) => {
+ const retention=useContext(RetentionContinuity);
+ // In the revised edit the crowd keeps shambling in and the drill crew keeps walking: nobody
+ // stops dead or walks on the spot when a travel distance runs out.
+ const crowdShift=(i:number)=>retention?p.t*24:Math.min(p.t*26,115);
+ const exitShift=retention?p.t*68:Math.min(p.t*68,205);
+ return <Scene bg="ch2-service-hall" a={cam(1730,885,1.2)} b={cam(1760,881,1.28)} p={p} filter="brightness(.79)">
+  {mode==='service-crowd'&&Array.from({length:8},(_,i)=><Zed key={i} x={2010-i*124-crowdShift(i)} y={1115+i*47} h={265+i*19} k={i} face={-1} dim={.75}
+   {...(retention?{pose:shamblePose(clock(p)+i*.41)}:{})}/>)}
+  {mode==='service-exit'&&[0,1,2].map(i=><Stick key={i} x={1530+i*145+exitShift} y={1330-i*34} h={500-i*45} look={i===0?LOOKS.woman:LOOKS.teenB} pose={blendPose(POSES.walkA,POSES.walkB,.5+.5*Math.sin(p.t*9+i))} ghost back/>)}
+ </Scene>;
+};
 
 const InsertView:React.FC<{view:ShotView;origin?:string;children:React.ReactNode}>=({view,origin='50% 54%',children})=>
  <AbsoluteFill style={{overflow:'hidden'}}><AbsoluteFill style={{transform:`scale(${view==='detail'?1.38:1})`,transformOrigin:origin}}>{children}</AbsoluteFill></AbsoluteFill>;
