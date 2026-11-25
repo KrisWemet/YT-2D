@@ -4,7 +4,8 @@ import {makeShort, shortFrames, FPS as SFPS} from './mall/MallShort';
 import {SHORT1_DEF, SHORT2_DEF, SHORT3_DEF} from './mall/shortsCh1';
 import {chapterFrames, makeChapter, FPS as CFPS} from './mall/MallChapter';
 import {CHAPTER1_DEF} from './mall/chapter1/chapter1';
-import {CHAPTER2_DEF, CHAPTER2_READY} from './mall/chapter2/chapter2';
+import {CHAPTER2_DEF} from './mall/chapter2/chapter2';
+import {Chapter2Retention, RETENTION_FRAMES, RETENTION_READY} from './mall/chapter2/retention';
 import {Composition, Still} from 'remotion';
 import {RigTest} from './pigeon/RigTest';
 import {PigeonShort} from './pigeon/Short';
@@ -30,7 +31,8 @@ const MallChapter2 = makeChapter(CHAPTER2_DEF);
 export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="MallChapter2VisualPreview" component={MallChapter2} durationInFrames={chapterFrames(CHAPTER2_DEF)} fps={CFPS} width={1920} height={1080} />
-    {CHAPTER2_READY && <Composition id="MallChapter2" component={MallChapter2} durationInFrames={chapterFrames(CHAPTER2_DEF)} fps={CFPS} width={1920} height={1080} />}
+    <Composition id="MallChapter2RetentionPreview" component={Chapter2Retention} durationInFrames={RETENTION_FRAMES} fps={CFPS} width={1920} height={1080} />
+    {RETENTION_READY && <Composition id="MallChapter2" component={Chapter2Retention} durationInFrames={RETENTION_FRAMES} fps={CFPS} width={1920} height={1080} />}
     {CHAPTER_CUTS.map((cut, i) => (
       <Composition key={i} id={`NightGuardPart${String(i + 1).padStart(2, '0')}`} component={ChapterShort}
         defaultProps={{part: i + 1}} durationInFrames={cut.frames} fps={30} width={1080} height={1920} />

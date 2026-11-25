@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path'),{createRequire}=require('node:module');
+const repo=path.resolve(__dirname,'../../../..'),local=createRequire(path.join(repo,'package.json')),ts=local('typescript');
+for(const ext of ['.ts','.tsx'])require.extensions[ext]=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{fileName:file,compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.React,esModuleInterop:true,target:ts.ScriptTarget.ES2020,resolveJsonModule:true}}).outputText,file);
+const {CHAPTER2_DEF,CHAPTER2_PICTURE}=require(path.join(repo,'src/mall/chapter2/chapter2.tsx'));
+const {resolveChapter}=require(path.join(repo,'src/mall/MallChapter.tsx'));
+const r=resolveChapter(CHAPTER2_DEF);
+fs.mkdirSync(path.join(repo,'out/chapter2-retention'),{recursive:true});
+fs.writeFileSync(path.join(repo,'out/chapter2-retention/source-sound.json'),JSON.stringify({hits:r.hits,beds:r.beds}));
+fs.mkdirSync(path.join(repo,'out/chapter2-retention'),{recursive:true});
+fs.writeFileSync(path.join(repo,'out/chapter2-retention/source-shots.json'),JSON.stringify(CHAPTER2_PICTURE));
+console.log('Exported sound cues and',CHAPTER2_PICTURE.length,'source views');

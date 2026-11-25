@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {RetentionContinuity} from './retention-context';
 import {AbsoluteFill} from 'remotion';
 import {Screen, Txt, Grille, Padlock, Waves, RewindFx} from '../Overlays';
 import {Scene, Guard, Zed, P, Beyond, HoldGate, Vignette} from '../shots';
@@ -74,6 +75,7 @@ const Rack:React.FC<{tile?:boolean;t:number;open?:boolean}>=({tile=false,t,open=
 const footprint=(x:number,y:number,r:number,k:number)=><g key={k} transform={`translate(${x},${y}) rotate(${r})`} opacity={.85} fill="#dbe4d5"><ellipse cx={0} cy={0} rx={19} ry={35}/><ellipse cx={0} cy={43} rx={16} ry={20}/><path d="M-9 40H7V48H-9Z" fill="#33424b"/></g>;
 
 const Store:React.FC<DetailProps & {variant:number}>=({p,mode,variant,speaker,speech,section,view='base'})=>{
+ const retention=useContext(RetentionContinuity);
  const detail=variant%3;const dropping=mode==='theo'&&section===5;const isTalk=['talk','theo','water','tent'].includes(mode);
  const baseFocus=mode==='rack'?cam(2130,780,1.55):mode==='chalk'||mode==='prints'?cam(1690,1270,1.9):['food','food-two','inventory'].includes(mode)?cam(1330,1200,1.72):mode==='sleep'||mode==='search-bag'?cam(1020,1300,1.7):mode==='bandage'?cam(1720,1250,2.2):
  isTalk?(detail===1?cam(speaker==='theo'?1820:1020,1100,1.9):cam(1460,1110,1.35)):cam(1408,960,1.15);
@@ -106,7 +108,7 @@ const Store:React.FC<DetailProps & {variant:number}>=({p,mode,variant,speaker,sp
   {mode==='inventory'&&[0,1,2].map(i=><g key={i}><rect x={1390+i*63} y={1280} width={47} height={69} rx={7} fill="#9aa5ab" stroke={INK} strokeWidth={5}/><path d={`M${1396+i*63} 1300h35v27h-35Z`} fill="#987951"/></g>)}
   {mode==='inventory'&&[0,1,2].map(i=><Jug key={i} x={1620+i*83} y={1395} s={.55}/>)}
  </>}
- {['water','tent'].includes(mode)&&<><Jug x={1420} y={1410} s={.9}/><Jug x={1580} y={1425} s={.9}/></>}
+ {['water','tent'].includes(mode)&&<><Jug x={1420} y={1410} s={.9}/><Jug x={1580} y={1425} s={.9} full={!(retention&&section>=12)}/></>}
  {mode==='lock'&&<Padlock x={1430} y={950} s={1.1}/>}
  {mode==='tent'&&<g><path d="M1540 1445Q1680 1100 2025 1445Z" fill="#365f68" stroke={INK} strokeWidth={12}/><path d="M1740 1445L1785 1250L1840 1445Z" fill="#0e1b24" stroke={INK} strokeWidth={7}/><path d="M1540 1445H2025" stroke="#a4b19d" strokeWidth={8}/></g>}
  {mode==='bandage'&&<g><rect x={1170} y={1330} width={180} height={100} rx={15} fill="#e4ded0" stroke={INK} strokeWidth={7}/><path d="M1259 1350V1410M1229 1380H1289" stroke="#a64e43" strokeWidth={14}/></g>}

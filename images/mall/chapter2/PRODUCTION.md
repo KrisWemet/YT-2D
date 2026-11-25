@@ -1,21 +1,42 @@
-# Chapter Two — The Boy in the Ceiling
+# Chapter Two production
 
-The complete 5,233-word manuscript is `script.md`. The approved target is about thirty minutes, with fourteen sections. Continue the Chapter One stick figure style, painted mall backgrounds, 1920×1080 output, 30 fps, and sidecar subtitles.
+The current finished composition is `MallChapter2`: the approved retention revision, without a recap. It runs 49,732 frames at 30 fps (27:37.733). Earlier source timing and performances remain available as `MallChapter2VisualPreview`. The revised preview is `MallChapter2RetentionPreview`.
 
-## Current state
+## Current editorial sources
 
-Visual production is implemented in `src/mall/chapter2`. Danny uses the existing Chapter One rig. Theo uses the same rig, with a muted green hoodie, younger face, and a smaller build. The ceiling crawl, leg through the tile, rescue, empty radio clip on Marcus, reservoir, cinema hideout, and department store signal have dedicated scenes.
+- `src/mall/chapter2/ch2.json` is the original recorded, word-aligned narration. Its source clock remains unchanged.
+- `src/mall/chapter2/retention-edit.json` maps retained source frames into the new timeline and includes the new 24-second return-trip scene.
+- `retention-script.md` contains the retained spoken script and the new visual passage.
+- `src/mall/chapter2/retention-scenes.tsx` adds the new ceiling angles, wrist detail, wall prints, character decisions, rooftop signal and return-trip action.
+- `public/mall/ch2/retention.mp3` is the finished audio master. No API key is needed to preview or render it.
+- `publish/night-guard-chapter-2-v7.srt` and the adjacent chapter markers match this edit.
 
-`make_plan.py` writes the speaker assignments, resumable voice plan, and visual development timings. Until approved narration has been generated, the only registered composition is `MallChapter2VisualPreview`. Its times are estimates, and its sound does not contain narration. It is not a finished chapter.
+The opening is about fourteen seconds, followed immediately by Night One. Fifteen edits remove advance reveal summaries and repeated preparation. On the return trip, Theo's leg buckles. Danny holds him while a container falls onto a lower ledge and loses its water. The empty container is recovered with the climbing strap. Later scenes preserve one full and one empty container. The copied rooftop signal and B3 ending retain their original revelations.
 
-## Exact voice continuation
+The new scene uses the existing stick rig and is told through action, without new dialogue. Algenib, Gacrux and Puck retain their recorded performances. Beds fall away around the ceiling crack, empty-fountain impact and copied signal. The delivered master measures -16.1 LUFS with a -2.4 dBTP true peak. Artwork prompts and provenance are in `retention-artwork.md`.
 
-Use Chapter One's KIE.ai Gemini 3.1 Flash TTS settings. Danny is Algenib; Vera is Gacrux. Theo is a new youthful, understated Puck voice. The recipe uses fixed per-line gains, 1.08 tempo, short internal pauses, and a walkie-talkie treatment for Vera. Record two takes and transcribe before selecting. The script contains complete role assignments.
+## Reproduce
 
-`record_voice.py` accepts the configured `KIE_API_KEY` or `--key-file /absolute/path/to/local.env`. Credentials are never written to the repository or logs. It reuses completed task IDs on resumption instead of submitting duplicate jobs. Only accepted takes are assembled; missing or inaccurate chunks block the finished-video composition.
+With Node dependencies installed, preview with `npm run studio`. To export with the checked-in audio:
 
-After narration, align words and emit subtitles. Recheck the runtime against the thirty-minute target before final export. The final `MallChapter2` composition is registered only when recorded timing is present.
+```sh
+node images/mall/chapter2/retention/render.cjs
+```
 
-## Completion checks
+Set `REMOTION_BROWSER_EXECUTABLE` if an installed Chrome or headless shell should be used. The export goes into `out/chapter2-retention/`. It is checked for expected frames, dimensions, frame rate, stereo audio, and complete decoding.
 
-Inspect the new scenes and transitions at actual narration times. Verify that no generated files or credentials are accidentally tracked. Render the full chapter, apply the Chapter One final audio mastering, and decode the entire MP4. Check 1920×1080, 30 fps, stereo audio, end-card duration, subtitle timing, missing media, and representative dark scenes. Deliver the finished MP4 and SRT to outputs, then copy them into Downloads. Never present the visual-only preview as the completed video.
+To change the cut or rebuild the audio, use Python with numpy and soundfile, plus ffmpeg:
+
+```sh
+python images/mall/chapter2/retention/build_edit.py
+node images/mall/chapter2/retention/export_cues.cjs
+python images/mall/chapter2/retention/build_sound.py
+```
+
+The edit builder intentionally disables `audioReady` until sound is rebuilt. The original source WAV is used when present, otherwise the builder decodes `public/mall/ch2/vo.mp3`. All temporary PCM, exported sound metadata and output media stay under ignored `out/`.
+
+The original generation tools (`make_plan.py`, `record_voice.py`) belong to the immutable source-clock production. Do not run them to change this edit. They regenerate original voice timing, and recording requires the privately configured KIE key. Credentials and raw voice takes remain excluded from version control.
+
+## Delivery checks
+
+Check every revised scene against its retained words, especially the boot landing in an empty fountain, the delayed footprints reveal, the three individually cued flashes, hand contact and water loss. Keep purposeful visual changes within ten seconds of narration. Recheck captions after timeline changes. Decode the entire final MP4 and verify 1920×1080, 30 fps, stereo AAC at 48 kHz. Export media and subtitles into the delivery folder, then copy to Downloads. Nothing is published or merged by this workflow.

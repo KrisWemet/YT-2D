@@ -119,11 +119,12 @@ const SegTag: React.FC<{text: string; t: number}> = ({text, t}) => {
 // Start and end of every shot (seconds), for QA tools.
 export const shotTimes = (def: ChapterDef) => resolveChapter(def).shots.map((s) => [s.start, s.end] as [number, number]);
 
-export const makeChapter = (def: ChapterDef): React.FC => {
+export const makeChapter = (def: ChapterDef, options: {audio?: boolean} = {}): React.FC<{sourceFrame?: number}> => {
   const r = resolveChapter(def);
-  const Chapter: React.FC = () => {
+  const Chapter: React.FC<{sourceFrame?: number}> = ({sourceFrame}) => {
     useFont();
-    const frame = useCurrentFrame();
+    const currentFrame = useCurrentFrame();
+    const frame = sourceFrame ?? currentFrame;
     const t = frame / FPS;
     let i = r.shots.findIndex((s) => t >= s.start && t < s.end);
     if (i < 0) i = r.shots.length - 1;
@@ -140,8 +141,8 @@ export const makeChapter = (def: ChapterDef): React.FC => {
             {name && <RadioBadge name={name} t={t} color={name === 'MARCUS' ? '#8fd18a' : name === 'EMERGENCY ALERT' ? '#f0c53c' : '#e58fb4'} />}
           </Screen>
         )}
-        {def.vo && <Audio src={staticFile(def.vo)} />}
-        <ChapterSfx r={r} />
+        {options.audio !== false && def.vo && <Audio src={staticFile(def.vo)} />}
+        {options.audio !== false && <ChapterSfx r={r} />}
       </AbsoluteFill>
     );
   };
