@@ -165,7 +165,9 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  const moving=['ceiling','crawl-close','walkway','return'].includes(mode);
  const move=moving?Math.min(115,p.t*10):0;
  const shake=fall?Math.sin(fallClock*18)*1.5:0;
- const bootFall=mode==='boot-rest'?1:mode==='boot'?clamp(p.t/1.15):0;
+ // Once it has landed, the boot stays in the fountain in every later view of the court.
+ const bootDown=retention&&time>1206&&close&&!memory&&!marcusDetail;
+ const bootFall=mode==='boot-rest'||bootDown?1:mode==='boot'?clamp(p.t/1.15):0;
  const collapse=mode==='collapse'?ease(p.t/.48):1;
  const hauled=recovery?1:rescue?ease((p.t-.14)/1.5):0;
  const reach=catching?ease(p.t/.45):1;
@@ -189,6 +191,12 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
  // "I looked at him. His trouser leg was torn at the calf." A slow push from Theo toward the cut,
  // kept inside the painting.
  const camera=(()=>{
+  // "I could see Marcus too": after the boot in the fountain, move in on Marcus rather than
+  // cutting to the same framing without the boot.
+  if(retention&&mode==='marcus'&&section===12){
+   const z=2.2,cx=Math.min(1920-960/z,Math.max(960/z,marcusX+20)),cy=Math.min(1080-540/z,905);
+   return {x:960-cx*z,y:540-cy*z,z};
+  }
   if(!(retention&&cut))return {x:panX,y:pan[1],z:zoom};
   const k=320/300,sk=skeleton(theoPose),push=clamp(p.t/Math.max(p.dur,.01));
   const calf=[CEILING_MIRROR_X-(theoX+lerp(sk.kneeN[0],sk.footN[0],.67)*k),theoY+lerp(sk.kneeN[1],sk.footN[1],.67)*k];
@@ -235,7 +243,7 @@ const Ceiling:React.FC<DetailProps & {variant:number}>=({p,mode,variant,section,
      </>}
     </g>}
     {fall&&collapse>.6&&Array.from({length:8},(_,i)=><path key={i} d="M-6-3L9-6L7 7Z" transform={`translate(${960+i*17},${500+((fallClock*74+i*83)%380)}) rotate(${fallClock*20+i*32})`} fill="#b7b5a2"/>)}
-    {(mode==='boot'||mode==='boot-rest')&&<g transform={`translate(1005,${505+bootFall*407}) rotate(${bootFall*110})`}><path d="M-25-40H24V12H66Q82 20 75 35H-29Z" fill="#34343a" stroke={INK} strokeWidth={8}/></g>}
+    {(mode==='boot'||mode==='boot-rest'||bootDown)&&<g transform={`translate(1005,${505+bootFall*407}) rotate(${bootFall*110})`}><path d="M-25-40H24V12H66Q82 20 75 35H-29Z" fill="#34343a" stroke={INK} strokeWidth={8}/></g>}
     </g>
    </Screen>
   </AbsoluteFill>

@@ -108,10 +108,14 @@ export const ReturnChoice:React.FC<{frame:number}>=({frame})=>{
  const hanging:Pose={lean:-76,head:45,armF:[-65,-95],armN:[-65,-95],legF:[88,92],legN:[8,0],sit:true};
  const pulling:Pose={lean:80,head:-55,armF:[68,95],armN:[70,100],legF:[-90,-85],legN:[-90,-85],sit:true};
  const landed:Pose={lean:-80,head:40,armF:[-65,-88],armN:[-77,-104],legF:[85,90],legN:[75,85],sit:true};
- const tp=blendPose(blendPose(crawl,hanging,buckle),landed,haul);
- const dp=blendPose(crawl,pulling,caught);
- const dx=563-97*haul+17*caught,dy=423;
- const tx=980-97*haul,ty=lerp(428,414,haul);
+ // They are still crawling when the sequence opens, and settle on their marks as the leg goes.
+ const approach=1-ease(t/2.5),reach=Math.sin(t*2*Math.PI/1.4)*approach;
+ const crawling=(step:number):Pose=>({...crawl,head:-39+4*step,armF:[65-12*step,88-9*step],armN:[70+12*step,93+9*step],
+  legF:[-85-8*step,-90+11*step],legN:[-75+8*step,-85-11*step]});
+ const tp=blendPose(blendPose(crawling(-reach),hanging,buckle),landed,haul);
+ const dp=blendPose(crawling(reach),pulling,caught);
+ const dx=563-97*haul+17*caught-26*approach,dy=423;
+ const tx=980-97*haul-26*approach,ty=lerp(428,414,haul);
  const near=jointsOf(dp,dx,dy,320).handN;
  const other=jointsOf(tp,tx,ty,350).handN;
  const release=ease((t-8)/.7),retrieve=ease((t-19)/2.5);
@@ -120,7 +124,8 @@ export const ReturnChoice:React.FC<{frame:number}>=({frame})=>{
  // The buckle and the catch share one slowly tightening close shot (two near-identical framings
  // cut together read as a jump), then the edit moves on to the jug, the wide view and the haul.
  const tighten=ease((t-3)/5);
- const camera=shot===1?[1.7+.1*tighten,-680+20*tighten,-150-25*tighten]:shot===3?[1.7,-1240,-200]:shot===4?[1.1,-80,-30]:shot===5?[1.5,-350,-140]:[1.15,-85,-25];
+ const open=1.15+.05*ease(t/3);
+ const camera=shot===0?[open,960-908.7*open,540-491.3*open]:shot===1?[1.7+.1*tighten,-680+20*tighten,-150-25*tighten]:shot===3?[1.7,-1240,-200]:shot===4?[1.1,-80,-30]:shot===5?[1.5,-350,-140]:[1.15,-85,-25];
  return <AbsoluteFill style={{background:'#0c1722'}}><AbsoluteFill style={{transform:`translate(${camera[1]}px,${camera[2]}px) scale(${camera[0]})`,transformOrigin:'0 0'}}>
  <Plate name="ch2-ceiling"/><Screen>
   {Array.from({length:16},(_,i)=><Zed key={i} x={170+i*104} y={995+(i%3)*20} h={165+i%3*12} dim={.65} eyes="zombie"/>)}
