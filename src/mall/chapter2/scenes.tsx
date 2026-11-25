@@ -7,7 +7,7 @@ import {Scene, Guard, Zed, P, Beyond, HoldGate, Vignette} from '../shots';
 import {Stick, StickProps, LOOKS, Pose, POSES, jointsOf, skeleton} from '../Stick';
 import {GateScene, OfficeScene, ROOF_WIN} from '../chapter1/scenes';
 import {FPS} from '../MallChapter';
-import {blendPose, blink, climbPose, ease, idlePose, mirrorPose, runPose, shamblePose} from './motion';
+import {STILL, blendPose, blink, climbPose, ease, idlePose, mirrorPose, runPose, shamblePose} from './motion';
 import type {Speech} from './motion';
 import type {PictureMode} from './picture-edit';
 import type {ShotView} from './additional-views';
@@ -31,7 +31,7 @@ type TheoProps = Partial<StickProps> & {hurt?: boolean; bandaged?: boolean; clea
 
 export const Theo: React.FC<TheoProps> = ({hurt=false, bandaged=false, clean=false, time, speech, ...props}) => {
  const {x=1840, y=1430, h=610, face=1, pose=POSES.stand, eyes='worried', mouth='flat'} = props;
- const actedPose = time === undefined ? pose : {
+ const actedPose = time === undefined || STILL.on ? pose : {
   ...pose, head: (pose.head ?? 0) + 2.8 * Math.sin(time * 1.4 + 1) - 4.5 * (speech?.accent ?? 0),
  };
  const {kneeN, footN} = skeleton(actedPose);
@@ -49,7 +49,7 @@ export const Theo: React.FC<TheoProps> = ({hurt=false, bandaged=false, clean=fal
 const Danny: React.FC<React.ComponentProps<typeof Guard> & {time: number}> = ({
  time, pose=POSES.stand, eyes='worried', look2, ...props
 }) => <Guard {...props} pose={idlePose(pose,time)} eyes={blink(eyes,time)}
- look2={look2 ?? .22 * Math.sin(time * 1.37)}/>;
+ look2={look2 ?? (STILL.on ? .15 : .22 * Math.sin(time * 1.37))}/>;
 
 // `level` (0..1) draws a partly filled container, for water rising while it is poured.
 export const Jug:React.FC<{x:number;y:number;s?:number;full?:boolean;level?:number}>=({x,y,s=1,full=true,level})=>{

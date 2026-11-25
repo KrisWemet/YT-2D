@@ -32,10 +32,14 @@ export const mirrorPose = (p: Pose): Pose => ({
   legN: [-p.legN[0], -p.legN[1]],
 });
 
-export const blink = (eyes: Eyes, t: number, offset = 0): Eyes =>
-  eyes !== 'zombie' && (t + offset + .24 * Math.sin(t * .9)) % 4.18 < .10 ? 'closed' : eyes;
+// Still screens: the edit that renders one held picture per screen switches this on, so no figure
+// is caught mid-blink, mid-word or mid-sway. Other compositions leave it off.
+export const STILL = {on: false};
 
-export const idlePose = (base: Pose, t: number, strength = 1): Pose => ({
+export const blink = (eyes: Eyes, t: number, offset = 0): Eyes =>
+  !STILL.on && eyes !== 'zombie' && (t + offset + .24 * Math.sin(t * .9)) % 4.18 < .10 ? 'closed' : eyes;
+
+export const idlePose = (base: Pose, t: number, strength = 1): Pose => STILL.on ? base : ({
   ...base,
   lean: (base.lean ?? 0) + Math.sin(t * 1.8) * 1.45 * strength,
   head: (base.head ?? 0) + Math.sin(t * 1.21 + .7) * 2.6 * strength,

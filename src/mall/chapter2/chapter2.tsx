@@ -2,6 +2,7 @@ import React from 'react';
 import type {ShortData} from '../cues';
 import {ChapterDef,CShot,FPS} from '../MallChapter';
 import {Chapter2Scene} from './scenes';
+import {STILL} from './motion';
 import type {Speech} from './motion';
 import {PICTURE_EDIT} from './picture-edit';
 import type {PictureMode} from './picture-edit';
@@ -104,7 +105,7 @@ const shots:CShot[]=CHAPTER2_PICTURE.map(beat=>({
  draw:p=>beat.section===2&&p.frame>=ROOF_RECUT_START*FPS&&p.frame<ROOF_RECUT_END*FPS
   ? <RoofCutaways frame={p.frame}/>
   : <Chapter2Scene p={{...p,t:p.frame/FPS-beat.actionStart,dur:beat.actionEnd-beat.actionStart,ev:beat.pulses}}
-   mode={beat.mode} section={beat.section} speaker={beat.speaker} speech={theoAt(p.frame/FPS)}
+   mode={beat.mode} section={beat.section} speaker={beat.speaker} speech={STILL.on?undefined:theoAt(p.frame/FPS)}
    variant={beat.variant} view={beat.view}/>,
 }));
 const at=(text:string,section?:number)=>{

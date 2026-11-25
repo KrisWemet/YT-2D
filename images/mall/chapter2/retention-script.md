@@ -378,7 +378,7 @@ No recap. Original recorded performances are retained. The return-trip choice is
 
 **Danny:** I could see Marcus too.
 
-[24-second visual sequence: Theo’s injured leg buckles on the steel support. Danny sets the two full jugs down and catches him. One jug slides toward the broken edge. Danny reaches for it, then turns back to Theo. He lets the jug fall into the gap, losing its water, and uses both hands to pull Theo to safety. They continue with one full jug and the other damaged container retrieved from a lower ledge. Theo watches Danny, then accepts his support.]
+[2.3-second still: Theo’s injured leg buckles on the steel support. Danny holds him while one jug slides off the edge and spills its water.]
 
 **Danny:** At the cinema, Theo stopped to pick up his blanket. He tucked the photograph inside it. I pretended to be busy with the containers. I got back to Summit Outdoors in one boot and a filthy sock. Theo went down first and cleared a place for the containers. Then he steadied the rack while I climbed.
 
