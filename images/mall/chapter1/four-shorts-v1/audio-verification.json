@@ -1,0 +1,69 @@
+[
+  {
+    "part": 1,
+    "frames": 5286,
+    "samples": 8457600,
+    "pcmSHA256": "404fecd0f6cf5497a1113c433a8268fe7718358b79bc0c936b41bb939ddd8abb",
+    "sourceCoreHashes": [
+      "a5663b2aebcf5e5bd13666d543e12982d19dd986c33fe59a814f73bfa585be48",
+      "4dec70215712c0e958c549be11a96f38fedfc9e5404420b8c43b7a6dc752f3f7",
+      "999977684c24d5485ff0ad28c2c50ed38027956e85440135467f47bc1a4e84c8",
+      "7cebe526f7a90e58dc6d92234846fbad61e911291bc070b35c02040c09614255",
+      "855cf760959f701b75cdf4cf9f9a94b21043614ff2a15a4a0c2365c2ddfb511e",
+      "2cb1a5a38a0b4b8c0502be58ed09acd845b7912378ed54a3e6bc3804554df14e",
+      "501bb4a481ba0f64c1b3f230d68694a6326095be957983034e92b271cf4998fd"
+    ],
+    "originalPCM": "identical outside 5ms edit-edge fades",
+    "audio": "public/mall/ch1/four-shorts-v1/part-1.m4a"
+  },
+  {
+    "part": 2,
+    "frames": 4778,
+    "samples": 7644800,
+    "pcmSHA256": "27b9b1ace37ce8aed306ae42c6720e400b712355a5f0f0195319af104dd14c90",
+    "sourceCoreHashes": [
+      "ded3ff45524bd1ddf79a59d3a3acfee48b0477cd53fc8f571cf8798da9ef95c4",
+      "6f5b0f0c94bbfdce37c7c28b9378745959dc31f172f449b21dae25a0b86da500",
+      "2ad21fb180c08f6c09a724fcf6963403dc1b8f4ed728b28d2c87b68a62423a16",
+      "7ae593a753bd0e6aba9671f4db9b34204a506ddffdd04f0fba34cd4517ea402f",
+      "09e711fc4f968e5126b16524dea784687be6d7ef2c5487b91f4d846075fafd11",
+      "77adb9d611e9de0a20bee324fb2a5a7aaa8d19d7f6c136a4248e89edc41c2b40",
+      "6f0ab8897d856da8b7f088b9edb0000bd0d859d8908d7648e376288eae88ef5e",
+      "d30b83a4b52f050f3aa188d69aa4f792b539454f5110d33274a4489eaf12b316"
+    ],
+    "originalPCM": "identical outside 5ms edit-edge fades",
+    "audio": "public/mall/ch1/four-shorts-v1/part-2.m4a"
+  },
+  {
+    "part": 3,
+    "frames": 3983,
+    "samples": 6372800,
+    "pcmSHA256": "d5d49c0362546479ca010ec3f2c9f170fa581de9dcd1610cd876a04468052f75",
+    "sourceCoreHashes": [
+      "8c35d25f09aa3ff8e239bdd5507d84614d21555753162c28bd3b2290829871b6",
+      "6d58609250e739c9c195e8e3ac5827ff2731b5e5804828bd3be6dabf69b00c85",
+      "54734c30201d033016b32a883165f50f5210d1063a46bd15e1ef60cf40995ddc",
+      "7b3d240eac276c813ae251bc502263fb5c2eabbc37134c391aac3725c4e52b19"
+    ],
+    "originalPCM": "identical outside 5ms edit-edge fades",
+    "audio": "public/mall/ch1/four-shorts-v1/part-3.m4a"
+  },
+  {
+    "part": 4,
+    "frames": 5280,
+    "samples": 8448000,
+    "pcmSHA256": "1a5942a1aacd96ab8509b8e204c38a8d34c06025bc67f09b06cb0b2749039771",
+    "sourceCoreHashes": [
+      "64c32f3d2648287ecc5bc76a438480ccdd58aa7cb27eb8509e81159e821d8c20",
+      "08ef85e5c6dda96e3aba431e1511906176704775cb91cacb85ea38d69bade9b9",
+      "6bac451ef18701f4dcd5f329b4ff38cee3e2227f629e3109b6d3143dc63bcbc8",
+      "32a56eb10366d7ee54332f6aa8246c1db20933d672fbe7700fee8ac050e0f6b9",
+      "41ea8d92389f7836c898357cc1f1524ff477e564f55bfe6d4b796f36968cd007",
+      "4234086abb837541b812b598752fab2f3c6b25a512b317c090ed1509faaab54e",
+      "ed600eaa32d5c5099e51a1ef4e611fb3e51516edbc19cd5380ed7819890ed73b",
+      "d995ef70c99fe18e3d7d6157ab562dccf0342355d92b7e071c208d20dcb9d7dd"
+    ],
+    "originalPCM": "identical outside 5ms edit-edge fades",
+    "audio": "public/mall/ch1/four-shorts-v1/part-4.m4a"
+  }
+]

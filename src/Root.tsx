@@ -1,4 +1,5 @@
 import React from 'react';
+import {Chapter1FourShort, FOUR_PAINTED_SHORTS} from './mall/chapter1/FourShorts';
 import {ChapterShort, CHAPTER_CUTS} from './mall/ChapterShorts';
 import {makeShort, shortFrames, FPS as SFPS} from './mall/MallShort';
 import {SHORT1_DEF, SHORT2_DEF, SHORT3_DEF} from './mall/shortsCh1';
@@ -34,6 +35,7 @@ const MallChapter2 = makeChapter(CHAPTER2_DEF);
 
 export const RemotionRoot: React.FC = () => (
   <>
+    {FOUR_PAINTED_SHORTS.map(p => <Composition key={`painted-four-${p.part}`} id={`NightGuardChapter1FourShort${String(p.part).padStart(2,'0')}`} component={Chapter1FourShort} defaultProps={{part:p.part}} durationInFrames={p.frames} fps={30} width={1080} height={1920}/>)}
     <Composition id="MallChapter1Painted" component={PaintedChapter1} durationInFrames={PAINTED_CHAPTER1_FRAMES} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2IllustratedPartTwo" component={IllustratedPartTwo} durationInFrames={ILLUSTRATED_PART_TWO_FRAMES} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2IllustratedPartThree" component={IllustratedPartThree} durationInFrames={ILLUSTRATED_PART_THREE_FRAMES} fps={CFPS} width={1920} height={1080} />
