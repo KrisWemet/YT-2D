@@ -1,0 +1,474 @@
+{
+  "version": 1,
+  "fps": 30,
+  "frames": 13633,
+  "retentionStartFrame": 36099,
+  "retentionStoryEndFrame": 49732,
+  "tailFrames": 0,
+  "overlapFrames": 181,
+  "ending": "What did she think was behind that door?",
+  "shots": [
+    {
+      "start": 0,
+      "frames": 133,
+      "asset": "part-two-v1/clock-memory",
+      "view": "wide",
+      "note": "Six-second lead-in begins at a complete sentence: One-thirty"
+    },
+    {
+      "start": 133,
+      "frames": 209,
+      "asset": "part-two-v1/drill-wall",
+      "view": "detail",
+      "note": "Reprise the final line and continue straight into the next exchange"
+    },
+    {
+      "start": 342,
+      "frames": 267,
+      "asset": "part-three-v1/drill-alarm",
+      "view": "character",
+      "note": "The drill noise draws the dead through the staff hall"
+    },
+    {
+      "start": 609,
+      "frames": 216,
+      "asset": "part-three-v1/pump-voice",
+      "view": "wide",
+      "note": "Theo says the woman ordered them to keep drilling"
+    },
+    {
+      "start": 825,
+      "frames": 225,
+      "asset": "part-three-v1/pump-voice",
+      "view": "detail",
+      "note": "Danny recognizes the woman on the radio"
+    },
+    {
+      "start": 1050,
+      "frames": 210,
+      "asset": "part-three-v1/pump-voice",
+      "view": "character",
+      "note": "Theo is certain: he heard her from above"
+    },
+    {
+      "start": 1260,
+      "frames": 225,
+      "asset": "part-three-v1/crew-delay",
+      "view": "wide",
+      "note": "One man returned running; she demanded another minute"
+    },
+    {
+      "start": 1485,
+      "frames": 165,
+      "asset": "part-three-v1/crew-retreat",
+      "view": "detail",
+      "note": "The crew took the machine and used the staff door"
+    },
+    {
+      "start": 1650,
+      "frames": 270,
+      "asset": "part-three-v1/monitor-clue",
+      "view": "character",
+      "note": "Danny reconsiders the crowd routes he watched on CCTV"
+    },
+    {
+      "start": 1920,
+      "frames": 279,
+      "asset": "part-three-v1/pump-question",
+      "view": "wide",
+      "note": "Was there a little girl with them?"
+    },
+    {
+      "start": 2199,
+      "frames": 177,
+      "asset": "part-three-v1/jug-catch",
+      "view": "detail",
+      "note": "Danny hits his shoulder on the ladder; Theo catches a jug"
+    },
+    {
+      "start": 2376,
+      "frames": 174,
+      "asset": "part-three-v1/jug-catch",
+      "view": "character",
+      "note": "Theo prevents a full container from crashing down"
+    },
+    {
+      "start": 2550,
+      "frames": 222,
+      "asset": "part-three-v1/keys-fist",
+      "view": "wide",
+      "note": "Danny clenches the keys through their sock wrapping"
+    },
+    {
+      "start": 2772,
+      "frames": 222,
+      "asset": "part-three-v1/keys-fist",
+      "view": "detail",
+      "note": "He wants to confront Vera, but Theo needs to get home"
+    },
+    {
+      "start": 2994,
+      "frames": 216,
+      "asset": "part-three-v1/pump-question",
+      "view": "character",
+      "note": "Danny notices the injured calf and picks up the water"
+    },
+    {
+      "start": 3210,
+      "frames": 159,
+      "asset": "part-three-v1/return-cross",
+      "view": "wide",
+      "note": "They skirt the broken ceiling by another support"
+    },
+    {
+      "start": 3369,
+      "frames": 161,
+      "asset": "part-three-v1/return-cross",
+      "view": "detail",
+      "note": "His lost boot and Marcus remain below"
+    },
+    {
+      "start": 3530,
+      "frames": 90,
+      "asset": "part-three-v1/return-cross",
+      "view": "character",
+      "note": "Visual choice begins: two full containers on the support"
+    },
+    {
+      "start": 3620,
+      "frames": 60,
+      "asset": "part-three-v1/choice-buckle",
+      "view": "wide",
+      "note": "Theo loses footing on his injured leg"
+    },
+    {
+      "start": 3680,
+      "frames": 90,
+      "asset": "part-three-v1/choice-catch",
+      "view": "detail",
+      "note": "Danny catches Theo; a full jug starts sliding"
+    },
+    {
+      "start": 3770,
+      "frames": 90,
+      "asset": "part-three-v1/choice-release",
+      "view": "character",
+      "note": "Danny commits both hands to Theo and lets the jug go"
+    },
+    {
+      "start": 3860,
+      "frames": 90,
+      "asset": "part-three-v1/choice-fall",
+      "view": "wide",
+      "note": "Water is lost; the container lands on a lower ledge"
+    },
+    {
+      "start": 3950,
+      "frames": 150,
+      "asset": "part-three-v1/choice-haul",
+      "view": "detail",
+      "note": "Danny hauls Theo onto solid steel"
+    },
+    {
+      "start": 4100,
+      "frames": 150,
+      "asset": "part-three-v1/choice-retrieve",
+      "view": "character",
+      "note": "Danny retrieves the damaged empty jug with the strap"
+    },
+    {
+      "start": 4250,
+      "frames": 202,
+      "asset": "part-three-v1/photo-home",
+      "view": "wide",
+      "note": "Theo collects his blanket and hides his photograph"
+    },
+    {
+      "start": 4452,
+      "frames": 158,
+      "asset": "part-three-v1/rack-home",
+      "view": "detail",
+      "note": "Theo steadies the storage rack as Danny climbs down"
+    },
+    {
+      "start": 4610,
+      "frames": 157,
+      "asset": "part-three-v1/rack-home",
+      "view": "character",
+      "note": "Theo steadies the storage rack as Danny climbs down"
+    },
+    {
+      "start": 4767,
+      "frames": 267,
+      "asset": "part-three-v1/lock-return",
+      "view": "character",
+      "note": "The padlock is still closed; it did not bring them home"
+    },
+    {
+      "start": 5034,
+      "frames": 231,
+      "asset": "part-three-v1/lock-return",
+      "view": "wide",
+      "note": "Theo sits on the bucket beside their surviving water"
+    },
+    {
+      "start": 5265,
+      "frames": 165,
+      "asset": "part-three-v1/first-aid",
+      "view": "detail",
+      "note": "Danny gets the first-aid box"
+    },
+    {
+      "start": 5430,
+      "frames": 195,
+      "asset": "part-three-v1/roof-solo",
+      "view": "character",
+      "note": "Night four: Danny signals Lily alone"
+    },
+    {
+      "start": 5625,
+      "frames": 177,
+      "asset": "part-three-v1/sleep-home",
+      "view": "wide",
+      "note": "He checks the hatch; Theo sleeps beside the water"
+    },
+    {
+      "start": 5802,
+      "frames": 297,
+      "asset": "part-three-v1/first-aid",
+      "view": "detail",
+      "note": "Danny cleans and bandages Theos scraped calf"
+    },
+    {
+      "start": 6099,
+      "frames": 264,
+      "asset": "part-three-v1/wrappers",
+      "view": "character",
+      "note": "Theo packs his bandage and food wrappers very small"
+    },
+    {
+      "start": 6363,
+      "frames": 258,
+      "asset": "part-three-v1/wrappers",
+      "view": "wide",
+      "note": "A habit from months living above the cinema"
+    },
+    {
+      "start": 6621,
+      "frames": 258,
+      "asset": "part-three-v1/leaving",
+      "view": "detail",
+      "note": "Theo prepares to return to the ceiling"
+    },
+    {
+      "start": 6879,
+      "frames": 258,
+      "asset": "part-three-v1/leaving",
+      "view": "character",
+      "note": "He says his leg is fine while taking weight off it"
+    },
+    {
+      "start": 7137,
+      "frames": 261,
+      "asset": "part-three-v1/pick-tent",
+      "view": "wide",
+      "note": "Danny tells him to pick a tent"
+    },
+    {
+      "start": 7398,
+      "frames": 234,
+      "asset": "part-three-v1/pick-tent",
+      "view": "detail",
+      "note": "Theo waits for the price of staying"
+    },
+    {
+      "start": 7632,
+      "frames": 246,
+      "asset": "part-three-v1/clean-offer",
+      "view": "character",
+      "note": "Danny only asks for quiet, help and honesty"
+    },
+    {
+      "start": 7878,
+      "frames": 231,
+      "asset": "part-three-v1/clean-offer",
+      "view": "wide",
+      "note": "He offers Theo a clean sweatshirt"
+    },
+    {
+      "start": 8109,
+      "frames": 153,
+      "asset": "part-three-v1/clean-offer",
+      "view": "detail",
+      "note": "Theo folds the clean garment carefully"
+    },
+    {
+      "start": 8262,
+      "frames": 237,
+      "asset": "part-three-v1/vera-call",
+      "view": "character",
+      "note": "Vera calls near dusk, asking for room at the inn"
+    },
+    {
+      "start": 8499,
+      "frames": 240,
+      "asset": "part-three-v1/answer-coat",
+      "view": "wide",
+      "note": "Danny returns to her story about trying on a coat"
+    },
+    {
+      "start": 8739,
+      "frames": 171,
+      "asset": "part-three-v1/vera-call",
+      "view": "detail",
+      "note": "Her amused answer no longer reassures him"
+    },
+    {
+      "start": 8910,
+      "frames": 213,
+      "asset": "part-three-v1/theo-request",
+      "view": "character",
+      "note": "Theo watches from the open tent as Danny leaves her waiting"
+    },
+    {
+      "start": 9123,
+      "frames": 180,
+      "asset": "part-three-v1/theo-request",
+      "view": "wide",
+      "note": "Theo asks to see the nightly signal"
+    },
+    {
+      "start": 9303,
+      "frames": 216,
+      "asset": "part-three-v1/roof-both",
+      "view": "detail",
+      "note": "Night five: Theo joins Danny behind the hatch"
+    },
+    {
+      "start": 9519,
+      "frames": 207,
+      "asset": "part-three-v1/roof-both",
+      "view": "character",
+      "note": "Parkview across the highway; count the tenth floor"
+    },
+    {
+      "start": 9726,
+      "frames": 264,
+      "asset": "part-three-v1/lily-window",
+      "view": "wide",
+      "note": "Lily flashes three times at nine"
+    },
+    {
+      "start": 9990,
+      "frames": 240,
+      "asset": "part-three-v1/danny-answer",
+      "view": "detail",
+      "note": "Danny answers with his own three flashes"
+    },
+    {
+      "start": 10230,
+      "frames": 69,
+      "asset": "part-three-v1/roof-both",
+      "view": "character",
+      "note": "For a moment, having another person there steadies him"
+    },
+    {
+      "start": 10299,
+      "frames": 225,
+      "asset": "part-three-v1/vera-signal",
+      "view": "wide",
+      "note": "A second light blinks from the department store roof"
+    },
+    {
+      "start": 10524,
+      "frames": 216,
+      "asset": "part-three-v1/vera-signal",
+      "view": "detail",
+      "note": "It is pointed toward Lilys window"
+    },
+    {
+      "start": 10740,
+      "frames": 246,
+      "asset": "part-three-v1/switch-still",
+      "view": "character",
+      "note": "Danny stops himself from answering again"
+    },
+    {
+      "start": 10986,
+      "frames": 252,
+      "asset": "part-three-v1/switch-still",
+      "view": "wide",
+      "note": "He has never taught Lily how to distinguish two senders"
+    },
+    {
+      "start": 11238,
+      "frames": 225,
+      "asset": "part-three-v1/theo-question",
+      "view": "detail",
+      "note": "Theo asks who is on the other roof"
+    },
+    {
+      "start": 11463,
+      "frames": 258,
+      "asset": "part-three-v1/night-quiet",
+      "view": "character",
+      "note": "Danny answers: the woman; his radio stays off"
+    },
+    {
+      "start": 11721,
+      "frames": 276,
+      "asset": "part-three-v1/night-quiet",
+      "view": "wide",
+      "note": "Lilys window goes dark; Theo touches his sleeve"
+    },
+    {
+      "start": 11997,
+      "frames": 234,
+      "asset": "part-three-v1/keys-loose",
+      "view": "detail",
+      "note": "The sock comes loose and exposes the last red tag"
+    },
+    {
+      "start": 12231,
+      "frames": 279,
+      "asset": "part-three-v1/b3-close",
+      "view": "character",
+      "note": "What is B3?"
+    },
+    {
+      "start": 12510,
+      "frames": 261,
+      "asset": "part-three-v1/b3-close",
+      "view": "wide",
+      "note": "Vera had said down to B3, get to the door"
+    },
+    {
+      "start": 12771,
+      "frames": 138,
+      "asset": "part-three-v1/walt-memory",
+      "view": "detail",
+      "note": "Danny remembers Walts warning"
+    },
+    {
+      "start": 12909,
+      "frames": 246,
+      "asset": "part-three-v1/b3-final",
+      "view": "character",
+      "note": "Daughter across the highway, Vera across the roof"
+    },
+    {
+      "start": 13155,
+      "frames": 249,
+      "asset": "part-three-v1/b3-final",
+      "view": "wide",
+      "note": "What she wants is hanging from Dannys belt"
+    },
+    {
+      "start": 13404,
+      "frames": 229,
+      "asset": "part-three-v1/b3-close",
+      "view": "detail",
+      "note": "Final original question: what did she think was behind that door?"
+    }
+  ]
+}
