@@ -1,0 +1,694 @@
+{
+  "tool": "Built-in image_gen",
+  "version": 1,
+  "created": "2026-11-26",
+  "selectedImages": 46,
+  "generations": [
+    {
+      "name": "fountain-idea",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene: Inside Summit Outdoors, Danny on LEFT listens as Theo on RIGHT points down through the floor and explains a tank below the mall fountain. Camping shelves, closed grille and tents, both full figures integrated into painted shadows. No exposed tank in the store.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-a0635266-e1db-490a-9b91-3bf23f3fa6ce.png",
+      "selected": true
+    },
+    {
+      "name": "fountain-door",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene: Indoor mall center court seen from above. Empty dry fountain occupies foreground; a closed gray pump-room service door beside a closed pretzel shop is obscured by a dense silent crowd of olive-headed BLACK STICK FIGURES. No Danny or Theo on floor. No water flowing in fountain; coins on dry basin floor.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-2abc5dae-6bb2-4225-87c7-ba1d8886411c.png",
+      "selected": false
+    },
+    {
+      "name": "chalk-route",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene: Overhead oblique close view inside the camping store: Theo on RIGHT kneels and traces a simple chalk route on blue floor tiles with one black mitten finger, Danny on LEFT watches. Chalk sketch shows a cinema rectangle, thin walkway, tall column and tank. No labels/text. Two empty small camping jugs nearby.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-c41f11d6-8fcb-45d5-a3c2-95b59c33be70.png",
+      "selected": true
+    },
+    {
+      "name": "small-jugs",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene: Danny LEFT and Theo RIGHT at a low camping display, choosing exactly TWO SMALL translucent camping water jugs with molded handles, compact enough to crawl with. Theo holds black mitten hands a short distance apart indicating the narrow gap. Both have their normal shoes. Indoor store with tents and closed grille.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-fe16d083-1945-4dc7-8d22-dad03c3e733a.png",
+      "selected": false
+    },
+    {
+      "name": "agreement",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene: Night inside dark camping store. Danny on LEFT sits beside a camping bucket, Theo on RIGHT stands near a tall storage rack and tent. Two small EMPTY camping jugs between them. Danny offers one protein bar while indicating a plan together. Small warm battery lantern; rich blue shadows. Both wear normal footwear. No radio conversation occurring in this image.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-8dd867c3-8bbc-40c5-a8cb-bab327afc067.png",
+      "selected": true
+    },
+    {
+      "name": "radio-night",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene: Night in the camping store. Medium close view of Danny alone, navy cap and pale softly lit head, gripping a small black handheld radio close to his face, worried by the woman speaking. Thin single black torso stroke, gold keys at hip. Dark tent and blurred camping bucket behind, only battery lantern light.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-89887465-68a2-49a2-a58d-3f4adafea377.png",
+      "selected": true
+    },
+    {
+      "name": "ready-boots",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene: Low angle inside camping store, Danny stands LEFT beside two small empty jugs, both black boots firmly on tiled floor. Theo RIGHT with gray-green scarf looks down at Dannys boots skeptically. Shaded pale heads and single thin stick bodies. Calm blue early dawn light through a closed grille.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-02417e80-570e-4f48-930d-dff55e8fa86a.png",
+      "selected": true
+    },
+    {
+      "name": "quiet-kit",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene: Before dawn in the camping store. Danny LEFT kneels to pack exactly TWO SMALL EMPTY translucent camping jugs, black flashlight and a rolled dark climbing strap; Theo RIGHT waits by tall storage rack looking upward. Gold keys partly wrapped in a gray sock. Slim black stick bodies without clothes below scarf/cap.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-298e2d1e-b2c1-4b19-8cbd-34a50a7f121f.png",
+      "selected": false
+    },
+    {
+      "name": "keys-sock",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Intimate painted close view of Dannys black mitten hands wrapping a large ring of gold keys inside a gray sock to stop rattling. On a camping crate lies a black handheld radio with its small battery removed and lying beside it, plus coiled climbing strap. Lower edge of pale shaded face and navy cap at left; blue camping store in soft focus. No human fingers/skin.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-91f87a04-6a47-4f19-8bd1-05f62b3c6c9f.png",
+      "selected": true
+    },
+    {
+      "name": "cinema-nest",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. A small ledge beside an indoor cinema projection-room door inside the service ceiling. Theo RIGHT kneels beside his stained folded blanket, exactly three empty water bottles, a folded gray hoodie and a small photograph face DOWN. Danny LEFT approaches quietly with navy cap, gold keys muffled in sock and both black boots. Painted industrial pipes, dusty blue-gray steel, subtle warm flashlight glow.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-d421faf3-7f97-4d85-b1e6-e7710aed2bf4.png",
+      "selected": false
+    },
+    {
+      "name": "steel-path",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Wide cinematic view inside a dusty ceiling plenum over indoor mall shops. Theo on RIGHT crawls forward on HEAVY dark structural I-beams; Danny on LEFT follows on hands and knees. Both keep weight on steel; fragile pale ceiling tiles below them. Ducts, pipes, small flashlight beam, cool blue-gray and warm dust motes. Both Danny boots still on. Exactly two small empty jugs on steel nearby.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-ccfe36d5-c190-4912-aa57-4eb18f1c9ae5.png",
+      "selected": false
+    },
+    {
+      "name": "rack-training",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. In a cramped ceiling plenum above the camping store: Danny on LEFT balances on the second shelf of a metal rack and reaches toward a THIN vertical ceiling hanger. Theo on RIGHT gently catches his wrist and points it toward a separate THICK horizontal structural I-BEAM overhead. Show clear difference between fragile hanger and heavy load-bearing steel. Danny both boots on, jugs left below on floor. Thin stick bodies.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-a101081c-00e2-466a-9736-0a2075feff77.png",
+      "selected": false
+    },
+    {
+      "name": "photo-hidden",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Medium close cinematic view of Theo RIGHT kneeling on a service platform, sliding a small FACE-DOWN photograph beneath a stained blanket with his black mitten hand before Danny LEFT can see it. Both pale spherical shaded heads and thin stick bodies. No visible picture contents. Three empty bottles and folded hoodie beside blanket. Danny both boots on.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-de8ace47-a264-4e0c-9948-b1598cc78258.png",
+      "selected": false
+    },
+    {
+      "name": "walkway-end",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Inside mall ceiling, the safe metal walkway with railing ENDS at left foreground. Beyond it only two heavy dark steel supports span above fragile cream ceiling tiles, with a deep view to the mall below through gaps. Theo on RIGHT looks back and points at the steel; Danny LEFT freezes at the edge. Both Danny boots on, two small empty jugs. No rope bridge or outdoor landscape.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-f874fe92-1136-4414-87a0-4a34d885b1cd.png",
+      "selected": false
+    },
+    {
+      "name": "service-key",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Danny LEFT uses a gold key at the lock of a closed gray steel cinema-service door on a small platform above the mall. Theo RIGHT watches in quiet surprise, scarf draped around narrow stick neck. Small metal key tag 17. Door has a plain rectangular blank sign plate above handle; no other words. Two small empty jugs on platform. Both Dannys boots on.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-a03856eb-212e-4639-baf4-35d1b5e841e6.png",
+      "selected": false
+    },
+    {
+      "name": "walkway-reveal",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Establishing wide view from a cinema service door onto a narrow metal service walkway high ABOVE an indoor mall center court. Railings frame a dizzying view down to an empty fountain and packed olive round-headed black stick crowd. Theo on RIGHT leads onto the walkway; Danny LEFT cautiously follows with exactly two small empty handled jugs. Danny has both boots. Thick beams, suspended ceiling edges, blue emergency light. Not a bridge outdoors.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-d496eba2-e7af-4ca4-ab34-535291c5149d.png",
+      "selected": false
+    },
+    {
+      "name": "beam-cross",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Side perspective in mall ceiling: Theo ahead on RIGHT crawls easily along a heavy horizontal I-beam, Danny behind on LEFT awkwardly copies on hands and knees. Dangerous gap between beams, ceiling tiles below, pipes above and dim center court far below. Both Danny boots still on. Two small empty handled jugs near Theo. Shaded pale heads, very thin black bodies.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-a1435238-f7e6-4805-a641-8e98a48ccc51.png",
+      "selected": false
+    },
+    {
+      "name": "hand-guide",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Inside the mall ceiling, Theo RIGHT crouches facing back toward Danny LEFT and points to the next safe position on a heavy I-beam. Danny slowly moves one black mitten and bent knee on the heavy steel. Emphasize measured deliberate support, fragile white tiles only below, not bearing their weight. Both Danny boots on. Shaded spherical heads, scarf and navy cap.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-650b56f4-a885-4552-a09d-2d52830160ed.png",
+      "selected": false
+    },
+    {
+      "name": "sweat",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Close cinematic view of Danny on LEFT crouched low along dark structural steel high above a mall. One black mitten wipes a bead of sweat from his pale round head before it can fall through a gap. Theo waits patiently ahead on RIGHT. Small emergency lamp below casts cool intermittent light. Danny both boots still on, two empty small jugs on steel in background. No skin/body or shirt.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-71a6f1f1-ba73-4076-b01b-78df8efa9d12.png",
+      "selected": true
+    },
+    {
+      "name": "court-below",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout. Dizzying top-down view THROUGH a narrow gap in indoor mall ceiling steel: a completely DRY dark round fountain has a few coins in its basin, around it a dense crowd of pale olive round heads, two small black oval eyes and BLACK SINGLE-LINE stick bodies facing distant closed food-court doors. In top left foreground the edge of Dannys navy cap and black mitten grip a thick beam. No realistic zombies or clothing on crowd, no rain, no flowing water.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-5d02e595-c6c0-4b68-b234-8434224edab4.png",
+      "selected": false
+    },
+    {
+      "name": "pass-jug",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. On heavy steel supports in a mall ceiling Danny LEFT carefully passes one small EMPTY translucent water jug to Theo RIGHT. Theo sets a second identical empty jug onto a solid service platform beside him before returning. Both have black stick limbs and pale shaded round heads; Danny both boots still on. Deep blue mall below through ceiling gap. Only two jugs total.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-9d3a16d1-f7ac-4d9d-b169-9258c508cfab.png",
+      "selected": false
+    },
+    {
+      "name": "brace-bend",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. A tense close side view of Dannys BLACK BOOTED RIGHT KNEE pressing a thin metal ceiling brace which is visibly bending downward. Danny LEFT is crouched on a thick I-beam with a worried pale round face and navy cap; Theo RIGHT reaches back to touch his shoulder. Ceiling tile cracks beneath his RIGHT leg but leg has NOT yet dropped. Heavy steel above is intact. No human flesh or trousers.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-434191e6-5203-4d7d-bc12-906366b94df4.png",
+      "selected": false
+    },
+    {
+      "name": "leg-through",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. Cross-section cinematic side view INSIDE a mall ceiling plenum. Danny LEFT lies belly-down across a heavy intact beam, his RIGHT stick leg and RIGHT black boot dangling through a fresh broken ceiling tile hole toward the mall below, left leg remains above. Theo RIGHT lies on solid platform and reaches for Dannys wrists. Dust and small plaster shards fall. Exactly two small empty jugs safely on platform behind Theo. Clear geography, no huge clothed torso, no blood.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-8bfe8f94-bd88-46fd-9944-44a51aa002d2.png",
+      "selected": false
+    },
+    {
+      "name": "grip-slip",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. Tense intimate angle in mall ceiling, Danny LEFT suspended at the broken tile edge with RIGHT leg and black boot through hole, LEFT leg on steel. Theo RIGHT lies flat on solid platform grabbing Dannys black wrist with one hand and reaching for the second, fabric cuff under Theos scarf slightly slipping. Both stick people pale spherical head/two oval eyes, navy cap Danny, scarf Theo. Two small empty jugs set safely behind Theo. Structural I-beam above, sharp thin brace near Theos calf.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-83f53c57-f556-4fb4-b4d4-b1c0136b60c4.png",
+      "selected": false
+    },
+    {
+      "name": "marcus-up",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. Medium close low angle on undead Marcus in indoor mall center court. Olive softly shaded spherical head, only two black oval eyes, navy cap with a small visibly worn fabric patch. ONE black wire-thin line from head to hip, black stick arms, tiny EMPTY square radio clip attached to a narrow dark strap, no radio no keys no torso clothing. He looks upward at a single black boot through broken ceiling above. Other olive stick heads behind, muted blue emergency glow.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-d91512bc-b456-4e92-ab29-65f5bb739075.png",
+      "selected": false
+    },
+    {
+      "name": "release",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. Close painted view in mall ceiling: Dannys LEFT black mitten slowly opens to RELEASE its grip on Theos gray sleeve/scarf cuff, allowing Theo RIGHT to pull a black climbing strap around a heavy steel beam. Dannys other wrist is held securely. Their worried shaded pale round heads edge frame, navy cap left, scarf right. Danger below visible through broken tile edge. No fleshy arms, sleeves only a small cuff near mitten.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-76a59860-6126-4b50-94ca-c4b490659803.png",
+      "selected": false
+    },
+    {
+      "name": "crowd-hole",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. Low wide view in mall center court looking toward a jagged hole in suspended ceiling above a dry fountain. Dannys one black RIGHT boot on a thin black stick leg hangs through the hole. Under it crowd of olive round-headed SINGLE-BLACK-STROKE stick bodies presses together looking up. Marcus foreground wears navy security cap with worn patch, olive head, EMPTY small square radio clip on narrow strap, NO radio and NO keys. Coins in fountain. Implied danger without gore.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-58ca85ec-f6fd-4717-bf68-e607b5139e52.png",
+      "selected": false
+    },
+    {
+      "name": "strap-wrap",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. High tension inside mall ceiling. Theo on RIGHT lies on solid platform, one black mitten holds Dannys wrist LEFT while the other loops a dark climbing strap AROUND a thick structural steel I-beam directly above. Danny LEFT hangs at the broken tile hole, right boot and leg still below, left knee on beam. Pale shaded round heads, cap and scarf, thin single-line black bodies. Two small empty jugs safely behind Theo. Strap clearly loops solid beam, not a duct.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-6a77a5b9-18b8-4ce0-8717-49970961e6b1.png",
+      "selected": false
+    },
+    {
+      "name": "rescue",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. Theo RIGHT drags Danny LEFT onto a solid service platform inside mall ceiling. Danny now has LEFT black boot and RIGHT dirty gray sock, both legs above the broken tile edge. Theo is anchored by a dark climbing strap around the heavy structural I-beam. Dannys loose black RIGHT boot remains caught at the jagged hole just below them. Exactly two small empty handled jugs safely at back right. Thin black stick bodies, richly painted shadows.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-04066a00-2cea-41b5-96f2-2c07adddcae7.png",
+      "selected": false
+    },
+    {
+      "name": "elbow",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. Danny LEFT pushes his BLACK elbow onto thick structural steel as Theo RIGHT leans back in a climbing strap looped securely around a beam and pulls Dannys hand. Dannys RIGHT stick foot in a dirty gray SOCK is slipping OUT of the black boot caught below the broken tile. LEFT foot remains in its black boot above. No dangling full second shoe or mirrored feet. Large pale spherical heads and thin single-line black bodies; two small empty jugs safe on rear platform.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-60c5e509-35ab-48e1-aef9-d6d122a4a636.png",
+      "selected": false
+    },
+    {
+      "name": "platform-breath",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. Inside mall ceiling, Danny lies LEFT and Theo lies RIGHT together on a wide solid steel platform beside a jagged ceiling hole, quietly exhausted, faces near their forearms. Danny navy cap, LEFT black boot and RIGHT dirty gray sock. Theo scarf, dark trainers and a tiny torn gray fabric cuff with restrained scrape on right calf. Exactly two small empty jugs on safe rear platform, climbing strap looped around beam. Soft dust and cool emergency light.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-728fa94c-7daf-42a7-ae63-bbf4b1427d64.png",
+      "selected": false
+    },
+    {
+      "name": "brace-slip",
+      "prompt": "Use case: illustration-story. Create ONE complete 16:9 cinematic hand-painted production frame for THE NIGHT GUARD, Chapter Two Part Two. Image 1 is the approved visual identity and texture reference. Match its richly painted detailed environment, softly shaded oversized pale spherical heads with ONLY two black oval eyes, delicate thin black stick anatomy, irregular ink edges, layered blue/slate lighting, warm practical highlights, depth and contact shadows. Danny: adult guard in navy peaked cap with gold shield; gold hip keys until muffled for the trip. Theo: fifteen-year-old boy, smaller pale spherical head, gray-green scarf, dark trainers. POSITION CONTINUITY: Danny LEFT, Theo RIGHT throughout all shared shots, including action. Each person has ONE BLACK WIRE-THIN STROKE from neck to pelvis, same thickness as one arm, black stick legs/arms, black mitten hands; no filled chest/hips/shirt/coat/pants/skin below head, no fleshy hands/arms, no mouth/nose, no flat vector foreground. Tiny cuff on Theo only when needed for narrated injury/grip. Image 2, if supplied, is a location/action continuity reference. Both characters and background must be rendered together as one coherent painted scene. Wide cinematic 16:9 landscape, frame all important actions with safe margins for subtle camera motion, detailed full-bleed backdrop. No collage, panel borders, caption, logo, title or watermark. Scene:  FOOTWEAR LOCK: Danny wears BLACK LACE-UP SECURITY BOOTS on both feet until the scene explicitly calls for his right dirty gray sock. Theo wears dark gray trainers throughout.  AFTER DEPARTURE ALL KEYS ARE COMPLETELY ENCLOSED IN AN OPAQUE GRAY SOCK POUCH at Danny's hip, with NO exposed gold keys dangling. The image reference supplies art and identity ONLY; build the location explicitly requested, not the store in the reference. For ceiling scenes: closed indoor building, dark overhead pipes and steel, no outside sky or moon. A visible fountain is ALWAYS DRY, water jets off, coins on dry floor. Close shot inside mall ceiling: Theos right dark TRAINER slips on a sharp narrow brace below the load-bearing beam while he leans backward on a taut climbing strap around a thick I-beam. Theo RIGHT strains to pull Danny LEFT out of a hole. A tiny fabric tear at Theos calf with restrained dark-red scrape, no exposed flesh. Dannys right black boot still caught below; no other injuries. Fine thin black limbs, large softly shaded pale heads.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png",
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-51a497f4-8156-474a-98a1-872ca5d08631.png",
+      "selected": false
+    },
+    {
+      "name": "boot-fall",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: Dramatic downward view from the mall ceiling. ONE loose black RIGHT boot falls through the air toward a completely DRY indoor fountain, no leg attached, its heel nearly touches the coin-scattered basin. Crowds of olive round-headed BLACK SINGLE-LINE stick figures stand beyond the rim looking toward it, Marcus navy cap/empty chest clip among them. Upper foreground: Dannys gray socked right foot now safely above on solid steel. No water splash, no new shoes.",
+      "refs": [
+        "public/mall/ch2/story-art/hook-boot.png"
+      ],
+      "source": "exec-527c3fc1-2b7b-44e9-b0cd-7e129bc446c3.png",
+      "selected": true
+    },
+    {
+      "name": "theo-cut",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: On safe steel platform inside mall ceiling, Danny LEFT crouches facing Theo RIGHT. Theo quietly pulls a narrow torn gray fabric cuff over a small scraped area at his RIGHT calf, faint dark red smear on the sharp brace nearby. Very restrained injury without gore. Both oversized pale shaded heads and thin black stick bodies. Danny LEFT black boot and RIGHT dirty gray sock. Two EMPTY small jugs on platform; strap at beam. Theo trying to hide discomfort.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-66234a5a-7235-47c6-b688-9e0679ad569d.png",
+      "selected": true
+    },
+    {
+      "name": "tank-reveal",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: Wide painted establishing view from inside a cramped industrial PUMP ROOM underneath a DRY mall fountain. Huge dark steel water tank dominates background, visible still water behind rectangular inspection glass and a small plain blank capacity plate below it. Danny LEFT just off the service ladder, navy cap, LEFT black boot/RIGHT dirty gray sock, Theo RIGHT beside bottom rung with scarf and minor scraped right calf. Exactly two small EMPTY jugs on floor. Pipes, valves, blue emergency light, no aquarium or pool.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-4f22802c-2358-4ded-9c21-db1347cb82c1.png",
+      "selected": false
+    },
+    {
+      "name": "column-ladder",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: ONE continuous descent inside a narrow enclosed industrial service column. Danny BELOW on LEFT descends a vertical metal ladder facing the rungs, placing his LEFT black boot on a rung first; RIGHT foot in dirty gray sock. Theo ABOVE on RIGHT follows carefully with scarf and subtly scraped right calf. Two compact empty jugs strapped at Dannys side. Ladder leads down to a small open hatch at bottom into dim pump room. Only this ladder, no repeated ladders.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-956552fd-6582-44c9-909d-879bff9174b0.png",
+      "selected": true
+    },
+    {
+      "name": "tank-hand",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: Medium intimate view inside pump room, Danny LEFT presses a black mitten hand flat against a huge steel water tank beside its inspection window with visible water. He pauses in relief. Theo RIGHT eases onto bottom ladder rung favouring right calf. Danny LEFT boot and RIGHT dirty gray sock; cap, no keys hanging loose (muffled in sock). Exactly two small EMPTY translucent jugs on floor, valves and dark pipes. No drinking directly from tank.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-ee565ba6-ef53-4341-b1fb-3ac194135dc6.png",
+      "selected": true
+    },
+    {
+      "name": "theo-rung",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: Pump room: Theo on RIGHT sits low on the bottom ladder rung favouring his scraped RIGHT calf, looks up with a dry understated expression. Danny on LEFT crouches beside him, navy cap, LEFT black boot and RIGHT dirty gray sock, listening. Huge steel tank and inspection window behind. Two small empty jugs near a low tap. Soft painterly blue-gray shadows, subtle warm flashlight bounce. Same very thin black line bodies and pale shaded heads.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-c8f5af1e-938b-47f8-9f61-0599dd196c66.png",
+      "selected": true
+    },
+    {
+      "name": "heavy-handles",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: Inside pump room, Danny LEFT lifts exactly TWO now FULL small translucent camping jugs, one in each black mitten hand, arms stretched by their weight. Danny pale shaded head/navy cap, LEFT black boot and RIGHT dirty gray sock. Theo RIGHT beside ladder points upward, determined to find a safer crossing; slight scrape at right calf. Huge steel tank, pipes, CLOSED gray service door on rear wall. No spare jugs.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-9945ca47-7ff9-48cf-8027-cac225f27dbb.png",
+      "selected": true
+    },
+    {
+      "name": "fill-jugs",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: In cramped pump room, Danny LEFT holds one small translucent handled camping jug under a low tap on a huge steel tank, water flowing visibly INTO it, while Theo RIGHT steadies the second jug on the floor, half full. Exactly TWO jugs, compact not barrels. Danny LEFT boot and RIGHT dirty gray sock; Theo scarf, scraped right calf. Dark painted pipes, inspection window, dim practical flashlight; no drinking or treating water here.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-27580b77-ba6f-4bd7-8680-4d968aceac3f.png",
+      "selected": true
+    },
+    {
+      "name": "drill-witness",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: Pump room two-shot of Danny LEFT and Theo RIGHT beside two FULL small camping jugs on floor. Theo gestures toward the CLOSED gray service door and recalls three people drilling outside on the first night, tense but speaking quietly. Danny lowers a jug, surprised. Huge tank and ladder frame the intimate scene; no visible drill or intruders in current room. Danny LEFT boot RIGHT dirty gray sock. Theo scarf and small scrape on right calf.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-1b1ab488-76d6-427b-ab6c-024528af6657.png",
+      "selected": true
+    },
+    {
+      "name": "drill-wall",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: Cliffhanger flashback, first night inside an indoor mall staff passage behind a closed pretzel shop. Exactly THREE anonymous adult STICK FIGURES: one woman with a pale spherical shaded head and simple dark short hair on LEFT watches, two male pale round-headed thin black stick figures on RIGHT operate a large portable core drill held against an unmarked CONCRETE WALL. Dust and a shallow circular cutting mark, no open tunnel or revealed room. The woman stays mostly in shadow, do not reveal identity. NO children, Danny, Theo, gore or realistic anatomy. Men have black stick spines/limbs, only gloves and small accessory belts. Richly painted blue-gray, restrained orange machine light. No B3 tag yet.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-71a16975-bbee-49b2-b336-ea2f4c7203f8.png",
+      "selected": true
+    },
+    {
+      "name": "pump-door",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: Inside cramped pump room, camera faces a fully CLOSED gray industrial door, fine dust falling from its upper frame after a shoe scrapes OUTSIDE. Danny on LEFT lowers one of two full small jugs silently to floor and turns toward door. Theo on RIGHT watches door with sudden recognition; ladder behind right, huge tank left. Danny LEFT black boot RIGHT dirty gray sock, Theo scraped right calf and scarf. No hole in this door or open exit.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-84224ad6-03b8-4065-8c1a-0a86334d32eb.png",
+      "selected": true
+    },
+    {
+      "name": "clock-memory",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: A remembered indoor mall staff corridor on first night: wall-mounted analog clock clearly has minute hand at SIX and hour hand halfway between ONE and TWO (1:30). In left foreground only a partial navy security cap and pale round head of Danny as a memory framing element, thin black shoulder line. At far right a closed pretzel-shop service door and dim amber emergency light. No digital clock, no apocalypse daylight, no crowd or readable extra text.",
+      "refs": [
+        "public/mall/ch2/story-art/theo-perch.png"
+      ],
+      "source": "exec-cfcd9540-cdd9-4bfa-93ca-8f9f15771d46.png",
+      "selected": true
+    },
+    {
+      "name": "marcus-rounds",
+      "prompt": "Use case: illustration-story. Make ONE complete 16:9 cinematic painted production frame for THE NIGHT GUARD. Reference image supplies the approved painting texture and identities ONLY. Replace its setting/action with this scene. Preserve richly painted layered detailed environments, depth, contact shadows, cool blue/slate light with restrained warm practical highlights, delicate irregular ink edges. People are ONLY those explicitly requested in the scene: oversized softly shaded spherical heads with ONLY two black oval eyes, ONE BLACK WIRE-THIN STROKE from neck to pelvis (same thickness as an arm), black stick arms/legs and black mitten hands. No flesh below head, no filled torsos, trousers, realistic anatomy, mouths/noses or flat pasted-on SVG people. If Danny appears: pale head, navy peaked security cap/gold shield, keys COMPLETELY inside opaque gray sock pouch at hip, LEFT black lace-up boot and RIGHT dirty gray sock after the rescue. If Theo appears: smaller pale head, gray-green scarf, gray trainers, a small restrained scrape at right calf after rescue. Danny LEFT, Theo RIGHT in all shared shots. Do not add these characters when they are not requested. Interior mall/pump rooms are enclosed; no outdoor sky or mountains. Any visible mall floor has a dense crowd of olive round-headed BLACK SINGLE-LINE stick figures around a DRY coin-scattered fountain, never flowing water. No collage, caption, watermark or invented lore. Scene: Marcus alone walks the indoor mall corridor beside a fully closed store grille, one mitten reaches to tug it twice as he repeats his rounds. Muted olive oversized spherical head with two black oval eyes, navy guard cap with worn patch, black wire-thin stick spine and limbs. At his chest is ONLY a tiny EMPTY flat square radio holster plate on a narrow strap, absolutely no handheld radio or antenna attached and no keys. Day-four blue emergency light and faint cool skylight. Background crowd very distant, thin black sticks and olive round heads.",
+      "refs": [
+        "public/mall/ch2/story-art/hook-boot.png"
+      ],
+      "source": "exec-ba526485-30bc-471f-9278-563b7bd4b5df.png",
+      "selected": true
+    },
+    {
+      "name": "rack-training",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Enclose Danny's dangling gold hip keys completely inside ONE tied opaque gray SOCK pouch at the same hip. No exposed key teeth or loose metal. Preserve the entire scene, all character positions/anatomy, footwear and poses.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/rack-training.png"
+      ],
+      "source": "exec-5b843a4b-4b9b-4e35-9628-a83d19618e6b.png",
+      "selected": true,
+      "inputGeneration": "exec-a101081c-00e2-466a-9736-0a2075feff77.png"
+    },
+    {
+      "name": "small-jugs",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Replace only Danny's two gray sneakers (adult guard LEFT) with two sturdy BLACK LACE-UP SECURITY BOOTS. Leave Theo's gray trainers, the two small EMPTY jugs, all bodies and store unchanged.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/small-jugs.png"
+      ],
+      "source": "exec-06657d72-6e89-4140-9e7d-8ce0a600878e.png",
+      "selected": true,
+      "inputGeneration": "exec-fe16d083-1945-4dc7-8d22-dad03c3e733a.png"
+    },
+    {
+      "name": "quiet-kit",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Put a matching pair of BLACK LACE-UP SECURITY BOOTS on Danny's two plain black feet at LEFT. He has not yet lost a boot. Enclose every dangling gold key at his hip completely inside an opaque gray SOCK pouch tied shut, so no gold teeth show. Keep exactly two empty jugs in bag, flashlight, strap, and Theo at RIGHT.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/quiet-kit.png"
+      ],
+      "source": "exec-7d2bff5f-7a1f-4151-a846-fdd693b5cdf6.png",
+      "selected": true,
+      "inputGeneration": "exec-298e2d1e-b2c1-4b19-8cbd-34a50a7f121f.png"
+    },
+    {
+      "name": "fountain-door",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Remove the two pale-headed living characters (Danny in cap and Theo with scarf) completely from foreground balcony. Reconstruct the indoor balcony/railing behind them naturally. Keep the dry fountain, olive-headed stick crowd and closed pretzel-shop pump-room door. There are NO living people in this view.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/fountain-door.png"
+      ],
+      "source": "exec-d54fdd7f-6df3-4192-b5e1-d15d21ac58cc.png",
+      "selected": true,
+      "inputGeneration": "exec-2abc5dae-6bb2-4225-87c7-ba1d8886411c.png"
+    },
+    {
+      "name": "hand-guide",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Enclose Danny's dangling gold hip keys completely inside ONE tied opaque gray SOCK pouch at the same hip. No exposed key teeth or loose metal. Preserve the entire scene, all character positions/anatomy, footwear and poses.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/hand-guide.png"
+      ],
+      "source": "exec-a219bf75-c2bd-4460-b06c-fa4840428aec.png",
+      "selected": true,
+      "inputGeneration": "exec-650b56f4-a885-4552-a09d-2d52830160ed.png"
+    },
+    {
+      "name": "walkway-end",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Enclose Danny's dangling gold hip keys completely inside ONE tied opaque gray SOCK pouch at the same hip. No exposed key teeth or loose metal. Preserve the entire scene, all character positions/anatomy, footwear and poses.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/walkway-end.png"
+      ],
+      "source": "exec-efa1b2d8-662b-4974-a086-64ee34bbc24f.png",
+      "selected": true,
+      "inputGeneration": "exec-f874fe92-1136-4414-87a0-4a34d885b1cd.png"
+    },
+    {
+      "name": "steel-path",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Enclose Danny's dangling gold hip keys completely inside ONE tied opaque gray SOCK pouch at the same hip. No exposed key teeth or loose metal. Preserve the entire scene, all character positions/anatomy, footwear and poses.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/steel-path.png"
+      ],
+      "source": "exec-98ecd5e2-3bb4-4668-9785-8f833ebaa45c.png",
+      "selected": true,
+      "inputGeneration": "exec-ccfe36d5-c190-4912-aa57-4eb18f1c9ae5.png"
+    },
+    {
+      "name": "beam-cross",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Enclose Danny's dangling gold hip keys completely inside ONE tied opaque gray SOCK pouch at the same hip. No exposed key teeth or loose metal. Preserve the entire scene, all character positions/anatomy, footwear and poses.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/beam-cross.png"
+      ],
+      "source": "exec-e86cb689-1bd0-4593-839b-424e520a3abf.png",
+      "selected": true,
+      "inputGeneration": "exec-a1435238-f7e6-4805-a641-8e98a48ccc51.png"
+    },
+    {
+      "name": "service-key",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: This door is INSIDE THE ENCLOSED CINEMA CEILING SPACE, not outdoors: replace the moon, night sky and exterior rooftop/mall roof at LEFT with a dark enclosed service void with overhead steel beams, ducts and pipes. Keep the platform, door, foreground people and key 17 in Danny's hand. Enclose the separate dangling hip key bundle inside a tied opaque gray sock pouch; keep only the single key being used exposed.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/service-key.png"
+      ],
+      "source": "exec-169d6ab9-47ab-486a-9302-59f9be596b52.png",
+      "selected": true,
+      "inputGeneration": "exec-a03856eb-212e-4639-baf4-35d1b5e841e6.png"
+    },
+    {
+      "name": "photo-hidden",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Replace the camping-store stockroom surroundings with an ENCLOSED steel service platform ABOVE THE CINEMA, heavy overhead beams/ducts, dim maintenance light, no tents/camping shelves/grille, no outside sky. Keep the exact foreground action of Theo RIGHT hiding a face-down photo beneath a blanket while Danny LEFT watches, three empty bottles and folded hoodie. Enclose all Danny hip keys inside a tied opaque gray sock pouch.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/photo-hidden.png"
+      ],
+      "source": "exec-e3d9e11d-4fcf-4056-8d37-d5baf13943d0.png",
+      "selected": true,
+      "inputGeneration": "exec-de8ace47-a264-4e0c-9948-b1598cc78258.png"
+    },
+    {
+      "name": "cinema-nest",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Switch OFF the projector in the far-left background: remove its bright cone of projected light and glowing lens. Keep a dark unlit projector machine there. Keep Danny, Theo, their blanket, photograph and exactly three empty bottles unchanged.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/cinema-nest.png"
+      ],
+      "source": "exec-6a3d3ad6-9c89-4754-91f5-80b6aa456f44.png",
+      "selected": true,
+      "inputGeneration": "exec-d421faf3-7f97-4d85-b1e6-e7710aed2bf4.png"
+    },
+    {
+      "name": "court-below",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Enclose Danny's dangling gold hip keys completely inside ONE tied opaque gray SOCK pouch at the same hip. No exposed key teeth or loose metal. Preserve the entire scene, all character positions/anatomy, footwear and poses.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/court-below.png"
+      ],
+      "source": "exec-2fd1f1a7-9284-4a36-8b9d-f1567eb76907.png",
+      "selected": true,
+      "inputGeneration": "exec-5d02e595-c6c0-4b68-b234-8434224edab4.png"
+    },
+    {
+      "name": "pass-jug",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: On the visible mall floor FAR BELOW the ceiling platform, add a DENSE crowd of at least one hundred small olive spherical heads with two black eyes and thin BLACK SINGLE-LINE stick bodies, around the completely DRY fountain and looking up. They are on ground floor only, NEVER beside Danny/Theo on the upper platform. Preserve the exact upper foreground action, bodies, positions, footwear, keys pouch, strap, ceiling hole and two jugs. Do not add living Danny or Theo to the ground floor.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/pass-jug.png"
+      ],
+      "source": "exec-6ff7bc32-83cb-478a-8db8-17fb11cdfc6a.png",
+      "selected": true,
+      "inputGeneration": "exec-9d3a16d1-f7ac-4d9d-b169-9258c508cfab.png"
+    },
+    {
+      "name": "walkway-reveal",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Enclose Danny's dangling hip keys in a tied opaque gray sock pouch. Turn the distant fountain fully OFF: remove every water jet, stream, spray and pool; show dry stone basin with a few coins. Keep the packed olive stick crowd, two empty jugs, interior mall walkway, Danny LEFT and Theo RIGHT unchanged.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/walkway-reveal.png"
+      ],
+      "source": "exec-faca7697-8af7-4612-9a55-c60f20feae02.png",
+      "selected": true,
+      "inputGeneration": "exec-d496eba2-e7af-4ca4-ab34-535291c5149d.png"
+    },
+    {
+      "name": "leg-through",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: On the visible mall floor FAR BELOW the ceiling platform, add a DENSE crowd of at least one hundred small olive spherical heads with two black eyes and thin BLACK SINGLE-LINE stick bodies, around the completely DRY fountain and looking up. They are on ground floor only, NEVER beside Danny/Theo on the upper platform. Preserve the exact upper foreground action, bodies, positions, footwear, keys pouch, strap, ceiling hole and two jugs. Do not add living Danny or Theo to the ground floor.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/leg-through.png"
+      ],
+      "source": "exec-15982f33-32f3-4170-990c-43d24106d21d.png",
+      "selected": true,
+      "inputGeneration": "exec-8bfe8f94-bd88-46fd-9944-44a51aa002d2.png"
+    },
+    {
+      "name": "brace-bend",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: On the visible mall floor FAR BELOW the ceiling platform, add a DENSE crowd of at least one hundred small olive spherical heads with two black eyes and thin BLACK SINGLE-LINE stick bodies, around the completely DRY fountain and looking up. They are on ground floor only, NEVER beside Danny/Theo on the upper platform. Preserve the exact upper foreground action, bodies, positions, footwear, keys pouch, strap, ceiling hole and two jugs. Do not add living Danny or Theo to the ground floor.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/brace-bend.png"
+      ],
+      "source": "exec-70925d07-2f92-47ce-9545-6a4b656a9f6f.png",
+      "selected": true,
+      "inputGeneration": "exec-434191e6-5203-4d7d-bc12-906366b94df4.png"
+    },
+    {
+      "name": "brace-slip",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: On the visible mall floor FAR BELOW the ceiling platform, add a DENSE crowd of at least one hundred small olive spherical heads with two black eyes and thin BLACK SINGLE-LINE stick bodies, around the completely DRY fountain and looking up. They are on ground floor only, NEVER beside Danny/Theo on the upper platform. Preserve the exact upper foreground action, bodies, positions, footwear, keys pouch, strap, ceiling hole and two jugs. Do not add living Danny or Theo to the ground floor.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/brace-slip.png"
+      ],
+      "source": "exec-60a4732b-b314-4f7e-ac7d-e6d32b9f2b82.png",
+      "selected": true,
+      "inputGeneration": "exec-51a497f4-8156-474a-98a1-872ca5d08631.png"
+    },
+    {
+      "name": "grip-slip",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: On the visible mall floor FAR BELOW the ceiling platform, add a DENSE crowd of at least one hundred small olive spherical heads with two black eyes and thin BLACK SINGLE-LINE stick bodies, around the completely DRY fountain and looking up. They are on ground floor only, NEVER beside Danny/Theo on the upper platform. Preserve the exact upper foreground action, bodies, positions, footwear, keys pouch, strap, ceiling hole and two jugs. Do not add living Danny or Theo to the ground floor.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/grip-slip.png"
+      ],
+      "source": "exec-cec06a8b-15d8-4119-8753-d24247387423.png",
+      "selected": true,
+      "inputGeneration": "exec-83f53c57-f556-4fb4-b4d4-b1c0136b60c4.png"
+    },
+    {
+      "name": "platform-breath",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: On the visible mall floor FAR BELOW the ceiling platform, add a DENSE crowd of at least one hundred small olive spherical heads with two black eyes and thin BLACK SINGLE-LINE stick bodies, around the completely DRY fountain and looking up. They are on ground floor only, NEVER beside Danny/Theo on the upper platform. Preserve the exact upper foreground action, bodies, positions, footwear, keys pouch, strap, ceiling hole and two jugs. Do not add living Danny or Theo to the ground floor.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/platform-breath.png"
+      ],
+      "source": "exec-656ad04a-305d-4ef4-83a8-abc39ce5e4d2.png",
+      "selected": true,
+      "inputGeneration": "exec-728fa94c-7daf-42a7-ae63-bbf4b1427d64.png"
+    },
+    {
+      "name": "rescue",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: On the visible mall floor FAR BELOW the ceiling platform, add a DENSE crowd of at least one hundred small olive spherical heads with two black eyes and thin BLACK SINGLE-LINE stick bodies, around the completely DRY fountain and looking up. They are on ground floor only, NEVER beside Danny/Theo on the upper platform. Preserve the exact upper foreground action, bodies, positions, footwear, keys pouch, strap, ceiling hole and two jugs. Do not add living Danny or Theo to the ground floor.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/rescue.png"
+      ],
+      "source": "exec-2b27ddb9-f353-4bcc-a2e9-6b6a676a8d73.png",
+      "selected": true,
+      "inputGeneration": "exec-04066a00-2cea-41b5-96f2-2c07adddcae7.png"
+    },
+    {
+      "name": "crowd-hole",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Remove the living pale-headed Danny (navy cap, keys pouch) from the far LEFT on the mall FLOOR and living pale-headed scarf-wearing Theo on RIGHT mall FLOOR. They are actually in the ceiling and must NOT appear on the ground. Replace those two ground-floor characters with ordinary olive-headed black single-line stick undead members of the crowd. Keep Marcus foreground, his EMPTY radio clip, the dense olive crowd, dry fountain and ONE hanging boot/leg in ceiling hole.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/crowd-hole.png"
+      ],
+      "source": "exec-26c30e66-99c2-4a01-b5d4-5eea54644457.png",
+      "selected": true,
+      "inputGeneration": "exec-58ca85ec-f6fd-4717-bf68-e607b5139e52.png"
+    },
+    {
+      "name": "marcus-up",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Remove the TWO living characters Danny (pale head/navy cap/keys pouch) and Theo (pale head/scarf) from LEFT ground floor; replace them with normal olive-headed black stick members of the crowd. Leave the olive-headed undead Marcus with worn navy cap and EMPTY radio clip in foreground exactly as is. No living people anywhere on ground floor. Keep hanging boot, dry fountain and ceiling.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/marcus-up.png"
+      ],
+      "source": "exec-cec1c3fb-7473-43f4-a1bc-8ba7624e8cf8.png",
+      "selected": true,
+      "inputGeneration": "exec-d91512bc-b456-4e92-ab29-65f5bb739075.png"
+    },
+    {
+      "name": "release",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Recompose as a very tight cinematic hand detail at the broken ceiling edge: Danny's LEFT black mitten opens and releases the small GRAY CUFF on Theo's thin BLACK right forearm, so Theo can feed the dark strap around the heavy I-beam. Show only partial Danny navy cap/pale head at far LEFT and partial Theo scarf/pale head RIGHT, clasped other wrists secure, no lower bodies or legs in frame. This is not a standing/training scene. One gray cuff, no filled coat or sleeve torso, no extra limbs. Painted dust and jagged tile below.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/release.png"
+      ],
+      "source": "exec-1ae58756-22e1-4e6c-b3e9-35fc03ae7de2.png",
+      "selected": true,
+      "inputGeneration": "exec-76a59860-6126-4b50-94ca-c4b490659803.png"
+    },
+    {
+      "name": "strap-wrap",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Recompose into a tight cinematic CLOSE-UP of this same rescue moment: Danny's navy-capped pale HEAD at LEFT, Theo's scarf-wearing pale HEAD at RIGHT, their black mitten hands and the thick steel I-beam. Theo's right hand loops the dark climbing strap tightly AROUND the thick beam, his other hand holds Danny's wrist at the jagged tile edge. All legs/feet and lower bodies OUT OF FRAME so neither can be seen standing safely. Danny is still hanging in the hole below frame. Exactly one cap, one scarf, no extra hands or arms. Rich blue painted ducts behind.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/strap-wrap.png"
+      ],
+      "source": "exec-d9759921-7729-4851-a5ed-b956d0147f19.png",
+      "selected": true,
+      "inputGeneration": "exec-6a77a5b9-18b8-4ce0-8717-49970961e6b1.png"
+    },
+    {
+      "name": "tank-reveal",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Replace the entire circular hole/see-through view at TOP (fountain and crowd visible above) with a SOLID CLOSED reinforced concrete ceiling with a few dark pipes and a dim maintenance light. The pump room is fully sealed from the mall above: no people or fountain visible through ceiling, no opening to zombies. Preserve the huge water tank with visible water in inspection window, ladder, two empty jugs, and Danny LEFT with one black boot/one gray sock and Theo RIGHT. No other changes.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/tank-reveal.png"
+      ],
+      "source": "exec-41c66b71-778b-4522-8bf1-a89828d7216a.png",
+      "selected": true,
+      "inputGeneration": "exec-4f22802c-2358-4ded-9c21-db1347cb82c1.png"
+    },
+    {
+      "name": "elbow",
+      "prompt": "Edit the supplied production frame precisely, preserving the approved rich hand-painted style, composition, lighting, big pale shaded spherical heads/two oval eyes, delicate BLACK SINGLE-LINE stick bodies and all correct characters/props. Maintain Danny LEFT and Theo RIGHT. No new subtitles or title. Apply ONLY these continuity corrections: Correct the rescue roles: DANNY at LEFT is the person being rescued, THEO at RIGHT is the rescuer securely braced on TOP of the solid platform with feet planted, leaning backward into a strap anchored around the beam. Make this a tight close-up of Danny's black ELBOW pushed onto thick structural steel, his navy-capped pale head beside it, and Theo's two black mitten hands pulling his wrist from RIGHT. Theo stays above the hole, never dangling down. ALL feet/legs outside frame, no reversed roles, no extra arms. Preserve painted style, blue ducts and two small empty jugs far behind if visible.",
+      "refs": [
+        "public/mall/ch2/story-art/part-two-v1/elbow.png"
+      ],
+      "source": "exec-adcca0e7-b4d9-47ea-bfba-681dd68dd5d6.png",
+      "selected": true,
+      "inputGeneration": "exec-60c5e509-35ab-48e1-aef9-d6d122a4a636.png"
+    },
+    {
+      "name": "family-window",
+      "prompt": "Use case: illustration-story. Create a NEW 16:9 cinematic shot in exactly the same richly hand-painted character/background style as the reference. This is a brief visual memory of home, not a new plot event. Change the camera substantially: close three-quarter view of DANNY ALONE on the LEFT, his pale softly shaded round head with only two black oval eyes beneath navy security cap with gold shield, looking wistfully ACROSS a dark abandoned highway toward the TEN-FLOOR Parkview apartment building far RIGHT. Danny holds his switched-OFF flashlight down at chest level, thin BLACK SINGLE-LINE stick spine/arms and black mitten hands. Crop below chest, no feet visible. Cool navy night, no city street lamps on, NO flash or active light signal, apartment windows dark. Small warm edge highlight on Danny. Keep the reference apartment's roughly rectangular ten-floor shape and the parked traffic below; change viewpoint, closer face, building in deep background. No Theo, no zombies on rooftop, no words, no mouths/noses, no filled torso. Painterly layered texture and depth, integrated characters/scene, not SVG.",
+      "refs": [
+        "public/mall/ch2/story-art/v10/roof-window.png"
+      ],
+      "source": "exec-1ba3d428-1738-4ef8-9809-17f3b9d2c3c8.png",
+      "selected": true
+    }
+  ]
+}

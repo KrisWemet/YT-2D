@@ -1,0 +1,585 @@
+{
+  "version": 1,
+  "fps": 30,
+  "frames": 17904,
+  "retentionStartFrame": 18436,
+  "retentionStoryEndFrame": 36280,
+  "tailFrames": 60,
+  "ending": "They were cutting through the wall.",
+  "shots": [
+    {
+      "start": 0,
+      "frames": 189,
+      "asset": "part-two-v1/fountain-idea",
+      "view": "wide",
+      "note": "Theo answers the water question"
+    },
+    {
+      "start": 189,
+      "frames": 139,
+      "asset": "part-two-v1/fountain-idea",
+      "view": "detail",
+      "note": "A tank beneath the fountain"
+    },
+    {
+      "start": 328,
+      "frames": 221,
+      "asset": "part-two-v1/fountain-door",
+      "view": "character",
+      "note": "The pump-room doorway is buried behind bodies"
+    },
+    {
+      "start": 549,
+      "frames": 168,
+      "asset": "part-two-v1/fountain-door",
+      "view": "wide",
+      "note": "The route downstairs is blocked"
+    },
+    {
+      "start": 717,
+      "frames": 219,
+      "asset": "part-two-v1/chalk-route",
+      "view": "detail",
+      "note": "Theo comes from above"
+    },
+    {
+      "start": 936,
+      "frames": 219,
+      "asset": "part-two-v1/chalk-route",
+      "view": "character",
+      "note": "Cinema to walkway to service column"
+    },
+    {
+      "start": 1155,
+      "frames": 156,
+      "asset": "part-two-v1/chalk-route",
+      "view": "wide",
+      "note": "The route ends behind a locked door"
+    },
+    {
+      "start": 1311,
+      "frames": 225,
+      "asset": "part-two-v1/small-jugs",
+      "view": "detail",
+      "note": "They choose containers small enough for the route"
+    },
+    {
+      "start": 1536,
+      "frames": 246,
+      "asset": "part-two-v1/small-jugs",
+      "view": "character",
+      "note": "Theo measures the narrow gap"
+    },
+    {
+      "start": 1782,
+      "frames": 243,
+      "asset": "part-two-v1/small-jugs",
+      "view": "wide",
+      "note": "Two small jugs, not a huge water barrel"
+    },
+    {
+      "start": 2025,
+      "frames": 247,
+      "asset": "part-two-v1/agreement",
+      "view": "detail",
+      "note": "Theo considers whether Danny can make the crossing"
+    },
+    {
+      "start": 2272,
+      "frames": 218,
+      "asset": "part-two-v1/radio-night",
+      "view": "character",
+      "note": "Vera says the girl has stopped asking for food"
+    },
+    {
+      "start": 2490,
+      "frames": 192,
+      "asset": "part-two-v1/radio-night",
+      "view": "wide",
+      "note": "Danny grips the radio while Vera speaks"
+    },
+    {
+      "start": 2682,
+      "frames": 258,
+      "asset": "part-two-v1/agreement",
+      "view": "detail",
+      "note": "Danny offers food in exchange for a route to water"
+    },
+    {
+      "start": 2940,
+      "frames": 270,
+      "asset": "part-two-v1/agreement",
+      "view": "character",
+      "note": "They agree to bring the water home"
+    },
+    {
+      "start": 3210,
+      "frames": 270,
+      "asset": "part-two-v1/family-window",
+      "view": "wide",
+      "note": "Danny thinks of Lily and the days running out"
+    },
+    {
+      "start": 3480,
+      "frames": 240,
+      "asset": "part-two-v1/ready-boots",
+      "view": "detail",
+      "note": "Theo asks whether Danny is coming"
+    },
+    {
+      "start": 3720,
+      "frames": 225,
+      "asset": "part-two-v1/quiet-kit",
+      "view": "character",
+      "note": "Before dawn, empty jugs, flashlight and climbing strap"
+    },
+    {
+      "start": 3945,
+      "frames": 215,
+      "asset": "part-two-v1/keys-sock",
+      "view": "wide",
+      "note": "Battery removed from radio; keys muffled inside a sock"
+    },
+    {
+      "start": 4160,
+      "frames": 220,
+      "asset": "part-two-v1/rack-training",
+      "view": "detail",
+      "note": "Theo catches Danny reaching for a ceiling hanger"
+    },
+    {
+      "start": 4380,
+      "frames": 195,
+      "asset": "part-two-v1/rack-training",
+      "view": "character",
+      "note": "The thin hanger cannot support his weight"
+    },
+    {
+      "start": 4575,
+      "frames": 207,
+      "asset": "part-two-v1/rack-training",
+      "view": "wide",
+      "note": "Theo guides Danny to the heavy structural steel"
+    },
+    {
+      "start": 4782,
+      "frames": 222,
+      "asset": "part-two-v1/keys-sock",
+      "view": "detail",
+      "note": "A lifetime of jingling keys must now stay quiet"
+    },
+    {
+      "start": 5004,
+      "frames": 231,
+      "asset": "part-two-v1/steel-path",
+      "view": "character",
+      "note": "They climb above the store onto heavy supports"
+    },
+    {
+      "start": 5235,
+      "frames": 210,
+      "asset": "part-two-v1/steel-path",
+      "view": "wide",
+      "note": "Warm dusty pipes and fragile ceiling tiles"
+    },
+    {
+      "start": 5445,
+      "frames": 225,
+      "asset": "part-two-v1/cinema-nest",
+      "view": "detail",
+      "note": "Theo has lived beside the projection room"
+    },
+    {
+      "start": 5670,
+      "frames": 186,
+      "asset": "part-two-v1/cinema-nest",
+      "view": "character",
+      "note": "Blanket, three empty bottles, folded hoodie"
+    },
+    {
+      "start": 5856,
+      "frames": 192,
+      "asset": "part-two-v1/photo-hidden",
+      "view": "wide",
+      "note": "Theo hides a face-down photograph beneath the blanket"
+    },
+    {
+      "start": 6048,
+      "frames": 222,
+      "asset": "part-two-v1/service-key",
+      "view": "detail",
+      "note": "Key seventeen opens CINEMA SERVICE"
+    },
+    {
+      "start": 6270,
+      "frames": 156,
+      "asset": "part-two-v1/service-key",
+      "view": "character",
+      "note": "Theo watches the lock turn"
+    },
+    {
+      "start": 6426,
+      "frames": 240,
+      "asset": "part-two-v1/walkway-reveal",
+      "view": "wide",
+      "note": "A narrow service walkway above the crowded court"
+    },
+    {
+      "start": 6666,
+      "frames": 234,
+      "asset": "part-two-v1/walkway-reveal",
+      "view": "detail",
+      "note": "Heads below the handrail; Theo leads"
+    },
+    {
+      "start": 6900,
+      "frames": 210,
+      "asset": "part-two-v1/walkway-end",
+      "view": "character",
+      "note": "The proper walkway ends at exposed ceiling supports"
+    },
+    {
+      "start": 7110,
+      "frames": 210,
+      "asset": "part-two-v1/walkway-end",
+      "view": "wide",
+      "note": "Do not mistake the ceiling tile for a floor"
+    },
+    {
+      "start": 7320,
+      "frames": 210,
+      "asset": "part-two-v1/beam-cross",
+      "view": "detail",
+      "note": "Theo crawls first; Danny follows on his knees"
+    },
+    {
+      "start": 7530,
+      "frames": 210,
+      "asset": "part-two-v1/beam-cross",
+      "view": "character",
+      "note": "Danny tries to copy the younger boy"
+    },
+    {
+      "start": 7740,
+      "frames": 210,
+      "asset": "part-two-v1/sweat",
+      "view": "wide",
+      "note": "Danny wipes sweat before it can fall"
+    },
+    {
+      "start": 7950,
+      "frames": 189,
+      "asset": "part-two-v1/sweat",
+      "view": "detail",
+      "note": "Emergency light flickers beneath the steel"
+    },
+    {
+      "start": 8139,
+      "frames": 222,
+      "asset": "part-two-v1/hand-guide",
+      "view": "character",
+      "note": "Next hand, then knee: Theo gives quiet instructions"
+    },
+    {
+      "start": 8361,
+      "frames": 201,
+      "asset": "part-two-v1/hand-guide",
+      "view": "wide",
+      "note": "Danny learns to move on the strong steel"
+    },
+    {
+      "start": 8562,
+      "frames": 234,
+      "asset": "part-two-v1/court-below",
+      "view": "detail",
+      "note": "An empty dark fountain, coins and a packed crowd"
+    },
+    {
+      "start": 8796,
+      "frames": 210,
+      "asset": "part-two-v1/pass-jug",
+      "view": "character",
+      "note": "Danny passes an empty jug forward"
+    },
+    {
+      "start": 9006,
+      "frames": 207,
+      "asset": "part-two-v1/pass-jug",
+      "view": "wide",
+      "note": "Theo puts it down on solid steel before collecting the second"
+    },
+    {
+      "start": 9213,
+      "frames": 207,
+      "asset": "part-two-v1/marcus-rounds",
+      "view": "detail",
+      "note": "Marcus continues his rounds, two pulls on each gate"
+    },
+    {
+      "start": 9420,
+      "frames": 213,
+      "asset": "part-two-v1/brace-bend",
+      "view": "character",
+      "note": "Danny moves his knee; the thin brace folds"
+    },
+    {
+      "start": 9633,
+      "frames": 219,
+      "asset": "part-two-v1/leg-through",
+      "view": "wide",
+      "note": "His right leg punches through the ceiling"
+    },
+    {
+      "start": 9852,
+      "frames": 219,
+      "asset": "part-two-v1/leg-through",
+      "view": "detail",
+      "note": "Debris drops toward the fountain"
+    },
+    {
+      "start": 10071,
+      "frames": 210,
+      "asset": "part-two-v1/grip-slip",
+      "view": "character",
+      "note": "Theo catches Danny at the edge"
+    },
+    {
+      "start": 10281,
+      "frames": 192,
+      "asset": "part-two-v1/marcus-up",
+      "view": "wide",
+      "note": "Below, Marcus lifts his face toward the boot"
+    },
+    {
+      "start": 10473,
+      "frames": 231,
+      "asset": "part-two-v1/grip-slip",
+      "view": "detail",
+      "note": "Theo reaches for Dannys other wrist"
+    },
+    {
+      "start": 10704,
+      "frames": 210,
+      "asset": "part-two-v1/grip-slip",
+      "view": "character",
+      "note": "Give me your hand"
+    },
+    {
+      "start": 10914,
+      "frames": 231,
+      "asset": "part-two-v1/crowd-hole",
+      "view": "wide",
+      "note": "The crowd gathers under the broken ceiling"
+    },
+    {
+      "start": 11145,
+      "frames": 204,
+      "asset": "part-two-v1/crowd-hole",
+      "view": "detail",
+      "note": "Marcus stands among them, looking upward"
+    },
+    {
+      "start": 11349,
+      "frames": 258,
+      "asset": "part-two-v1/marcus-up",
+      "view": "character",
+      "note": "Danny recognizes the worn patch on Marcuss cap"
+    },
+    {
+      "start": 11607,
+      "frames": 237,
+      "asset": "part-two-v1/strap-wrap",
+      "view": "wide",
+      "note": "Look at me: Theo reaches for the climbing strap"
+    },
+    {
+      "start": 11844,
+      "frames": 240,
+      "asset": "part-two-v1/strap-wrap",
+      "view": "detail",
+      "note": "One hand holds Danny while the other loops the heavy beam"
+    },
+    {
+      "start": 12084,
+      "frames": 240,
+      "asset": "part-two-v1/release",
+      "view": "character",
+      "note": "Danny makes himself release Theos sleeve"
+    },
+    {
+      "start": 12324,
+      "frames": 216,
+      "asset": "part-two-v1/strap-wrap",
+      "view": "wide",
+      "note": "The strap tightens around structural steel"
+    },
+    {
+      "start": 12540,
+      "frames": 204,
+      "asset": "part-two-v1/brace-slip",
+      "view": "detail",
+      "note": "Theos trainer slips against the sharp brace"
+    },
+    {
+      "start": 12744,
+      "frames": 219,
+      "asset": "part-two-v1/elbow",
+      "view": "character",
+      "note": "Elbow up: Danny has to help pull himself onto steel"
+    },
+    {
+      "start": 12963,
+      "frames": 216,
+      "asset": "part-two-v1/elbow",
+      "view": "wide",
+      "note": "Theo leans back; Dannys right foot slides out of its boot"
+    },
+    {
+      "start": 13179,
+      "frames": 210,
+      "asset": "part-two-v1/rescue",
+      "view": "detail",
+      "note": "Danny pulls his knee over the edge"
+    },
+    {
+      "start": 13389,
+      "frames": 219,
+      "asset": "part-two-v1/platform-breath",
+      "view": "character",
+      "note": "Both lie safely on the solid platform"
+    },
+    {
+      "start": 13608,
+      "frames": 213,
+      "asset": "part-two-v1/boot-fall",
+      "view": "wide",
+      "note": "The abandoned right boot falls into the fountain"
+    },
+    {
+      "start": 13821,
+      "frames": 219,
+      "asset": "part-two-v1/platform-breath",
+      "view": "detail",
+      "note": "They wait for the pushing below to stop"
+    },
+    {
+      "start": 14040,
+      "frames": 288,
+      "asset": "part-two-v1/theo-cut",
+      "view": "character",
+      "note": "Theo covers a scrape from the metal brace"
+    },
+    {
+      "start": 14328,
+      "frames": 201,
+      "asset": "part-two-v1/theo-cut",
+      "view": "wide",
+      "note": "Danny has one boot; Theo is hurt"
+    },
+    {
+      "start": 14529,
+      "frames": 282,
+      "asset": "part-two-v1/column-ladder",
+      "view": "detail",
+      "note": "The only descent: ladder inside the service column"
+    },
+    {
+      "start": 14811,
+      "frames": 219,
+      "asset": "part-two-v1/column-ladder",
+      "view": "character",
+      "note": "Danny leads with his booted left foot on each rung"
+    },
+    {
+      "start": 15030,
+      "frames": 234,
+      "asset": "part-two-v1/tank-reveal",
+      "view": "wide",
+      "note": "A large tank with water behind its inspection window"
+    },
+    {
+      "start": 15264,
+      "frames": 231,
+      "asset": "part-two-v1/tank-hand",
+      "view": "detail",
+      "note": "Danny rests his hand against the water tank"
+    },
+    {
+      "start": 15495,
+      "frames": 228,
+      "asset": "part-two-v1/tank-hand",
+      "view": "character",
+      "note": "They must carry the water back and treat it in the store"
+    },
+    {
+      "start": 15723,
+      "frames": 219,
+      "asset": "part-two-v1/theo-rung",
+      "view": "wide",
+      "note": "Theo sits on the bottom rung, favouring his scraped calf"
+    },
+    {
+      "start": 15942,
+      "frames": 237,
+      "asset": "part-two-v1/fill-jugs",
+      "view": "detail",
+      "note": "They fill the two small camping containers"
+    },
+    {
+      "start": 16179,
+      "frames": 240,
+      "asset": "part-two-v1/heavy-handles",
+      "view": "character",
+      "note": "Danny feels the weight of the full containers"
+    },
+    {
+      "start": 16419,
+      "frames": 246,
+      "asset": "part-two-v1/heavy-handles",
+      "view": "wide",
+      "note": "The thought of another crossing stops him"
+    },
+    {
+      "start": 16665,
+      "frames": 246,
+      "asset": "part-two-v1/pump-door",
+      "view": "detail",
+      "note": "A shoe scrapes beyond the closed pump-room door"
+    },
+    {
+      "start": 16911,
+      "frames": 246,
+      "asset": "part-two-v1/pump-door",
+      "view": "character",
+      "note": "Dust shakes from the frame; Theo recognizes the place"
+    },
+    {
+      "start": 17157,
+      "frames": 201,
+      "asset": "part-two-v1/drill-witness",
+      "view": "wide",
+      "note": "Theo remembers the drill people"
+    },
+    {
+      "start": 17358,
+      "frames": 207,
+      "asset": "part-two-v1/drill-witness",
+      "view": "detail",
+      "note": "Three people, behind the pretzel shop on the first night"
+    },
+    {
+      "start": 17565,
+      "frames": 231,
+      "asset": "part-two-v1/clock-memory",
+      "view": "character",
+      "note": "One-thirty: ten minutes before Marcuss warning"
+    },
+    {
+      "start": 17796,
+      "frames": 108,
+      "asset": "part-two-v1/drill-wall",
+      "view": "wide",
+      "note": "They were cutting through the wall"
+    }
+  ]
+}
