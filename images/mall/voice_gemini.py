@@ -81,7 +81,7 @@ def words(s):
     s = s.replace("gonna", "going to").replace("name's", "name is").replace("a.m.", "am").replace("a m", "am")
     s = re.sub(r"\bs\s*o\s*s\b", "s o s", s)  # "S-O-S" may come back as "SOS"
     s = re.sub(r"\b10th\b", "tenth", s)
-    return re.findall(r"[a-z']+", s)
+    return [w.strip("'") for w in re.findall(r"[a-z']+", s) if w.strip("'")]  # "steps' worth" may come back as "steps worth"
 
 
 def load16(path):
