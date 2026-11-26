@@ -1,0 +1,28 @@
+{
+  "refinements": [
+    {
+      "asset": "2A",
+      "purpose": "black oval zombie eyes",
+      "prompt": "Edit this thumbnail with ONE precise correction. Preserve the entire composition, lettering, exact wording I HAD THE KEY, SHORT 2, THE NIGHT GUARD, all layout, light, gold key and closed lock, Danny and the pale living injured Marcus exactly. Change ONLY the distant background zombie faces behind Marcus: each must have a softly shaded muted olive spherical head with ONLY TWO simple BLACK OVAL eyes, exactly like this series' stick figures. Remove all glowing/yellow eyes and any mouths from those background zombie faces. Keep their stick limbs and positions. Do not redesign the image or add text. Preserve the 9:16 portrait format."
+    },
+    {
+      "asset": "3A",
+      "purpose": "remove ambiguous silhouette"
+    },
+    {
+      "asset": "2A",
+      "purpose": "center-crop typography",
+      "prompt": "Precise typography-placement edit of this finished portrait thumbnail. Preserve ALL artwork, faces, stick bodies, black oval eyes, closed gate, Marcus's bandage, gold key, lock, blue/gold lighting and painted texture exactly. Do not redraw or move any subject. Change only the typography layout in the top area: reduce the main headline I HAD / THE KEY. enough to fit its ENTIRE glyph bounding box strictly between 16% and 33% of the full image height (all glyphs must start BELOW 16% of image height). Keep it very bold, cream with gold KEY, same spelling. Place the small SHORT 2 label between 13.5% and 15.5% height. Preserve THE NIGHT GUARD footer. This makes the main hook survive a center 3:4 crop of the 9:16 image. No additional wording. No changes to the composition below 35% height."
+    },
+    {
+      "asset": "2B",
+      "purpose": "center-crop typography",
+      "prompt": "Precise text-placement edit. Preserve all painted artwork and every character, closed gate, lock, bandage, black oval eyes, lighting, and setting EXACTLY. Move and resize ONLY the main headline LET / ME IN. so its ENTIRE glyph bounding box fits between 16% and 33% of the full image height. It must start BELOW 16% image height, retain bold cream lettering with gold period and dark shadow, and remain legible. Place small SHORT 2 label between 13.5% and 15.5% height. Leave footer THE NIGHT GUARD and all artwork below 35% height untouched. No other changes. Keep 9:16 portrait. This is to preserve the hook under a center 3:4 crop."
+    },
+    {
+      "asset": "4B",
+      "purpose": "center-crop typography",
+      "prompt": "Precise typography-placement edit only. Preserve the grandmother, Lily, hairstyle and clothing colors, thin stick bodies, black oval eyes, vial labeled INSULIN, insulin pen, warm apartment, window and background mall EXACTLY. Keep all artwork below 35% height untouched. Resize and reposition ONLY main headline 10 DAYS / LEFT. so its full glyph bounding box lies between 16% and 33% of image height, beginning BELOW 16%. Retain large bold cream 10 DAYS and gold LEFT with dark outline. Place small SHORT 4 label between 13.5% and 15.5% height. Preserve THE NIGHT GUARD footer. Keep the full 9:16 portrait. No added text or other edits. Main headline must stay completely visible in a centered 3:4 crop."
+    }
+  ]
+}

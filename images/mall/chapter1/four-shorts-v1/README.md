@@ -50,3 +50,10 @@ and verification reports are in `out/chapter1-four-shorts-v1/`.
 
 Studio compositions: `NightGuardChapter1FourShort01` through `04`. Existing
 full chapters and the older Shorts compositions are unchanged.
+
+## Thumbnail options
+
+`thumbnails/` contains two finished portrait JPEG covers per Short (A and B),
+each 1080 × 1920 and below 2 MB. The comparison sheets show the full designs
+and centered 3:4 crops. Prompts, refinements, and file checksums are included.
+These are qualitative curiosity concepts; no measured CTR or virality is claimed.
