@@ -4,7 +4,12 @@ const plan=JSON.parse(fs.readFileSync(path.join(repo,'src/mall/chapter2/illustra
 const edit=JSON.parse(fs.readFileSync(path.join(repo,'src/mall/chapter2/retention-edit.json')));
 const ch2=JSON.parse(fs.readFileSync(path.join(repo,'src/mall/chapter2/ch2.json')));
 const byAsset={},byContent={},files={},shots=[];let cursor=0;
-assert.equal(plan.frames,18436);assert.equal(plan.fps,30);
+assert.equal(plan.fps,30);
+// Frame times follow one edit map; retime-part-one.py moves them when the edit changes.
+assert.equal(plan.editVersion,edit.version,'Part One is timed for a different retention edit');
+// Part One ends with the retained clip that closes on Theo's eight-thousand-gallons line.
+const ENDING_SOURCE_FRAME=21083,closing=edit.clips.find(c=>c.kind==='source'&&c.source+c.frames===ENDING_SOURCE_FRAME);
+assert(closing&&plan.frames===closing.start+closing.frames,'Part One must end with the eight-thousand-gallons clip');
 for(const [i,s]of plan.shots.entries()){
  assert.equal(s.start,cursor,`Gap/overlap at shot ${i}`);assert(s.frames>0&&s.frames<=300,`Shot ${i} must last at most ten seconds`);
  cursor+=s.frames;assert(/^[a-z0-9/-]+$/.test(s.asset));
@@ -33,7 +38,7 @@ for(const s of plan.shots)for(const frame of [s.start,s.start+Math.floor(s.frame
  visit(IllustratedPartOne({frame}));assert.equal(images.length,1);assert(images[0].includes(s.asset+'.png'));
 }
 const last=shots.at(-1);assert(last.transcript.includes('eight thousand gallons.'));assert(!last.transcript.includes('fountain'));
-const report={version:10,frames:cursor,seconds:cursor/30,shots:shots.length,distinctImages:Object.keys(byAsset).length,maxUses:Math.max(...Object.values(byAsset)),maxIdenticalContentUses:Math.max(...Object.values(byContent)),nativeFigureLayers:0,coverage:'every frame; no gaps or overlaps',ending:plan.ending,endingSourceFrame:21083,lastSpokenSourceWordEnd:701.302,scope:'opening part only; full chapter unchanged',usage:byAsset,files,shotList:shots};
+const report={version:10,frames:cursor,seconds:cursor/30,shots:shots.length,distinctImages:Object.keys(byAsset).length,maxUses:Math.max(...Object.values(byAsset)),maxIdenticalContentUses:Math.max(...Object.values(byContent)),nativeFigureLayers:0,coverage:'every frame; no gaps or overlaps',ending:plan.ending,endingSourceFrame:ENDING_SOURCE_FRAME,lastSpokenSourceWordEnd:701.302,scope:'opening part only; full chapter unchanged',usage:byAsset,files,shotList:shots};
 const out=path.join(repo,'out/chapter2-style-review-v10');fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'shot-audit.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({frames:cursor,seconds:cursor/30,shots:shots.length,distinctImages:report.distinctImages,maxUses:report.maxUses,nativeFigureLayers:0,ending:plan.ending}));
 module.exports=report;

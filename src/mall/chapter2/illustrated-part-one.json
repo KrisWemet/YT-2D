@@ -1,7 +1,8 @@
 {
   "version": 10,
   "fps": 30,
-  "frames": 18436,
+  "editVersion": 10,
+  "frames": 18427,
   "ending": "I know where there's eight thousand gallons.",
   "shots": [
     {
@@ -20,706 +21,706 @@
     },
     {
       "start": 306,
-      "frames": 102,
+      "frames": 98,
       "asset": "hook-boot",
       "view": "detail",
       "cue": "Another corner breaks away"
     },
     {
-      "start": 408,
-      "frames": 189,
+      "start": 404,
+      "frames": 184,
       "asset": "v10/roof-window",
       "view": "wide",
       "cue": "Radio woman asks about daughter's window"
     },
     {
-      "start": 597,
+      "start": 588,
       "frames": 201,
       "asset": "roof-radio",
       "view": "wide",
       "cue": "Danny takes thumb off radio"
     },
     {
-      "start": 798,
+      "start": 789,
       "frames": 192,
       "asset": "v10/office-radio",
       "view": "wide",
       "cue": "Six years answering calls at work"
     },
     {
-      "start": 990,
+      "start": 981,
       "frames": 210,
       "asset": "roof-phone",
       "view": "wide",
       "cue": "Phone in other hand, no service"
     },
     {
-      "start": 1200,
+      "start": 1191,
       "frames": 210,
       "asset": "v10/roof-hesitate",
       "view": "wide",
       "cue": "Mom's locked-door message; fear of saying too much"
     },
     {
-      "start": 1410,
+      "start": 1401,
       "frames": 195,
       "asset": "v10/roof-window",
       "view": "detail",
       "cue": "Lily's window dark after goodnight"
     },
     {
-      "start": 1605,
+      "start": 1596,
       "frames": 210,
       "asset": "v10/roof-lower-radio",
       "view": "wide",
       "cue": "Unseen woman waits on radio"
     },
     {
-      "start": 1815,
+      "start": 1806,
       "frames": 199,
       "asset": "roof-radio",
       "view": "detail",
       "cue": "Danny lowers volume and listens"
     },
     {
-      "start": 2014,
+      "start": 2005,
       "frames": 212,
       "asset": "v10/roof-door",
       "view": "wide",
       "cue": "A faint light behind the department store rooftop door"
     },
     {
-      "start": 2226,
+      "start": 2217,
       "frames": 236,
       "asset": "v10/roof-lower-radio",
       "view": "detail",
       "cue": "How did you get inside?"
     },
     {
-      "start": 2462,
+      "start": 2453,
       "frames": 146,
       "asset": "v10/roof-hesitate",
       "view": "detail",
       "cue": "Vera gives her name; Danny waits"
     },
     {
-      "start": 2608,
+      "start": 2599,
       "frames": 282,
       "asset": "v10/fitting-closed",
       "view": "wide",
       "cue": "Her story: asleep trying on a coat; Vera remains unseen"
     },
     {
-      "start": 2890,
+      "start": 2881,
       "frames": 255,
       "asset": "v10/patrol-corridor",
       "view": "wide",
       "cue": "Danny recalls checking silent staff corridor"
     },
     {
-      "start": 3145,
+      "start": 3136,
       "frames": 141,
       "asset": "v10/roof-lower-radio",
       "view": "danny",
       "cue": "Danny asks which coat"
     },
     {
-      "start": 3286,
+      "start": 3277,
       "frames": 133,
       "asset": "v10/mall-crowd",
       "view": "wide",
       "cue": "Vera mentions people eating people downstairs"
     },
     {
-      "start": 3419,
+      "start": 3410,
       "frames": 243,
       "asset": "roof-radio",
       "view": "danny",
       "cue": "Her tone changes"
     },
     {
-      "start": 3662,
+      "start": 3653,
       "frames": 151,
       "asset": "v10/roof-hesitate",
       "view": "danny",
       "cue": "Vera claims a hungry girl is with her"
     },
     {
-      "start": 3813,
+      "start": 3804,
       "frames": 137,
       "asset": "v10/roof-window",
       "view": "wide",
       "cue": "Danny looks toward Lily's window"
     },
     {
-      "start": 3950,
+      "start": 3941,
       "frames": 157,
       "asset": "roof-phone",
       "view": "detail",
       "cue": "Keeps thumb away from radio button; how old?"
     },
     {
-      "start": 4107,
+      "start": 4098,
       "frames": 156,
       "asset": "v10/roof-silhouette",
       "view": "wide",
       "cue": "He stands on the roof, hand numb"
     },
     {
-      "start": 4263,
+      "start": 4254,
       "frames": 149,
       "asset": "v10/roof-silhouette",
       "view": "detail",
       "cue": "A question he cannot walk away from"
     },
     {
-      "start": 4412,
+      "start": 4403,
       "frames": 140,
       "asset": "sleep",
       "view": "wide",
       "cue": "Somebody ate breakfast in a locked store"
     },
     {
-      "start": 4552,
+      "start": 4543,
       "frames": 268,
       "asset": "v10/two-bars",
       "view": "wide",
       "cue": "Two bars beside the tent, one for later"
     },
     {
-      "start": 4820,
+      "start": 4811,
       "frames": 37,
       "asset": "v10/one-bar",
       "view": "detail",
       "cue": "There was one left"
     },
     {
-      "start": 4857,
+      "start": 4848,
       "frames": 175,
       "asset": "v10/search-bag",
       "view": "wide",
       "cue": "Checks bag, tent and both boots"
     },
     {
-      "start": 5032,
+      "start": 5023,
       "frames": 144,
       "asset": "gate-check",
       "view": "wide",
       "cue": "Padlock closed, key stays on belt"
     },
     {
-      "start": 5176,
+      "start": 5167,
       "frames": 166,
       "asset": "v10/inventory",
       "view": "wide",
       "cue": "Counts water twice; missing bottle"
     },
     {
-      "start": 5342,
+      "start": 5333,
       "frames": 186,
       "asset": "marcus-gate",
       "view": "wide",
       "cue": "Dead friend walking past"
     },
     {
-      "start": 5528,
+      "start": 5519,
       "frames": 243,
       "asset": "v10/inventory",
       "view": "detail",
       "cue": "Lines up bars, cans and water"
     },
     {
-      "start": 5771,
+      "start": 5762,
       "frames": 200,
       "asset": "v10/receipt",
       "view": "wide",
       "cue": "Writes inventory on a receipt"
     },
     {
-      "start": 5971,
+      "start": 5962,
       "frames": 177,
       "asset": "v10/receipt",
       "view": "detail",
       "cue": "Tries to remember last normal log entry"
     },
     {
-      "start": 6148,
+      "start": 6139,
       "frames": 216,
       "asset": "v10/office-radio",
       "view": "detail",
       "cue": "Ordinary shift log and ordinary annoyances"
     },
     {
-      "start": 6364,
+      "start": 6355,
       "frames": 159,
       "asset": "marcus-gate",
       "view": "detail",
       "cue": "Two pulls on gate outside"
     },
     {
-      "start": 6523,
+      "start": 6514,
       "frames": 177,
       "asset": "v10/stock-box-put",
       "view": "wide",
       "cue": "Puts remaining bars inside plastic storage box"
     },
     {
-      "start": 6700,
+      "start": 6691,
       "frames": 97,
       "asset": "stock-wait",
       "view": "wide",
       "cue": "Sits beside box until neck hurts"
     },
     {
-      "start": 6797,
+      "start": 6788,
       "frames": 234,
       "asset": "v10/roof-signal",
       "view": "wide",
       "cue": "Three blinks each, body shields light from department store"
     },
     {
-      "start": 7031,
+      "start": 7022,
       "frames": 237,
       "asset": "stock-radio",
       "view": "wide",
       "cue": "Vera calls as he comes downstairs"
     },
     {
-      "start": 7268,
+      "start": 7259,
       "frames": 247,
       "asset": "stock-wait",
       "view": "detail",
       "cue": "Tired; watches box another hour"
     },
     {
-      "start": 7515,
+      "start": 7506,
       "frames": 169,
       "asset": "v10/sleep-box",
       "view": "wide",
       "cue": "Sleeps with box beside his head; wakes"
     },
     {
-      "start": 7684,
+      "start": 7675,
       "frames": 166,
       "asset": "box-latch",
       "view": "detail",
       "cue": "Catch not clicked shut; two bars gone"
     },
     {
-      "start": 7850,
+      "start": 7841,
       "frames": 134,
       "asset": "v10/sleep-box",
       "view": "detail",
       "cue": "Someone had stood close enough to watch him sleep"
     },
     {
-      "start": 7984,
+      "start": 7975,
       "frames": 105,
       "asset": "v10/chalk-bag",
       "view": "wide",
       "cue": "White bag of climbing chalk"
     },
     {
-      "start": 8089,
+      "start": 8080,
       "frames": 196,
       "asset": "v10/chalk-no-bait",
       "view": "wide",
       "cue": "Spreads chalk before placing bait"
     },
     {
-      "start": 8285,
+      "start": 8276,
       "frames": 103,
       "asset": "v10/sleep-boots",
       "view": "wide",
       "cue": "Goes back to bed with boots on"
     },
     {
-      "start": 8388,
+      "start": 8379,
       "frames": 222,
       "asset": "stock-wait",
       "view": "danny",
       "cue": "Waiting for someone to step in powder"
     },
     {
-      "start": 8610,
+      "start": 8601,
       "frames": 235,
       "asset": "v10/chalk",
       "view": "wide",
       "cue": "Fresh bar on top; rest inside box"
     },
     {
-      "start": 8845,
+      "start": 8836,
       "frames": 174,
       "asset": "gate-check",
       "view": "detail",
       "cue": "Gate is only way in he understands"
     },
     {
-      "start": 9019,
+      "start": 9010,
       "frames": 169,
       "asset": "v10/sleep-boots",
       "view": "detail",
       "cue": "Faces gap between tents"
     },
     {
-      "start": 9188,
+      "start": 9179,
       "frames": 92,
       "asset": "box-latch",
       "view": "wide",
       "cue": "Hears plastic bend before morning"
     },
     {
-      "start": 9280,
+      "start": 9271,
       "frames": 123,
       "asset": "v10/search-bag",
       "view": "detail",
       "cue": "Gets out of sleeping bag; silence"
     },
     {
-      "start": 9403,
+      "start": 9394,
       "frames": 132,
       "asset": "v10/prints",
       "view": "wide",
       "cue": "Flashlight close to floor, lights off"
     },
     {
-      "start": 9535,
+      "start": 9526,
       "frames": 249,
       "asset": "v10/split-print",
       "view": "wide",
       "cue": "Small trainer; square gap under worn right heel"
     },
     {
-      "start": 9784,
+      "start": 9775,
       "frames": 205,
       "asset": "v10/prints",
       "view": "detail",
       "cue": "Trail goes to food box and back"
     },
     {
-      "start": 9989,
+      "start": 9980,
       "frames": 167,
       "asset": "rack-look",
       "view": "wide",
       "cue": "Moves display, finds rack bolted to wall"
     },
     {
-      "start": 10156,
+      "start": 10147,
       "frames": 164,
       "asset": "v10/rack-print",
       "view": "wide",
       "cue": "Shoeprint on shelf and painted wall"
     },
     {
-      "start": 10320,
+      "start": 10311,
       "frames": 209,
       "asset": "v10/pipe-mark",
       "view": "wide",
       "cue": "Hand wiped across dusty pipe"
     },
     {
-      "start": 10529,
+      "start": 10520,
       "frames": 185,
       "asset": "v10/tile-seam",
       "view": "wide",
       "cue": "Cleaner edges of one tile; looks up"
     },
     {
-      "start": 10714,
+      "start": 10705,
       "frames": 202,
       "asset": "gate-check",
       "view": "danny",
       "cue": "Every door locked, every window intact"
     },
     {
-      "start": 10916,
+      "start": 10907,
       "frames": 66,
       "asset": "v10/tile-seam",
       "view": "detail",
       "cue": "He had not looked up"
     },
     {
-      "start": 10982,
+      "start": 10973,
       "frames": 115,
       "asset": "v10/tile-dust",
       "view": "wide",
       "cue": "Small white flake falls from seam"
     },
     {
-      "start": 11097,
+      "start": 11088,
       "frames": 186,
       "asset": "rack-wait",
       "view": "wide",
       "cue": "Flashlight off; someone still up there"
     },
     {
-      "start": 11283,
+      "start": 11274,
       "frames": 162,
       "asset": "rack-wait",
       "view": "detail",
       "cue": "Waits behind display; knee stiff"
     },
     {
-      "start": 11445,
+      "start": 11436,
       "frames": 90,
       "asset": "marcus-gate",
       "view": "danny",
       "cue": "Marcus rattles gate then moves on"
     },
     {
-      "start": 11535,
+      "start": 11526,
       "frames": 235,
       "asset": "v10/theo-tile",
       "view": "wide",
       "cue": "Tile lifts; fingers, head, boy lowering onto shelf"
     },
     {
-      "start": 11770,
+      "start": 11761,
       "frames": 224,
       "asset": "v10/theo-descend",
       "view": "wide",
       "cue": "Theo carefully steps around squeaking shelf"
     },
     {
-      "start": 11994,
+      "start": 11985,
       "frames": 281,
       "asset": "v10/theo-food",
       "view": "wide",
       "cue": "Reaches box; Danny stands; bar in Theo's hand"
     },
     {
-      "start": 12275,
+      "start": 12266,
       "frames": 157,
       "asset": "v10/theo-wrist",
       "view": "wide",
       "cue": "Oversized green collar and dusty boy"
     },
     {
-      "start": 12432,
+      "start": 12423,
       "frames": 156,
       "asset": "v10/theo-wrist",
       "view": "detail",
       "cue": "Pale clean line around his wrist"
     },
     {
-      "start": 12588,
+      "start": 12579,
       "frames": 176,
       "asset": "v10/theo-food",
       "view": "detail",
       "cue": "Danny expected a grown man"
     },
     {
-      "start": 12764,
+      "start": 12755,
       "frames": 137,
       "asset": "v10/theo-wrist",
       "view": "theo",
       "cue": "Boy hungry enough to eat wrapper"
     },
     {
-      "start": 12901,
+      "start": 12892,
       "frames": 50,
       "asset": "v10/theo-food",
       "view": "danny",
       "cue": "Put it down"
     },
     {
-      "start": 12951,
+      "start": 12942,
       "frames": 27,
       "asset": "v10/theo-bar-down",
       "view": "wide",
       "cue": "Theo places the bar down"
     },
     {
-      "start": 12978,
+      "start": 12969,
       "frames": 238,
       "asset": "v10/theo-run",
       "view": "wide",
       "cue": "Theo runs past Danny; Danny moves aside"
     },
     {
-      "start": 13216,
+      "start": 13207,
       "frames": 135,
       "asset": "v10/theo-rack-escape",
       "view": "wide",
       "cue": "Two steps up rack, almost at pipe"
     },
     {
-      "start": 13351,
+      "start": 13342,
       "frames": 257,
       "asset": "v10/theo-grab",
       "view": "wide",
       "cue": "Danny catches back of hoodie, stitching tears"
     },
     {
-      "start": 13608,
+      "start": 13599,
       "frames": 250,
       "asset": "theo-perch",
       "view": "wide",
       "cue": "Danny lets go; Theo second shelf, one hand on pipe"
     },
     {
-      "start": 13858,
+      "start": 13849,
       "frames": 258,
       "asset": "v10/gate-shadow",
       "view": "wide",
       "cue": "Both freeze; shadow pauses then passes closed gate"
     },
     {
-      "start": 14116,
+      "start": 14107,
       "frames": 173,
       "asset": "theo-perch",
       "view": "detail",
       "cue": "Boy looks hallway then Danny; don't do that again"
     },
     {
-      "start": 14289,
+      "start": 14280,
       "frames": 227,
       "asset": "v10/danny-hands",
       "view": "wide",
       "cue": "Danny keeps hands visible; asks his age"
     },
     {
-      "start": 14516,
+      "start": 14507,
       "frames": 288,
       "asset": "theo-perch",
       "view": "theo",
       "cue": "Fifteen, Theo, alone up there"
     },
     {
-      "start": 14804,
+      "start": 14795,
       "frames": 178,
       "asset": "v10/conversation",
       "view": "wide",
       "cue": "Theo sits on overturned bucket by rack"
     },
     {
-      "start": 14982,
+      "start": 14973,
       "frames": 192,
       "asset": "v10/theo-cinema",
       "view": "wide",
       "cue": "His sleeping space beside projection room"
     },
     {
-      "start": 15174,
+      "start": 15165,
       "frames": 284,
       "asset": "v10/theo-shrug",
       "view": "wide",
       "cue": "Four months; small shrug; discarded food"
     },
     {
-      "start": 15458,
+      "start": 15449,
       "frames": 190,
       "asset": "v10/conversation",
       "view": "theo",
       "cue": "Goes around doors; Danny looks up at tile"
     },
     {
-      "start": 15648,
+      "start": 15639,
       "frames": 231,
       "asset": "v10/theo-keys",
       "view": "wide",
       "cue": "Theo points at Danny's belt; he checks doors twice"
     },
     {
-      "start": 15879,
+      "start": 15870,
       "frames": 246,
       "asset": "v10/office-radio",
       "view": "danny",
       "cue": "Danny remembers working rounds and signing log"
     },
     {
-      "start": 16125,
+      "start": 16116,
       "frames": 126,
       "asset": "theo-tape",
       "view": "detail",
       "cue": "Theo peels tape from trainer and presses it back"
     },
     {
-      "start": 16251,
+      "start": 16242,
       "frames": 234,
       "asset": "v10/theo-shrug",
       "view": "theo",
       "cue": "He heard Danny singing in freight elevator"
     },
     {
-      "start": 16485,
+      "start": 16476,
       "frames": 187,
       "asset": "v10/danny-embarrassed",
       "view": "wide",
       "cue": "Danny looks at him; embarrassed"
     },
     {
-      "start": 16672,
+      "start": 16663,
       "frames": 196,
       "asset": "v10/danny-food-choice",
       "view": "wide",
       "cue": "You can't stay here; words before decision"
     },
     {
-      "start": 16868,
+      "start": 16859,
       "frames": 221,
       "asset": "v10/danny-gate-guilt",
       "view": "wide",
       "cue": "Thoughts of scarce food and Marcus outside gate"
     },
     {
-      "start": 17089,
+      "start": 17080,
       "frames": 85,
       "asset": "v10/danny-gate-guilt",
       "view": "detail",
       "cue": "He can hardly look at gate in daylight"
     },
     {
-      "start": 17174,
+      "start": 17165,
       "frames": 196,
       "asset": "v10/conversation",
       "view": "danny",
       "cue": "Kid six feet from gate waits for adult to be in charge"
     },
     {
-      "start": 17370,
+      "start": 17361,
       "frames": 218,
       "asset": "v10/danny-food-choice",
       "view": "detail",
       "cue": "Only adult available"
     },
     {
-      "start": 17588,
+      "start": 17579,
       "frames": 162,
       "asset": "v10/theo-standing",
       "view": "wide",
       "cue": "Theo stands without arguing or taking anything"
     },
     {
-      "start": 17750,
+      "start": 17741,
       "frames": 114,
       "asset": "v10/gate-shadow",
       "view": "gate",
       "cue": "Marcus heard at another gate"
     },
     {
-      "start": 17864,
+      "start": 17855,
       "frames": 88,
       "asset": "v10/theo-standing",
       "view": "detail",
       "cue": "Wait; Theo waits standing beside rack"
     },
     {
-      "start": 17952,
+      "start": 17943,
       "frames": 209,
       "asset": "v10/water-bottle",
       "view": "wide",
       "cue": "Danny reaches for drinking bottle and stops; Theo counts"
     },
     {
-      "start": 18161,
+      "start": 18152,
       "frames": 168,
       "asset": "v10/water-bottle",
       "view": "detail",
       "cue": "About ten days, calculated for one person"
     },
     {
-      "start": 18329,
+      "start": 18320,
       "frames": 107,
       "asset": "v10/theo-water-reveal",
       "view": "wide",

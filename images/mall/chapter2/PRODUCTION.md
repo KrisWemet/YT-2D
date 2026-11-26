@@ -1,6 +1,6 @@
 # Chapter Two production
 
-The current illustrated opening review is `MallChapter2IllustratedPartOne`: 10:14.533, ending on Theo's eight-thousand-gallons claim. All 103 shots use complete paintings in the approved pale-head, thin-stick style, with camera motion and a maximum of three uses per image. The full `MallChapter2` composition below is the v10 still-screen cut. See `STYLE-REVIEW.md` and run `node images/mall/chapter2/render-style-review.cjs` to reproduce Part One.
+The current illustrated opening review is `MallChapter2IllustratedPartOne`: 10:14.233 on the v10 edit, ending on Theo's eight-thousand-gallons claim. All 103 shots use complete paintings in the approved pale-head, thin-stick style, with camera motion and a maximum of three uses per image. The full `MallChapter2` composition below is the v10 still-screen cut. See `STYLE-REVIEW.md` and run `node images/mall/chapter2/render-style-review.cjs` to reproduce Part One.
 
 The current finished composition is `MallChapter2`: the approved retention revision with the ceiling-side and ladder continuity corrections, without a recap, plus the v9 picture polish described below. It runs 49,732 frames at 30 fps (27:37.733). Earlier source timing and performances remain available as `MallChapter2VisualPreview`. The revised preview is `MallChapter2RetentionPreview`.
 

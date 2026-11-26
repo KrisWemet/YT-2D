@@ -1,7 +1,7 @@
 {
   "version": 10,
-  "frames": 18436,
-  "seconds": 614.5333333333333,
+  "frames": 18427,
+  "seconds": 614.2333333333333,
   "shots": 103,
   "distinctImages": 61,
   "maxUses": 3,
@@ -405,26 +405,26 @@
     },
     {
       "start": 306,
-      "frames": 102,
+      "frames": 98,
       "asset": "hook-boot",
       "view": "detail",
       "cue": "Another corner breaks away",
       "index": 3,
-      "seconds": 3.4,
+      "seconds": 3.2666666666666666,
       "transcript": "corner breaks off anyway."
     },
     {
-      "start": 408,
-      "frames": 189,
+      "start": 404,
+      "frames": 184,
       "asset": "v10/roof-window",
       "view": "wide",
       "cue": "Radio woman asks about daughter's window",
       "index": 4,
-      "seconds": 6.3,
+      "seconds": 6.133333333333334,
       "transcript": "The woman on the radio asked who was in my daughter's window, and I gave her nothing. I took my thumb"
     },
     {
-      "start": 597,
+      "start": 588,
       "frames": 201,
       "asset": "roof-radio",
       "view": "wide",
@@ -434,7 +434,7 @@
       "transcript": "thumb off the button. For six years, answering that radio had been my job. A call came in, I said my name,"
     },
     {
-      "start": 798,
+      "start": 789,
       "frames": 192,
       "asset": "v10/office-radio",
       "view": "wide",
@@ -444,7 +444,7 @@
       "transcript": "name, and whoever was on the other end knew somebody was coming. Now I had to remind myself that I could leave it alone. My phone was"
     },
     {
-      "start": 990,
+      "start": 981,
       "frames": 210,
       "asset": "roof-phone",
       "view": "wide",
@@ -454,7 +454,7 @@
       "transcript": "was in my other hand. No service. My mom's last message was still there, telling me the door was locked. I read it again while"
     },
     {
-      "start": 1200,
+      "start": 1191,
       "frames": 210,
       "asset": "v10/roof-hesitate",
       "view": "wide",
@@ -464,7 +464,7 @@
       "transcript": "while the woman waited. I wanted somebody to talk to badly enough that I was afraid of what I might say. Across the highway,"
     },
     {
-      "start": 1410,
+      "start": 1401,
       "frames": 195,
       "asset": "v10/roof-window",
       "view": "detail",
@@ -474,7 +474,7 @@
       "transcript": "the tenth-floor window stayed dark. Lily had already blinked three times. I'd answered."
     },
     {
-      "start": 1605,
+      "start": 1596,
       "frames": 210,
       "asset": "v10/roof-lower-radio",
       "view": "wide",
@@ -484,7 +484,7 @@
       "transcript": "Our goodnight was over. The woman waited long enough that I could hear her breathing through the little speaker."
     },
     {
-      "start": 1815,
+      "start": 1806,
       "frames": 199,
       "asset": "roof-radio",
       "view": "detail",
@@ -494,7 +494,7 @@
       "transcript": "Danny? I turned the volume down and held the radio against my ear. You still there?"
     },
     {
-      "start": 2014,
+      "start": 2005,
       "frames": 212,
       "asset": "v10/roof-door",
       "view": "wide",
@@ -504,7 +504,7 @@
       "transcript": "I could see a faint light moving behind the department store's rooftop door. When I looked again, it was gone."
     },
     {
-      "start": 2226,
+      "start": 2217,
       "frames": 236,
       "asset": "v10/roof-lower-radio",
       "view": "detail",
@@ -514,7 +514,7 @@
       "transcript": "I pressed the button. How did you get inside? A little laugh. That's a fairly rude first question. You asked me one."
     },
     {
-      "start": 2462,
+      "start": 2453,
       "frames": 146,
       "asset": "v10/roof-hesitate",
       "view": "detail",
@@ -524,7 +524,7 @@
       "transcript": "Fair enough. Vera. There. Now you have a name. I waited."
     },
     {
-      "start": 2608,
+      "start": 2599,
       "frames": 282,
       "asset": "v10/fitting-closed",
       "view": "wide",
@@ -534,7 +534,7 @@
       "transcript": "I was trying on a coat. Department store. Second floor. Sat down in the fitting room and fell asleep. By the time I woke up, they'd locked the place."
     },
     {
-      "start": 2890,
+      "start": 2881,
       "frames": 255,
       "asset": "v10/patrol-corridor",
       "view": "wide",
@@ -544,7 +544,7 @@
       "transcript": "The store had closed at nine. At midnight, I'd checked the staff corridor behind those fitting rooms. I'd heard nothing."
     },
     {
-      "start": 3145,
+      "start": 3136,
       "frames": 141,
       "asset": "v10/roof-lower-radio",
       "view": "danny",
@@ -554,7 +554,7 @@
       "transcript": "What coat? I asked. What? The one you were trying on."
     },
     {
-      "start": 3286,
+      "start": 3277,
       "frames": 133,
       "asset": "v10/mall-crowd",
       "view": "wide",
@@ -564,7 +564,7 @@
       "transcript": "Danny, there are people eating people downstairs."
     },
     {
-      "start": 3419,
+      "start": 3410,
       "frames": 243,
       "asset": "roof-radio",
       "view": "danny",
@@ -574,7 +574,7 @@
       "transcript": "I think we've moved beyond the returns policy. She sounded almost amused. Then her voice changed a little."
     },
     {
-      "start": 3662,
+      "start": 3653,
       "frames": 151,
       "asset": "v10/roof-hesitate",
       "view": "danny",
@@ -584,7 +584,7 @@
       "transcript": "There's a girl up here with me. She's hungry. Have you got anything we could eat?"
     },
     {
-      "start": 3813,
+      "start": 3804,
       "frames": 137,
       "asset": "v10/roof-window",
       "view": "wide",
@@ -594,7 +594,7 @@
       "transcript": "I looked at Lily's window again. Kept my thumb away from the button while I did it."
     },
     {
-      "start": 3950,
+      "start": 3941,
       "frames": 157,
       "asset": "roof-phone",
       "view": "detail",
@@ -604,7 +604,7 @@
       "transcript": "How old? Little. Six, perhaps. Seven. It's hard to get much out of her."
     },
     {
-      "start": 4107,
+      "start": 4098,
       "frames": 156,
       "asset": "v10/roof-silhouette",
       "view": "wide",
@@ -614,7 +614,7 @@
       "transcript": "I stood on that roof until my hand went numb around the radio. Vera never asked about the window"
     },
     {
-      "start": 4263,
+      "start": 4254,
       "frames": 149,
       "asset": "v10/roof-silhouette",
       "view": "detail",
@@ -624,7 +624,7 @@
       "transcript": "window again that night. She'd found another question I couldn't walk away from."
     },
     {
-      "start": 4412,
+      "start": 4403,
       "frames": 140,
       "asset": "sleep",
       "view": "wide",
@@ -634,7 +634,7 @@
       "transcript": "Somebody ate my breakfast while I slept inside a locked store."
     },
     {
-      "start": 4552,
+      "start": 4543,
       "frames": 268,
       "asset": "v10/two-bars",
       "view": "wide",
@@ -644,7 +644,7 @@
       "transcript": "I'd put two protein bars beside the tent. One for when I woke up, one for later, because apparently I needed a system for deciding when to eat cardboard."
     },
     {
-      "start": 4820,
+      "start": 4811,
       "frames": 37,
       "asset": "v10/one-bar",
       "view": "detail",
@@ -654,7 +654,7 @@
       "transcript": "There was one left."
     },
     {
-      "start": 4857,
+      "start": 4848,
       "frames": 175,
       "asset": "v10/search-bag",
       "view": "wide",
@@ -664,7 +664,7 @@
       "transcript": "I checked the sleeping bag. Turned it inside out. Looked under the tent and inside both boots."
     },
     {
-      "start": 5032,
+      "start": 5023,
       "frames": 144,
       "asset": "gate-check",
       "view": "wide",
@@ -674,7 +674,7 @@
       "transcript": "At the gate, the padlock was closed. Key thirty-one was still on my belt."
     },
     {
-      "start": 5176,
+      "start": 5167,
       "frames": 166,
       "asset": "v10/inventory",
       "view": "wide",
@@ -684,7 +684,7 @@
       "transcript": "I counted the water twice. A bottle was missing too. I could explain losing a protein bar."
     },
     {
-      "start": 5342,
+      "start": 5333,
       "frames": 186,
       "asset": "marcus-gate",
       "view": "wide",
@@ -694,7 +694,7 @@
       "transcript": "I'd spent the night listening to my dead friend walk past, and my brain was doing its best to forget the whole thing."
     },
     {
-      "start": 5528,
+      "start": 5519,
       "frames": 243,
       "asset": "v10/inventory",
       "view": "detail",
@@ -704,7 +704,7 @@
       "transcript": "A bottle was harder. I lined everything up along the back wall. Bars in one row, cans in another, water underneath."
     },
     {
-      "start": 5771,
+      "start": 5762,
       "frames": 200,
       "asset": "v10/receipt",
       "view": "wide",
@@ -714,7 +714,7 @@
       "transcript": "Wrote the numbers on a receipt with the little pencil I used for my shift log. I hadn't written anything in that log since the first night."
     },
     {
-      "start": 5971,
+      "start": 5962,
       "frames": 177,
       "asset": "v10/receipt",
       "view": "detail",
@@ -724,7 +724,7 @@
       "transcript": "For a while I sat there trying to remember the last normal entry."
     },
     {
-      "start": 6148,
+      "start": 6139,
       "frames": 216,
       "asset": "v10/office-radio",
       "view": "detail",
@@ -734,7 +734,7 @@
       "transcript": "A door propped open. A car parked across two spaces. Something I'd been annoyed about."
     },
     {
-      "start": 6364,
+      "start": 6355,
       "frames": 159,
       "asset": "marcus-gate",
       "view": "detail",
@@ -744,7 +744,7 @@
       "transcript": "Then I heard two pulls on a gate outside, and I remembered I was supposed to be counting water."
     },
     {
-      "start": 6523,
+      "start": 6514,
       "frames": 177,
       "asset": "v10/stock-box-put",
       "view": "wide",
@@ -754,7 +754,7 @@
       "transcript": "I carried the remaining bars into the stockroom and put them in a plastic storage box."
     },
     {
-      "start": 6700,
+      "start": 6691,
       "frames": 97,
       "asset": "stock-wait",
       "view": "wide",
@@ -764,7 +764,7 @@
       "transcript": "Then I sat beside it until my neck hurt. Nothing happened."
     },
     {
-      "start": 6797,
+      "start": 6788,
       "frames": 234,
       "asset": "v10/roof-signal",
       "view": "wide",
@@ -774,7 +774,7 @@
       "transcript": "At nine, I went to the roof. Three blinks from Lily. Three back from me. I kept my body between the flashlight and the department store."
     },
     {
-      "start": 7031,
+      "start": 7022,
       "frames": 237,
       "asset": "stock-radio",
       "view": "wide",
@@ -784,7 +784,7 @@
       "transcript": "Vera called as soon as I came downstairs. Any luck with supper? I haven't agreed to anything. You sound tired."
     },
     {
-      "start": 7268,
+      "start": 7259,
       "frames": 247,
       "asset": "stock-wait",
       "view": "detail",
@@ -794,7 +794,7 @@
       "transcript": "I am tired. Get some rest. We can talk tomorrow. I stared at the storage box for another hour."
     },
     {
-      "start": 7515,
+      "start": 7506,
       "frames": 169,
       "asset": "v10/sleep-box",
       "view": "wide",
@@ -804,7 +804,7 @@
       "transcript": "When I finally slept, I put it beside my head. When I woke again, the lid was back on."
     },
     {
-      "start": 7684,
+      "start": 7675,
       "frames": 166,
       "asset": "box-latch",
       "view": "detail",
@@ -814,7 +814,7 @@
       "transcript": "One of the catches hadn't quite clicked shut. Two more bars were gone."
     },
     {
-      "start": 7850,
+      "start": 7841,
       "frames": 134,
       "asset": "v10/sleep-box",
       "view": "detail",
@@ -824,7 +824,7 @@
       "transcript": "Whoever was doing this had stood close enough to watch me sleep."
     },
     {
-      "start": 7984,
+      "start": 7975,
       "frames": 105,
       "asset": "v10/chalk-bag",
       "view": "wide",
@@ -834,7 +834,7 @@
       "transcript": "The chalk came in a little white bag from the climbing display."
     },
     {
-      "start": 8089,
+      "start": 8080,
       "frames": 196,
       "asset": "v10/chalk-no-bait",
       "view": "wide",
@@ -844,7 +844,7 @@
       "transcript": "I spread it around the food box, under the stockroom door, and across the narrow space between the tents."
     },
     {
-      "start": 8285,
+      "start": 8276,
       "frames": 103,
       "asset": "v10/sleep-boots",
       "view": "wide",
@@ -854,7 +854,7 @@
       "transcript": "Then I went back to bed with my boots on."
     },
     {
-      "start": 8388,
+      "start": 8379,
       "frames": 222,
       "asset": "stock-wait",
       "view": "danny",
@@ -864,7 +864,7 @@
       "transcript": "That was my entire investigation. Six years in security, and I was waiting for somebody to step in powder."
     },
     {
-      "start": 8610,
+      "start": 8601,
       "frames": 235,
       "asset": "v10/chalk",
       "view": "wide",
@@ -874,7 +874,7 @@
       "transcript": "I left a fresh bar on top of the box. The rest went inside it. I felt ridiculous setting bait with a breakfast I couldn't afford to lose."
     },
     {
-      "start": 8845,
+      "start": 8836,
       "frames": 174,
       "asset": "gate-check",
       "view": "detail",
@@ -884,7 +884,7 @@
       "transcript": "But the gate was the only way in that I understood. Whoever had found another way could bring somebody else through it."
     },
     {
-      "start": 9019,
+      "start": 9010,
       "frames": 169,
       "asset": "v10/sleep-boots",
       "view": "detail",
@@ -894,7 +894,7 @@
       "transcript": "I lay facing the gap between the tents. If anybody came through there, this time I'd see them."
     },
     {
-      "start": 9188,
+      "start": 9179,
       "frames": 92,
       "asset": "box-latch",
       "view": "wide",
@@ -904,7 +904,7 @@
       "transcript": "Sometime before morning, I heard plastic bend."
     },
     {
-      "start": 9280,
+      "start": 9271,
       "frames": 123,
       "asset": "v10/search-bag",
       "view": "detail",
@@ -914,7 +914,7 @@
       "transcript": "By the time I'd got out of the sleeping bag, the store was still again."
     },
     {
-      "start": 9403,
+      "start": 9394,
       "frames": 132,
       "asset": "v10/prints",
       "view": "wide",
@@ -924,7 +924,7 @@
       "transcript": "I left the overhead lights off and used my flashlight close to the floor."
     },
     {
-      "start": 9535,
+      "start": 9526,
       "frames": 249,
       "asset": "v10/split-print",
       "view": "wide",
@@ -934,7 +934,7 @@
       "transcript": "Small trainers. A worn patch under the right heel. The print had a little square of clear floor in the middle where the sole was split."
     },
     {
-      "start": 9784,
+      "start": 9775,
       "frames": 205,
       "asset": "v10/prints",
       "view": "detail",
@@ -944,7 +944,7 @@
       "transcript": "The trail came from behind the climbing wall display. It went to the food box. Then it went back."
     },
     {
-      "start": 9989,
+      "start": 9980,
       "frames": 167,
       "asset": "rack-look",
       "view": "wide",
@@ -954,7 +954,7 @@
       "transcript": "I moved the display a few inches. Behind it was a tall storage rack bolted to the wall."
     },
     {
-      "start": 10156,
+      "start": 10147,
       "frames": 164,
       "asset": "v10/rack-print",
       "view": "wide",
@@ -964,7 +964,7 @@
       "transcript": "A shoeprint showed on the bottom shelf. Another was pressed against the painted wall halfway up."
     },
     {
-      "start": 10320,
+      "start": 10311,
       "frames": 209,
       "asset": "v10/pipe-mark",
       "view": "wide",
@@ -974,7 +974,7 @@
       "transcript": "Higher still, somebody had wiped a hand across a dusty pipe. I followed the pipe with the light."
     },
     {
-      "start": 10529,
+      "start": 10520,
       "frames": 185,
       "asset": "v10/tile-seam",
       "view": "wide",
@@ -984,7 +984,7 @@
       "transcript": "One ceiling tile was cleaner around the edges than all the others. I stood there with my mouth open."
     },
     {
-      "start": 10714,
+      "start": 10705,
       "frames": 202,
       "asset": "gate-check",
       "view": "danny",
@@ -994,7 +994,7 @@
       "transcript": "Every door was locked. Every window was intact. I'd checked the gates so often that morning my hand hurt."
     },
     {
-      "start": 10916,
+      "start": 10907,
       "frames": 66,
       "asset": "v10/tile-seam",
       "view": "detail",
@@ -1004,7 +1004,7 @@
       "transcript": "I hadn't looked up once."
     },
     {
-      "start": 10982,
+      "start": 10973,
       "frames": 115,
       "asset": "v10/tile-dust",
       "view": "wide",
@@ -1014,7 +1014,7 @@
       "transcript": "A little white flake dropped out of the seam above me."
     },
     {
-      "start": 11097,
+      "start": 11088,
       "frames": 186,
       "asset": "rack-wait",
       "view": "wide",
@@ -1024,7 +1024,7 @@
       "transcript": "I switched the flashlight off. Whoever was up there had seen the light. And they were still there."
     },
     {
-      "start": 11283,
+      "start": 11274,
       "frames": 162,
       "asset": "rack-wait",
       "view": "detail",
@@ -1034,7 +1034,7 @@
       "transcript": "I waited behind the display until my bad knee went stiff. It was barely six in the morning."
     },
     {
-      "start": 11445,
+      "start": 11436,
       "frames": 90,
       "asset": "marcus-gate",
       "view": "danny",
@@ -1044,7 +1044,7 @@
       "transcript": "Outside, Marcus rattled the gate and moved on."
     },
     {
-      "start": 11535,
+      "start": 11526,
       "frames": 235,
       "asset": "v10/theo-tile",
       "view": "wide",
@@ -1054,7 +1054,7 @@
       "transcript": "The tile lifted. Two fingers appeared, then a head, then a very skinny boy lowering himself onto the top shelf."
     },
     {
-      "start": 11770,
+      "start": 11761,
       "frames": 224,
       "asset": "v10/theo-descend",
       "view": "wide",
@@ -1064,7 +1064,7 @@
       "transcript": "He moved carefully. He knew which bit of the rack squeaked. He stepped around it before his foot even touched down."
     },
     {
-      "start": 11994,
+      "start": 11985,
       "frames": 281,
       "asset": "v10/theo-food",
       "view": "wide",
@@ -1074,7 +1074,7 @@
       "transcript": "When he reached the floor, he went straight to the box. I waited until he bent over it. Then I stood up. We looked at each other. He had a protein bar already in his hand."
     },
     {
-      "start": 12275,
+      "start": 12266,
       "frames": 157,
       "asset": "v10/theo-wrist",
       "view": "wide",
@@ -1084,7 +1084,7 @@
       "transcript": "The sweatshirt hung past his fingers. There was a pale clean line around one"
     },
     {
-      "start": 12432,
+      "start": 12423,
       "frames": 156,
       "asset": "v10/theo-wrist",
       "view": "detail",
@@ -1094,7 +1094,7 @@
       "transcript": "one wrist where he'd pushed a sleeve up. Everything else about him looked as dusty as the pipe."
     },
     {
-      "start": 12588,
+      "start": 12579,
       "frames": 176,
       "asset": "v10/theo-food",
       "view": "detail",
@@ -1104,7 +1104,7 @@
       "transcript": "I'd practised this conversation in my head while I waited. It had involved a grown man explaining himself."
     },
     {
-      "start": 12764,
+      "start": 12755,
       "frames": 137,
       "asset": "v10/theo-wrist",
       "view": "theo",
@@ -1114,7 +1114,7 @@
       "transcript": "I hadn't practised what to do if the thief looked hungry enough to eat the wrapper."
     },
     {
-      "start": 12901,
+      "start": 12892,
       "frames": 50,
       "asset": "v10/theo-food",
       "view": "danny",
@@ -1124,7 +1124,7 @@
       "transcript": "Put it down, I said."
     },
     {
-      "start": 12951,
+      "start": 12942,
       "frames": 27,
       "asset": "v10/theo-bar-down",
       "view": "wide",
@@ -1134,7 +1134,7 @@
       "transcript": "He put it down."
     },
     {
-      "start": 12978,
+      "start": 12969,
       "frames": 238,
       "asset": "v10/theo-run",
       "view": "wide",
@@ -1144,7 +1144,7 @@
       "transcript": "Then he ran straight at me. I moved aside because, for a second, that's what my body thought you did when a kid ran at you."
     },
     {
-      "start": 13216,
+      "start": 13207,
       "frames": 135,
       "asset": "v10/theo-rack-escape",
       "view": "wide",
@@ -1154,7 +1154,7 @@
       "transcript": "He got past, took two steps up the rack, and nearly reached the pipe."
     },
     {
-      "start": 13351,
+      "start": 13342,
       "frames": 257,
       "asset": "v10/theo-grab",
       "view": "wide",
@@ -1164,7 +1164,7 @@
       "transcript": "I caught the back of his sweatshirt. He twisted so hard the stitching tore. Let go. Stop kicking. Let go."
     },
     {
-      "start": 13608,
+      "start": 13599,
       "frames": 250,
       "asset": "theo-perch",
       "view": "wide",
@@ -1174,7 +1174,7 @@
       "transcript": "I did. He stayed on the second shelf, one hand on the pipe, watching my hands. The loose shelf knocked against the wall."
     },
     {
-      "start": 13858,
+      "start": 13849,
       "frames": 258,
       "asset": "v10/gate-shadow",
       "view": "wide",
@@ -1184,7 +1184,7 @@
       "transcript": "Somewhere outside, a shoe dragged across the floor. We both stopped breathing. A shadow passed the gate. Paused. Moved on."
     },
     {
-      "start": 14116,
+      "start": 14107,
       "frames": 173,
       "asset": "theo-perch",
       "view": "detail",
@@ -1194,7 +1194,7 @@
       "transcript": "The boy looked toward the hallway, then back at me. Don't do that again, he whispered."
     },
     {
-      "start": 14289,
+      "start": 14280,
       "frames": 227,
       "asset": "v10/danny-hands",
       "view": "wide",
@@ -1204,7 +1204,7 @@
       "transcript": "I wanted to tell him I was the adult and this was my store and he was stealing my food. Instead I asked how old he was."
     },
     {
-      "start": 14516,
+      "start": 14507,
       "frames": 288,
       "asset": "theo-perch",
       "view": "theo",
@@ -1214,7 +1214,7 @@
       "transcript": "Fifteen. Your name? Theo. Who else is up there? He tightened his grip on the pipe. Nobody. That's why I stay up there."
     },
     {
-      "start": 14804,
+      "start": 14795,
       "frames": 178,
       "asset": "v10/conversation",
       "view": "wide",
@@ -1224,7 +1224,7 @@
       "transcript": "I let him sit on an overturned camping bucket. He kept the rack within reach. Where do you sleep?"
     },
     {
-      "start": 14982,
+      "start": 14973,
       "frames": 192,
       "asset": "v10/theo-cinema",
       "view": "wide",
@@ -1234,7 +1234,7 @@
       "transcript": "Above the cinema. In the ceiling? There's a space beside the projection room."
     },
     {
-      "start": 15174,
+      "start": 15165,
       "frames": 284,
       "asset": "v10/theo-shrug",
       "view": "wide",
@@ -1244,7 +1244,7 @@
       "transcript": "For four months? He shrugged. A tiny movement. Like he was trying to make four months smaller. How did you eat? People throw stuff out."
     },
     {
-      "start": 15458,
+      "start": 15449,
       "frames": 190,
       "asset": "v10/conversation",
       "view": "theo",
@@ -1254,7 +1254,7 @@
       "transcript": "And the doors? I go round them. I looked up at the tile again. He pointed toward my belt."
     },
     {
-      "start": 15648,
+      "start": 15639,
       "frames": 231,
       "asset": "v10/theo-keys",
       "view": "wide",
@@ -1264,7 +1264,7 @@
       "transcript": "You like checking those. The keys? The doors. You do the same ones twice when you're on the phone."
     },
     {
-      "start": 15879,
+      "start": 15870,
       "frames": 246,
       "asset": "v10/office-radio",
       "view": "danny",
@@ -1274,7 +1274,7 @@
       "transcript": "I thought about all the nights I'd walked this building, tugged handles, signed the log, and told myself everybody was safe."
     },
     {
-      "start": 16125,
+      "start": 16116,
       "frames": 126,
       "asset": "theo-tape",
       "view": "detail",
@@ -1284,7 +1284,7 @@
       "transcript": "Theo peeled a strip of tape away from his trainer. Pressed it back down."
     },
     {
-      "start": 16251,
+      "start": 16242,
       "frames": 234,
       "asset": "v10/theo-shrug",
       "view": "theo",
@@ -1294,7 +1294,7 @@
       "transcript": "You sing in the freight elevator, he said. I looked at him. Usually the same song. You only know some of it."
     },
     {
-      "start": 16485,
+      "start": 16476,
       "frames": 187,
       "asset": "v10/danny-embarrassed",
       "view": "wide",
@@ -1304,7 +1304,7 @@
       "transcript": "My face got hot. Even then. Even with everything outside, that still worked. You can't stay"
     },
     {
-      "start": 16672,
+      "start": 16663,
       "frames": 196,
       "asset": "v10/danny-food-choice",
       "view": "wide",
@@ -1314,7 +1314,7 @@
       "transcript": "stay here, I said. The words came out before I'd decided what I meant by them."
     },
     {
-      "start": 16868,
+      "start": 16859,
       "frames": 221,
       "asset": "v10/danny-gate-guilt",
       "view": "wide",
@@ -1324,7 +1324,7 @@
       "transcript": "There were two sentences in my head. One was about food. The other was about the man who'd sat outside my gate and trusted me to know what to do."
     },
     {
-      "start": 17089,
+      "start": 17080,
       "frames": 85,
       "asset": "v10/danny-gate-guilt",
       "view": "detail",
@@ -1334,7 +1334,7 @@
       "transcript": "I could hardly look at that gate in daylight."
     },
     {
-      "start": 17174,
+      "start": 17165,
       "frames": 196,
       "asset": "v10/conversation",
       "view": "danny",
@@ -1344,7 +1344,7 @@
       "transcript": "Now this kid was sitting six feet from it, waiting for me to be in charge. I wanted somebody qualified."
     },
     {
-      "start": 17370,
+      "start": 17361,
       "frames": 218,
       "asset": "v10/danny-food-choice",
       "view": "detail",
@@ -1354,7 +1354,7 @@
       "transcript": "A firefighter. His dad. Any adult who'd know how to keep him alive. He was looking at the only one available."
     },
     {
-      "start": 17588,
+      "start": 17579,
       "frames": 162,
       "asset": "v10/theo-standing",
       "view": "wide",
@@ -1364,7 +1364,7 @@
       "transcript": "Theo stood immediately. He didn't argue. Picked up nothing, because he'd brought nothing."
     },
     {
-      "start": 17750,
+      "start": 17741,
       "frames": 114,
       "asset": "v10/gate-shadow",
       "view": "gate",
@@ -1374,7 +1374,7 @@
       "transcript": "I heard Marcus at another gate down the hall. Theo heard him too."
     },
     {
-      "start": 17864,
+      "start": 17855,
       "frames": 88,
       "asset": "v10/theo-standing",
       "view": "detail",
@@ -1384,7 +1384,7 @@
       "transcript": "Wait, I said. He waited beside the rack."
     },
     {
-      "start": 17952,
+      "start": 17943,
       "frames": 209,
       "asset": "v10/water-bottle",
       "view": "wide",
@@ -1394,7 +1394,7 @@
       "transcript": "I reached for a bottle, then stopped with my hand on it. Theo watched me count the ones left. How long have you got? he asked."
     },
     {
-      "start": 18161,
+      "start": 18152,
       "frames": 168,
       "asset": "v10/water-bottle",
       "view": "detail",
@@ -1404,7 +1404,7 @@
       "transcript": "asked. About ten days. Maybe. I was working it out for one person. He looked toward the front of the mall."
     },
     {
-      "start": 18329,
+      "start": 18320,
       "frames": 107,
       "asset": "v10/theo-water-reveal",
       "view": "wide",
