@@ -1,17 +1,18 @@
-# Opening ten-minute illustrated review — verification
+# Illustrated Part One — v10 verification
 
-Scope: 0:00–10:00 only, separate `MallChapter2StyleReview10Min` composition. The full `MallChapter2` composition retains its v8 default appearance.
+Scope: 0:00–10:14.533, `MallChapter2IllustratedPartOne`. The full `MallChapter2` composition remains the existing v8 chapter. The part ends on Theo's eight-thousand-gallons claim, before the location is explained.
 
-- 18,000 frames, exactly 600 seconds, 1920×1080 at 30 fps.
-- H.264 picture and stereo AAC at 48 kHz.
-- All 18,000 presentation timestamps are continuous at 3,000 ticks per frame on the normalized 90 kHz video timescale.
-- The encoded AAC prefix matches the first 600 seconds of the original v8 MP4 exactly.
-- The complete ten-minute video decoded without errors.
-- Twenty-four accepted generated illustrations are referenced in the opening; every image file exists. Three later-chapter draft illustrations are saved but outside the review's duration.
-- Narration, recording, retention-edit clip map, finished sound master and series outline have no diff from v8.
-- TypeScript compilation, portable-render-helper syntax, git whitespace and existing ladder/rescue continuity checks passed.
-- Default figure-renderer markup matches v8 across 16 representative pose/direction combinations, after normalization of generated SVG IDs.
-- Updated stills and sampled frames across the final movie were visually inspected for framing, character identity and scene relevance. The rejected wide ceiling image was excluded; the opening uses the dangling boot and close rescue-grip views.
-- The SRT review contains 226 ordered cues with the final cue limited to 10:00.
+- 18,436 frames at 30 fps, 1920×1080 H.264; stereo 48 kHz AAC.
+- Complete 1080p decode passed. All presentation timestamps are continuous at 3,000 ticks/frame on a 90 kHz timescale.
+- Encoded AAC prefix matches the original v8 MP4 exactly through this part's endpoint.
+- The 1280×720 copy retains all 18,436 frames and identical encoded audio; complete decode passed.
+- The exhaustive 103-shot track covers every frame without gaps or overlaps. Every shot is at most ten seconds; median 6.17 seconds.
+- All 61 image files exist at production resolution. Every crop, pan and zoom is counted as another use. Maximum three uses per image and maximum three uses per identical file content; aliases cannot bypass the limit.
+- The actual picture component was inspected at all 309 shot start/midpoint/end samples: exactly one painting, no native SVG figure layers. The opt-in review path bypasses the older coded scene/figure renderer.
+- All 103 shot midpoint stills were reviewed alongside their retained transcript. A frame from each shot was also extracted from the completed MP4; final background corrections and the ending were checked in the delivered picture.
+- Closed gates, no premature Theo reveal, chalk-before-bait, put-down-before-run, wrist contact and Theo's standing position were checked. The second gate-shadow use crops to Marcus, excluding the older perched Theo pose.
+- The SRT has 232 ordered, nonoverlapping cues. The final spoken cue ends at 10:13.069, leaving about 1.46 seconds for the cliffhanger reaction.
+- Source script and word timing, retention edit map, finished sound master and series outline match the preceding source revision byte for byte.
+- TypeScript, renderer syntax, whitespace and existing ladder/rescue continuity checks pass.
 
-This is a visual review excerpt, ending at the ten-minute boundary. The generated illustrations use camera movement and alternate crops; selected action scenes retain the animated rig. No full v9 chapter has been exported, and nothing has been published or merged.
+Reproduce the structural/image audit with `node images/mall/chapter2/check-style-review.cjs`. The generated `out/chapter2-style-review-v10/shot-audit.json` contains per-shot transcripts, image-use counts and asset hashes. The render helper writes its media verification after decoding and timestamp/audio checks. Full-resolution and smaller review copies plus captions and reports are delivered locally; MP4s are excluded from Git. Nothing is merged or published.

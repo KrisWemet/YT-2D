@@ -9,7 +9,7 @@ import {CeilingAngle, FoodChoice, FrozenChoice, GripAngle, ReturnChoice, SecondL
 import edit from './retention-edit.json';
 import ch2 from './ch2.json';
 import {IllustratedFigures} from '../Stick';
-import {PaintedStoryFrame} from './story-art';
+import {IllustratedPartOne} from './illustrated-part-one';
 
 const SourcePicture=makeChapter(CHAPTER2_DEF,{audio:false});
 export const RETENTION_FRAMES=edit.frames;
@@ -23,19 +23,16 @@ export const Chapter2Retention:React.FC<{styleReview?:boolean}>=({styleReview=fa
  const source=('source' in clip?clip.source:0)??0;
  const sourceFrame=source+local,time=sourceFrame/30;
  const angle=clip.kind==='source'?edit.cutaways.find(c=>sourceFrame>=c.sourceStart&&sourceFrame<c.sourceEnd):undefined;
+ if(styleReview)return <AbsoluteFill><IllustratedPartOne frame={frame}/>{edit.audioReady&&<Audio src={staticFile('mall/ch2/retention.mp3')}/>}</AbsoluteFill>;
  let picture:React.ReactNode=<SourcePicture sourceFrame={sourceFrame}/>;
  if(clip.kind==='return-choice')picture=<ReturnChoice frame={local}/>;
- else if(styleReview&&frame<408){
-  const seconds=frame/30;
-  picture=<PaintedStoryFrame name={seconds<6.6||seconds>=10.2?'hook-boot':'hook-grip'} t={seconds<6.6?seconds:seconds<10.2?seconds-6.6:seconds-10.2} dur={seconds<6.6?6.6:seconds<10.2?3.6:3.4} view={seconds>=10.2?'detail':'base'}/>;
- }
  else if(time>=LADDER_APPROACH&&time<LADDER_END){
   const descending=time>=LADDER_START-.2;
   picture=<Chapter2Scene mode={descending?'ladder':'walkway'} section={descending?11:10} variant={0}
    view={descending?(time<LADDER_DETAIL?'base':'detail'):'wide'}
    p={{frame:sourceFrame,t:Math.max(0,time-(descending?LADDER_START:LADDER_APPROACH)),dur:descending?LADDER_END-LADDER_START:5,ev:{}}}/>;
  }
- else if(time>=637.762&&time<657.6)picture=styleReview?<PaintedStoryFrame name="conversation" t={(time-637.762)%7} dur={7} view={time<644.762?'danny':time<651.762?'theo':'wide'}/>:<FoodChoice time={time}/>;
+ else if(time>=637.762&&time<657.6)picture=<FoodChoice time={time}/>;
  else if(angle){
   const kind=angle.view;
   if(kind==='ceiling-up'||kind==='ceiling-down')picture=<CeilingAngle up={kind==='ceiling-up'} time={time} boot={time>1200} leg={time<8||time>1073}/>;
