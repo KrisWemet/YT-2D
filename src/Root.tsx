@@ -30,6 +30,7 @@ const MallChapter2 = makeChapter(CHAPTER2_DEF);
 
 export const RemotionRoot: React.FC = () => (
   <>
+    <Composition id="MallChapter2StyleReview10Min" component={Chapter2Retention} defaultProps={{styleReview:true}} durationInFrames={18000} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2VisualPreview" component={MallChapter2} durationInFrames={chapterFrames(CHAPTER2_DEF)} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2RetentionPreview" component={Chapter2Retention} durationInFrames={RETENTION_FRAMES} fps={CFPS} width={1920} height={1080} />
     {RETENTION_READY && <Composition id="MallChapter2" component={Chapter2Retention} durationInFrames={RETENTION_FRAMES} fps={CFPS} width={1920} height={1080} />}
