@@ -11,8 +11,7 @@ import {CeilingAngle, FoodChoice, FrozenChoice, GripAngle, ReturnChoice, SecondL
 import {ROOF_CUTS, ROOF_RECUT_END, ROOF_RECUT_START, RoofCutaways} from './roof-cutaways';
 import edit from './retention-edit.json';
 import ch2 from './ch2.json';
-import {IllustratedFigures} from '../Stick';
-import {PaintedStoryFrame} from './story-art';
+import {IllustratedPartOne} from './illustrated-part-one';
 
 const FPS=30;
 // Painted backgrounds glide on the same sub-pixel camera as the figures (render with
@@ -110,13 +109,10 @@ const PUSH:Record<string,[number,string]>={
 const Push:React.FC<{zoom:number;origin:string;children:React.ReactNode}>=({zoom,origin,children})=>
  <AbsoluteFill style={{overflow:'hidden'}}><AbsoluteFill style={{transform:`scale(${zoom})`,transformOrigin:origin}}>{children}</AbsoluteFill></AbsoluteFill>;
 
-// Set per frame by the composition: whether shots are held as still screens, and whether the
-// illustrated style review swaps in its painted frames.
-const MODE={stills:STILLS,review:false};
 const draw=(unit:string,clock:number):React.ReactNode=>{
  const time=clock/FPS;
- if(unit==='return')return <ReturnChoice frame={clock} wide={MODE.stills}/>;
- if(unit==='food')return MODE.review?<PaintedStoryFrame name="conversation" t={(time-FOOD_START)%7} dur={7} view={time<FOOD_START+7?'danny':time<FOOD_START+14?'theo':'wide'}/>:<FoodChoice time={time}/>;
+ if(unit==='return')return <ReturnChoice frame={clock} wide={STILLS}/>;
+ if(unit==='food')return <FoodChoice time={time}/>;
  if(unit==='roof')return <RoofCutaways frame={clock}/>;
  if(unit==='walkway'||unit.startsWith('ladder')){
   const descending=unit!=='walkway';
@@ -129,7 +125,7 @@ const draw=(unit:string,clock:number):React.ReactNode=>{
   const k=(clock-angle.sourceStart)/(angle.sourceEnd-angle.sourceStart);
   const [to,origin]=PUSH[kind]??[1,'50% 50%'];
   // Held still, the footprints read best on the painted store wall rather than the plain wall card.
-  if(MODE.stills&&kind==='prints-wall')return <Chapter2Scene mode="rack-prints" section={4} variant={0} view="base" p={{frame:clock,t:2,dur:4,ev:{}}}/>;
+  if(STILLS&&kind==='prints-wall')return <Chapter2Scene mode="rack-prints" section={4} variant={0} view="base" p={{frame:clock,t:2,dur:4,ev:{}}}/>;
   const view=kind==='ceiling-up'||kind==='ceiling-down'?<CeilingAngle up={kind==='ceiling-up'} time={time} boot={time>1200} leg={time<8||time>1073}/>:
    kind==='prints-wall'?<WallPrints time={time}/>:kind==='grip'?<GripAngle time={time}/>:
    kind==='second-light'?<SecondLight time={time} pulses={pulses}/>:<FrozenChoice time={time}/>;
@@ -238,30 +234,25 @@ const stillAt=(frame:number)=>{
 };
 export const RETENTION_STILLS=stills.map(x=>({start:x.start,end:x.end,unit:x.run.unit,key:x.key}));
 const stillPicture=(x:Still)=>draw(x.run.unit,x.key);
-const pictureAt=(run:Run,frame:number,held:boolean)=>held?stillPicture(stillAt(frame)):runPicture(run,frame);
+const pictureAt=(run:Run,frame:number)=>STILLS?stillPicture(stillAt(frame)):runPicture(run,frame);
 
 export const Chapter2Retention:React.FC<{styleReview?:boolean}>=({styleReview=false})=>{
  const frame=useCurrentFrame();
- // The illustrated style review keeps its animated excerpt (painted hook and conversation frames,
- // illustrated figures); the full chapter is told in still screens.
- const stills=STILLS&&!styleReview;
- STILL.on=MODE.stills=stills;
- MODE.review=styleReview;
+ // Illustrated Part One: one complete painting per shot on the final clock, over the same audio master.
+ if(styleReview)return <AbsoluteFill><IllustratedPartOne frame={frame}/>{edit.audioReady&&<Audio src={staticFile('mall/ch2/retention.mp3')}/>}</AbsoluteFill>;
+ STILL.on=STILLS;
  const blend=dissolves.find(c=>frame>=c.at-c.len/2&&frame<c.at+c.len/2);
- const seconds=frame/30;
- const picture=styleReview&&frame<storyStart
-  ?<PaintedStoryFrame name={seconds<6.6||seconds>=10.2?'hook-boot':'hook-grip'} t={seconds<6.6?seconds:seconds<10.2?seconds-6.6:seconds-10.2} dur={seconds<6.6?6.6:seconds<10.2?3.6:3.4} view={seconds>=10.2?'detail':'base'}/>
-  :blend?<>
-  {stills?stillPicture(stillAt(blend.at-1)):runPicture(blend.prev,frame)}
-  <AbsoluteFill style={{opacity:smooth((frame-blend.at+blend.len/2+.5)/blend.len)}}>{stills?stillPicture(stillAt(blend.at)):runPicture(blend.next,frame)}</AbsoluteFill>
- </>:pictureAt(runAt(frame),frame,stills);
+ const picture=blend?<>
+  {STILLS?stillPicture(stillAt(blend.at-1)):runPicture(blend.prev,frame)}
+  <AbsoluteFill style={{opacity:smooth((frame-blend.at+blend.len/2+.5)/blend.len)}}>{STILLS?stillPicture(stillAt(blend.at)):runPicture(blend.next,frame)}</AbsoluteFill>
+ </>:pictureAt(runAt(frame),frame);
  const sf=sourceFrameAt(frame);
  const tag=[...tagStarts].reverse().find(t=>frame>=t.frame);
  const elapsed=tag?(frame-tag.frame)/FPS:Infinity;
  const light=brightness(frame);
- return <RetentionContinuity.Provider value={true}><IllustratedFigures.Provider value={styleReview}><SubpixelCamera.Provider value={SUBPIXEL}><MaxZoom.Provider value={stills?STILL_MAX_ZOOM:0}><AbsoluteFill style={{background:'#050a10'}}>
+ return <RetentionContinuity.Provider value={true}><SubpixelCamera.Provider value={SUBPIXEL}><MaxZoom.Provider value={STILLS?STILL_MAX_ZOOM:0}><AbsoluteFill style={{background:'#050a10'}}>
   <AbsoluteFill style={{opacity:light}}>{picture}</AbsoluteFill>
-  {sf!==null&&frame>=storyStart&&<Overlay t={sf/FPS} fadeBadge still={stills} tag={tag&&elapsed<4?{text:tag.text,t:sf/FPS-elapsed}:null}/>}
+  {sf!==null&&frame>=storyStart&&<Overlay t={sf/FPS} fadeBadge still={STILLS} tag={tag&&elapsed<4?{text:tag.text,t:sf/FPS-elapsed}:null}/>}
   {edit.audioReady&&<Audio src={staticFile('mall/ch2/retention.mp3')}/>}
- </AbsoluteFill></MaxZoom.Provider></SubpixelCamera.Provider></IllustratedFigures.Provider></RetentionContinuity.Provider>;
+ </AbsoluteFill></MaxZoom.Provider></SubpixelCamera.Provider></RetentionContinuity.Provider>;
 };

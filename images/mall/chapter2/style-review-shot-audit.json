@@ -1,0 +1,1417 @@
+{
+  "version": 10,
+  "frames": 18436,
+  "seconds": 614.5333333333333,
+  "shots": 103,
+  "distinctImages": 61,
+  "maxUses": 3,
+  "maxIdenticalContentUses": 3,
+  "nativeFigureLayers": 0,
+  "coverage": "every frame; no gaps or overlaps",
+  "ending": "I know where there's eight thousand gallons.",
+  "endingSourceFrame": 21083,
+  "lastSpokenSourceWordEnd": 701.302,
+  "scope": "opening part only; full chapter unchanged",
+  "usage": {
+    "hook-boot": 2,
+    "hook-grip": 1,
+    "v10/roof-window": 3,
+    "roof-radio": 3,
+    "v10/office-radio": 3,
+    "roof-phone": 2,
+    "v10/roof-hesitate": 3,
+    "v10/roof-lower-radio": 3,
+    "v10/roof-door": 1,
+    "v10/fitting-closed": 1,
+    "v10/patrol-corridor": 1,
+    "v10/mall-crowd": 1,
+    "v10/roof-silhouette": 2,
+    "sleep": 1,
+    "v10/two-bars": 1,
+    "v10/one-bar": 1,
+    "v10/search-bag": 2,
+    "gate-check": 3,
+    "v10/inventory": 2,
+    "marcus-gate": 3,
+    "v10/receipt": 2,
+    "v10/stock-box-put": 1,
+    "stock-wait": 3,
+    "v10/roof-signal": 1,
+    "stock-radio": 1,
+    "v10/sleep-box": 2,
+    "box-latch": 2,
+    "v10/chalk-bag": 1,
+    "v10/chalk-no-bait": 1,
+    "v10/sleep-boots": 2,
+    "v10/chalk": 1,
+    "v10/prints": 2,
+    "v10/split-print": 1,
+    "rack-look": 1,
+    "v10/rack-print": 1,
+    "v10/pipe-mark": 1,
+    "v10/tile-seam": 2,
+    "v10/tile-dust": 1,
+    "rack-wait": 2,
+    "v10/theo-tile": 1,
+    "v10/theo-descend": 1,
+    "v10/theo-food": 3,
+    "v10/theo-wrist": 3,
+    "v10/theo-bar-down": 1,
+    "v10/theo-run": 1,
+    "v10/theo-rack-escape": 1,
+    "v10/theo-grab": 1,
+    "theo-perch": 3,
+    "v10/gate-shadow": 2,
+    "v10/danny-hands": 1,
+    "v10/conversation": 3,
+    "v10/theo-cinema": 1,
+    "v10/theo-shrug": 2,
+    "v10/theo-keys": 1,
+    "theo-tape": 1,
+    "v10/danny-embarrassed": 1,
+    "v10/danny-food-choice": 2,
+    "v10/danny-gate-guilt": 2,
+    "v10/theo-standing": 2,
+    "v10/water-bottle": 2,
+    "v10/theo-water-reveal": 1
+  },
+  "files": {
+    "hook-boot": {
+      "sha256": "7e387a4f73b279876be8db744dcb70bc6ca4dd2aeb37691d99f314c3ac157f77",
+      "width": 1672,
+      "height": 941
+    },
+    "hook-grip": {
+      "sha256": "429b479ce4fc0f56a81f1ffe8472032d9a6ec27ac18d9f33fa6e9d9efa27b6dd",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/roof-window": {
+      "sha256": "f1befc20cd9561b03a70f0f4a8e7cffc9e69a79319228c7c4f063c459112b40e",
+      "width": 1672,
+      "height": 941
+    },
+    "roof-radio": {
+      "sha256": "e599708429f0d73f4128901ebcd4082da2c7225975b73263185e9fc84578f74d",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/office-radio": {
+      "sha256": "4eda7e054ec1e7073c2701f78b83e5da3f1eafe7851a455f3977a15e0e3f130d",
+      "width": 1671,
+      "height": 941
+    },
+    "roof-phone": {
+      "sha256": "6a4853c7cfe00715f76c207b03f4fdf8fcc8e8c0936c1a27cee83a030147b774",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/roof-hesitate": {
+      "sha256": "14e5312184766670ff609e32130a35090c1ad79145ce84519be704e400b450ac",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/roof-lower-radio": {
+      "sha256": "0c56067d77d743d555fee0ee45270030db11b248efd20378eb0b9977d694805f",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/roof-door": {
+      "sha256": "24121ec8340e876ece4198b14684f8648f899c1f0247d60e6d6a5cb99cdcf136",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/fitting-closed": {
+      "sha256": "13cd2b0aee94c2b7a19762808f2f699135c2955fcf59dd853f917dbeca678ac8",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/patrol-corridor": {
+      "sha256": "46a147c98f052947f99f878663317f88061f69ecab8d8f4b05ff0a273e1e9804",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/mall-crowd": {
+      "sha256": "0c83af79076fca18d5cab62d68e3f811e3e0e8008f19726fc8fffdd9855a3280",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/roof-silhouette": {
+      "sha256": "21c9edbe599729852baae7f1103317c26538467e5e6de468eaa7197aa296e682",
+      "width": 1672,
+      "height": 941
+    },
+    "sleep": {
+      "sha256": "b6ccbb7cc47c9333b59f11f0059ffd4a6d3289f4fbf45d0fed16b7172db7d3a6",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/two-bars": {
+      "sha256": "66368931250dbf3caa5b8c9d1e75e7c8d66b39424cce41d0e3e70763cd8eaa2f",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/one-bar": {
+      "sha256": "7d5f2498897100b0b286d59c96492ad8ce61c06e2512c826f8b206afdea4f518",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/search-bag": {
+      "sha256": "a754b69ade5c5a8c1e41e22702f00ccc07c71b32f02e78b44f2f997d9528bdcb",
+      "width": 1672,
+      "height": 941
+    },
+    "gate-check": {
+      "sha256": "51283c0d5b48bd2583ae98765769bd5f27988c348275760f257c11b8d9cdd011",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/inventory": {
+      "sha256": "2dd26d1c5b9f144bb09df378570c537b37bcebdfdf18d5fb7983f80c7bb59e7b",
+      "width": 1672,
+      "height": 941
+    },
+    "marcus-gate": {
+      "sha256": "d1b97f6530d6d3582406820fd4f8f4fe8b3ddaa45502d83bf951e3385e103438",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/receipt": {
+      "sha256": "bdf7915b0d56a9d35b1a137f2b580469ffc117f4012a150a713acb943976b03c",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/stock-box-put": {
+      "sha256": "768e542d6cebc7345efbe655d8a43812ea1ca4e7bd40cb0abbd3ea8cab3565fb",
+      "width": 1672,
+      "height": 941
+    },
+    "stock-wait": {
+      "sha256": "12e8eb7a83a01d0689d6a0475e53eb19364d9daeda1f15dbd35fcba620b6c9a1",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/roof-signal": {
+      "sha256": "94f71b35e71abd317157c74929adb74f61b442deecb3eb4f1d8b98d9e5aac653",
+      "width": 1672,
+      "height": 941
+    },
+    "stock-radio": {
+      "sha256": "12fb13d3b871d147d87dada8060eeb50f1eb6d14c0c7fb52d95e502512e62d69",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/sleep-box": {
+      "sha256": "c9c87fb41ef36337f9aaf585752c9cde617255bfd7bcc11c620b9d2b9a169121",
+      "width": 1672,
+      "height": 941
+    },
+    "box-latch": {
+      "sha256": "3a286813d7af89b46b56babc112c5b4a9349b8d28b0fff8dcd68faa13c174f3f",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/chalk-bag": {
+      "sha256": "72214b8ff012b547c076c10634ac49a1fcdc47d86e6b62149e60f64c06135edc",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/chalk-no-bait": {
+      "sha256": "260c510e3a0acd798df81395779cccc43f5149a42fa37c708f6eb242423d0b74",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/sleep-boots": {
+      "sha256": "aaba2f81f598e38bd05005bc91f99d87e530ec72f9879517510b87ccea868dd0",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/chalk": {
+      "sha256": "7a7150f81cd34e4ed70339a4e09017312795653099dbdadcec99046c7db54d5c",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/prints": {
+      "sha256": "f7f0e5feecf4c0477757eb4b737eb778efafe2e6e5b9f00a471203f83e8b5397",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/split-print": {
+      "sha256": "0cefa4039ac72f19a43a560942bba686dca75c9773de4a41f06781bdb7e717f6",
+      "width": 1672,
+      "height": 941
+    },
+    "rack-look": {
+      "sha256": "82ab5bc8944ecbdf0a6e00c2ec6f683f89eab91ae9e383e3f588ee18e447668a",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/rack-print": {
+      "sha256": "651a7c31c182944b1f71397f58b6a33b9704c826ff7536e8c104f6ea0c68587c",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/pipe-mark": {
+      "sha256": "ba058d3de9fbe68847c9f9f052db7afa546d85ed5c89b4bd34e2501c9fc36813",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/tile-seam": {
+      "sha256": "3477cb5d1419020bd451b09dc75869690cf47c0d3c423f9bd99e9a7734c75e4b",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/tile-dust": {
+      "sha256": "5def8811cb49a5f5467af2fbd76687c08d01e2b7466e0adeb6e59d89283f48c9",
+      "width": 1672,
+      "height": 941
+    },
+    "rack-wait": {
+      "sha256": "fe5f3352871bcc4e493e84187ec28f3bbde5d82540c16cc8f33626c3d6e21304",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-tile": {
+      "sha256": "12cf85ec2554b9baad22a2ef3705311a3d66714409778fcfdb86fa15a636dab0",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-descend": {
+      "sha256": "3d5a78b141709070b03f2875ce3e7d92d7af2486cdaa133d9f1c8383bbefa0a9",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-food": {
+      "sha256": "1e2034067367f2a98fd727213856b81f4419284fd3b96449f8c8808ec096e1e6",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-wrist": {
+      "sha256": "cca017665ba3b79bcb85c2363c5b4717cdddf1c53d4d104fb8614db01f36df6c",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-bar-down": {
+      "sha256": "c9661b9d27bd8d428b7cca32f449c1375bab6cc9c7712244319fc8af3b718dbb",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-run": {
+      "sha256": "18fef4d80024a25700de0f935ed6d97be4698134a7aebc8c197e22bc01b68f9c",
+      "width": 1671,
+      "height": 941
+    },
+    "v10/theo-rack-escape": {
+      "sha256": "994d38d9aa6e9ad779923bfe5a4759f0e82aab398a4d3e300b20b3b43d313238",
+      "width": 1671,
+      "height": 941
+    },
+    "v10/theo-grab": {
+      "sha256": "40551c4b09b90d94d506d4c5f1d33b7cac66729dafd2a80fc439d4a992be2b03",
+      "width": 1671,
+      "height": 941
+    },
+    "theo-perch": {
+      "sha256": "fa0e207313826a71970f5bd215b57bcf178a9b66defd3626e77e26a382340385",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/gate-shadow": {
+      "sha256": "55d2d11d671f6696d45d0bcf5ed606bbdde7009610bf154bab448135abba4e44",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/danny-hands": {
+      "sha256": "26bf4e86c3c263e40c1a3d75b3603fbcf9ed6df4988678f907b757b418237fb3",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/conversation": {
+      "sha256": "9fc7002b487f301c4aa23587733a68fb4cf98b71e15fa685725cd8f02e8f9dc6",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-cinema": {
+      "sha256": "240cdfaff9df79fecd1998f61f9f469e8c802c3fb655ba835c723489391d35eb",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-shrug": {
+      "sha256": "367037eb7bcf50aae18c563c6b976c925a3b30f05aad22722ee6e4b6aba5c9b4",
+      "width": 1671,
+      "height": 941
+    },
+    "v10/theo-keys": {
+      "sha256": "4cac1840b258657f86d74e7ab63004527c329efc1666b1cb3c66ab5c89782463",
+      "width": 1672,
+      "height": 941
+    },
+    "theo-tape": {
+      "sha256": "d0221fb3b1abeb53ede7e5e695678076010e0633f9ea68b5400b1227db518c50",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/danny-embarrassed": {
+      "sha256": "3ce61a93d3ca605f12edf7dca6d005d0a71fc205feb7cd8acf1a3d9eed2e56a2",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/danny-food-choice": {
+      "sha256": "5da66cc03bcda5a86b549f7802435920785f759fbe22d4906e9e2c0e42fd689b",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/danny-gate-guilt": {
+      "sha256": "125a3dbee4c286620b879903302465d56f5a48440731ab4ef1945d47c3650b28",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-standing": {
+      "sha256": "30542961995d9f3cbe35e240fd1fd5e9cabaf6eee53a093733d3a24ac6274057",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/water-bottle": {
+      "sha256": "7a4119ffa7e3e11766083babc05c925ca782b1e363448f27ee8964f1f41cb931",
+      "width": 1672,
+      "height": 941
+    },
+    "v10/theo-water-reveal": {
+      "sha256": "7aa39cf7c0ccac877168e1aafd9f67a8b89777a49c0c3f4a21d701411952af0f",
+      "width": 1671,
+      "height": 941
+    }
+  },
+  "shotList": [
+    {
+      "start": 0,
+      "frames": 198,
+      "asset": "hook-boot",
+      "view": "wide",
+      "cue": "Danger: Danny's leg through the ceiling",
+      "index": 1,
+      "seconds": 6.6,
+      "transcript": "Right now my leg is hanging through the ceiling over a hundred dead people, and my best friend is walking right"
+    },
+    {
+      "start": 198,
+      "frames": 108,
+      "asset": "hook-grip",
+      "view": "wide",
+      "cue": "Theo grips Danny's wrist on his right",
+      "index": 2,
+      "seconds": 3.6,
+      "transcript": "right under it. Stop moving. I stop. Another corner"
+    },
+    {
+      "start": 306,
+      "frames": 102,
+      "asset": "hook-boot",
+      "view": "detail",
+      "cue": "Another corner breaks away",
+      "index": 3,
+      "seconds": 3.4,
+      "transcript": "corner breaks off anyway."
+    },
+    {
+      "start": 408,
+      "frames": 189,
+      "asset": "v10/roof-window",
+      "view": "wide",
+      "cue": "Radio woman asks about daughter's window",
+      "index": 4,
+      "seconds": 6.3,
+      "transcript": "The woman on the radio asked who was in my daughter's window, and I gave her nothing. I took my thumb"
+    },
+    {
+      "start": 597,
+      "frames": 201,
+      "asset": "roof-radio",
+      "view": "wide",
+      "cue": "Danny takes thumb off radio",
+      "index": 5,
+      "seconds": 6.7,
+      "transcript": "thumb off the button. For six years, answering that radio had been my job. A call came in, I said my name,"
+    },
+    {
+      "start": 798,
+      "frames": 192,
+      "asset": "v10/office-radio",
+      "view": "wide",
+      "cue": "Six years answering calls at work",
+      "index": 6,
+      "seconds": 6.4,
+      "transcript": "name, and whoever was on the other end knew somebody was coming. Now I had to remind myself that I could leave it alone. My phone was"
+    },
+    {
+      "start": 990,
+      "frames": 210,
+      "asset": "roof-phone",
+      "view": "wide",
+      "cue": "Phone in other hand, no service",
+      "index": 7,
+      "seconds": 7,
+      "transcript": "was in my other hand. No service. My mom's last message was still there, telling me the door was locked. I read it again while"
+    },
+    {
+      "start": 1200,
+      "frames": 210,
+      "asset": "v10/roof-hesitate",
+      "view": "wide",
+      "cue": "Mom's locked-door message; fear of saying too much",
+      "index": 8,
+      "seconds": 7,
+      "transcript": "while the woman waited. I wanted somebody to talk to badly enough that I was afraid of what I might say. Across the highway,"
+    },
+    {
+      "start": 1410,
+      "frames": 195,
+      "asset": "v10/roof-window",
+      "view": "detail",
+      "cue": "Lily's window dark after goodnight",
+      "index": 9,
+      "seconds": 6.5,
+      "transcript": "the tenth-floor window stayed dark. Lily had already blinked three times. I'd answered."
+    },
+    {
+      "start": 1605,
+      "frames": 210,
+      "asset": "v10/roof-lower-radio",
+      "view": "wide",
+      "cue": "Unseen woman waits on radio",
+      "index": 10,
+      "seconds": 7,
+      "transcript": "Our goodnight was over. The woman waited long enough that I could hear her breathing through the little speaker."
+    },
+    {
+      "start": 1815,
+      "frames": 199,
+      "asset": "roof-radio",
+      "view": "detail",
+      "cue": "Danny lowers volume and listens",
+      "index": 11,
+      "seconds": 6.633333333333334,
+      "transcript": "Danny? I turned the volume down and held the radio against my ear. You still there?"
+    },
+    {
+      "start": 2014,
+      "frames": 212,
+      "asset": "v10/roof-door",
+      "view": "wide",
+      "cue": "A faint light behind the department store rooftop door",
+      "index": 12,
+      "seconds": 7.066666666666666,
+      "transcript": "I could see a faint light moving behind the department store's rooftop door. When I looked again, it was gone."
+    },
+    {
+      "start": 2226,
+      "frames": 236,
+      "asset": "v10/roof-lower-radio",
+      "view": "detail",
+      "cue": "How did you get inside?",
+      "index": 13,
+      "seconds": 7.866666666666666,
+      "transcript": "I pressed the button. How did you get inside? A little laugh. That's a fairly rude first question. You asked me one."
+    },
+    {
+      "start": 2462,
+      "frames": 146,
+      "asset": "v10/roof-hesitate",
+      "view": "detail",
+      "cue": "Vera gives her name; Danny waits",
+      "index": 14,
+      "seconds": 4.866666666666666,
+      "transcript": "Fair enough. Vera. There. Now you have a name. I waited."
+    },
+    {
+      "start": 2608,
+      "frames": 282,
+      "asset": "v10/fitting-closed",
+      "view": "wide",
+      "cue": "Her story: asleep trying on a coat; Vera remains unseen",
+      "index": 15,
+      "seconds": 9.4,
+      "transcript": "I was trying on a coat. Department store. Second floor. Sat down in the fitting room and fell asleep. By the time I woke up, they'd locked the place."
+    },
+    {
+      "start": 2890,
+      "frames": 255,
+      "asset": "v10/patrol-corridor",
+      "view": "wide",
+      "cue": "Danny recalls checking silent staff corridor",
+      "index": 16,
+      "seconds": 8.5,
+      "transcript": "The store had closed at nine. At midnight, I'd checked the staff corridor behind those fitting rooms. I'd heard nothing."
+    },
+    {
+      "start": 3145,
+      "frames": 141,
+      "asset": "v10/roof-lower-radio",
+      "view": "danny",
+      "cue": "Danny asks which coat",
+      "index": 17,
+      "seconds": 4.7,
+      "transcript": "What coat? I asked. What? The one you were trying on."
+    },
+    {
+      "start": 3286,
+      "frames": 133,
+      "asset": "v10/mall-crowd",
+      "view": "wide",
+      "cue": "Vera mentions people eating people downstairs",
+      "index": 18,
+      "seconds": 4.433333333333334,
+      "transcript": "Danny, there are people eating people downstairs."
+    },
+    {
+      "start": 3419,
+      "frames": 243,
+      "asset": "roof-radio",
+      "view": "danny",
+      "cue": "Her tone changes",
+      "index": 19,
+      "seconds": 8.1,
+      "transcript": "I think we've moved beyond the returns policy. She sounded almost amused. Then her voice changed a little."
+    },
+    {
+      "start": 3662,
+      "frames": 151,
+      "asset": "v10/roof-hesitate",
+      "view": "danny",
+      "cue": "Vera claims a hungry girl is with her",
+      "index": 20,
+      "seconds": 5.033333333333333,
+      "transcript": "There's a girl up here with me. She's hungry. Have you got anything we could eat?"
+    },
+    {
+      "start": 3813,
+      "frames": 137,
+      "asset": "v10/roof-window",
+      "view": "wide",
+      "cue": "Danny looks toward Lily's window",
+      "index": 21,
+      "seconds": 4.566666666666666,
+      "transcript": "I looked at Lily's window again. Kept my thumb away from the button while I did it."
+    },
+    {
+      "start": 3950,
+      "frames": 157,
+      "asset": "roof-phone",
+      "view": "detail",
+      "cue": "Keeps thumb away from radio button; how old?",
+      "index": 22,
+      "seconds": 5.233333333333333,
+      "transcript": "How old? Little. Six, perhaps. Seven. It's hard to get much out of her."
+    },
+    {
+      "start": 4107,
+      "frames": 156,
+      "asset": "v10/roof-silhouette",
+      "view": "wide",
+      "cue": "He stands on the roof, hand numb",
+      "index": 23,
+      "seconds": 5.2,
+      "transcript": "I stood on that roof until my hand went numb around the radio. Vera never asked about the window"
+    },
+    {
+      "start": 4263,
+      "frames": 149,
+      "asset": "v10/roof-silhouette",
+      "view": "detail",
+      "cue": "A question he cannot walk away from",
+      "index": 24,
+      "seconds": 4.966666666666667,
+      "transcript": "window again that night. She'd found another question I couldn't walk away from."
+    },
+    {
+      "start": 4412,
+      "frames": 140,
+      "asset": "sleep",
+      "view": "wide",
+      "cue": "Somebody ate breakfast in a locked store",
+      "index": 25,
+      "seconds": 4.666666666666667,
+      "transcript": "Somebody ate my breakfast while I slept inside a locked store."
+    },
+    {
+      "start": 4552,
+      "frames": 268,
+      "asset": "v10/two-bars",
+      "view": "wide",
+      "cue": "Two bars beside the tent, one for later",
+      "index": 26,
+      "seconds": 8.933333333333334,
+      "transcript": "I'd put two protein bars beside the tent. One for when I woke up, one for later, because apparently I needed a system for deciding when to eat cardboard."
+    },
+    {
+      "start": 4820,
+      "frames": 37,
+      "asset": "v10/one-bar",
+      "view": "detail",
+      "cue": "There was one left",
+      "index": 27,
+      "seconds": 1.2333333333333334,
+      "transcript": "There was one left."
+    },
+    {
+      "start": 4857,
+      "frames": 175,
+      "asset": "v10/search-bag",
+      "view": "wide",
+      "cue": "Checks bag, tent and both boots",
+      "index": 28,
+      "seconds": 5.833333333333333,
+      "transcript": "I checked the sleeping bag. Turned it inside out. Looked under the tent and inside both boots."
+    },
+    {
+      "start": 5032,
+      "frames": 144,
+      "asset": "gate-check",
+      "view": "wide",
+      "cue": "Padlock closed, key stays on belt",
+      "index": 29,
+      "seconds": 4.8,
+      "transcript": "At the gate, the padlock was closed. Key thirty-one was still on my belt."
+    },
+    {
+      "start": 5176,
+      "frames": 166,
+      "asset": "v10/inventory",
+      "view": "wide",
+      "cue": "Counts water twice; missing bottle",
+      "index": 30,
+      "seconds": 5.533333333333333,
+      "transcript": "I counted the water twice. A bottle was missing too. I could explain losing a protein bar."
+    },
+    {
+      "start": 5342,
+      "frames": 186,
+      "asset": "marcus-gate",
+      "view": "wide",
+      "cue": "Dead friend walking past",
+      "index": 31,
+      "seconds": 6.2,
+      "transcript": "I'd spent the night listening to my dead friend walk past, and my brain was doing its best to forget the whole thing."
+    },
+    {
+      "start": 5528,
+      "frames": 243,
+      "asset": "v10/inventory",
+      "view": "detail",
+      "cue": "Lines up bars, cans and water",
+      "index": 32,
+      "seconds": 8.1,
+      "transcript": "A bottle was harder. I lined everything up along the back wall. Bars in one row, cans in another, water underneath."
+    },
+    {
+      "start": 5771,
+      "frames": 200,
+      "asset": "v10/receipt",
+      "view": "wide",
+      "cue": "Writes inventory on a receipt",
+      "index": 33,
+      "seconds": 6.666666666666667,
+      "transcript": "Wrote the numbers on a receipt with the little pencil I used for my shift log. I hadn't written anything in that log since the first night."
+    },
+    {
+      "start": 5971,
+      "frames": 177,
+      "asset": "v10/receipt",
+      "view": "detail",
+      "cue": "Tries to remember last normal log entry",
+      "index": 34,
+      "seconds": 5.9,
+      "transcript": "For a while I sat there trying to remember the last normal entry."
+    },
+    {
+      "start": 6148,
+      "frames": 216,
+      "asset": "v10/office-radio",
+      "view": "detail",
+      "cue": "Ordinary shift log and ordinary annoyances",
+      "index": 35,
+      "seconds": 7.2,
+      "transcript": "A door propped open. A car parked across two spaces. Something I'd been annoyed about."
+    },
+    {
+      "start": 6364,
+      "frames": 159,
+      "asset": "marcus-gate",
+      "view": "detail",
+      "cue": "Two pulls on gate outside",
+      "index": 36,
+      "seconds": 5.3,
+      "transcript": "Then I heard two pulls on a gate outside, and I remembered I was supposed to be counting water."
+    },
+    {
+      "start": 6523,
+      "frames": 177,
+      "asset": "v10/stock-box-put",
+      "view": "wide",
+      "cue": "Puts remaining bars inside plastic storage box",
+      "index": 37,
+      "seconds": 5.9,
+      "transcript": "I carried the remaining bars into the stockroom and put them in a plastic storage box."
+    },
+    {
+      "start": 6700,
+      "frames": 97,
+      "asset": "stock-wait",
+      "view": "wide",
+      "cue": "Sits beside box until neck hurts",
+      "index": 38,
+      "seconds": 3.2333333333333334,
+      "transcript": "Then I sat beside it until my neck hurt. Nothing happened."
+    },
+    {
+      "start": 6797,
+      "frames": 234,
+      "asset": "v10/roof-signal",
+      "view": "wide",
+      "cue": "Three blinks each, body shields light from department store",
+      "index": 39,
+      "seconds": 7.8,
+      "transcript": "At nine, I went to the roof. Three blinks from Lily. Three back from me. I kept my body between the flashlight and the department store."
+    },
+    {
+      "start": 7031,
+      "frames": 237,
+      "asset": "stock-radio",
+      "view": "wide",
+      "cue": "Vera calls as he comes downstairs",
+      "index": 40,
+      "seconds": 7.9,
+      "transcript": "Vera called as soon as I came downstairs. Any luck with supper? I haven't agreed to anything. You sound tired."
+    },
+    {
+      "start": 7268,
+      "frames": 247,
+      "asset": "stock-wait",
+      "view": "detail",
+      "cue": "Tired; watches box another hour",
+      "index": 41,
+      "seconds": 8.233333333333333,
+      "transcript": "I am tired. Get some rest. We can talk tomorrow. I stared at the storage box for another hour."
+    },
+    {
+      "start": 7515,
+      "frames": 169,
+      "asset": "v10/sleep-box",
+      "view": "wide",
+      "cue": "Sleeps with box beside his head; wakes",
+      "index": 42,
+      "seconds": 5.633333333333334,
+      "transcript": "When I finally slept, I put it beside my head. When I woke again, the lid was back on."
+    },
+    {
+      "start": 7684,
+      "frames": 166,
+      "asset": "box-latch",
+      "view": "detail",
+      "cue": "Catch not clicked shut; two bars gone",
+      "index": 43,
+      "seconds": 5.533333333333333,
+      "transcript": "One of the catches hadn't quite clicked shut. Two more bars were gone."
+    },
+    {
+      "start": 7850,
+      "frames": 134,
+      "asset": "v10/sleep-box",
+      "view": "detail",
+      "cue": "Someone had stood close enough to watch him sleep",
+      "index": 44,
+      "seconds": 4.466666666666667,
+      "transcript": "Whoever was doing this had stood close enough to watch me sleep."
+    },
+    {
+      "start": 7984,
+      "frames": 105,
+      "asset": "v10/chalk-bag",
+      "view": "wide",
+      "cue": "White bag of climbing chalk",
+      "index": 45,
+      "seconds": 3.5,
+      "transcript": "The chalk came in a little white bag from the climbing display."
+    },
+    {
+      "start": 8089,
+      "frames": 196,
+      "asset": "v10/chalk-no-bait",
+      "view": "wide",
+      "cue": "Spreads chalk before placing bait",
+      "index": 46,
+      "seconds": 6.533333333333333,
+      "transcript": "I spread it around the food box, under the stockroom door, and across the narrow space between the tents."
+    },
+    {
+      "start": 8285,
+      "frames": 103,
+      "asset": "v10/sleep-boots",
+      "view": "wide",
+      "cue": "Goes back to bed with boots on",
+      "index": 47,
+      "seconds": 3.433333333333333,
+      "transcript": "Then I went back to bed with my boots on."
+    },
+    {
+      "start": 8388,
+      "frames": 222,
+      "asset": "stock-wait",
+      "view": "danny",
+      "cue": "Waiting for someone to step in powder",
+      "index": 48,
+      "seconds": 7.4,
+      "transcript": "That was my entire investigation. Six years in security, and I was waiting for somebody to step in powder."
+    },
+    {
+      "start": 8610,
+      "frames": 235,
+      "asset": "v10/chalk",
+      "view": "wide",
+      "cue": "Fresh bar on top; rest inside box",
+      "index": 49,
+      "seconds": 7.833333333333333,
+      "transcript": "I left a fresh bar on top of the box. The rest went inside it. I felt ridiculous setting bait with a breakfast I couldn't afford to lose."
+    },
+    {
+      "start": 8845,
+      "frames": 174,
+      "asset": "gate-check",
+      "view": "detail",
+      "cue": "Gate is only way in he understands",
+      "index": 50,
+      "seconds": 5.8,
+      "transcript": "But the gate was the only way in that I understood. Whoever had found another way could bring somebody else through it."
+    },
+    {
+      "start": 9019,
+      "frames": 169,
+      "asset": "v10/sleep-boots",
+      "view": "detail",
+      "cue": "Faces gap between tents",
+      "index": 51,
+      "seconds": 5.633333333333334,
+      "transcript": "I lay facing the gap between the tents. If anybody came through there, this time I'd see them."
+    },
+    {
+      "start": 9188,
+      "frames": 92,
+      "asset": "box-latch",
+      "view": "wide",
+      "cue": "Hears plastic bend before morning",
+      "index": 52,
+      "seconds": 3.066666666666667,
+      "transcript": "Sometime before morning, I heard plastic bend."
+    },
+    {
+      "start": 9280,
+      "frames": 123,
+      "asset": "v10/search-bag",
+      "view": "detail",
+      "cue": "Gets out of sleeping bag; silence",
+      "index": 53,
+      "seconds": 4.1,
+      "transcript": "By the time I'd got out of the sleeping bag, the store was still again."
+    },
+    {
+      "start": 9403,
+      "frames": 132,
+      "asset": "v10/prints",
+      "view": "wide",
+      "cue": "Flashlight close to floor, lights off",
+      "index": 54,
+      "seconds": 4.4,
+      "transcript": "I left the overhead lights off and used my flashlight close to the floor."
+    },
+    {
+      "start": 9535,
+      "frames": 249,
+      "asset": "v10/split-print",
+      "view": "wide",
+      "cue": "Small trainer; square gap under worn right heel",
+      "index": 55,
+      "seconds": 8.3,
+      "transcript": "Small trainers. A worn patch under the right heel. The print had a little square of clear floor in the middle where the sole was split."
+    },
+    {
+      "start": 9784,
+      "frames": 205,
+      "asset": "v10/prints",
+      "view": "detail",
+      "cue": "Trail goes to food box and back",
+      "index": 56,
+      "seconds": 6.833333333333333,
+      "transcript": "The trail came from behind the climbing wall display. It went to the food box. Then it went back."
+    },
+    {
+      "start": 9989,
+      "frames": 167,
+      "asset": "rack-look",
+      "view": "wide",
+      "cue": "Moves display, finds rack bolted to wall",
+      "index": 57,
+      "seconds": 5.566666666666666,
+      "transcript": "I moved the display a few inches. Behind it was a tall storage rack bolted to the wall."
+    },
+    {
+      "start": 10156,
+      "frames": 164,
+      "asset": "v10/rack-print",
+      "view": "wide",
+      "cue": "Shoeprint on shelf and painted wall",
+      "index": 58,
+      "seconds": 5.466666666666667,
+      "transcript": "A shoeprint showed on the bottom shelf. Another was pressed against the painted wall halfway up."
+    },
+    {
+      "start": 10320,
+      "frames": 209,
+      "asset": "v10/pipe-mark",
+      "view": "wide",
+      "cue": "Hand wiped across dusty pipe",
+      "index": 59,
+      "seconds": 6.966666666666667,
+      "transcript": "Higher still, somebody had wiped a hand across a dusty pipe. I followed the pipe with the light."
+    },
+    {
+      "start": 10529,
+      "frames": 185,
+      "asset": "v10/tile-seam",
+      "view": "wide",
+      "cue": "Cleaner edges of one tile; looks up",
+      "index": 60,
+      "seconds": 6.166666666666667,
+      "transcript": "One ceiling tile was cleaner around the edges than all the others. I stood there with my mouth open."
+    },
+    {
+      "start": 10714,
+      "frames": 202,
+      "asset": "gate-check",
+      "view": "danny",
+      "cue": "Every door locked, every window intact",
+      "index": 61,
+      "seconds": 6.733333333333333,
+      "transcript": "Every door was locked. Every window was intact. I'd checked the gates so often that morning my hand hurt."
+    },
+    {
+      "start": 10916,
+      "frames": 66,
+      "asset": "v10/tile-seam",
+      "view": "detail",
+      "cue": "He had not looked up",
+      "index": 62,
+      "seconds": 2.2,
+      "transcript": "I hadn't looked up once."
+    },
+    {
+      "start": 10982,
+      "frames": 115,
+      "asset": "v10/tile-dust",
+      "view": "wide",
+      "cue": "Small white flake falls from seam",
+      "index": 63,
+      "seconds": 3.8333333333333335,
+      "transcript": "A little white flake dropped out of the seam above me."
+    },
+    {
+      "start": 11097,
+      "frames": 186,
+      "asset": "rack-wait",
+      "view": "wide",
+      "cue": "Flashlight off; someone still up there",
+      "index": 64,
+      "seconds": 6.2,
+      "transcript": "I switched the flashlight off. Whoever was up there had seen the light. And they were still there."
+    },
+    {
+      "start": 11283,
+      "frames": 162,
+      "asset": "rack-wait",
+      "view": "detail",
+      "cue": "Waits behind display; knee stiff",
+      "index": 65,
+      "seconds": 5.4,
+      "transcript": "I waited behind the display until my bad knee went stiff. It was barely six in the morning."
+    },
+    {
+      "start": 11445,
+      "frames": 90,
+      "asset": "marcus-gate",
+      "view": "danny",
+      "cue": "Marcus rattles gate then moves on",
+      "index": 66,
+      "seconds": 3,
+      "transcript": "Outside, Marcus rattled the gate and moved on."
+    },
+    {
+      "start": 11535,
+      "frames": 235,
+      "asset": "v10/theo-tile",
+      "view": "wide",
+      "cue": "Tile lifts; fingers, head, boy lowering onto shelf",
+      "index": 67,
+      "seconds": 7.833333333333333,
+      "transcript": "The tile lifted. Two fingers appeared, then a head, then a very skinny boy lowering himself onto the top shelf."
+    },
+    {
+      "start": 11770,
+      "frames": 224,
+      "asset": "v10/theo-descend",
+      "view": "wide",
+      "cue": "Theo carefully steps around squeaking shelf",
+      "index": 68,
+      "seconds": 7.466666666666667,
+      "transcript": "He moved carefully. He knew which bit of the rack squeaked. He stepped around it before his foot even touched down."
+    },
+    {
+      "start": 11994,
+      "frames": 281,
+      "asset": "v10/theo-food",
+      "view": "wide",
+      "cue": "Reaches box; Danny stands; bar in Theo's hand",
+      "index": 69,
+      "seconds": 9.366666666666667,
+      "transcript": "When he reached the floor, he went straight to the box. I waited until he bent over it. Then I stood up. We looked at each other. He had a protein bar already in his hand."
+    },
+    {
+      "start": 12275,
+      "frames": 157,
+      "asset": "v10/theo-wrist",
+      "view": "wide",
+      "cue": "Oversized green collar and dusty boy",
+      "index": 70,
+      "seconds": 5.233333333333333,
+      "transcript": "The sweatshirt hung past his fingers. There was a pale clean line around one"
+    },
+    {
+      "start": 12432,
+      "frames": 156,
+      "asset": "v10/theo-wrist",
+      "view": "detail",
+      "cue": "Pale clean line around his wrist",
+      "index": 71,
+      "seconds": 5.2,
+      "transcript": "one wrist where he'd pushed a sleeve up. Everything else about him looked as dusty as the pipe."
+    },
+    {
+      "start": 12588,
+      "frames": 176,
+      "asset": "v10/theo-food",
+      "view": "detail",
+      "cue": "Danny expected a grown man",
+      "index": 72,
+      "seconds": 5.866666666666666,
+      "transcript": "I'd practised this conversation in my head while I waited. It had involved a grown man explaining himself."
+    },
+    {
+      "start": 12764,
+      "frames": 137,
+      "asset": "v10/theo-wrist",
+      "view": "theo",
+      "cue": "Boy hungry enough to eat wrapper",
+      "index": 73,
+      "seconds": 4.566666666666666,
+      "transcript": "I hadn't practised what to do if the thief looked hungry enough to eat the wrapper."
+    },
+    {
+      "start": 12901,
+      "frames": 50,
+      "asset": "v10/theo-food",
+      "view": "danny",
+      "cue": "Put it down",
+      "index": 74,
+      "seconds": 1.6666666666666667,
+      "transcript": "Put it down, I said."
+    },
+    {
+      "start": 12951,
+      "frames": 27,
+      "asset": "v10/theo-bar-down",
+      "view": "wide",
+      "cue": "Theo places the bar down",
+      "index": 75,
+      "seconds": 0.9,
+      "transcript": "He put it down."
+    },
+    {
+      "start": 12978,
+      "frames": 238,
+      "asset": "v10/theo-run",
+      "view": "wide",
+      "cue": "Theo runs past Danny; Danny moves aside",
+      "index": 76,
+      "seconds": 7.933333333333334,
+      "transcript": "Then he ran straight at me. I moved aside because, for a second, that's what my body thought you did when a kid ran at you."
+    },
+    {
+      "start": 13216,
+      "frames": 135,
+      "asset": "v10/theo-rack-escape",
+      "view": "wide",
+      "cue": "Two steps up rack, almost at pipe",
+      "index": 77,
+      "seconds": 4.5,
+      "transcript": "He got past, took two steps up the rack, and nearly reached the pipe."
+    },
+    {
+      "start": 13351,
+      "frames": 257,
+      "asset": "v10/theo-grab",
+      "view": "wide",
+      "cue": "Danny catches back of hoodie, stitching tears",
+      "index": 78,
+      "seconds": 8.566666666666666,
+      "transcript": "I caught the back of his sweatshirt. He twisted so hard the stitching tore. Let go. Stop kicking. Let go."
+    },
+    {
+      "start": 13608,
+      "frames": 250,
+      "asset": "theo-perch",
+      "view": "wide",
+      "cue": "Danny lets go; Theo second shelf, one hand on pipe",
+      "index": 79,
+      "seconds": 8.333333333333334,
+      "transcript": "I did. He stayed on the second shelf, one hand on the pipe, watching my hands. The loose shelf knocked against the wall."
+    },
+    {
+      "start": 13858,
+      "frames": 258,
+      "asset": "v10/gate-shadow",
+      "view": "wide",
+      "cue": "Both freeze; shadow pauses then passes closed gate",
+      "index": 80,
+      "seconds": 8.6,
+      "transcript": "Somewhere outside, a shoe dragged across the floor. We both stopped breathing. A shadow passed the gate. Paused. Moved on."
+    },
+    {
+      "start": 14116,
+      "frames": 173,
+      "asset": "theo-perch",
+      "view": "detail",
+      "cue": "Boy looks hallway then Danny; don't do that again",
+      "index": 81,
+      "seconds": 5.766666666666667,
+      "transcript": "The boy looked toward the hallway, then back at me. Don't do that again, he whispered."
+    },
+    {
+      "start": 14289,
+      "frames": 227,
+      "asset": "v10/danny-hands",
+      "view": "wide",
+      "cue": "Danny keeps hands visible; asks his age",
+      "index": 82,
+      "seconds": 7.566666666666666,
+      "transcript": "I wanted to tell him I was the adult and this was my store and he was stealing my food. Instead I asked how old he was."
+    },
+    {
+      "start": 14516,
+      "frames": 288,
+      "asset": "theo-perch",
+      "view": "theo",
+      "cue": "Fifteen, Theo, alone up there",
+      "index": 83,
+      "seconds": 9.6,
+      "transcript": "Fifteen. Your name? Theo. Who else is up there? He tightened his grip on the pipe. Nobody. That's why I stay up there."
+    },
+    {
+      "start": 14804,
+      "frames": 178,
+      "asset": "v10/conversation",
+      "view": "wide",
+      "cue": "Theo sits on overturned bucket by rack",
+      "index": 84,
+      "seconds": 5.933333333333334,
+      "transcript": "I let him sit on an overturned camping bucket. He kept the rack within reach. Where do you sleep?"
+    },
+    {
+      "start": 14982,
+      "frames": 192,
+      "asset": "v10/theo-cinema",
+      "view": "wide",
+      "cue": "His sleeping space beside projection room",
+      "index": 85,
+      "seconds": 6.4,
+      "transcript": "Above the cinema. In the ceiling? There's a space beside the projection room."
+    },
+    {
+      "start": 15174,
+      "frames": 284,
+      "asset": "v10/theo-shrug",
+      "view": "wide",
+      "cue": "Four months; small shrug; discarded food",
+      "index": 86,
+      "seconds": 9.466666666666667,
+      "transcript": "For four months? He shrugged. A tiny movement. Like he was trying to make four months smaller. How did you eat? People throw stuff out."
+    },
+    {
+      "start": 15458,
+      "frames": 190,
+      "asset": "v10/conversation",
+      "view": "theo",
+      "cue": "Goes around doors; Danny looks up at tile",
+      "index": 87,
+      "seconds": 6.333333333333333,
+      "transcript": "And the doors? I go round them. I looked up at the tile again. He pointed toward my belt."
+    },
+    {
+      "start": 15648,
+      "frames": 231,
+      "asset": "v10/theo-keys",
+      "view": "wide",
+      "cue": "Theo points at Danny's belt; he checks doors twice",
+      "index": 88,
+      "seconds": 7.7,
+      "transcript": "You like checking those. The keys? The doors. You do the same ones twice when you're on the phone."
+    },
+    {
+      "start": 15879,
+      "frames": 246,
+      "asset": "v10/office-radio",
+      "view": "danny",
+      "cue": "Danny remembers working rounds and signing log",
+      "index": 89,
+      "seconds": 8.2,
+      "transcript": "I thought about all the nights I'd walked this building, tugged handles, signed the log, and told myself everybody was safe."
+    },
+    {
+      "start": 16125,
+      "frames": 126,
+      "asset": "theo-tape",
+      "view": "detail",
+      "cue": "Theo peels tape from trainer and presses it back",
+      "index": 90,
+      "seconds": 4.2,
+      "transcript": "Theo peeled a strip of tape away from his trainer. Pressed it back down."
+    },
+    {
+      "start": 16251,
+      "frames": 234,
+      "asset": "v10/theo-shrug",
+      "view": "theo",
+      "cue": "He heard Danny singing in freight elevator",
+      "index": 91,
+      "seconds": 7.8,
+      "transcript": "You sing in the freight elevator, he said. I looked at him. Usually the same song. You only know some of it."
+    },
+    {
+      "start": 16485,
+      "frames": 187,
+      "asset": "v10/danny-embarrassed",
+      "view": "wide",
+      "cue": "Danny looks at him; embarrassed",
+      "index": 92,
+      "seconds": 6.233333333333333,
+      "transcript": "My face got hot. Even then. Even with everything outside, that still worked. You can't stay"
+    },
+    {
+      "start": 16672,
+      "frames": 196,
+      "asset": "v10/danny-food-choice",
+      "view": "wide",
+      "cue": "You can't stay here; words before decision",
+      "index": 93,
+      "seconds": 6.533333333333333,
+      "transcript": "stay here, I said. The words came out before I'd decided what I meant by them."
+    },
+    {
+      "start": 16868,
+      "frames": 221,
+      "asset": "v10/danny-gate-guilt",
+      "view": "wide",
+      "cue": "Thoughts of scarce food and Marcus outside gate",
+      "index": 94,
+      "seconds": 7.366666666666666,
+      "transcript": "There were two sentences in my head. One was about food. The other was about the man who'd sat outside my gate and trusted me to know what to do."
+    },
+    {
+      "start": 17089,
+      "frames": 85,
+      "asset": "v10/danny-gate-guilt",
+      "view": "detail",
+      "cue": "He can hardly look at gate in daylight",
+      "index": 95,
+      "seconds": 2.8333333333333335,
+      "transcript": "I could hardly look at that gate in daylight."
+    },
+    {
+      "start": 17174,
+      "frames": 196,
+      "asset": "v10/conversation",
+      "view": "danny",
+      "cue": "Kid six feet from gate waits for adult to be in charge",
+      "index": 96,
+      "seconds": 6.533333333333333,
+      "transcript": "Now this kid was sitting six feet from it, waiting for me to be in charge. I wanted somebody qualified."
+    },
+    {
+      "start": 17370,
+      "frames": 218,
+      "asset": "v10/danny-food-choice",
+      "view": "detail",
+      "cue": "Only adult available",
+      "index": 97,
+      "seconds": 7.266666666666667,
+      "transcript": "A firefighter. His dad. Any adult who'd know how to keep him alive. He was looking at the only one available."
+    },
+    {
+      "start": 17588,
+      "frames": 162,
+      "asset": "v10/theo-standing",
+      "view": "wide",
+      "cue": "Theo stands without arguing or taking anything",
+      "index": 98,
+      "seconds": 5.4,
+      "transcript": "Theo stood immediately. He didn't argue. Picked up nothing, because he'd brought nothing."
+    },
+    {
+      "start": 17750,
+      "frames": 114,
+      "asset": "v10/gate-shadow",
+      "view": "gate",
+      "cue": "Marcus heard at another gate",
+      "index": 99,
+      "seconds": 3.8,
+      "transcript": "I heard Marcus at another gate down the hall. Theo heard him too."
+    },
+    {
+      "start": 17864,
+      "frames": 88,
+      "asset": "v10/theo-standing",
+      "view": "detail",
+      "cue": "Wait; Theo waits standing beside rack",
+      "index": 100,
+      "seconds": 2.933333333333333,
+      "transcript": "Wait, I said. He waited beside the rack."
+    },
+    {
+      "start": 17952,
+      "frames": 209,
+      "asset": "v10/water-bottle",
+      "view": "wide",
+      "cue": "Danny reaches for drinking bottle and stops; Theo counts",
+      "index": 101,
+      "seconds": 6.966666666666667,
+      "transcript": "I reached for a bottle, then stopped with my hand on it. Theo watched me count the ones left. How long have you got? he asked."
+    },
+    {
+      "start": 18161,
+      "frames": 168,
+      "asset": "v10/water-bottle",
+      "view": "detail",
+      "cue": "About ten days, calculated for one person",
+      "index": 102,
+      "seconds": 5.6,
+      "transcript": "asked. About ten days. Maybe. I was working it out for one person. He looked toward the front of the mall."
+    },
+    {
+      "start": 18329,
+      "frames": 107,
+      "asset": "v10/theo-water-reveal",
+      "view": "wide",
+      "cue": "Theo: I know where there's eight thousand gallons",
+      "index": 103,
+      "seconds": 3.566666666666667,
+      "transcript": "I know where there's eight thousand gallons."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "tool": "built-in image_gen",
+  "corrections": [
+    {
+      "name": "fitting-closed",
+      "prompt": "Remove both people; empty department-store insert before Theo discovery."
+    },
+    {
+      "name": "stock-box-put",
+      "prompt": "Remove the shorter green-collar boy entirely from the RIGHT side. There must be EXACTLY ONE PERSON in this frame: Danny the security guard on the left putting bars inside the plastic box. Paint the empty floor and shelves behind the removed boy. Preserve Danny's action, all props, box, lighting, textures and perspective unchanged. This scene happens BEFORE Danny meets the boy, who must not be present."
+    },
+    {
+      "name": "roof-silhouette",
+      "prompt": "Change ONLY the single bright yellow apartment window in the distant tower to a completely DARK blue-black unlit window matching all neighboring windows. All apartment windows must be dark; goodnight signaling has already ended. Preserve Danny, pose, radio, building, sky, perspective, rooftop, all other lighting, texture and composition exactly."
+    },
+    {
+      "name": "pipe-mark",
+      "prompt": "Correct the clue in this painted scene: ADD a round CYLINDRICAL steel utility PIPE running horizontally just ABOVE the top of the rack, attached to the wall with round brackets and an elbow fitting. It is visibly a round tube, separate from rectangular shelf beams. Put a clean hand-shaped swipe in gray dust on that ROUND PIPE. REMOVE the existing hand mark from the flat shelf beam. Redirect flashlight upward toward pipe. Preserve Danny on left, all painting style, head, cap, keys, gear and lighting. Only Danny visible; no other people."
+    },
+    {
+      "name": "theo-tile",
+      "prompt": "Remove the stray black mitten hand and dangling long black arm attached to the lower pipe at the RIGHT MIDDLE of this image, BELOW the boy's feet. This is an accidental extra limb; paint unobstructed metal pipe, camping bag and shelves where it was. KEEP the boy ABOVE with his two hands gripping the ceiling opening and exactly two legs on top shelf, and keep hidden Danny on left. No extra limbs anywhere. Preserve all other art, framing, lighting and textures exactly."
+    },
+    {
+      "name": "theo-food",
+      "prompt": "Edit this existing scene. Change ONLY the OPEN blue portal in the center background to a fully CLOSED metal security grille reaching the floor, with closely spaced horizontal steel bars and visible closed padlock at the lower edge. The gate must be closed because Danny is locked inside the store. Keep BOTH characters, their pose, proportions, heads, clothing, props, food, floor, tents and all other artwork unchanged. Preserve the illustrated lighting, texture and perspective. Do not add people or objects."
+    },
+    {
+      "name": "conversation",
+      "prompt": "Edit this existing scene. Change ONLY the OPEN blue portal in the center background to a fully CLOSED metal security grille reaching the floor, with closely spaced horizontal steel bars and visible closed padlock at the lower edge. The gate must be closed because Danny is locked inside the store. Keep BOTH characters, their pose, proportions, heads, clothing, props, food, floor, tents and all other artwork unchanged. Preserve the illustrated lighting, texture and perspective. Do not add people or objects."
+    },
+    {
+      "name": "theo-wrist",
+      "prompt": "Correct this Theo portrait for a scene BEFORE he puts the stolen bar down. Recompose as a tight chest-up portrait of Theo STANDING ON THE FLOOR at the right beside the food box, not sitting on a shelf; lower legs can be outside frame. He holds ONE protein bar still COMPLETELY SEALED in its wrapper below his face; NO exposed food, no bite, he is not eating. Keep narrow pale clean line at right wrist, black mitten hands, green hood collar, very thin black stick arms/body. Danny's cap and face edge only at far left. Painted closed gate and rack in blue shadows behind. Preserve the reference's softly shaded heads, two oval eyes, and rich hand-painted materials. Exactly two arms and two hands for Theo."
+    },
+    {
+      "name": "theo-cinema",
+      "prompt": "Change ONLY Theo's torso: remove the filled gray-green sweatshirt body area BELOW the hood collar and replace it with a very thin single BLACK STICK LINE for the torso, with the painted background visible on both sides. Keep green fabric ONLY as the small folded collar around his neck, like the approved simple stick-figure character. Keep arms and legs slender black lines, pale shaded head, two oval eyes and mitten hands unchanged. Preserve pose, blanket, exactly three bottles, cinema projector, room, lighting, texture and composition. No other characters."
+    },
+    {
+      "name": "danny-hands",
+      "prompt": "Use case: illustration-story. Asset type: single complete cinematic 16:9 production frame for The Night Guard Chapter Two. Input image 1 is the USER-APPROVED STYLE AND CHARACTER reference; preserve that level of painted detail, same soft shaded pale round heads, two black oval eyes, very thin black single-line torso/limbs, black mitten hands, subtly irregular ink edges, textured environments, realistic perspective/contact shadows and slate-blue night palette with restrained warm edge light. Danny is taller adult with navy peaked security cap, gold shield and gold hip keys. Theo is shorter 15-year-old with muted green hood collar and no cap. Use ONLY the characters specified in the scene. Do NOT render flat vector figures pasted on a painting. No tan skin, hair/mustaches, realistic/fleshy bodies, filled uniform torsos, full 3D models, captions, logos, readable labels or invented story events. Single scene, no montage or panels.  Create a genuinely NEW camera composition for the scene just after Danny releases Theo. High OVER-THE-SHOULDER shot from behind Theo perched on sports rack at RIGHT FOREGROUND: show only the BACK/side of Theo's large pale head and green hood collar at right edge, one black hand holds pipe out near top edge, no eyes drawn on back of head. Look down toward Danny at LEFT/MIDDLE below, who is KNEELING on one knee, looking up, with BOTH black mitten hands OPEN and extended palm-up toward camera to show he won't grab again. Danny's navy cap/gold shield/hip keys, thin black stick limbs and torso. The two open hands are clearly visible near center-bottom, gently separated. Closed metal security grille behind Danny, blue-green tents and painted tile. This must be a new reverse camera angle and different blocking, NOT a crop or recreation of the original front-on standing Danny/perched Theo shot. Maintain rich painted night blue materials, contact shadows and soft shaded heads. Exactly two arms/two legs each, no detached hands. No text."
+    },
+    {
+      "name": "two-bars",
+      "prompt": "Edit ONLY the background entrance: replace the open glowing blue doorway behind Danny with a fully CLOSED metal security grille reaching the floor, closely spaced horizontal steel bars, and a small closed gold padlock at bottom center. Keep everything else exactly: Danny, pose, cap, keys, props, EXACT bar count, packaging, tents, floor, shelves, camera, painterly shading and palette. No extra people, no food added/removed, no flat vector overlays. The store is locked."
+    },
+    {
+      "name": "one-bar",
+      "prompt": "Edit ONLY the background entrance: replace the open glowing blue doorway behind Danny with a fully CLOSED metal security grille reaching the floor, closely spaced horizontal steel bars, and a small closed gold padlock at bottom center. Keep everything else exactly: Danny, pose, cap, keys, props, EXACT bar count, packaging, tents, floor, shelves, camera, painterly shading and palette. No extra people, no food added/removed, no flat vector overlays. The store is locked."
+    },
+    {
+      "name": "search-bag",
+      "prompt": "Edit ONLY the background entrance: replace the open glowing blue doorway behind Danny with a fully CLOSED metal security grille reaching the floor, closely spaced horizontal steel bars, and a small closed gold padlock at bottom center. Keep everything else exactly: Danny, pose, cap, keys, props, EXACT bar count, packaging, tents, floor, shelves, camera, painterly shading and palette. No extra people, no food added/removed, no flat vector overlays. The store is locked."
+    },
+    {
+      "name": "inventory",
+      "prompt": "Edit ONLY the background entrance: replace the open glowing blue doorway behind Danny with a fully CLOSED metal security grille reaching the floor, closely spaced horizontal steel bars, and a small closed gold padlock at bottom center. Keep everything else exactly: Danny, pose, cap, keys, props, EXACT bar count, packaging, tents, floor, shelves, camera, painterly shading and palette. No extra people, no food added/removed, no flat vector overlays. The store is locked."
+    },
+    {
+      "name": "chalk-no-bait",
+      "prompt": "Edit ONLY the background entrance: replace the open glowing blue doorway behind Danny with a fully CLOSED metal security grille reaching the floor, closely spaced horizontal steel bars, and a small closed gold padlock at bottom center. Keep everything else exactly: Danny, pose, cap, keys, props, EXACT bar count, packaging, tents, floor, shelves, camera, painterly shading and palette. No extra people, no food added/removed, no flat vector overlays. The store is locked."
+    },
+    {
+      "name": "chalk",
+      "prompt": "Edit ONLY the background entrance: replace the open glowing blue doorway behind Danny with a fully CLOSED metal security grille reaching the floor, closely spaced horizontal steel bars, and a small closed gold padlock at bottom center. Keep everything else exactly: Danny, pose, cap, keys, props, EXACT bar count, packaging, tents, floor, shelves, camera, painterly shading and palette. No extra people, no food added/removed, no flat vector overlays. The store is locked."
+    },
+    {
+      "name": "prints",
+      "prompt": "Edit ONLY the background entrance: replace the open glowing blue doorway behind Danny with a fully CLOSED metal security grille reaching the floor, closely spaced horizontal steel bars, and a small closed gold padlock at bottom center. Keep everything else exactly: Danny, pose, cap, keys, props, EXACT bar count, packaging, tents, floor, shelves, camera, painterly shading and palette. No extra people, no food added/removed, no flat vector overlays. The store is locked. Preserve the chalk trail, flashlight beam, food-box contents and every print exactly."
+    }
+  ]
+}

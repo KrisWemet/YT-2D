@@ -6,6 +6,7 @@ import {chapterFrames, makeChapter, FPS as CFPS} from './mall/MallChapter';
 import {CHAPTER1_DEF} from './mall/chapter1/chapter1';
 import {CHAPTER2_DEF} from './mall/chapter2/chapter2';
 import {Chapter2Retention, RETENTION_FRAMES, RETENTION_READY} from './mall/chapter2/retention';
+import {ILLUSTRATED_PART_ONE_FRAMES} from './mall/chapter2/illustrated-part-one';
 import {Composition, Still} from 'remotion';
 import {RigTest} from './pigeon/RigTest';
 import {PigeonShort} from './pigeon/Short';
@@ -30,6 +31,7 @@ const MallChapter2 = makeChapter(CHAPTER2_DEF);
 
 export const RemotionRoot: React.FC = () => (
   <>
+    <Composition id="MallChapter2IllustratedPartOne" component={Chapter2Retention} defaultProps={{styleReview:true}} durationInFrames={ILLUSTRATED_PART_ONE_FRAMES} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2StyleReview10Min" component={Chapter2Retention} defaultProps={{styleReview:true}} durationInFrames={18000} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2VisualPreview" component={MallChapter2} durationInFrames={chapterFrames(CHAPTER2_DEF)} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2RetentionPreview" component={Chapter2Retention} durationInFrames={RETENTION_FRAMES} fps={CFPS} width={1920} height={1080} />
