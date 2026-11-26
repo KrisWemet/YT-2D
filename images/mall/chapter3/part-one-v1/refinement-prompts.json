@@ -1,0 +1,37 @@
+[
+  {
+    "id": "s01-court-socks",
+    "reason": "Crowd orientation before bark",
+    "prompt": "Edit this cold-open painting precisely. Preserve Danny, BOTH wool socks, the NAVY backpack, puppy, dry fountain, discarded boot and all architecture. Correct ONLY the crowd: increase it to several dozen olive-headed stick figures filling the background lanes, and turn ALL their heads and torsos toward the distant FOOD COURT at far UPPER LEFT/offscreen, away from Danny and away from camera. Most heads should be seen from behind or in left-facing profile; none stares at Danny yet. They stand still, not chase or attack. Keep all feet planted on the same mall tile, no one inside the fountain. Black oval eyes only where a side profile reveals an eye. Danny's clear walking gap remains. No new living human, text or changes to his feet."
+  },
+  {
+    "id": "s01-visitors-turn",
+    "reason": "Backpack color continuity",
+    "prompt": "Change ONLY Danny's brown/tan backpack to dark NAVY blue canvas/leather, with the same brass zipper and buckles. Keep puppy position, all characters, pale/olive faces, VISITOR lanyard, pretzel visor, socks, lighting, architecture, layout and style EXACTLY unchanged. No other edits."
+  },
+  {
+    "id": "s02-lily-pancake",
+    "reason": "Avoid accidental Lita-as-cashier identity",
+    "prompt": "Remove ONLY the small gray-haired cashier in the FAR LEFT BACKGROUND behind the till. Reconstruct the empty checkout and shelves naturally in matching paint. Preserve Lily with pink scarf/purple bag, Danny with BOTH boots, the CLOSED glass kennel, the same puppy with no collar, every foreground figure, warm lighting and all other details exactly. No additional person or lettering."
+  },
+  {
+    "id": "s02-store-count",
+    "reason": "Same injured calf throughout chapter",
+    "prompt": "Precise leg-bandage correction only: Theo stands on the RIGHT side of the picture, facing nearly forward. Move his white calf bandage from his viewer-RIGHT leg onto his viewer-LEFT calf (his anatomical RIGHT), the leg closer to Danny. Leave the other calf plain black. Preserve both gray shoes, all poses, heads, scarf, Danny's one sock/one boot, food, jugs, room, layout and lighting exactly. Only ONE calf bandage. No extra cast."
+  },
+  {
+    "id": "s03-calf",
+    "reason": "No zombies inside Summit",
+    "prompt": "Remove ONLY the three small olive-headed zombie figures from the BACKGROUND INSIDE the sporting-goods store, behind Danny near the treadmills/gate. Restore empty matching blue store space, preserving the gate. Do not change the close foreground wound, slim black calf, red irritation streak, white bandage, hands, pale heads, gray shoes, bucket, first-aid items, lighting or painterly style. No additional figures or lettering."
+  },
+  {
+    "id": "s04-locker-open",
+    "reason": "Marcus's stickered locker must be the one opened",
+    "prompt": "Correct WHICH LOCKER is open. There are two adjacent metal lockers on the RIGHT wall. Marcus's is the LEFT locker of that pair, identified by its star/planet/ghost stickers; this STICKERED LEFT LOCKER must now be OPEN with Danny reaching into it, showing the folded navy shirt and nursing book underneath. The PLAIN RIGHT locker must be CLOSED. Preserve the two lockers' positions and sticker identity, the rest of the office, Danny's pale head/navy cap/one sock/one boot, lighting and painted style. Adjust Danny's reaching hand slightly as needed. Do not swap sticker positions or room sides; change the open/closed doors and their contents only. No extra people, money or text."
+  },
+  {
+    "id": "s05-camera-nine",
+    "reason": "Camera feed must show the same drained fountain",
+    "prompt": "Correct ONLY the large central CCTV picture. The fountain in that feed must match the established mall: ONE small carved stone bowl topped with a round stone finial above ONE broad round basin, completely DRAINED, with dry coins and one discarded black boot inside the basin. NO cascading water, jets, extra stacked fountain bowls or liquid. Keep the glass pharmacy front at the feed's right and olive-headed stick zombies outside on the mall floor. Preserve the rest of the entire office image, Danny and his one sock/one boot, monitor arrangement, desk, room, lights and painterly style exactly. No new text or numbers."
+  }
+]

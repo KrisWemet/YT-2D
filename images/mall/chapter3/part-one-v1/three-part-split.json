@@ -1,0 +1,24 @@
+{
+  "sourceSHA256": "150694d9a8857bd8c065f1beaa2d22c861ea8201be3681ad235a975b05306441",
+  "note": "Estimates only. Exact durations await the established voice recording. Part 2 repeats the short Part 1 cliff line to avoid an abrupt restart. Script prose is preserved.",
+  "parts": [
+    {
+      "part": 1,
+      "spokenWords": 1975,
+      "estimatedMinutesAt175wpm": 11.29,
+      "ending": "My dead best friend walks the same loop every twenty-six minutes. Tomorrow I'm going to use him."
+    },
+    {
+      "part": 2,
+      "spokenWords": 2059,
+      "estimatedMinutesAt175wpm": 11.77,
+      "ending": "Leaving him would have saved me. I opened the cage."
+    },
+    {
+      "part": 3,
+      "spokenWords": 1752,
+      "estimatedMinutesAt175wpm": 10.01,
+      "ending": "My mom\u2019s insulin had run out. The new insulin was in my hand. And there was a mile and a half of the dead between us."
+    }
+  ]
+}
