@@ -9,6 +9,7 @@ import {CHAPTER2_DEF} from './mall/chapter2/chapter2';
 import {Chapter2Retention, RETENTION_FRAMES, RETENTION_READY} from './mall/chapter2/retention';
 import {ILLUSTRATED_PART_ONE_FRAMES} from './mall/chapter2/illustrated-part-one';
 import {IllustratedPartTwo, ILLUSTRATED_PART_TWO_FRAMES} from './mall/chapter2/illustrated-part-two';
+import {IllustratedPartThree, ILLUSTRATED_PART_THREE_FRAMES} from './mall/chapter2/illustrated-part-three';
 import {Composition, Still} from 'remotion';
 import {RigTest} from './pigeon/RigTest';
 import {PigeonShort} from './pigeon/Short';
@@ -35,6 +36,7 @@ export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="MallChapter1Painted" component={PaintedChapter1} durationInFrames={PAINTED_CHAPTER1_FRAMES} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2IllustratedPartTwo" component={IllustratedPartTwo} durationInFrames={ILLUSTRATED_PART_TWO_FRAMES} fps={CFPS} width={1920} height={1080} />
+    <Composition id="MallChapter2IllustratedPartThree" component={IllustratedPartThree} durationInFrames={ILLUSTRATED_PART_THREE_FRAMES} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2IllustratedPartOne" component={Chapter2Retention} defaultProps={{styleReview:true}} durationInFrames={ILLUSTRATED_PART_ONE_FRAMES} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2StyleReview10Min" component={Chapter2Retention} defaultProps={{styleReview:true}} durationInFrames={18000} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2VisualPreview" component={MallChapter2} durationInFrames={chapterFrames(CHAPTER2_DEF)} fps={CFPS} width={1920} height={1080} />

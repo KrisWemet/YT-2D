@@ -1,0 +1,130 @@
+{
+  "frames": 13633,
+  "seconds": 454.43333333333334,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "fullDecode": "passed",
+  "frameTimestamps": "every frame continuous",
+  "audio": "sample-exact decoded slice of original retention mix, AAC export",
+  "sourceAudioPCMHash": "SHA256=79bef4b62da3bf1d411e50505d79f5c9c827d4a0ab8e29918df160b40b8797e3",
+  "retentionStartFrame": 36099,
+  "retentionStoryEndFrame": 49732,
+  "audioChannels": 2,
+  "sampleRate": 48000,
+  "distinctImages": 41,
+  "shots": 66,
+  "maxImageUses": 3,
+  "nativeFigureLayers": 0,
+  "ending": "What did she think was behind that door?",
+  "preview": {
+    "width": 1280,
+    "height": 720,
+    "frames": 13633,
+    "fps": 30,
+    "fullDecode": "passed",
+    "frameTimestamps": "every frame continuous",
+    "audio": "identical encoded AAC to 1080p output"
+  },
+  "visualReview": {
+    "allShotMidpoints": 66,
+    "signalOnOffStills": 30,
+    "encodedSpotChecks": 24,
+    "continuity": "Danny and Theo above crowd; one boot and one sock; keys wrapped until final reveal; one full jug and one damaged empty after choice; clean bandage; night-four solo signal and night-five shared rooftop",
+    "reviewMethod": "All shot midpoints compared with mapped original recorded words; encoded checks at major story transitions and signal events"
+  },
+  "captions": {
+    "cues": 148,
+    "words": 1230,
+    "file": "part-three.srt",
+    "maxLines": 2,
+    "lastWord": "door?",
+    "firstWordStart": 0.08833333333359406,
+    "lastWordEnd": 441.5826666666669
+  },
+  "overlapFrames": 181,
+  "overlapSeconds": 6.033333333333333,
+  "combinedChapter2MaxContentUses": 3,
+  "renderedSignals": {
+    "soloWindow": [
+      {
+        "startFrame": 5490,
+        "frames": 6
+      },
+      {
+        "startFrame": 5502,
+        "frames": 6
+      },
+      {
+        "startFrame": 5514,
+        "frames": 6
+      }
+    ],
+    "soloFlashlight": [
+      {
+        "startFrame": 5531,
+        "frames": 6
+      },
+      {
+        "startFrame": 5543,
+        "frames": 6
+      },
+      {
+        "startFrame": 5555,
+        "frames": 6
+      }
+    ],
+    "lily": [
+      {
+        "startFrame": 9916,
+        "frames": 6
+      },
+      {
+        "startFrame": 9930,
+        "frames": 6
+      },
+      {
+        "startFrame": 9945,
+        "frames": 6
+      }
+    ],
+    "danny": [
+      {
+        "startFrame": 9993,
+        "frames": 6
+      },
+      {
+        "startFrame": 10008,
+        "frames": 6
+      },
+      {
+        "startFrame": 10023,
+        "frames": 6
+      }
+    ],
+    "vera": [
+      {
+        "startFrame": 10380,
+        "frames": 6
+      },
+      {
+        "startFrame": 10395,
+        "frames": 6
+      },
+      {
+        "startFrame": 10413,
+        "frames": 6
+      }
+    ]
+  },
+  "files": {
+    "night-guard-chapter-2-part-three-painted-v1.mp4": {
+      "bytes": 369163930,
+      "sha256": "2b89ffa1896c018337c27e89add3d1f03c45683b01f44481c04a28c27f331c6d"
+    },
+    "night-guard-chapter-2-part-three-painted-v1-preview.mp4": {
+      "bytes": 66576771,
+      "sha256": "e4313027cac5bfd7ea92e4cf0b3db29b9c710d18b2a5f7dd6c5dd8761a87ed34"
+    }
+  }
+}

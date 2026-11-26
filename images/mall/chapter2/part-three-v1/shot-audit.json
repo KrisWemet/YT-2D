@@ -1,0 +1,1004 @@
+{
+  "version": 1,
+  "frames": 13633,
+  "seconds": 454.43333333333334,
+  "shots": 66,
+  "distinctImages": 41,
+  "maxUses": 3,
+  "maxIdenticalContentUses": 3,
+  "nativeFigureLayers": 0,
+  "coverage": "every frame; no gaps or overlaps",
+  "ending": "What did she think was behind that door?",
+  "retentionStartFrame": 36099,
+  "retentionStoryEndFrame": 49732,
+  "tailFrames": 0,
+  "endingSourceFrame": 53999,
+  "lastSpokenSourceWordEnd": 1787.116,
+  "combinedChapter2MaxContentUses": 3,
+  "overlapFrames": 181,
+  "renderedSignals": {
+    "soloWindow": [
+      {
+        "startFrame": 5490,
+        "frames": 6
+      },
+      {
+        "startFrame": 5502,
+        "frames": 6
+      },
+      {
+        "startFrame": 5514,
+        "frames": 6
+      }
+    ],
+    "soloFlashlight": [
+      {
+        "startFrame": 5531,
+        "frames": 6
+      },
+      {
+        "startFrame": 5543,
+        "frames": 6
+      },
+      {
+        "startFrame": 5555,
+        "frames": 6
+      }
+    ],
+    "lily": [
+      {
+        "startFrame": 9916,
+        "frames": 6
+      },
+      {
+        "startFrame": 9930,
+        "frames": 6
+      },
+      {
+        "startFrame": 9945,
+        "frames": 6
+      }
+    ],
+    "danny": [
+      {
+        "startFrame": 9993,
+        "frames": 6
+      },
+      {
+        "startFrame": 10008,
+        "frames": 6
+      },
+      {
+        "startFrame": 10023,
+        "frames": 6
+      }
+    ],
+    "vera": [
+      {
+        "startFrame": 10380,
+        "frames": 6
+      },
+      {
+        "startFrame": 10395,
+        "frames": 6
+      },
+      {
+        "startFrame": 10413,
+        "frames": 6
+      }
+    ]
+  },
+  "scope": "Six-second reprise plus all remaining Chapter Two story and original end-card timing",
+  "usage": {
+    "part-two-v1/clock-memory": 1,
+    "part-two-v1/drill-wall": 1,
+    "part-three-v1/drill-alarm": 1,
+    "part-three-v1/pump-voice": 3,
+    "part-three-v1/crew-delay": 1,
+    "part-three-v1/crew-retreat": 1,
+    "part-three-v1/monitor-clue": 1,
+    "part-three-v1/pump-question": 2,
+    "part-three-v1/jug-catch": 2,
+    "part-three-v1/keys-fist": 2,
+    "part-three-v1/return-cross": 3,
+    "part-three-v1/choice-buckle": 1,
+    "part-three-v1/choice-catch": 1,
+    "part-three-v1/choice-release": 1,
+    "part-three-v1/choice-fall": 1,
+    "part-three-v1/choice-haul": 1,
+    "part-three-v1/choice-retrieve": 1,
+    "part-three-v1/photo-home": 1,
+    "part-three-v1/rack-home": 2,
+    "part-three-v1/lock-return": 2,
+    "part-three-v1/first-aid": 2,
+    "part-three-v1/roof-solo": 1,
+    "part-three-v1/sleep-home": 1,
+    "part-three-v1/wrappers": 2,
+    "part-three-v1/leaving": 2,
+    "part-three-v1/pick-tent": 2,
+    "part-three-v1/clean-offer": 3,
+    "part-three-v1/vera-call": 2,
+    "part-three-v1/answer-coat": 1,
+    "part-three-v1/theo-request": 2,
+    "part-three-v1/roof-both": 3,
+    "part-three-v1/lily-window": 1,
+    "part-three-v1/danny-answer": 1,
+    "part-three-v1/vera-signal": 2,
+    "part-three-v1/switch-still": 2,
+    "part-three-v1/theo-question": 1,
+    "part-three-v1/night-quiet": 2,
+    "part-three-v1/keys-loose": 1,
+    "part-three-v1/b3-close": 3,
+    "part-three-v1/walt-memory": 1,
+    "part-three-v1/b3-final": 2
+  },
+  "files": {
+    "part-two-v1/clock-memory": {
+      "sha256": "6fdda70754ee7481d9b1f01b4ca8765b813e2be5995383b386a8e1e36fee2998",
+      "width": 1672,
+      "height": 941
+    },
+    "part-two-v1/drill-wall": {
+      "sha256": "d40c8bd40c7c091d7e771ce4380df059d975f856d94139c7a74b1ca03ca26574",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/drill-alarm": {
+      "sha256": "fba182c23f13783ca71dfd8859b5ca2949c600d99a19d418d2e3163575351fab",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/pump-voice": {
+      "sha256": "6ce49b702dd9e94c7ff1c4cae9b3f0e562b268ba0b74fba633099fb701630c4d",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/crew-delay": {
+      "sha256": "6740c46cc552f75c453729a3b38b1eb7ad9710b38ee101bb6ef54e463d51eba9",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/crew-retreat": {
+      "sha256": "12de531d6cddc3ac12d9781f099333d05913de3347f500f1a716c3814f65d976",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/monitor-clue": {
+      "sha256": "0db628071e62528b49ebe471dc8951cf471b4bf7da74fc6741c8a3907e7bb76b",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/pump-question": {
+      "sha256": "a4fb3e0a2a498aac1bf51f15156ba672a28bd67c616807e27705a1981eb8d4a6",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/jug-catch": {
+      "sha256": "148b0063d43b930f5571a5f77985daba630dcd251608f9cfa496272826bdfc41",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/keys-fist": {
+      "sha256": "f09bae81f9bd1c4579924a74b61d1d6e6674588786899fcac97fdef17a4281d7",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/return-cross": {
+      "sha256": "a6204143e41ca4ed3e2c41b209e3a14c1830e19b0324db061aff46a9e953c502",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/choice-buckle": {
+      "sha256": "9c5cb7f4e965d1e13f44aa8b8dbc1f510bad6157e264d33619aac4ef8f7e9f57",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/choice-catch": {
+      "sha256": "3e01d64a646a090c2e47c778e4d8d0494969c9c8568428089de339d994d54f46",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/choice-release": {
+      "sha256": "6c9fef275b6a9bfea12c37e449a08538d3cfa63797682fe65744cff0aa60ac12",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/choice-fall": {
+      "sha256": "b8dcdaf6333f3b88653e7a4ad5c4200a729750b51d8a4e17af848bd351dc0a1c",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/choice-haul": {
+      "sha256": "106da91bd1e3bc55a49cf03bdd33fa6548ab21f7c4d8fe1631f2ea3dd2718837",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/choice-retrieve": {
+      "sha256": "23c52c3b68cb703c49677d5cced67f08be937438e0dd11286584867177260faa",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/photo-home": {
+      "sha256": "6847b0f3d706de77251c49eb19a72b8dddecfcf3505eee471d8d3a65d48b8dca",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/rack-home": {
+      "sha256": "6e63673c7294aca7f0a7946e153311077f23f9d51fa1df10359a0ad5d35fc14b",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/lock-return": {
+      "sha256": "3abe2a4f3615cb601fe5a3ba361a8c92f22f865ebb94479a4ba17235d45b4a14",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/first-aid": {
+      "sha256": "ff0eea8ad7e18167673d1c1115ddbb68c8c74d67a01e6ae5c9a6a706d2fb5a94",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/roof-solo": {
+      "sha256": "1361be4f77f1aab6cf1e5785062964bf04b3be9e54bd5030f0131c18973ca0c3",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/sleep-home": {
+      "sha256": "a021918f740976265447fff73407b59337c2d336184411cf7c73a5805cfb9403",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/wrappers": {
+      "sha256": "462d1424f80db304f291118e21e473e4a808722eb732008ff3e17fb0392ab507",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/leaving": {
+      "sha256": "c2ea844466c7f57623d8217f0c3490febb41588dce4a3d7d79ecd63be6fc44e1",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/pick-tent": {
+      "sha256": "029b069ffdc1d6bab82839fdf91b09615aa26734249b384f01df4fda80ddc4e7",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/clean-offer": {
+      "sha256": "ea1ce93c2ac16d5f283d67111eeafae840d7410ea2b273c11f53d4f5365ead13",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/vera-call": {
+      "sha256": "397b96a6e8ebee9159be5b8301e96349d4fc152f19a5421d86bd2e9f4ea0987d",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/answer-coat": {
+      "sha256": "057d10f1c0f85618d368cb8b302434e01c58e08f1b838383b35dda9f0c9b5ab3",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/theo-request": {
+      "sha256": "ba9ac43c604de3674de5b711c0d7bc66c93f37091edf6f294edbde1653ebc004",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/roof-both": {
+      "sha256": "a7b630686507374bd3182e7e4c15a75f658d4c4f81a1c6aadd403557543e00bb",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/lily-window": {
+      "sha256": "9635996eb29d14e3df61b3beb57870dab1ecc57642c1ace684599ba5755145ee",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/danny-answer": {
+      "sha256": "0b980e97a3de011728b02f059e0726705e5fe4ca15e92c173d3260b848d682f3",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/vera-signal": {
+      "sha256": "4f4cd047da2cbd7d7aff989b254e92ae41e587ea416f120c8357f7d7cd2e7086",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/switch-still": {
+      "sha256": "e306ed6516183e01ca32ffb64f2e691dad7f1a0f5ef010003922847f1a0c1c4d",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/theo-question": {
+      "sha256": "c4c835b071ed5af714b8f32bec516e2d01c32036fa10a0948a6c643a14801cb2",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/night-quiet": {
+      "sha256": "fbd9f3d6e77c0047f8c2673e4e1612edf0e282f0ef353bec22e307b0b5dc3f15",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/keys-loose": {
+      "sha256": "78b3412fb1b360a29f74d2368a4a2dd3d57a7ba8c7f95485a85dc6de5d59ec3e",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/b3-close": {
+      "sha256": "15645a27952c927d8df1f58da71243e4450a67a5593abf41e4b01243bf37003c",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/walt-memory": {
+      "sha256": "f5dc498ea8c2bf396e538a51f13499f25cf9b3304e0e1b6f8c610aaebe05422d",
+      "width": 1672,
+      "height": 941
+    },
+    "part-three-v1/b3-final": {
+      "sha256": "345bf7cf541ad46f4ae51d5abed82c868606a53881afee54d12835f9e73664c2",
+      "width": 1672,
+      "height": 941
+    }
+  },
+  "shotList": [
+    {
+      "start": 0,
+      "frames": 133,
+      "asset": "part-two-v1/clock-memory",
+      "view": "wide",
+      "note": "Six-second lead-in begins at a complete sentence: One-thirty",
+      "index": 1,
+      "seconds": 4.433333333333334,
+      "transcript": "One-thirty. Ten minutes before Marcus called about the man on the ramp."
+    },
+    {
+      "start": 133,
+      "frames": 209,
+      "asset": "part-two-v1/drill-wall",
+      "view": "detail",
+      "note": "Reprise the final line and continue straight into the next exchange",
+      "index": 2,
+      "seconds": 6.966666666666667,
+      "transcript": "They were cutting through the wall, Theo said. Loud as a chainsaw. I could hear it all the way at the cinema."
+    },
+    {
+      "start": 342,
+      "frames": 267,
+      "asset": "part-three-v1/drill-alarm",
+      "view": "character",
+      "note": "The drill noise draws the dead through the staff hall",
+      "index": 3,
+      "seconds": 8.9,
+      "transcript": "He rubbed his sleeve over his nose. People started coming in. Through the service hall. They just kept coming. What did the woman do?"
+    },
+    {
+      "start": 609,
+      "frames": 216,
+      "asset": "part-three-v1/pump-voice",
+      "view": "wide",
+      "note": "Theo says the woman ordered them to keep drilling",
+      "index": 4,
+      "seconds": 7.2,
+      "transcript": "Told them to keep drilling. I sat on the bottom rung beside Theo. Through the door, I could hear somebody's hand"
+    },
+    {
+      "start": 825,
+      "frames": 225,
+      "asset": "part-three-v1/pump-voice",
+      "view": "detail",
+      "note": "Danny recognizes the woman on the radio",
+      "index": 5,
+      "seconds": 7.5,
+      "transcript": "hand dragging over the wall. The woman on my radio? I asked. Same voice. I heard her in your store last night."
+    },
+    {
+      "start": 1050,
+      "frames": 210,
+      "asset": "part-three-v1/pump-voice",
+      "view": "character",
+      "note": "Theo is certain: he heard her from above",
+      "index": 6,
+      "seconds": 7,
+      "transcript": "You're sure? She was right below me when they were drilling, Danny. I looked at the door. They saw them?"
+    },
+    {
+      "start": 1260,
+      "frames": 225,
+      "asset": "part-three-v1/crew-delay",
+      "view": "wide",
+      "note": "One man returned running; she demanded another minute",
+      "index": 7,
+      "seconds": 7.5,
+      "transcript": "them? Theo nodded. One of the men went to look. Came back running. The woman kept saying another minute. And then?"
+    },
+    {
+      "start": 1485,
+      "frames": 165,
+      "asset": "part-three-v1/crew-retreat",
+      "view": "detail",
+      "note": "The crew took the machine and used the staff door",
+      "index": 8,
+      "seconds": 5.5,
+      "transcript": "They took the machine and went through the staff door. I stayed where I was until it got quiet."
+    },
+    {
+      "start": 1650,
+      "frames": 270,
+      "asset": "part-three-v1/monitor-clue",
+      "view": "character",
+      "note": "Danny reconsiders the crowd routes he watched on CCTV",
+      "index": 9,
+      "seconds": 9,
+      "transcript": "The food court. The broken glass. The service halls filling up. I'd watched all those cameras and thought the crowd was wandering through any door it"
+    },
+    {
+      "start": 1920,
+      "frames": 279,
+      "asset": "part-three-v1/pump-question",
+      "view": "wide",
+      "note": "Was there a little girl with them?",
+      "index": 10,
+      "seconds": 9.3,
+      "transcript": "it found. I'd been watching where they went. Theo had heard what they were following. Was there a kid with them? Theo shook his head. A little girl? No."
+    },
+    {
+      "start": 2199,
+      "frames": 177,
+      "asset": "part-three-v1/jug-catch",
+      "view": "detail",
+      "note": "Danny hits his shoulder on the ladder; Theo catches a jug",
+      "index": 11,
+      "seconds": 5.9,
+      "transcript": "I heard Vera's voice again. Soft through the speaker. The little girl had stopped asking for food."
+    },
+    {
+      "start": 2376,
+      "frames": 174,
+      "asset": "part-three-v1/jug-catch",
+      "view": "character",
+      "note": "Theo prevents a full container from crashing down",
+      "index": 12,
+      "seconds": 5.8,
+      "transcript": "I stood up too fast and hit my shoulder on the ladder. Theo caught the container before it struck the floor."
+    },
+    {
+      "start": 2550,
+      "frames": 222,
+      "asset": "part-three-v1/keys-fist",
+      "view": "wide",
+      "note": "Danny clenches the keys through their sock wrapping",
+      "index": 13,
+      "seconds": 7.4,
+      "transcript": "For a moment I wanted to go straight to the department store. Stand outside her gate and make her tell me why she'd kept that drill"
+    },
+    {
+      "start": 2772,
+      "frames": 222,
+      "asset": "part-three-v1/keys-fist",
+      "view": "detail",
+      "note": "He wants to confront Vera, but Theo needs to get home",
+      "index": 14,
+      "seconds": 7.4,
+      "transcript": "drill going. My keys were still wrapped in the sock. I closed my hand around them until the teeth pressed through the fabric."
+    },
+    {
+      "start": 2994,
+      "frames": 216,
+      "asset": "part-three-v1/pump-question",
+      "view": "character",
+      "note": "Danny notices the injured calf and picks up the water",
+      "index": 15,
+      "seconds": 7.2,
+      "transcript": "Danny, Theo said. I looked at his leg. At the blood drying on the edge of his trainer. He had followed me down here. Now he was"
+    },
+    {
+      "start": 3210,
+      "frames": 159,
+      "asset": "part-three-v1/return-cross",
+      "view": "wide",
+      "note": "They skirt the broken ceiling by another support",
+      "index": 16,
+      "seconds": 5.3,
+      "transcript": "was waiting for me to get him back. I picked up the water. On the return trip, we moved around the broken section. It"
+    },
+    {
+      "start": 3369,
+      "frames": 161,
+      "asset": "part-three-v1/return-cross",
+      "view": "detail",
+      "note": "His lost boot and Marcus remain below",
+      "index": 17,
+      "seconds": 5.366666666666666,
+      "transcript": "It took nearly an hour. I could see my boot in the fountain below. I could see Marcus too."
+    },
+    {
+      "start": 3530,
+      "frames": 90,
+      "asset": "part-three-v1/return-cross",
+      "view": "character",
+      "note": "Visual choice begins: two full containers on the support",
+      "index": 18,
+      "seconds": 3,
+      "transcript": ""
+    },
+    {
+      "start": 3620,
+      "frames": 60,
+      "asset": "part-three-v1/choice-buckle",
+      "view": "wide",
+      "note": "Theo loses footing on his injured leg",
+      "index": 19,
+      "seconds": 2,
+      "transcript": ""
+    },
+    {
+      "start": 3680,
+      "frames": 90,
+      "asset": "part-three-v1/choice-catch",
+      "view": "detail",
+      "note": "Danny catches Theo; a full jug starts sliding",
+      "index": 20,
+      "seconds": 3,
+      "transcript": ""
+    },
+    {
+      "start": 3770,
+      "frames": 90,
+      "asset": "part-three-v1/choice-release",
+      "view": "character",
+      "note": "Danny commits both hands to Theo and lets the jug go",
+      "index": 21,
+      "seconds": 3,
+      "transcript": ""
+    },
+    {
+      "start": 3860,
+      "frames": 90,
+      "asset": "part-three-v1/choice-fall",
+      "view": "wide",
+      "note": "Water is lost; the container lands on a lower ledge",
+      "index": 22,
+      "seconds": 3,
+      "transcript": ""
+    },
+    {
+      "start": 3950,
+      "frames": 150,
+      "asset": "part-three-v1/choice-haul",
+      "view": "detail",
+      "note": "Danny hauls Theo onto solid steel",
+      "index": 23,
+      "seconds": 5,
+      "transcript": ""
+    },
+    {
+      "start": 4100,
+      "frames": 150,
+      "asset": "part-three-v1/choice-retrieve",
+      "view": "character",
+      "note": "Danny retrieves the damaged empty jug with the strap",
+      "index": 24,
+      "seconds": 5,
+      "transcript": ""
+    },
+    {
+      "start": 4250,
+      "frames": 202,
+      "asset": "part-three-v1/photo-home",
+      "view": "wide",
+      "note": "Theo collects his blanket and hides his photograph",
+      "index": 25,
+      "seconds": 6.733333333333333,
+      "transcript": "At the cinema, Theo stopped to pick up his blanket. He tucked the photograph inside it. I pretended to be busy with"
+    },
+    {
+      "start": 4452,
+      "frames": 158,
+      "asset": "part-three-v1/rack-home",
+      "view": "detail",
+      "note": "Theo steadies the storage rack as Danny climbs down",
+      "index": 26,
+      "seconds": 5.266666666666667,
+      "transcript": "with the containers. I got back to Summit Outdoors in one boot and a filthy sock. Theo"
+    },
+    {
+      "start": 4610,
+      "frames": 157,
+      "asset": "part-three-v1/rack-home",
+      "view": "character",
+      "note": "Theo steadies the storage rack as Danny climbs down",
+      "index": 27,
+      "seconds": 5.233333333333333,
+      "transcript": "Theo went down first and cleared a place for the containers. Then he steadied the rack while I climbed."
+    },
+    {
+      "start": 4767,
+      "frames": 267,
+      "asset": "part-three-v1/lock-return",
+      "view": "character",
+      "note": "The padlock is still closed; it did not bring them home",
+      "index": 28,
+      "seconds": 8.9,
+      "transcript": "I reached the floor and put my hand on the padlock. Closed. Exactly where I'd left it. I let go and turned toward Theo. He was sitting on the"
+    },
+    {
+      "start": 5034,
+      "frames": 231,
+      "asset": "part-three-v1/lock-return",
+      "view": "wide",
+      "note": "Theo sits on the bucket beside their surviving water",
+      "index": 29,
+      "seconds": 7.7,
+      "transcript": "the bucket, trying to bend his trouser leg far enough to see the cut. I'd checked that lock so many times. Theo had just brought me"
+    },
+    {
+      "start": 5265,
+      "frames": 165,
+      "asset": "part-three-v1/first-aid",
+      "view": "detail",
+      "note": "Danny gets the first-aid box",
+      "index": 30,
+      "seconds": 5.5,
+      "transcript": "me home without going anywhere near it. I got the first-aid box. At nine, I"
+    },
+    {
+      "start": 5430,
+      "frames": 195,
+      "asset": "part-three-v1/roof-solo",
+      "view": "character",
+      "note": "Night four: Danny signals Lily alone",
+      "index": 31,
+      "seconds": 6.5,
+      "transcript": "I climbed to the roof alone. Three lights from Lily. Three back. I held the roof hatch open a little on the"
+    },
+    {
+      "start": 5625,
+      "frames": 177,
+      "asset": "part-three-v1/sleep-home",
+      "view": "wide",
+      "note": "He checks the hatch; Theo sleeps beside the water",
+      "index": 32,
+      "seconds": 5.9,
+      "transcript": "the way down, so I could see whether Theo was still there. He was asleep beside the water."
+    },
+    {
+      "start": 5802,
+      "frames": 297,
+      "asset": "part-three-v1/first-aid",
+      "view": "detail",
+      "note": "Danny cleans and bandages Theos scraped calf",
+      "index": 33,
+      "seconds": 9.9,
+      "transcript": "We'd got back the afternoon before. I'd used bottled water to clean the scrape on his leg and found a bandage in the first-aid display. He'd let me do it without looking at me once."
+    },
+    {
+      "start": 6099,
+      "frames": 264,
+      "asset": "part-three-v1/wrappers",
+      "view": "character",
+      "note": "Theo packs his bandage and food wrappers very small",
+      "index": 34,
+      "seconds": 8.8,
+      "transcript": "I'd asked him to tell me if it got worse. He'd said he would, much too quickly. Later, I'd found him putting the empty wrapper from"
+    },
+    {
+      "start": 6363,
+      "frames": 258,
+      "asset": "part-three-v1/wrappers",
+      "view": "wide",
+      "note": "A habit from months living above the cinema",
+      "index": 35,
+      "seconds": 8.6,
+      "transcript": "from his bandage inside another wrapper, folding both down until they took up almost no room. He'd done the same with his food."
+    },
+    {
+      "start": 6621,
+      "frames": 258,
+      "asset": "part-three-v1/leaving",
+      "view": "detail",
+      "note": "Theo prepares to return to the ceiling",
+      "index": 36,
+      "seconds": 8.6,
+      "transcript": "I knew that habit. I'd seen it in the places above the cinema. A whole life packed small enough that you could move it before somebody told you to. That morning"
+    },
+    {
+      "start": 6879,
+      "frames": 258,
+      "asset": "part-three-v1/leaving",
+      "view": "character",
+      "note": "He says his leg is fine while taking weight off it",
+      "index": 37,
+      "seconds": 8.6,
+      "transcript": "morning he was beside the rack with his blanket rolled under one arm. Where are you going? Back. Your leg's hurting. It's fine."
+    },
+    {
+      "start": 7137,
+      "frames": 261,
+      "asset": "part-three-v1/pick-tent",
+      "view": "wide",
+      "note": "Danny tells him to pick a tent",
+      "index": 38,
+      "seconds": 8.7,
+      "transcript": "He shifted his weight onto the other foot. I looked at the ceiling tile. His way out was three shelves up, above the pipe he'd used while I slept."
+    },
+    {
+      "start": 7398,
+      "frames": 234,
+      "asset": "part-three-v1/pick-tent",
+      "view": "detail",
+      "note": "Theo waits for the price of staying",
+      "index": 39,
+      "seconds": 7.8,
+      "transcript": "Pick a tent, I said. He watched me. Any of them. Except that one. I'm in that one. For how long? We'll"
+    },
+    {
+      "start": 7632,
+      "frames": 246,
+      "asset": "part-three-v1/clean-offer",
+      "view": "character",
+      "note": "Danny only asks for quiet, help and honesty",
+      "index": 40,
+      "seconds": 8.2,
+      "transcript": "We'll work it out. What do you want? That question made me put down the box I was holding. Help with the water. Keep things quiet."
+    },
+    {
+      "start": 7878,
+      "frames": 231,
+      "asset": "part-three-v1/clean-offer",
+      "view": "wide",
+      "note": "He offers Theo a clean sweatshirt",
+      "index": 41,
+      "seconds": 7.7,
+      "transcript": "quiet. Tell me if you hear people up there. He waited. That's it, I said. I got him a clean sweatshirt from a shelf. He"
+    },
+    {
+      "start": 8109,
+      "frames": 153,
+      "asset": "part-three-v1/clean-offer",
+      "view": "detail",
+      "note": "Theo folds the clean garment carefully",
+      "index": 42,
+      "seconds": 5.1,
+      "transcript": "He folded it so carefully before he put it down that I had to find something else to look at."
+    },
+    {
+      "start": 8262,
+      "frames": 237,
+      "asset": "part-three-v1/vera-call",
+      "view": "character",
+      "note": "Vera calls near dusk, asking for room at the inn",
+      "index": 43,
+      "seconds": 7.9,
+      "transcript": "Vera called near dusk. Danny. Any room at the inn? I held the radio close to my ear. Still there?"
+    },
+    {
+      "start": 8499,
+      "frames": 240,
+      "asset": "part-three-v1/answer-coat",
+      "view": "wide",
+      "note": "Danny returns to her story about trying on a coat",
+      "index": 44,
+      "seconds": 8,
+      "transcript": "she asked. I pressed the button. You said you were trying on a coat. Yes. Before the mall closed."
+    },
+    {
+      "start": 8739,
+      "frames": 171,
+      "asset": "part-three-v1/vera-call",
+      "view": "detail",
+      "note": "Her amused answer no longer reassures him",
+      "index": 45,
+      "seconds": 5.7,
+      "transcript": "Eventually you're going to have to explain this interest in my shopping."
+    },
+    {
+      "start": 8910,
+      "frames": 213,
+      "asset": "part-three-v1/theo-request",
+      "view": "character",
+      "note": "Theo watches from the open tent as Danny leaves her waiting",
+      "index": 46,
+      "seconds": 7.1,
+      "transcript": "Theo was watching me from the open tent. I let go of the button. Left her waiting this time. At five to nine, I took the flashlight"
+    },
+    {
+      "start": 9123,
+      "frames": 180,
+      "asset": "part-three-v1/theo-request",
+      "view": "wide",
+      "note": "Theo asks to see the nightly signal",
+      "index": 47,
+      "seconds": 6,
+      "transcript": "flashlight from the shelf. Theo pulled on the clean sweatshirt. Can I see? he asked."
+    },
+    {
+      "start": 9303,
+      "frames": 216,
+      "asset": "part-three-v1/roof-both",
+      "view": "detail",
+      "note": "Night five: Theo joins Danny behind the hatch",
+      "index": 48,
+      "seconds": 7.2,
+      "transcript": "I let Theo come up with me. He stood a little behind the hatch, keeping his weight off the bandaged leg. Across the highway,"
+    },
+    {
+      "start": 9519,
+      "frames": 207,
+      "asset": "part-three-v1/roof-both",
+      "view": "character",
+      "note": "Parkview across the highway; count the tenth floor",
+      "index": 49,
+      "seconds": 6.9,
+      "transcript": "Parkview was barely visible against the sky. I found the tenth floor. Counted to the fourth window from the left."
+    },
+    {
+      "start": 9726,
+      "frames": 264,
+      "asset": "part-three-v1/lily-window",
+      "view": "wide",
+      "note": "Lily flashes three times at nine",
+      "index": 50,
+      "seconds": 8.8,
+      "transcript": "I always counted. Even when I already knew where to look. At nine, the flashlight came on. One. Two. Three. I answered with my"
+    },
+    {
+      "start": 9990,
+      "frames": 240,
+      "asset": "part-three-v1/danny-answer",
+      "view": "detail",
+      "note": "Danny answers with his own three flashes",
+      "index": 51,
+      "seconds": 8,
+      "transcript": "my own. My hands were steadier than they'd been the night before. I had water downstairs. There was another person waiting beside me, alive, who"
+    },
+    {
+      "start": 10230,
+      "frames": 69,
+      "asset": "part-three-v1/roof-both",
+      "view": "character",
+      "note": "For a moment, having another person there steadies him",
+      "index": 52,
+      "seconds": 2.3,
+      "transcript": "who could hear something fall and help me pick it up."
+    },
+    {
+      "start": 10299,
+      "frames": 225,
+      "asset": "part-three-v1/vera-signal",
+      "view": "wide",
+      "note": "A second light blinks from the department store roof",
+      "index": 53,
+      "seconds": 7.5,
+      "transcript": "It came from the department store roof. One. Two. Three. Pointed across the highway. Toward her window."
+    },
+    {
+      "start": 10524,
+      "frames": 216,
+      "asset": "part-three-v1/vera-signal",
+      "view": "detail",
+      "note": "It is pointed toward Lilys window",
+      "index": 54,
+      "seconds": 7.2,
+      "transcript": "I lowered my flashlight. I wanted to blink again. Correct it somehow. Tell Lily which light was mine."
+    },
+    {
+      "start": 10740,
+      "frames": 246,
+      "asset": "part-three-v1/switch-still",
+      "view": "character",
+      "note": "Danny stops himself from answering again",
+      "index": 55,
+      "seconds": 8.2,
+      "transcript": "But we had three flashes, and we had the emergency signal. That was all. I'd never taught her what to do when somebody else answered. My thumb rested"
+    },
+    {
+      "start": 10986,
+      "frames": 252,
+      "asset": "part-three-v1/switch-still",
+      "view": "wide",
+      "note": "He has never taught Lily how to distinguish two senders",
+      "index": 56,
+      "seconds": 8.4,
+      "transcript": "rested on the switch while the department store roof went dark. I kept it there until I was sure I wouldn't press it. Theo looked from that roof to me."
+    },
+    {
+      "start": 11238,
+      "frames": 225,
+      "asset": "part-three-v1/theo-question",
+      "view": "detail",
+      "note": "Theo asks who is on the other roof",
+      "index": 57,
+      "seconds": 7.5,
+      "transcript": "Who is that? he asked. I put the light in my pocket before I answered. The woman."
+    },
+    {
+      "start": 11463,
+      "frames": 258,
+      "asset": "part-three-v1/night-quiet",
+      "view": "character",
+      "note": "Danny answers: the woman; his radio stays off",
+      "index": 58,
+      "seconds": 8.6,
+      "transcript": "The radio stayed off. In front of us, Lily's window went dark."
+    },
+    {
+      "start": 11721,
+      "frames": 276,
+      "asset": "part-three-v1/night-quiet",
+      "view": "wide",
+      "note": "Lilys window goes dark; Theo touches his sleeve",
+      "index": 59,
+      "seconds": 9.2,
+      "transcript": "Our goodnight was over. Somebody else had joined it. I stood there until Theo touched my sleeve."
+    },
+    {
+      "start": 11997,
+      "frames": 234,
+      "asset": "part-three-v1/keys-loose",
+      "view": "detail",
+      "note": "The sock comes loose and exposes the last red tag",
+      "index": 60,
+      "seconds": 7.8,
+      "transcript": "He was looking at the keys. The sock had come loose when I'd put the flashlight away. The last red tag hung against my hand. What's"
+    },
+    {
+      "start": 12231,
+      "frames": 279,
+      "asset": "part-three-v1/b3-close",
+      "view": "character",
+      "note": "What is B3?",
+      "index": 61,
+      "seconds": 9.3,
+      "transcript": "What's B3? he asked. I looked down. Why? That woman. She kept saying it. Down to B3. Get to the door."
+    },
+    {
+      "start": 12510,
+      "frames": 261,
+      "asset": "part-three-v1/b3-close",
+      "view": "wide",
+      "note": "Vera had said down to B3, get to the door",
+      "index": 62,
+      "seconds": 8.7,
+      "transcript": "I closed my fingers around the tag. They weren't trying to get into a shop, he said. They were trying to get underneath it."
+    },
+    {
+      "start": 12771,
+      "frames": 138,
+      "asset": "part-three-v1/walt-memory",
+      "view": "detail",
+      "note": "Danny remembers Walts warning",
+      "index": 63,
+      "seconds": 4.6,
+      "transcript": "I thought of Walt tapping the last key. Don't ask."
+    },
+    {
+      "start": 12909,
+      "frames": 246,
+      "asset": "part-three-v1/b3-final",
+      "view": "character",
+      "note": "Daughter across the highway, Vera across the roof",
+      "index": 64,
+      "seconds": 8.2,
+      "transcript": "Across the highway was my daughter. Across the roof was a woman copying her signal. And the thing that woman wanted was hanging from my"
+    },
+    {
+      "start": 13155,
+      "frames": 249,
+      "asset": "part-three-v1/b3-final",
+      "view": "wide",
+      "note": "What she wants is hanging from Dannys belt",
+      "index": 65,
+      "seconds": 8.3,
+      "transcript": "my belt. What did she think was behind that door?"
+    },
+    {
+      "start": 13404,
+      "frames": 229,
+      "asset": "part-three-v1/b3-close",
+      "view": "detail",
+      "note": "Final original question: what did she think was behind that door?",
+      "index": 66,
+      "seconds": 7.633333333333334,
+      "transcript": ""
+    }
+  ]
+}
