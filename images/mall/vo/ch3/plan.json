@@ -1,0 +1,2541 @@
+{
+  "voices": {
+    "danny": {
+      "voice_name": "Algenib",
+      "audio_profile": "Danny, a regular guy in his late thirties. He is genuinely a little scared and still shaken, and he tells what happened plainly and honestly, in a natural voice with very little inflection, keeping his pitch fairly level and even, like a real person, not an actor.",
+      "accent": "American (Gen)"
+    },
+    "vera": {
+      "voice_name": "Gacrux",
+      "audio_profile": "Vera, a woman in her forties. Calm, warm and funny, and she never raises her voice. She sounds friendly and in control, which is what makes her frightening.",
+      "accent": "American (Gen)"
+    },
+    "theo": {
+      "voice_name": "Puck",
+      "accent": "American (Gen)",
+      "audio_profile": "Theo, a fifteen-year-old boy. His voice is youthful and natural, wary of adults, understated and observant. He speaks plainly without theatrical emotion. Never a cartoon voice."
+    }
+  },
+  "scene": "A man quietly tells what happened during the first hour of a zombie outbreak at the mall where he works. Close to the microphone, plain and natural, no music.",
+  "sample_context": "A first-person story told plainly, in a natural, slightly scared voice.",
+  "temperature": 1,
+  "level": "fixed",
+  "tempo": 1.08,
+  "max_pause": 0.22,
+  "min_sim": 0.9,
+  "chunks": [
+    {
+      "id": "c3_01_v001",
+      "who": "danny",
+      "text": "Right now I'm standing in the middle of a hundred dead people in my socks, and the puppy behind me is about to bark. He's in my backpack. I can feel him turning circles against my spine, the way dogs do before they lie down. Except he isn't lying down. He's pushing his nose out through the gap in the zipper.",
+      "section": 1,
+      "paragraphs": [
+        "c3_01_001",
+        "c3_01_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_01_v002",
+      "who": "danny",
+      "text": "At noon, the skylights put the light straight down on all of us. Nobody's shadow is longer than their shoes. The man in front of me is still wearing a lanyard. VISITOR, it says. Next to him is a girl in a pretzel-stand visor. Maybe seventeen. Her head is tilted, like she's trying to hear a song from another store.",
+      "section": 1,
+      "paragraphs": [
+        "c3_01_003",
+        "c3_01_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5,
+      "synthesis_text": "At noon, the skylights put the light straight down on all of us. Nobody's shadow is longer than their shoes. The man in front of me is still wearing a lanyard. visitor, it says. Next to him is a girl in a pretzel-stand visor. Maybe seventeen. Her head is tilted, like she's trying to hear a song from another store."
+    },
+    {
+      "id": "c3_01_v003",
+      "who": "danny",
+      "text": "None of them are looking at me. Yet. They're all facing the far end of the hall, where my best friend is rattling the food court gates. Two pulls. A pause. Two pulls. Every time he stops, a few of them start to turn back around.",
+      "section": 1,
+      "paragraphs": [
+        "c3_01_005",
+        "c3_01_006",
+        "c3_01_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_01_v004",
+      "who": "danny",
+      "text": "The pump room door is forty steps ahead of me. The pharmacy is behind me, its glass front still in one piece. I know, because I just walked out of it with everything I went in for. Plus eleven pounds of dog I definitely did not go in for.",
+      "section": 1,
+      "paragraphs": [
+        "c3_01_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_01_v005",
+      "who": "danny",
+      "text": "I'm wearing two pairs of wool socks. I tried on every boot in my store first. On tile, every single one of them squeaked. My right boot is lying in the dry fountain, a few feet to my left. It's on its side in the coins, exactly where it fell.",
+      "section": 1,
+      "paragraphs": [
+        "c3_01_009",
+        "c3_01_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_01_v006",
+      "who": "danny",
+      "text": "The puppy huffs. It's a tiny sound. The girl in the visor stops tilting her head. Then I feel him take a breath. A big one. The kind you take before you say something important. I'd timed this. I'd practiced it. I'd done it for somebody else, which everybody says is the hard part.",
+      "section": 1,
+      "paragraphs": [
+        "c3_01_011",
+        "c3_01_012",
+        "c3_01_013"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_01_v007",
+      "who": "danny",
+      "text": "And one small dog was about to tell a hundred dead people exactly where I was standing. A week ago, I'd promised myself I'd never set foot on this floor. Let me back up.",
+      "section": 1,
+      "paragraphs": [
+        "c3_01_014",
+        "c3_01_015",
+        "c3_01_016"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 2.5,
+      "lufs": -20.5,
+      "section_end": true
+    },
+    {
+      "id": "c3_02_v001",
+      "who": "danny",
+      "text": "Every night at nine, my daughter blinks three times at me. Now somebody else blinks back. The first time it happened, I just stood there on the roof with the flashlight in my hand. One. Two. Three. From the department store roof, aimed straight at the fourth window from the left. Then dark.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_001",
+        "c3_02_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v002",
+      "who": "danny",
+      "text": "I wanted to blink again. Four times. Ten. Anything that would tell Lily which light was mine. But all she had was three blinks for I love you, and the emergency one. I'd never taught her what to do if a stranger joined in. Theo was standing by the hatch. He'd seen all of it.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_003",
+        "c3_02_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v003",
+      "who": "theo",
+      "text": "That's your kid,",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v004",
+      "who": "danny",
+      "text": "he said. It wasn't a question. I'd never said her name out loud in my store. I'd been too scared the radio would hear it. I said it then. Lily. Seven. Draws on everything, including walls. Every Saturday she visits the same puppy at the pet store, the one nobody ever buys. She named him Pancake, because he's the color of one.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_005",
+        "c3_02_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v005",
+      "who": "danny",
+      "text": "Theo listened without interrupting. Then he said,",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v006",
+      "who": "theo",
+      "text": "Pancake's a terrible name for a dog.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v007",
+      "who": "danny",
+      "text": "I know.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v008",
+      "who": "theo",
+      "text": "It's good, though.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v009",
+      "who": "danny",
+      "text": "It happened again the next night, and the night after that. Three from Lily. Three from me. Three from the department store. Vera never mentioned it on the radio. She asked about my supper. She said the little girl up there with her had a cold. I never asked about the light, and she never brought it up. That was worse than anything she could have said.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v010",
+      "who": "danny",
+      "text": "Here's where we were on day six.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_011"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v011",
+      "who": "danny",
+      "text": "Water, for once, was fine. Theo and I had been back to the fountain once more, by a better crossing he'd found. Food was the next problem: nineteen protein bars and eleven freeze-dried meals, for two. My mom's insulin had about four days left. Out in the hall, my best friend walked his rounds. Around the fountain, a hundred of them stood waiting for a sound.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_02_v012",
+      "who": "danny",
+      "text": "And Theo was limping. He'd limped since the crawl. But now he walked around the tents the long way, so I wouldn't see him put weight on that leg. When I asked, he said it was fine. He said it fast. The same way I used to tell my mom the doors were locked.",
+      "section": 2,
+      "paragraphs": [
+        "c3_02_013",
+        "c3_02_014"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_03_v001",
+      "who": "danny",
+      "text": "The kid who saved my life is burning up, and the medicine is on the other side of a hundred dead people. On the morning of day seven, Theo didn't get up. I found him curled in the tent nearest the rack with his blanket over his head. The store was warm. He was shivering anyway.",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_001",
+        "c3_03_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_03_v002",
+      "who": "danny",
+      "text": "I put the back of my hand on his forehead, the way my mom used to. I took it away fast.",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_03_v003",
+      "who": "theo",
+      "text": "It's fine,",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_03_v004",
+      "who": "danny",
+      "text": "he said, with his eyes shut.",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_03_v005",
+      "who": "danny",
+      "text": "I peeled back the bandage. When I'd cleaned that cut, it was a scrape. Now the skin around it was swollen and shiny, a red patch the size of my palm, hot to the touch. A thin red streak ran up from it toward the back of his knee, like somebody had drawn on him with a marker.",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_03_v006",
+      "who": "danny",
+      "text": "Even I knew that was bad. The first-aid display had bandages, wipes and a box of painkillers. I gave him two pills and half a bottle of water and watched him fall back asleep with his mouth open. An hour later, the fever was back.",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_006",
+        "c3_03_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_03_v007",
+      "who": "danny",
+      "text": "I stood in the middle of the store and did what I always do. I made a list. He needed antibiotics. The only antibiotics in the building were in the pharmacy, on the far side of the center court. All glass front. On night one, I'd crossed it off my list for exactly that reason.",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_008",
+        "c3_03_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_03_v008",
+      "who": "danny",
+      "text": "My mom needed something from the same place. Her insulin would run out in three days. The pharmacy kept it in a fridge behind the counter. I'd picked up her prescriptions there every month for three years. So the pharmacy had everything I needed. It also had a hundred dead people standing in front of it.",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_010",
+        "c3_03_011"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_03_v009",
+      "who": "danny",
+      "text": "For a week, I'd lived inside this store and above the ceiling. I hadn't set foot on the mall floor since the night I ran here. And even if I made it across, I didn't know what to take. A pharmacy is a thousand little boxes with names nobody can say. Grab the wrong one, and I'd risk everything to bring back nothing.",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_03_v010",
+      "who": "danny",
+      "text": "I didn't know what he needed. But I knew who would have.",
+      "section": 3,
+      "paragraphs": [
+        "c3_03_013"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_04_v001",
+      "who": "danny",
+      "text": "To save a kid's life, I had to open my dead best friend's locker. Marcus kept his nursing textbook in the security office, in the locker next to mine. He studied on his breaks with a highlighter in his teeth. Some nights he quizzed me. I never got one right. He said that made me the perfect patient.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_001",
+        "c3_04_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_04_v002",
+      "who": "danny",
+      "text": "The security office was at the far end of the east wing. On night one, I'd run from there to this store in four minutes. Now there were about a hundred reasons not to run back. But Theo had told me something the morning I caught him. I go round them. I knelt by his tent.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_003",
+        "c3_04_004",
+        "c3_04_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_04_v003",
+      "who": "danny",
+      "text": "Can you get to the security office without touching the floor? He opened his eyes. They were glassy. He thought about it for longer than he needed to. Then he reached out of the tent and drew in the chalk with one finger, the way he had for the fountain.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_005",
+        "c3_04_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_04_v004",
+      "who": "danny",
+      "text": "Up the rack. Left at the big duct. Over the shoe store. Along a cable tray above the staff corridor. Down through a hatch by the restrooms.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_04_v005",
+      "who": "theo",
+      "text": "Don't touch the silver pipes,",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_04_v006",
+      "who": "danny",
+      "text": "he whispered.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_04_v007",
+      "who": "theo",
+      "text": "They're hot.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_04_v008",
+      "who": "danny",
+      "text": "You'll be okay here?",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_04_v009",
+      "who": "theo",
+      "text": "I've been okay here for four months.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_04_v010",
+      "who": "danny",
+      "text": "He meant it as a joke. Neither of us laughed. I went up alone. It was the first time I'd been in the ceiling without Theo in front of me, telling me where to put my hands. So I told myself, under my breath. Next hand. Now your knee. The steel, never the tiles.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_011",
+        "c3_04_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_04_v011",
+      "who": "danny",
+      "text": "Over the shoe store, a tile shifted under my palm, and I didn't move for a full minute. Nothing underneath me moved either. The hatch let me down into the staff corridor. The doors at both ends were shut, and it was empty. It smelled like old coffee. It was so quiet I could hear the emergency lights hum.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_013",
+        "c3_04_014"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_04_v012",
+      "who": "danny",
+      "text": "The security office looked exactly the way I'd left it. My chair pushed back. My jacket on the hook. Lily's drawing still taped to the monitor: MY DAD IS THE KING OF THE MALL. In it, I'm wearing a crown and holding up my keys. I didn't look at it for long.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_015",
+        "c3_04_016"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "synthesis_text": "The security office looked exactly the way I'd left it. My chair pushed back. My jacket on the hook. Lily's drawing still taped to the monitor: my dad is the king of the mall. In it, I'm wearing a crown and holding up my keys. I didn't look at it for long."
+    },
+    {
+      "id": "c3_04_v013",
+      "who": "danny",
+      "text": "Marcus's locker was the one covered in stickers. He never locked it. He said a lock was just a puzzle for a bored guy with time, and the only bored guy in this building was me.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_017"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_04_v014",
+      "who": "danny",
+      "text": "I opened it. His spare uniform shirt was folded on the shelf. Under the shirt was the book. And tucked inside the front cover, folded in half, was a twenty-dollar bill.",
+      "section": 4,
+      "paragraphs": [
+        "c3_04_018"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_05_v001",
+      "who": "danny",
+      "text": "My best friend has been dead for a week. Today he saved a kid's life. There was a sticky note on the twenty, in Marcus's handwriting. Told you I'd pay you back.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_001",
+        "c3_05_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_05_v002",
+      "who": "danny",
+      "text": "I don't know when he wrote it. Maybe he was going to give it to me that night, at one o'clock, right after the joke. Maybe he'd been carrying it around for weeks, waiting for the perfect moment to be annoying about it.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_05_v003",
+      "who": "danny",
+      "text": "I sat on the floor of the security office with my back against the lockers and held that note for a long time. He'd sat against my gate and told me he still owed me twenty bucks. He'd said it like the joke was on him. The money had been in here the whole time.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_004",
+        "c3_05_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_05_v004",
+      "who": "danny",
+      "text": "I folded it up and put it in my shirt pocket. There was nothing left in the world to spend it on. But I wasn't leaving it in a locker. Then I opened the book.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_006",
+        "c3_05_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_05_v005",
+      "who": "danny",
+      "text": "Marcus wrote in the margins of everything. Next to a drawing of the heart, he'd written: big pump, do not break. Next to a page about head injuries: Danny, wear the helmet. On page two-twelve, there was a stick figure asleep in front of a wall of screens. I'm pretty sure it was me.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "allow_extra": 1
+    },
+    {
+      "id": "c3_05_v006",
+      "who": "danny",
+      "text": "I found the chapter on skin infections. He'd highlighted half of it.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_05_v007",
+      "who": "danny",
+      "text": "Red, hot and swollen around a wound. A red streak spreading out from it. Fever. It was all there, in a box with a yellow stripe. The book called it cellulitis. Marcus had drawn a little skull next to the word, then crossed it out and written: not if you're fast.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_05_v008",
+      "who": "danny",
+      "text": "There was a list of antibiotics. One of them was circled twice. Cephalexin. Five hundred milligrams, four times a day. Under it, in Marcus's handwriting: ALLERGIES FIRST. And under that: Mark the edge of the red with a pen. If it crosses the line, it's winning.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_011"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "synthesis_text": "There was a list of antibiotics. One of them was circled twice. Cephalexin. Five hundred milligrams, four times a day. Under it, in Marcus's handwriting: allergies first. And under that: Mark the edge of the red with a pen. If it crosses the line, it's winning."
+    },
+    {
+      "id": "c3_05_v009",
+      "who": "danny",
+      "text": "I read that three times. Then I wrote the name on the back of my hand in marker, because I didn't trust myself to remember it. When I looked up, the wall of screens was looking back at me. The generator was still running the cameras. Every screen was on.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_012",
+        "c3_05_013"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_05_v010",
+      "who": "danny",
+      "text": "Camera nine was the center court. And at the edge of the picture, its glass front still in one piece, was the pharmacy.",
+      "section": 5,
+      "paragraphs": [
+        "c3_05_014"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_06_v001",
+      "who": "danny",
+      "text": "My dead best friend walks the same loop every twenty-six minutes. Tomorrow I'm going to use him. I sat in my old chair and watched the screens for two hours.",
+      "section": 6,
+      "paragraphs": [
+        "c3_06_001",
+        "c3_06_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_06_v002",
+      "who": "danny",
+      "text": "Camera nine was the center court. A hundred of them, give or take, standing around the fountain. Most didn't move at all. A few swayed, like people waiting for a bus that was running late.",
+      "section": 6,
+      "paragraphs": [
+        "c3_06_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_06_v003",
+      "who": "danny",
+      "text": "Camera eleven was the hallway past the pharmacy. The pet store was right next door, with its lights off. I could just make out the cages at the back. Lily's puppy had been in there every Saturday for a year. I didn't let myself think about that.",
+      "section": 6,
+      "paragraphs": [
+        "c3_06_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_06_v004",
+      "who": "danny",
+      "text": "Camera twelve was the service corridor that ran behind both stores. Empty. Walt used to say: always know your second door. The department store cameras were all black. Every one of them said NO SIGNAL. On night one, they'd been working fine. I wrote that down. Then Marcus came around the corner on camera four.",
+      "section": 6,
+      "paragraphs": [
+        "c3_06_005",
+        "c3_06_006",
+        "c3_06_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "synthesis_text": "Camera twelve was the service corridor that ran behind both stores. Empty. Walt used to say: always know your second door. The department store cameras were all black. Every one of them said no signal. On night one, they'd been working fine. I wrote that down. Then Marcus came around the corner on camera four."
+    },
+    {
+      "id": "c3_06_v005",
+      "who": "danny",
+      "text": "I started the stopwatch on my phone. Two pulls on the shoe store gate. Two on the bank. Two on the candle store. Every gate on the lower level, in the same order he'd checked them every night for a year. Past my store. Past the food court. All the way around. Twenty-six minutes. I timed him again. Twenty-six minutes.",
+      "section": 6,
+      "paragraphs": [
+        "c3_06_008",
+        "c3_06_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_06_v006",
+      "who": "danny",
+      "text": "At the food court, he always spent longer. Those were the big double gates, and they stuck. Four pulls. Six. Every time he did it, every head around the fountain turned toward him. For about three minutes, every one of them was looking the other way. Three minutes. That was the whole plan.",
+      "section": 6,
+      "paragraphs": [
+        "c3_06_010",
+        "c3_06_011"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_06_v007",
+      "who": "danny",
+      "text": "Noon was better than night. The skylights would show me every face and every piece of broken glass. The pump room door opened onto the court beside the pretzel place. From there to the pharmacy door was sixty steps. I counted them on the screen. Sixty steps on one loop. Wait inside for the next. Sixty steps back.",
+      "section": 6,
+      "paragraphs": [
+        "c3_06_012",
+        "c3_06_013"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_06_v008",
+      "who": "danny",
+      "text": "I took the book and went home through the ceiling before dark. Theo was asleep. I took the marker from my shift log and drew a line around the red on his leg, right where it stopped. At midnight, I checked it with my flashlight. The red was past the line.",
+      "section": 6,
+      "paragraphs": [
+        "c3_06_014",
+        "c3_06_015"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_07_v001",
+      "who": "danny",
+      "text": "I've been the night guard at this mall for six years. Today, for the first time, I'm walking on the floor with the dead. I spent the morning getting ready like it was a job interview.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_001",
+        "c3_07_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_07_v002",
+      "who": "danny",
+      "text": "First, the boots. I tried on every pair in my size and walked them across the stockroom tile. Hiking boots are made to grip. Grip squeaks. In the end, I put on two pairs of thick wool socks, the expensive kind I'd never have bought for myself. The tile felt cold through them. It didn't make a sound.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_07_v003",
+      "who": "danny",
+      "text": "I packed an empty backpack with a towel in the bottom, so nothing inside would rattle. I switched off my radio and zipped it into my jacket. I wrapped the keyring in a sock again. Then I took two keys off it and clipped them to my belt, where I could reach them without looking. Twenty-six, the pharmacy. Twenty-seven, the pet store next door. They shared a back corridor. Always know your second door.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_07_v004",
+      "who": "danny",
+      "text": "Theo was awake, sort of. His face was shiny with sweat. I showed him the line on his leg, and where the red had gone past it. It's winning, I said. So I'm going. He tried to sit up.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_005",
+        "c3_07_006",
+        "c3_07_006",
+        "c3_07_006",
+        "c3_07_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_07_v005",
+      "who": "theo",
+      "text": "On the floor?",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_07_v006",
+      "who": "danny",
+      "text": "Just for sixty steps. He looked at me for a long time with those glassy eyes. Then he said the same thing he'd said in the ceiling.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_008",
+        "c3_07_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_07_v007",
+      "who": "theo",
+      "text": "Don't put your foot where you think the floor is.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_07_v008",
+      "who": "danny",
+      "text": "It's actually floor this time.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_07_v009",
+      "who": "theo",
+      "text": "Then put it where you know it is.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_011"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_07_v010",
+      "who": "danny",
+      "text": "I left him a bottle of water and the last of the painkillers, and I climbed the rack.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_07_v011",
+      "who": "danny",
+      "text": "The route to the fountain was Theo's. Across the cinema ceiling, through the service door with key seventeen, along the walkway, over the supports at his better crossing. This time there was nobody in front of me. Just a hundred people below, and Marcus somewhere on his loop.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_013"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_07_v012",
+      "who": "danny",
+      "text": "At the column, I climbed down the maintenance ladder into the pump room. Eight thousand gallons sat there in the dark. The door to the court had a thumb latch on the inside. I put my ear against it. Feet shuffled past on the other side. Somebody breathed through a mouth that didn't close.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_014",
+        "c3_07_015"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_07_v013",
+      "who": "danny",
+      "text": "I waited for the rattle. Five minutes. Ten. I counted my breaths so I'd stop listening to them. Then, far away at the end of the hall: two pulls on a gate. Then four. Then six. The food court gates. I counted to ten, so every head would have time to turn. Then I opened the door.",
+      "section": 7,
+      "paragraphs": [
+        "c3_07_016",
+        "c3_07_017",
+        "c3_07_018",
+        "c3_07_019"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_08_v001",
+      "who": "danny",
+      "text": "Walking through a crowd of the dead is easy. You just can't make a sound. The first thing I noticed was the smell. From the ceiling, it was a smell. Down here, it was a wall.",
+      "section": 8,
+      "paragraphs": [
+        "c3_08_001",
+        "c3_08_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_08_v002",
+      "who": "danny",
+      "text": "The second thing was how normal they looked from the side. A man with reading glasses pushed up on his head. A woman holding a phone that died a week ago. A kid in a soccer jersey, number nine. They weren't doing anything. They were just standing there with their faces turned toward the food court, listening to Marcus.",
+      "section": 8,
+      "paragraphs": [
+        "c3_08_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_08_v003",
+      "who": "danny",
+      "text": "I stepped out and eased the door shut behind me, so the latch wouldn't click. One step. Two. The tile was cold through the wool.",
+      "section": 8,
+      "paragraphs": [
+        "c3_08_004",
+        "c3_08_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_08_v004",
+      "who": "danny",
+      "text": "I'd memorized the path on the screen. Left of the bench. Between the planter and the man in the brown coat. Around the broken glass by the cookie stand, because a sock on glass is a sound, and then it's a lot of blood. Ten steps. Fifteen. Marcus pulled the food court gates again. Every head stayed pointed that way.",
+      "section": 8,
+      "paragraphs": [
+        "c3_08_006",
+        "c3_08_007",
+        "c3_08_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_08_v005",
+      "who": "danny",
+      "text": "At twenty steps, I passed the fountain. My boot was lying in the bottom, on its side, in the coins. I'd stood here a hundred times on my rounds. I'd fished a kid's sneaker out of that fountain once. I didn't stop. At thirty, the man in the brown coat turned his head.",
+      "section": 8,
+      "paragraphs": [
+        "c3_08_009",
+        "c3_08_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_08_v006",
+      "who": "danny",
+      "text": "Not toward me. Just a little, like he'd heard his name across a parking lot. I stopped with one foot in the air and held it there. My leg started to shake. I could see the side of his face, gray and slack, and one ear with a little silver hoop in it.",
+      "section": 8,
+      "paragraphs": [
+        "c3_08_011"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_08_v007",
+      "who": "danny",
+      "text": "Two pulls, far away. He turned back toward the sound. I put my foot down.",
+      "section": 8,
+      "paragraphs": [
+        "c3_08_012",
+        "c3_08_013"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_08_v008",
+      "who": "danny",
+      "text": "Forty steps. Fifty. The pharmacy came up in front of me, glass from the floor to the ceiling. It was the only store on the court without a steel gate. Somebody in an office had decided gates looked unfriendly in front of a pharmacy. The door had one lock, down by the floor. Sixty steps.",
+      "section": 8,
+      "paragraphs": [
+        "c3_08_014",
+        "c3_08_015"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_08_v009",
+      "who": "danny",
+      "text": "I knelt, slid key twenty-six into the lock, and turned it as slowly as I've ever turned anything. It still clicked. In all that silence, it sounded like somebody dropping a plate. Behind me, I heard feet shift on the tile. Somebody had turned around.",
+      "section": 8,
+      "paragraphs": [
+        "c3_08_016",
+        "c3_08_017",
+        "c3_08_018",
+        "c3_08_019"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -20.5,
+      "section_end": true
+    },
+    {
+      "id": "c3_09_v001",
+      "who": "danny",
+      "text": "I broke into a pharmacy with a hundred dead people standing outside the glass.",
+      "section": 9,
+      "paragraphs": [
+        "c3_09_001"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_09_v002",
+      "who": "danny",
+      "text": "The one who'd turned was the cleaner. She was standing by her cart with her yellow wet-floor sign folded under one arm, the way she'd carried it every night for years. She was looking right at the pharmacy door. Right at me, on my knees in front of it. I didn't breathe. She didn't move.",
+      "section": 9,
+      "paragraphs": [
+        "c3_09_002",
+        "c3_09_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_09_v003",
+      "who": "danny",
+      "text": "Then Marcus pulled the food court gates again. She turned away and pushed her cart three feet into the wall by the restrooms. Then she did it again. I slipped inside and locked the door behind me.",
+      "section": 9,
+      "paragraphs": [
+        "c3_09_004",
+        "c3_09_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_09_v004",
+      "who": "danny",
+      "text": "The pharmacy was dim. Light came through the glass in long stripes and lay across the aisles. Sunscreen. Cough drops. A cardboard woman smiling and holding up vitamins. Behind the counter, the medicine sat on shelves in alphabetical order, and I'd like to thank whoever was in charge of that.",
+      "section": 9,
+      "paragraphs": [
+        "c3_09_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_09_v005",
+      "who": "danny",
+      "text": "C. I read the labels with my nose almost touching them. Cefdinir. Cefuroxime. Cephalexin, five hundred milligrams. I checked it against the name on the back of my hand twice. I took every bottle on the shelf. Then I went to the fridge.",
+      "section": 9,
+      "paragraphs": [
+        "c3_09_007",
+        "c3_09_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_09_v006",
+      "who": "danny",
+      "text": "It was humming. Somebody, years ago, had put the pharmacy fridge on the backup circuit, probably because of a rule nobody thought about until the end of the world. Inside, it was cold. Rows of white boxes. I found the pens my mom used: the slow one she took at night, and the quick one she took with meals. I'd carried those boxes home from this counter every month for three years. I took all of them, and every pack of needles in the drawer.",
+      "section": 9,
+      "paragraphs": [
+        "c3_09_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_09_v007",
+      "who": "danny",
+      "text": "Everything went into the backpack, wrapped in the towel. Then I sat on the floor behind the counter with my back against the drawers and waited for Marcus to come around again. Twenty-six minutes. I'd done the hard part. I'd crossed. I had what I came for. Eighteen minutes in, I heard something through the wall.",
+      "section": 9,
+      "paragraphs": [
+        "c3_09_010",
+        "c3_09_011",
+        "c3_09_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_09_v008",
+      "who": "danny",
+      "text": "A thin, high sound, like a hinge. It stopped. Then it started again, longer this time. Out in the court, heads began to turn. Not toward the food court. Toward the store next door. It was coming from the pet store. And I knew exactly what that whine was.",
+      "section": 9,
+      "paragraphs": [
+        "c3_09_013",
+        "c3_09_014",
+        "c3_09_015"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_10_v001",
+      "who": "danny",
+      "text": "My daughter named this puppy. If he barks, we all die. Every Saturday for a year, Lily and I walked to that pet store after her swimming lesson. She'd press her forehead against the glass of his kennel, and he'd press his nose against the other side. I'd stand behind her saying five more minutes",
+      "section": 10,
+      "paragraphs": [
+        "c3_10_001",
+        "c3_10_002",
+        "c3_10_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_10_v002",
+      "who": "danny",
+      "text": "until the girl at the register laughed at me. He was supposed to be sold in a week. Then in a month. Then everybody stopped saying anything. Lily said nobody had bought him because he was waiting for us. I said we lived on the tenth floor and Grandma was allergic to everything. Lily said Grandma would get used to it.",
+      "section": 10,
+      "paragraphs": [
+        "c3_10_002",
+        "c3_10_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_10_v003",
+      "who": "danny",
+      "text": "Now he was whining through the wall, and the dead were listening. I got up on my knees and looked over the counter. They were drifting toward the pet store. Not fast. Just leaning that way, one after another, the way they'd leaned toward me under the ceiling. The first ones put their hands on its glass.",
+      "section": 10,
+      "paragraphs": [
+        "c3_10_004",
+        "c3_10_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_10_v004",
+      "who": "danny",
+      "text": "And I understood something. That whine was the best thing that could have happened to me.",
+      "section": 10,
+      "paragraphs": [
+        "c3_10_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_10_v005",
+      "who": "danny",
+      "text": "Every head in the court was turning toward the pet store. Away from the pharmacy door. Away from my sixty steps. If I left him there, the next time Marcus pulled the food court gates, I could walk home with a backpack full of medicine and nobody would even look at me.",
+      "section": 10,
+      "paragraphs": [
+        "c3_10_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_10_v006",
+      "who": "danny",
+      "text": "He'd keep crying. They'd keep standing at that glass. And sooner or later, he'd stop. I thought about the gate. About my best friend sitting on the other side of it, and me with the key in my hand, telling myself I didn't have a choice. I'd had a choice. I'd just picked the one where I got to stay inside.",
+      "section": 10,
+      "paragraphs": [
+        "c3_10_008",
+        "c3_10_009",
+        "c3_10_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_10_v007",
+      "who": "danny",
+      "text": "The pharmacy's stockroom door opened onto the service corridor, exactly like on camera twelve. It was empty and dim. Two doors down was a steel door with a paw-print sticker on it. I used key twenty-seven.",
+      "section": 10,
+      "paragraphs": [
+        "c3_10_011"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_10_v008",
+      "who": "danny",
+      "text": "The pet store smelled like sawdust and something worse. The fish tanks were dark. At the back, in the kennel nearest the floor, there he was. Pancake-colored. One ear up and one ear down. A bag of food had fallen against his kennel, and he'd chewed a hole in it through the bars. His water bottle, the big gallon kind clipped to the bars, was almost empty.",
+      "section": 10,
+      "paragraphs": [
+        "c3_10_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_10_v009",
+      "who": "danny",
+      "text": "He saw me and stopped whining. His whole back end started to wag. He remembered me. I was the guy who stood behind Lily saying five more minutes. Leaving him would have saved me. I opened the cage.",
+      "section": 10,
+      "paragraphs": [
+        "c3_10_013",
+        "c3_10_014",
+        "c3_10_015"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_11_v001",
+      "who": "danny",
+      "text": "The woman who's been threatening me just saved my life. That's what scares me.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_001"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v002",
+      "who": "danny",
+      "text": "I gave him a handful of food from the torn bag and let him drink from my cupped hand until he stopped shaking. Then I lifted him into the backpack, onto the towel, next to my mom's insulin. He turned around twice and lay down with his chin on the medicine, like he'd been hired to guard it.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v003",
+      "who": "danny",
+      "text": "I took a red collar off the hook by the register. I don't know why. It just seemed wrong to take him without one.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v004",
+      "who": "danny",
+      "text": "Back through the corridor. Back into the pharmacy. The crowd was still bunched against the pet store glass, but it was quiet in there now, and they didn't know what to do about it. Some of them were already drifting back. Then, far away, two pulls on the food court gates. Then four. I counted to ten. I went.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_004",
+        "c3_11_005",
+        "c3_11_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v005",
+      "who": "danny",
+      "text": "That's where I was when this started. In my socks, twenty steps out, with eleven pounds of puppy on my back. He pushed his nose through the gap in the zipper. He'd been in a box for a week. Now he could see the sky through the skylights, and a hundred people standing around, and every one of them looked like a new best friend.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v006",
+      "who": "danny",
+      "text": "He huffed. The girl in the visor stopped tilting her head. Then he barked. Just once. High and happy. It was the loudest sound I'd heard in a week. Every head in that court turned toward me at the same time, like a flock of birds.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_008",
+        "c3_11_009",
+        "c3_11_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v007",
+      "who": "danny",
+      "text": "The girl in the visor took a step. Then the man with the lanyard. Then everyone around the fountain, leaning in. I backed up, and they kept coming, and the pump room door was forty steps away on the other side of them. Then something hissed at the far end of the hall.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_011",
+        "c3_11_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v008",
+      "who": "danny",
+      "text": "A red light bounced across the floor past the food court, spitting sparks, rolling until it hit a bench. A road flare, the kind I kept in the trunk of my car. It popped and crackled like bacon in a pan, and it was louder than any dog.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_013"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v009",
+      "who": "danny",
+      "text": "Every head turned toward it. And they went, a slow tide of them, back the way they'd come.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_014"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v010",
+      "who": "danny",
+      "text": "I looked up. On the department store's second-floor balcony, a woman was standing at the railing. Long camel coat. A price tag hanging from the sleeve. She lifted one hand, the way you'd wave to somebody across a parking lot. Then she stepped back out of sight.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_015"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -20.5
+    },
+    {
+      "id": "c3_11_v011",
+      "who": "danny",
+      "text": "I walked the last forty steps to the pump room with my heart in my ears. Latch. Ladder. Dark. Halfway up the column, I switched on my radio. She was already talking.",
+      "section": 11,
+      "paragraphs": [
+        "c3_11_016",
+        "c3_11_017",
+        "c3_11_018"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -20.5,
+      "section_end": true
+    },
+    {
+      "id": "c3_12_v001",
+      "who": "danny",
+      "text": "A stranger saved my life today. Tonight she sent me the bill.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_001"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v002",
+      "who": "vera",
+      "text": "There he is,",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -19.5,
+      "radio": "vera"
+    },
+    {
+      "id": "c3_12_v003",
+      "who": "danny",
+      "text": "Vera said. Her voice was warm, like we'd run into each other at the grocery store.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v004",
+      "who": "vera",
+      "text": "That was very brave, Danny. For a dog.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -19.5,
+      "radio": "vera"
+    },
+    {
+      "id": "c3_12_v005",
+      "who": "danny",
+      "text": "I held on to the ladder and didn't answer.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v006",
+      "who": "vera",
+      "text": "I'm not going to pretend I'm not enjoying this,",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -19.5,
+      "radio": "vera"
+    },
+    {
+      "id": "c3_12_v007",
+      "who": "danny",
+      "text": "she said.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v008",
+      "who": "vera",
+      "text": "You've been so careful with me. And now look. You owe me.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -19.5,
+      "radio": "vera"
+    },
+    {
+      "id": "c3_12_v009",
+      "who": "danny",
+      "text": "I pressed the button. I didn't ask you to do that.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_005",
+        "c3_12_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v010",
+      "who": "vera",
+      "text": "Nobody ever asks. That's what makes it a favor.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -19.5,
+      "radio": "vera"
+    },
+    {
+      "id": "c3_12_v011",
+      "who": "danny",
+      "text": "A little laugh.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v012",
+      "who": "vera",
+      "text": "I'd like to meet. Face to face. I'm tired of talking into a box. Tomorrow at noon. There's a fence on the roof between your side and mine. I'll be at the gate.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -19.5,
+      "radio": "vera"
+    },
+    {
+      "id": "c3_12_v013",
+      "who": "danny",
+      "text": "I let go of the button. I didn't tell her yes. She didn't need me to. It took me an hour to get home through the ceiling with a puppy on my back. He didn't make a sound the whole way. Apparently, he only barked in front of a live audience.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_007",
+        "c3_12_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v014",
+      "who": "danny",
+      "text": "Theo was where I'd left him, burning. I woke him up enough to ask the question Marcus had written in capitals. Are you allergic to anything?",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_009",
+        "c3_12_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v015",
+      "who": "theo",
+      "text": "Adults,",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_011"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_12_v016",
+      "who": "danny",
+      "text": "he mumbled. I decided that didn't count. I gave him the first capsule with half a bottle of water and wrote the time on the tent wall in marker. Every six hours. I set an alarm on my phone, the only thing it was still good for. Then I unzipped the backpack.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_011",
+        "c3_12_012",
+        "c3_12_013"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v017",
+      "who": "danny",
+      "text": "Pancake climbed out, sniffed the whole tent, and walked straight up Theo's sleeping bag. He lay down across Theo's ankles like he'd been doing it for years. Theo opened one eye.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_014",
+        "c3_12_015"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v018",
+      "who": "theo",
+      "text": "You smell like them.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_015"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_12_v019",
+      "who": "danny",
+      "text": "Sixty steps' worth.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_016"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v020",
+      "who": "theo",
+      "text": "And you came back with a dog.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_017"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "delivery_scene": "A sick, feverish fifteen-year-old boy answers from a tent in a dark store. Tired and plain, in his own normal voice."
+    },
+    {
+      "id": "c3_12_v021",
+      "who": "danny",
+      "text": "I came back with medicine. The dog was extra. He looked at the puppy for a long time. Then he closed his eye again. But he left his hand on Pancake's back. At nine, I went up to the roof. One, two, three, from Lily. One, two, three, from me. Then one, two, three from the department store. Same as every night.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_018",
+        "c3_12_019",
+        "c3_12_020"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_12_v022",
+      "who": "danny",
+      "text": "Except tonight, I knew what the woman holding that light looked like. And tomorrow, she wanted to see me up close. That night, I took the last key off the ring.",
+      "section": 12,
+      "paragraphs": [
+        "c3_12_021",
+        "c3_12_022"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_13_v001",
+      "who": "danny",
+      "text": "I met the woman on the radio face to face. She was perfectly nice. That's the problem.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_001"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v002",
+      "who": "danny",
+      "text": "I didn't take all forty-two keys to meet somebody who wanted one of them. The last key, the one with the red tag, was threaded onto Pancake's new collar, behind the buckle where nobody would look. He was asleep on Theo's feet. Theo's fever was still up. But the red on his leg hadn't moved past the newest line.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v003",
+      "who": "danny",
+      "text": "I climbed the stockroom ladder at ten to twelve. The mall roof is one huge flat field of gravel and air vents. Where the department store starts, there's a chain-link fence, eight feet high, with a gate in the middle and a padlock on our side. Walt used to call it the border. She was already there.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_003",
+        "c3_13_004",
+        "c3_13_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v004",
+      "who": "danny",
+      "text": "Mid-forties. Hair pinned up. The camel coat, with the price tag still hanging from the cuff. She was holding two paper cups with steam coming off them.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "allow_extra": 1
+    },
+    {
+      "id": "c3_13_v005",
+      "who": "vera",
+      "text": "Danny,",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v006",
+      "who": "danny",
+      "text": "she said, smiling like I was late for lunch.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v007",
+      "who": "vera",
+      "text": "You're taller on the radio.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_007"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v008",
+      "who": "danny",
+      "text": "Behind her stood two men. One was big, maybe fifty, with a gray beard and his hands folded in front of him. He looked at the roof hatch behind me and didn't look away. The other was young and skinny, with a radio on each hip and a tablet under his arm. He was chewing his thumbnail.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v009",
+      "who": "vera",
+      "text": "This is Boone,",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v010",
+      "who": "danny",
+      "text": "she said.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v011",
+      "who": "vera",
+      "text": "He doesn't talk. And this is Kip. He doesn't stop.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_009"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v012",
+      "who": "danny",
+      "text": "Kip looked at his shoes. She pushed one of the cups through a gap by the hinge. Coffee. Real coffee. I hadn't had coffee in nine days. I took it. I hated how good it was.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_010",
+        "c3_13_011"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v013",
+      "who": "vera",
+      "text": "How's the dog?",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v014",
+      "who": "danny",
+      "text": "she asked.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v015",
+      "who": "vera",
+      "text": "Does he have a name?",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v016",
+      "who": "danny",
+      "text": "No.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_013"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v017",
+      "who": "vera",
+      "text": "And the boy? How's his leg?",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_014"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v018",
+      "who": "danny",
+      "text": "I'd never told her about Theo. I'd never told her about anybody.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_015"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v019",
+      "who": "vera",
+      "text": "Here's what I think,",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_016"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v020",
+      "who": "danny",
+      "text": "she said.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_016"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v021",
+      "who": "vera",
+      "text": "You have keys. I have people. Boone can carry anything. Kip can fix anything with a battery. Together, this place is a fortress with a food court. Apart, you're a man in a tent with a sick kid and a puppy.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_016"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v022",
+      "who": "danny",
+      "text": "Where's the girl? I said.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_017",
+        "c3_13_017"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v023",
+      "who": "vera",
+      "text": "Sleeping. She doesn't like heights.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_018"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v024",
+      "who": "danny",
+      "text": "She looked past me, across the highway, at Parkview. She didn't say anything about it. She didn't have to. Then she looked at my belt.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_019",
+        "c3_13_020"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v025",
+      "who": "vera",
+      "text": "Walt's keys,",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_020"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v026",
+      "who": "danny",
+      "text": "she said.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_020"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v027",
+      "who": "vera",
+      "text": "All of them?",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_020"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v028",
+      "who": "danny",
+      "text": "I'd never told her about Walt either. All of them, I said. It was forty-one. I didn't correct her.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_021",
+        "c3_13_022",
+        "c3_13_022"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v029",
+      "who": "vera",
+      "text": "Think about it,",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_023"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v030",
+      "who": "danny",
+      "text": "she said.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_023"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_13_v031",
+      "who": "vera",
+      "text": "Take your time. We've got nothing but.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_023"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.5,
+      "delivery_scene": "A woman in her forties talks face to face across a rooftop fence in daylight, warm, unhurried and amused."
+    },
+    {
+      "id": "c3_13_v032",
+      "who": "danny",
+      "text": "They walked back across the gravel. Kip went last. At the gate, he reached through to check the padlock, like somebody had asked him to. His fingers pressed something into mine. Then he was gone. It was a price tag, folded in half. On the back, in tiny handwriting, it said: She'll kill you for that key.",
+      "section": 13,
+      "paragraphs": [
+        "c3_13_024",
+        "c3_13_025"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    },
+    {
+      "id": "c3_14_v001",
+      "who": "danny",
+      "text": "Every night my daughter blinks I love you. Tonight she blinked SOS. On the morning of day ten, Theo sat up on his own and asked if there were any more of the chocolate protein bars.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_001",
+        "c3_14_002"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "synthesis_text": "Every night my daughter blinks I love you. Tonight she blinked S. O. S. On the morning of day ten, Theo sat up on his own and asked if there were any more of the chocolate protein bars."
+    },
+    {
+      "id": "c3_14_v002",
+      "who": "danny",
+      "text": "I checked his leg. The red had pulled back inside my first line, the one I'd drawn the night before I went out. His forehead was only warm. His eyes were his again.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_003"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v003",
+      "who": "theo",
+      "text": "You walked on the floor,",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v004",
+      "who": "danny",
+      "text": "he said.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v005",
+      "who": "theo",
+      "text": "In socks.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_004"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v006",
+      "who": "danny",
+      "text": "Two pairs.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_005"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v007",
+      "who": "theo",
+      "text": "You're an idiot.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_006"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v008",
+      "who": "danny",
+      "text": "The book said it was winning. He looked at Pancake, who was chewing the corner of his blanket.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_007",
+        "c3_14_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v009",
+      "who": "theo",
+      "text": "Did the book say to get a dog?",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_008"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v010",
+      "who": "danny",
+      "text": "Marcus would have, I said. It was the first time I'd said Marcus's name to Theo. He didn't ask. He just nodded, like he already knew who that was. He'd been watching me for four months. He probably did.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_009",
+        "c3_14_009",
+        "c3_14_010"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v011",
+      "who": "danny",
+      "text": "I read Kip's note again that afternoon. Then I folded it and put it in my shirt pocket, next to Marcus's twenty. I didn't know what to do with either of them. At five to nine, Theo came up to the roof with me. He carried Pancake inside his sweatshirt, which was a better idea than a backpack.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_011",
+        "c3_14_012"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v012",
+      "who": "danny",
+      "text": "Across the highway, I found Parkview. Tenth floor. Fourth window from the left. I always count, even when I know where to look. At nine, the light came on. Short. Short. Short. Then long. Long. Long. Then short. Short. Short.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_013",
+        "c3_14_014",
+        "c3_14_015",
+        "c3_14_016",
+        "c3_14_017"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v013",
+      "who": "danny",
+      "text": "I'd taught her that when she was five, on the kitchen floor, with a flashlight and a blanket over our heads. S-O-S. For emergencies. She thought it was a game. She'd never used it. Not once. Theo was looking at me.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_018",
+        "c3_14_019",
+        "c3_14_020"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0,
+      "synthesis_text": "I'd taught her that when she was five, on the kitchen floor, with a flashlight and a blanket over our heads. S. O. S. For emergencies. She thought it was a game. She'd never used it. Not once. Theo was looking at me."
+    },
+    {
+      "id": "c3_14_v014",
+      "who": "theo",
+      "text": "What does that mean?",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_020"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v015",
+      "who": "danny",
+      "text": "I knew exactly what it meant. My mom had gone into that apartment with about ten days of insulin. This was day ten. I blinked back three times. I love you. I'm here. It was all I had. For the first time all week, the department store didn't copy her. Its roof stayed dark. Somebody over there had seen it too.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_021",
+        "c3_14_022",
+        "c3_14_023"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 0.2,
+      "lufs": -18.0
+    },
+    {
+      "id": "c3_14_v016",
+      "who": "danny",
+      "text": "I went downstairs and opened the backpack. The insulin was still there, wrapped in the towel in the coldest corner of the stockroom. Enough for months. My mom's insulin had run out. The new insulin was in my hand. And there was a mile and a half of the dead between us.",
+      "section": 14,
+      "paragraphs": [
+        "c3_14_024",
+        "c3_14_025"
+      ],
+      "style": "Deadpan",
+      "pace": "Natural",
+      "gap": 1.1,
+      "lufs": -18.0,
+      "section_end": true
+    }
+  ]
+}
