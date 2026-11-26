@@ -1,0 +1,55 @@
+{
+  "frames": 17904,
+  "seconds": 596.8,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "fullDecode": "passed",
+  "frameTimestamps": "every frame continuous",
+  "audio": "sample-exact decoded slice of original retention mix, two-second silent hold, AAC export",
+  "sourceAudioPCMHash": "SHA256=2240247fc8d457c8fccbb1c6ca42c99e9aabef63f723240f10de962a35b1af7c",
+  "retentionStartFrame": 18436,
+  "retentionStoryEndFrame": 36280,
+  "audioChannels": 2,
+  "sampleRate": 48000,
+  "distinctImages": 46,
+  "shots": 82,
+  "maxImageUses": 3,
+  "nativeFigureLayers": 0,
+  "ending": "They were cutting through the wall.",
+  "preview": {
+    "width": 1280,
+    "height": 720,
+    "frames": 17904,
+    "fps": 30,
+    "fullDecode": "passed",
+    "frameTimestamps": "every frame continuous",
+    "audio": "identical encoded AAC to 1080p output"
+  },
+  "visualReview": {
+    "allShotMidpoints": 82,
+    "encodedSpotChecks": 17,
+    "correctedGroundLevelReactions": "Danny and Theo remain above ceiling; Marcus and undead below",
+    "continuity": "one remaining boot after rescue; one ladder descent; keys muffled; closed pump room",
+    "reviewMethod": "Each shot compared with mapped original recorded words; encoded checks at major story transitions"
+  },
+  "captions": {
+    "cues": 198,
+    "words": 1738,
+    "file": "part-two.srt",
+    "maxLines": 2,
+    "lastWord": "wall",
+    "lastWordEnd": 594.604
+  },
+  "combinedPartOneAndTwoMaxContentUses": 3,
+  "files": {
+    "night-guard-chapter-2-part-two-painted-v1.mp4": {
+      "bytes": 527618948,
+      "sha256": "98def90b42540db25fc47e886b2e27818569fd0a26039c23e892691bd30673fe"
+    },
+    "night-guard-chapter-2-part-two-painted-v1-preview.mp4": {
+      "bytes": 95770790,
+      "sha256": "999817c71d7c90008ecb3e3a0982efca015e15af558f06b596d138442f542656"
+    }
+  }
+}
