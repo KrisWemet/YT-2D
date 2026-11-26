@@ -98,7 +98,7 @@ export const ChapterSfx: React.FC<{r: ReturnType<typeof resolveChapter>}> = ({r}
 );
 
 // "Where and when", top left, for the first few seconds of a segment.
-const SegTag: React.FC<{text: string; t: number}> = ({text, t}) => {
+export const SegTag: React.FC<{text: string; t: number}> = ({text, t}) => {
   const o = interpolate(t, [0, 0.35, 3.4, 3.9], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   if (o <= 0) return null;
   const size = 40;
