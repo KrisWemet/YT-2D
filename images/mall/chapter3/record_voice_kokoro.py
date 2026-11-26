@@ -66,11 +66,11 @@ for n, c in enumerate(chunks, 1):
     if note.exists() and json.loads(note.read_text()).get('voice') == VOICES[c['who']]:
         continue
     best = None
-    for speed in (1.0, 0.96, 1.05, 0.92):
+    for speed in (1.0, 0.96, 1.05, 0.92, 0.86, 0.8):  # short lines can come out too quick at 1.0
         audio, sr = tts.create(c.get('synthesis_text', c['text']), voice=VOICES[c['who']], speed=speed, lang='en-us')
         sf.write(dst, audio, sr)
         a = assess(c, dst); a['speed'] = speed
-        if best is None or a['similarity'] > best[1]['similarity']:
+        if best is None or (a['ok'], a['similarity']) > (best[1]['ok'], best[1]['similarity']):
             best = (audio.copy(), a, sr)
         if a['ok']:
             break
