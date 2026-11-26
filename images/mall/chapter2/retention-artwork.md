@@ -13,3 +13,12 @@ illustration-story. Create new 16:9 landscape background plate for the same anim
 ## roof-light
 
 illustration-story. Create new 16:9 background plate, same night mall world as reference. Reference is STYLE and LOCATION continuity only. View from Danny's adjacent mall rooftop looking toward the department store roof at close medium distance. Main focus is a low rectangular rooftop service doorway, door slightly ajar at center right, black interior. A waist-height concrete parapet crosses lower third, roof vents to left, deep cobalt sky. At far left in distance include the same tall apartment block across a choked highway, small and dim, so geography is clear. Lighting is very dark blue, hand-painted ink outlined 2D comic with subtle texture, no photorealism. The door and parapet should be visible without a flashlight turned on yet. Leave a small dark area immediately left of the doorway free for a code-animated flashlight origin. No people, no zombies, no light beam, no letters or text. Wide 16:9 with distinct closer perspective compared to full skyline reference.
+
+## V10 paintings (Kie.ai, seedream/5-flash-text-to-image, 2K 16:9)
+
+Generated with `images/mall/gen.py flash NAME` from `images/mall/prompts.json` (scene prompt plus the shared `_style`), 3.24 credits each. Working copies are `public/mall/bg/ch2-b3-corridor.jpg`, `ch2-fitting-rooms.jpg` and `ch2-chalk-floor.jpg`; task metadata is in `images/mall/raw/*.flash.json`. Lettering ("B3"), the chalk route, the sleeping figure and all characters are drawn in code.
+
+- `b3corridor`: basement service corridor ending in a heavy steel door with a blank sign plate and a caged work lamp.
+- `fittingrooms`: department-store fitting-room corridor at night, one cubicle half open with a bench and an empty hanger.
+- `chalkfloor`: top-down store floor with a torn bag of climbing chalk and spilled powder.
+

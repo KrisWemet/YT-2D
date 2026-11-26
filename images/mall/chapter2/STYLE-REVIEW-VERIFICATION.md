@@ -1,6 +1,6 @@
 # Illustrated Part One — v10 verification
 
-Scope: 0:00–10:14.533, `MallChapter2IllustratedPartOne`. The full `MallChapter2` composition remains the existing v8 chapter. The part ends on Theo's eight-thousand-gallons claim, before the location is explained.
+These results are for the render made on v8 timing: 0:00–10:14.533, `MallChapter2IllustratedPartOne`. Part One has since moved onto the v10 edit (18,427 frames, 10:14.233; see `STYLE-REVIEW.md`). The structural audit passes on the new timing with every shot's narration unchanged; a v10-timed render has not been made. The full `MallChapter2` composition is now the v10 still-screen cut. The part ends on Theo's eight-thousand-gallons claim, before the location is explained.
 
 - 18,436 frames at 30 fps, 1920×1080 H.264; stereo 48 kHz AAC.
 - Complete 1080p decode passed. All presentation timestamps are continuous at 3,000 ticks/frame on a 90 kHz timescale.

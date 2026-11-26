@@ -1,6 +1,6 @@
-# Illustrated Part One — 10:14.533
+# Illustrated Part One — 10:14.233
 
-`MallChapter2IllustratedPartOne` is the current v10 review: 18,436 frames at 30 fps. It ends after Theo says, “I know where there's eight thousand gallons,” with a short reaction hold. The fountain and route are left for the next part. The existing recorded performance and sound mix are retained through this endpoint. The full `MallChapter2` composition still defaults to the established v8 chapter.
+`MallChapter2IllustratedPartOne` is the current v10 review: 18,427 frames at 30 fps. It ends after Theo says, “I know where there's eight thousand gallons,” with a short reaction hold. The fountain and route are left for the next part. The existing recorded performance and sound mix are retained through this endpoint. The full `MallChapter2` composition now renders the v10 still-screen cut (see `PRODUCTION.md`).
 
 ## Visual direction
 
@@ -14,7 +14,7 @@ Continuity checks include the dark apartment window after goodnight, Vera remain
 
 ## Timeline and audit
 
-`src/mall/chapter2/illustrated-part-one.json` is an exhaustive final-clock picture track. Each entry records the image, start frame, duration, crop and narration cue. The review returns this track before the older scene renderer can run, so there is no fallback to flat figures. The original source script, word times, retention edit map, finished sound master and series outline are unchanged.
+`src/mall/chapter2/illustrated-part-one.json` is an exhaustive final-clock picture track. Each entry records the image, start frame, duration, crop and narration cue. The review returns this track before the older scene renderer can run, so there is no fallback to flat figures. The original source script, word times and series outline are unchanged. Frame times follow the v10 retention edit and its sound master (see “Timing on the v10 edit” below).
 
 Run:
 
@@ -35,6 +35,10 @@ node images/mall/chapter2/render-style-review.cjs
 
 Set `REMOTION_BROWSER_EXECUTABLE` to an installed Chromium executable if needed. The first command captures all 103 shot midpoints; the second creates resumable picture segments, normalizes frame timestamps, muxes the finished sound mix and verifies the movie. Output: `out/chapter2-style-review-v10/night-guard-chapter-2-v10-part-one.mp4`.
 
-`NIGHT_GUARD_AUDIO_REFERENCE` optionally points to the v8 MP4 to copy its encoded AAC directly. Without that local file, the checked-in retention MP3 is encoded to stereo 48 kHz AAC. The local delivery uses the v8 AAC prefix and verifies it matches exactly. `NIGHT_GUARD_REVIEW_WORK` optionally changes the work/output directory.
+`NIGHT_GUARD_AUDIO_REFERENCE` optionally points to the v10 chapter MP4 (`night-guard-chapter-2-v10.mp4`) to copy its encoded AAC directly; the v8 MP4's audio no longer lines up after the title. Without that local file, the checked-in retention MP3 is encoded to stereo 48 kHz AAC. The earlier local delivery used the v8 AAC prefix on v8 timing. `NIGHT_GUARD_REVIEW_WORK` optionally changes the work/output directory.
 
 The legacy `MallChapter2StyleReview10Min` registration remains available at exactly ten minutes; use the new Part One registration for the natural ending. Full-size delivery MP4s stay outside Git. Nothing is published or merged.
+
+## Timing on the v10 edit
+
+Part One follows the v10 retention edit and audio master. Compared with v8, the chapter title starts four frames later and everything after it plays nine frames (0.3 s) earlier, so Part One is 18,427 frames (10:14.233). `retime-part-one.py` moved every shot start and caption through its source frame: each of the 103 shots covers the same narration as before, every caption lands on the same words, and the reaction hold after the last line is still 1.46 seconds. The plan's `editVersion` must match the edit map, or `check-style-review.cjs` fails; after a future edit change, run `python3 images/mall/chapter2/retime-part-one.py <git ref with the previous edit>`.

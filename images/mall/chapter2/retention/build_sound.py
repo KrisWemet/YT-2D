@@ -55,18 +55,21 @@ for bed in source['beds']:
   fx[i:i+length]+=sound[pos]*10**(v/20)*edge*hush
 # Sound-led visual passage, no additional narration or recycled dialogue.
 c=next(c for c in edit['clips'] if c['kind']=='return-choice');t0=c['start']/30
-for name,t,db in [('creak',2.6,-22),('shuffle',4.3,-28),('breath',4.7,-26),('creak',8,-25),('breath',13,-29)]:add(load(name),t0+t,db)
+# v10 holds this moment as one short still: the strain, a breath and the spill, in 2.3 seconds.
+short=c['frames']<150
+for name,t,db in ([('creak',0.0,-23),('breath',1.1,-28)] if short else [('creak',2.6,-22),('shuffle',4.3,-28),('breath',4.7,-26),('creak',8,-25),('breath',13,-29)]):add(load(name),t0+t,db)
 for name,db in [('groans',-38),('mallhum',-39)]:
  a=np.resize(load(name),c['frames']*SPF);env=np.minimum(np.arange(len(a))/SR,(len(a)-np.arange(len(a)))/SR).clip(0,1);add(a*env,t0,db)
 # Water striking tiles: deterministic filtered noise with sparse droplets.
-rng=np.random.default_rng(7);length=int(3.9*SR);noise=rng.normal(0,.19,length).astype(np.float32)
+spill=1.9 if short else 3.9
+rng=np.random.default_rng(7);length=int(spill*SR);noise=rng.normal(0,.19,length).astype(np.float32)
 noise=np.convolve(noise,np.ones(9)/9,'same').astype(np.float32);tt=np.arange(length)/SR
-env=np.minimum(tt/.08,1)*np.clip(1-tt/3.9,0,1)**1.8
+env=np.minimum(tt/.08,1)*np.clip(1-tt/spill,0,1)**1.8
 water=noise*env
-for sec in [0,.18,.44,.70,1.1,1.65,2.05,2.9]:
+for sec in ([0,.18,.44,.70,1.1,1.5] if short else [0,.18,.44,.70,1.1,1.65,2.05,2.9]):
  start=int(sec*SR);l=min(int(.1*SR),length-start);u=np.arange(l)/SR
  water[start:start+l]+=.04*np.sin(2*np.pi*(1300*u+1800*u*u))*np.exp(-u*60)
-add(water,t0+8.85,-7)
+add(water,t0+(.3 if short else 8.85),-7)
 # The boot lands in an empty fountain: retain the source's hard impact, without water.
 # The chapter title gets one restrained impact after the quick hook.
 add(load('slam'),11.5,-27)

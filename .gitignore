@@ -40,3 +40,13 @@ images/mall/vo/ch2/vo.wav
 images/mall/vo/ch2/recording.json
 images/mall/vo/ch2/selected.json
 images/mall/chapter2/models/
+
+# Chapter Three raw narration and local speech models
+images/mall/vo/ch3/takes/
+images/mall/vo/ch3/vo.wav
+images/mall/vo/ch3/recording.json
+images/mall/vo/ch3/selected.json
+images/mall/chapter3/models/
+# Free local Kokoro voice model (downloaded from Hugging Face; see chapter3/record_voice_kokoro.py)
+images/mall/kokoro-models/
+images/mall/vo/ch3-kokoro/

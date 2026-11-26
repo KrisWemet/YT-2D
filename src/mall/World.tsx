@@ -1,6 +1,13 @@
-import React, {useContext} from 'react';
+import React, {createContext, useContext} from 'react';
 import {ShortLayout} from './ShortLayout';
 import {Img, staticFile} from 'remotion';
+
+// Opt-in sub-pixel placement of the painted backgrounds (see World). Off by default, so earlier
+// renders keep their exact pixels.
+export const SubpixelCamera = createContext(false);
+// Still screens hold each painting on screen, where upscaling shows. An edit can cap the camera
+// zoom so a painting is never enlarged much past its own resolution. 0 = no cap.
+export const MaxZoom = createContext(0);
 
 // Background sizes in pixels (Seedream 5 Flash 2K, 16:9).
 export const BG_W = 2816;
@@ -25,7 +32,10 @@ export type BgName =
   | 'ch2-cinema'
   | 'ch2-pump'
   | 'ch2-service-hall'
-  | 'ch2-roof-night';
+  | 'ch2-roof-night'
+  | 'ch2-b3-corridor'
+  | 'ch2-fitting-rooms'
+  | 'ch2-chalk-floor';
 
 // Camera: centre point (image px) and zoom (1 = whole image fills the frame).
 export type Cam = {x: number; y: number; z: number};
@@ -63,6 +73,9 @@ export const World: React.FC<{
   over?: React.ReactNode; // drawn above the characters, still in picture space
 }> = ({bg, cam, width, height, filter, bgFilter, shake = [0, 0], children, over}) => {
   const vertical = useContext(ShortLayout);
+  const smooth = useContext(SubpixelCamera);
+  const maxZoom = useContext(MaxZoom);
+  if (maxZoom && cam.z > maxZoom) cam = {...cam, z: maxZoom};
   if (vertical) {
     width = 1080;
     height = 1920;
@@ -78,9 +91,14 @@ export const World: React.FC<{
   const s = Math.max(width / c.w, height / c.h);
   const left = (width - c.w * s) / 2 - vx * s;
   const top = (height - c.h * s) / 2 - vy * s;
+  // Layout boxes are snapped to whole pixels, so a slow drift of the painting would step while the
+  // vector figures glide. A transform keeps the painting on the same sub-pixel camera as the figures.
+  const placement: React.CSSProperties = smooth
+    ? {left: 0, top: 0, width: BG_W, height: BG_H, transform: `translate(${left}px, ${top}px) scale(${s})`, transformOrigin: '0 0'}
+    : {left, top, width: BG_W * s, height: BG_H * s};
   return (
     <div style={{position: 'absolute', left: 0, top: 0, width, height, overflow: 'hidden', filter}}>
-      <Img src={staticFile(`mall/bg/${bg}.jpg`)} style={{position: 'absolute', left, top, width: BG_W * s, height: BG_H * s, maxWidth: 'none', filter: bgFilter}} />
+      <Img src={staticFile(`mall/bg/${bg}.jpg`)} style={{position: 'absolute', ...placement, maxWidth: 'none', filter: bgFilter}} />
       <svg width={width} height={height} viewBox={vb} preserveAspectRatio="xMidYMid slice" style={{position: 'absolute', left: 0, top: 0}}>
         {children}
         {over}

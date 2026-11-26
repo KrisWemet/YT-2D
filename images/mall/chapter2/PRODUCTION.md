@@ -1,8 +1,32 @@
 # Chapter Two production
 
-The current illustrated opening review is `MallChapter2IllustratedPartOne`: 10:14.533, ending on Theo's eight-thousand-gallons claim. All 103 shots use complete paintings in the approved pale-head, thin-stick style, with camera motion and a maximum of three uses per image. The full `MallChapter2` composition below remains v8. See `STYLE-REVIEW.md` and run `node images/mall/chapter2/render-style-review.cjs` to reproduce Part One.
+The current illustrated opening review is `MallChapter2IllustratedPartOne`: 10:14.233 on the v10 edit, ending on Theo's eight-thousand-gallons claim. All 103 shots use complete paintings in the approved pale-head, thin-stick style, with camera motion and a maximum of three uses per image. The full `MallChapter2` composition below is the v10 still-screen cut. See `STYLE-REVIEW.md` and run `node images/mall/chapter2/render-style-review.cjs` to reproduce Part One.
 
-The current finished composition is `MallChapter2`: the approved retention revision with the ceiling-side and ladder continuity corrections, without a recap. It runs 49,732 frames at 30 fps (27:37.733). Earlier source timing and performances remain available as `MallChapter2VisualPreview`. The revised preview is `MallChapter2RetentionPreview`.
+The current finished composition is `MallChapter2`: the approved retention revision with the ceiling-side and ladder continuity corrections, without a recap, plus the v9 picture polish described below. It runs 49,732 frames at 30 fps (27:37.733). Earlier source timing and performances remain available as `MallChapter2VisualPreview`. The revised preview is `MallChapter2RetentionPreview`.
+
+## V10 still screens
+
+`MallChapter2` now renders the still-screen cut (input prop `{"stills": false}` gives the animated cut on the same timeline). It runs 49,072 frames at 30 fps (27:15.733).
+
+- **One picture per screen.** Each shot is held as a single frame chosen a little past its middle, so actions read as under way. The roof sequence's own cuts, the food offer's three stages and every light flash (Lily's torch, the window count, the copied signal) are separate stills, each flash on its cue word. No figure blinks, sways, bobs or mouths words; the radio badge's bars are fixed; camera drift stops.
+- **Story pauses of three seconds or less.** The title beat is 0.3 s shorter and the silent 24-second return trip is one 2.3-second wide still of Danny catching Theo as the jug spills. Every spoken word is kept; the longest pause inside the story is 2.9 s. The 10-second end card follows the last line.
+- **Detailed backgrounds.** Paintings are never enlarged past 2× zoom. New paintings for the B3 corridor (the level lettered on its sign plate), the fitting rooms (Vera asleep on the bench, then the empty room) and the chalked store floor (Theo's route). The radio, key and phone inserts sit over the scene's own painting; the title and end cards show their paintings unblurred; the wall prints appear on the painted store wall.
+- **Zombie crowds.** The crowd around the fountain is drawn as small zombies (grey-green skin, sunken eyes, ragged clothes, arms out), and the view down through the ceiling shows zombies from above, faces turned up when something happens overhead.
+
+Captions and chapter markers for this timing are `publish/night-guard-chapter-2-v10.srt` and `-v10-chapters.txt`. The audio master was rebuilt with `build_edit.py` and `build_sound.py` (v10 settings at the top of `build_edit.py`).
+
+## V9 picture polish
+
+Picture only: the narration, sound, runtime, captions and chapter markers are exactly those of v8.
+
+- **No flash frames.** The retention cuts left about twenty one- to ten-frame slivers of neighbouring shots at edit points. `retention.tsx` now builds a picture plan once and gives any run shorter than 15 frames to the picture beside it, so cuts land on the audio edit or on the narration word that cued them. Every picture lasts at least half a second.
+- **Sub-pixel camera.** Painted backgrounds were placed with layout pixels, so slow camera drifts stepped unevenly under the smoothly moving figures. Inside the revised edit (`SubpixelCamera`), the painting is placed with a transform and glides with the figures. Render with input props `{"subpixel": false}` to compare.
+- **Section tags on every chapter.** The trimmed openings had removed most "where and when" tags. Each section's tag now opens on its first retained frame; the cold open stays untitled.
+- **Transitions.** Short fades through black where the story moves to another night, day or place (title to Night One, Day 2, Day 3, the six-a.m. wait, Day 4, Day 5, nine o'clock, the end card) and a fade from and to black at the very start and end. Memories and imagined scenes dissolve in and out over 8 frames; the woman in Vera's story fades out of the fitting room over 24 frames under one continuous camera.
+- **Continuity.** The crawls above the store and the court run on the source clock (`crawlState` in `continuity.ts`), with movement following the narration, so cuts never send the actors back to a starting mark; the close views follow the crawlers. The court crossing ends on the collapse marks, Danny enters the collapse in the crawl's on-screen shape, and the rescue starts from the hanging shape the fall left him in. Consecutive fall shots share one struggle and debris clock; the strap draws out as Theo reaches for it; the wound close-up keeps the rescue staging; the ladder approach starts where the rescue left them, beside the broken ceiling; the boot stays in the fountain, and "I could see Marcus too" moves in on Marcus.
+- **Motion.** The food-offer camera moves the painting and the figures together with eased pushes instead of two single-frame zoom jumps; the inserted plates (ceiling angles, prints, grip, second light, frozen thumb) push slowly toward their subjects; the poured jug fills; the drill crew keeps walking and the service-hall crowd keeps shambling instead of stopping dead or walking on the spot.
+
+`check_continuity.cjs` now also verifies the crawl (no backward slide, no jumps, ends on the collapse marks) and the picture plan (no gaps, nothing under 15 frames).
 
 ## Current editorial sources
 
@@ -25,7 +49,7 @@ With Node dependencies installed, preview with `npm run studio`. To export with 
 node images/mall/chapter2/retention/render.cjs
 ```
 
-Set `REMOTION_BROWSER_EXECUTABLE` if an installed Chrome or headless shell should be used. The export goes into `out/chapter2-retention/`. It is checked for expected frames, dimensions, frame rate, stereo audio, and complete decoding.
+Set `REMOTION_BROWSER_EXECUTABLE` if an installed Chrome or headless shell should be used. The export goes into `out/chapter2-retention/` as `night-guard-chapter-2-v10.mp4`. The picture renders in `CHUNKS` parts (default 4) that are kept between runs, so an interrupted export resumes; `CONCURRENCY` sets parallel browser tabs (default 6). It is checked for expected frames, dimensions, frame rate, stereo audio, and complete decoding.
 
 To change the cut or rebuild the audio, use Python with numpy and soundfile, plus ffmpeg:
 

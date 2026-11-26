@@ -1,4 +1,9 @@
-import React from 'react';
+import React, {createContext, useContext} from 'react';
+
+// Inserts normally paint their own dark backdrop. An edit that places them over a painted scene
+// turns the backdrop off; Chapter One keeps the default.
+export const CardBackdrop = createContext(true);
+const useBackdrop = (fill: string) => (useContext(CardBackdrop) ? fill : 'transparent');
 import {AbsoluteFill, interpolate, random} from 'remotion';
 import {FONT} from '../../thumbs/Thumbs';
 import {MallMap} from '../MallMap';
@@ -96,7 +101,7 @@ export const KeyRing16: React.FC<{t: number; glowAt?: number; tagBig?: number; s
   const glow = t >= glowAt ? 0.5 + 0.5 * Math.sin((t - glowAt) * 7) : 0;
   const keys = [-62, -46, -31, -16, -2, 12, 27, 42, 57];
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 42%, #2c3446 0%, #10141c 70%)'}}>
+    <AbsoluteFill style={{background: useBackdrop('radial-gradient(ellipse at 50% 42%, #2c3446 0%, #10141c 70%)')}}>
       <Screen>
         <g transform={`translate(${W / 2 + dx - tagBig * 260}, ${330 - tagBig * 170}) scale(${1.05 + tagBig * 0.6}) rotate(${swing})`}>
           <circle cx={0} cy={0} r={96} fill="none" stroke="#c9ccd2" strokeWidth={16} />
@@ -137,7 +142,7 @@ export const KeyInHand: React.FC<{t: number; shake?: number; tag?: string}> = ({
   const dx = Math.sin(t * 41) * 7 * shake;
   const dy = Math.cos(t * 37) * 5 * shake;
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 55%, #252b3a 0%, #090b10 75%)'}}>
+    <AbsoluteFill style={{background: useBackdrop('radial-gradient(ellipse at 50% 55%, #252b3a 0%, #090b10 75%)')}}>
       <Screen>
         <g transform={`translate(${W / 2 + dx}, ${560 + dy}) scale(${2.2 + 0.05 * t}) rotate(-24)`}>
           <circle cx={-120} cy={0} r={48} fill="#d9b44a" stroke={INK} strokeWidth={8} />
@@ -263,7 +268,7 @@ export const RadioCard: React.FC<{t: number; frame: number; state: 'on' | 'crack
   const bag = state === 'bag';
   const noise = state === 'crackle' ? random(`rc${Math.floor(frame / 2)}`) : 0;
   return (
-    <AbsoluteFill style={{background: bag ? '#141018' : 'radial-gradient(ellipse at 50% 50%, #2a3140 0%, #0b0d12 75%)'}}>
+    <AbsoluteFill style={{background: useBackdrop(bag ? '#141018' : 'radial-gradient(ellipse at 50% 50%, #2a3140 0%, #0b0d12 75%)')}}>
       <Screen>
         <g transform={`translate(${W / 2}, ${H / 2 + 30}) scale(${z})`}>
           {bag && (
@@ -443,7 +448,7 @@ export const PhoneCard: React.FC<{
     );
   };
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 50%, #263042 0%, #0a0c11 75%)'}}>
+    <AbsoluteFill style={{background: useBackdrop('radial-gradient(ellipse at 50% 50%, #263042 0%, #0a0c11 75%)')}}>
       <Screen>
         <g transform={`translate(${sx + buzz}, ${top}) scale(${z}) translate(${-sx}, ${-top})`}>
           <rect x={sx - 250} y={top} width={500} height={900} rx={64} fill="#111318" stroke={INK} strokeWidth={10} />

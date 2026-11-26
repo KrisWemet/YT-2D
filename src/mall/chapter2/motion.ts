@@ -20,10 +20,26 @@ export const blendPose = (a: Pose, b: Pose, t: number): Pose => ({
   sit: t < .5 ? a.sit : b.sit,
 });
 
-export const blink = (eyes: Eyes, t: number, offset = 0): Eyes =>
-  eyes !== 'zombie' && (t + offset + .24 * Math.sin(t * .9)) % 4.18 < .10 ? 'closed' : eyes;
+// The same body shape for a figure drawn facing the other way (every angle reflected), so a pose
+// can continue across a mirrored staging without the body flipping.
+export const mirrorPose = (p: Pose): Pose => ({
+  ...p,
+  lean: -(p.lean ?? 0),
+  head: -(p.head ?? 0),
+  armF: [-p.armF[0], -p.armF[1]],
+  armN: [-p.armN[0], -p.armN[1]],
+  legF: [-p.legF[0], -p.legF[1]],
+  legN: [-p.legN[0], -p.legN[1]],
+});
 
-export const idlePose = (base: Pose, t: number, strength = 1): Pose => ({
+// Still screens: the edit that renders one held picture per screen switches this on, so no figure
+// is caught mid-blink, mid-word or mid-sway. Other compositions leave it off.
+export const STILL = {on: false};
+
+export const blink = (eyes: Eyes, t: number, offset = 0): Eyes =>
+  !STILL.on && eyes !== 'zombie' && (t + offset + .24 * Math.sin(t * .9)) % 4.18 < .10 ? 'closed' : eyes;
+
+export const idlePose = (base: Pose, t: number, strength = 1): Pose => STILL.on ? base : ({
   ...base,
   lean: (base.lean ?? 0) + Math.sin(t * 1.8) * 1.45 * strength,
   head: (base.head ?? 0) + Math.sin(t * 1.21 + .7) * 2.6 * strength,

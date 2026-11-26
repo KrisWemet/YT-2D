@@ -119,28 +119,53 @@ const SegTag: React.FC<{text: string; t: number}> = ({text, t}) => {
 // Start and end of every shot (seconds), for QA tools.
 export const shotTimes = (def: ChapterDef) => resolveChapter(def).shots.map((s) => [s.start, s.end] as [number, number]);
 
-export const makeChapter = (def: ChapterDef, options: {audio?: boolean} = {}): React.FC<{sourceFrame?: number}> => {
+// The "where and when" tag and the radio badge, drawn over any picture. `t` is the chapter's own
+// clock; `tag` overrides which segment tag shows (an edit can place tags on its own timeline).
+type OverlayProps = {t: number; tag?: {text: string; t: number} | null; fadeBadge?: boolean; still?: boolean};
+export const makeChapterOverlay = (def: ChapterDef): React.FC<OverlayProps> => {
   const r = resolveChapter(def);
-  const Chapter: React.FC<{sourceFrame?: number}> = ({sourceFrame}) => {
+  const Overlay: React.FC<OverlayProps> = ({t, tag: forced, fadeBadge = false, still = false}) => {
+    if (t >= def.data.duration) return null;
+    const tag = forced === undefined ? [...r.tags].reverse().find((g) => t >= g.t) : forced;
+    const radio = r.cues.segments.find((g) => g.kind === 'radio' && t >= g.s - 0.05 && t <= g.e + 0.2);
+    const name = radio ? def.radioNames[radio.id ?? ''] ?? 'RADIO' : null;
+    if (!tag && !name) return null;
+    // Optionally ease the badge on and off over a few frames instead of popping.
+    const badge = radio && fadeBadge ? Math.max(0, Math.min(1, (t - radio.s + 0.05) / 0.15, (radio.e + 0.2 - t) / 0.15)) : 1;
+    return (
+      <Screen>
+        {tag && <SegTag text={tag.text} t={t - tag.t} />}
+        {name && (
+          <g opacity={badge}>
+            <RadioBadge name={name} t={still && radio ? radio.s + 0.37 : t} color={name === 'MARCUS' ? '#8fd18a' : name === 'EMERGENCY ALERT' ? '#f0c53c' : '#e58fb4'} />
+          </g>
+        )}
+      </Screen>
+    );
+  };
+  return Overlay;
+};
+
+// `shot` draws one particular shot at `sourceFrame`, even outside its own time range, so an edit
+// can hold a picture across a cut point instead of flashing the few frames of a neighbour.
+export const makeChapter = (
+  def: ChapterDef,
+  options: {audio?: boolean; overlays?: boolean} = {},
+): React.FC<{sourceFrame?: number; shot?: number}> => {
+  const r = resolveChapter(def);
+  const Overlay = makeChapterOverlay(def);
+  const Chapter: React.FC<{sourceFrame?: number; shot?: number}> = ({sourceFrame, shot}) => {
     useFont();
     const currentFrame = useCurrentFrame();
     const frame = sourceFrame ?? currentFrame;
     const t = frame / FPS;
-    let i = r.shots.findIndex((s) => t >= s.start && t < s.end);
+    let i = shot ?? r.shots.findIndex((s) => t >= s.start && t < s.end);
     if (i < 0) i = r.shots.length - 1;
     const sh = r.shots[i];
-    const tag = [...r.tags].reverse().find((g) => t >= g.t);
-    const radio = r.cues.segments.find((g) => g.kind === 'radio' && t >= g.s - 0.05 && t <= g.e + 0.2);
-    const name = radio ? def.radioNames[radio.id ?? ''] ?? 'RADIO' : null;
     return (
       <AbsoluteFill style={{background: '#000', overflow: 'hidden'}}>
         {sh.draw({t: t - sh.start, dur: sh.end - sh.start, frame, ev: sh.ev})}
-        {t < def.data.duration && (
-          <Screen>
-            {tag && <SegTag text={tag.text} t={t - tag.t} />}
-            {name && <RadioBadge name={name} t={t} color={name === 'MARCUS' ? '#8fd18a' : name === 'EMERGENCY ALERT' ? '#f0c53c' : '#e58fb4'} />}
-          </Screen>
-        )}
+        {options.overlays !== false && <Overlay t={t} />}
         {options.audio !== false && def.vo && <Audio src={staticFile(def.vo)} />}
         {options.audio !== false && <ChapterSfx r={r} />}
       </AbsoluteFill>

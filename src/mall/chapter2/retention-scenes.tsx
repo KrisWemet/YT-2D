@@ -4,7 +4,7 @@ import {Screen} from '../Overlays';
 import {Guard, Zed, Vignette} from '../shots';
 import {jointsOf, POSES, Pose} from '../Stick';
 import {Theo, Jug} from './scenes';
-import {blendPose, ease, idlePose} from './motion';
+import {blendPose, blink, ease, idlePose} from './motion';
 
 const INK='#0b0c0c';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
@@ -12,6 +12,23 @@ const lerp=(a:number,b:number,t:number)=>a+(b-a)*t;
 const crawl:Pose={lean:80,head:-40,armF:[65,88],armN:[70,93],legF:[-85,-90],legN:[-75,-85],sit:true};
 const Plate:React.FC<{name:string;zoom?:number;origin?:string}>=({name,zoom=1,origin='50% 50%'})=>
  <Img src={staticFile(`mall/bg/${name}.jpg`)} style={{position:'absolute',width:'100%',height:'100%',objectFit:'cover',transform:`scale(${zoom})`,transformOrigin:origin}}/>;
+
+const TSKIN=['#94a17d','#8a9873','#a3aa8b','#7f906f'],TCLOTH=['#4b5563','#5d4a46','#4e5b48','#625849','#3f4a5c'];
+const TopZombie:React.FC<{x:number;y:number;k:number;up:boolean;turn:number}>=({x,y,k,up,turn})=>{
+ const skin=TSKIN[k%4],cloth=TCLOTH[k%5];
+ return <g transform={`translate(${x},${y}) rotate(${turn})`}>
+  {[-1,1].map(side=><g key={side}>
+   <path d={up?`M${side*14} 4L${side*20} -16`:`M${side*13} 2L${side*16} -30`} stroke={INK} strokeWidth={10} strokeLinecap="round"/>
+   <path d={up?`M${side*14} 4L${side*20} -16`:`M${side*13} 2L${side*16} -30`} stroke={skin} strokeWidth={5} strokeLinecap="round"/>
+  </g>)}
+  <path d="M-21 12Q-20-6 0-8Q20-6 21 12L15 18L10 13L4 19L-2 13L-8 19L-14 13Z" fill={cloth} stroke={INK} strokeWidth={4} strokeLinejoin="round"/>
+  <circle cy={-2} r={13} fill={skin} stroke={INK} strokeWidth={4}/>
+  {up?<g><circle cx={-5} cy={-5} r={3.2} fill="#2b1f22"/><circle cx={5} cy={-5} r={3.2} fill="#2b1f22"/>
+   <circle cx={-4.6} cy={-5.4} r={1} fill="#e8e2b8"/><circle cx={5.4} cy={-5.4} r={1} fill="#e8e2b8"/>
+   <ellipse cy={4} rx={3.6} ry={2.6} fill="#3a1d1f"/></g>
+   :<path d="M-9-8Q0-15 9-8Q3-4-2-6Z" fill="#3b3630" opacity={.75}/>}
+ </g>;
+};
 
 export const CeilingAngle:React.FC<{up?:boolean;time:number;boot?:boolean;leg?:boolean}>=({up,time,boot=false,leg=true})=><AbsoluteFill style={{background:'#0c141c'}}>
  <Plate name={`ch2-retention-ceiling-${up?'up':'down'}`} zoom={1+.008*Math.sin(time*.25)}/>
@@ -26,11 +43,8 @@ export const CeilingAngle:React.FC<{up?:boolean;time:number;boot?:boolean;leg?:b
    const rand=(n:number)=>{const v=Math.sin(n*127.1+31.7)*43758.5453;return v-Math.floor(v)};
    const x=620+rand(i+2)*680,y=390+rand(i+73)*490;
    if((x-960)**2+(y-720)**2<130**2)return null;
-   return <g key={i} transform={`translate(${x+Math.sin(time*.7+i)*2},${y})`}>
-    <path d="M-15 8L-27 26M15 8l26 9" stroke={INK} strokeWidth={9} strokeLinecap="round"/>
-    <ellipse cy={12} rx={17} ry={26} fill={i%6?'#495647':'#283c5a'} stroke={INK} strokeWidth={6}/>
-    <circle cy={-6} r={16} fill={i%3?'#8b9672':'#707b63'} stroke={INK} strokeWidth={5}/>
-   </g>;
+   // Seen from straight above: the dead crowd the leg hangs over, faces turned up at the noise.
+   return <TopZombie key={i} x={x+Math.sin(time*.7+i)*2} y={y} k={i} up={time<8||time>1200} turn={-30+rand(i+9)*60}/>;
   })}
   {leg&&<g transform={`translate(${boot?960:1350},${boot?570+clamp((time-1207.1)/.8)*165:890}) rotate(${boot?lerp(-20,70,clamp((time-1207.1)/.8)):-30}) scale(${boot?.6:1.3})`}>
    {!boot&&<path d="M-22 160L-25-20" stroke={INK} strokeWidth={36} strokeLinecap="round"/>}
@@ -87,33 +101,46 @@ export const FrozenChoice:React.FC<{time:number}>=({time})=><AbsoluteFill style=
 
 export const FoodChoice:React.FC<{time:number}>=({time})=>{
  const t=time-637.762,turn=ease((t-9)/1.1),offer=ease((t-1)/1.4)*(1-ease((t-5)/1.5));
- const dp=blendPose(POSES.think,POSES.holdUp,offer*.75);
+ const dp=idlePose(blendPose(POSES.think,POSES.holdUp,offer*.75),time);
  const hp=jointsOf(dp,700,1060,660).handN;
- const zoom=t<6?1:t<12?1.15:1.05,pan=t<6?0:t<12?-170:-40;
- return <AbsoluteFill style={{background:'#14212e'}}><Plate name="sportsinside"/><Screen><g transform={`translate(${pan},0) scale(${zoom})`}>
- <Guard x={700} y={1060} h={660} pose={dp} eyes="worried" look2={.7}/>
- <Theo x={1330} y={1040} h={570} pose={{...POSES.sitChair,head:12*turn,lean:7*turn}} look2={-turn} face={-1} eyes="worried"/>
+ // One camera for the painting and the figures: a slow push toward Theo while the offer hangs,
+ // then an easing back as Danny's thoughts move on. No framing changes in a single frame.
+ const push=ease((t-5.2)/1.6),settle=ease((t-11.3)/2.2);
+ const zoom=1+.15*push-.1*settle,pan=-170*push+130*settle;
+ return <AbsoluteFill style={{background:'#14212e'}}><AbsoluteFill style={{transform:`translateX(${pan}px) scale(${zoom})`,transformOrigin:'0 0'}}>
+ <Plate name="sportsinside"/><Screen><g>
+ <Guard x={700} y={1060} h={660} pose={dp} eyes={blink('worried',time)} look2={.7}/>
+ <Theo x={1330} y={1040} h={570} pose={{...POSES.sitChair,head:12*turn,lean:7*turn}} time={time} look2={-turn} face={-1} eyes="worried"/>
  <path d="M1250 960h160v108h-160Z" fill="#637475" stroke={INK} strokeWidth={8}/>
  <g transform={`translate(${hp[0]},${hp[1]+12}) rotate(-12)`}><rect x={-42} y={-15} width={84} height={30} rx={3} fill="#b8a16f" stroke={INK} strokeWidth={5}/><path d="M-20-12h43v24h-43Z" fill="#4e685e"/></g>
- </g></Screen><Vignette o={.16}/></AbsoluteFill>;
+ </g></Screen></AbsoluteFill><Vignette o={.16}/></AbsoluteFill>;
 };
 
-export const ReturnChoice:React.FC<{frame:number}>=({frame})=>{
+// `wide` holds the whole moment in one frame (the still-screen cut shows a single picture).
+export const ReturnChoice:React.FC<{frame:number;wide?:boolean}>=({frame,wide=false})=>{
  const t=frame/30;
  const buckle=ease((t-2.5)/.65),caught=ease((t-4.2)/.65),haul=ease((t-13)/3);
  const hanging:Pose={lean:-76,head:45,armF:[-65,-95],armN:[-65,-95],legF:[88,92],legN:[8,0],sit:true};
  const pulling:Pose={lean:80,head:-55,armF:[68,95],armN:[70,100],legF:[-90,-85],legN:[-90,-85],sit:true};
  const landed:Pose={lean:-80,head:40,armF:[-65,-88],armN:[-77,-104],legF:[85,90],legN:[75,85],sit:true};
- const tp=blendPose(blendPose(crawl,hanging,buckle),landed,haul);
- const dp=blendPose(crawl,pulling,caught);
- const dx=563-97*haul+17*caught,dy=423;
- const tx=980-97*haul,ty=lerp(428,414,haul);
+ // They are still crawling when the sequence opens, and settle on their marks as the leg goes.
+ const approach=1-ease(t/2.5),reach=Math.sin(t*2*Math.PI/1.4)*approach;
+ const crawling=(step:number):Pose=>({...crawl,head:-39+4*step,armF:[65-12*step,88-9*step],armN:[70+12*step,93+9*step],
+  legF:[-85-8*step,-90+11*step],legN:[-75+8*step,-85-11*step]});
+ const tp=blendPose(blendPose(crawling(-reach),hanging,buckle),landed,haul);
+ const dp=blendPose(crawling(reach),pulling,caught);
+ const dx=563-97*haul+17*caught-26*approach,dy=423;
+ const tx=980-97*haul-26*approach,ty=lerp(428,414,haul);
  const near=jointsOf(dp,dx,dy,320).handN;
  const other=jointsOf(tp,tx,ty,350).handN;
  const release=ease((t-8)/.7),retrieve=ease((t-19)/2.5);
  const jx=lerp(lerp(1270,1370,release),550,retrieve),jy=lerp(lerp(414,680,release),410,retrieve);
- const shot=t<3?0:t<5?1:t<8?2:t<11?3:t<14?4:t<19?5:6;
- const camera=shot===1?[1.7,-680,-150]:shot===2?[1.8,-660,-175]:shot===3?[1.7,-1240,-200]:shot===4?[1.1,-80,-30]:shot===5?[1.5,-350,-140]:[1.15,-85,-25];
+ const shot=t<3?0:t<8?1:t<11?3:t<14?4:t<19?5:6;
+ // The buckle and the catch share one slowly tightening close shot (two near-identical framings
+ // cut together read as a jump), then the edit moves on to the jug, the wide view and the haul.
+ const tighten=ease((t-3)/5);
+ const open=1.15+.05*ease(t/3);
+ const camera=wide?[1.12,-70,-20]:shot===0?[open,960-908.7*open,540-491.3*open]:shot===1?[1.7+.1*tighten,-680+20*tighten,-150-25*tighten]:shot===3?[1.7,-1240,-200]:shot===4?[1.1,-80,-30]:shot===5?[1.5,-350,-140]:[1.15,-85,-25];
  return <AbsoluteFill style={{background:'#0c1722'}}><AbsoluteFill style={{transform:`translate(${camera[1]}px,${camera[2]}px) scale(${camera[0]})`,transformOrigin:'0 0'}}>
  <Plate name="ch2-ceiling"/><Screen>
   {Array.from({length:16},(_,i)=><Zed key={i} x={170+i*104} y={995+(i%3)*20} h={165+i%3*12} dim={.65} eyes="zombie"/>)}
