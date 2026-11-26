@@ -1,6 +1,6 @@
 # Opening ten-minute illustrated review
 
-The user narrowed this revision to the first ten minutes of Chapter Two. The review composition is `MallChapter2StyleReview10Min`, exactly 18,000 frames at 30 fps. The established full `MallChapter2` composition still renders v8. The review enables `styleReview:true`; the default is false.
+The user narrowed this revision to the first ten minutes of Chapter Two. The review composition is `MallChapter2StyleReview10Min`, exactly 18,000 frames at 30 fps. The full `MallChapter2` composition now renders the v10 still-screen cut (see `PRODUCTION.md`). The review enables `styleReview:true`; the default is false.
 
 ## Visual direction
 
@@ -26,6 +26,10 @@ With dependencies installed:
 node images/mall/chapter2/render-style-review.cjs
 ```
 
-Set `REMOTION_BROWSER_EXECUTABLE` to an installed Chromium executable if needed. The output is `out/chapter2-style-review/night-guard-chapter-2-v9-first-10-minutes.mp4`. No generation key is needed. The checked-in finished audio master is used by default. Set `NIGHT_GUARD_AUDIO_REFERENCE` to the v8 MP4 when the original encoded AAC should be copied directly.
+Set `REMOTION_BROWSER_EXECUTABLE` to an installed Chromium executable if needed. The output is `out/chapter2-style-review/night-guard-chapter-2-v9-first-10-minutes.mp4`. No generation key is needed. The checked-in finished audio master is used by default. Set `NIGHT_GUARD_AUDIO_REFERENCE` to the v10 MP4 when its encoded AAC should be copied directly (the v8 MP4 no longer lines up; see below).
 
 The local delivery uses resumable one-minute picture segments, normalizes their video timescale to 90 kHz, and copies the opening encoded AAC from v8. It checks every frame timestamp, expected media properties, matching audio prefix and a complete decode. Verification results accompany the review delivery.
+
+## Timing after the v10 merge
+
+The review reads the shared edit map and audio master, so it now follows v10 timing. The opening is 13.47 seconds (the chapter title starts four frames later), and everything after it plays 0.3 seconds (nine frames) earlier than in v8, so the review ends 0.3 seconds further into the story. The checked-in audio master matches this timing. The review stays animated (it is not affected by the still-screen setting), and it now also has the v9 picture polish: fades at scene changes, no flash frames at edit points, section tags and the sub-pixel camera. The verification notes in `STYLE-REVIEW-VERIFICATION.md` describe the v8-based render.
