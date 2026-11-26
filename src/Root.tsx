@@ -4,6 +4,9 @@ import {makeShort, shortFrames, FPS as SFPS} from './mall/MallShort';
 import {SHORT1_DEF, SHORT2_DEF, SHORT3_DEF} from './mall/shortsCh1';
 import {chapterFrames, makeChapter, FPS as CFPS} from './mall/MallChapter';
 import {CHAPTER1_DEF} from './mall/chapter1/chapter1';
+import {CHAPTER2_DEF} from './mall/chapter2/chapter2';
+import {Chapter2Retention, RETENTION_FRAMES, RETENTION_READY} from './mall/chapter2/retention';
+import {ILLUSTRATED_PART_ONE_FRAMES} from './mall/chapter2/illustrated-part-one';
 import {Composition, Still} from 'remotion';
 import {RigTest} from './pigeon/RigTest';
 import {PigeonShort} from './pigeon/Short';
@@ -24,9 +27,15 @@ const MallShort1 = makeShort(SHORT1_DEF);
 const MallShort2 = makeShort(SHORT2_DEF);
 const MallShort3 = makeShort(SHORT3_DEF);
 const MallChapter1 = makeChapter(CHAPTER1_DEF);
+const MallChapter2 = makeChapter(CHAPTER2_DEF);
 
 export const RemotionRoot: React.FC = () => (
   <>
+    <Composition id="MallChapter2IllustratedPartOne" component={Chapter2Retention} defaultProps={{styleReview:true}} durationInFrames={ILLUSTRATED_PART_ONE_FRAMES} fps={CFPS} width={1920} height={1080} />
+    <Composition id="MallChapter2StyleReview10Min" component={Chapter2Retention} defaultProps={{styleReview:true}} durationInFrames={18000} fps={CFPS} width={1920} height={1080} />
+    <Composition id="MallChapter2VisualPreview" component={MallChapter2} durationInFrames={chapterFrames(CHAPTER2_DEF)} fps={CFPS} width={1920} height={1080} />
+    <Composition id="MallChapter2RetentionPreview" component={Chapter2Retention} durationInFrames={RETENTION_FRAMES} fps={CFPS} width={1920} height={1080} />
+    {RETENTION_READY && <Composition id="MallChapter2" component={Chapter2Retention} durationInFrames={RETENTION_FRAMES} fps={CFPS} width={1920} height={1080} />}
     {CHAPTER_CUTS.map((cut, i) => (
       <Composition key={i} id={`NightGuardPart${String(i + 1).padStart(2, '0')}`} component={ChapterShort}
         defaultProps={{part: i + 1}} durationInFrames={cut.frames} fps={30} width={1080} height={1920} />

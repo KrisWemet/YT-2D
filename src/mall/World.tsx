@@ -20,7 +20,12 @@ export type BgName =
   | 'parkview'
   | 'roof'
   | 'stockroom'
-  | 'apartment';
+  | 'apartment'
+  | 'ch2-ceiling'
+  | 'ch2-cinema'
+  | 'ch2-pump'
+  | 'ch2-service-hall'
+  | 'ch2-roof-night';
 
 // Camera: centre point (image px) and zoom (1 = whole image fills the frame).
 export type Cam = {x: number; y: number; z: number};

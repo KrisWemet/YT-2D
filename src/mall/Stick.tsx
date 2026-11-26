@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Opt-in for the current chapter edit; archived chapters keep their own design.
+export const IllustratedFigures=React.createContext(false);
+
 /*
  * Code-drawn figures for the mall series: round heads and inked lines follow the shared pose rig.
  * Costume colors and small accessories distinguish figures even in long shots.
@@ -524,6 +527,41 @@ export const Stick: React.FC<StickProps> = ({
   const shirt = look.shirt ?? '#7a8494';
   const skin = look.skin ?? SKIN.light;
   const fid = React.useMemo(() => `wob${filterId++}`, []);
+  const illustrated=React.useContext(IllustratedFigures);
+
+  if(illustrated){
+    const headR=Math.abs(lean)>65?40:47,infected=eyes==='zombie',headFill=ghost?'#202832':infected?'#9aa98e':'#e1e5e9';
+    const headAngle=rad(lean+(pose.head??0)*.5);
+    const largeHead:V2=[headC[0]+20*Math.sin(headAngle),headC[1]-20*Math.cos(headAngle)];
+    const line=(points:V2[],width=4.5)=><polyline points={points.map(p=>p.join(',')).join(' ')} fill="none" stroke={ink} strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+    const stickArm=(elbow:V2,hand:V2,prop:Prop,angle:number)=><>{line([shoulder,elbow,hand],4.4)}<ellipse cx={hand[0]} cy={hand[1]} rx={5} ry={6.5} fill={ink}/>{!ghost&&<PropShape p={prop} at={hand} ang={angle} beam={beam}/>}</>;
+    return <g transform={`translate(${x},${y}) scale(${s*face},${s})`} opacity={opacity} style={dim!==1?{filter:`brightness(${dim})`}:undefined}>
+      <defs><radialGradient id={`${fid}Paper`} cx="36%" cy="30%" r="75%"><stop offset="0" stopColor={headFill}/><stop offset=".75" stopColor={headFill}/><stop offset="1" stopColor={ghost?'#202832':infected?'#73836d':'#b1bac7'}/></radialGradient></defs>
+      {shadow>0&&<ellipse cy={3} rx={pose.sit?64:39} ry={5.5} fill="#050a12" opacity={shadow*.75}/>}
+      {line([hip,k.kneeF,k.footF],4.8)}{line([k.footF,add(k.footF,[13,1])],5.5)}
+      {line([hip,k.kneeN,k.footN],4.8)}{line([k.footN,add(k.footN,[13,1])],5.5)}
+      {stickArm(k.elbowF,k.handF,propF,pose.armF[1])}
+      {line([hip,neck,largeHead],5)}
+      {stickArm(k.elbowN,k.handN,propN,pose.armN[1])}
+      {look.keysOnBelt&&!ghost&&<g transform={`translate(${hip[0]+8},${hip[1]+3})`}><circle r={5.5} fill="none" stroke="#c8ab64" strokeWidth={2.8}/><path d="M-3 6v19h4v-5m5-14v16h4v-6" fill="none" stroke="#c8ab64" strokeWidth={3}/></g>}
+      {look.radioOnChest&&!ghost&&<g transform={`translate(${neck[0]-7},${neck[1]+26})`}><rect x={-5} y={-8} width={12} height={18} rx={2} fill="#26323b" stroke={ink} strokeWidth={2}/><path d="M3-8v-13" stroke={ink} strokeWidth={3}/></g>}
+      {look.hat==='hood'&&<g transform={`translate(${neck}) rotate(${lean})`}><path d="M-22-7q22 18 44 0l8 14q-30 18-60 0Z" fill={look.hatColor??'#65756a'} stroke={ink} strokeWidth={2.3}/><path d="M-20 5q22 9 43 0" fill="none" stroke="#879288" strokeWidth={2}/></g>}
+      <g transform={`translate(${largeHead}) rotate(${pose.head??0})`}>
+        <circle r={headR} fill={`url(#${fid}Paper)`} stroke={ink} strokeWidth={2.7}/>
+        <path d="M-39 4a40 40 0 0 1 49-42" fill="none" stroke="#f1e2c2" strokeWidth={1.5} opacity={ghost?0:.4}/>
+        {look.hat==='guard'&&<g><path d="M-49-26q-6-39 46-40q54-1 54 37l-9 7q-44 13-91-4Z" fill={look.hatColor??'#263e61'} stroke={ink} strokeWidth={3}/><path d="M-47-28q45 10 88-2l25 18q-30 8-69-4Z" fill="#17283c" stroke={ink} strokeWidth={2.7}/>{!back&&<path d="M-3-59l9 4v12l-9 7-9-7v-12Z" fill="#bb9b53" stroke={ink} strokeWidth={1.7}/>}</g>}
+        {look.hat==='beanie'&&<path d="M-48-20q-10-45 42-45q56-3 54 48l-8 8q-43-13-84 0Z" fill={look.hatColor??'#9c8144'} stroke={ink} strokeWidth={3}/>}
+        {!back&&!ghost&&<g>
+          {eyes==='closed'?<path d="M-14 4l7 1m18-1l7-1" fill="none" stroke={ink} strokeWidth={2.8} strokeLinecap="round"/>:<>
+            <ellipse cx={-8+look2*3} cy={3} rx={3.8} ry={infected?5:6.6} fill={ink}/><ellipse cx={16+look2*3} cy={infected?6:3} rx={3.8} ry={infected?5:6.6} fill={ink}/>
+          </>}
+          {(mouth==='open'||mouth==='o')&&<ellipse cx={7} cy={23} rx={3} ry={4} fill={ink}/>}
+          {infected&&<path d="M-6 23l9-3 7 4" stroke={ink} strokeWidth={2.2} fill="none"/>}
+        </g>}
+      </g>
+      {!ghost&&propN!=='none'&&<PropShape p={propN} at={k.handN} ang={pose.armN[1]} beam={beam}/>}
+    </g>;
+  }
 
   const leg = (knee: V2, foot: V2, far: boolean) => (
     <>
