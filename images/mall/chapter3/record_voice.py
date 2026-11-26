@@ -10,7 +10,10 @@ from pathlib import Path
 P=argparse.ArgumentParser();P.add_argument('--key-file');P.add_argument('--takes',type=int,default=2)
 P.add_argument('--workers',type=int,default=4);P.add_argument('--build-only',action='store_true')
 P.add_argument('--only');args=P.parse_args()
-HERE=Path(__file__).resolve().parent;MALL=HERE.parent;ROOT=HERE.parents[2];VO=MALL/'vo/ch3'
+HERE=Path(__file__).resolve().parent;MALL=HERE.parent;ROOT=HERE.parents[2];VO=MALL/os.environ.get('CH3_VO','vo/ch3')
+# A listening draft can send its outputs elsewhere instead of the project's published paths.
+MP3=Path(os.environ.get('CH3_MP3',ROOT/'public/mall/ch3/vo.mp3'));JSON=Path(os.environ.get('CH3_JSON',ROOT/'src/mall/chapter3/ch3.json'))
+SRT=Path(os.environ.get('CH3_SRT',ROOT/'publish/night-guard-chapter-3.srt'))
 if args.key_file:
  raw=Path(args.key_file).expanduser().read_text().strip()
  m=re.search(r'(?:^|\n)\s*(?:export\s+)?KIE_API_KEY\s*=\s*[\'\"]?([^\s\'\"#]+)',raw)
@@ -139,11 +142,11 @@ if missing:raise SystemExit('Unaccepted or missing chunks; resume and retake the
 if args.only:raise SystemExit('Selected chunks recorded. Run --build-only without --only to assemble the chapter.')
 ns['build']()
 # Chapter Three keeps its natural length (about 33 minutes); no tempo fitting.
-(ROOT/'public/mall/ch3').mkdir(parents=True,exist_ok=True)
+MP3.parent.mkdir(parents=True,exist_ok=True)
 subprocess.run([sys.executable,str(HERE/'make_plan.py')],check=True)
-subprocess.run(['bash',str(MALL/'vo_export.sh'),str(VO/'vo.wav'),str(ROOT/'public/mall/ch3/vo.mp3')],check=True)
+subprocess.run(['bash',str(MALL/'vo_export.sh'),str(VO/'vo.wav'),str(MP3)],check=True)
 # Align each assembled spoken chunk independently to prevent drift over the half-hour narration.
-data_path=ROOT/'src/mall/chapter3/ch3.json';data=json.loads(data_path.read_text());pcm=ns['load16'](VO/'vo.wav');cw=[];actual_words=[]
+data_path=JSON;data=json.loads(data_path.read_text());pcm=ns['load16'](VO/'vo.wav');cw=[];actual_words=[]
 for si,seg in enumerate(data['segments']):
  audio=pcm[int(seg['s']*16000):int(seg['e']*16000)]
  got,_=model.transcribe(audio,language='en',word_timestamps=True,beam_size=5,initial_prompt='Maplecrest Mall. Danny. Theo. Vera. Marcus. Pancake. Kip. Boone. Walt. Lily. Cephalexin. B3.')
@@ -162,7 +165,7 @@ for si,seg in enumerate(data['segments']):
   cw.append({'w':w,'n':normal(w),'s':round(start,3),'e':round(end,3),'seg':si,'kind':seg['kind'],'id':seg.get('id')})
  print('Aligned',si+1,'/',len(data['segments']),flush=True)
 data['cwords']=cw;data['timing']='recorded';data_path.write_text(json.dumps(data,indent=1))
-subprocess.run([sys.executable,str(MALL/'make_srt.py'),str(data_path),str(ROOT/'publish/night-guard-chapter-3.srt')],check=True)
+subprocess.run([sys.executable,str(MALL/'make_srt.py'),str(data_path),str(SRT)],check=True)
 data['voiceReady']=True;data_path.write_text(json.dumps(data,indent=1))
 (VO/'complete.json').write_text(json.dumps({'words':len(cw),'duration':data['duration'],'accepted_chunks':len(selected)},indent=2))
 print('Chapter Three voice and captions ready.',flush=True)

@@ -6,8 +6,11 @@ from pathlib import Path
 import json,re
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[2]
-VO=HERE.parent/'vo/ch3'
+import os
+# A listening draft (for example the Kokoro voices) can use its own voice folder and timing file.
+VO=HERE.parent/os.environ.get('CH3_VO','vo/ch3')
 VO.mkdir(parents=True,exist_ok=True)
+OUT_JSON=Path(os.environ['CH3_JSON']) if os.environ.get('CH3_JSON') else ROOT/'src/mall/chapter3/ch3.json'
 # Quoted dialogue in manuscript order. d = Danny, t = Theo, v = Vera.
 SPEAKERS={
  1:'',2:'ttdt',3:'t',4:'dttdt',5:'',6:'',7:'ddtdtdt',8:'',9:'',10:'d',11:'',
@@ -73,8 +76,9 @@ voices={k:base['voices'][k] for k in ['danny','vera']}
 voices['theo']=ch2['voices']['theo']
 plan={'voices':voices,'scene':base['scene'],'sample_context':base['sample_context'],'temperature':1,
       'level':'fixed','tempo':1.08,'max_pause':0.22,'min_sim':0.9,'chunks':chunks}
-(VO/'plan.json').write_text(json.dumps(plan,indent=2))
-(HERE/'paragraphs.json').write_text(json.dumps(paragraphs,indent=2))
+if not os.environ.get('CH3_VO'):
+ (VO/'plan.json').write_text(json.dumps(plan,indent=2))
+ (HERE/'paragraphs.json').write_text(json.dumps(paragraphs,indent=2))
 # Use actual per-chunk audio spans when available; never present this estimate as final narration.
 actual=VO/'segments.json'
 recorded=json.loads(actual.read_text()) if actual.exists() else None
@@ -115,7 +119,7 @@ for p in paragraphs:
  offset=len(' '.join(before).split())
  start=first['s']+(first['e']-first['s'])*min(.95,offset/max(1,len(first['text'].split())))
  out['paragraphs'].append({**p,'s':round(start,3),'e':last['e']})
-(ROOT/'src/mall/chapter3').mkdir(parents=True,exist_ok=True)
-(ROOT/'src/mall/chapter3/ch3.json').write_text(json.dumps(out,indent=1))
+OUT_JSON.parent.mkdir(parents=True,exist_ok=True)
+OUT_JSON.write_text(json.dumps(out,indent=1))
 print(len(chunks),'voice chunks;',len(paragraphs),'paragraphs;',len(cwords),'spoken words')
 print('Timeline:',out['timing'],round(D/60,2),'minutes')

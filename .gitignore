@@ -49,3 +49,4 @@ images/mall/vo/ch3/selected.json
 images/mall/chapter3/models/
 # Free local Kokoro voice model (downloaded from Hugging Face; see chapter3/record_voice_kokoro.py)
 images/mall/kokoro-models/
+images/mall/vo/ch3-kokoro/

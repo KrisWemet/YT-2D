@@ -3,10 +3,11 @@
 
 Usage: record_voice_kokoro.py [--danny am_michael] [--theo am_puck] [--vera af_heart] [--only id,id]
 
-Use this when Kie's Gemini voices are unavailable. It reads the same plan as record_voice.py
-(vo/ch3/plan.json), writes one take per chunk as takes/<chunk>-1.wav with the same whisper
+Use this for a listening draft when Kie's Gemini voices are unavailable. It copies the plan from
+vo/ch3 into vo/ch3-kokoro, writes one take per chunk as takes/<chunk>-1.wav with the same whisper
 assessment, then runs `record_voice.py --build-only` for the identical levels, pauses, radio filter,
-export, word alignment and captions. Kokoro is deterministic, so a chunk that fails the check is
+export, word alignment and captions, all written under out/chapter3-kokoro/ so the project's
+published Chapter Three files are untouched. Kokoro is deterministic, so a chunk that fails the check is
 retried at slightly different speeds.
 
 Model files (not in git) go in images/mall/kokoro-models: onnx/model.onnx and voices-us.npz, built
@@ -21,8 +22,11 @@ P = argparse.ArgumentParser()
 P.add_argument('--danny', default='am_michael'); P.add_argument('--theo', default='am_puck')
 P.add_argument('--vera', default='af_heart'); P.add_argument('--only'); P.add_argument('--no-build', action='store_true')
 args = P.parse_args()
-HERE = Path(__file__).resolve().parent; MALL = HERE.parent; VO = MALL / 'vo/ch3'; takes = VO / 'takes'
-takes.mkdir(parents=True, exist_ok=True)
+HERE = Path(__file__).resolve().parent; MALL = HERE.parent; ROOT = HERE.parents[2]
+# A listening draft: its own voice folder (never mixed into the Gemini takes) and outputs under out/.
+VO = MALL / 'vo/ch3-kokoro'; takes = VO / 'takes'; DRAFT = ROOT / 'out/chapter3-kokoro'
+takes.mkdir(parents=True, exist_ok=True); DRAFT.mkdir(parents=True, exist_ok=True)
+(VO / 'plan.json').write_text((MALL / 'vo/ch3/plan.json').read_text())
 plan = json.loads((VO / 'plan.json').read_text())
 VOICES = {'danny': args.danny, 'theo': args.theo, 'vera': args.vera}
 
@@ -85,5 +89,7 @@ if failed:
             a['ok'] = True; a['accepted_by'] = 'closest Kokoro take, similarity >= 0.8'; note.write_text(json.dumps(a, indent=1))
 if args.only or args.no_build:
     raise SystemExit('Takes written. Run without --only to assemble the chapter.')
-env = {**os.environ, 'KIE_API_KEY': os.environ.get('KIE_API_KEY', 'unused-for-build'), 'HF_HUB_DISABLE_XET': '1'}
+env = {**os.environ, 'KIE_API_KEY': os.environ.get('KIE_API_KEY', 'unused-for-build'), 'HF_HUB_DISABLE_XET': '1',
+       'CH3_VO': 'vo/ch3-kokoro', 'CH3_MP3': str(DRAFT / 'night-guard-chapter-3-kokoro-draft.mp3'),
+       'CH3_JSON': str(DRAFT / 'ch3.json'), 'CH3_SRT': str(DRAFT / 'night-guard-chapter-3-kokoro-draft.srt')}
 subprocess.run([sys.executable, str(HERE / 'record_voice.py'), '--build-only'], check=True, env=env)
