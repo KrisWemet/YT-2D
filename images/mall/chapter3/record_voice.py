@@ -58,7 +58,9 @@ def request(c,index):
  while True:
   info=json.loads(kie.req(f'{kie.API}/jobs/recordInfo?taskId={tid}'));d=info.get('data') or {}
   if d.get('state')=='success':break
-  if d.get('state')=='fail':raise RuntimeError(f"Voice task failed: {d.get('failMsg')}")
+  if d.get('state')=='fail':
+   task.unlink(missing_ok=True)  # a failed task is never reused; the next attempt submits a new one
+   raise RuntimeError(f"Voice task failed: {d.get('failMsg')}")
   if time.monotonic()-began>900:raise RuntimeError('Voice task remains pending; resume without submitting another task.')
   time.sleep(5)
  url=json.loads(d['resultJson'])['resultUrls'][0];kie.download(url,dst)
