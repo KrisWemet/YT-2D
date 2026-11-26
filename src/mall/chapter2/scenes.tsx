@@ -4,7 +4,7 @@ import {CEILING_MIRROR_X, ladderState} from './continuity';
 import {AbsoluteFill} from 'remotion';
 import {Screen, Txt, Grille, Padlock, Waves, RewindFx} from '../Overlays';
 import {Scene, Guard, Zed, P, Beyond, HoldGate, Vignette} from '../shots';
-import {Stick, StickProps, LOOKS, Pose, POSES, jointsOf, skeleton} from '../Stick';
+import {Stick, StickProps, LOOKS, Pose, POSES, jointsOf, skeleton, IllustratedFigures} from '../Stick';
 import {GateScene, OfficeScene, ROOF_WIN} from '../chapter1/scenes';
 import {FPS} from '../MallChapter';
 import {blendPose, blink, climbPose, ease, idlePose, runPose, shamblePose} from './motion';
@@ -14,6 +14,9 @@ import type {ShotView} from './additional-views';
 import {KeyRing16, KeyInHand, RadioCard, SleepingBag, B3Door16} from '../chapter1/props';
 import {threeBlinks} from '../vertical';
 import {World, FULL} from '../World';
+import {hasStoryAction} from './story-acting';
+import {CharacterStoryScene} from './story-scenes';
+import {PaintedStoryFrame,storyArtwork} from './story-art';
 
 const INK='#0b0c0c', GOLD='#f0c53c';
 export type Mode=PictureMode|'store'|'sleep'|'food'|'lock'|'chalk'|'prints'|'rack'|'theo'|'talk'|'water'|'plan'|'ceiling'|'fall'|'rescue'|'crowd'|'marcus'|'boot'|'cinema'|'door'|'pump'|'tank'|'drill'|'bandage'|'cut'|'tent'|'roof'|'window'|'signal'|'vera'|'radio'|'keys'|'title'|'rewind'|'end';
@@ -517,6 +520,11 @@ const InsertView:React.FC<{view:ShotView;origin?:string;children:React.ReactNode
 
 export const Chapter2Scene:React.FC<DetailProps & {variant:number}>=props=>{
  const {p,mode,variant,section,view='base'}=props;
+ const retention=useContext(RetentionContinuity);
+ const illustrated=useContext(IllustratedFigures);
+ const artwork=retention&&illustrated?storyArtwork(mode,section,view,clock(p)):undefined;
+ if(artwork)return <PaintedStoryFrame name={artwork} t={p.t} dur={p.dur} view={view} mode={mode}/>;
+ if(retention&&illustrated&&hasStoryAction(mode,section,clock(p)))return <CharacterStoryScene {...props} TheoFigure={Theo} WaterJug={Jug}/>;
  if(['ceiling','fall','fall-detail','wrist-catch','collapse','rescue','rescue-recover','strap','crowd','marcus','marcus-detail','marcus-up','boot','boot-rest','cut','crawl-close','walkway','return','fountain-memory'].includes(mode))return <Ceiling {...props}/>;
  if(['pump','tank','ladder','gauge','pump-theo','pump-jugs','fill-jugs'].includes(mode))return <Pump {...props}/>;
  if(['pump-impact','pump-catch','pump-pickup'].includes(mode))return <PumpAction {...props}/>;

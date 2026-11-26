@@ -3,7 +3,8 @@ import {FPS} from '../MallChapter';
 import {OfficeScene, ROOF_WIN} from '../chapter1/scenes';
 import {PhoneCard} from '../chapter1/props';
 import {Guard, Scene} from '../shots';
-import {LOOKS, POSES, Stick} from '../Stick';
+import {LOOKS, POSES, Stick,IllustratedFigures} from '../Stick';
+import {PaintedStoryFrame} from './story-art';
 import {threeBlinks} from '../vertical';
 import type {P} from '../shots';
 
@@ -19,6 +20,8 @@ const roofShots = {
 };
 
 const DannyOnRoof: React.FC<{p: P; angle: keyof typeof roofShots}> = ({p, angle}) => {
+  const illustrated=React.useContext(IllustratedFigures);
+  if(illustrated&&angle!=='reply')return <PaintedStoryFrame name={angle==='message'?'roof-phone':'roof-radio'} t={p.t} dur={p.dur} view={angle==='hesitation'?'danny':'base'}/>;
   const camera = roofShots[angle];
   const replying = angle === 'reply';
   const reading = angle === 'message';

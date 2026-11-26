@@ -1,5 +1,7 @@
 # Chapter Two production
 
+A separate opening-ten-minute illustrated review is available as `MallChapter2StyleReview10Min`. It uses the user's latest pale-head, thin-stick visual reference, complete illustrated character scenes and animated detail cuts. It is a review excerpt; the full `MallChapter2` composition below remains v8. See `STYLE-REVIEW.md` and run `node images/mall/chapter2/render-style-review.cjs` to reproduce the ten-minute review.
+
 The current finished composition is `MallChapter2`: the approved retention revision with the ceiling-side and ladder continuity corrections, without a recap. It runs 49,732 frames at 30 fps (27:37.733). Earlier source timing and performances remain available as `MallChapter2VisualPreview`. The revised preview is `MallChapter2RetentionPreview`.
 
 ## Current editorial sources
