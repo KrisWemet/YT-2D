@@ -1,0 +1,43 @@
+{
+  "frames": 26465,
+  "seconds": 882.1666666666666,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "fullDecode": "passed",
+  "frameTimestamps": "every frame continuous",
+  "audio": "identical encoded AAC to original Chapter One",
+  "audioChannels": 2,
+  "sampleRate": 48000,
+  "distinctImages": 100,
+  "shots": 168,
+  "maxImageUses": 3,
+  "nativeFigureLayers": 0,
+  "ending": "Original Who is in the window cliffhanger and Chapter Two end card",
+  "preview": {
+    "frames": 26465,
+    "width": 1280,
+    "height": 720,
+    "fullDecode": "passed",
+    "frameTimestamps": "every frame continuous",
+    "audio": "identical encoded AAC to original Chapter One",
+    "bytes": 133393370
+  },
+  "audioHash": "SHA256=5fbf427882fe21e1e0034bb2c84d63842c753a89ca94b2c0364cb5ae98c68245",
+  "fullBytes": 762271624,
+  "signalFlashes": 3,
+  "captions": {
+    "cues": 363,
+    "source": "original Chapter One SRT",
+    "changed": false
+  },
+  "visualReview": {
+    "allShotMidpoints": 168,
+    "actualEncodeSpotFrames": 12,
+    "radioRemovedAfterExtraction": true,
+    "ordinaryCrowdBeforeMarcusArrival": true,
+    "lilySignalFloor": 10,
+    "signalFlashes": 3,
+    "blackoutLights": "off except battery flashlights"
+  }
+}

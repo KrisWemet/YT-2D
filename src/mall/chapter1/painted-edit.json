@@ -1,0 +1,1354 @@
+{
+  "version": 1,
+  "fps": 30,
+  "frames": 26465,
+  "voiceSeconds": 873.15,
+  "shots": [
+    {
+      "start": 0,
+      "asset": "marcus-z-radio",
+      "cue": "Right now there's a zombie pressed up against my gate, and it's wearing my best friend's uniform.",
+      "segment": 0,
+      "view": "wide",
+      "frames": 186
+    },
+    {
+      "start": 186,
+      "asset": "hall-crowd",
+      "cue": "Behind him, the hallway is full of them.",
+      "segment": 1,
+      "view": "wide",
+      "frames": 89
+    },
+    {
+      "start": 275,
+      "asset": "radio-on-chest",
+      "cue": "The radio on his chest is about to tell every one of them exactly where I'm hiding.",
+      "segment": 2,
+      "view": "wide",
+      "frames": 190
+    },
+    {
+      "start": 465,
+      "asset": "crown",
+      "cue": "An hour ago, I was basically the king of this mall. Let me back up.",
+      "segment": 3,
+      "view": "wide",
+      "frames": 188
+    },
+    {
+      "start": 653,
+      "asset": "crown",
+      "cue": "Chapter One / The King of the Mall",
+      "segment": null,
+      "view": "wide",
+      "overlay": "title",
+      "frames": 114
+    },
+    {
+      "start": 767,
+      "asset": "keys-hold",
+      "cue": "I have a key to every store in this mall.",
+      "segment": 5,
+      "view": "wide",
+      "frames": 105
+    },
+    {
+      "start": 872,
+      "asset": "b3-key",
+      "cue": "The man who gave them to me said never to use the last one.",
+      "segment": 6,
+      "view": "wide",
+      "frames": 124
+    },
+    {
+      "start": 996,
+      "asset": "keys-hold",
+      "cue": "I'm Danny. I do night security at Maplecrest Mall, and yeah, I've heard every mall cop joke there is.",
+      "segment": 7,
+      "view": "detail",
+      "frames": 198
+    },
+    {
+      "start": 1194,
+      "asset": "bus-stop",
+      "cue": "I work nights so I can be at the bus stop at three-fifteen when my daughter Lily gets off.",
+      "segment": 8,
+      "view": "wide",
+      "frames": 178
+    },
+    {
+      "start": 1372,
+      "asset": "rounds-pretzel",
+      "cue": "My shift is nine to five. Mostly I walk, I check doors, and I eat the pretzels the food court guy was going to throw out anyway.",
+      "segment": 9,
+      "view": "wide",
+      "frames": 238
+    },
+    {
+      "start": 1610,
+      "asset": "kid-drawing",
+      "cue": "She's seven, and she thinks I'm the king of the mall. She drew me a picture once, me in a crown, holding up my keys. It's taped to the monitor in the security office.",
+      "segment": 10,
+      "view": "wide",
+      "frames": 282
+    },
+    {
+      "start": 1892,
+      "asset": "family-tower",
+      "cue": "We live with my mom, on the tenth floor of the Parkview Apartments, right across the highway.",
+      "segment": 11,
+      "view": "wide",
+      "frames": 153
+    },
+    {
+      "start": 2045,
+      "asset": "lily-lamp",
+      "cue": "Every night at nine, when I walk in to work, Lily blinks her lamp at the mall three times.",
+      "segment": 12,
+      "view": "wide",
+      "frames": 200
+    },
+    {
+      "start": 2245,
+      "asset": "parking-signal",
+      "cue": "It means I love you. I blink my flashlight back.",
+      "segment": 13,
+      "view": "wide",
+      "frames": 84
+    },
+    {
+      "start": 2329,
+      "asset": "lily-lamp",
+      "cue": "I taught her one more signal, S-O-S, for emergencies. She thinks it's a game.",
+      "segment": 14,
+      "view": "detail",
+      "frames": 135
+    },
+    {
+      "start": 2464,
+      "asset": "parking-signal",
+      "cue": "I really hope she never has to use it.",
+      "segment": 15,
+      "view": "detail",
+      "frames": 76
+    },
+    {
+      "start": 2540,
+      "asset": "walt-handoff",
+      "cue": "Forty-two keys. Old Walt had this job before me, and when he handed them over, he tapped the last one. \"That one, you never use,\" he said. \"Don't ask.\"",
+      "segment": 16,
+      "view": "wide",
+      "frames": 210
+    },
+    {
+      "start": 2750,
+      "asset": "walt-handoff",
+      "cue": "Forty-two keys. Old Walt had this job before me, and when he handed them over, he tapped the last one. \"That one, you never use,\" he said. \"Don't ask.\"",
+      "segment": 16,
+      "view": "detail",
+      "frames": 134
+    },
+    {
+      "start": 2884,
+      "asset": "b3-key",
+      "cue": "Its tag says B3. There is no B3 on the mall map.",
+      "segment": 18,
+      "view": "detail",
+      "frames": 141
+    },
+    {
+      "start": 3025,
+      "asset": "ch2/gate-check",
+      "cue": "Tonight, I'd only need one of them.",
+      "segment": 19,
+      "view": "wide",
+      "frames": 68
+    },
+    {
+      "start": 3093,
+      "asset": "b3-door",
+      "cue": "In thirty days, I'd find out what the last one opens.",
+      "segment": 20,
+      "view": "wide",
+      "frames": 129
+    },
+    {
+      "start": 3222,
+      "asset": "ch2/v10/office-radio",
+      "cue": "Every night at one a.m., my best friend tells me a terrible joke on the radio. Tonight, he whispered.",
+      "segment": 21,
+      "view": "wide",
+      "frames": 191
+    },
+    {
+      "start": 3413,
+      "asset": "marcus-book",
+      "cue": "Marcus guards the parking garage. He's twenty-two, he's studying to be a nurse, and he still owes me twenty bucks.",
+      "segment": 23,
+      "view": "wide",
+      "frames": 192
+    },
+    {
+      "start": 3605,
+      "asset": "marcus-empty-pockets",
+      "cue": "He lost a bet on a football game back in September, and he's been dodging me ever since.",
+      "segment": 24,
+      "view": "wide",
+      "frames": 144
+    },
+    {
+      "start": 3749,
+      "asset": "desk-radio",
+      "cue": "At one on the dot, the radio clicks.",
+      "segment": 25,
+      "view": "wide",
+      "frames": 109
+    },
+    {
+      "start": 3858,
+      "asset": "marcus-joke",
+      "cue": "Danny. Why don't zombies ever eat clowns? Because they taste funny.",
+      "segment": 26,
+      "view": "wide",
+      "frames": 178
+    },
+    {
+      "start": 4036,
+      "asset": "ch2/v10/office-radio",
+      "cue": "He laughs at his own jokes. Every single time.",
+      "segment": 28,
+      "view": "detail",
+      "frames": 112
+    },
+    {
+      "start": 4148,
+      "asset": "desk-radio",
+      "cue": "At one-forty, the radio clicks again.",
+      "segment": 29,
+      "view": "detail",
+      "frames": 93
+    },
+    {
+      "start": 4241,
+      "asset": "garage-ramp",
+      "cue": "Danny. There's a guy on the ramp. He's walking... wrong.",
+      "segment": 30,
+      "view": "wide",
+      "frames": 138
+    },
+    {
+      "start": 4379,
+      "asset": "office-concern",
+      "cue": "Marcus doesn't whisper. Ever.",
+      "segment": 31,
+      "view": "wide",
+      "frames": 78
+    },
+    {
+      "start": 4457,
+      "asset": "garage-ramp",
+      "cue": "Sir? Sir, are you okay? You're bleeding...",
+      "segment": 32,
+      "view": "detail",
+      "frames": 105
+    },
+    {
+      "start": 4562,
+      "asset": "office-concern",
+      "cue": "Then the radio did something I'd never heard it do.",
+      "segment": 33,
+      "view": "detail",
+      "frames": 100
+    },
+    {
+      "start": 4662,
+      "asset": "desk-radio",
+      "cue": "It went completely silent.",
+      "segment": 34,
+      "view": "character",
+      "frames": 85
+    },
+    {
+      "start": 4747,
+      "asset": "office-concern",
+      "cue": "I said his name into the radio. Then I said it again. Nothing.",
+      "segment": 35,
+      "view": "character",
+      "frames": 115
+    },
+    {
+      "start": 4862,
+      "asset": "monitor-wall",
+      "cue": "The security office has a wall of screens, one for every camera in the building.",
+      "segment": 36,
+      "view": "wide",
+      "frames": 142
+    },
+    {
+      "start": 5004,
+      "asset": "raccoon",
+      "cue": "In six years, the most exciting thing I've seen on them is a raccoon in the food court. Twice. Same raccoon.",
+      "segment": 37,
+      "view": "wide",
+      "frames": 209
+    },
+    {
+      "start": 5213,
+      "asset": "cctv-attack",
+      "cue": "I pulled up camera six. The garage, level two. Marcus was on the ground, and the man from the ramp was on top of him.",
+      "segment": 38,
+      "view": "wide",
+      "frames": 257
+    },
+    {
+      "start": 5470,
+      "asset": "ramp-crowd",
+      "cue": "Behind them, more were coming up the ramp from the highway. Six. Ten. Thirty. They weren't running. They just walked, all at the same slow speed, like a crowd leaving a stadium.",
+      "segment": 40,
+      "view": "wide",
+      "frames": 210
+    },
+    {
+      "start": 5680,
+      "asset": "ramp-crowd",
+      "cue": "Behind them, more were coming up the ramp from the highway. Six. Ten. Thirty. They weren't running. They just walked, all at the same slow speed, like a crowd leaving a stadium.",
+      "segment": 40,
+      "view": "detail",
+      "frames": 173
+    },
+    {
+      "start": 5853,
+      "asset": "cctv-attack",
+      "cue": "Danny... don't come down. Lock up.",
+      "segment": 42,
+      "view": "detail",
+      "frames": 138
+    },
+    {
+      "start": 5991,
+      "asset": "office-door",
+      "cue": "I'd like to tell you I ran down there. I didn't. I stood in that office with my hand on the door, and I watched.",
+      "segment": 43,
+      "view": "wide",
+      "frames": 178
+    },
+    {
+      "start": 6169,
+      "asset": "desk-phone",
+      "cue": "Then I picked up the phone and called nine-one-one. It rang and rang, and then a recording said all circuits were busy.",
+      "segment": 44,
+      "view": "wide",
+      "frames": 232
+    },
+    {
+      "start": 6401,
+      "asset": "phone-calls",
+      "cue": "My mom's phone went straight to voicemail. So did the next nine calls.",
+      "segment": 45,
+      "view": "wide",
+      "frames": 159
+    },
+    {
+      "start": 6560,
+      "asset": "ramp-crowd",
+      "cue": "And then every one of them on that screen turned the same way. Not toward the street. Toward the mall.",
+      "segment": 46,
+      "view": "character",
+      "frames": 205
+    },
+    {
+      "start": 6765,
+      "asset": "monitor-invasion",
+      "cue": "One camera after another, I watched them come inside. The loading dock. The service hall. The doors by the restrooms.",
+      "segment": 47,
+      "view": "wide",
+      "frames": 234
+    },
+    {
+      "start": 6999,
+      "asset": "camera-black",
+      "cue": "The only screen that stayed black was camera fourteen, the hallway behind the food court. It had been out since Tuesday. I'd put in a ticket.",
+      "segment": 48,
+      "view": "wide",
+      "frames": 222
+    },
+    {
+      "start": 7221,
+      "asset": "foodcourt-crowd",
+      "cue": "They were all heading for the food court. And the food court is made of glass.",
+      "segment": 49,
+      "view": "wide",
+      "frames": 184
+    },
+    {
+      "start": 7405,
+      "asset": "office-door",
+      "cue": "I did the math. At the speed they were walking, I had about four minutes.",
+      "segment": 50,
+      "view": "detail",
+      "frames": 128
+    },
+    {
+      "start": 7533,
+      "asset": "mall-map",
+      "cue": "Four minutes to pick the one store I'd survive in. Which one would you pick?",
+      "segment": 51,
+      "view": "wide",
+      "frames": 122
+    },
+    {
+      "start": 7655,
+      "asset": "keys-hold",
+      "cue": "Here's the thing about malls. They're built to let people in. That's the whole point of them.",
+      "segment": 52,
+      "view": "character",
+      "frames": 140
+    },
+    {
+      "start": 7795,
+      "asset": "gate-row",
+      "cue": "But every store has a steel gate. And I have every key.",
+      "segment": 53,
+      "view": "wide",
+      "frames": 120
+    },
+    {
+      "start": 7915,
+      "asset": "pharmacy",
+      "cue": "The pharmacy has medicine. It's also all glass.",
+      "segment": 54,
+      "view": "wide",
+      "frames": 95
+    },
+    {
+      "start": 8010,
+      "asset": "foodcourt-crowd",
+      "cue": "The food court has food, and that's exactly where they're going.",
+      "segment": 55,
+      "view": "detail",
+      "frames": 115
+    },
+    {
+      "start": 8125,
+      "asset": "dept-bed",
+      "cue": "The department store has beds, and nine different entrances.",
+      "segment": 56,
+      "view": "wide",
+      "frames": 116
+    },
+    {
+      "start": 8241,
+      "asset": "summit-supplies",
+      "cue": "And Summit Outdoors has tents, water filters, baseball bats, and one way in.",
+      "segment": 57,
+      "view": "wide",
+      "frames": 166
+    },
+    {
+      "start": 8407,
+      "asset": "mall-map",
+      "cue": "Every night guard has a zombie plan. Mine was Summit Outdoors. I just never thought I'd actually use it.",
+      "segment": 58,
+      "view": "detail",
+      "frames": 159
+    },
+    {
+      "start": 8566,
+      "asset": "running-fountain",
+      "cue": "Mall cops aren't exactly famous for running. I ran. Down the escalator, past the fountain, past the pretzel place, with the keys already in my hand.",
+      "segment": 59,
+      "view": "wide",
+      "frames": 261
+    },
+    {
+      "start": 8827,
+      "asset": "summit-front",
+      "cue": "I was ten feet from the gate when I heard it.",
+      "segment": 61,
+      "view": "wide",
+      "frames": 87
+    },
+    {
+      "start": 8914,
+      "asset": "glass-burst",
+      "cue": "Behind me, the food court doors exploded.",
+      "segment": 62,
+      "view": "wide",
+      "frames": 126
+    },
+    {
+      "start": 9040,
+      "asset": "gate-lower",
+      "cue": "Key thirty-one. Under the gate, pull it down, lock it.",
+      "segment": 63,
+      "view": "wide",
+      "frames": 110
+    },
+    {
+      "start": 9150,
+      "asset": "ch2/gate-check",
+      "cue": "I've done that a thousand times. I have never done it that fast.",
+      "segment": 64,
+      "view": "detail",
+      "frames": 162
+    },
+    {
+      "start": 9312,
+      "asset": "hide-between-tents",
+      "cue": "Then I sat down in the dark, between the tents, with my hand over my mouth.",
+      "segment": 65,
+      "view": "wide",
+      "frames": 178
+    },
+    {
+      "start": 9490,
+      "asset": "hall-pass",
+      "cue": "Through the gate, I could hear them filling up the hallway. Shuffling. Bumping into things. Dozens of feet that never quite left the floor.",
+      "segment": 66,
+      "view": "wide",
+      "frames": 243
+    },
+    {
+      "start": 9733,
+      "asset": "hide-between-tents",
+      "cue": "I did the breathing thing Lily learned in second grade. In for four. Out for four.",
+      "segment": 67,
+      "view": "detail",
+      "frames": 163
+    },
+    {
+      "start": 9896,
+      "asset": "gate-pressure",
+      "cue": "Once, something leaned on my gate, and the whole thing groaned. Then it moved on.",
+      "segment": 68,
+      "view": "wide",
+      "frames": 167
+    },
+    {
+      "start": 10063,
+      "asset": "kid-drawing",
+      "cue": "Lily's drawing was still up in the security office. I remember thinking, the king of the mall is hiding in a tent.",
+      "segment": 69,
+      "view": "detail",
+      "frames": 231
+    },
+    {
+      "start": 10294,
+      "asset": "tent-wait",
+      "cue": "Twenty minutes went by. Then thirty. I started to think maybe that was it. They'd wander off, and in the morning it'd be on the news, and I'd be a funny story.",
+      "segment": 70,
+      "view": "wide",
+      "frames": 290
+    },
+    {
+      "start": 10584,
+      "asset": "knock-hand",
+      "cue": "And then somebody knocked. One knock. Two quick ones. One more.",
+      "segment": 72,
+      "view": "wide",
+      "frames": 127
+    },
+    {
+      "start": 10711,
+      "asset": "office-knock",
+      "cue": "Our knock. The one Marcus and I use on the office door.",
+      "segment": 74,
+      "view": "wide",
+      "frames": 87
+    },
+    {
+      "start": 10798,
+      "asset": "marcus-hurt",
+      "cue": "Danny. It's me.",
+      "segment": 75,
+      "view": "wide",
+      "frames": 47
+    },
+    {
+      "start": 10845,
+      "asset": "hide-between-tents",
+      "cue": "He knew which store I'd pick. Of course he did.",
+      "segment": 76,
+      "view": "character",
+      "frames": 77
+    },
+    {
+      "start": 10922,
+      "asset": "marcus-hurt",
+      "cue": "I turned on my flashlight for one second. His face was gray. And his whole sleeve was dark and wet.",
+      "segment": 77,
+      "view": "detail",
+      "frames": 259
+    },
+    {
+      "start": 11181,
+      "asset": "keys-chest",
+      "cue": "I had the key in my hand.",
+      "segment": 79,
+      "view": "wide",
+      "frames": 105
+    },
+    {
+      "start": 11286,
+      "asset": "marcus-pleads",
+      "cue": "Come on, man. Open it. Please.",
+      "segment": 80,
+      "view": "wide",
+      "frames": 107
+    },
+    {
+      "start": 11393,
+      "asset": "bite-arm",
+      "cue": "There was a bite on his arm. I could see it in the light.",
+      "segment": 81,
+      "view": "wide",
+      "frames": 114
+    },
+    {
+      "start": 11507,
+      "asset": "hall-still",
+      "cue": "And past him, at the end of the hall, there were dozens of them. Standing still. Listening.",
+      "segment": 82,
+      "view": "wide",
+      "frames": 153
+    },
+    {
+      "start": 11660,
+      "asset": "ch2/gate-check",
+      "cue": "If I opened that gate, they'd all come in with him.",
+      "segment": 83,
+      "view": "character",
+      "frames": 81
+    },
+    {
+      "start": 11741,
+      "asset": "keys-chest",
+      "cue": "My hand was shaking so hard the keys were rattling. I had to press them against my chest to make them stop.",
+      "segment": 84,
+      "view": "detail",
+      "frames": 177
+    },
+    {
+      "start": 11918,
+      "asset": "marcus-pleads",
+      "cue": "Marcus watched my face. And he got it before I did. Hey. It's okay. I wouldn't open it either.",
+      "segment": 85,
+      "view": "detail",
+      "frames": 209
+    },
+    {
+      "start": 12127,
+      "asset": "back-to-back",
+      "cue": "He sat down with his back against the bars, and I sat down on my side, and we whispered for forty minutes.",
+      "segment": 87,
+      "view": "wide",
+      "frames": 214
+    },
+    {
+      "start": 12341,
+      "asset": "fitting-rescue",
+      "cue": "About stupid stuff. The Bills. His mom's lasagna. The time he got locked in a fitting room at the department store and I had to come get him out.",
+      "segment": 88,
+      "view": "wide",
+      "frames": 255
+    },
+    {
+      "start": 12596,
+      "asset": "marcus-seated",
+      "cue": "I'm not gonna lie, man. I'm kind of scared.",
+      "segment": 89,
+      "view": "wide",
+      "frames": 95
+    },
+    {
+      "start": 12691,
+      "asset": "back-to-back",
+      "cue": "So was I. I told him I was right here, and I wasn't going anywhere. Which was true. That was the whole problem.",
+      "segment": 90,
+      "view": "detail",
+      "frames": 206
+    },
+    {
+      "start": 12897,
+      "asset": "marcus-seated",
+      "cue": "Tell Lily the king's still in his castle.",
+      "segment": 91,
+      "view": "detail",
+      "frames": 84
+    },
+    {
+      "start": 12981,
+      "asset": "back-to-back",
+      "cue": "Then, because he's Marcus, he told me one more terrible joke. What's a zombie's favorite kind of bean? A human bean.",
+      "segment": 92,
+      "view": "character",
+      "frames": 285
+    },
+    {
+      "start": 13266,
+      "asset": "laugh-bag",
+      "cue": "It wasn't funny. I laughed so hard I had to put my face in a sleeping bag.",
+      "segment": 95,
+      "view": "wide",
+      "frames": 139
+    },
+    {
+      "start": 13405,
+      "asset": "marcus-seated",
+      "cue": "And Danny? I still owe you twenty bucks.",
+      "segment": 96,
+      "view": "character",
+      "frames": 92
+    },
+    {
+      "start": 13497,
+      "asset": "marcus-still",
+      "cue": "At two thirty-one, Marcus stopped breathing.",
+      "segment": 97,
+      "view": "wide",
+      "frames": 99
+    },
+    {
+      "start": 13596,
+      "asset": "marcus-rise",
+      "cue": "At two thirty-nine, he stood up.",
+      "segment": 98,
+      "view": "wide",
+      "frames": 119
+    },
+    {
+      "start": 13715,
+      "asset": "marcus-z-radio",
+      "cue": "He didn't look at me. He just stood there with his face against the bars. Two forty-five in the morning. That's where you came in.",
+      "segment": 99,
+      "view": "detail",
+      "frames": 248
+    },
+    {
+      "start": 13963,
+      "asset": "danny-floor-radio",
+      "cue": "Then my radio crackled. Is anyone still in the mall? I'm on the second floor of the department store. Please. I'm not alone up here.",
+      "segment": 101,
+      "view": "wide",
+      "frames": 272
+    },
+    {
+      "start": 14235,
+      "asset": "dept-dark",
+      "cue": "A woman. Whispering. Somewhere upstairs in my mall.",
+      "segment": 103,
+      "view": "wide",
+      "frames": 107
+    },
+    {
+      "start": 14342,
+      "asset": "two-radios",
+      "cue": "Her voice came out of my radio. And then, one second later, out of the radio on Marcus's chest.",
+      "segment": 104,
+      "view": "wide",
+      "frames": 178
+    },
+    {
+      "start": 14520,
+      "asset": "hall-turn",
+      "cue": "Every head in that hallway turned.",
+      "segment": 105,
+      "view": "wide",
+      "frames": 63
+    },
+    {
+      "start": 14583,
+      "asset": "hall-crowd",
+      "cue": "Forty of them. One gate.",
+      "segment": 106,
+      "view": "detail",
+      "frames": 53
+    },
+    {
+      "start": 14636,
+      "asset": "gate-pressure",
+      "cue": "They didn't run at it. They leaned on it, all at once, the way a crowd leans on the doors on Black Friday. And the steel started to bend.",
+      "segment": 107,
+      "view": "detail",
+      "frames": 293
+    },
+    {
+      "start": 14929,
+      "asset": "radio-on-chest",
+      "cue": "And she was about to call again.",
+      "segment": 109,
+      "view": "detail",
+      "frames": 85
+    },
+    {
+      "start": 15014,
+      "asset": "two-radios",
+      "cue": "I switched my radio off. But his was still on.",
+      "segment": 110,
+      "view": "detail",
+      "frames": 93
+    },
+    {
+      "start": 15107,
+      "asset": "reach-radio",
+      "cue": "There was only one way to shut it up. I had to reach through the bars and take it off his chest. His teeth were about an inch from my wrist. The whole time, he was looking right at me.",
+      "segment": 111,
+      "view": "wide",
+      "frames": 210
+    },
+    {
+      "start": 15317,
+      "asset": "reach-radio",
+      "cue": "There was only one way to shut it up. I had to reach through the bars and take it off his chest. His teeth were about an inch from my wrist. The whole time, he was looking right at me.",
+      "segment": 111,
+      "view": "detail",
+      "frames": 94
+    },
+    {
+      "start": 15411,
+      "asset": "reach-radio",
+      "cue": "And the clip stuck. He always wore it upside down. I must have told him a hundred times.",
+      "segment": 113,
+      "view": "character",
+      "frames": 184
+    },
+    {
+      "start": 15595,
+      "asset": "fall-back-radio",
+      "cue": "I twisted it, and it came loose, and I fell back on the floor with it.",
+      "segment": 114,
+      "view": "wide",
+      "frames": 141
+    },
+    {
+      "start": 15736,
+      "asset": "radio-bag",
+      "cue": "I stuffed it as deep into a sleeping bag as it would go, and I lay there, not breathing.",
+      "segment": 115,
+      "view": "wide",
+      "frames": 179
+    },
+    {
+      "start": 15915,
+      "asset": "crowd-drift",
+      "cue": "Without the noise, they forgot about me. It took maybe ten minutes. One by one, they drifted back down the hall.",
+      "segment": 116,
+      "view": "wide",
+      "frames": 203
+    },
+    {
+      "start": 16118,
+      "asset": "ch2/marcus-gate",
+      "cue": "All except Marcus.",
+      "segment": 117,
+      "view": "wide",
+      "frames": 36
+    },
+    {
+      "start": 16154,
+      "asset": "radio-bag",
+      "cue": "Then, from inside the sleeping bag, she said my name.",
+      "segment": 118,
+      "view": "detail",
+      "frames": 148
+    },
+    {
+      "start": 16302,
+      "asset": "huddled-radio",
+      "cue": "When I grabbed that radio, I must have squeezed the talk button.",
+      "segment": 119,
+      "view": "wide",
+      "frames": 114
+    },
+    {
+      "start": 16416,
+      "asset": "danny-listen",
+      "cue": "Danny, right? The night guard. I can hear you breathing. She didn't sound scared anymore. She sounded like someone ordering a coffee.",
+      "segment": 120,
+      "view": "wide",
+      "frames": 280
+    },
+    {
+      "start": 16696,
+      "asset": "radio-bag",
+      "cue": "Don't worry. I'm not one of them.",
+      "segment": 122,
+      "view": "character",
+      "frames": 74
+    },
+    {
+      "start": 16770,
+      "asset": "keys-chest",
+      "cue": "You've got all the keys, don't you?",
+      "segment": 123,
+      "view": "character",
+      "frames": 62
+    },
+    {
+      "start": 16832,
+      "asset": "danny-listen",
+      "cue": "I didn't say a word.",
+      "segment": 124,
+      "view": "detail",
+      "frames": 59
+    },
+    {
+      "start": 16891,
+      "asset": "huddled-radio",
+      "cue": "That's okay. Get some sleep, Danny. We'll talk tomorrow. Then the little light on the radio went out.",
+      "segment": 125,
+      "view": "detail",
+      "frames": 191
+    },
+    {
+      "start": 17082,
+      "asset": "tent-wait",
+      "cue": "I didn't sleep. I lay there and listened to Marcus lean on the gate every few minutes, like he was checking that it was still locked.",
+      "segment": 127,
+      "view": "detail",
+      "frames": 212
+    },
+    {
+      "start": 17294,
+      "asset": "mall-map",
+      "cue": "Here's what bothered me.",
+      "segment": 128,
+      "view": "character",
+      "frames": 39
+    },
+    {
+      "start": 17333,
+      "asset": "ch2/v10/patrol-corridor",
+      "cue": "The mall closes at nine. At midnight, I walked every hallway and checked every door, like I do every night. The department store was locked. I locked it.",
+      "segment": 129,
+      "view": "wide",
+      "frames": 259
+    },
+    {
+      "start": 17592,
+      "asset": "empty-concourse",
+      "cue": "Nobody was in here.",
+      "segment": 130,
+      "view": "wide",
+      "frames": 39
+    },
+    {
+      "start": 17631,
+      "asset": "dept-dark",
+      "cue": "So who was she? And what was she doing in my mall at two in the morning?",
+      "segment": 131,
+      "view": "detail",
+      "frames": 159
+    },
+    {
+      "start": 17790,
+      "asset": "wake-bag",
+      "cue": "I don't remember falling asleep. I remember waking up.",
+      "segment": 132,
+      "view": "wide",
+      "frames": 100
+    },
+    {
+      "start": 17890,
+      "asset": "gray-concourse",
+      "cue": "Gray light was coming down through the skylights, and the mall was quiet. Really quiet.",
+      "segment": 133,
+      "view": "wide",
+      "frames": 167
+    },
+    {
+      "start": 18057,
+      "asset": "crawl-gate",
+      "cue": "I waited an hour before I moved at all. Then I crawled to the gate, an inch at a time, to look.",
+      "segment": 134,
+      "view": "wide",
+      "frames": 182
+    },
+    {
+      "start": 18239,
+      "asset": "morning-crowd",
+      "cue": "Out in the hallway, the dead were just standing there. Like they were waiting for the stores to open.",
+      "segment": 135,
+      "view": "wide",
+      "frames": 159
+    },
+    {
+      "start": 18398,
+      "asset": "gray-concourse",
+      "cue": "In the daylight, it all looked fake. Like a movie set somebody forgot to take down.",
+      "segment": 136,
+      "view": "detail",
+      "frames": 145
+    },
+    {
+      "start": 18543,
+      "asset": "marcus-rounds",
+      "cue": "Then, way off down the hall, I heard a gate rattle. Then another one. Closer. It was Marcus. He was walking the loop, shaking every gate he passed, the way he did every single night.",
+      "segment": 137,
+      "view": "wide",
+      "frames": 210
+    },
+    {
+      "start": 18753,
+      "asset": "marcus-rounds",
+      "cue": "Then, way off down the hall, I heard a gate rattle. Then another one. Closer. It was Marcus. He was walking the loop, shaking every gate he passed, the way he did every single night.",
+      "segment": 137,
+      "view": "detail",
+      "frames": 155
+    },
+    {
+      "start": 18908,
+      "asset": "ch2/marcus-gate",
+      "cue": "He shook mine too. He didn't even look in.",
+      "segment": 140,
+      "view": "detail",
+      "frames": 73
+    },
+    {
+      "start": 18981,
+      "asset": "cleaner-cart",
+      "cue": "Down by the escalator, the night cleaner from the food court was still pushing her cart into the same wall. Over and over.",
+      "segment": 141,
+      "view": "wide",
+      "frames": 215
+    },
+    {
+      "start": 19196,
+      "asset": "morning-crowd",
+      "cue": "That's when I figured out the first rule. They follow sound. And when it's quiet, they go back to whatever they used to do.",
+      "segment": 142,
+      "view": "detail",
+      "frames": 247
+    },
+    {
+      "start": 19443,
+      "asset": "breakfast",
+      "cue": "I had breakfast. A protein bar that tasted like a yoga mat.",
+      "segment": 143,
+      "view": "wide",
+      "frames": 137
+    },
+    {
+      "start": 19580,
+      "asset": "summit-supplies",
+      "cue": "Summit Outdoors by daylight: tents, kayaks, a whole wall of camping food, and a cardboard bear that scared me twice.",
+      "segment": 144,
+      "view": "detail",
+      "frames": 267
+    },
+    {
+      "start": 19847,
+      "asset": "phone-message",
+      "cue": "Then my phone buzzed. One message, sent at two-fourteen a.m. It was from my mom. Lily is with me. Door locked. Do not come. And she typed the word not in all capitals.",
+      "segment": 145,
+      "view": "wide",
+      "frames": 210
+    },
+    {
+      "start": 20057,
+      "asset": "phone-message",
+      "cue": "Then my phone buzzed. One message, sent at two-fourteen a.m. It was from my mom. Lily is with me. Door locked. Do not come. And she typed the word not in all capitals.",
+      "segment": 145,
+      "view": "detail",
+      "frames": 249
+    },
+    {
+      "start": 20306,
+      "asset": "lita-lily",
+      "cue": "My mom is seventy, and she's the toughest person I've ever met.",
+      "segment": 148,
+      "view": "wide",
+      "frames": 114
+    },
+    {
+      "start": 20420,
+      "asset": "phone-reply",
+      "cue": "I texted back. Stay put. I love you. Tell Lily the king's still in his castle. It said delivered. Then the bars on my phone went to zero, and they never came back.",
+      "segment": 149,
+      "view": "wide",
+      "frames": 210
+    },
+    {
+      "start": 20630,
+      "asset": "phone-reply",
+      "cue": "I texted back. Stay put. I love you. Tell Lily the king's still in his castle. It said delivered. Then the bars on my phone went to zero, and they never came back.",
+      "segment": 149,
+      "view": "detail",
+      "frames": 136
+    },
+    {
+      "start": 20766,
+      "asset": "crank-radio",
+      "cue": "There's a camping radio in the store, the kind with a hand crank. I found the emergency channel. This is an emergency broadcast. Shelter in place. Rescue teams will reach every area within thirty days.",
+      "segment": 151,
+      "view": "wide",
+      "frames": 210
+    },
+    {
+      "start": 20976,
+      "asset": "crank-radio",
+      "cue": "There's a camping radio in the store, the kind with a hand crank. I found the emergency channel. This is an emergency broadcast. Shelter in place. Rescue teams will reach every area within thirty days.",
+      "segment": 151,
+      "view": "detail",
+      "frames": 204
+    },
+    {
+      "start": 21180,
+      "asset": "crank-radio",
+      "cue": "It played the same thirty seconds, over and over, all day.",
+      "segment": 153,
+      "view": "character",
+      "frames": 114
+    },
+    {
+      "start": 21294,
+      "asset": "insulin-worry",
+      "cue": "Thirty days. Okay. I can do thirty days. I've done diets longer than that.",
+      "segment": 154,
+      "view": "wide",
+      "frames": 161
+    },
+    {
+      "start": 21455,
+      "asset": "summit-supplies",
+      "cue": "So I counted what I had.",
+      "segment": 155,
+      "view": "character",
+      "frames": 63
+    },
+    {
+      "start": 21518,
+      "asset": "supplies-wide",
+      "cue": "Seventy-two bottles of water. Forty protein bars. A shelf of freeze-dried meals, a camp stove, water filters, and more baseball bats than anybody needs. If I'm careful, that's water for about twelve days.",
+      "segment": 156,
+      "view": "wide",
+      "frames": 210
+    },
+    {
+      "start": 21728,
+      "asset": "supplies-wide",
+      "cue": "Seventy-two bottles of water. Forty protein bars. A shelf of freeze-dried meals, a camp stove, water filters, and more baseball bats than anybody needs. If I'm careful, that's water for about twelve days.",
+      "segment": 156,
+      "view": "detail",
+      "frames": 218
+    },
+    {
+      "start": 21946,
+      "asset": "insulin-worry",
+      "cue": "Then I remembered something, and my stomach dropped.",
+      "segment": 158,
+      "view": "detail",
+      "frames": 100
+    },
+    {
+      "start": 22046,
+      "asset": "lita-lily",
+      "cue": "My mom is diabetic. Her insulin lasts about ten days.",
+      "segment": 159,
+      "view": "detail",
+      "frames": 139
+    },
+    {
+      "start": 22185,
+      "asset": "insulin-worry",
+      "cue": "Rescue was thirty days away. My mom's insulin would run out in ten.",
+      "segment": 160,
+      "view": "character",
+      "frames": 182
+    },
+    {
+      "start": 22367,
+      "asset": "ladder-day",
+      "cue": "There's a ladder in the stockroom that goes up to a hatch on the roof.",
+      "segment": 161,
+      "view": "wide",
+      "frames": 133
+    },
+    {
+      "start": 22500,
+      "asset": "roof-hatch-day",
+      "cue": "Six years I've worked here, and I'd never once been up there.",
+      "segment": 162,
+      "view": "wide",
+      "frames": 128
+    },
+    {
+      "start": 22628,
+      "asset": "roof-highway-day",
+      "cue": "From the roof, you can see the whole highway. The sun was out. That felt kind of rude.",
+      "segment": 163,
+      "view": "wide",
+      "frames": 187
+    },
+    {
+      "start": 22815,
+      "asset": "road-dead",
+      "cue": "Eight lanes of cars, all stopped, doors hanging open. And the dead, walking between them like they'd forgotten where they parked.",
+      "segment": 165,
+      "view": "wide",
+      "frames": 245
+    },
+    {
+      "start": 23060,
+      "asset": "helicopter",
+      "cue": "Smoke over downtown. A helicopter that flew right over me and didn't stop. I waved at it like an idiot. Both arms.",
+      "segment": 166,
+      "view": "wide",
+      "frames": 246
+    },
+    {
+      "start": 23306,
+      "asset": "hotel-help",
+      "cue": "On the roof of the hotel next door, somebody had painted help on a bedsheet. Nobody came for them either.",
+      "segment": 168,
+      "view": "wide",
+      "frames": 190
+    },
+    {
+      "start": 23496,
+      "asset": "tower-day",
+      "cue": "And on the other side of all of it, a mile and a half away, Parkview. Tenth floor, fourth window from the left.",
+      "segment": 169,
+      "view": "wide",
+      "frames": 286
+    },
+    {
+      "start": 23782,
+      "asset": "roof-distance-day",
+      "cue": "I could see my daughter's window from the roof of this mall. It might as well have been the moon. I know what you're thinking. Just go.",
+      "segment": 170,
+      "view": "wide",
+      "frames": 209
+    },
+    {
+      "start": 23991,
+      "asset": "garage-filled",
+      "cue": "My car is in the garage, with them. There are eight lanes of the dead between me and that building.",
+      "segment": 172,
+      "view": "wide",
+      "frames": 207
+    },
+    {
+      "start": 24198,
+      "asset": "tower-day",
+      "cue": "And if I somehow made it, I'd be leading every one of them straight to her door.",
+      "segment": 173,
+      "view": "detail",
+      "frames": 129
+    },
+    {
+      "start": 24327,
+      "asset": "roof-distance-day",
+      "cue": "So I stayed up there, and I watched her window all afternoon. I counted every window on that building twice.",
+      "segment": 174,
+      "view": "detail",
+      "frames": 209
+    },
+    {
+      "start": 24536,
+      "asset": "blackout",
+      "cue": "At eight fifty-nine, the whole city went dark. Including her window.",
+      "segment": 175,
+      "view": "wide",
+      "frames": 169
+    },
+    {
+      "start": 24705,
+      "asset": "night-black",
+      "cue": "No streetlights. No windows. I could barely see the shape of her building against the sky.",
+      "segment": 176,
+      "view": "wide",
+      "frames": 162
+    },
+    {
+      "start": 24867,
+      "asset": "roof-flashlight",
+      "cue": "At nine, I turned on my flashlight and pointed it at her building, just in case.",
+      "segment": 177,
+      "view": "wide",
+      "frames": 157
+    },
+    {
+      "start": 25024,
+      "asset": "night-black",
+      "cue": "Nine o'clock. Nothing. Nine-oh-one. Nothing.",
+      "segment": 178,
+      "view": "detail",
+      "frames": 147
+    },
+    {
+      "start": 25171,
+      "asset": "roof-flashlight",
+      "cue": "I stood there with my flashlight, telling myself the power's out, she can't, it's fine.",
+      "segment": 180,
+      "view": "detail",
+      "frames": 169
+    },
+    {
+      "start": 25340,
+      "asset": "tower-signal",
+      "cue": "Then, one. Two. Three. Not her lamp. A flashlight. In the tenth-floor window.",
+      "segment": 181,
+      "view": "wide",
+      "frames": 217
+    },
+    {
+      "start": 25557,
+      "asset": "danny-relief",
+      "cue": "She's alive. She figured it out. She's seven years old, and she figured it out.",
+      "segment": 183,
+      "view": "wide",
+      "frames": 140
+    },
+    {
+      "start": 25697,
+      "asset": "roof-radio-glow",
+      "cue": "I blinked back three times. Then I sat down on the roof, and I couldn't stop shaking. Then the radio in my pocket clicked on. Marcus's radio. I'd carried it around all day.",
+      "segment": 184,
+      "view": "wide",
+      "frames": 210
+    },
+    {
+      "start": 25907,
+      "asset": "roof-radio-glow",
+      "cue": "I blinked back three times. Then I sat down on the roof, and I couldn't stop shaking. Then the radio in my pocket clicked on. Marcus's radio. I'd carried it around all day.",
+      "segment": 184,
+      "view": "detail",
+      "frames": 98
+    },
+    {
+      "start": 26005,
+      "asset": "roof-radio-glow",
+      "cue": "That's sweet, Danny.",
+      "segment": 186,
+      "view": "character",
+      "frames": 73
+    },
+    {
+      "start": 26078,
+      "asset": "danny-watched",
+      "cue": "She'd been watching.",
+      "segment": 187,
+      "view": "wide",
+      "frames": 46
+    },
+    {
+      "start": 26124,
+      "asset": "tower-signal",
+      "cue": "Who's in the window?",
+      "segment": 188,
+      "view": "detail",
+      "frames": 71
+    },
+    {
+      "start": 26195,
+      "asset": "blackout",
+      "cue": "Next: Chapter Two / The Boy in the Ceiling",
+      "segment": null,
+      "view": "wide",
+      "overlay": "end",
+      "frames": 270
+    }
+  ]
+}

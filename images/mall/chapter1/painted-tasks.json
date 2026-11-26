@@ -1,0 +1,425 @@
+{
+  "basePrompt": "Use case: illustration-story. ONE cinematic 16:9 fully hand-painted production frame for THE NIGHT GUARD Chapter One. Image1 is approved character/style reference, not a subject to duplicate. Soft shaded oversized pale spherical heads with ONLY two black oval eyes, very thin BLACK SINGLE-LINE torso/limbs, black mitten hands, irregular ink edges; rich detailed brush-textured environments, contact shadows, cool slate-blue ambience/warm gold highlights. If Danny is named: adult guard with navy peaked cap/gold shield and gold hip keys, same as reference. If Marcus is explicitly named, he has NO gold keys anywhere; only Danny carries keys. ONLY depict subjects explicitly named in SCENE, no extra guards. No realistic flesh/noses/mouths/beards, filled clothed torsos or coats, flat vector figures, gore, phantom limbs, detached hands, text/watermarks, panels or collages. Two connected arms/two legs per person. Supporting images are identity/location references only; use new SCENE composition. SCENE: ",
+  "tasks": [
+    {
+      "name": "hall-crowd",
+      "scene": "Behind closed Summit Outdoors grille the concourse is packed shoulder-to-shoulder with dozens of muted olive-gray zombie STICK FIGURES. Shaded round heads, two black eyes, thin black limbs, reaching toward store; no caps on background crowd. Locked grille in foreground; no Danny, no radio closeup. Ominous deep corridor perspective with mall tiles and shuttered stores."
+    },
+    {
+      "name": "radio-on-chest",
+      "scene": "Extreme close view of undead Marcus beyond LOCKED grille: lower half olive shaded round face at top, slim black torso, navy narrow strap, black radio clipped upside down chest center, long antenna points DOWN. His two black hands grip grille to either side. Radio and cloth clip sharp enough to crop again; tense blue store light. No detached additional hands.",
+      "anchor": "marcus-z-radio"
+    },
+    {
+      "name": "crown",
+      "scene": "Warm flashback before outbreak: Danny in navy guard cap with GOLD PAPER CROWN balanced playfully above it, gold hip keys, proudly surveys peaceful Maplecrest mall concourse. Small paper crown made by his daughter, empty polished tiled halls, decorative fountain, closed shops, rich navy/gold painted setting. Danny at left third, generous darker space center/right for native chapter title."
+    },
+    {
+      "name": "keys-hold",
+      "scene": "Danny alone in peaceful mall concourse, waist-up, lifts a large crowded ring of dozens of gold keys in one connected mitten hand, glances down proudly. Reference face and cap, one slim black torso, other hand at hip. Gold keys are main focal point near image center, tiny RED B3 tag among them, detailed floor/fountain/shutters in depth."
+    },
+    {
+      "name": "b3-key",
+      "scene": "Macro painted physical object: crowded gold ring of worn mall keys held by Danny's connected black mitten hand entering from left. One old iron key stands out on RED rectangular tag printed exactly 'B3'. Blurred mall directory behind, no B3 on map. Dramatic blue-gray shadows/warm gold metal, no floating extra hands."
+    },
+    {
+      "name": "bus-stop",
+      "scene": "Daylight memory: Danny in guard cap/gold hip keys kneels to greet 7-year-old daughter Lily getting off yellow school bus by suburban bus stop at 3:15PM. Lily half his height, pale shaded round face/two black oval eyes, two simple brown pigtails, pink neck scarf, purple backpack, black stick limbs. Both full figures connected, warm tender encounter, painted trees and bus. No other visible people."
+    },
+    {
+      "name": "rounds-pretzel",
+      "scene": "Before outbreak at night, Danny makes routine rounds past a closed pretzel kiosk and potted palms in polished mall hall. He walks slowly checking shutters, keys at hip; illustrated pretzel sign with no words, warm kiosk light against cool-blue concourse. Wide environmental story shot, no other people."
+    },
+    {
+      "name": "kid-drawing",
+      "scene": "Close view of an actual slightly crumpled child's crayon drawing held by Danny's black mitten hand in dim mall. Paper depicts a smiling stick-figure guard with a yellow paper crown and a little girl, crayon sun and mall shape, as a real rough children's drawing on paper. Warm flashlight pool, textured paper, blurred shaded Danny cap/face behind. Physical drawing is not a flat full-frame character overlay."
+    },
+    {
+      "name": "family-tower",
+      "scene": "Distant Parkview ten-story apartment tower at evening viewed across mall parking lot. Danny in cap/keys small foreground left facing tower, holds phone. ONE tenth-floor window glows warm yellow, other windows subdued. Empty parking spaces and unlit parked cars; peaceful pre-outbreak memory. Rich painted architectural texture."
+    },
+    {
+      "name": "lily-lamp",
+      "scene": "Interior tenth-floor apartment at night, 7-year-old Lily with brown pigtails, pink scarf and purple backpack beside chair reaches toward a small desk lamp at open-curtain window. Pale shaded head/two oval eyes, thin black stick torso/limbs. Elderly Lita not visible here. Lamp glow lights her hands and wall, distant mall through window; show switch reachable, no electrical disaster yet.",
+      "anchor": "bus-stop"
+    },
+    {
+      "name": "parking-signal",
+      "scene": "Night flashback: Danny alone in empty mall parking lot by guard entrance replies to daughter's window signal with flashlight held toward distant Parkview tower. Navy cap/gold hip keys, full figure, black stick limbs, warm flashlight lens at image center, warm tenth-floor window far right, cool painted asphalt and parked cars."
+    },
+    {
+      "name": "walt-handoff",
+      "scene": "Security office memory: older guard Walt at left (pale shaded head, small gray hair wisps, navy cap, black stick torso), seriously passes huge gold ring of mall keys and red B3 tag to Danny at right (reference cap, pale face). Two guards only, four attached hands total, desk/camera monitors in background, warm desk lamp. Key handoff centered and clear. No Marcus radio."
+    },
+    {
+      "name": "b3-door",
+      "scene": "Danny investigates a locked heavy gray SERVICE door in empty back hallway, navy cap/gold keys, stops short of putting old key into lock. Worn metal door centered marked exactly 'B3' on small red plaque. Concrete floor, pipes, old wall map showing no B3; ominous shadow under door, no monsters or people beyond door."
+    },
+    {
+      "name": "marcus-empty-pockets",
+      "scene": "Alive Marcus in security office turns both empty pockets inside out: since body is thin single black line, show two small dark pocket flaps on narrow belt, EMPTY hands spread, nursing book on desk. No dangling keys anywhere on him. Pale shaded face/young navy cap; UPSIDE DOWN radio on narrow chest strap. Warm lamp, cool monitors. Simple coherent two-arm gesture. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "desk-radio",
+      "scene": "Security desk close-up: black handheld radio in charging cradle centered, navy nursing textbook nearby, ceramic mug, CCTV monitors blurry behind. Warm lamp rakes across worn wood, radio LED unlit; tiny blue electrical reflections, no characters, readable physical scene. Not a floating product render."
+    },
+    {
+      "name": "marcus-joke",
+      "scene": "Alive Marcus in office sitting opposite Danny, tells a bad joke with an open palm, other connected arm holds nursing book. Both pale shaded heads with two oval eyes, black stick torsos and limbs, navy caps. Marcus has upside-down chest radio and NO keys; Danny has gold hip keys. Danny tilts head amused. Rich warm desk lamp, blue monitor wall, no mouths. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "garage-ramp",
+      "scene": "First sign of outbreak at 2AM: parking garage descending ramp, alive Marcus at left with pale shaded head/navy cap, upside-down chest radio, raises one empty hand to a lone staggered pale olive stick-figure stranger at right. Concrete pillars, yellow black barrier, dark parked cars. Stranger walks unsteadily toward him, still several steps apart; no biting yet, no gore. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "office-concern",
+      "scene": "Danny alone in security office at desk holding own handheld radio near face, suddenly concerned listening to Marcus on ramp. Pale head/cap/gold hip keys, thin black torso, free hand rests near keyboard. Monitors/desk lamp behind, medium shot, worried head tilt without mouth or brows. Empty chair opposite."
+    },
+    {
+      "name": "monitor-wall",
+      "scene": "Danny seen from behind at security desk leans toward nine CCTV monitors. One monitor prominently shows lonely garage ramp with two tiny shaded stick figures; others show empty mall corridors. He touches camera controls with connected hand. Painted physical monitors, cool light/warm lamp, cap and hip keys recognizable."
+    },
+    {
+      "name": "raccoon",
+      "scene": "Comedic security-camera view of one raccoon alone on concrete parking garage ramp near trash bag and parked car, glancing up. Desaturated cool blue painted illustration with CRT border/noise. Detailed raccoon fur in same ink/paint medium, no people, no captions."
+    },
+    {
+      "name": "cctv-attack",
+      "scene": "CCTV close view of garage ramp: Marcus in navy cap/UPSIDE DOWN chest radio knocked down by olive-gray zombie stick figure, its head close to his forearm. Two more thin-black-limbed figures emerge from parked-car shadows. Implied attack only, NO blood/gore. All heads shaded spheres/oval black eyes; thin line torsos. Camera monitor bezel along edge, painterly desaturated blue. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "ramp-crowd",
+      "scene": "Garage ramp fills with a slow mass of olive-gray round-headed stick-figure dead emerging between cars, each thin black line torso/limbs with shaded heads. Marcus almost obscured low foreground navy cap/radio, fallen alive ashen. Cold CCTV-style overhead framing, pillars and ramp lane arrows, no gore. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "office-door",
+      "scene": "Danny has shoved security office door shut and braces it with one connected hand, own radio on desk, gold hip keys. Other hand holds phone; monitors show invading crowd, warm lamp. His pale shaded head/cap and thin black body stark against heavy locked door. Frame has clean dark upper-right area for small timed countdown text. No crowd inside office."
+    },
+    {
+      "name": "desk-phone",
+      "scene": "Close physical security desk landline off hook beside Danny's attached black mitten hand, emergency call attempt. Beige phone, coiled cord, worn desk, radio cradle, warm lamp and dim CCTV reflections, night. No readable numbers/text necessary."
+    },
+    {
+      "name": "phone-calls",
+      "scene": "Danny alone in office frantically holds phone to side of pale shaded head, other attached mitten hand tries keys/control panel. Cold camera light, warm desk edge, locked door behind. Navy cap/gold hip keys, thin black torso. Emotional isolated medium shot, no woman at remote end."
+    },
+    {
+      "name": "monitor-invasion",
+      "scene": "Physical CCTV screen in office now shows a wave of olive-gray stick-figure dead streaming from garage entry into blue mall corridor, toppled security barrier. Small inset feeds of other halls still empty, painted monitor bezel in near foreground, cold blue haze; detailed round heads and slender black bodies."
+    },
+    {
+      "name": "camera-black",
+      "scene": "CCTV bank close-up, most screens show crowd on mall corridors, one prominent screen BLACK with a faint final white static line. Danny's pale face and navy cap reflected at monitor edge, not a floating detached head. Warm lamp rim and deeply textured old monitor plastics."
+    },
+    {
+      "name": "foodcourt-crowd",
+      "scene": "Wide mall food court at night, closed kiosks, scattered chairs, dozens of olive-gray thin-black stick zombies drifting past; no eating. Empty tables stretch into blue depth, overturned chair near foreground, menu signs show abstract shapes no words. Same shaded heads/painted quality."
+    },
+    {
+      "name": "mall-map",
+      "scene": "Over-shoulder Danny holding a printed mall map on security desk: clear route from security office to SUMMIT OUTDOORS store highlighted as simple blue line, pharmacy red cross icon, fountain oval, department store rectangle, many shut shops. Text only 'SUMMIT'. Gold keys in his other connected hand, cap edge at left, richly painted physical paper/lamp."
+    },
+    {
+      "name": "gate-row",
+      "scene": "Danny stands at junction of empty mall corridor with rows of closed sturdy steel store grilles stretching into distance. He weighs gold key ring in one hand, cap/two oval eyes, thin black body; far background ominous figures just rounding corner, not yet near. Low blue ceiling light, floor reflections, wide architecture."
+    },
+    {
+      "name": "pharmacy",
+      "scene": "Danny pauses outside locked mall pharmacy at night. Red cross emblem above CLOSED steel security gate, shelves of medicine behind. No text except cross emblem, no people inside, gold keys at hip; black stick limbs, pale shaded head, tense decision pose. Cool detailed tile/reflections."
+    },
+    {
+      "name": "dept-bed",
+      "scene": "Fantasy of safe alternative shown as Danny considering a bed display through closed department-store grille: beautifully made bed, pillows, tiny lamp, mannequins excluded. Danny near foreground with cap/keys, dark unwelcoming shop depth, no zombies close. Same painterly medium."
+    },
+    {
+      "name": "summit-supplies",
+      "scene": "Danny at night inside Summit Outdoors scanning useful supplies: tents, water bottles, protein-bar boxes, camping stove, sleeping bags; life-size CARDBOARD BEAR display on high shelf at right looking faintly ridiculous. Navy cap/keys/pale head and thin black limbs, attached hand touches shelf. Fully painted scene, no other people. Bear is clearly store display, not live animal."
+    },
+    {
+      "name": "running-fountain",
+      "scene": "Danny RUNS alone across empty mall concourse past large central stone fountain toward sports store, navy cap stays on/gold hip keys swinging. Dynamic balanced running pose with exactly two attached arms/two legs, thin black body and pale shaded head. Cold night ceiling lights, reflections and perspective convey motion, faint zombies distant only."
+    },
+    {
+      "name": "summit-front",
+      "scene": "Danny reaches Summit Outdoors storefront while outbreak approaches in mall hall. Wide open glass entry and rolled-up metal grille above, green/blue tents visible inside, store sign exactly 'SUMMIT OUTDOORS'. He has key in connected hand and gold key ring at hip; head looks back toward distant crowd. Fully painted navy/slate blue scene."
+    },
+    {
+      "name": "glass-burst",
+      "scene": "Behind running Danny in mall corridor, a pane of storefront GLASS bursts as olive-gray zombies press through. Shards scatter safely behind him, no injury/gore. Danny reference cap/keys/thin black body in foreground running away, dynamic perspective, tense cold lighting. No extra arms or duplicated Danny."
+    },
+    {
+      "name": "gate-lower",
+      "scene": "Inside Summit Outdoors Danny pulls STEEL ROLLING GRILLE down with BOTH attached black hands. Gate already halfway lowered across entrance, blue-lit corridor and approaching pale olive stick figures beyond; tents and treadmills inside. Danny cap/keys/white shaded head, slim body under pulled-down gate without being trapped. Clear physical action, no gore."
+    },
+    {
+      "name": "hide-between-tents",
+      "scene": "Danny huddles low BETWEEN a green display tent and blue tent inside Summit Outdoors, closed security grille visible far behind, distant shadow crowd outside. Holds own black radio in one hand, other hand pressed to knee, keys at hip. Full painted pale shaded face/cap and very thin limbs; tiny warm spill on tent fabric, deep safe pocket of shadow."
+    },
+    {
+      "name": "gate-pressure",
+      "scene": "Summit Outdoors CLOSED steel security grille bows slightly inward under many olive-gray thin-stick zombies on corridor side, their attached hands grip horizontal bars; no entry gap or open portal. Store-side tents in foreground, Danny small at side recoiling with radio/keys. Dramatic structural tension and layered painted shadows."
+    },
+    {
+      "name": "tent-wait",
+      "scene": "Danny alone awake in blue display tent entrance, sitting tense with knees bent, own radio and flashlight beside him, kid drawing tucked near bag. Closed store gate distant and out of focus, no other character inside. Deep blue fabric folds, warm tiny flashlight spill on pale face/cap/gold keys. Not asleep, lonely waiting."
+    },
+    {
+      "name": "knock-hand",
+      "scene": "Close locked store grille from inside: one connected BLACK mitten hand and thin black forearm reaches from outside and knocks rhythmically on bars. Part of Marcus's ashen shaded face and navy cap visible behind side of grille, UPSIDE DOWN chest radio low; not green zombie yet. No exposed flesh or gore. Background hallway eerily still. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "office-knock",
+      "scene": "Warm memory in security office: alive Marcus at doorway gently taps door with attached black mitten hand, Danny inside turns from desk. Both pale shaded heads/two eyes, thin stick limbs/navy caps; Marcus upside-down chest radio/no keys, Danny hip keys. Friendly familiar private knock, no zombies. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "marcus-hurt",
+      "scene": "Store-side viewpoint of hurt Marcus alone OUTSIDE locked Summit Outdoors grille, sits/slumps against bars. ASHEN pale-gray round head/navy cap, two oval eyes lowered, one forearm has small dark cloth stain, thin black torso/limbs. Upside-down chest radio clearly remains on slim navy strap. NO keys. No other figures close. Danny not shown; tents/blue light through grille. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "keys-chest",
+      "scene": "Danny INSIDE closed Summit gate, emotionally frozen, clutches ring of gold keys against his thin black chest with both connected mitten hands. Pale shaded head and navy cap lowered, eyes fixed on grille to left edge; blue tents/dim shelving behind. No Marcus in this tight shot, no floating third hand."
+    },
+    {
+      "name": "marcus-pleads",
+      "scene": "Close emotional view through locked grille: wounded Marcus ashen pale round head/navy cap, sits against bars with one palm open pleading to unseen Danny, other hand holds injured arm. Small dark cloth forearm stain, no gore. UPSIDE DOWN radio attached slim chest strap, no keys. Detailed painted eyes only, head tilt expresses understanding and fear. Not green yet. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "bite-arm",
+      "scene": "Macro of wounded Marcus's thin black forearm wrapped in torn dark navy cloth with small dark red stain implying bite. His other attached mitten hand holds it; grille bars at foreground, lower ashen face/cap edge blurred above; upside-down radio lower-right. NO fleshy arm, teeth, wound detail or gore. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "hall-still",
+      "scene": "View from Summit gate into quiet but unsafe mall corridor: injured Marcus seated against gate near foreground edge (ashen head/navy cap, upside-down radio/no keys), distant olive-gray stick crowd stands motionless at far end. Cold fluorescent pools and long shadows, no figures inside store, no gore. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "back-to-back",
+      "scene": "Danny inside and injured Marcus outside LOCKED security grille sit back-to-back separated by steel bars. Danny at left foreground cap/pale head/gold hip keys, Marcus on far side cap/ASHEN head/upside-down chest radio/NO keys. Both thin black stick bodies seated, hands safely on knees. Tender sad composition, night blue shop tents inside and empty corridor outside. No green skin yet. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "fitting-rescue",
+      "scene": "Warm humorous memory before outbreak: alive Marcus helps embarrassed Danny open a stuck fitting-room door inside department store. Marcus holds latch with one connected hand and nursing book under other arm, upside-down radio/no keys; Danny inside cubicle cap/keys, both pale heads/two eyes/black line limbs. Rich painted curtain, mirrors, clothing racks, no customers. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-book"
+    },
+    {
+      "name": "marcus-seated",
+      "scene": "Hurt Marcus sitting alone outside grille, ASHEN pale head/navy cap bowed but awake, upside-down radio on chest strap, no keys. Slim black stick body, small dark cloth forearm stain, two knees bent and two hands resting by sides. Intimate side angle, bars and polished corridor reflect cold light; no other people. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-pleads"
+    },
+    {
+      "name": "laugh-bag",
+      "scene": "Danny inside Summit Outdoors presses his face into a sleeping bag to muffle a sudden laugh, connected black hands hold fabric, navy cap tilted, gold keys. Closed gate in distance where Marcus cap silhouette sits but barely visible. Emotional restrained comedy against tense blue-green camping-store textures, no mouths."
+    },
+    {
+      "name": "marcus-still",
+      "scene": "Marcus has died while sitting OUTSIDE locked grille: pale ashen head drooped forward, navy cap, two black oval eyes barely angled, slender black arms slack on floor, legs folded naturally. Upside-down radio still attached. Dark cloth stain forearm, NO gore. Empty cold corridor, intimate sorrowful painterly shot, no Danny in image. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-pleads"
+    },
+    {
+      "name": "marcus-rise",
+      "scene": "Marcus now UNDEAD olive-green round head, navy cap/gold shield, rises awkwardly from seated crouch to grip closed Summit grille. Two connected arms pull up, slim black legs extending, upside-down black chest radio still attached/no keys. His discarded nursing textbook absent, tents inside store and dim mall beyond. Clear change from ashen to olive, no gore. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; radio stays attached inverted chest strap, no loose radio on floor.",
+      "anchor": "marcus-z-radio"
+    },
+    {
+      "name": "danny-floor-radio",
+      "scene": "Danny crouched low inside store beside green tent when own handheld radio suddenly speaks. He stares at radio held center-frame in attached black hand, green LED, pale shaded face/cap/keys, other hand braces floor. Closed gate and olive Marcus blurred far background. Rich blue shadows, small warm lantern detail, no Theo."
+    },
+    {
+      "name": "dept-dark",
+      "scene": "VIEW INTO dark department store across mall hall: deep rows of clothing, escalator shadow, a closed grille partly visible. A small mysterious radio glow in darkness suggests unseen voice, NO visible woman/person. Paint detailed blue-black environment and reflected light; keep ambiguous not ghostly."
+    },
+    {
+      "name": "two-radios",
+      "scene": "Split-depth SINGLE physical scene, not split panels: Danny inside Summit gate crouches holding own handheld radio in foreground left, while undead olive Marcus behind locked grille wears SECOND black radio UPSIDE DOWN on chest strap. Both radios have dark indicator lenses so native subtle LEDs can animate later. Danny pale/cap/keys, Marcus green/cap/no keys. Crowds blurred in corridor.",
+      "anchor": "marcus-z-radio"
+    },
+    {
+      "name": "hall-turn",
+      "scene": "Sound attracts dead: long view down mall corridor, many olive-gray stick zombies simultaneously turn round shaded heads toward Summit Outdoors closed grille at near-right. Two oval eyes/black single-line bodies, no cap except Marcus nearest gate at far edge with upside-down radio. Cinematic diagonal depth, cold light, no running, no gore."
+    },
+    {
+      "name": "reach-radio",
+      "scene": "Danny crouched INSIDE closed metal grille, reaches ONLY RIGHT connected black arm through a gap toward radio on zombie Marcus chest OUTSIDE. Danny head/pale cap at left; his other attached hand braces INSIDE vertical frame. Marcus olive head/navy cap/no keys, both hands gripping higher bars, teeth not visible. Inverted radio hanging on narrow chest strap, long antenna DOWN, clip clearly exposed, Danny wrist near Marcus face. One coherent perspective, closed gate remains barrier.",
+      "anchor": "marcus-z-radio"
+    },
+    {
+      "name": "fall-back-radio",
+      "scene": "Danny tumbles BACKWARD onto floor INSIDE closed Summit gate clutching successfully freed black radio in right attached hand, other arm cushions fall, legs naturally bent. Marcus OUTSIDE now has EMPTY slim chest strap/clip with NO RADIO and no keys, olive face pressed to bars. Danny gold keys at hip/cap intact, tents behind. No gore/extra limbs.",
+      "anchor": "marcus-z-radio"
+    },
+    {
+      "name": "radio-bag",
+      "scene": "Inside camping store Danny pushes recovered black handheld radio DEEP into a thick blue sleeping bag, zipper partly open, both connected mitten hands on bag. Pale head/navy cap/gold hip keys, thin black body. Own second radio lies switched OFF on floor nearby. Closed gate distant, subdued warm fabric edge light."
+    },
+    {
+      "name": "crowd-drift",
+      "scene": "After radio is muffled, crowd of olive-gray stick dead drifts AWAY from locked Summit grille into mall corridor. Undead Marcus still near closed gate but radio clip EMPTY/no keys, navy cap. Danny inside deep shadow barely visible with sleeping bag. Wide side perspective, dispersing crowd readable, rich painted blues.",
+      "anchor": "marcus-z-radio"
+    },
+    {
+      "name": "huddled-radio",
+      "scene": "Danny huddles behind tent inside dark Summit store with recovered radio partly wrapped in blue sleeping bag. One connected black hand presses TALK button on radio, other holds muffling bag against lap. Pale shaded face/cap/gold hip keys, tiny green radio indicator and cold flashlight edge glow. No one else inside."
+    },
+    {
+      "name": "danny-listen",
+      "scene": "Tight shot Danny behind camping tent, both attached black hands hold sleeping-bag-wrapped radio near ear as he listens to unseen Vera. Pale shaded round head/two black eyes, navy cap/gold hip keys, rich painted shadow and radio LED. Tense head tilt, no woman's face or ghost."
+    },
+    {
+      "name": "empty-concourse",
+      "scene": "Wide empty mall concourse from dim security-office end at night, locked shop gates/fountain/escalators, no guards and no zombies visible. Long cold light reflections and abandoned coffee cup. Empty chair and dispatch radio faint through office window foreground suggest no rescue. Rich painterly detail, no people."
+    },
+    {
+      "name": "wake-bag",
+      "scene": "Dawn inside Summit Outdoors Danny wakes curled in blue sleeping bag by green tent, navy cap on head/gold keys beside hip, thin black arms and legs, pale shaded head/two open eyes. Weak gray daylight through high windows, own radios on floor, store closed grille in background. No child/Theo."
+    },
+    {
+      "name": "gray-concourse",
+      "scene": "Morning mall corridor seen through CLOSED Summit grille. Gray diffuse daylight, overturned chair, deserted kiosks and distant slow olive-gray stick zombies arranged like abandoned film set. Danny pale capped face cautiously peeks from lower foreground store side, his connected hand on grille. Rich dusty painted atmosphere."
+    },
+    {
+      "name": "crawl-gate",
+      "scene": "Danny crawls quietly on hands and knees BETWEEN tents toward bottom of CLOSED Summit grille to peek outside. Pale round head/navy cap/gold keys; exactly two connected arms and legs bent, black single-line torso. Gate fully closed with padlock; he remains inside, no tunnel/gap. Gray dawn light on floor. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "morning-crowd",
+      "scene": "Daylit mall corridor full of motionless olive-gray round-headed stick dead, some at store shutters, others facing nowhere; long distance depth, no gore. Foreground empty bench and polished tiles, gray-blue daylight skylight. All bodies very thin black lines, not filled clothing, no duplicated characters. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head.",
+      "anchor": "foodcourt-crowd"
+    },
+    {
+      "name": "marcus-rounds",
+      "scene": "Undead olive Marcus (navy cap, EMPTY radio clip on slim strap, NO keys) walks slowly along mall corridor in a familiar patrol route past numbered shop gates. Thin black single-line torso/limbs, attached hands hanging, same shaded head. Daytime gray light, other zombies distant; he isn't attacking. Side profile composition. For Marcus, neck-to-pelvis is ONE narrow black stroke, equal arm thickness, no filled hips/chest/shirt; no head bandage/bruise; EMPTY radio clip only, NO RADIO anywhere on Marcus; radio was removed earlier. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head.",
+      "anchor": "marcus-z-radio"
+    },
+    {
+      "name": "cleaner-cart",
+      "scene": "Olive-gray elderly janitor ZOMBIE stick figure still slowly pushes a familiar yellow cleaning cart and mop through morning mall corridor. Gray hair tuft, pale-olive shaded round head/two oval eyes, thin black torso/limbs, both attached mitten hands on handle. Cart bucket/sign shapes but no words, quiet path echo, no gore, no Danny. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head.",
+      "anchor": "foodcourt-crowd"
+    },
+    {
+      "name": "breakfast",
+      "scene": "Morning Danny inside Summit store sits on folding camp stool eating protein bar and drinking bottled water beside tent. Pale shaded head/cap/gold hip keys, thin black torso/limbs; open bar wrapper one hand, bottle other. Rich gray daylight and warm camping stove nearby unlit, cardboard bear display behind, no Theo. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "phone-message",
+      "scene": "Danny inside Summit store looks at PHONE held upright in connected black mitten hand at center-right, pale shaded face/cap at left, gold keys below. Phone screen a blank clean deep navy rectangle front-on unobstructed, enough room for native legible text overlay. Camping shelves gray daylight, tense hopeful attention. Do not render garbled text or extra fingers. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "lita-lily",
+      "scene": "Inside tenth-floor Parkview apartment, elderly Lita with simple small gray bun and lavender neck scarf sits beside 7-year-old Lily (brown pigtails, pink scarf, purple backpack), two pale shaded round heads/two black eyes, thin black bodies. Lita holds phone, small insulin PEN and labeled-free medical pouch on side table in central foreground, Lily looks toward window with lamp. Cool daylight, cupboards/blinds, no other people. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head.",
+      "anchor": "bus-stop"
+    },
+    {
+      "name": "phone-reply",
+      "scene": "Danny on camp stool in store typing a reply with TWO connected black mitten hands around phone at image center. Pale shaded face/navy cap/gold hip keys, thin black torso and legs, sleeping bag/tents behind. Phone faces camera nearly straight with EMPTY dark navy screen for native text. Gray daylight, hopeful then signal failure. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "crank-radio",
+      "scene": "Danny inside Summit Outdoors turns the small side crank of emergency AM/FM radio sitting on shelf, gold hip keys, pale head/cap/very thin black body. One connected hand steadying radio other turning crank, exactly two arms. Window gray daylight, water bottles/batteries, cardboard bear far background. Not handheld walkie-talkie, obvious tuning dial and crank. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "insulin-worry",
+      "scene": "Danny alone sits worried at store inventory table, pale shaded head/cap tilted down, black hands hold phone and small notepad. Water bottles and protein bars nearby, gold hip keys, slender stick limbs, gray morning light and tents/shelf depth. Small dark space at upper-right for native 30-vs-10-days emphasis, no literal medical injection. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "supplies-wide",
+      "scene": "Painted inventory table inside camping store: several neat cases of small sealed WATER BOTTLES and open protein bar cartons, a few survival supplies and notebook. Danny in cap/keys stands behind counting with attached mitten hand and simple pencil. Pale shaded head/two oval eyes, thin black torso/limbs. Detail enough for crop onto bottles. No generated count numbers; native overlay will supply 72/40. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "ladder-day",
+      "scene": "Danny climbs fixed steel maintenance ladder UP toward rooftop hatch in service shaft in afternoon daylight. Pale shaded head/navy cap/gold hip keys; one connected hand grips higher rung other lower, two attached feet on separate rungs. Single slim black body; radio in small dark pouch at hip. Bright sky at upper hatch, pipes/concrete walls, no descent/no Theo. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "roof-hatch-day",
+      "scene": "Danny pushes rectangular rooftop hatch OPEN and emerges onto mall roof into bright 3PM daylight, cap/gold hip keys/pale shaded head/black single-line body. One connected hand on hatch lid, other on ladder rung inside hatch. Painted tar roof, ducts, city buildings and pale sun, no nighttime lights. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "roof-highway-day",
+      "scene": "Danny stands on mall roof at 3PM, back/side to camera looking at EIGHT-LANE highway completely jammed with stopped cars. Pale shaded head/navy cap/gold hip keys, slim black body, hands loosely at sides. Wide richly painted city panorama, bright sun/light-blue haze, no explosions or fire, no moving traffic. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "road-dead",
+      "scene": "High angle from mall roof over eight-lane highway jammed with hundreds of abandoned stopped cars. A few tiny olive-gray stick figures stand between vehicles, no moving traffic, all lanes stopped. Brilliant afternoon sunlight contradicts desolation, richly painted gray road, blue distance. No giant foreground characters. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "helicopter",
+      "scene": "Afternoon rooftop, Danny in cap/gold hip keys/black line body waves BOTH attached arms toward distant military helicopter that continues past without landing. Two oval eyes and pale shaded head looking up, stopped highway below. Wide sky, helicopter small but readable, no soldiers faces or rescue ropes. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "hotel-help",
+      "scene": "View across rooftops in afternoon: distant hotel has large white bedsheet draped from upper window with hand-painted word exactly 'HELP'. Danny pale head/navy cap/keys small at left foreground roof facing it, thin black body, isolated. City highway jam under sunny haze, no zombie crowd on roof. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "tower-day",
+      "scene": "Parkview apartment tower ten stories tall across sunlit parking lot, tenth-floor family window identifiable by small pink curtain and lamp but not lit in daylight. Danny on mall roof foreground looks toward it with phone/flashlight at hip, cap/keys/black stick limbs. Distance and street obstacles clear, no invented horde at family's door. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head.",
+      "anchor": "family-tower"
+    },
+    {
+      "name": "roof-distance-day",
+      "scene": "Afternoon mall roof Danny seated then leaning on low parapet studying distant Parkview tower across the impossible gap. Pale shaded head/cap/keys/thin black body, two hands on parapet, jammed road visible between buildings. Rich slate colors softened by warm sun, empty rooftop. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head.",
+      "anchor": "family-tower"
+    },
+    {
+      "name": "garage-filled",
+      "scene": "Danny peers down from roof at mall parking garage exit densely filled with olive-gray round-headed stick dead, concrete ramps and abandoned cars blocking path to apartment. Danny pale cap/keys/single-line body foreground safely behind parapet. Sunny afternoon yet threatening, no fall, no gun. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head.",
+      "anchor": "foodcourt-crowd"
+    },
+    {
+      "name": "blackout",
+      "scene": "Wide city panorama from mall roof at 8:59PM AFTER TOTAL POWER FAILURE. Every streetlight, storefront and apartment window is DARK, no lit windows anywhere, no emergency red dots. Very dim moonlit navy city/black silhouettes, faint sky afterglow, detailed ink painted rooftops. Danny small at left with flashlight lowered/off, cap/keys/pale face edge barely visible. No neon. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "night-black",
+      "scene": "Danny stands alone on mall roof in full nighttime blackout; ALL city windows and streetlights unlit including Parkview tower. He waits with flashlight lowered/off in one attached hand, pale shaded head/cap/keys, thin black limbs. Stars faint, moonlit deep blue tar/ducts, tense wide composition, no warm city dots. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "roof-flashlight",
+      "scene": "Blackout roof Danny holds flashlight toward Parkview tower offscreen right waiting for signal. All background buildings/windows STREETLIGHTS DARK, NO lit window. Pale shaded head/cap/keys, thin black torso/limbs, two connected hands near flashlight, lens visible central-right with restrained glow that can be timed. Detailed cold night roof texture. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "tower-signal",
+      "scene": "Distant Parkview tower at night during total city blackout. ALL windows/streetlights dark EXCEPT ONE small handheld white flashlight in TENTH FLOOR window near horizontal center. Lily's tiny pale shaded round head/two pigtails visible behind that window, not adult. Moonlit ink/paint architecture, wide enough for slow zoom to window; flashlight point crisp, no lamp/electric glow elsewhere. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head.",
+      "anchor": "family-tower"
+    },
+    {
+      "name": "danny-relief",
+      "scene": "Close Danny on blacked-out mall rooftop finally sees Lily's signal: pale softly shaded round head/two oval eyes, navy cap/gold shield, shoulders dropped in relief, one attached black mitten hand pressed gently over thin chest. Other hand holds flashlight low. Dark city all windows off, tiny single distant family flashlight. Warm reflected flashlight rim, no mouth or tears exaggerated. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "roof-radio-glow",
+      "scene": "Danny sits shaking on roof after city blackout, pale shaded head/navy cap/gold hip keys/thin stick body. Holds flashlight in one attached black hand pointed toward distant Parkview; recovered Marcus handheld radio tucked beside his other connected hand in dark small hip pouch, indicator initially dark. ALL city windows STREETLIGHTS DARK except single tiny family flashlight. Wide fully painted scene, no extra hands. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    },
+    {
+      "name": "danny-watched",
+      "scene": "Tight over-shoulder view Danny on pitch-dark mall roof, looks suddenly over shoulder at unseen observer when radio says who is in window. Pale shaded round head/two eyes/navy cap/gold badge; one connected black hand grips recovered radio near chest, gold hip keys low. Chilling empty hatch and rooftop ducts behind, NO visible Vera or monster, all city lights off. Every person's body must be a SINGLE THIN BLACK STROKE from neck to pelvis, same width as one arm, no filled chest/hips/shirt/coat or skin below head."
+    }
+  ],
+  "anchors": [
+    {
+      "name": "marcus-book",
+      "scene": "Quiet security office at 2AM before outbreak. Marcus ALIVE: youthful pale gray-white head, navy cap, thin black torso and limbs, a dark navy narrow cross-body strap with black radio clipped UPSIDE DOWN (antenna downward). NO hip keys. He sits reading a paperback nursing-school textbook at desk, warm desk lamp and cool nine-monitor wall, empty chair opposite. Medium-wide shot, Marcus prominently readable, humane relaxed pose. No Danny in this picture.",
+      "refs": [
+        "images/mall/channel-art/painted-v1/night-guard-profile-painted-v1-source.png",
+        "public/mall/bg/office.jpg"
+      ]
+    },
+    {
+      "name": "marcus-z-radio",
+      "scene": "Cold-open: inside the dim Summit Outdoors store looking toward CLOSED metal security grille. Undead Marcus on corridor side presses both attached black hands to grille: large muted OLIVE-GREEN softly shaded head, two black oval eyes, navy cap/gold shield. NO hip keys. A SMALL BLACK RADIO clipped UPSIDE DOWN onto a slim navy chest strap, antenna distinctly pointing DOWN, at frame center; green indicator. No filled shirt, no thick torso. Gate locked to floor, bars do not pass through his head. Several pale-green stick-figure dead blurred deep behind. Blue gray tents and shop shelf edges in near foreground. Tense medium shot; no living Danny in frame.",
+      "refs": [
+        "images/mall/channel-art/painted-v1/night-guard-profile-painted-v1-source.png",
+        "public/mall/bg/sportsinside.jpg"
+      ]
+    }
+  ]
+}

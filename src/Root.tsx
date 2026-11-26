@@ -4,6 +4,7 @@ import {makeShort, shortFrames, FPS as SFPS} from './mall/MallShort';
 import {SHORT1_DEF, SHORT2_DEF, SHORT3_DEF} from './mall/shortsCh1';
 import {chapterFrames, makeChapter, FPS as CFPS} from './mall/MallChapter';
 import {CHAPTER1_DEF} from './mall/chapter1/chapter1';
+import {PaintedChapter1, PAINTED_CHAPTER1_FRAMES} from './mall/chapter1/painted';
 import {CHAPTER2_DEF} from './mall/chapter2/chapter2';
 import {Chapter2Retention, RETENTION_FRAMES, RETENTION_READY} from './mall/chapter2/retention';
 import {ILLUSTRATED_PART_ONE_FRAMES} from './mall/chapter2/illustrated-part-one';
@@ -31,6 +32,7 @@ const MallChapter2 = makeChapter(CHAPTER2_DEF);
 
 export const RemotionRoot: React.FC = () => (
   <>
+    <Composition id="MallChapter1Painted" component={PaintedChapter1} durationInFrames={PAINTED_CHAPTER1_FRAMES} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2IllustratedPartOne" component={Chapter2Retention} defaultProps={{styleReview:true}} durationInFrames={ILLUSTRATED_PART_ONE_FRAMES} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2StyleReview10Min" component={Chapter2Retention} defaultProps={{styleReview:true}} durationInFrames={18000} fps={CFPS} width={1920} height={1080} />
     <Composition id="MallChapter2VisualPreview" component={MallChapter2} durationInFrames={chapterFrames(CHAPTER2_DEF)} fps={CFPS} width={1920} height={1080} />
