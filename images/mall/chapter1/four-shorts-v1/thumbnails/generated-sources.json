@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1A",
+    "part": 1,
+    "option": "A",
+    "hook": "42 KEYS.\nNO WAY OUT.",
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-68d39378-d7cb-4da9-b834-3e86f7cd639e.png"
+  },
+  {
+    "id": "1B",
+    "part": 1,
+    "option": "B",
+    "hook": "HE WENT\nSILENT.",
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-8cf0a314-fa71-4e0b-a137-3121c51112a5.png"
+  },
+  {
+    "id": "2A",
+    "part": 2,
+    "option": "A",
+    "hook": "I HAD\nTHE KEY.",
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-f4fb7270-3914-4072-acd4-c428b8f35621.png"
+  },
+  {
+    "id": "2B",
+    "part": 2,
+    "option": "B",
+    "hook": "LET\nME IN.",
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-598d68d2-45fe-44fc-925c-ecd4de6f2707.png"
+  },
+  {
+    "id": "3A",
+    "part": 3,
+    "option": "A",
+    "hook": "SHE KNEW\nMY NAME.",
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-f48a4db7-850a-494c-a197-6efaf3186f5e.png"
+  },
+  {
+    "id": "3B",
+    "part": 3,
+    "option": "B",
+    "hook": "I LOCKED\nEVERY DOOR.",
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-44083ee1-8c43-4065-8bc2-a2c58efbb573.png"
+  },
+  {
+    "id": "4A",
+    "part": 4,
+    "option": "A",
+    "hook": "WHO’S IN\nTHE WINDOW?",
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-9647e94a-bb0b-485c-9c9e-50b6ada5d828.png"
+  },
+  {
+    "id": "4B",
+    "part": 4,
+    "option": "B",
+    "hook": "10 DAYS\nLEFT.",
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-b24c71bb-ae62-44ff-bd10-98f33028e2f9.png"
+  }
+]

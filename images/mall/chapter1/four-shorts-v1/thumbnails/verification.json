@@ -1,0 +1,122 @@
+{
+  "assets": [
+    {
+      "part": 1,
+      "option": "A",
+      "hook": "42 KEYS.\nNO WAY OUT.",
+      "file": "night-guard-ch1-short-01-thumbnail-a.jpg",
+      "originalSize": [
+        941,
+        1672
+      ],
+      "width": 1080,
+      "height": 1920,
+      "bytes": 890519,
+      "sha256": "c1f50d22071a799a137d23556196232bacb20b3130edd8e0838ffe27fb7bcd31"
+    },
+    {
+      "part": 1,
+      "option": "B",
+      "hook": "HE WENT\nSILENT.",
+      "file": "night-guard-ch1-short-01-thumbnail-b.jpg",
+      "originalSize": [
+        941,
+        1672
+      ],
+      "width": 1080,
+      "height": 1920,
+      "bytes": 677856,
+      "sha256": "d8ab384a5129d03bb9f253e34d1a2738399301bebc408ebc6d040473a5c8ab98"
+    },
+    {
+      "part": 2,
+      "option": "A",
+      "hook": "I HAD\nTHE KEY.",
+      "file": "night-guard-ch1-short-02-thumbnail-a.jpg",
+      "originalSize": [
+        941,
+        1672
+      ],
+      "width": 1080,
+      "height": 1920,
+      "bytes": 708412,
+      "sha256": "9cb6f98dd47e772f4320652b5d1bafa30cf98c79ee43227f45dbf8fb1fdbf81e"
+    },
+    {
+      "part": 2,
+      "option": "B",
+      "hook": "LET\nME IN.",
+      "file": "night-guard-ch1-short-02-thumbnail-b.jpg",
+      "originalSize": [
+        941,
+        1672
+      ],
+      "width": 1080,
+      "height": 1920,
+      "bytes": 675240,
+      "sha256": "b3744c7aa9a046e606ec37ba91048c5d1d791fd9603ec5a8d8c41cd24f5cb09c"
+    },
+    {
+      "part": 3,
+      "option": "A",
+      "hook": "SHE KNEW\nMY NAME.",
+      "file": "night-guard-ch1-short-03-thumbnail-a.jpg",
+      "originalSize": [
+        941,
+        1672
+      ],
+      "width": 1080,
+      "height": 1920,
+      "bytes": 723664,
+      "sha256": "7b9f61e6e27d0c5c98f25f8fb4db14bcf5a41be9f13c21d141ab5f21814119af"
+    },
+    {
+      "part": 3,
+      "option": "B",
+      "hook": "I LOCKED\nEVERY DOOR.",
+      "file": "night-guard-ch1-short-03-thumbnail-b.jpg",
+      "originalSize": [
+        941,
+        1672
+      ],
+      "width": 1080,
+      "height": 1920,
+      "bytes": 846173,
+      "sha256": "697c176f32f5660ac5c77f8f2ec788cd45fc855f3a5de7c8658f989edd7486d8"
+    },
+    {
+      "part": 4,
+      "option": "A",
+      "hook": "WHO\u2019S IN\nTHE WINDOW?",
+      "file": "night-guard-ch1-short-04-thumbnail-a.jpg",
+      "originalSize": [
+        941,
+        1672
+      ],
+      "width": 1080,
+      "height": 1920,
+      "bytes": 697782,
+      "sha256": "bdeb168fcdd0961ed35e030ad6316bb9e7894606eeae364a57ccc07553252e05"
+    },
+    {
+      "part": 4,
+      "option": "B",
+      "hook": "10 DAYS\nLEFT.",
+      "file": "night-guard-ch1-short-04-thumbnail-b.jpg",
+      "originalSize": [
+        941,
+        1672
+      ],
+      "width": 1080,
+      "height": 1920,
+      "bytes": 804800,
+      "sha256": "b2138bd3a8eada7b31702a94b0e14beeec83444d38a54cee74c5af6e57ac39aa"
+    }
+  ],
+  "format": "1080x1920 portrait Shorts covers",
+  "generation": "built-in imagegen, approved own-art references",
+  "visualReview": "All eight inspected in full, at 300px wide, and in center 3:4 crops. Exact main headlines checked. Pale/olive heads, black oval eyes, no Theo, locked gate, alive Marcus, unseen caller, correct family and insulin premise.",
+  "refinements": "Zombie eyes corrected, ambiguous silhouette removed, three headlines repositioned for centered crop.",
+  "scoring": "Qualitative review; no suitable published video proxy selected, so separate vidIQ scores unavailable.",
+  "performance": "No measured CTR or virality claim"
+}
