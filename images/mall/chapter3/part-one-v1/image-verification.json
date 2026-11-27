@@ -1,0 +1,285 @@
+{
+  "assets": [
+    {
+      "id": "reference-pancake",
+      "kind": "character-reference",
+      "file": "mall/ch3/story-art/part-one-v1/reference-pancake.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2765712,
+      "sha256": "181d6b19ad3ed6144f98d3c28923662b0948407a11a9a687f4c65ff7922e966c"
+    },
+    {
+      "id": "bg-court-noon",
+      "kind": "background",
+      "file": "mall/ch3/story-art/part-one-v1/bg-court-noon.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3119802,
+      "sha256": "88a805080dd38e352f60861b244f59e08fd61c4fa9c64000b477e9b8cf425f5f"
+    },
+    {
+      "id": "bg-store-day",
+      "kind": "background",
+      "file": "mall/ch3/story-art/part-one-v1/bg-store-day.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2525575,
+      "sha256": "d03346782dba61997bc26e1fc11bf5d42ff88c7542c0ecd9698c4ba5f6dee5ea"
+    },
+    {
+      "id": "bg-roof-night",
+      "kind": "background",
+      "file": "mall/ch3/story-art/part-one-v1/bg-roof-night.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2224401,
+      "sha256": "6eff4bcdc975df85340909fda46fe8d15df2f775272533aa0e26db1f65fbddb3"
+    },
+    {
+      "id": "bg-office-lockers",
+      "kind": "background",
+      "file": "mall/ch3/story-art/part-one-v1/bg-office-lockers.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2409707,
+      "sha256": "41864df118098404de46d9cdec290f4ca9dbd8b17618c6a566eea900ec8f8605"
+    },
+    {
+      "id": "bg-ceiling-route",
+      "kind": "background",
+      "file": "mall/ch3/story-art/part-one-v1/bg-ceiling-route.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2632611,
+      "sha256": "628c4d4c7c92cfff7cb284205b1796330a199cfd739fa4517e359540edcdc0c4"
+    },
+    {
+      "id": "bg-staff-corridor",
+      "kind": "background",
+      "file": "mall/ch3/story-art/part-one-v1/bg-staff-corridor.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2354369,
+      "sha256": "1896530015e5efd3fe551d1e7a7988b11390d25791b2e0c89ea2e141dd07b21b"
+    },
+    {
+      "id": "s01-court-socks",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s01-court-socks.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2931527,
+      "sha256": "c727f5fa8c9e0587e03149fe069fa7fa87cc43bfc5022c3740be2265894dd701"
+    },
+    {
+      "id": "s01-puppy-zip",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s01-puppy-zip.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2851477,
+      "sha256": "ac0781407a73a05ceea5ad879aaf4b7287273f6776afbc02b01bb2adaac77e69"
+    },
+    {
+      "id": "s01-visitors-turn",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s01-visitors-turn.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2896712,
+      "sha256": "95ca3f858bcec3242f1f8051e8b333620103f2fdecd6ef178a031890664ba5fc"
+    },
+    {
+      "id": "s01-boot-coins",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s01-boot-coins.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2972477,
+      "sha256": "5c98c10193b8f01708409c9dec2f62b609bfd77f8864ccd8138beaf42e16add1"
+    },
+    {
+      "id": "s02-two-lights",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s02-two-lights.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2399339,
+      "sha256": "de7daaa20225a7bcf1f9c552124e4bbb78a0ce12adfca8adf70d5ab27d90d4ba"
+    },
+    {
+      "id": "s02-lily-pancake",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s02-lily-pancake.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2750977,
+      "sha256": "2e50cc52277ebd9432322d0a909adb2fa33324282afa33ec3a8094b83a2bd675"
+    },
+    {
+      "id": "s02-store-count",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s02-store-count.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2181548,
+      "sha256": "66141999905ab3f836d3befae5ce66664d9f0fbfdb9b015f52e2529fe32e2f59"
+    },
+    {
+      "id": "s02-limping",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s02-limping.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2511777,
+      "sha256": "30c9c8f2c40f8ba8e25b114002908c657cd666f0e2aa18752785c4132128dca1"
+    },
+    {
+      "id": "s03-fever-tent",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s03-fever-tent.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2640154,
+      "sha256": "82c60bf17840ea9bce7412731149418d4a36e625ba2237e01d20b1c3efbcdb0f"
+    },
+    {
+      "id": "s03-calf",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s03-calf.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2428952,
+      "sha256": "251c50ec1a54a09d609bb453244865db2681bad1c3dba3f6f2946b1a88b92cc1"
+    },
+    {
+      "id": "s03-firstaid-limit",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s03-firstaid-limit.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2498570,
+      "sha256": "d57f6fd3aca18d145c381950e08afc79180a48ae7018d586e0f14915af38893b"
+    },
+    {
+      "id": "s03-pharmacy-gap",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s03-pharmacy-gap.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3029145,
+      "sha256": "c8cc1fea8dc432fe07bc5100add5f666291b1bf44d00c616146dbf4eea3e4735"
+    },
+    {
+      "id": "s04-chalk-route",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s04-chalk-route.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2576224,
+      "sha256": "0c2b79755f6864c50b4b22a3193e451036544a8215b9a564444223a9eb6c22da"
+    },
+    {
+      "id": "s04-solo-crawl",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s04-solo-crawl.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2770630,
+      "sha256": "b377971975570ce8a2950700c7bebd5efd638658f9c702310072c6725b1ef577"
+    },
+    {
+      "id": "s04-tile-freeze",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s04-tile-freeze.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2618768,
+      "sha256": "c6b0e455754d42b0ce142c30490d73db8726722bbfe7d8882b0fb017431eb475"
+    },
+    {
+      "id": "s04-staff-corridor",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s04-staff-corridor.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2406280,
+      "sha256": "2e2b77dfb0261565dbbc66565c25ae91b6d0e26f2e97661f35a58495abe0e1f9"
+    },
+    {
+      "id": "s04-office-return",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s04-office-return.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2603026,
+      "sha256": "427dd601ac2270ecd49c3761ed8a2c01c90c3ba22fb38ce906111b38a9c4ec99"
+    },
+    {
+      "id": "s04-locker-open",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s04-locker-open.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2153622,
+      "sha256": "8d6cc98c3df2c359dbd9ee00adef268121ee6f819cae24af496c7adeaf8776c6"
+    },
+    {
+      "id": "s05-twenty-note",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s05-twenty-note.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2663650,
+      "sha256": "3e570bc1511ba4bf63fa3a43eed9e8be1b981e54cb41f9cd4a2c05942d8bfb28"
+    },
+    {
+      "id": "s05-pocket-twenty",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s05-pocket-twenty.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2733739,
+      "sha256": "634cc8ae73d54f4374f151aa738185067a19b1abd51be482929bf51677d96bbb"
+    },
+    {
+      "id": "s05-book-guidance",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s05-book-guidance.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2278491,
+      "sha256": "101ca92363becb96055a7b621666995463f50cd1a34eb0e68c906a3d1a55e3f0"
+    },
+    {
+      "id": "s05-camera-nine",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/s05-camera-nine.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2241593,
+      "sha256": "30c81a637d360d72e47bb6731bbcbc108a0b2e408f37c72a3431d4acaa0f4cb3"
+    },
+    {
+      "id": "cliff-marcus-clock",
+      "kind": "story",
+      "file": "mall/ch3/story-art/part-one-v1/cliff-marcus-clock.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2445137,
+      "sha256": "d4de69cec713498f7966e0743160c30f0c4f7dc8f9be2eff723880c57465a6eb"
+    }
+  ],
+  "count": 30,
+  "backgrounds": 6,
+  "storyPaintings": 23,
+  "newCharacterReferences": 1,
+  "originalPNGs": "byte-preserved from built-in imagegen",
+  "deliveryJPEGs": [
+    1920,
+    1080
+  ],
+  "review": "Every selected painting inspected at full size; all correction outputs reviewed. See art-direction.md for continuity rules.",
+  "scope": "Character/background/story artwork. No audio or video rendered in this stage."
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "reference-pancake",
+    "kind": "character-reference",
+    "segment": 0,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-631a20af-123d-45b4-adeb-089d3c45818f.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "bg-court-noon",
+    "kind": "background",
+    "segment": null,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-25b33dad-9704-45a5-bb8c-f55def10ffc7.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "bg-store-day",
+    "kind": "background",
+    "segment": null,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-5a71ba73-7b70-46b6-aef9-743d4da17ead.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "bg-roof-night",
+    "kind": "background",
+    "segment": null,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-7f3da8b6-d7f3-4b9c-a7eb-c9b5b63872d1.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "bg-office-lockers",
+    "kind": "background",
+    "segment": null,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-6c474438-3aa2-46b3-8bc9-c659b05f76b7.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "bg-ceiling-route",
+    "kind": "background",
+    "segment": null,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-6fdefdf5-64dc-412e-8f4e-b98e67646c0a.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "bg-staff-corridor",
+    "kind": "background",
+    "segment": null,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-3f9c132f-d4fb-4ab1-a044-96c92fd38f5d.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s01-court-socks",
+    "kind": "story",
+    "segment": 1,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-578b42f4-4dc1-4ff5-9c25-8a6e8c59af13.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s01-puppy-zip",
+    "kind": "story",
+    "segment": 1,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-0dbc5444-4a02-4918-9183-34b38d9b1983.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s01-visitors-turn",
+    "kind": "story",
+    "segment": 1,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-770c08cb-26bf-40d6-8e2b-a1d882e6df07.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s01-boot-coins",
+    "kind": "story",
+    "segment": 1,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-c071b31c-fa79-4d80-82f8-1d0d4174c6ee.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s02-two-lights",
+    "kind": "story",
+    "segment": 2,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-79d10cac-6060-45c1-bb63-68f6c178ccc2.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s02-lily-pancake",
+    "kind": "story",
+    "segment": 2,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-7414840c-a0c7-43d1-909b-49d8af32e721.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s02-store-count",
+    "kind": "story",
+    "segment": 2,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-706789e7-8512-4042-9de4-60e100ab74c4.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s02-limping",
+    "kind": "story",
+    "segment": 2,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-8836de34-50f9-4e41-a57d-2de07f6202c2.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s03-fever-tent",
+    "kind": "story",
+    "segment": 3,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-263e560b-6ff0-4773-88cf-6419f83f5432.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s03-calf",
+    "kind": "story",
+    "segment": 3,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-20f4f48b-ebea-44a4-82ba-73568bdf9e7a.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s03-firstaid-limit",
+    "kind": "story",
+    "segment": 3,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-62b7182a-b8cb-48f1-a1bb-cde06d4788d7.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s03-pharmacy-gap",
+    "kind": "story",
+    "segment": 3,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-95528a55-7898-4fd7-90b6-0bbe35d8ae29.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s04-chalk-route",
+    "kind": "story",
+    "segment": 4,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-32f88aaf-5cdb-4bda-b46f-df83ea88aa0e.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s04-solo-crawl",
+    "kind": "story",
+    "segment": 4,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-0795e189-4402-4bfc-af5f-cee8690afab7.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s04-tile-freeze",
+    "kind": "story",
+    "segment": 4,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-b35ba782-5a2a-4bba-a7f5-def1984d46d8.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s04-staff-corridor",
+    "kind": "story",
+    "segment": 4,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-051b98e0-f3d6-4cfd-afd6-67e187193757.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s04-office-return",
+    "kind": "story",
+    "segment": 4,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-d5a0598e-3d47-44cb-ad97-e0bdd60719bc.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s04-locker-open",
+    "kind": "story",
+    "segment": 4,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-9069b437-0963-4187-ac1e-13a3cfc877a7.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s05-twenty-note",
+    "kind": "story",
+    "segment": 5,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-29f54be7-a48c-4c72-9873-d1b7687e1c43.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s05-pocket-twenty",
+    "kind": "story",
+    "segment": 5,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-4b9ef3c3-b78f-4c56-b98b-7118c490e5cb.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s05-book-guidance",
+    "kind": "story",
+    "segment": 5,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-cba9bf03-6fe6-4ac4-ac27-06458f5baead.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "s05-camera-nine",
+    "kind": "story",
+    "segment": 5,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-84609e1d-e9f6-43db-a1df-9f0b5eeee168.png",
+    "reviewStatus": "selected"
+  },
+  {
+    "id": "cliff-marcus-clock",
+    "kind": "story",
+    "segment": 6,
+    "source": "/Users/chris/.codex/generated_images/01a1b147-8587-7300-8e7c-f0237707178a/exec-5f582a62-1477-4d63-91e0-37136d881806.png",
+    "reviewStatus": "selected"
+  }
+]
